@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Simple Walnut</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --walnut-1: #3b2518;
+    --walnut-2: #5c3a22;
+    --walnut-3: #8b5a37;
+    --walnut-4: #c8a27e;
+    --walnut-5: #e8d4ba;
+    --bg-1: #1a0f08;
+    --bg-2: #0a0604;
+  }
+
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  html, body {
+    height: 100%;
+    overflow: hidden;
+    font-family: 'Inter', system-ui, sans-serif;
+    color: var(--walnut-5);
+    background: radial-gradient(ellipse at center, var(--bg-1) 0%, var(--bg-2) 100%);
+    user-select: none;
+    -webkit-user-select: none;
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  main, #bg-canvas, #gradient-canvas {
+    opacity: 0;
+    transition: opacity 0.8s ease-out;
+  }
+
+  body.ready main,
+  body.ready #bg-canvas,
+  body.ready #gradient-canvas {
+    opacity: 1;
+  }
+
+  #gradient-canvas {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    pointer-events: none;
+  }
+
+  #bg-canvas {
+    position: fixed;
+    inset: 0;
+    z-index: 1;
+    pointer-events: none;
+  }
+
+  main {
+    position: relative;
+    z-index: 2;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    padding: 2rem;
+    text-align: center;
+  }
+
+  .logo-wrap {
+    width: 220px;
+    height: 220px;
+    animation: bob 5s ease-in-out infinite;
+  }
+
+  .logo {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    opacity: 0.80;
+    animation: breathe 3.5s ease-in-out infinite;
+    filter: drop-shadow(0 15px 40px rgba(139, 90, 55, 0.5));
+    cursor: pointer;
+    pointer-events: auto;
+  }
+
+  @keyframes bob {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-14px); }
+  }
+
+  @keyframes breathe {
+    0%, 100% { transform: scale(1); filter: drop-shadow(0 15px 40px rgba(139, 90, 55, 0.4)); }
+    50% { transform: scale(1.04); filter: drop-shadow(0 20px 50px rgba(200, 162, 126, 0.6)); }
+  }
+
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(20px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+
+  @keyframes shimmer {
+    0%, 100% { background-position: -200% center; }
+    100% { background-position: 200% center; }
+  }
+
+  .wordmark {
+    font-family: 'Cormorant Garamond', serif;
+    font-size: clamp(3rem, 9vw, 6rem);
+    font-weight: 300;
+    letter-spacing: 0.04em;
+    background: linear-gradient(
+      90deg,
+      var(--walnut-4) 0%,
+      var(--walnut-5) 40%,
+      #fff 50%,
+      var(--walnut-5) 60%,
+      var(--walnut-4) 100%
+    );
+    background-size: 200% auto;
+    -webkit-background-clip: text;
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    animation: shimmer 6s linear infinite, fadeIn 1.2s ease-out 0.3s backwards;
+    line-height: 1;
+  }
+
+  .wordmark em {
+    font-style: italic;
+    font-weight: 400;
+  }
+
+  .wordmark em + :not(em),
+  .wordmark em {
+    /* spacing handled by text */
+  }
+</style>
+</head>
+<body>
+  <canvas id="gradient-canvas"></canvas>
+  <canvas id="bg-canvas"></canvas>
+
+  <main>
+    <div class="logo-wrap">
+      <img class="logo" src="walnut.svg" alt="Walnut" />
+    </div>
+
+    <h1 class="wordmark"><em>Simple</em>Walnut</h1>
+  </main>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "https://unpkg.com/three@0.160.0/build/three.module.js"
+  }
+}
+</script>
+<script type="module">
+  import * as THREE from 'three';
+
+  const canvas = document.getElementById('bg-canvas');
+  const scene = new THREE.Scene();
+  const camera = new THREE.PerspectiveCamera(60, window.innerWidth / window.innerHeight, 0.1, 1000);
+  camera.position.z = 300;
+
+  const renderer = new THREE.WebGLRenderer({ canvas, alpha: true, antialias: true });
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+  renderer.setSize(window.innerWidth, window.innerHeight);
+
+  // ─── Walnut-toned flowing gradient layer ────────────────────────────
+  // Sits above the CSS radial gradient, under the 3D scene. Uses layered
+  // value noise (fBm) in a fragment shader to animate a soft warm haze.
+  const gradCanvas = document.getElementById('gradient-canvas');
+  const gradRenderer = new THREE.WebGLRenderer({ canvas: gradCanvas, alpha: true, antialias: false });
+  gradRenderer.setPixelRatio(Math.min(window.devicePixelRatio, 1.5));
+  gradRenderer.setSize(window.innerWidth, window.innerHeight);
+
+  const gradScene = new THREE.Scene();
+  const gradCamera = new THREE.OrthographicCamera(-1, 1, 1, -1, 0, 1);
+  const gradMaterial = new THREE.ShaderMaterial({
+    uniforms: {
+      uTime: { value: 0 },
+      uResolution: { value: new THREE.Vector2(window.innerWidth, window.innerHeight) },
+    },
+    vertexShader: `
+      varying vec2 vUv;
+      void main() {
+        vUv = uv;
+        gl_Position = vec4(position, 1.0);
+      }
+    `,
+    fragmentShader: `
+      precision mediump float;
+      varying vec2 vUv;
+      uniform float uTime;
+      uniform vec2 uResolution;
+
+      float hash(vec2 p) {
+        return fract(sin(dot(p, vec2(127.1, 311.7))) * 43758.5453);
+      }
+      float vnoise(vec2 p) {
+        vec2 i = floor(p);
+        vec2 f = fract(p);
+        f = f * f * (3.0 - 2.0 * f);
+        float a = hash(i);
+        float b = hash(i + vec2(1.0, 0.0));
+        float c = hash(i + vec2(0.0, 1.0));
+        float d = hash(i + vec2(1.0, 1.0));
+        return mix(mix(a, b, f.x), mix(c, d, f.x), f.y);
+      }
+      float fbm(vec2 p) {
+        float v = 0.0;
+        float amp = 0.5;
+        mat2 rot = mat2(0.8, -0.6, 0.6, 0.8);
+        for (int i = 0; i < 5; i++) {
+          v += amp * vnoise(p);
+          p = rot * p * 2.0;
+          amp *= 0.5;
+        }
+        return v;
+      }
+
+      void main() {
+        vec2 uv = vUv;
+        uv.x *= uResolution.x / uResolution.y;
+        float t = uTime * 0.06;
+
+        float n1 = fbm(uv * 1.2 + vec2(t, t * 0.7));
+        float n2 = fbm(uv * 2.2 + vec2(-t * 0.9, t * 1.15));
+        float n = (n1 + n2) * 0.5;
+
+        // Walnut palette — deeper overall, quieter highlights
+        vec3 dark  = vec3(0.028, 0.014, 0.008);
+        vec3 mid   = vec3(0.17,  0.095, 0.050);
+        vec3 warm  = vec3(0.36,  0.22,  0.12);
+        vec3 hot   = vec3(0.52,  0.33,  0.19);
+
+        vec3 col = mix(dark, mid, smoothstep(0.20, 0.62, n));
+        col = mix(col, warm, smoothstep(0.55, 0.88, n));
+        col = mix(col, hot, smoothstep(0.80, 1.00, n) * 0.30);
+
+        gl_FragColor = vec4(col, 0.72);
+      }
+    `,
+    transparent: true,
+    depthWrite: false,
+  });
+
+  const gradPlane = new THREE.Mesh(new THREE.PlaneGeometry(2, 2), gradMaterial);
+  gradScene.add(gradPlane);
+
+  // Floating particles
+  const particleCount = 400;
+  const positions = new Float32Array(particleCount * 3);
+  const colors = new Float32Array(particleCount * 3);
+  const sizes = new Float32Array(particleCount);
+
+  const walnutColours = [
+    [0.78, 0.63, 0.49],
+    [0.54, 0.35, 0.21],
+    [0.91, 0.83, 0.73],
+    [0.23, 0.15, 0.09],
+  ];
+
+  for (let i = 0; i < particleCount; i++) {
+    const r = 200 + Math.random() * 400;
+    const theta = Math.random() * Math.PI * 2;
+    const phi = Math.acos(2 * Math.random() - 1);
+    positions[i * 3] = r * Math.sin(phi) * Math.cos(theta);
+    positions[i * 3 + 1] = r * Math.sin(phi) * Math.sin(theta);
+    positions[i * 3 + 2] = r * Math.cos(phi) - 300;
+
+    const c = walnutColours[Math.floor(Math.random() * walnutColours.length)];
+    colors[i * 3] = c[0];
+    colors[i * 3 + 1] = c[1];
+    colors[i * 3 + 2] = c[2];
+
+    sizes[i] = Math.random() * 3 + 1;
+  }
+
+  const geometry = new THREE.BufferGeometry();
+  geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+  geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+  geometry.setAttribute('size', new THREE.BufferAttribute(sizes, 1));
+
+  const material = new THREE.ShaderMaterial({
+    uniforms: {
+      time: { value: 0 },
+    },
+    vertexShader: `
+      attribute float size;
+      varying vec3 vColor;
+      varying float vAlpha;
+      uniform float time;
+      void main() {
+        vColor = color;
+        vec3 pos = position;
+        pos.y += sin(time * 0.3 + position.x * 0.01) * 5.0;
+        pos.x += cos(time * 0.2 + position.z * 0.01) * 5.0;
+        vec4 mvPosition = modelViewMatrix * vec4(pos, 1.0);
+        gl_PointSize = size * (300.0 / -mvPosition.z);
+        gl_Position = projectionMatrix * mvPosition;
+        vAlpha = clamp(1.0 - (-mvPosition.z / 700.0), 0.0, 1.0);
+      }
+    `,
+    fragmentShader: `
+      varying vec3 vColor;
+      varying float vAlpha;
+      void main() {
+        vec2 xy = gl_PointCoord.xy - vec2(0.5);
+        float d = length(xy);
+        if (d > 0.5) discard;
+        float a = smoothstep(0.5, 0.0, d) * vAlpha;
+        gl_FragColor = vec4(vColor, a * 0.7);
+      }
+    `,
+    transparent: true,
+    vertexColors: true,
+    depthWrite: false,
+  });
+
+  const points = new THREE.Points(geometry, material);
+  scene.add(points);
+
+  // ─── 4D polytope wireframes (projected 4D → 3D → 2D) ────────────────
+  // Build vertex sets for each regular convex 4-polytope
+  function buildPolytopes() {
+    const polys = {};
+
+    // 5-cell (simplex): 5 vertices, all pairs connected (K5)
+    {
+      const s = Math.sqrt(5);
+      const verts = [
+        [1, 1, 1, -1 / s],
+        [1, -1, -1, -1 / s],
+        [-1, 1, -1, -1 / s],
+        [-1, -1, 1, -1 / s],
+        [0, 0, 0, 4 / s],
+      ];
+      const edges = [];
+      for (let i = 0; i < 5; i++) for (let j = i + 1; j < 5; j++) edges.push([i, j]);
+      polys['5-cell'] = { verts, edges };
+    }
+
+    // 8-cell (tesseract): 16 vertices (±1)^4, edges differ in 1 coord
+    {
+      const verts = [];
+      for (let i = 0; i < 16; i++) {
+        verts.push([(i & 1) ? 1 : -1, (i & 2) ? 1 : -1, (i & 4) ? 1 : -1, (i & 8) ? 1 : -1]);
+      }
+      const edges = [];
+      for (let i = 0; i < 16; i++) for (let j = i + 1; j < 16; j++) {
+        let diff = 0;
+        for (let k = 0; k < 4; k++) if (verts[i][k] !== verts[j][k]) diff++;
+        if (diff === 1) edges.push([i, j]);
+      }
+      polys['8-cell'] = { verts, edges };
+    }
+
+    // 16-cell (hyperoctahedron): 8 vertices at ±unit on each axis
+    {
+      const verts = [
+        [1, 0, 0, 0], [-1, 0, 0, 0],
+        [0, 1, 0, 0], [0, -1, 0, 0],
+        [0, 0, 1, 0], [0, 0, -1, 0],
+        [0, 0, 0, 1], [0, 0, 0, -1],
+      ];
+      const edges = [];
+      // Connect non-antipodal pairs
+      for (let i = 0; i < 8; i++) for (let j = i + 1; j < 8; j++) {
+        if (Math.floor(i / 2) !== Math.floor(j / 2)) edges.push([i, j]);
+      }
+      polys['16-cell'] = { verts, edges };
+    }
+
+    // 24-cell: permutations of (±1, ±1, 0, 0) — 24 vertices
+    {
+      const verts = [];
+      const positions = [[0, 1], [0, 2], [0, 3], [1, 2], [1, 3], [2, 3]];
+      for (const [a, b] of positions) {
+        for (const sa of [1, -1]) for (const sb of [1, -1]) {
+          const v = [0, 0, 0, 0];
+          v[a] = sa;
+          v[b] = sb;
+          verts.push(v);
+        }
+      }
+      // Edges: pairs at distance √2
+      const edges = [];
+      const EPS = 1e-6;
+      for (let i = 0; i < verts.length; i++) for (let j = i + 1; j < verts.length; j++) {
+        let d2 = 0;
+        for (let k = 0; k < 4; k++) d2 += (verts[i][k] - verts[j][k]) ** 2;
+        if (Math.abs(d2 - 2) < EPS) edges.push([i, j]);
+      }
+      polys['24-cell'] = { verts, edges };
+    }
+
+    return polys;
+  }
+
+  const POLYTOPES = buildPolytopes();
+
+  // 4D rotation (rotates in XY plane and ZW plane for an isoclinic feel)
+  function rotate4D(v, a, b) {
+    const cA = Math.cos(a), sA = Math.sin(a);
+    const cB = Math.cos(b), sB = Math.sin(b);
+    // XY plane
+    const x = v[0] * cA - v[1] * sA;
+    const y = v[0] * sA + v[1] * cA;
+    // ZW plane
+    const z = v[2] * cB - v[3] * sB;
+    const w = v[2] * sB + v[3] * cB;
+    return [x, y, z, w];
+  }
+
+  // Project 4D → 3D using perspective from a point on the W axis
+  function projectTo3D(v, wOffset = 3.5) {
+    const k = 1 / (wOffset - v[3]);
+    return [v[0] * k, v[1] * k, v[2] * k];
+  }
+
+  function makePolytopeMesh(name, scale, position, rotSpeed, velocity) {
+    const def = POLYTOPES[name];
+    const positionsArr = new Float32Array(def.edges.length * 2 * 3);
+    const colorsArr = new Float32Array(def.edges.length * 2 * 4); // rgba
+    const geom = new THREE.BufferGeometry();
+    geom.setAttribute('position', new THREE.BufferAttribute(positionsArr, 3));
+    geom.setAttribute('instanceColor', new THREE.BufferAttribute(colorsArr, 4));
+    // Shader material so we can use per-vertex rgba
+    const mat = new THREE.ShaderMaterial({
+      vertexShader: `
+        attribute vec4 instanceColor;
+        varying vec4 vColor;
+        void main() {
+          vColor = instanceColor;
+          gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+        }
+      `,
+      fragmentShader: `
+        varying vec4 vColor;
+        void main() {
+          gl_FragColor = vColor;
+        }
+      `,
+      transparent: true,
+      depthWrite: false,
+    });
+    const lines = new THREE.LineSegments(geom, mat);
+    lines.position.set(position.x, position.y, position.z);
+    lines.userData = {
+      def, scale, rotSpeed, velocity,
+      angleA: Math.random() * Math.PI * 2,
+      angleB: Math.random() * Math.PI * 2,
+      // Gentle scale breathing — small amplitude, slow, independent phase per polytope
+      breathePhase: Math.random() * Math.PI * 2,
+      breatheRate: 0.12 + Math.random() * 0.08,
+      breatheAmp: 0.06 + Math.random() * 0.04,
+    };
+    return lines;
+  }
+
+  // Shuffle helper so each quadrant gets a different polytope
+  function shuffled(arr) {
+    const a = [...arr];
+    for (let i = a.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [a[i], a[j]] = [a[j], a[i]];
+    }
+    return a;
+  }
+
+  // Distribute across four quadrants with jitter so they don't sit on a grid
+  const polytopeNames = shuffled(Object.keys(POLYTOPES));
+  const polytopes = [];
+  const quadrants = [
+    [-1, -1], [1, -1], [-1, 1], [1, 1],
+  ];
+  for (let i = 0; i < 4; i++) {
+    const name = polytopeNames[i % polytopeNames.length];
+    const [qx, qy] = quadrants[i];
+    const p = makePolytopeMesh(
+      name,
+      40 + Math.random() * 30,
+      {
+        x: qx * (120 + Math.random() * 60),
+        y: qy * (80 + Math.random() * 40),
+        // Narrow Z jitter — keeps apparent size roughly constant across polytopes
+        z: -280 - Math.random() * 40,
+      },
+      Math.random() * 0.3 + 0.15,
+      // Drift on the 2-torus (screen-parallel plane): no Z velocity
+      {
+        x: (Math.random() - 0.5) * 50,
+        y: (Math.random() - 0.5) * 35,
+        z: 0,
+      },
+    );
+    scene.add(p);
+    // 8 ghost tiles on the 2-torus (screen-parallel plane) so wrapping is seamless.
+    const ghosts = [];
+    for (let dx = -1; dx <= 1; dx++)
+      for (let dy = -1; dy <= 1; dy++) {
+        if (dx === 0 && dy === 0) continue;
+        const g = new THREE.LineSegments(p.geometry, p.material);
+        g.userData.offset = [dx, dy, 0];
+        scene.add(g);
+        ghosts.push(g);
+      }
+    p.userData.ghosts = ghosts;
+    polytopes.push(p);
+  }
+
+  function updatePolytope(obj, t) {
+    const { def, scale, rotSpeed, angleA, angleB, breathePhase, breatheRate, breatheAmp } = obj.userData;
+    const a = angleA + t * rotSpeed;
+    const b = angleB + t * rotSpeed * 0.7;
+    const effectiveScale = scale * (1 + breatheAmp * Math.sin(breathePhase + t * breatheRate));
+    const pos = obj.geometry.attributes.position.array;
+    const col = obj.geometry.attributes.instanceColor.array;
+    let pi = 0, ci = 0;
+
+    // Track z range for normalisation (pre-projection z and w give depth cues)
+    const writeVertex = (vert4d) => {
+      const rot = rotate4D(vert4d, a, b);
+      // Use w as the depth metric (pre-3D projection)
+      const depth = rot[3]; // roughly in range [-1, 1] for unit-scale polytopes
+      const p = projectTo3D(rot);
+      pos[pi++] = p[0] * effectiveScale;
+      pos[pi++] = p[1] * effectiveScale;
+      pos[pi++] = p[2] * effectiveScale;
+
+      // Normalise depth to 0 (far) .. 1 (near)
+      const norm = 0.5 + depth * 0.45; // clamp-ish
+      const n = Math.max(0.05, Math.min(1, norm));
+      // Warm walnut tone varying with depth
+      const brightness = 0.35 + n * 0.65;
+      col[ci++] = 0.78 * brightness; // R
+      col[ci++] = 0.63 * brightness; // G
+      col[ci++] = 0.49 * brightness; // B
+      col[ci++] = 0.08 + n * 0.4;    // A
+    };
+
+    for (const [u, v] of def.edges) {
+      writeVertex(def.verts[u]);
+      writeVertex(def.verts[v]);
+    }
+    obj.geometry.attributes.position.needsUpdate = true;
+    obj.geometry.attributes.instanceColor.needsUpdate = true;
+  }
+
+
+  window.addEventListener('resize', () => {
+    camera.aspect = window.innerWidth / window.innerHeight;
+    camera.updateProjectionMatrix();
+    renderer.setSize(window.innerWidth, window.innerHeight);
+    gradRenderer.setSize(window.innerWidth, window.innerHeight);
+    gradMaterial.uniforms.uResolution.value.set(window.innerWidth, window.innerHeight);
+  });
+
+  const clock = new THREE.Clock();
+  function animate() {
+    const t = clock.getElapsedTime();
+    material.uniforms.time.value = t;
+
+    points.rotation.y = t * 0.02;
+
+    const dt = clock.getDelta ? 0 : 0; // unused, kept for clarity
+    // Toroidal wrap using modulo based on current viewport size
+    // Visible world-space half-extent at depth z: h = (cameraZ - z) * tan(fov/2)
+    const halfFov = (camera.fov * Math.PI) / 360;
+    // Use a middle z for consistent bounds across the pack
+    const refDistance = camera.position.z - (-300);
+    const halfH = refDistance * Math.tan(halfFov);
+    const halfW = halfH * camera.aspect;
+    const halfZ = 250;
+    // Add padding so polytopes fully leave screen before reappearing
+    const padX = halfW + 80;
+    const padY = halfH + 80;
+    const padZ = halfZ + 100;
+    const zCenter = -300;
+
+    const wrap = (val, half) => {
+      const size = half * 2;
+      return ((val + half) % size + size) % size - half;
+    };
+
+    const cellW = padX * 2, cellH = padY * 2;
+    for (const p of polytopes) {
+      updatePolytope(p, t);
+      p.rotation.y = t * 0.1;
+      const v = p.userData.velocity;
+      p.position.x = wrap(p.position.x + v.x * 0.016, padX);
+      p.position.y = wrap(p.position.y + v.y * 0.016, padY);
+      // Z is fixed per polytope — no drift, no wrap
+      for (const g of p.userData.ghosts) {
+        const [dx, dy] = g.userData.offset;
+        g.position.set(
+          p.position.x + dx * cellW,
+          p.position.y + dy * cellH,
+          p.position.z,
+        );
+        g.rotation.copy(p.rotation);
+      }
+    }
+
+    gradMaterial.uniforms.uTime.value = t;
+    gradRenderer.render(gradScene, gradCamera);
+    renderer.render(scene, camera);
+    requestAnimationFrame(animate);
+  }
+  animate();
+
+  // Click the walnut to speed up drift by 5% each click
+  const logoEl = document.querySelector('.logo');
+  logoEl.addEventListener('click', () => {
+    for (const p of polytopes) {
+      const v = p.userData.velocity;
+      v.x *= 1.05;
+      v.y *= 1.05;
+      v.z *= 1.05;
+    }
+  });
+
+  // Bake quantisation into the walnut image (rather than using a live CSS
+  // filter). This way the image pixels themselves are cel-shaded and any
+  // animations (breathe/bob/shadow) apply organically on top of the static
+  // quantised art.
+  const logoImg = document.querySelector('.logo');
+  async function bakeQuantisedLogo() {
+    const src = logoImg.getAttribute('src');
+    const img = new Image();
+    img.src = src;
+    await new Promise((res, rej) => { img.onload = res; img.onerror = rej; });
+
+    const scale = 2;
+    const w = 440 * scale, h = 440 * scale;
+    const cv = document.createElement('canvas');
+    cv.width = w; cv.height = h;
+    const ctx = cv.getContext('2d');
+    ctx.drawImage(img, 0, 0, w, h);
+
+    const imgData = ctx.getImageData(0, 0, w, h);
+    const d = imgData.data;
+
+    // Sample opaque pixels (every Nth) for k-means clustering
+    const samples = [];
+    const sampleStep = 4 * 8;
+    for (let i = 0; i < d.length; i += sampleStep) {
+      if (d[i + 3] > 32) samples.push([d[i], d[i + 1], d[i + 2]]);
+    }
+    if (samples.length < 16) {
+      logoImg.src = cv.toDataURL('image/png');
+      if (logoImg.decode) await logoImg.decode();
+      return;
+    }
+
+    const K = 6;
+    const distSq = (a, b) => {
+      const dr = a[0] - b[0], dg = a[1] - b[1], db = a[2] - b[2];
+      return dr * dr + dg * dg + db * db;
+    };
+
+    // k-means++ seeding for stable initial centroids
+    const centroids = [samples[Math.floor(Math.random() * samples.length)].slice()];
+    while (centroids.length < K) {
+      const dists = samples.map(s => {
+        let m = Infinity;
+        for (const c of centroids) { const dd = distSq(s, c); if (dd < m) m = dd; }
+        return m;
+      });
+      const total = dists.reduce((a, b) => a + b, 0);
+      let r = Math.random() * total;
+      let idx = 0;
+      for (let i = 0; i < dists.length; i++) {
+        r -= dists[i];
+        if (r <= 0) { idx = i; break; }
+      }
+      centroids.push(samples[idx].slice());
+    }
+
+    // Lloyd's algorithm
+    for (let iter = 0; iter < 12; iter++) {
+      const sums = Array.from({ length: K }, () => [0, 0, 0, 0]);
+      for (const s of samples) {
+        let m = Infinity, bc = 0;
+        for (let j = 0; j < K; j++) {
+          const dd = distSq(s, centroids[j]);
+          if (dd < m) { m = dd; bc = j; }
+        }
+        sums[bc][0] += s[0];
+        sums[bc][1] += s[1];
+        sums[bc][2] += s[2];
+        sums[bc][3] += 1;
+      }
+      for (let j = 0; j < K; j++) {
+        if (sums[j][3] > 0) {
+          centroids[j][0] = sums[j][0] / sums[j][3];
+          centroids[j][1] = sums[j][1] / sums[j][3];
+          centroids[j][2] = sums[j][2] / sums[j][3];
+        }
+      }
+    }
+
+    // Snap each centroid to its nearest actual sample (medoid) — ensures
+    // the palette consists of real pixel colours from the image, no synthetic
+    // off-ridge blends.
+    const medoids = centroids.map(c => {
+      let m = Infinity, best = c;
+      for (const s of samples) {
+        const dd = distSq(s, c);
+        if (dd < m) { m = dd; best = s; }
+      }
+      return [Math.round(best[0]), Math.round(best[1]), Math.round(best[2])];
+    });
+
+    // Map each pixel to its nearest medoid; preserve original alpha
+    for (let i = 0; i < d.length; i += 4) {
+      if (d[i + 3] === 0) continue;
+      const r = d[i], g = d[i + 1], b = d[i + 2];
+      let m = Infinity, bc = 0;
+      for (let j = 0; j < K; j++) {
+        const mv = medoids[j];
+        const dr = r - mv[0], dg = g - mv[1], db = b - mv[2];
+        const dd = dr * dr + dg * dg + db * db;
+        if (dd < m) { m = dd; bc = j; }
+      }
+      d[i] = medoids[bc][0];
+      d[i + 1] = medoids[bc][1];
+      d[i + 2] = medoids[bc][2];
+    }
+
+    ctx.putImageData(imgData, 0, 0);
+    logoImg.src = cv.toDataURL('image/png');
+    if (logoImg.decode) await logoImg.decode();
+  }
+  const logoReady = bakeQuantisedLogo().catch(() => {});
+  const fontsReady = document.fonts ? document.fonts.ready : Promise.resolve();
+
+  Promise.all([fontsReady, logoReady]).then(() => {
+    requestAnimationFrame(() => {
+      requestAnimationFrame(() => document.body.classList.add('ready'));
+    });
+  });
+</script>
+</body>
+</html>

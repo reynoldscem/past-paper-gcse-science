@@ -1,0 +1,17 @@
+amyfromleek.duckdns.org, science.simplewalnut.com {
+	log {
+		output stdout
+		format console
+	}
+	reverse_proxy app:3000
+}
+
+simplewalnut.com, www.simplewalnut.com {
+	log {
+		output stdout
+		format console
+	}
+	root * /srv/sites/simple-walnut
+	encode gzip
+	file_server
+}
