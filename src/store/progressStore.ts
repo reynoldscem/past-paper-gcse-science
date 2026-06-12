@@ -1,5 +1,5 @@
 import { create } from 'zustand';
-import { AppProgress, PaperAttempt } from '../types';
+import { AppProgress, LearningArea, PaperAttempt } from '../types';
 import { loadProgress, saveProgress } from '../lib/storage';
 import { useAppStore } from './appStore';
 
@@ -10,11 +10,13 @@ function getUserName(): string {
 interface ProgressState extends AppProgress {
   loaded: boolean;
   hydrate: () => Promise<void>;
+  setActiveLearningArea: (area: LearningArea) => void;
   addAttempt: (attempt: PaperAttempt) => void;
   clearProgress: () => void;
 }
 
 export const useProgressStore = create<ProgressState>((set, get) => ({
+  activeLearningArea: 'science',
   attempts: [],
   totalPapersCompleted: 0,
   bestScores: {},
@@ -25,6 +27,20 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
   hydrate: async () => {
     const progress = await loadProgress(getUserName());
     set({ ...progress, loaded: true });
+  },
+
+  setActiveLearningArea: (area) => {
+    const state = get();
+    const newState = { ...state, activeLearningArea: area };
+    set({ activeLearningArea: area });
+    saveProgress(getUserName(), {
+      activeLearningArea: area,
+      attempts: newState.attempts,
+      totalPapersCompleted: newState.totalPapersCompleted,
+      bestScores: newState.bestScores,
+      streakDays: newState.streakDays,
+      lastActiveDate: newState.lastActiveDate,
+    });
   },
 
   addAttempt: (attempt) => {
@@ -52,6 +68,7 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
     }
 
     const newState = {
+      activeLearningArea: state.activeLearningArea,
       attempts: [...state.attempts, attempt],
       totalPapersCompleted: state.totalPapersCompleted + 1,
       bestScores,
@@ -61,6 +78,7 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
 
     set(newState);
     saveProgress(getUserName(), {
+      activeLearningArea: newState.activeLearningArea,
       attempts: newState.attempts,
       totalPapersCompleted: newState.totalPapersCompleted,
       bestScores: newState.bestScores,
@@ -70,7 +88,9 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
   },
 
   clearProgress: () => {
+    const activeLearningArea = get().activeLearningArea;
     const empty = {
+      activeLearningArea,
       attempts: [],
       totalPapersCompleted: 0,
       bestScores: {},

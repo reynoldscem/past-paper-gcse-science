@@ -6,31 +6,28 @@ import { generatePaper } from '../lib/paperGenerator';
 import { getAllQuestions } from '../data';
 import { getUnseenQuestionIds, getWeakQuestionIds } from '../lib/questionStats';
 import { topics, subjectMeta } from '../data/topics';
-import { Subject } from '../types';
 
 export function PaperSelectView() {
   const { selectedSubject, startQuiz, setView } = useAppStore();
   const { attempts } = useProgressStore();
   const allQuestions = useMemo(() => getAllQuestions(), []);
-
-  if (!selectedSubject) return null;
-
-  const meta = subjectMeta[selectedSubject];
-  const subjectTopics = topics[selectedSubject];
+  const subject = selectedSubject ?? 'biology';
+  const meta = subjectMeta[subject];
+  const subjectTopics = topics[subject];
 
   const topicCounts = useMemo(() => {
     const counts: Record<string, number> = {};
     for (const q of allQuestions) {
-      if (q.subject === selectedSubject) {
+      if (q.subject === subject) {
         counts[q.topic] = (counts[q.topic] || 0) + 1;
       }
     }
     return counts;
-  }, [allQuestions, selectedSubject]);
+  }, [allQuestions, subject]);
 
   const subjectQuestions = useMemo(
-    () => allQuestions.filter(q => q.subject === selectedSubject),
-    [allQuestions, selectedSubject],
+    () => allQuestions.filter(q => q.subject === subject),
+    [allQuestions, subject],
   );
 
   const unseenCount = useMemo(() => {
@@ -43,9 +40,11 @@ export function PaperSelectView() {
     return subjectQuestions.filter(q => weakIds.has(q.id)).length;
   }, [subjectQuestions, attempts]);
 
+  if (!selectedSubject) return null;
+
   const handleTopicSelect = (topicId: string) => {
     const paper = generatePaper(allQuestions, {
-      subject: selectedSubject as Subject,
+      subject,
       topic: topicId,
     });
     startQuiz(paper);
@@ -53,18 +52,18 @@ export function PaperSelectView() {
 
   const handleRandomSubject = () => {
     const paper = generatePaper(allQuestions, {
-      subject: selectedSubject as Subject,
+      subject,
     });
     startQuiz(paper);
   };
 
   const handleUnseen = () => {
-    const paper = generatePaper(allQuestions, { mode: 'unseen', subject: selectedSubject as Subject }, 20, attempts);
+    const paper = generatePaper(allQuestions, { mode: 'unseen', subject }, 20, attempts);
     startQuiz(paper);
   };
 
   const handleWeak = () => {
-    const paper = generatePaper(allQuestions, { mode: 'weak', subject: selectedSubject as Subject }, 20, attempts);
+    const paper = generatePaper(allQuestions, { mode: 'weak', subject }, 20, attempts);
     startQuiz(paper);
   };
 

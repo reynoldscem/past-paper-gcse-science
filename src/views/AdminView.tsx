@@ -4,6 +4,7 @@ import { useAppStore } from '../store/appStore';
 import { useProgressStore } from '../store/progressStore';
 import { exportAll, clearAll } from '../lib/storage';
 import { getAllQuestions } from '../data';
+import { learningAreaMeta, subjectLearningArea } from '../data/topics';
 
 export function AdminView() {
   const { setView, userName, logout } = useAppStore();
@@ -12,9 +13,11 @@ export function AdminView() {
   const [resetText, setResetText] = useState('');
 
   const allQuestions = getAllQuestions();
-  const biologyCount = allQuestions.filter(q => q.subject === 'biology').length;
-  const chemistryCount = allQuestions.filter(q => q.subject === 'chemistry').length;
-  const physicsCount = allQuestions.filter(q => q.subject === 'physics').length;
+  const questionCounts = allQuestions.reduce<Record<string, number>>((counts, q) => {
+    const area = subjectLearningArea[q.subject];
+    counts[area] = (counts[area] || 0) + 1;
+    return counts;
+  }, {});
   const totalAnswered = attempts.reduce((sum, a) => sum + a.total, 0);
 
   const handleExport = async () => {
@@ -159,7 +162,9 @@ export function AdminView() {
               <div className="flex justify-between">
                 <span className="text-navy-400">Question bank</span>
                 <span className="text-white font-medium">
-                  Bio {biologyCount} / Chem {chemistryCount} / Phys {physicsCount}
+                  {(Object.keys(learningAreaMeta) as Array<keyof typeof learningAreaMeta>)
+                    .map(area => `${learningAreaMeta[area].shortLabel} ${questionCounts[area] || 0}`)
+                    .join(' / ')}
                 </span>
               </div>
             </div>

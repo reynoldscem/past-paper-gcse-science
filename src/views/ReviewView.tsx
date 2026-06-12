@@ -12,7 +12,31 @@ export function ReviewView() {
   const [showAll, setShowAll] = useState(false);
 
   const attempt = attempts.find(a => a.id === reviewingAttemptId);
-  if (!attempt || !attempt.questions) {
+  const questions = attempt?.questions ?? [];
+  const total = questions.length;
+  const q = questions[currentIndex];
+  const userAnswer = attempt?.answers[currentIndex] ?? null;
+  const isCorrect = q ? userAnswer === q.correctIndex : false;
+  const wasSkipped = userAnswer === null;
+  const labels = ['A', 'B', 'C', 'D'];
+
+  const navigate = useCallback((newIndex: number) => {
+    setDirection(newIndex > currentIndex ? 1 : -1);
+    setCurrentIndex(newIndex);
+  }, [currentIndex]);
+
+  useEffect(() => {
+    const handleKey = (e: KeyboardEvent) => {
+      if (!attempt || total === 0) return;
+      if (showAll) return;
+      if (e.key === 'ArrowRight' && currentIndex < total - 1) navigate(currentIndex + 1);
+      if (e.key === 'ArrowLeft' && currentIndex > 0) navigate(currentIndex - 1);
+    };
+    window.addEventListener('keydown', handleKey);
+    return () => window.removeEventListener('keydown', handleKey);
+  }, [attempt, currentIndex, total, navigate, showAll]);
+
+  if (!attempt || !attempt.questions || !q) {
     return (
       <div className="max-w-md mx-auto px-4 py-16 text-center">
         <div className="glass-card rounded-2xl p-8">
@@ -27,29 +51,6 @@ export function ReviewView() {
       </div>
     );
   }
-
-  const questions = attempt.questions;
-  const total = questions.length;
-  const q = questions[currentIndex];
-  const userAnswer = attempt.answers[currentIndex];
-  const isCorrect = userAnswer === q.correctIndex;
-  const wasSkipped = userAnswer === null;
-  const labels = ['A', 'B', 'C', 'D'];
-
-  const navigate = useCallback((newIndex: number) => {
-    setDirection(newIndex > currentIndex ? 1 : -1);
-    setCurrentIndex(newIndex);
-  }, [currentIndex]);
-
-  useEffect(() => {
-    const handleKey = (e: KeyboardEvent) => {
-      if (showAll) return;
-      if (e.key === 'ArrowRight' && currentIndex < total - 1) navigate(currentIndex + 1);
-      if (e.key === 'ArrowLeft' && currentIndex > 0) navigate(currentIndex - 1);
-    };
-    window.addEventListener('keydown', handleKey);
-    return () => window.removeEventListener('keydown', handleKey);
-  }, [currentIndex, total, navigate, showAll]);
 
   if (showAll) {
     return (

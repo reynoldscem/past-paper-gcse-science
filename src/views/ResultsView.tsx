@@ -15,11 +15,12 @@ export function ResultsView() {
   const latestAttempt = attempts[attempts.length - 1];
   const paper = activePaper;
 
-  if (!paper || !latestAttempt) return <div />;
-
   const wrongQuestions = useMemo(() => {
+    if (!paper || !latestAttempt) return [];
     return paper.questions.filter(q => latestAttempt.wrongQuestionIds.includes(q.id));
   }, [paper, latestAttempt]);
+
+  if (!paper || !latestAttempt) return <div />;
 
   const wrongCount = wrongQuestions.length;
 

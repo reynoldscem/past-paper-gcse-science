@@ -1,4 +1,5 @@
 import { PaperAttempt, Question, Subject } from '../types';
+import { subjectOrder } from '../data/topics';
 
 export interface QuestionStat {
   id: string;
@@ -124,7 +125,7 @@ export function buildTopicStats(
 
   // Build subject stats
   const results: SubjectStat[] = [];
-  for (const subject of ['biology', 'chemistry', 'physics'] as Subject[]) {
+  for (const subject of subjectOrder) {
     const topics = subjectMap.get(subject) ?? [];
     const totalQuestions = topics.reduce((s, t) => s + t.totalQuestions, 0);
     const uniqueAttempted = topics.reduce((s, t) => s + t.uniqueAttempted, 0);
