@@ -18,13 +18,10 @@ export function QuizView() {
   const [direction, setDirection] = useState(1);
 
   const paper = activePaper;
-  if (!paper || !quizStartTime) return <div />;
-
-  const question = paper.questions[currentQuestionIndex];
-  const totalQuestions = paper.questions.length;
+  const totalQuestions = paper?.questions.length ?? 0;
   const answeredCount = activeAnswers.filter(a => a !== null).length;
   const skippedCount = totalQuestions - answeredCount;
-  const isLast = currentQuestionIndex === totalQuestions - 1;
+  const isLast = totalQuestions > 0 && currentQuestionIndex === totalQuestions - 1;
 
   const navigate = useCallback((newIndex: number) => {
     setDirection(newIndex > currentQuestionIndex ? 1 : -1);
@@ -46,6 +43,7 @@ export function QuizView() {
   };
 
   const handleSubmit = () => {
+    if (!paper || !quizStartTime) return;
     const timeSpent = Math.floor((Date.now() - quizStartTime) / 1000);
     const attempt = scorePaper(paper, activeAnswers, timeSpent);
     addAttempt(attempt);
@@ -57,6 +55,7 @@ export function QuizView() {
 
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
+      if (!paper) return;
       if (showSubmitConfirm) return;
       if (e.key === 'ArrowRight' && !isLast) navigate(currentQuestionIndex + 1);
       if (e.key === 'ArrowLeft' && currentQuestionIndex > 0) navigate(currentQuestionIndex - 1);
@@ -64,7 +63,11 @@ export function QuizView() {
     };
     window.addEventListener('keydown', handleKey);
     return () => window.removeEventListener('keydown', handleKey);
-  }, [currentQuestionIndex, isLast, navigate, setAnswer, showSubmitConfirm]);
+  }, [currentQuestionIndex, isLast, navigate, paper, setAnswer, showSubmitConfirm]);
+
+  if (!paper || !quizStartTime) return <div />;
+
+  const question = paper.questions[currentQuestionIndex];
 
   if (showSubmitConfirm) {
     return (

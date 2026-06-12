@@ -38,9 +38,9 @@ export function LoginView() {
         className="text-center mb-10"
       >
         <h1 className="text-4xl md:text-5xl font-extrabold mb-3">
-          <span className="shimmer-text">Science Revision</span>
+          <span className="shimmer-text">Revision Hub</span>
         </h1>
-        <p className="text-navy-400 text-lg">GCSE Foundation Level</p>
+        <p className="text-navy-400 text-lg">Science and UK driving theory practice</p>
       </motion.div>
 
       <motion.form

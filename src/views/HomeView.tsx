@@ -5,7 +5,7 @@ import { useProgressStore } from '../store/progressStore';
 import { generatePaper } from '../lib/paperGenerator';
 import { getAllQuestions } from '../data';
 import { getUnseenQuestionIds, getWeakQuestionIds, buildTopicStats } from '../lib/questionStats';
-import { subjectMeta } from '../data/topics';
+import { learningAreaMeta, subjectLearningArea, subjectMeta, subjectsByLearningArea } from '../data/topics';
 import { Subject } from '../types';
 
 function capitalize(s: string): string {
@@ -22,45 +22,57 @@ const greetingTemplates = [
 
 export function HomeView() {
   const { selectSubject, startQuiz, userName } = useAppStore();
-  const { totalPapersCompleted, attempts, streakDays } = useProgressStore();
+  const { activeLearningArea, setActiveLearningArea, totalPapersCompleted, attempts, streakDays } = useProgressStore();
   const displayName = capitalize(userName ?? 'you');
 
   const greeting = useMemo(() => greetingTemplates[Math.floor(Math.random() * greetingTemplates.length)](displayName), [displayName]);
   const allQuestions = useMemo(() => getAllQuestions(), []);
+  const activeMeta = learningAreaMeta[activeLearningArea];
+  const activeSubjects = subjectsByLearningArea[activeLearningArea];
+  const activeQuestions = useMemo(
+    () => allQuestions.filter(q => subjectLearningArea[q.subject] === activeLearningArea),
+    [allQuestions, activeLearningArea],
+  );
+  const activeAttempts = useMemo(
+    () => attempts.filter(a => a.questions.some(q => subjectLearningArea[q.subject] === activeLearningArea)),
+    [attempts, activeLearningArea],
+  );
 
   const avgScore = useMemo(() => {
-    if (attempts.length === 0) return 0;
-    return Math.round(attempts.reduce((sum, a) => sum + a.percentage, 0) / attempts.length);
-  }, [attempts]);
+    if (activeAttempts.length === 0) return 0;
+    return Math.round(activeAttempts.reduce((sum, a) => sum + a.percentage, 0) / activeAttempts.length);
+  }, [activeAttempts]);
 
   const latestBySubject = useMemo(() => {
     const latest: Record<string, { percentage: number; title: string }> = {};
-    for (const a of attempts) {
-      const subjectMatch = a.paperTitle.toLowerCase();
-      for (const s of ['biology', 'chemistry', 'physics'] as const) {
-        if (subjectMatch.includes(s)) {
-          latest[s] = { percentage: a.percentage, title: a.paperTitle };
-        }
+    for (const a of activeAttempts) {
+      const attemptSubjects = new Set(a.questions.map(q => q.subject));
+      for (const s of activeSubjects) {
+        if (attemptSubjects.has(s)) latest[s] = { percentage: a.percentage, title: a.paperTitle };
       }
+      const subjectMatch = a.paperTitle.toLowerCase();
       if (subjectMatch.includes('mixed')) {
         latest['mixed'] = { percentage: a.percentage, title: a.paperTitle };
       }
     }
     return latest;
-  }, [attempts]);
+  }, [activeAttempts, activeSubjects]);
 
   const unseenCount = useMemo(
-    () => getUnseenQuestionIds(allQuestions, attempts).size,
-    [allQuestions, attempts],
+    () => getUnseenQuestionIds(activeQuestions, activeAttempts).size,
+    [activeQuestions, activeAttempts],
   );
 
   const weakCount = useMemo(
-    () => getWeakQuestionIds(attempts).size,
-    [attempts],
+    () => {
+      const weakIds = getWeakQuestionIds(activeAttempts);
+      return activeQuestions.filter(q => weakIds.has(q.id)).length;
+    },
+    [activeQuestions, activeAttempts],
   );
 
   const weakTopicsBySubject = useMemo(() => {
-    const stats = buildTopicStats(allQuestions, attempts);
+    const stats = buildTopicStats(activeQuestions, activeAttempts);
     const result: Record<string, string[]> = {};
     for (const ss of stats) {
       const weak = ss.topics
@@ -69,20 +81,20 @@ export function HomeView() {
       if (weak.length > 0) result[ss.subject] = weak;
     }
     return result;
-  }, [allQuestions, attempts]);
+  }, [activeQuestions, activeAttempts]);
 
   const handleQuickMix = () => {
-    const paper = generatePaper(allQuestions, { mode: 'mixed' });
+    const paper = generatePaper(activeQuestions, { mode: 'mixed' });
     startQuiz(paper);
   };
 
   const handleUnseen = () => {
-    const paper = generatePaper(allQuestions, { mode: 'unseen' }, 20, attempts);
+    const paper = generatePaper(activeQuestions, { mode: 'unseen' }, 20, activeAttempts);
     startQuiz(paper);
   };
 
   const handleWeak = () => {
-    const paper = generatePaper(allQuestions, { mode: 'weak' }, 20, attempts);
+    const paper = generatePaper(activeQuestions, { mode: 'weak' }, 20, activeAttempts);
     startQuiz(paper);
   };
 
@@ -96,11 +108,36 @@ export function HomeView() {
         <h1 className="text-4xl md:text-5xl font-extrabold mb-3">
           <span className="shimmer-text">{greeting}</span>
         </h1>
-        <p className="text-navy-400 text-lg">Ready to smash some science?</p>
+        <p className="text-navy-400 text-lg">Ready for {activeMeta.shortLabel}?</p>
       </motion.div>
 
+      <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
+        {(Object.keys(learningAreaMeta) as Array<keyof typeof learningAreaMeta>).map((area) => {
+          const meta = learningAreaMeta[area];
+          const isActive = area === activeLearningArea;
+          return (
+            <button
+              key={area}
+              onClick={() => setActiveLearningArea(area)}
+              className={`
+                rounded-2xl p-4 text-left border transition-all
+                ${isActive ? 'glass-card border-accent/60' : 'bg-navy-900/40 border-navy-700 hover:border-navy-500'}
+              `}
+            >
+              <div className="flex items-start gap-3">
+                <span className="text-2xl">{meta.icon}</span>
+                <span>
+                  <span className="block font-bold" style={{ color: meta.color }}>{meta.label}</span>
+                  <span className="block text-sm text-navy-400 mt-1">{meta.description}</span>
+                </span>
+              </div>
+            </button>
+          );
+        })}
+      </div>
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
-        {(Object.keys(subjectMeta) as Subject[]).map((subject, i) => {
+        {activeSubjects.map((subject, i) => {
           const meta = subjectMeta[subject];
           return (
             <motion.button
@@ -205,7 +242,7 @@ export function HomeView() {
             </div>
             <div>
               <div className="text-3xl font-bold text-emerald-400">
-                {allQuestions.length > 0 ? Math.round(((allQuestions.length - unseenCount) / allQuestions.length) * 100) : 0}%
+                {activeQuestions.length > 0 ? Math.round(((activeQuestions.length - unseenCount) / activeQuestions.length) * 100) : 0}%
               </div>
               <div className="text-sm text-navy-400">Questions Seen</div>
             </div>
@@ -216,7 +253,7 @@ export function HomeView() {
               {Object.entries(weakTopicsBySubject).map(([subject, topics]) => (
                 <p key={subject} className="text-sm text-navy-300">
                   <span className="font-medium" style={{ color: subjectMeta[subject as Subject]?.color }}>
-                    {capitalize(subject)}:
+                    {subjectMeta[subject as Subject]?.label ?? capitalize(subject)}:
                   </span>{' '}
                   {topics.join(', ')}
                 </p>
@@ -224,7 +261,7 @@ export function HomeView() {
             </div>
           ) : unseenCount === 0 ? (
             <div className="mt-4 pt-4 border-t border-navy-700">
-              <p className="text-sm text-emerald-400">{'✨'} All questions seen, no areas need practice — smashing it!</p>
+              <p className="text-sm text-emerald-400">{'✨'} All questions seen, no areas need practice.</p>
             </div>
           ) : null}
           <div className="flex gap-3 justify-center mt-4">

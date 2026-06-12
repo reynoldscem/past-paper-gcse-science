@@ -1,6 +1,7 @@
 import { Question, Paper, Subject, PaperAttempt } from '../types';
 import { PAPER_SIZE } from './constants';
 import { getUnseenQuestionIds, getWeakQuestionIds } from './questionStats';
+import { learningAreaMeta, subjectLearningArea, subjectMeta } from '../data/topics';
 
 function shuffle<T>(array: T[]): T[] {
   const shuffled = [...array];
@@ -45,7 +46,7 @@ export function generatePaper(
     filtered = allQuestions.filter(q => unseenIds.has(q.id));
     if (mode.subject) {
       filtered = filtered.filter(q => q.subject === mode.subject);
-      title = `${capitalize(mode.subject)} - Unseen Questions`;
+      title = `${getSubjectLabel(mode.subject)} - Unseen Questions`;
       subject = mode.subject;
     } else {
       title = 'Unseen Questions';
@@ -64,7 +65,7 @@ export function generatePaper(
     filtered = allQuestions.filter(q => weakIds.has(q.id));
     if (mode.subject) {
       filtered = filtered.filter(q => q.subject === mode.subject);
-      title = `${capitalize(mode.subject)} - Need Practice`;
+      title = `${getSubjectLabel(mode.subject)} - Need Practice`;
       subject = mode.subject;
     } else {
       title = 'Need Practice';
@@ -80,7 +81,7 @@ export function generatePaper(
     }
   } else if ('mode' in mode && mode.mode === 'mixed') {
     filtered = allQuestions;
-    title = 'Mixed Science';
+    title = `Mixed ${getQuestionSetLabel(filtered)}`;
     subject = 'mixed';
   } else {
     const m = mode as { subject: Subject; topic?: string };
@@ -90,9 +91,9 @@ export function generatePaper(
       filtered = filtered.filter(q => q.topic === m.topic);
       topic = m.topic;
       const topicLabel = filtered[0]?.topicLabel ?? m.topic;
-      title = `${capitalize(m.subject)} - ${topicLabel}`;
+      title = `${getSubjectLabel(m.subject)} - ${topicLabel}`;
     } else {
-      title = `${capitalize(m.subject)} - Random`;
+      title = `${getSubjectLabel(m.subject)} - Random`;
     }
   }
 
@@ -111,4 +112,17 @@ export function generatePaper(
 
 function capitalize(s: string): string {
   return s.charAt(0).toUpperCase() + s.slice(1);
+}
+
+function getSubjectLabel(subject: Subject): string {
+  return subjectMeta[subject]?.label ?? capitalize(subject);
+}
+
+function getQuestionSetLabel(questions: Question[]): string {
+  const areas = new Set(questions.map(q => subjectLearningArea[q.subject]));
+  if (areas.size === 1) {
+    const [area] = [...areas];
+    return learningAreaMeta[area].shortLabel;
+  }
+  return 'Topics';
 }

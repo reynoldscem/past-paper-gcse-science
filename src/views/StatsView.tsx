@@ -4,17 +4,25 @@ import { useAppStore } from '../store/appStore';
 import { useProgressStore } from '../store/progressStore';
 import { getAllQuestions } from '../data';
 import { buildTopicStats } from '../lib/questionStats';
-import { subjectMeta } from '../data/topics';
+import { learningAreaMeta, subjectLearningArea, subjectMeta } from '../data/topics';
 import { Subject } from '../types';
 
 export function StatsView() {
   const { setView } = useAppStore();
-  const { attempts } = useProgressStore();
+  const { activeLearningArea, attempts } = useProgressStore();
   const allQuestions = useMemo(() => getAllQuestions(), []);
+  const activeQuestions = useMemo(
+    () => allQuestions.filter(q => subjectLearningArea[q.subject] === activeLearningArea),
+    [allQuestions, activeLearningArea],
+  );
+  const activeAttempts = useMemo(
+    () => attempts.filter(a => a.questions.some(q => subjectLearningArea[q.subject] === activeLearningArea)),
+    [attempts, activeLearningArea],
+  );
 
   const subjectStats = useMemo(
-    () => buildTopicStats(allQuestions, attempts),
-    [allQuestions, attempts],
+    () => buildTopicStats(activeQuestions, activeAttempts),
+    [activeQuestions, activeAttempts],
   );
 
   const accuracyColor = (acc: number) => {
@@ -44,10 +52,12 @@ export function StatsView() {
           >
             {'←'} Back
           </button>
-          <h2 className="text-2xl font-bold text-navy-100">Question Stats</h2>
+          <h2 className="text-2xl font-bold text-navy-100">
+            {learningAreaMeta[activeLearningArea].shortLabel} Stats
+          </h2>
         </div>
 
-        {attempts.length === 0 ? (
+        {activeAttempts.length === 0 ? (
           <div className="glass-card rounded-xl p-8 text-center text-navy-400">
             <p className="text-lg">No papers completed yet.</p>
             <p className="text-sm mt-2">Complete some quizzes to see your stats here.</p>

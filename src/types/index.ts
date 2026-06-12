@@ -1,4 +1,13 @@
-export type Subject = 'biology' | 'chemistry' | 'physics';
+export type LearningArea = 'science' | 'drivingTheory';
+
+export type Subject =
+  | 'biology'
+  | 'chemistry'
+  | 'physics'
+  | 'roadRules'
+  | 'roadSigns'
+  | 'hazardAwareness'
+  | 'vehicleSafety';
 
 export interface Question {
   id: string;
@@ -36,6 +45,7 @@ export interface PaperAttempt {
 }
 
 export interface AppProgress {
+  activeLearningArea: LearningArea;
   attempts: PaperAttempt[];
   totalPapersCompleted: number;
   bestScores: Record<string, number>;
