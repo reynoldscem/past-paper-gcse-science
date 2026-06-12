@@ -20,6 +20,7 @@ let historyInitialised = false;
 function App() {
   const view = useAppStore(s => s.view);
   const userName = useAppStore(s => s.userName);
+  const sessionToken = useAppStore(s => s.sessionToken);
   const hydrate = useProgressStore(s => s.hydrate);
   const loaded = useProgressStore(s => s.loaded);
 
@@ -31,15 +32,13 @@ function App() {
   }, []);
 
   useEffect(() => {
-    if (userName) {
+    if (userName && sessionToken) {
       useProgressStore.setState({ loaded: false });
       hydrate();
     }
-  }, [userName, hydrate]);
+  }, [userName, sessionToken, hydrate]);
 
-  const hasToken = !!sessionStorage.getItem('amy-science-token');
-
-  if (!userName || !hasToken) {
+  if (!userName || !sessionToken) {
     return (
       <div className="relative min-h-screen">
         <StarsBg />

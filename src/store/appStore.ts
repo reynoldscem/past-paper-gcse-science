@@ -4,6 +4,7 @@ import { ViewName, Paper, Subject } from '../types';
 interface AppState {
   view: ViewName;
   userName: string | null;
+  sessionToken: string | null;
   activePaper: Paper | null;
   activeAnswers: (number | null)[];
   checkedQuestions: Set<number>;
@@ -27,6 +28,7 @@ interface AppState {
 export const useAppStore = create<AppState>((set) => ({
   view: 'home',
   userName: localStorage.getItem('amy-science-user'),
+  sessionToken: sessionStorage.getItem('amy-science-token'),
   activePaper: null,
   activeAnswers: [],
   checkedQuestions: new Set(),
@@ -38,13 +40,17 @@ export const useAppStore = create<AppState>((set) => ({
   login: (name) => {
     const normalised = name.trim().toLowerCase();
     localStorage.setItem('amy-science-user', normalised);
-    set({ userName: normalised });
+    set({
+      userName: normalised,
+      sessionToken: sessionStorage.getItem('amy-science-token'),
+      view: 'home',
+    });
   },
 
   logout: () => {
     localStorage.removeItem('amy-science-user');
     sessionStorage.removeItem('amy-science-token');
-    set({ userName: null });
+    set({ userName: null, sessionToken: null, view: 'home' });
   },
 
   setView: (view) => set({ view }),
