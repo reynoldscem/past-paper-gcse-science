@@ -196,6 +196,8 @@ if (fs.existsSync(DIST_DIR)) {
   });
 }
 
-app.listen(PORT, '0.0.0.0', () => {
-  console.log(`Server running on http://0.0.0.0:${PORT}`);
+// '::' listens on IPv6 and IPv4 (dual-stack), so both localhost (::1) and 127.0.0.1 work
+const HOST = process.env.HOST || '::';
+app.listen(PORT, HOST, () => {
+  console.log(`Server running on http://[${HOST}]:${PORT}`);
 });
