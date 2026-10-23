@@ -32,3 +32,9 @@ Use Node 22.6+ for the test runner. Run `npm ci`, then `PORT=3001 npm run dev` (
 ## Left / limitations
 
 The optional simulator was not implemented. No footage was copied or re-hosted. Browser interaction and official embedded playback remain manual checks. Storage retains the existing whole-document, last-write-wins API, so simultaneous edits across tabs/devices can overwrite one another. Deployment and integration with the separate theory branch remain outside scope.
+
+## Browser practice follow-up
+
+Added verified links to https://toptests.co.uk/practice-hazard-perception-test/ and https://www.drivingtheory4all.co.uk/free-hazard-perception-test, prioritised PC/browser practice in the guide, and added Driving Theory 4 All alongside the existing TopTests source preset. Both pages loaded in the web tool and advertise free practice; embedded playback remains untested. TopTests is labelled third-party practice with its own interaction rules. The optional paid Theory Test Complete listing was omitted: a retailer lists £8.99 and 26 official sample clips, but its requirements specify Windows XP–8/DVD-ROM and current compatibility was not verified.
+
+Validation after this content update: lint, build, tests and diff whitespace check passed. No additional tests needed for links and a dropdown option. Changes committed and pushed in the browser-practice follow-up commit.

@@ -49,7 +49,7 @@ export function HazardView() {
           </div>
           <label className="block">Practice source preset<select className={input} defaultValue="" onChange={e => { if (e.target.value) setSource(e.target.value); }}>
             <option value="">Choose a source (optional)</option>
-            {['DVSA Safe Driving for Life', 'Official DVSA / TSO app', 'RAC Driving Theory Test Kit', 'iTheory', 'Hazard Perception Test Kit UK', 'Revision Clips', 'toptests.co.uk'].map(name => <option key={name}>{name}</option>)}
+            {['DVSA Safe Driving for Life', 'Official DVSA / TSO app', 'RAC Driving Theory Test Kit', 'iTheory', 'Hazard Perception Test Kit UK', 'Revision Clips', 'toptests.co.uk', 'Driving Theory 4 All (drivingtheory4all.co.uk)'].map(name => <option key={name}>{name}</option>)}
           </select></label>
           <label className="block">Source name or details<input required maxLength={200} value={source} onChange={e => setSource(e.target.value)} className={input} /></label>
           <p className="text-sm text-navy-300">Choose a preset or enter any source. Listing a source does not verify its price, licensing or official status.</p>

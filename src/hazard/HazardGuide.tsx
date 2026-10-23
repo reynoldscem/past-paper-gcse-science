@@ -44,7 +44,14 @@ export function HazardGuide() {
       <p className="text-sm text-navy-300 mt-3">These are learning examples, not a list of guaranteed scoring hazards. Rule references checked against GOV.UK on 23 October 2026.</p>
     </section>
     <section className="glass-card rounded-2xl p-6 space-y-3">
-      <h2 className="text-2xl font-bold">Practise with official resources</h2>
+      <h2 className="text-2xl font-bold">Practise on PC in your browser</h2>
+      <ul className="list-disc pl-6 space-y-2">
+        <li><a className="underline" href="https://toptests.co.uk/practice-hazard-perception-test/">TopTests — free browser hazard perception practice</a>. Select “Start Now”. This third-party practice uses its own interaction rules; follow the GOV.UK guidance above for the real test.</li>
+        <li><a className="underline" href="https://www.drivingtheory4all.co.uk/free-hazard-perception-test">Driving Theory 4 All — free online hazard perception test</a>. Choose the car test. The provider advertises free practice without payment details; paid packages are listed separately.</li>
+      </ul>
+      <p>Use a mouse to practise on PC, then record the displayed score and source below. Choose “Full test / 75” only when the result is actually out of 75; otherwise record each clip with its stated maximum.</p>
+      <p className="text-sm text-navy-300">Both practice pages loaded when checked on 23 October 2026. Embedded video playback has not been tested.</p>
+      <h3 className="text-xl font-bold">Official resources</h3>
       <p><a className="underline" href="https://www.gov.uk/take-practice-theory-test">GOV.UK free practice resources</a> links to three free hazard perception clips hosted on <a className="underline" href="https://www.safedrivingforlife.info/free-practice-tests/hazard-perception-test/">Safe Driving for Life (DVSA)</a>, not on GOV.UK itself.</p>
       <p>Three clips help you learn the format; they are not a full 75-point test. Log each clip separately below. For full practice tests, use the <a className="underline" href="https://www.gov.uk/theory-test/revision-and-practice">official DVSA revision products</a> (paid options). Return here to record your result and the cues you missed.</p>
     </section>
