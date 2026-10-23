@@ -89,3 +89,12 @@ test('science practice retains its existing size and has no mock restrictions', 
   assert.equal(paper.durationSeconds, undefined);
   assert.equal(paper.passMark, undefined);
 });
+
+test('unanswered mock questions contribute to weak-topic statistics', () => {
+  const paper = generatePaper(bank, { mode: 'driving-mock' });
+  const attempt = scorePaper(paper, paper.questions.map(() => null), 3420);
+  const stats = buildTopicStats(driving, [attempt]).flatMap(s => s.topics).filter(t => t.totalAttempts > 0);
+  assert.ok(stats.length > 0);
+  assert.ok(stats.every(t => t.accuracy === 0));
+  assert.ok(generatePaper(driving, { mode: 'weak-topics' }, 20, [attempt]).questions.length > 0);
+});

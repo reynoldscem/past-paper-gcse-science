@@ -7,3 +7,6 @@ backups/
 papers/
 .claude/
 sites/
+
+playwright-report/
+test-results/

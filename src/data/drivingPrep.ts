@@ -578,5 +578,136 @@ export const drivingPrepQuestions: Question[] = [
     "explanation": "The updated Code makes the prohibition at lowered kerbs in Scotland explicit.",
     "highwayCodeRule": "243",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/waiting-and-parking-238-to-252"
+  },
+  {
+    "id": "dt-prep-035",
+    "subject": "roadRules",
+    "topic": "highway-code",
+    "topicLabel": "Highway Code",
+    "question": "You see this sign on a single carriageway. What is the maximum speed for a car without a trailer, if conditions allow?",
+    "options": [
+      "60 mph",
+      "70 mph",
+      "50 mph",
+      "30 mph"
+    ],
+    "correctIndex": 0,
+    "explanation": "For a car without a trailer the national limit is 60 mph on a single carriageway. A lower safe speed may be necessary.",
+    "highwayCodeRule": "124",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/general-rules-techniques-and-advice-for-all-drivers-and-riders-103-to-158",
+    "image": {
+      "src": "/driving/sign-giving-order-national-speed-limit.jpg",
+      "alt": "White circle with a black diagonal stripe"
+    }
+  },
+  {
+    "id": "dt-prep-036",
+    "subject": "roadRules",
+    "topic": "highway-code",
+    "topicLabel": "Highway Code",
+    "question": "You see this sign on a dual carriageway. What is the maximum speed for a car without a trailer, if conditions allow?",
+    "options": [
+      "70 mph",
+      "60 mph",
+      "50 mph",
+      "80 mph"
+    ],
+    "correctIndex": 0,
+    "explanation": "A car without a trailer may travel up to 70 mph on a dual carriageway under the national limit. A central reservation, not the number of lanes, defines a dual carriageway.",
+    "highwayCodeRule": "124",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/general-rules-techniques-and-advice-for-all-drivers-and-riders-103-to-158",
+    "image": {
+      "src": "/driving/sign-giving-order-national-speed-limit.jpg",
+      "alt": "White circle with a black diagonal stripe"
+    }
+  },
+  {
+    "id": "dt-prep-037",
+    "subject": "roadRules",
+    "topic": "highway-code",
+    "topicLabel": "Highway Code",
+    "question": "You see this sign on a single carriageway while towing a caravan with a car. What is your maximum permitted speed?",
+    "options": [
+      "50 mph",
+      "60 mph",
+      "70 mph",
+      "40 mph"
+    ],
+    "correctIndex": 0,
+    "explanation": "Cars towing caravans or trailers are limited to 50 mph on single carriageways and 60 mph on dual carriageways and motorways.",
+    "highwayCodeRule": "124",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/general-rules-techniques-and-advice-for-all-drivers-and-riders-103-to-158",
+    "image": {
+      "src": "/driving/sign-giving-order-national-speed-limit.jpg",
+      "alt": "White circle with a black diagonal stripe"
+    }
+  },
+  {
+    "id": "dt-prep-038",
+    "subject": "vehicleSafety",
+    "topic": "vehicle-handling",
+    "topicLabel": "Vehicle Handling",
+    "question": "Your car has anti-lock brakes. In an emergency, how should you brake?",
+    "options": [
+      "Apply firm continuous pressure and follow the handbook advice",
+      "Pump the pedal repeatedly",
+      "Use only the handbrake",
+      "Release the brake whenever it pulses"
+    ],
+    "correctIndex": 0,
+    "explanation": "ABS helps retain steering control under hard braking. Do not assume it will shorten your stopping distance.",
+    "highwayCodeRule": "120",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/general-rules-techniques-and-advice-for-all-drivers-and-riders-103-to-158"
+  },
+  {
+    "id": "dt-prep-039",
+    "subject": "vehicleSafety",
+    "topic": "vehicle-handling",
+    "topicLabel": "Vehicle Handling",
+    "question": "Why is coasting downhill in neutral unsafe?",
+    "options": [
+      "It reduces control and removes engine braking",
+      "It improves steering response",
+      "It increases tyre grip",
+      "It makes the footbrake unnecessary"
+    ],
+    "correctIndex": 0,
+    "explanation": "Coasting removes engine braking, may increase speed downhill and can make it harder to select the right gear.",
+    "highwayCodeRule": "122",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/general-rules-techniques-and-advice-for-all-drivers-and-riders-103-to-158"
+  },
+  {
+    "id": "dt-prep-040",
+    "subject": "vehicleSafety",
+    "topic": "vehicle-condition",
+    "topicLabel": "Vehicle Condition",
+    "question": "Lane-keeping assistance is active. Who remains responsible for controlling the car?",
+    "options": [
+      "The driver",
+      "The manufacturer",
+      "The nearest passenger",
+      "Nobody while lane lines are visible"
+    ],
+    "correctIndex": 0,
+    "explanation": "Driver assistance is not authorised self-driving. You remain responsible and must understand the system limits.",
+    "highwayCodeRule": "150",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/general-rules-techniques-and-advice-for-all-drivers-and-riders-103-to-158"
+  },
+  {
+    "id": "dt-prep-041",
+    "subject": "vehicleSafety",
+    "topic": "vehicle-condition",
+    "topicLabel": "Vehicle Condition",
+    "question": "Adaptive cruise control is operating when weather worsens. What should you do?",
+    "options": [
+      "Stay alert, adjust to the conditions and be ready to take control",
+      "Assume the system handles every hazard",
+      "Stop checking the road ahead",
+      "Use a handheld phone"
+    ],
+    "correctIndex": 0,
+    "explanation": "Assistance features do not replace observation or safe judgement. Follow the vehicle handbook and keep control.",
+    "highwayCodeRule": "150",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/general-rules-techniques-and-advice-for-all-drivers-and-riders-103-to-158"
   }
 ];
