@@ -112,6 +112,7 @@ export function ResultsView() {
         total={latestAttempt.total}
         percentage={latestAttempt.percentage}
         timeSpentSeconds={latestAttempt.timeSpentSeconds}
+        passMark={latestAttempt.passMark}
       />
 
       <motion.div

@@ -31,6 +31,8 @@ export const topics = {
     { id: 'electromagnetism', label: 'Electromagnetism', icon: '\u{1F9F2}', color: '#d946ef' },
   ],
   roadRules: [
+    { id: 'attitude', label: 'Attitude', icon: '🤝', color: '#0ea5e9' },
+
     { id: 'highway-code', label: 'Highway Code', icon: '\u{1F6E3}\uFE0F', color: '#0ea5e9' },
     { id: 'junctions-roundabouts', label: 'Junctions & Roundabouts', icon: '\u{1F501}', color: '#22c55e' },
     { id: 'motorways', label: 'Motorways', icon: '\u{1F6E3}\uFE0F', color: '#6366f1' },
@@ -42,11 +44,18 @@ export const topics = {
     { id: 'road-markings', label: 'Road Markings', icon: '\u{1F6D1}', color: '#14b8a6' },
   ],
   hazardAwareness: [
+    { id: 'alertness', label: 'Alertness', icon: '👀', color: '#0ea5e9' },
+    { id: 'safety-margins', label: 'Safety Margins', icon: '↔️', color: '#0ea5e9' },
+    { id: 'other-vehicles', label: 'Other Types of Vehicle', icon: '🚚', color: '#0ea5e9' },
+
     { id: 'vulnerable-road-users', label: 'Vulnerable Road Users', icon: '\u{1F6B6}', color: '#ec4899' },
     { id: 'stopping-distances', label: 'Stopping Distances', icon: '\u23F1\uFE0F', color: '#f97316' },
     { id: 'incidents', label: 'Breakdowns & Incidents', icon: '\u{1F9EF}', color: '#a855f7' },
   ],
   vehicleSafety: [
+    { id: 'vehicle-handling', label: 'Vehicle Handling', icon: '🚗', color: '#0ea5e9' },
+    { id: 'vehicle-loading', label: 'Vehicle Loading', icon: '🧳', color: '#0ea5e9' },
+
     { id: 'vehicle-condition', label: 'Vehicle Condition', icon: '\u{1F697}', color: '#06b6d4' },
     { id: 'documents-loading', label: 'Documents & Loading', icon: '\u{1F4C4}', color: '#eab308' },
     { id: 'seat-belts', label: 'Seat Belts & Restraints', icon: '\u{1FA91}', color: '#10b981' },

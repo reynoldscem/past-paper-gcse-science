@@ -30,6 +30,8 @@ export function initHistory() {
         return;
       }
       useAppStore.getState().resetQuiz();
+    } else if (targetView === 'quiz' && useAppStore.getState().view === 'results') {
+      window.history.replaceState({ view: 'results' }, '', '#results');
     } else {
       useAppStore.setState({ view: targetView });
     }

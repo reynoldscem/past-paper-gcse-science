@@ -66,13 +66,15 @@ export const useAppStore = create<AppState>((set) => ({
 
   setAnswer: (questionIndex, answerIndex) => set((state) => {
     if (state.checkedQuestions.has(questionIndex)) return state;
+    if (state.activePaper?.durationSeconds && state.quizStartTime &&
+        Date.now() >= state.quizStartTime + state.activePaper.durationSeconds * 1000) return state;
     const newAnswers = [...state.activeAnswers];
     newAnswers[questionIndex] = answerIndex;
     return { activeAnswers: newAnswers };
   }),
 
   quickCheck: (questionIndex) => set((state) => {
-    if (state.activeAnswers[questionIndex] === null) return state;
+    if (state.activePaper?.mode === 'driving-mock' || state.activeAnswers[questionIndex] === null) return state;
     const newChecked = new Set(state.checkedQuestions);
     newChecked.add(questionIndex);
     return { checkedQuestions: newChecked };

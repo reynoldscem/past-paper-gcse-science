@@ -1,3 +1,4 @@
+import { QuestionImage, QuestionExplanation } from './QuestionMedia';
 import { Question } from '../../types';
 
 interface QuestionCardProps {
@@ -8,10 +9,11 @@ interface QuestionCardProps {
   onQuickCheck: () => void;
   questionNumber: number;
   total: number;
+  allowQuickCheck?: boolean;
 }
 
 export function QuestionCard({
-  question, selectedAnswer, isChecked, onSelectAnswer, onQuickCheck, questionNumber, total,
+  question, selectedAnswer, isChecked, onSelectAnswer, onQuickCheck, questionNumber, total, allowQuickCheck = true,
 }: QuestionCardProps) {
   const labels = ['A', 'B', 'C', 'D'];
 
@@ -29,6 +31,7 @@ export function QuestionCard({
         {question.question}
       </p>
 
+      <QuestionImage question={question} />
       <div className="space-y-3">
         {question.options.map((option, i) => {
           const isSelected = selectedAnswer === i;
@@ -87,7 +90,7 @@ export function QuestionCard({
       </div>
 
       {/* Quick Check button */}
-      {!isChecked && selectedAnswer !== null && (
+      {allowQuickCheck && !isChecked && selectedAnswer !== null && (
         <div className="mt-4 text-center">
           <button
             onClick={onQuickCheck}
@@ -105,12 +108,7 @@ export function QuestionCard({
 
       {/* Explanation shown after quick check */}
       {isChecked && (
-        <div className="mt-5 bg-navy-800/50 rounded-lg p-4 border-l-4 border-accent">
-          <p className="text-sm text-navy-200 leading-relaxed">
-            <span className="text-accent-light font-semibold">{'💡'} </span>
-            {question.explanation}
-          </p>
-        </div>
+        <QuestionExplanation question={question} />
       )}
     </div>
   );

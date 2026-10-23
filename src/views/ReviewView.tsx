@@ -1,3 +1,4 @@
+import { QuestionImage, QuestionExplanation } from '../components/quiz/QuestionMedia';
 import { useState, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAppStore } from '../store/appStore';
@@ -97,6 +98,7 @@ export function ReviewView() {
                     {question.question}
                   </p>
                 </div>
+                <QuestionImage question={question} />
                 <div className="ml-6 space-y-1 text-sm">
                   {!skipped && (
                     <p className={correct ? 'text-emerald-400' : 'text-red-400'}>
@@ -109,9 +111,7 @@ export function ReviewView() {
                       Correct: {labels[question.correctIndex]}) {question.options[question.correctIndex]}
                     </p>
                   )}
-                  {!correct && (
-                    <p className="text-navy-300 text-xs mt-1">{'💡'} {question.explanation}</p>
-                  )}
+                  <QuestionExplanation question={question} />
                 </div>
               </motion.div>
             );
@@ -180,6 +180,7 @@ export function ReviewView() {
               {q.question}
             </p>
 
+            <QuestionImage question={q} />
             <div className="space-y-3">
               {q.options.map((option, i) => {
                 const isUserPick = userAnswer === i;
@@ -213,14 +214,7 @@ export function ReviewView() {
               })}
             </div>
 
-            {!isCorrect && (
-              <div className="mt-5 bg-navy-800/50 rounded-lg p-4 border-l-4 border-accent">
-                <p className="text-sm text-navy-200 leading-relaxed">
-                  <span className="text-accent-light font-semibold">{'💡'} </span>
-                  {q.explanation}
-                </p>
-              </div>
-            )}
+            <QuestionExplanation question={q} />
           </div>
         </motion.div>
       </AnimatePresence>

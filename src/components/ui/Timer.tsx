@@ -3,10 +3,11 @@ import { TIMER_SECONDS } from '../../lib/constants';
 
 interface TimerProps {
   startTime: number;
+  durationSeconds?: number;
 }
 
-export function Timer({ startTime }: TimerProps) {
-  const [elapsed, setElapsed] = useState(0);
+export function Timer({ startTime, durationSeconds }: TimerProps) {
+  const [elapsed, setElapsed] = useState(() => Math.max(0, Math.floor((Date.now() - startTime) / 1000)));
 
   useEffect(() => {
     const interval = setInterval(() => {
@@ -15,10 +16,11 @@ export function Timer({ startTime }: TimerProps) {
     return () => clearInterval(interval);
   }, [startTime]);
 
-  const minutes = Math.floor(elapsed / 60);
-  const seconds = elapsed % 60;
-  const overTime = elapsed > TIMER_SECONDS;
-  const warning = elapsed > TIMER_SECONDS - 300 && !overTime;
+  const display = durationSeconds ? Math.max(0, durationSeconds - elapsed) : elapsed;
+  const minutes = Math.floor(display / 60);
+  const seconds = display % 60;
+  const overTime = elapsed >= (durationSeconds ?? TIMER_SECONDS);
+  const warning = elapsed > (durationSeconds ?? TIMER_SECONDS) - 300 && !overTime;
 
   return (
     <div className={`

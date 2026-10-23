@@ -1,4 +1,6 @@
 import { Question, Paper, Subject, PaperAttempt } from '../types';
+import { drivingSyllabus } from '../data/drivingSyllabus';
+import { buildTopicStats } from './questionStats';
 import { PAPER_SIZE } from './constants';
 import { getUnseenQuestionIds, getWeakQuestionIds } from './questionStats';
 import { learningAreaMeta, subjectLearningArea, subjectMeta } from '../data/topics';
@@ -27,6 +29,8 @@ function generateId(): string {
 export type PaperMode =
   | { subject: Subject; topic?: string }
   | { mode: 'mixed' }
+  | { mode: 'driving-mock' }
+  | { mode: 'weak-topics' }
   | { mode: 'unseen'; subject?: Subject }
   | { mode: 'weak'; subject?: Subject };
 
@@ -41,7 +45,36 @@ export function generatePaper(
   let subject: Subject | 'mixed';
   let topic: string | undefined;
 
-  if ('mode' in mode && mode.mode === 'unseen') {
+  if ('mode' in mode && mode.mode === 'driving-mock') {
+    const pool = allQuestions.filter(q => subjectLearningArea[q.subject] === 'drivingTheory');
+    if (pool.length < 50) throw new Error('A driving mock needs at least 50 questions.');
+    const chosen = new Map<string, Question>();
+    // Guarantee breadth and visual practice; these are practice weights, not DVSA quotas.
+    for (const area of drivingSyllabus) {
+      const candidates = shuffle(pool.filter(q => area.topics.includes(q.topic) && !chosen.has(q.id)));
+      for (const q of candidates.slice(0, 2)) chosen.set(q.id, q);
+    }
+    for (const q of shuffle(pool.filter(q => q.image && !chosen.has(q.id))).slice(0, 12)) chosen.set(q.id, q);
+    for (const q of shuffle(pool.filter(q => !chosen.has(q.id)))) {
+      if (chosen.size >= 50) break;
+      chosen.set(q.id, q);
+    }
+    return {
+      id: generateId(), title: 'Driving Theory Mock — 50 questions', subject: 'mixed',
+      questions: shuffle([...chosen.values()]).slice(0, 50).map(shuffleOptions), createdAt: Date.now(),
+      mode: 'driving-mock', durationSeconds: 57 * 60, passMark: 43,
+    };
+  } else if ('mode' in mode && mode.mode === 'weak-topics') {
+    const stats = buildTopicStats(allQuestions, attempts).flatMap(s => s.topics)
+      .filter(t => t.totalAttempts > 0 && t.accuracy < 86)
+      .sort((a, b) => a.accuracy - b.accuracy);
+    const weakest = stats.slice(0, 3);
+    filtered = allQuestions.filter(q => weakest.some(t => t.subject === q.subject && t.topic === q.topic));
+    title = 'Weak-topic Practice';
+    subject = 'mixed';
+    // No random padding: a short paper is preferable to unrelated questions.
+    if (!filtered.length) throw new Error('Complete a paper first to identify weak topics.');
+  } else if ('mode' in mode && mode.mode === 'unseen') {
     const unseenIds = getUnseenQuestionIds(allQuestions, attempts);
     filtered = allQuestions.filter(q => unseenIds.has(q.id));
     if (mode.subject) {

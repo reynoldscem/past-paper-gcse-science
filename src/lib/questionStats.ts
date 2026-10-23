@@ -57,7 +57,7 @@ export function buildQuestionStats(attempts: PaperAttempt[]): Map<string, Questi
         stats.set(q.id, stat);
       }
 
-      if (answer !== null) {
+      if (answer != null || attempt.passMark !== undefined) {
         stat.timesAttempted++;
         if (isCorrect) stat.timesCorrect++;
         else stat.timesWrong++;

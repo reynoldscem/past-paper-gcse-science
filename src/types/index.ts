@@ -19,6 +19,8 @@ export interface Question {
   correctIndex: number;
   explanation: string;
   learnMoreUrl: string;
+  highwayCodeRule?: string;
+  image?: { src: string; alt: string };
 }
 
 export interface Paper {
@@ -28,6 +30,9 @@ export interface Paper {
   topic?: string;
   questions: Question[];
   createdAt: number;
+  mode?: 'driving-mock';
+  durationSeconds?: number;
+  passMark?: number;
 }
 
 export interface PaperAttempt {
@@ -39,6 +44,7 @@ export interface PaperAttempt {
   total: number;
   percentage: number;
   completedAt: number;
+  passMark?: number;
   timeSpentSeconds: number;
   wrongQuestionIds: string[];
   questions: Question[];

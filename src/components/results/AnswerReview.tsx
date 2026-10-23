@@ -1,4 +1,5 @@
 import { motion } from 'framer-motion';
+import { QuestionImage, QuestionExplanation } from '../quiz/QuestionMedia';
 import { Question } from '../../types';
 
 interface AnswerReviewProps {
@@ -26,6 +27,7 @@ export function AnswerReview({ question, userAnswerIndex, index }: AnswerReviewP
         </p>
       </div>
 
+      <QuestionImage question={question} />
       <div className="space-y-2 mb-4">
         {!wasSkipped && (
           <div className={`flex items-center gap-2 ${isCorrect ? 'text-emerald-400' : 'text-red-400'}`}>
@@ -47,14 +49,7 @@ export function AnswerReview({ question, userAnswerIndex, index }: AnswerReviewP
         )}
       </div>
 
-      {!isCorrect && (
-        <div className="bg-navy-800/50 rounded-lg p-4 border-l-4 border-accent">
-          <p className="text-sm text-navy-200 leading-relaxed">
-            <span className="text-accent-light font-semibold">{'💡'} </span>
-            {question.explanation}
-          </p>
-        </div>
-      )}
+      <QuestionExplanation question={question} />
     </motion.div>
   );
 }

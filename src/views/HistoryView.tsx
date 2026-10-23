@@ -51,7 +51,7 @@ export function HistoryView() {
                 >
                   <div className={`
                     w-14 h-14 rounded-xl flex items-center justify-center text-xl font-bold shrink-0
-                    ${attempt.percentage >= 70 ? 'bg-emerald-500/20 text-emerald-400' :
+                    ${(attempt.passMark !== undefined ? attempt.score >= attempt.passMark : attempt.percentage >= 70) ? 'bg-emerald-500/20 text-emerald-400' :
                       attempt.percentage >= 50 ? 'bg-amber-500/20 text-amber-400' :
                       'bg-red-500/20 text-red-400'}
                   `}>
@@ -60,6 +60,7 @@ export function HistoryView() {
 
                   <div className="flex-1 min-w-0">
                     <p className="font-medium text-navy-100 truncate">{attempt.paperTitle}</p>
+                    {attempt.passMark !== undefined && <p className="text-xs text-navy-300">{attempt.score >= attempt.passMark ? 'Mock passed' : 'Not passed'} · Pass mark {attempt.passMark}/{attempt.total}</p>}
                     <p className="text-xs text-navy-400 mt-0.5">
                       {dateStr} at {timeStr} &middot; {attempt.score}/{attempt.total} &middot; {mins}:{String(secs).padStart(2, '0')}
                     </p>

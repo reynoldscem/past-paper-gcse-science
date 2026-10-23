@@ -22,6 +22,7 @@ export function scorePaper(
   return {
     id: Date.now().toString(36) + Math.random().toString(36).slice(2, 8),
     paperId: paper.id,
+    passMark: paper.passMark,
     paperTitle: paper.title,
     answers,
     score,

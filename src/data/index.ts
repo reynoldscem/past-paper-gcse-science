@@ -1,3 +1,6 @@
+import { drivingVisualQuestions } from './drivingVisual';
+import { drivingPrepQuestions } from './drivingPrep';
+import { withDrivingReference } from './drivingReferences';
 import { biologyQuestions } from './biology';
 import { chemistryQuestions } from './chemistry';
 import { drivingTheoryQuestions } from './drivingTheory';
@@ -9,8 +12,10 @@ const allQuestions: Question[] = [
   ...biologyQuestions,
   ...chemistryQuestions,
   ...physicsQuestions,
-  ...drivingTheoryQuestions,
-  ...drivingTheoryExpandedQuestions,
+  ...drivingTheoryQuestions.map(withDrivingReference),
+  ...drivingTheoryExpandedQuestions.map(withDrivingReference),
+  ...drivingVisualQuestions,
+  ...drivingPrepQuestions,
 ];
 
 export function getAllQuestions(): Question[] {

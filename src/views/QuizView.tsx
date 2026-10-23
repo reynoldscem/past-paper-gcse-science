@@ -1,4 +1,4 @@
-import { useCallback, useEffect, useState } from 'react';
+import { useCallback, useEffect, useState, useRef } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useAppStore } from '../store/appStore';
 import { QuestionCard } from '../components/quiz/QuestionCard';
@@ -16,6 +16,8 @@ export function QuizView() {
   const { addAttempt } = useProgressStore();
   const [showSubmitConfirm, setShowSubmitConfirm] = useState(false);
   const [direction, setDirection] = useState(1);
+  const [flagged, setFlagged] = useState<Set<number>>(new Set());
+  const submitted = useRef(false);
 
   const paper = activePaper;
   const totalQuestions = paper?.questions.length ?? 0;
@@ -42,16 +44,32 @@ export function QuizView() {
     }
   };
 
-  const handleSubmit = () => {
-    if (!paper || !quizStartTime) return;
+  const handleSubmit = useCallback(() => {
+    if (!paper || !quizStartTime || submitted.current) return;
+    submitted.current = true;
+    if (useProgressStore.getState().attempts.some(a => a.paperId === paper.id)) {
+      useAppStore.setState({ view: 'results' });
+      return;
+    }
     const timeSpent = Math.floor((Date.now() - quizStartTime) / 1000);
-    const attempt = scorePaper(paper, activeAnswers, timeSpent);
+    const attempt = scorePaper(paper, activeAnswers, Math.min(timeSpent, paper.durationSeconds ?? Infinity));
     addAttempt(attempt);
 
     useAppStore.setState({
       view: 'results',
     });
-  };
+  }, [paper, quizStartTime, activeAnswers, addAttempt]);
+
+  useEffect(() => {
+    if (!paper?.durationSeconds || !quizStartTime) return;
+    const checkDeadline = () => {
+      if (Date.now() >= quizStartTime + paper.durationSeconds! * 1000) handleSubmit();
+    };
+    checkDeadline();
+    const timer = window.setInterval(checkDeadline, 250);
+    window.addEventListener('focus', checkDeadline);
+    return () => { window.clearInterval(timer); window.removeEventListener('focus', checkDeadline); };
+  }, [paper, quizStartTime, handleSubmit]);
 
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
@@ -78,6 +96,8 @@ export function QuizView() {
           className="glass-card rounded-2xl p-8 text-center"
         >
           <h2 className="text-2xl font-bold mb-6">Ready to submit?</h2>
+          <Timer startTime={quizStartTime} durationSeconds={paper.durationSeconds} />
+          <p className="text-sm my-3">Flagged for review: {flagged.size}. The timer keeps running.</p>
           <div className="space-y-2 mb-6 text-navy-300">
             <p>Answered: <span className="text-white font-bold">{answeredCount}/{totalQuestions}</span></p>
             {skippedCount > 0 && (
@@ -112,7 +132,7 @@ export function QuizView() {
     <div className="max-w-2xl mx-auto px-4 py-6">
       <div className="flex items-center justify-between mb-2">
         <h2 className="text-sm font-medium text-navy-400 truncate mr-4">{paper.title}</h2>
-        <Timer startTime={quizStartTime} />
+        <Timer startTime={quizStartTime} durationSeconds={paper.durationSeconds} />
       </div>
 
       <div className="mb-6">
@@ -140,6 +160,7 @@ export function QuizView() {
             onQuickCheck={() => quickCheck(currentQuestionIndex)}
             questionNumber={currentQuestionIndex + 1}
             total={totalQuestions}
+            allowQuickCheck={paper.mode !== 'driving-mock'}
           />
         </motion.div>
       </AnimatePresence>
@@ -178,6 +199,14 @@ export function QuizView() {
         </button>
       </div>
 
+      {paper.mode === 'driving-mock' && <div className="mt-5 space-y-3">
+        <button aria-pressed={flagged.has(currentQuestionIndex)} className="px-4 py-2 rounded-lg bg-amber-900 text-amber-100" onClick={() => setFlagged(previous => {
+          const next = new Set(previous);
+          if (next.has(currentQuestionIndex)) next.delete(currentQuestionIndex); else next.add(currentQuestionIndex);
+          return next;
+        })}>{flagged.has(currentQuestionIndex) ? 'Unflag question' : 'Flag for review'}</button>
+        <div className="flex flex-wrap gap-2" aria-label="Flagged questions">{[...flagged].sort((a,b) => a-b).map(index => <button className="px-3 py-1 bg-navy-700 rounded" key={index} onClick={() => navigate(index)}>Flagged Q{index + 1}</button>)}</div>
+      </div>}
       <DotNav
         total={totalQuestions}
         current={currentQuestionIndex}

@@ -7,9 +7,10 @@ interface ScoreCardProps {
   total: number;
   percentage: number;
   timeSpentSeconds: number;
+  passMark?: number;
 }
 
-export function ScoreCard({ score, total, percentage, timeSpentSeconds }: ScoreCardProps) {
+export function ScoreCard({ score, total, percentage, timeSpentSeconds, passMark }: ScoreCardProps) {
   const userName = useAppStore(s => s.userName) ?? 'you';
   const { message, emoji } = getScoreReaction(percentage, userName);
   const stars = getStarCount(percentage);
@@ -33,15 +34,16 @@ export function ScoreCard({ score, total, percentage, timeSpentSeconds }: ScoreC
       </motion.div>
 
       <h2 className="shimmer-text text-2xl md:text-3xl font-bold mb-4">
-        {message}
+        {passMark !== undefined ? (score >= passMark ? 'Mock passed!' : 'Not passed yet — keep practising') : message}
       </h2>
 
+      {passMark !== undefined && <p className="mb-4 text-navy-300">Pass mark: {passMark}/{total} · Multiple-choice practice</p>}
       <div className="text-6xl font-extrabold text-white mb-2">
         {score}/{total}
       </div>
 
       <div className={`text-3xl font-bold mb-4 ${
-        percentage >= 70 ? 'text-emerald-400' :
+        (passMark !== undefined ? score >= passMark : percentage >= 70) ? 'text-emerald-400' :
         percentage >= 50 ? 'text-amber-400' : 'text-red-400'
       }`}>
         {percentage}%

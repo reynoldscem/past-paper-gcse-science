@@ -1,3 +1,4 @@
+import { DrivingPrepPanel } from '../components/quiz/DrivingPrepPanel';
 import { useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { useAppStore } from '../store/appStore';
@@ -110,6 +111,8 @@ export function HomeView() {
         </h1>
         <p className="text-navy-400 text-lg">Ready for {activeMeta.shortLabel}?</p>
       </motion.div>
+
+      {activeLearningArea === 'drivingTheory' && <DrivingPrepPanel />}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
         {(Object.keys(learningAreaMeta) as Array<keyof typeof learningAreaMeta>).map((area) => {
