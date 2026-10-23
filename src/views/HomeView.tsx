@@ -136,6 +136,11 @@ export function HomeView() {
         })}
       </div>
 
+      {activeLearningArea === 'drivingTheory' && <button
+        onClick={() => useAppStore.getState().setView('hazard')}
+        className="glass-card rounded-2xl p-5 mb-8 w-full text-left font-bold"
+      >Hazard Perception <span className="block text-sm font-normal text-navy-300 mt-1">Study guide, official practice and session tracker</span></button>}
+
       <div className="grid grid-cols-1 md:grid-cols-3 gap-4 mb-8">
         {activeSubjects.map((subject, i) => {
           const meta = subjectMeta[subject];
