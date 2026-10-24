@@ -1,3 +1,4 @@
+import type { HazardSession } from '../hazard/model';
 export type LearningArea = 'science' | 'drivingTheory';
 
 export type Subject =
@@ -51,6 +52,7 @@ export interface PaperAttempt {
 }
 
 export interface AppProgress {
+  hazardSessions?: HazardSession[];
   activeLearningArea: LearningArea;
   attempts: PaperAttempt[];
   totalPapersCompleted: number;
@@ -59,4 +61,4 @@ export interface AppProgress {
   lastActiveDate: string;
 }
 
-export type ViewName = 'home' | 'select' | 'quiz' | 'results' | 'admin' | 'history' | 'review' | 'stats';
+export type ViewName = 'hazard' | 'home' | 'select' | 'quiz' | 'results' | 'admin' | 'history' | 'review' | 'stats';

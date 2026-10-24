@@ -5,6 +5,7 @@ const API_BASE = import.meta.env.DEV
   : '';
 
 const defaultProgress: AppProgress = {
+  hazardSessions: [],
   activeLearningArea: 'science',
   attempts: [],
   totalPapersCompleted: 0,
@@ -56,14 +57,16 @@ export async function loadProgress(userName: string): Promise<AppProgress> {
   }
 }
 
-export async function saveProgress(userName: string, progress: AppProgress): Promise<void> {
+export async function saveProgress(userName: string, progress: AppProgress, strict = false): Promise<void> {
   try {
-    await fetch(`${API_BASE}/api/progress/${encodeURIComponent(userName)}`, {
+    const response = await fetch(`${API_BASE}/api/progress/${encodeURIComponent(userName)}`, {
       method: 'POST',
       headers: { 'Content-Type': 'application/json', ...authHeaders() },
       body: JSON.stringify(progress),
     });
-  } catch {
+    if (!response.ok) throw new Error('Failed to save progress');
+  } catch (error) {
+    if (strict) throw error;
     console.error('Failed to save progress');
   }
 }

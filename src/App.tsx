@@ -1,3 +1,4 @@
+import { HazardView } from './hazard/HazardView';
 import { useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import { useAppStore } from './store/appStore';
@@ -59,6 +60,7 @@ function App() {
 
   const views: Record<string, React.ReactNode> = {
     home: <HomeView />,
+    hazard: <HazardView />,
     select: <PaperSelectView />,
     quiz: <QuizView />,
     results: <ResultsView />,
