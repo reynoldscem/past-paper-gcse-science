@@ -1,5 +1,6 @@
+import { readMockDraft } from '../lib/mockDraft';
 import { DrivingPrepPanel } from '../components/quiz/DrivingPrepPanel';
-import { useMemo } from 'react';
+import { useMemo, useState } from 'react';
 import { motion } from 'framer-motion';
 import { useAppStore } from '../store/appStore';
 import { useProgressStore } from '../store/progressStore';
@@ -24,6 +25,7 @@ const greetingTemplates = [
 export function HomeView() {
   const { selectSubject, startQuiz, userName } = useAppStore();
   const { activeLearningArea, setActiveLearningArea, totalPapersCompleted, attempts, streakDays } = useProgressStore();
+  const [draft, setDraft] = useState(() => userName ? readMockDraft(userName) : null);
   const displayName = capitalize(userName ?? 'you');
 
   const greeting = useMemo(() => greetingTemplates[Math.floor(Math.random() * greetingTemplates.length)](displayName), [displayName]);
@@ -101,6 +103,14 @@ export function HomeView() {
 
   return (
     <div className="max-w-3xl mx-auto px-4 py-8 md:py-16">
+      {draft && <section className="glass-card rounded-xl p-4 mb-6 space-y-3" aria-label="Resume mock">
+        <h2 className="font-bold">Continue your unfinished mock?</h2>
+        <p>The original 57-minute deadline still applies. Expired mocks are discarded.</p>
+        <div className="flex flex-wrap gap-3">
+          <button className="bg-accent rounded-lg p-3" onClick={() => { useAppStore.getState().resumeMock(); setDraft(null); }}>Resume mock</button>
+          <button className="bg-navy-700 rounded-lg p-3" onClick={() => { useAppStore.getState().discardMock(); setDraft(null); }}>Discard mock</button>
+        </div>
+      </section>}
       <motion.div
         initial={{ opacity: 0, y: -20 }}
         animate={{ opacity: 1, y: 0 }}
@@ -112,7 +122,7 @@ export function HomeView() {
         <p className="text-navy-400 text-lg">Ready for {activeMeta.shortLabel}?</p>
       </motion.div>
 
-      {activeLearningArea === 'drivingTheory' && <DrivingPrepPanel />}
+      {activeLearningArea === 'drivingTheory' && <><DrivingPrepPanel /><button className="bg-accent rounded-xl px-5 py-3 mb-6" onClick={() => useAppStore.getState().setView('sign-drill')}>Sign drill — 20 signs</button></>}
 
       <div className="grid grid-cols-1 sm:grid-cols-2 gap-3 mb-8">
         {(Object.keys(learningAreaMeta) as Array<keyof typeof learningAreaMeta>).map((area) => {

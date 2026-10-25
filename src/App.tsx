@@ -1,3 +1,4 @@
+import { SignDrillView } from './views/SignDrillView';
 import { HazardView } from './hazard/HazardView';
 import { useEffect } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
@@ -60,6 +61,7 @@ function App() {
 
   const views: Record<string, React.ReactNode> = {
     home: <HomeView />,
+    'sign-drill': <SignDrillView />,
     hazard: <HazardView />,
     select: <PaperSelectView />,
     quiz: <QuizView />,
