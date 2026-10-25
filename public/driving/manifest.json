@@ -5,10 +5,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b9f2f740f0b6151c00001d/sign-giving-order-national-speed-limit.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "2da430b4cbf77f50833443ebb78fc8422eb9121e5918e6040d43b60de5923b8f",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "White circle with a black diagonal stripe",
+    "highwayCodeRule": "124"
   },
   {
     "path": "/driving/sign-giving-order-stop-give-way.jpg",
@@ -16,10 +18,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b9f330e5274a151e000022/sign-giving-order-stop-give-way.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "b2e1047376a672e493fd089d7178f836a2509936c121cb999e29eb934c79b10c",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Red eight-sided STOP sign",
+    "highwayCodeRule": "171"
   },
   {
     "path": "/driving/sign-giving-order-give-way.jpg",
@@ -27,10 +31,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b9f373ed915d155f00001e/sign-giving-order-give-way.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "74f82572c490dc6af33cb161bdc13d9f735a92ea6f902063eaf737a6036a8950",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Inverted white triangle with a red border",
+    "highwayCodeRule": "172"
   },
   {
     "path": "/driving/sign-giving-order-no-entry-vehicular-traffic.jpg",
@@ -38,10 +44,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b9f41b40f0b6151f000019/sign-giving-order-no-entry-vehicular-traffic.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "ea2410a532c62b7af34f4934b1f72729c1f83e1c75089fbfdb8ee3ba7bd15fbd",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Red circle containing a horizontal white bar",
+    "highwayCodeRule": "109"
   },
   {
     "path": "/driving/sign-giving-order-no-vehicles.jpg",
@@ -49,10 +57,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b9f489e5274a151e000024/sign-giving-order-no-vehicles.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "12dba950851d46ac18c71fce4a2612dca12a42d1cfa537fe3f9caa1ac25be8e1",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "White disc edged in red",
+    "highwayCodeRule": "109"
   },
   {
     "path": "/driving/sign-giving-order-no-motor-vehicles.jpg",
@@ -60,10 +70,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b9f4d840f0b6151f00001b/sign-giving-order-no-motor-vehicles.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "af5ea3a735c77cdb10d311975bc6b87b002de334047f89f70ea835879a83125f",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Red-bordered circle containing a car and motorcycle",
+    "highwayCodeRule": "109"
   },
   {
     "path": "/driving/sign-giving-order-no-overtaking.jpg",
@@ -71,10 +83,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b9f50240f0b6151c000021/sign-giving-order-no-overtaking.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "cb9a6e2a4896800d50e2cb965db97315c4144c1cf725c6bf8c9f041397762763",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Red-bordered circle with two cars",
+    "highwayCodeRule": "109, 165"
   },
   {
     "path": "/driving/sign-giving-order-give-priority-vehicles.jpg",
@@ -82,10 +96,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b9f637e5274a151e000026/sign-giving-order-give-priority-vehicles.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "641cdcff10dacdf5a04d54852cfed3e6714191cd7aaa853db760182af972d465",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Red-bordered circle with a red upward arrow and black downward arrow",
+    "highwayCodeRule": "109"
   },
   {
     "path": "/driving/sign-giving-order-no-u-turn.jpg",
@@ -93,10 +109,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b9f6aded915d155f000024/sign-giving-order-no-u-turn.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "96257a73864d8005c1bcb57e21dca2d642b2767a2534105e5bb3c1a1c9da8dd0",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Red-bordered circle with a crossed-out U-shaped arrow",
+    "highwayCodeRule": "109"
   },
   {
     "path": "/driving/sign-giving-order-no-waiting.jpg",
@@ -104,10 +122,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55ba00a140f0b6151f000025/sign-giving-order-no-waiting.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "24dd924edb5a58c2ecaa4ca09a2acd70d12b6e3ed653633e90e402f8f4deaa89",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Blue disc with a red border and one red diagonal",
+    "highwayCodeRule": "238"
   },
   {
     "path": "/driving/sign-giving-order-no-stopping.jpg",
@@ -115,10 +135,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55ba00b540f0b6151c000027/sign-giving-order-no-stopping.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "0acbfb9e186931a0bc4256a37a2028f1910ac6801c97c8c4d532a3d3c4c33ec4",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Blue disc with a red border and red cross",
+    "highwayCodeRule": "109, 238"
   },
   {
     "path": "/driving/sign-giving-order-ahead-only.jpg",
@@ -126,10 +148,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55cb16d9e5274a5473000021/sign-giving-order-ahead-only.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "5407ec71947e652b9f4f5e5c07a747bc9a564a48fbd9c0d1053e2a036971ec70",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Blue circle with a white upward arrow",
+    "highwayCodeRule": "109"
   },
   {
     "path": "/driving/sign-giving-order-keep-left.jpg",
@@ -137,10 +161,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55ba123bed915d155c000019/sign-giving-order-keep-left.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "b8869720853149425bb761041ece7ead37c7243fd2726b94d423abdb1cb371f9",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Blue circle with an arrow pointing diagonally down-left",
+    "highwayCodeRule": "109"
   },
   {
     "path": "/driving/sign-giving-order-vehicle-pass-either-side.jpg",
@@ -148,10 +174,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55ba124eed915d155c00001b/sign-giving-order-vehicle-pass-either-side.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "91615623b342f8221aaae0702d8cdbd24f97d05f5ebfe6c4fa1ad9795a01a35d",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Blue circle with two arrows pointing down to opposite sides",
+    "highwayCodeRule": "109"
   },
   {
     "path": "/driving/sign-giving-order-mini-roundabout.jpg",
@@ -159,10 +187,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55ba126540f0b6151c00002b/sign-giving-order-mini-roundabout.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "8519cd48015d28b4a6c450e2c3c589f82d4f3b9290f80b6473e374a795cce072",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Blue circle containing three curved white arrows",
+    "highwayCodeRule": "188"
   },
   {
     "path": "/driving/sign-giving-order-segregated-cycle-pedestrian-route.jpg",
@@ -170,10 +200,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55ba12b1ed915d155c00001d/sign-giving-order-segregated-cycle-pedestrian-route.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "978923ae45b5dc5cfb3c47c01505a98b433fafab48919adee9689f8d29fb04f6",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Blue circle with a pedestrian and cycle divided by a vertical line",
+    "highwayCodeRule": "62, 109"
   },
   {
     "path": "/driving/sign-giving-order-minimum-speed.jpg",
@@ -181,10 +213,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55ba12c140f0b6151f000027/sign-giving-order-minimum-speed.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "9aef18232249f912a3dc88424230d92390eff57dfe747b7fbd767c8ea7893d0f",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Blue circle containing a speed number",
+    "highwayCodeRule": "109"
   },
   {
     "path": "/driving/sign-giving-order-buses-cycles-only.jpg",
@@ -192,10 +226,12 @@
     "sourceUrl": "https://assets.publishing.service.gov.uk/media/68e3cbcc49e17d00a56ffe3c/sign-giving-order-buses-cycles-only.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "d55b428c801031a9dfd1ee34fd5a99c6909b39ff098d6f2e91956f51135b5788",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Blue circle showing a bus and bicycle",
+    "highwayCodeRule": "109"
   },
   {
     "path": "/driving/sign-giving-order-trams-only.jpg",
@@ -203,10 +239,12 @@
     "sourceUrl": "https://assets.publishing.service.gov.uk/media/68e3cbba8c1db6022d0ca152/sign-giving-order-trams-only.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "c7b2a78319ff785fb59412bac7eb7a14a342aa1e93fb39fa5d40052a52a3c909",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Blue circle showing a tram",
+    "highwayCodeRule": "109, 300"
   },
   {
     "path": "/driving/warning-sign-dual-carriageway-ends.jpg",
@@ -214,10 +252,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b75e47e5274a215200000c/warning-sign-dual-carriageway-ends.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "74383e566de9ebcdfe7a48cf9e5c521054d68ab56802cd50145505cb313d4a34",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Red triangle showing two carriageways coming together",
+    "highwayCodeRule": "146"
   },
   {
     "path": "/driving/warning-sign-double-bend.jpg",
@@ -225,10 +265,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b76a2d40f0b6790f000015/warning-sign-double-bend.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "4bcba01e3cd89980cf3fc4d698b1b3c9d1fe7b435e18ef4bbfb54165245fb6f5",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Red triangle with a double-bend symbol",
+    "highwayCodeRule": "146, 160"
   },
   {
     "path": "/driving/warning-sign-two-way-traffic-ahead.jpg",
@@ -236,10 +278,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b76b1e40f0b67aa3000013/warning-sign-two-way-traffic-ahead.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "e6aae3be17235adae548c3c5de193f1926c4b68a7466363dc1bf20f9cfd817d1",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Red triangle with upward and downward arrows",
+    "highwayCodeRule": "146"
   },
   {
     "path": "/driving/warning-sign-slippery-road.jpg",
@@ -247,10 +291,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b76bec40f0b6790f000019/warning-sign-slippery-road.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "87953da0b590ac8afebd972f6a875c4338244e41864c42ed4e871003aeb9d454",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Red triangle with a car and curved tyre tracks",
+    "highwayCodeRule": "146"
   },
   {
     "path": "/driving/warning-sign-level-crossing-ahead-barrier-or-gate.jpg",
@@ -258,10 +304,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b76ca6e5274a2152000010/warning-sign-level-crossing-ahead-barrier-or-gate.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "8760cf70d975027b4cd3bd13b674ed6ea8871eae91c0fd7da92227b123a77931",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Red triangle containing a gate symbol",
+    "highwayCodeRule": "291"
   },
   {
     "path": "/driving/warning-sign-level-crossing-ahead-without-barrier.jpg",
@@ -269,10 +317,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b76cf940f0b67aa3000017/warning-sign-level-crossing-ahead-without-barrier.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "0b2ffcfb69934b502d1591038dbc8541a89d0ab44e26e2ee74c2a2ce93aef11e",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Red triangle containing a locomotive",
+    "highwayCodeRule": "291"
   },
   {
     "path": "/driving/warning-sign-frail-pedestrians-cross-road-ahead.jpg",
@@ -280,10 +330,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b76ddc40f0b6790f00001b/warning-sign-frail-pedestrians-cross-road-ahead.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "f2cd537572a7ba9fc9387dba16cb3b26e4b3edd07da75819b2864b7e21357254",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Red triangle with two walking figures, one using a stick",
+    "highwayCodeRule": "207"
   },
   {
     "path": "/driving/warning-sign-wild-animals.jpg",
@@ -291,10 +343,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b76f70e5274a21ec00001a/warning-sign-wild-animals.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "dd9fef9b9faa1af70b762d055c436d6c926725a57dcf05ffb0b198f358e1a35f",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Red triangle containing a deer",
+    "highwayCodeRule": "214"
   },
   {
     "path": "/driving/warning-sign-accompanied-horses.jpg",
@@ -302,10 +356,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b76fa6ed915d07fe00001b/warning-sign-accompanied-horses.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "4ede737ddf6a0781d4d859a56c54043a3fabbd9800fe493e931339971e7c03b5",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Red triangle with a horse and rider",
+    "highwayCodeRule": "215"
   },
   {
     "path": "/driving/warning-sign-cycle-route-ahead.jpg",
@@ -313,10 +369,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b76fbced915d07e200000f/warning-sign-cycle-route-ahead.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "42d080fd9f73c4981e93db0cb27919999677d9ca3164ee5373a3e4e4c8e7ffe3",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Red triangle containing a bicycle",
+    "highwayCodeRule": "211, 212"
   },
   {
     "path": "/driving/warning-sign-risk-of-ice.jpg",
@@ -324,10 +382,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b76fd9e5274a2152000014/warning-sign-risk-of-ice.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "3e7d9ac5b1e65ed10b9b9fa3add0886a7ccb0070670eadf0cf0b592fb1e130df",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Red triangle containing a snowflake",
+    "highwayCodeRule": "230, 231"
   },
   {
     "path": "/driving/warning-sign-traffic-queues.jpg",
@@ -335,10 +395,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b76ffa40f0b6790f000021/warning-sign-traffic-queues.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "868df63d4ef1df16a14388085316ed2df0b2e8b2b4c23d7aea65f8adcae2c8cf",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Red triangle showing a queue of cars",
+    "highwayCodeRule": "146"
   },
   {
     "path": "/driving/warning-sign-side-winds.jpg",
@@ -346,10 +408,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b7706940f0b67aa300001b/warning-sign-side-winds.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "c835e21cf55b42cf61e0a34fbb1aa39303a6cd1c35a862b4a4d3ca055bc1ad3b",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Red triangle showing a windsock",
+    "highwayCodeRule": "232, 233"
   },
   {
     "path": "/driving/warning-sign-hump-bridge.jpg",
@@ -357,10 +421,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b7707ae5274a21ec00001e/warning-sign-hump-bridge.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "09dc3a34f66ee09718f9461733f2f0351916b1b5417e55ce06117e1cad3e1a0b",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Red triangle showing a hump bridge",
+    "highwayCodeRule": "146"
   },
   {
     "path": "/driving/Information-sign-traffic-priority-over-oncoming-vehicles.jpg",
@@ -368,10 +434,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b8befce5274a151e000017/Information-sign-traffic-priority-over-oncoming-vehicles.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "2a7c44d05182ffba69685b4d7e6a0cd51338f86079f6fc9706ec75ed132ab112",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Blue rectangle containing a large upward white arrow and downward red arrow",
+    "highwayCodeRule": "109, 147"
   },
   {
     "path": "/driving/Information-sign-no-through-road.jpg",
@@ -379,10 +447,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b8c026e5274a1521000015/Information-sign-no-through-road.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "42a93ade8bbf759ec1a297b1777bb977aa61fcbbb705e06e76432cae750bcef7",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Blue rectangle with a white T capped in red",
+    "highwayCodeRule": "109"
   },
   {
     "path": "/driving/road-work-sign-road-works.jpg",
@@ -390,10 +460,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b8c3b2ed915d155f000018/road-work-sign-road-works.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "2fd161b90da23dd2d5e0fadfee5f3f0061b3ae2d0334d5d0b87976ba03045a35",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Red triangle showing a person digging",
+    "highwayCodeRule": "288"
   },
   {
     "path": "/driving/road-work-sign-loose-chippings.jpg",
@@ -401,10 +473,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b8c3c240f0b6151c000017/road-work-sign-loose-chippings.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "f4d91aea74068f1dce3da4965090bf387115d93a70b55bf9337c2b1208dd08b2",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Red triangle with stones spraying from a wheel",
+    "highwayCodeRule": "146, 288"
   },
   {
     "path": "/driving/across-carriageway-stop-line-signals-or-police.jpg",
@@ -412,10 +486,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55bb5ed1ed915d1565000002/across-carriageway-stop-line-signals-or-police.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "6784a68c7c2c7a8b13d0d9228b669623aee7634cbddb5a818546004fb398640e",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Solid transverse white line at traffic signals",
+    "highwayCodeRule": "175"
   },
   {
     "path": "/driving/across-carriageway-give-way-traffic-major-road.jpg",
@@ -423,10 +499,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55bb5f73ed915d1568000009/across-carriageway-give-way-traffic-major-road.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "c7170146be271e06d6d40d88566a122e6185039334f12dbabd58dd0e08379343",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Double broken transverse white lines",
+    "highwayCodeRule": "172"
   },
   {
     "path": "/driving/along-carriageway-hazard-warn-line.jpg",
@@ -434,10 +512,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55bb609a40f0b6154e000009/along-carriageway-hazard-warn-line.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "4a65a72a22d9bbcbd43cfb9ae94ab833801572d35785bbcf41e4e02d3afa197d",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Long white centre-line marks with short gaps",
+    "highwayCodeRule": "127"
   },
   {
     "path": "/driving/along-edge-carriageway-double-yellow.jpg",
@@ -445,10 +525,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55bb62db40f0b6154e00000d/along-edge-carriageway-double-yellow.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "a7d9bf4083a855eac01c1d6ab14e1ebfca7c3cadc54556efe407e70014a56d6f",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Double yellow lines along the road edge",
+    "highwayCodeRule": "238"
   },
   {
     "path": "/driving/along-edge-carriageway-single_yellow-with-parking.jpg",
@@ -456,10 +538,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55bb6347ed915d156800000b/along-edge-carriageway-single_yellow-with-parking.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "460dace981f3e1aa60fd622b8bf944df56c2ed6de503a3fcb142b6a878b935ca",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Single yellow line along the road edge",
+    "highwayCodeRule": "238"
   },
   {
     "path": "/driving/along-edge-carriageway-red-route-no-stopping-double-red-line.jpg",
@@ -467,10 +551,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55bb7c4ce5274a154500000a/along-edge-carriageway-red-route-no-stopping-double-red-line.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "bdd9eda32a97ee079a78296e7f908d60243b9ff420a33549195434a37cd9ea03",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Double red lines along the road edge",
+    "highwayCodeRule": "238"
   },
   {
     "path": "/driving/on-kerb-double-line-no-loading.jpg",
@@ -478,10 +564,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55bb7ebd40f0b6154e000016/on-kerb-double-line-no-loading.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "9633a666f1b6d3615c340eeb248238d19cb12126d33290351366a6e31087e70e",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Double yellow marks across the kerb",
+    "highwayCodeRule": "247"
   },
   {
     "path": "/driving/on-kerb-single-line-no-loading-times.jpg",
@@ -489,10 +577,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55bb7ee740f0b6155100000a/on-kerb-single-line-no-loading-times.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "d2923e393e76297934b2313644f66e95575768052d23005cc2eb5dbbffa04e4c",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Single yellow marks across the kerb",
+    "highwayCodeRule": "247"
   },
   {
     "path": "/driving/other-road-markings-school-keep-clear.jpg",
@@ -500,10 +590,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55bb8aa840f0b6154e00001c/other-road-markings-school-keep-clear.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "ffa468ba971b1adfcedc78e74a6e5ddd1ec1c2c7835c9d44bd62c40753aa5895",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Yellow zigzags and school entrance lettering",
+    "highwayCodeRule": "243"
   },
   {
     "path": "/driving/other-road-markings-box-junction.jpg",
@@ -511,10 +603,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55bb8b4740f0b61551000012/other-road-markings-box-junction.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "e49c03b851cf0d384b928320b45acb13e33b9f4a1e7f1bbb90db81de3815295b",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Yellow criss-cross box at a junction",
+    "highwayCodeRule": "174"
   },
   {
     "path": "/driving/traffic-light-red.jpg",
@@ -522,10 +616,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/559fbe1940f0b6156700004d/traffic-light-red.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "7bf494ed6162c07fed9cdab35d12a147986c3a4f176d793611ccc533a5d62ddf",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Traffic light showing red",
+    "highwayCodeRule": "175"
   },
   {
     "path": "/driving/traffic-light-red-amber.jpg",
@@ -533,10 +629,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/559fbe31e5274a155c000056/traffic-light-red-amber.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "262a10fd753eb0c62eb65472357405f61eff662a37f5b810ce552b29e35172ce",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Traffic light showing red and amber together",
+    "highwayCodeRule": "175"
   },
   {
     "path": "/driving/traffic-light-green.jpg",
@@ -544,10 +642,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/559fbe3e40f0b6156700004f/traffic-light-green.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "99ce49b990606d7fcfb9a3755b14be2d22bab6573584ca0a4472b9b6e49cbd96",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Traffic light showing green",
+    "highwayCodeRule": "176"
   },
   {
     "path": "/driving/traffic-light-amber.jpg",
@@ -555,10 +655,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/559fbe48ed915d1592000048/traffic-light-amber.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "f18689048d5b390bec356af5baf6c076b831e898ed34789414c5e25e27e4c7eb",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Traffic light showing amber",
+    "highwayCodeRule": "175"
   },
   {
     "path": "/driving/flashing-red-lights.jpg",
@@ -566,10 +668,12 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/559fbe92ed915d159200004a/flashing-red-lights.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "50b647b989203ec450253d3a8156305ac0007014a1c3380a109c479a651243db",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Pair of alternately flashing red lights",
+    "highwayCodeRule": "293"
   },
   {
     "path": "/driving/motorway-signal-red-cross.jpg",
@@ -577,9 +681,934 @@
     "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/559fbeb6ed915d159500003e/motorway-signal-red-cross.jpg",
     "licence": "Open Government Licence v3.0",
     "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
-    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. © Crown copyright, Department for Transport.",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
     "retrieved": "2026-10-23",
     "sha256": "edb1985a5148f691e6c1db6425e84316dd308de7c2a8d9e4ce634ad0dba11c12",
-    "modifications": "None"
+    "modifications": "None",
+    "alt": "Motorway signal showing a red X",
+    "highwayCodeRule": "258"
+  },
+  {
+    "path": "/driving/sign-giving-order-end-20-zonev2.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.publishing.service.gov.uk/media/57f76285e5274a0eb7000029/sign-giving-order-end-20-zonev2.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "4a056dd0d40cb9dec4e5c58138a53187104c82de47f104474e49548298f590a6",
+    "modifications": "None",
+    "alt": "Zone end panel with diagonal stripes",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/sign-giving-order-maximum-speed.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b9f2dd40f0b6151f000015/sign-giving-order-maximum-speed.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "0b898954b8aa4fde99e6d7c961e4f95e7e3a85853de54f838f9c941dc74d5f9f",
+    "modifications": "None",
+    "alt": "Red-bordered circle around a speed numeral",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/sign-giving-order-school-crossing-patrol.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b9f31040f0b6151f000017/sign-giving-order-school-crossing-patrol.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "d7b0890572928b00bf7a34bfa56cbe1856ec87529af5719a23da3f449da93bd1",
+    "modifications": "None",
+    "alt": "Circular patrol sign with STOP and children",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/sign-giving-order-manually-stop.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b9f3d040f0b6151c00001f/sign-giving-order-manually-stop.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "9ff4d084dd281d73fc8d9da5e2084f7616b40838a6cb89e265e2f8f46fe8e089",
+    "modifications": "None",
+    "alt": "Red temporary STOP board",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/sign-giving-order-manually-go.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b9f3f1e5274a152100001f/sign-giving-order-manually-go.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "97931b157e0ce05a83220efca03cca3201f7225edddeabbbb6fcdce486ee5700",
+    "modifications": "None",
+    "alt": "Green temporary GO board",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/sign-giving-order-no-cycling.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b9f4a5ed915d155c00000f/sign-giving-order-no-cycling.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "9fc89d4abcca80356415e589ef08f726e987af882b86de262715eb9a07cd9af2",
+    "modifications": "None",
+    "alt": "Red-bordered circle with a bicycle",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/sign-giving-order-no-buses.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b9f4f0ed915d155f000020/sign-giving-order-no-buses.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "3279988ef1cda3a0091d322ac99ab6b4aa25198bd769984109b296f92db87ce1",
+    "modifications": "None",
+    "alt": "Red-bordered circle with a bus",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/sign-giving-order-no-towed-caravans.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b9f52540f0b6151c000023/sign-giving-order-no-towed-caravans.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "c85aad6651d2b631ea0a6735ab4de6963779cb735faaf950b7a64625e3c00392",
+    "modifications": "None",
+    "alt": "Red-bordered circle with a caravan",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/sign-giving-order-no-vehicles-carry-explosives.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b9f562e5274a1521000021/sign-giving-order-no-vehicles-carry-explosives.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "fe2693d687790d81b2caa1b480dcea6c34298bf96674d7d3791ee13f0ca914ce",
+    "modifications": "None",
+    "alt": "Red-bordered circle with an explosion symbol",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/sign-giving-order-no-vehicle-combination-length.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.publishing.service.gov.uk/media/58171318e5274a03bd000004/sign-giving-order-no-vehicle-combination-length.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "7238abc28accc863a3d4bf3371bed3dfeac5b3a9df18298098aac6c249eea947",
+    "modifications": "None",
+    "alt": "Red circle with a vehicle and length arrows",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/sign-giving-order-no-vehicles-over-height.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b9f5dc40f0b6151c000025/sign-giving-order-no-vehicles-over-height.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "f9e86cf296b21b4153bc64fa7261566783e4462fb037d40b5cbe612969e07d64",
+    "modifications": "None",
+    "alt": "Red circle with vertical arrows and height",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/sign-giving-order-no-vehicle-width.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b9f60aed915d155f000022/sign-giving-order-no-vehicle-width.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "ac7919a5fde3d1624ba0aacbda0356eaaf9ad64ad22b3575d81f09d4c0738229",
+    "modifications": "None",
+    "alt": "Red circle with horizontal arrows and width",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/sign-giving-order-no-right-turn.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b9f66fe5274a151e000028/sign-giving-order-no-right-turn.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "199545066703f791db45c230abfa17e7e83d3bfde8d28168b985a55cd46a55c2",
+    "modifications": "None",
+    "alt": "Red circle with a crossed right-turn arrow",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/sign-giving-order-no-left-turn.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b9f68740f0b6151f000021/sign-giving-order-no-left-turn.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "dcb58ab0dbaaf2511b2b9a15edba5bb6987c516347f0c81c8b2512ff55160ba9",
+    "modifications": "None",
+    "alt": "Red circle with a crossed left-turn arrow",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/sign-giving-order-no-goods-vehicle-over-weight.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b9f6d8e5274a151e00002a/sign-giving-order-no-goods-vehicle-over-weight.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "0a95bc7dad6a9c5252419573175a9f22fd8d5b00cf689730137704e509caba44",
+    "modifications": "None",
+    "alt": "Red circle with a lorry weight and exception plate",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/sign-giving-order-no-vehicles-max-gross-weight.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b9ffe8e5274a151e00002c/sign-giving-order-no-vehicles-max-gross-weight.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "602680e95690633b1a544456c18f82558fd554c1e3dd52a0e046d25d3729fec7",
+    "modifications": "None",
+    "alt": "Red circle containing a weight in tonnes",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/sign-giving-order-turn-left-ahead.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55ba11ffe5274a151e000030/sign-giving-order-turn-left-ahead.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "d97c612efb5b36c20ded16496e6ffc3337ebaad3abd80ef78665b491e9fe7a28",
+    "modifications": "None",
+    "alt": "Blue circle containing an upward then left arrow",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/sign-giving-order-turn-left.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55ba1211ed915d155c000017/sign-giving-order-turn-left.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "42de28630796f9b78e486273414ba28ec49224c13de6e6bf5ea1a5d172b5cc19",
+    "modifications": "None",
+    "alt": "Blue circle with a horizontal left arrow",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/sign-giving-order-route-pedal-cycles-only.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55ba1284e5274a1521000023/sign-giving-order-route-pedal-cycles-only.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "96ad08dd2d0dbeda781d69f12e324dcee25bc20315f6805a5b974805a5673889",
+    "modifications": "None",
+    "alt": "Blue circle containing a white bicycle",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/sign-giving-order-minimum-speed-end.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55ba12d3e5274a151e000032/sign-giving-order-minimum-speed-end.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "9db5803c04154799dd64c90b950e84ba4d16f87a8e1068fb218a5df855cfe6c0",
+    "modifications": "None",
+    "alt": "Blue speed circle crossed by a red diagonal",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/sign-giving-order-pedestrian-crossing-tramway.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55ba131840f0b6151c00002d/sign-giving-order-pedestrian-crossing-tramway.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "4de199cad83b03a18c77f6d8f75376db2b16b9594b6d3ef32a78d1d560314b51",
+    "modifications": "None",
+    "alt": "Blue panel with a tram symbol and LOOK BOTH WAYS lettering",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/sign-giving-order-one-way-traffic.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55ba132ee5274a151e000036/sign-giving-order-one-way-traffic.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "501614664dbb4a5b1908e8f7a0266e879867f18f7d3c407d1e12c8c639b792f1",
+    "modifications": "None",
+    "alt": "Blue rectangle with a white upward arrow",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/sign-giving-order-with-flow-bus-cycle-lane.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55ba1353e5274a1521000027/sign-giving-order-with-flow-bus-cycle-lane.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "23c2e9c7a913c8964887918d8474d98e1cce3389a7efc444e7a6c8cd5b4679b3",
+    "modifications": "None",
+    "alt": "Blue panel with bus and cycle symbols beside a white lane boundary",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/sign-giving-order-contra-flow-bus-lane.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55ba136ded915d155f00002a/sign-giving-order-contra-flow-bus-lane.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "d20028e8c59cff4e86f70efa80890c1aa64191ea10bd5831b91405c50f1ea6c0",
+    "modifications": "None",
+    "alt": "Blue lane panel with opposing arrows and a bus",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/sign-giving-order-with-flow-pedal-cycle-lane.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55ba1383ed915d155c00001f/sign-giving-order-with-flow-pedal-cycle-lane.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "b863a58d26de5f4b7e922ec2c616bd15a06f194f0dc5da1872664b4f8e572e31",
+    "modifications": "None",
+    "alt": "Blue panel with a cycle symbol beside a white lane boundary",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/warning-sign-road-narrow.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b75eeded915d07fe000005/warning-sign-road-narrow.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "abbd99c43681aca0285909f9d604bce2d21ff060035bb08a52899b3cafbe71e6",
+    "modifications": "None",
+    "alt": "Red triangle with the right road edge bending inward",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/warning-sign-road-narrow-both-sides.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b75f15ed915d07fe000007/warning-sign-road-narrow-both-sides.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "ef6a702ed2352cb8f48c7eaf4efa69eb53791def0153cada3980633a6fac9811",
+    "modifications": "None",
+    "alt": "Red triangle with both road edges bending inward",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/warning-sign-crossroads.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b7696640f0b6790f000011/warning-sign-crossroads.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "71a38d765f8b06bf4f02504d9e7ab355b1d21b9e341db33deb7fb5c9fd246fc8",
+    "modifications": "None",
+    "alt": "Red triangle containing a black cross",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/warning-sign-junction-on-bend-ahead.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b7698540f0b6790f000013/warning-sign-junction-on-bend-ahead.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "1c92653f3cdcd4410b5d21bdecf12e1754096841ee513717772490653642e395",
+    "modifications": "None",
+    "alt": "Red triangle with curved main road and side branch",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/warning-sign-t-junction-with-priority.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b769b2ed915d07e200000b/warning-sign-t-junction-with-priority.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "2509d714a12ea9bf99172ce5789d80767ad51ca634a5cb31b612c9dac403ffdd",
+    "modifications": "None",
+    "alt": "Red triangle with a thick vertical and thin right branch",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/warning-sign-staggered-junction.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b769e040f0b67aa300000d/warning-sign-staggered-junction.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "612bb11a750b82178313bb5577045e7163aa6940e57c5f1596610e60c46418ac",
+    "modifications": "None",
+    "alt": "Red triangle with offset side branches",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/warning-sign-traffic-merging-left.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b76a04ed915d07fe000009/warning-sign-traffic-merging-left.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "fd6790e076e8649219df921a96e02553f773515c9da927ac0cfe24028aca498a",
+    "modifications": "None",
+    "alt": "Red triangle with a left branch joining the main arrow",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/warning-sign-bend-to-right.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b76a5d40f0b67aa300000f/warning-sign-bend-to-right.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "d47f39a928994775cc94e83d1156eb0b59c2b49dc1aa3093d77a20275f393b45",
+    "modifications": "None",
+    "alt": "Red triangle with a black right-curving line",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/warning-sign-roundabout.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b76a79ed915d07fe00000b/warning-sign-roundabout.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "b96821a8f077aaaaca518257d18995f3e16cc0bd660465f0f1506933d822c6d5",
+    "modifications": "None",
+    "alt": "Red triangle containing three circular arrows",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/warning-sign-uneven-road.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b76a9240f0b6790f000017/warning-sign-uneven-road.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "1d28b203e8d3d256cbd014664770aa179ac79790c5dd5091508ee40529c256f5",
+    "modifications": "None",
+    "alt": "Red triangle containing two humps",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/warning-sign-two-way-traffic-crosses-road.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b76af8ed915d07fe00000d/warning-sign-two-way-traffic-crosses-road.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "aa6ebac4921f3c93b49f9bfb0c8612cd1a138b592a1c894e22e7f318804e1d70",
+    "modifications": "None",
+    "alt": "Red triangle with opposing horizontal arrows",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/warning-sign-swing-bridge.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b76b42e5274a21ec00000a/warning-sign-swing-bridge.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "4b0519c2ce5b840c644bd5f39d37ce18305d8bf492e14f2029ec1f92f3094f2b",
+    "modifications": "None",
+    "alt": "Red triangle showing a raised bridge",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/warning-sign-aircraft.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b76b6840f0b67aa3000015/warning-sign-aircraft.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "545cd204192853e29be11336b1ffa3003cbfadacf2b0d93c3695f257a4840e06",
+    "modifications": "None",
+    "alt": "Red triangle containing an aircraft",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/warning-sign-falling-rocks.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b76b81ed915d07fe00000f/warning-sign-falling-rocks.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "f35bd0cd49ab415d53de71e677eaa9e8b47045b9f1e168268fad1164ea0902e5",
+    "modifications": "None",
+    "alt": "Red triangle with rocks falling from a cliff",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/warning-sign-traffic-signals-not-in-use.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b76bbbed915d07fe000011/warning-sign-traffic-signals-not-in-use.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "e028e9d03e223679072784d0db4078f9a3129603887c4566e714e8c76b28c567",
+    "modifications": "None",
+    "alt": "Traffic light symbol crossed by a red diagonal",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/warning-sign-traffic-signals.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b76bd2e5274a21ec00000c/warning-sign-traffic-signals.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "5ee66121526a2ab418fc20a87ef2bef67d4ed2f1a6249345e4a746d6b9f3ec13",
+    "modifications": "None",
+    "alt": "Red triangle containing traffic lights",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/warning-sign-steep-hill-downwards.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b76c11ed915d07fe000013/warning-sign-steep-hill-downwards.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "a17b5f18d9c3cd509715bf8fc61ac4893f13e51bde510f3671aa6ea1b7e0cf6e",
+    "modifications": "None",
+    "alt": "Red triangle with a downward slope and percentage",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/warning-sign-steep-hill-upwards.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b76c2de5274a21ec00000e/warning-sign-steep-hill-upwards.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "e295dce0e9d286d2d2ef6a90ffa0871beba5aeba5a078a31ce1f8f62032560a2",
+    "modifications": "None",
+    "alt": "Red triangle with an upward slope and percentage",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/warning-sign-tunnel-ahead.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b76c51e5274a21ec000010/warning-sign-tunnel-ahead.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "346dd10525e377beab23694caabef2a1bb1282bbe315a7bf4fa29320de628339",
+    "modifications": "None",
+    "alt": "Red triangle containing a tunnel entrance",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/warning-sign-trams-crossing-ahead.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b76c82ed915d07fe000015/warning-sign-trams-crossing-ahead.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "e345e0c8ccca34c480c116d52fb963837142e8a7e4290b07dcf3b09c35446b08",
+    "modifications": "None",
+    "alt": "Red triangle with a tram symbol",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/warning-sign-level-crossing-without-barrier-ahead.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b76d18ed915d07e200000d/warning-sign-level-crossing-without-barrier-ahead.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "fb80a68a59b88309bfb2e7f77db7b073a7c12b75bad6e0ee8803433089373405",
+    "modifications": "None",
+    "alt": "White diagonal cross edged in red",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/warning-sign-pedestrians-in-road-ahead.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b76dfbed915d07fe000017/warning-sign-pedestrians-in-road-ahead.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "03979b107c9698fcef8a10d13aeebb6d8c5de107699b8df9fd47e327e98e6b06",
+    "modifications": "None",
+    "alt": "Red triangle showing two walking figures",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/warning-sign-zebra-crossing.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b76e1040f0b6790f00001d/warning-sign-zebra-crossing.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "4720154c6624be5aedf58a97d4b0825d2909596e3c344f3b80c436d4e105558b",
+    "modifications": "None",
+    "alt": "Red triangle with a person on striped markings",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/warning-sign-cattle.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b76f56e5274a21ec000018/warning-sign-cattle.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "8e454ce8c48cd4ca11d832b2761437004c27f6c1b6e81d0cd4b7d5e33e1abea2",
+    "modifications": "None",
+    "alt": "Red triangle containing a cow",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/warning-sign-wild-horses.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b76f87ed915d07fe000019/warning-sign-wild-horses.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "43f980e2196814466d15d2ed9f5b1d42ecc6fb02fb66114911161cf20e3278ae",
+    "modifications": "None",
+    "alt": "Red triangle containing a horse",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/warning-sign-other-danger.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b7703fe5274a21ec00001c/warning-sign-other-danger.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "bbf62c149e39d7a0050a21d8d5e7f9aec836c524d1727431d106af224fae6bca",
+    "modifications": "None",
+    "alt": "Red triangle with an exclamation mark and plate",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/warning-sign-soft-verges.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b77056ed915d07fe00001d/warning-sign-soft-verges.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "bb6237881a586efb77e2783fbe8640283c1eab8f4b806b00dc5ca9dad0b58db6",
+    "modifications": "None",
+    "alt": "Red triangle showing a wheel sinking at the edge",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/warning-sign-worded-sign-ford.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b7708fed915d07fe00001f/warning-sign-worded-sign-ford.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "b988d171f37f189411f8a0d8199dead3a17fbd1f9d96f7a2eeed8de6bfaba2a0",
+    "modifications": "None",
+    "alt": "Red triangle containing the word Ford",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/warning-sign-quayside-or-riverbank.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b770aaed915d07fe000021/warning-sign-quayside-or-riverbank.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "2581e2ec04d62c472e6a4199e7dd1b510510b4ff17ea8b07335c325d9d1fafcb",
+    "modifications": "None",
+    "alt": "Red triangle showing a car falling into water",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/warning-sign-risk-of-grounding.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b770c3ed915d07fe000023/warning-sign-risk-of-grounding.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "6444b37986f759e2e2f66eebe2f61a5ab9f4773afc705c27f5486d902f41ced7",
+    "modifications": "None",
+    "alt": "Red triangle showing a vehicle on a sharp hump",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/Information-sign-motorway-end.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b8bd5b40f0b6151f000009/Information-sign-motorway-end.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "f24b1cd0f397bd7b2ed5f870e92e344318f3cf31c45fdd406a89b0d2575ceb44",
+    "modifications": "None",
+    "alt": "Blue motorway symbol with a red diagonal stripe",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/Information-sign-start-motorway.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b8bd6fe5274a151e000015/Information-sign-start-motorway.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "ac5abafd343d24689f7751d86a9c722ccf5ed518ffa3b2131611d48395248207",
+    "modifications": "None",
+    "alt": "Blue rectangle containing a white motorway symbol",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/Information-sign-hospital-a-and-e.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b8c000ed915d155f000014/Information-sign-hospital-a-and-e.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "89a04bcff0b52f500a5ff78e647e73ee5fa676cc2d1a31827eb23aa6d064d495",
+    "modifications": "None",
+    "alt": "Blue panel with hospital and emergency lettering",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/Information-sign-tourist-info-point.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b8c01340f0b6151c000015/Information-sign-tourist-info-point.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "357d1fccf5ed19407b3f03855411aa99ca852d98c724997c5b20c12d562dccbb",
+    "modifications": "None",
+    "alt": "Brown panel with a white information letter",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/Information-sign-camera-area.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b8c091ed915d155f000016/Information-sign-camera-area.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "b3970162fb79a1c4b70ccc1f8d517eb91054854a262d87ab537f170b11490431",
+    "modifications": "None",
+    "alt": "Black camera symbol on a white panel",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/road-work-sign-temporary-lane-closure.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55b8c3f140f0b6151f00000d/road-work-sign-temporary-lane-closure.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "f00c2185e0bb5d3bf187c0ef03ecb5bc5de6eaf803c31720ce3365657fa04ac2",
+    "modifications": "None",
+    "alt": "Yellow panel with lane arrows and a red blocking bar",
+    "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/along-carriageway-edge-line.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/road-markings",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55bb6062ed915d1565000004/along-carriageway-edge-line.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "1b7b3a2cadf7dcde85c608312d8cba1348dd504661c9edd1486a71610b687508",
+    "modifications": "None",
+    "alt": "Continuous white line at the road edge",
+    "highwayCodeRule": "Annex: Road markings"
+  },
+  {
+    "path": "/driving/along-carriageway-centre-line.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/road-markings",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55bb607ae5274a1545000004/along-carriageway-centre-line.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "9668a5b5c954c99c7b0cc5889ad72f30028a92bd1a20b6d1e71a2e26f771f337",
+    "modifications": "None",
+    "alt": "Short white centre-line strokes with longer gaps",
+    "highwayCodeRule": "Annex: Road markings"
+  },
+  {
+    "path": "/driving/along-carriageway-lane-line.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/road-markings",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55bb618bed915d1565000008/along-carriageway-lane-line.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "ce3bf8b7e467b60ca9618878a96933817705247a6a211a8bae821e9e6891213f",
+    "modifications": "None",
+    "alt": "Short broken white lane-dividing line",
+    "highwayCodeRule": "Annex: Road markings"
+  },
+  {
+    "path": "/driving/motorway-signal-change-lane.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/light-signals-controlling-traffic",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/559fbec5e5274a155900002f/motorway-signal-change-lane.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "bd50fda92c96ca904f5208b4304013d6736eae13c6371e636dbd34136124b04f",
+    "modifications": "None",
+    "alt": "Amber motorway signal with a diagonal arrow",
+    "highwayCodeRule": "Annex: Light signals controlling traffic"
+  },
+  {
+    "path": "/driving/motorway-signal-fog.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/light-signals-controlling-traffic",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/559fbef4ed915d1595000040/motorway-signal-fog.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "616824e1406cef46d59c0859b2f045339d5c8d4cbc91e9529d0154eca80d3cfc",
+    "modifications": "None",
+    "alt": "Motorway signal displaying FOG",
+    "highwayCodeRule": "Annex: Light signals controlling traffic"
+  },
+  {
+    "path": "/driving/along-carriageway-double-white-broken-line.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/road-markings",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55bb60cf40f0b6154e00000b/along-carriageway-double-white-broken-line.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "d9ee9f11759fc6698fb46a2ec18f54b2eaf1fabc9044ee90af3d0957bef5a1f2",
+    "modifications": "None",
+    "alt": "Double white centre lines, with the nearer line broken",
+    "highwayCodeRule": "128"
+  },
+  {
+    "path": "/driving/along-carriageway-double-white-line.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/road-markings",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55bb60eee5274a1548000007/along-carriageway-double-white-line.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "a733a7049ea6e279534b82ebeafbc4a804eda32326c261988c144cd7f92fa0ae",
+    "modifications": "None",
+    "alt": "Double white centre lines, with a continuous line nearest you",
+    "highwayCodeRule": "129"
+  },
+  {
+    "path": "/driving/along-carriageway-diagonal-line.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/road-markings",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55bb616eed915d1565000006/along-carriageway-diagonal-line.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "7af76582021ccb8089050a495423651d2dc99857fb7d884e934ec3b7445978f9",
+    "modifications": "None",
+    "alt": "Diagonal white stripes between broken white boundary lines",
+    "highwayCodeRule": "130"
+  },
+  {
+    "path": "/driving/other-road-markings-give-way-road.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/road-markings",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55bb8ada40f0b6154e00001e/other-road-markings-give-way-road.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "736312337cc87d5a8d50c4597c30bcf25d140e9831d88f2830ba536c55630308",
+    "modifications": "None",
+    "alt": "Large white inverted triangle painted on the road",
+    "highwayCodeRule": "172"
+  },
+  {
+    "path": "/driving/other-road-markings-keep-clear.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/road-markings",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55bb8b58e5274a1545000010/other-road-markings-keep-clear.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-25",
+    "sha256": "ca541a6ddb262b4e7a6a218f4e70afb68ebbb72bf037a00a30a36706f294f7d2",
+    "modifications": "None",
+    "alt": "White KEEP CLEAR lettering painted on the road",
+    "highwayCodeRule": "Annex: Road markings"
   }
 ]

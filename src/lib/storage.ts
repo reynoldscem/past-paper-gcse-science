@@ -5,6 +5,7 @@ const API_BASE = import.meta.env.DEV
   : '';
 
 const defaultProgress: AppProgress = {
+  signAccuracy: {},
   hazardSessions: [],
   activeLearningArea: 'science',
   attempts: [],

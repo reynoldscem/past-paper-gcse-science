@@ -10,7 +10,7 @@ export function TopBar() {
       <button
         onClick={() => {
           if (view === 'quiz') {
-            if (window.confirm('Leave this quiz? Your answers so far won\'t be saved.')) {
+            if (window.confirm(useAppStore.getState().activePaper?.mode === 'driving-mock' ? 'Leave this mock? You can resume on this browser before its original deadline.' : 'Leave this quiz? Your answers so far won\'t be saved.')) {
               resetQuiz();
             }
           } else {

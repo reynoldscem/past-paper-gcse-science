@@ -98,3 +98,29 @@ test('unanswered mock questions contribute to weak-topic statistics', () => {
   assert.ok(stats.every(t => t.accuracy === 0));
   assert.ok(generatePaper(driving, { mode: 'weak-topics' }, 20, [attempt]).questions.length > 0);
 });
+
+test('sign rounds contain 20 distinct images with shuffled, unambiguous choices and complete provenance', async () => {
+  const { signBank, createSignRound } = await import('../src/data/signDrill.ts');
+  const manifest = JSON.parse(readFileSync('public/driving/manifest.json', 'utf8'));
+  assert.ok(signBank.length >= 120);
+  assert.equal(new Set(signBank.map(q => q.image.src)).size, signBank.length);
+  assert.equal(new Set(manifest.map(m => m.sha256)).size, manifest.length);
+  for (const q of signBank) {
+    assert.equal(new Set(q.options).size, 4);
+    const m = manifest.find(m => m.path === q.image.src);
+    assert.ok(m.alt && m.highwayCodeRule && m.licenceUrl && m.sourceUrl);
+    assert.equal(createHash('sha256').update(readFileSync(`public${m.path}`)).digest('hex'), m.sha256);
+  }
+  const positions = new Set();
+  for (let i = 0; i < 20; i++) {
+    const round = createSignRound();
+    assert.equal(round.length, 20);
+    assert.equal(new Set(round.map(q => q.image.src)).size, 20);
+    for (const q of round) {
+      const original = signBank.find(s => s.id === q.id);
+      assert.equal(q.options[q.correctIndex], original.options[original.correctIndex]);
+      positions.add(q.correctIndex);
+    }
+  }
+  assert.equal(positions.size, 4);
+});

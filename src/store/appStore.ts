@@ -1,3 +1,4 @@
+import { readMockDraft, writeMockDraft, clearMockDraft } from '../lib/mockDraft';
 import { create } from 'zustand';
 import { ViewName, Paper, Subject } from '../types';
 
@@ -6,6 +7,11 @@ interface AppState {
   userName: string | null;
   sessionToken: string | null;
   activePaper: Paper | null;
+  flaggedQuestions: Set<number>;
+  draftError: string;
+  toggleFlag: (index: number) => void;
+  resumeMock: () => void;
+  discardMock: () => void;
   activeAnswers: (number | null)[];
   checkedQuestions: Set<number>;
   currentQuestionIndex: number;
@@ -25,10 +31,25 @@ interface AppState {
   resetQuiz: () => void;
 }
 
-export const useAppStore = create<AppState>((set) => ({
+export const useAppStore = create<AppState>((set, get) => ({
   view: 'home',
   userName: localStorage.getItem('amy-science-user'),
   sessionToken: sessionStorage.getItem('amy-science-token'),
+  flaggedQuestions: new Set(),
+  draftError: '',
+  toggleFlag: (index) => set(state => {
+    const flaggedQuestions = new Set(state.flaggedQuestions);
+    if (flaggedQuestions.has(index)) flaggedQuestions.delete(index); else flaggedQuestions.add(index);
+    return { flaggedQuestions };
+  }),
+  discardMock: () => { if (get().userName) clearMockDraft(get().userName!); },
+  resumeMock: () => {
+    const draft = get().userName ? readMockDraft(get().userName!) : null;
+    if (!draft) return;
+    set({ activePaper: draft.paper, activeAnswers: draft.answers, flaggedQuestions: new Set(draft.flags),
+      currentQuestionIndex: draft.index, quizStartTime: draft.endTime - draft.paper.durationSeconds! * 1000,
+      checkedQuestions: new Set(), view: 'quiz' });
+  },
   activePaper: null,
   activeAnswers: [],
   checkedQuestions: new Set(),
@@ -50,13 +71,14 @@ export const useAppStore = create<AppState>((set) => ({
   logout: () => {
     localStorage.removeItem('amy-science-user');
     sessionStorage.removeItem('amy-science-token');
-    set({ userName: null, sessionToken: null, view: 'home' });
+    set({ userName: null, sessionToken: null, view: 'home', activePaper: null, activeAnswers: [], flaggedQuestions: new Set(), quizStartTime: null });
   },
 
   setView: (view) => set({ view }),
 
   startQuiz: (paper) => set({
     view: 'quiz',
+    flaggedQuestions: new Set(),
     activePaper: paper,
     activeAnswers: new Array(paper.questions.length).fill(null),
     checkedQuestions: new Set(),
@@ -90,6 +112,7 @@ export const useAppStore = create<AppState>((set) => ({
     set({ view: 'home' });
     // Delay clearing quiz state so exit animations can render
     setTimeout(() => {
+      if (get().view !== 'home') return;
       set({
         activePaper: null,
         activeAnswers: [],
@@ -101,3 +124,20 @@ export const useAppStore = create<AppState>((set) => ({
     }, 300);
   },
 }));
+
+// Save synchronously after each answer/navigation/flag change, including before refresh.
+useAppStore.subscribe((state) => {
+  if (!state.userName) return;
+  try {
+    if (state.view === 'results' && state.activePaper?.mode === 'driving-mock') { clearMockDraft(state.userName); return; }
+    if (state.activePaper?.mode !== 'driving-mock' || !state.quizStartTime) return;
+    if (state.view !== 'quiz') return;
+    const endTime = state.quizStartTime + state.activePaper.durationSeconds! * 1000;
+    if (endTime <= Date.now()) { clearMockDraft(state.userName); return; }
+    writeMockDraft(state.userName, { paper: state.activePaper, answers: state.activeAnswers,
+      flags: [...state.flaggedQuestions], index: state.currentQuestionIndex, endTime });
+    if (state.draftError) useAppStore.setState({ draftError: '' });
+  } catch {
+    if (!state.draftError) useAppStore.setState({ draftError: 'This browser could not save the mock. Keep this page open to finish it.' });
+  }
+});

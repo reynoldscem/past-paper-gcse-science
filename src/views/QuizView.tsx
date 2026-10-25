@@ -11,12 +11,11 @@ import { useProgressStore } from '../store/progressStore';
 export function QuizView() {
   const {
     activePaper, activeAnswers, checkedQuestions, currentQuestionIndex,
-    setAnswer, quickCheck, setQuestionIndex, quizStartTime,
+    setAnswer, quickCheck, setQuestionIndex, quizStartTime, flaggedQuestions: flagged, toggleFlag, draftError,
   } = useAppStore();
   const { addAttempt } = useProgressStore();
   const [showSubmitConfirm, setShowSubmitConfirm] = useState(false);
   const [direction, setDirection] = useState(1);
-  const [flagged, setFlagged] = useState<Set<number>>(new Set());
   const submitted = useRef(false);
 
   const paper = activePaper;
@@ -130,6 +129,7 @@ export function QuizView() {
 
   return (
     <div className="max-w-2xl mx-auto px-4 py-6">
+      {draftError && <p role="alert">{draftError}</p>}
       <div className="flex items-center justify-between mb-2">
         <h2 className="text-sm font-medium text-navy-400 truncate mr-4">{paper.title}</h2>
         <Timer startTime={quizStartTime} durationSeconds={paper.durationSeconds} />
@@ -165,7 +165,7 @@ export function QuizView() {
         </motion.div>
       </AnimatePresence>
 
-      <div className="flex justify-between items-center mt-6 gap-3">
+      <div className="flex flex-wrap justify-between items-center mt-6 gap-3">
         <button
           onClick={handlePrev}
           disabled={currentQuestionIndex === 0}
@@ -200,11 +200,7 @@ export function QuizView() {
       </div>
 
       {paper.mode === 'driving-mock' && <div className="mt-5 space-y-3">
-        <button aria-pressed={flagged.has(currentQuestionIndex)} className="px-4 py-2 rounded-lg bg-amber-900 text-amber-100" onClick={() => setFlagged(previous => {
-          const next = new Set(previous);
-          if (next.has(currentQuestionIndex)) next.delete(currentQuestionIndex); else next.add(currentQuestionIndex);
-          return next;
-        })}>{flagged.has(currentQuestionIndex) ? 'Unflag question' : 'Flag for review'}</button>
+        <button aria-pressed={flagged.has(currentQuestionIndex)} className="px-4 py-2 rounded-lg bg-amber-900 text-amber-100" onClick={() => toggleFlag(currentQuestionIndex)}>{flagged.has(currentQuestionIndex) ? 'Unflag question' : 'Flag for review'}</button>
         <div className="flex flex-wrap gap-2" aria-label="Flagged questions">{[...flagged].sort((a,b) => a-b).map(index => <button className="px-3 py-1 bg-navy-700 rounded" key={index} onClick={() => navigate(index)}>Flagged Q{index + 1}</button>)}</div>
       </div>}
       <DotNav

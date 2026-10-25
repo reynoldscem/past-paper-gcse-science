@@ -1,3 +1,4 @@
+import { drivingRound2Questions } from './drivingRound2';
 import { drivingVisualQuestions } from './drivingVisual';
 import { drivingPrepQuestions } from './drivingPrep';
 import { withDrivingReference } from './drivingReferences';
@@ -16,6 +17,7 @@ const allQuestions: Question[] = [
   ...drivingTheoryExpandedQuestions.map(withDrivingReference),
   ...drivingVisualQuestions,
   ...drivingPrepQuestions,
+  ...drivingRound2Questions,
 ];
 
 export function getAllQuestions(): Question[] {

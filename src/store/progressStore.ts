@@ -9,6 +9,7 @@ function getUserName(): string {
 }
 
 interface ProgressState extends AppProgress {
+  recordSign: (path: string, correct: boolean) => Promise<void>;
   saveHazardSessions: (sessions: HazardSession[]) => Promise<void>;
   loaded: boolean;
   hydrate: () => Promise<void>;
@@ -18,6 +19,7 @@ interface ProgressState extends AppProgress {
 }
 
 export const useProgressStore = create<ProgressState>((set, get) => ({
+  signAccuracy: {},
   hazardSessions: [],
   activeLearningArea: 'science',
   attempts: [],
@@ -26,6 +28,19 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
   streakDays: 0,
   lastActiveDate: '',
   loaded: false,
+
+  recordSign: async (path, correct) => {
+    const state = get();
+    const user = getUserName();
+    const old = state.signAccuracy?.[path] ?? { correct: 0, attempts: 0 };
+    const signAccuracy = { ...state.signAccuracy, [path]: { correct: old.correct + Number(correct), attempts: old.attempts + 1 } };
+    await saveProgress(user, {
+      signAccuracy, hazardSessions: state.hazardSessions, activeLearningArea: state.activeLearningArea,
+      attempts: state.attempts, totalPapersCompleted: state.totalPapersCompleted,
+      bestScores: state.bestScores, streakDays: state.streakDays, lastActiveDate: state.lastActiveDate,
+    }, true);
+    if (getUserName() === user) set({ signAccuracy });
+  },
 
   hydrate: async () => {
     const progress = await loadProgress(getUserName());
@@ -36,6 +51,7 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
     const state = get();
     const userName = getUserName();
     await saveProgress(userName, {
+      signAccuracy: state.signAccuracy,
       hazardSessions,
       activeLearningArea: state.activeLearningArea,
       attempts: state.attempts,
@@ -52,6 +68,7 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
     const newState = { ...state, activeLearningArea: area };
     set({ activeLearningArea: area });
     saveProgress(getUserName(), {
+      signAccuracy: state.signAccuracy,
       hazardSessions: state.hazardSessions,
       activeLearningArea: area,
       attempts: newState.attempts,
@@ -87,6 +104,7 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
     }
 
     const newState = {
+      signAccuracy: state.signAccuracy,
       hazardSessions: state.hazardSessions,
       activeLearningArea: state.activeLearningArea,
       attempts: [...state.attempts, attempt],
@@ -98,6 +116,7 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
 
     set(newState);
     saveProgress(getUserName(), {
+      signAccuracy: newState.signAccuracy,
       hazardSessions: newState.hazardSessions,
       activeLearningArea: newState.activeLearningArea,
       attempts: newState.attempts,
@@ -111,6 +130,7 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
   clearProgress: () => {
     const activeLearningArea = get().activeLearningArea;
     const empty = {
+      signAccuracy: {},
       hazardSessions: [],
       activeLearningArea,
       attempts: [],

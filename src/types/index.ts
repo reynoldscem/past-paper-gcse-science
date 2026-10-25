@@ -52,6 +52,7 @@ export interface PaperAttempt {
 }
 
 export interface AppProgress {
+  signAccuracy?: Record<string, { correct: number; attempts: number }>;
   hazardSessions?: HazardSession[];
   activeLearningArea: LearningArea;
   attempts: PaperAttempt[];
@@ -61,4 +62,4 @@ export interface AppProgress {
   lastActiveDate: string;
 }
 
-export type ViewName = 'hazard' | 'home' | 'select' | 'quiz' | 'results' | 'admin' | 'history' | 'review' | 'stats';
+export type ViewName = 'sign-drill' | 'hazard' | 'home' | 'select' | 'quiz' | 'results' | 'admin' | 'history' | 'review' | 'stats';
