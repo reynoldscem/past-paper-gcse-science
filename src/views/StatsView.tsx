@@ -2,7 +2,7 @@ import { useMemo } from 'react';
 import { motion } from 'framer-motion';
 import { useAppStore } from '../store/appStore';
 import { useProgressStore } from '../store/progressStore';
-import { getAllQuestions } from '../data';
+import { getPracticeQuestions } from '../data';
 import { buildTopicStats } from '../lib/questionStats';
 import { learningAreaMeta, subjectLearningArea, subjectMeta } from '../data/topics';
 import { Subject } from '../types';
@@ -10,7 +10,7 @@ import { Subject } from '../types';
 export function StatsView() {
   const { setView } = useAppStore();
   const { activeLearningArea, attempts } = useProgressStore();
-  const allQuestions = useMemo(() => getAllQuestions(), []);
+  const allQuestions = useMemo(() => getPracticeQuestions(), []);
   const activeQuestions = useMemo(
     () => allQuestions.filter(q => subjectLearningArea[q.subject] === activeLearningArea),
     [allQuestions, activeLearningArea],
