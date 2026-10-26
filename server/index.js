@@ -8,7 +8,7 @@ import { rateLimit } from 'express-rate-limit';
 import { loadUsers, verifyPassword } from './auth.js';
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
-const DATA_DIR = path.resolve(__dirname, 'data');
+
 const DIST_DIR = path.resolve(__dirname, '..', 'dist');
 const PORT = process.env.PORT || 3000;
 const IS_DEV = process.env.NODE_ENV !== 'production';
@@ -16,6 +16,8 @@ const MAX_BODY_SIZE = '2mb';
 const MAX_NAME_LENGTH = 30;
 const NAME_REGEX = /^[a-z0-9_]+$/;
 
+export function createApp({ dataDir = path.resolve(__dirname, 'data'), getUsers = loadUsers } = {}) {
+const DATA_DIR = dataDir;
 fs.mkdirSync(DATA_DIR, { recursive: true });
 
 const app = express();
@@ -45,7 +47,7 @@ setInterval(() => {
   for (const [token, session] of sessions) {
     if (now - session.createdAt > SESSION_TTL) sessions.delete(token);
   }
-}, 3600000);
+}, 3600000).unref();
 
 function createSession(name) {
   const token = crypto.randomBytes(32).toString('hex');
@@ -124,7 +126,7 @@ app.post('/api/login', loginLimiter, async (req, res) => {
     return res.status(400).json({ error: 'Invalid name' });
   }
 
-  const users = loadUsers();
+  const users = getUsers();
   const user = users[safeName];
   if (!user) {
     return res.status(401).json({ error: 'Invalid name or password' });
@@ -154,12 +156,24 @@ app.get('/api/progress/:name', validateName, (req, res) => {
 
 app.post('/api/progress/:name', validateName, (req, res) => {
   try {
-    const json = JSON.stringify(req.body);
+    if (!Number.isSafeInteger(req.body?.revision) || req.body.revision < 0) {
+      return res.status(428).json({ error: 'A progress revision is required. Reload the app.' });
+    }
+    const previous = fs.existsSync(req.userFile) ? JSON.parse(fs.readFileSync(req.userFile, 'utf-8')) : null;
+    const revision = previous?.revision ?? 0;
+    if (req.body.revision !== revision) {
+      return res.status(409).json({ error: 'Progress changed. Reload before retrying.' });
+    }
+    const next = { ...req.body, revision: revision + 1 };
+    const json = JSON.stringify(next);
     if (json.length > 2 * 1024 * 1024) {
       return res.status(413).json({ error: 'Payload too large' });
     }
-    fs.writeFileSync(req.userFile, JSON.stringify(req.body, null, 2));
-    res.json({ ok: true });
+    // Synchronous compare/write is atomic within this single Express process.
+    const temporary = `${req.userFile}.tmp`;
+    fs.writeFileSync(temporary, JSON.stringify(next, null, 2));
+    fs.renameSync(temporary, req.userFile);
+    res.json({ ok: true, revision: next.revision });
   } catch {
     res.status(500).json({ error: 'Failed to save data' });
   }
@@ -177,15 +191,9 @@ app.get('/api/export/:name', validateName, (req, res) => {
   }
 });
 
-app.delete('/api/progress/:name', validateName, (req, res) => {
-  try {
-    if (fs.existsSync(req.userFile)) {
-      fs.unlinkSync(req.userFile);
-    }
-    res.json({ ok: true });
-  } catch {
-    res.status(500).json({ error: 'Failed to delete data' });
-  }
+// Legacy clients must not bypass revision checks or reset the revision counter.
+app.delete('/api/progress/:name', validateName, (_req, res) => {
+  res.status(428).json({ error: 'Reset requires a revision-checked progress POST. Reload the app.' });
 });
 
 // ─── Serve frontend ──────────────────────────────────────────────────
@@ -196,8 +204,15 @@ if (fs.existsSync(DIST_DIR)) {
   });
 }
 
+return app;
+}
+
+if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
+const app = createApp();
 // '::' listens on IPv6 and IPv4 (dual-stack), so both localhost (::1) and 127.0.0.1 work
 const HOST = process.env.HOST || '::';
 app.listen(PORT, HOST, () => {
   console.log(`Server running on http://[${HOST}]:${PORT}`);
 });
+
+}

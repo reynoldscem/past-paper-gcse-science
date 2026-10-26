@@ -52,6 +52,7 @@ export interface PaperAttempt {
 }
 
 export interface AppProgress {
+  revision?: number;
   signAccuracy?: Record<string, { correct: number; attempts: number }>;
   hazardSessions?: HazardSession[];
   activeLearningArea: LearningArea;

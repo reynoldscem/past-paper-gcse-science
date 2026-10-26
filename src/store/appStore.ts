@@ -129,11 +129,10 @@ export const useAppStore = create<AppState>((set, get) => ({
 useAppStore.subscribe((state) => {
   if (!state.userName) return;
   try {
-    if (state.view === 'results' && state.activePaper?.mode === 'driving-mock') { clearMockDraft(state.userName); return; }
     if (state.activePaper?.mode !== 'driving-mock' || !state.quizStartTime) return;
     if (state.view !== 'quiz') return;
     const endTime = state.quizStartTime + state.activePaper.durationSeconds! * 1000;
-    if (endTime <= Date.now()) { clearMockDraft(state.userName); return; }
+    if (endTime <= Date.now()) return;
     writeMockDraft(state.userName, { paper: state.activePaper, answers: state.activeAnswers,
       flags: [...state.flaggedQuestions], index: state.currentQuestionIndex, endTime });
     if (state.draftError) useAppStore.setState({ draftError: '' });

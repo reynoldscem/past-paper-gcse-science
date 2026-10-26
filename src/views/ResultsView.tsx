@@ -8,11 +8,11 @@ import { AnswerReview } from '../components/results/AnswerReview';
 type ReviewMode = 'score' | 'wrong' | 'all';
 
 export function ResultsView() {
-  const { activePaper, activeAnswers } = useAppStore();
+  const { activePaper, activeAnswers, quizStartTime } = useAppStore();
   const { attempts } = useProgressStore();
   const [reviewMode, setReviewMode] = useState<ReviewMode>('score');
 
-  const latestAttempt = attempts[attempts.length - 1];
+  const latestAttempt = attempts.find(a => a.id === `${activePaper?.id}:${quizStartTime}`) ?? attempts[attempts.length - 1];
   const paper = activePaper;
 
   const wrongQuestions = useMemo(() => {

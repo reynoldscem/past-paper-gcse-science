@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { motion } from 'framer-motion';
 import { useAppStore } from '../store/appStore';
 import { useProgressStore } from '../store/progressStore';
-import { exportAll, clearAll } from '../lib/storage';
+import { exportAll } from '../lib/storage';
 import { getAllQuestions } from '../data';
 import { learningAreaMeta, subjectLearningArea } from '../data/topics';
 
@@ -34,8 +34,7 @@ export function AdminView() {
 
   const handleReset = async () => {
     if (!userName) return;
-    await clearAll(userName);
-    clearProgress();
+    await clearProgress();
     setConfirmReset(false);
     setResetText('');
   };

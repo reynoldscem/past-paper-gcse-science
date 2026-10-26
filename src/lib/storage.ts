@@ -1,10 +1,12 @@
 import { AppProgress } from '../types';
+import { useAppStore } from '../store/appStore';
 
 const API_BASE = import.meta.env.DEV
   ? `${window.location.protocol}//${window.location.hostname}:3001`
   : '';
 
-const defaultProgress: AppProgress = {
+export const defaultProgress: AppProgress = {
+  revision: 0,
   signAccuracy: {},
   hazardSessions: [],
   activeLearningArea: 'science',
@@ -39,37 +41,41 @@ export async function login(name: string, password: string): Promise<{ ok: boole
   }
 }
 
-export async function loadProgress(userName: string): Promise<AppProgress> {
-  try {
-    const res = await fetch(`${API_BASE}/api/progress/${encodeURIComponent(userName)}`, {
-      headers: authHeaders(),
-    });
-    if (res.status === 401) {
-      sessionStorage.removeItem('amy-science-token');
-      localStorage.removeItem('amy-science-user');
-      // Don't reload — just let the app render the login view on next tick
-      return { ...defaultProgress };
-    }
-    if (!res.ok) throw new Error(res.statusText);
-    const data = await res.json();
-    return { ...defaultProgress, ...(data ?? {}) };
-  } catch {
-    return { ...defaultProgress };
+export class ProgressError extends Error {
+  constructor(public status: number) {
+    super(status === 409 ? 'Progress changed elsewhere. Reload progress before retrying.' : 'Progress could not be saved. Please retry.');
   }
 }
 
-export async function saveProgress(userName: string, progress: AppProgress, strict = false): Promise<void> {
-  try {
-    const response = await fetch(`${API_BASE}/api/progress/${encodeURIComponent(userName)}`, {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json', ...authHeaders() },
-      body: JSON.stringify(progress),
-    });
-    if (!response.ok) throw new Error('Failed to save progress');
-  } catch (error) {
-    if (strict) throw error;
-    console.error('Failed to save progress');
+function checkResponse(response: Response, token: string | null) {
+  if (response.status === 401 && useAppStore.getState().sessionToken === token) {
+    useAppStore.getState().logout();
   }
+  if (!response.ok) throw new ProgressError(response.status);
+}
+
+export async function loadProgress(userName: string): Promise<AppProgress> {
+  const token = useAppStore.getState().sessionToken;
+  const response = await fetch(`${API_BASE}/api/progress/${encodeURIComponent(userName)}`, { headers: authHeaders() });
+  checkResponse(response, token);
+  const data = await response.json();
+  if (data !== null && (typeof data !== 'object' || Array.isArray(data))) throw new Error('Invalid progress');
+  return { ...defaultProgress, ...(data ?? {}) };
+}
+
+export async function saveProgress(userName: string, progress: AppProgress): Promise<number> {
+  const token = useAppStore.getState().sessionToken;
+  const response = await fetch(`${API_BASE}/api/progress/${encodeURIComponent(userName)}`, {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json', ...authHeaders() },
+    body: JSON.stringify(progress),
+  });
+  checkResponse(response, token);
+  const acknowledgement = await response.json();
+  if (acknowledgement?.ok !== true || !Number.isInteger(acknowledgement.revision)) {
+    throw new Error('Save was not acknowledged. Please retry.');
+  }
+  return acknowledgement.revision;
 }
 
 export async function exportAll(userName: string): Promise<string> {
@@ -82,16 +88,5 @@ export async function exportAll(userName: string): Promise<string> {
     return JSON.stringify(data, null, 2);
   } catch {
     return '{}';
-  }
-}
-
-export async function clearAll(userName: string): Promise<void> {
-  try {
-    await fetch(`${API_BASE}/api/progress/${encodeURIComponent(userName)}`, {
-      method: 'DELETE',
-      headers: authHeaders(),
-    });
-  } catch {
-    console.error('Failed to clear progress');
   }
 }
