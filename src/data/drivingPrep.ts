@@ -8,10 +8,10 @@ export const drivingPrepQuestions: Question[] = [
     "topicLabel": "Alertness",
     "question": "You plan a four-hour drive. What rest plan should you make?",
     "options": [
-      "At least 15 minutes after each two hours of driving",
-      "Only stop when your eyes close",
-      "Take a break only at the destination",
-      "Use loud music instead of breaks"
+      "Take at least 15 minutes after each two hours of driving",
+      "A five-minute rest after each two hours of driving",
+      "A fifteen-minute rest after three hours of driving",
+      "One thirty-minute rest at the end of the journey"
     ],
     "correctIndex": 0,
     "explanation": "Plan breaks before tiredness develops; do not begin the journey tired.",
@@ -26,9 +26,9 @@ export const drivingPrepQuestions: Question[] = [
     "question": "You feel sleepy while on a motorway. What should you do?",
     "options": [
       "Leave at a safe stopping place and rest",
-      "Stop on the hard shoulder for a nap",
-      "Open the window and keep driving",
-      "Speed up to finish sooner"
+      "Pull into a motorway emergency area for a short nap",
+      "Continue with the windows open until your next planned stop",
+      "Stay on the motorway and use music to keep yourself awake"
     ],
     "correctIndex": 0,
     "explanation": "Find a safe place to stop. The hard shoulder is not a rest area.",
@@ -42,10 +42,10 @@ export const drivingPrepQuestions: Question[] = [
     "topicLabel": "Alertness",
     "question": "You need glasses to meet the driving eyesight standard. When should you wear them?",
     "options": [
-      "Every time you drive",
-      "Only at night",
-      "Only on unfamiliar roads",
-      "Only for the driving test"
+      "Whenever you drive",
+      "On night journeys, but not during daylight",
+      "On faster roads, but not on familiar local streets",
+      "When reading road signs becomes difficult"
     ],
     "correctIndex": 0,
     "explanation": "Corrective lenses must be worn whenever needed to meet the standard.",
@@ -77,9 +77,9 @@ export const drivingPrepQuestions: Question[] = [
     "question": "A driver cuts in front of you. How should you respond?",
     "options": [
       "Ease back to restore a safe gap",
-      "Follow closely to protest",
-      "Flash headlights repeatedly",
-      "Overtake immediately to regain position"
+      "Maintain your speed and let the other driver make a gap",
+      "Pass promptly so the other driver is behind you again",
+      "Use a long headlight flash to show that the gap was too small"
     ],
     "correctIndex": 0,
     "explanation": "Stay calm and give others room to make mistakes.",
@@ -110,10 +110,10 @@ export const drivingPrepQuestions: Question[] = [
     "topicLabel": "Attitude",
     "question": "Your passenger wants to discuss something upsetting while you drive. What should you do?",
     "options": [
-      "Keep your attention on driving and postpone the discussion",
-      "Turn to face them",
-      "Read messages about it",
-      "Drive faster to end the conversation"
+      "Postpone it and concentrate on driving",
+      "Continue the discussion while reducing speed a little",
+      "Discuss it during the straighter parts of the route",
+      "Let the passenger watch for hazards during the discussion"
     ],
     "correctIndex": 0,
     "explanation": "Avoid distractions that take concentration away from the road.",
@@ -144,14 +144,14 @@ export const drivingPrepQuestions: Question[] = [
     "topicLabel": "Attitude",
     "question": "You approach stationary traffic. How can you reduce wasted fuel?",
     "options": [
-      "Anticipate the queue and ease off early",
-      "Accelerate then brake sharply",
-      "Keep the engine revving",
-      "Stay in a low gear at high revs"
+      "Anticipate it and ease off early",
+      "Coast towards it in neutral to reduce engine use",
+      "Maintain speed until you reach your usual braking point",
+      "Hold a low gear and keep the engine speed higher"
     ],
     "correctIndex": 0,
     "explanation": "Planning ahead reduces unnecessary acceleration and braking; coasting reduces control.",
-    "highwayCodeRule": "122\u2013123",
+    "highwayCodeRule": "122–123",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/general-rules-techniques-and-advice-for-all-drivers-and-riders-103-to-158"
   },
   {
@@ -161,10 +161,10 @@ export const drivingPrepQuestions: Question[] = [
     "topicLabel": "Safety Margins",
     "question": "On a dry high-speed road you pass a marker one second after the car ahead. What should you do?",
     "options": [
-      "Increase the gap to at least two seconds",
-      "Keep the same gap",
-      "Move closer before overtaking",
-      "Use your horn"
+      "Increase it to at least two seconds",
+      "Keep the gap if your car has anti-lock brakes fitted",
+      "Maintain one second while traffic is moving steadily",
+      "Reduce your gap before checking whether you can overtake"
     ],
     "correctIndex": 0,
     "explanation": "A one-second gap gives too little reaction space. Increase it further in poor conditions.",
@@ -227,12 +227,12 @@ export const drivingPrepQuestions: Question[] = [
     "subject": "vehicleSafety",
     "topic": "vehicle-handling",
     "topicLabel": "Vehicle Handling",
-    "question": "Why can a car lose steering response on a very wet road?",
+    "question": "During aquaplaning, what prevents the steering tyres from gripping the road?",
     "options": [
-      "A layer of water can separate tyres from the road",
-      "Rainwater can make the brake pedal move the steering rack",
-      "Water makes the tyres grip the surface more firmly at speed",
-      "The extra weight of water can lock the steering mechanism"
+      "A layer of water under the tyres",
+      "A layer of compressed air under the tyres",
+      "A sudden loss of pressure inside the tyres",
+      "A film of brake fluid escaping from the wheels"
     ],
     "correctIndex": 0,
     "explanation": "Rule 227 explains that steering may become unresponsive when water prevents the tyres gripping the road. Ease off and slow gradually.",
@@ -247,13 +247,13 @@ export const drivingPrepQuestions: Question[] = [
     "question": "You are about to drive on an icy road. How should you use the controls?",
     "options": [
       "Gently, with a much larger gap",
-      "Brake hard before every turn",
-      "Use abrupt steering",
-      "Follow closely to use the other car tracks"
+      "Use a low gear and sharp acceleration to find grip",
+      "Brake firmly while turning to keep the speed low",
+      "Steer normally but rely on ABS to prevent any slide"
     ],
     "correctIndex": 0,
     "explanation": "Ice can increase stopping distances dramatically. Gentle acceleration, braking and steering reduce skidding risk.",
-    "highwayCodeRule": "230\u2013231",
+    "highwayCodeRule": "230–231",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/driving-in-adverse-weather-conditions-226-to-237"
   },
   {
@@ -263,10 +263,10 @@ export const drivingPrepQuestions: Question[] = [
     "topicLabel": "Vehicle Handling",
     "question": "A strong crosswind blows as you pass a gap in a hedge. What should you expect?",
     "options": [
-      "A sudden gust that can affect your course",
-      "An automatic speed-limit change",
-      "Better tyre grip",
-      "A shorter stopping distance"
+      "A sudden gust may change your course",
+      "The wind will decrease steadily as the hedge ends",
+      "A crosswind will affect the vehicle ahead but not your car",
+      "The hedge will keep sheltering your car through the gap"
     ],
     "correctIndex": 0,
     "explanation": "Exposed gaps and bridges can create sudden gusts. Slow appropriately and maintain control.",
@@ -280,10 +280,10 @@ export const drivingPrepQuestions: Question[] = [
     "topicLabel": "Vehicle Handling",
     "question": "After crossing deep water, a gentle brake test shows reduced braking. What should you do?",
     "options": [
-      "Apply light pressure while moving slowly to dry them",
-      "Accelerate sharply so air pressure dries the brake linings",
-      "Keep the same speed and wait until the next planned stop",
-      "Use the parking brake for the next few routine stops"
+      "Dry them with light braking at low speed",
+      "Drive at a higher speed to force air across the brakes",
+      "Continue normally until heat from the tyres dries them",
+      "Use the parking brake until the footbrake dries naturally"
     ],
     "correctIndex": 0,
     "explanation": "Rule 121 advises driving slowly while applying light pressure to dry wet brakes if their effectiveness is reduced. Test and act where safe.",
@@ -297,10 +297,10 @@ export const drivingPrepQuestions: Question[] = [
     "topicLabel": "Other Types of Vehicle",
     "question": "A large vehicle turns right across your path. Why may you need to wait longer than for a car?",
     "options": [
-      "Its extra length takes time to clear the junction",
-      "Its rear wheels follow exactly the same path as the front",
-      "Its driver is required to stop halfway across the junction",
-      "Its indicators give it priority over all approaching traffic"
+      "Its length takes longer to clear the junction",
+      "Its extra width means it must pause while crossing your lane",
+      "Its rear wheels follow the same turning path as its front wheels",
+      "Its indicator gives it priority until it is back in a straight line"
     ],
     "correctIndex": 0,
     "explanation": "Rule 221 warns that large vehicles need extra road space to turn or deal with hazards. Allow room and time for the whole vehicle to clear.",
@@ -314,10 +314,10 @@ export const drivingPrepQuestions: Question[] = [
     "topicLabel": "Other Types of Vehicle",
     "question": "You approach a tram stopped for passengers. What hazard should you anticipate?",
     "options": [
-      "Passengers crossing between the tram and pavement",
-      "Passengers being required to wait until all cars have passed",
-      "A tram having the same ability as a car to steer around people",
-      "The stopped tram shielding every pedestrian from road traffic"
+      "Passengers crossing to or from the tram",
+      "The tram doors swinging across adjacent traffic lanes",
+      "The tram moving off to shield passengers from passing cars",
+      "Traffic lights stopping cars whenever the tram doors open"
     ],
     "correctIndex": 0,
     "explanation": "Rule 223 advises looking out for people getting on or off a bus or tram and crossing the road. A stopped vehicle can hide someone from view.",
@@ -349,9 +349,9 @@ export const drivingPrepQuestions: Question[] = [
     "question": "You are following a large vehicle and cannot see the road ahead. What helps?",
     "options": [
       "Drop back to improve your view",
-      "Drive close to its rear",
-      "Move alongside on a bend",
-      "Use full beam"
+      "Stay close enough to see beneath the large vehicle",
+      "Move towards the centre line without increasing your gap",
+      "Follow its brake lights instead of seeking a view ahead"
     ],
     "correctIndex": 0,
     "explanation": "A larger gap gives you a better view and more time to respond.",
@@ -363,12 +363,12 @@ export const drivingPrepQuestions: Question[] = [
     "subject": "vehicleSafety",
     "topic": "vehicle-condition",
     "topicLabel": "Vehicle Condition",
-    "question": "What is the minimum legal tread depth for a car tyre?",
+    "question": "What minimum tread depth must a car tyre have across the central three-quarters of its tread and around its entire circumference?",
     "options": [
-      "1.6 mm across the central three-quarters and around the entire circumference",
-      "1 mm anywhere",
-      "2.5 mm on the outer edge only",
-      "3 mm on the front tyres only"
+      "1.6 mm",
+      "1.0 mm",
+      "2.0 mm",
+      "3.0 mm"
     ],
     "correctIndex": 0,
     "explanation": "The requirement applies across the central three-quarters of the tread breadth and around the full circumference.",
@@ -383,9 +383,9 @@ export const drivingPrepQuestions: Question[] = [
     "question": "When should you check tyre pressure for the most reliable routine reading?",
     "options": [
       "When the tyres are cold",
-      "Immediately after a fast journey",
-      "Only when visibly flat",
-      "Only at the MOT"
+      "Once the tyres have warmed up during the journey",
+      "After driving until the steering feels normal",
+      "After a motorway journey while the load is still in place"
     ],
     "correctIndex": 0,
     "explanation": "Follow the vehicle handbook pressures and check when cold; driving heats the tyres and raises pressure.",
@@ -416,10 +416,10 @@ export const drivingPrepQuestions: Question[] = [
     "topicLabel": "Documents & Loading",
     "question": "Does a valid MOT guarantee that your car is safe to drive today?",
     "options": [
-      "No, you must still maintain it in a roadworthy condition",
-      "Yes, until it expires",
-      "Yes, unless you change tyres",
-      "Only on motorways"
+      "No: roadworthiness remains your duty",
+      "Yes: the certificate guarantees safety until its expiry",
+      "Yes: provided no warning lamp has appeared since the test",
+      "No: but routine roadworthiness is the testing garage's duty"
     ],
     "correctIndex": 0,
     "explanation": "An MOT records the condition at the test; you remain responsible for roadworthiness.",
@@ -431,12 +431,12 @@ export const drivingPrepQuestions: Question[] = [
     "subject": "vehicleSafety",
     "topic": "documents-loading",
     "topicLabel": "Documents & Loading",
-    "question": "Who can normally supervise a learner car driver privately?",
+    "question": "To supervise a learner car driver privately, what are the normal minimum age and full-licence holding period?",
     "options": [
-      "Someone at least 21 who has held the relevant full licence for at least three years",
-      "Any driver aged 18",
-      "Anyone who passed last month",
-      "Any passenger with insurance"
+      "Age 21; relevant full licence held for three years",
+      "Age 18; relevant full licence held for three years",
+      "Age 21; relevant full licence held for twelve months",
+      "Age 25; relevant full licence held for twelve months"
     ],
     "correctIndex": 0,
     "explanation": "The supervisor must meet the age and licence requirements; the vehicle and learner must also be properly insured.",
@@ -450,10 +450,10 @@ export const drivingPrepQuestions: Question[] = [
     "topicLabel": "Documents & Loading",
     "question": "You borrow a car. What should you check before driving?",
     "options": [
-      "That insurance covers you driving that car",
-      "Only that the owner is insured",
-      "Only that it has an MOT",
-      "Only that you have permission"
+      "That your use of that car is insured",
+      "That the owner's policy exists, which covers any borrower",
+      "That you have a full licence, which provides automatic cover",
+      "That the car has an MOT, which includes third-party cover"
     ],
     "correctIndex": 0,
     "explanation": "Permission and the owner insurance alone do not establish that you are covered.",
@@ -467,13 +467,13 @@ export const drivingPrepQuestions: Question[] = [
     "topicLabel": "Vehicle Loading",
     "question": "While loading luggage, you find it blocks part of the rearward view. What should you do?",
     "options": [
-      "Reposition it to preserve required visibility",
-      "Leave it if the rear passengers can report approaching traffic",
-      "Drive with a rear door ajar to see around the obstruction",
-      "Rely on the parking sensors for all observations behind"
+      "Reposition it to restore rearward visibility",
+      "Leave it and ask a rear passenger to check for following traffic",
+      "Rely on a reversing camera when making lane changes",
+      "Leave it and use the parking sensors to check before moving out"
     ],
     "correctIndex": 0,
-    "explanation": "Rule 97 says to ensure luggage is secure before setting off; Rule 98 covers loads and towing mirrors where a load obstructs the rearward view. Reposition luggage to preserve visibility, rather than relying on passengers or parking sensors.",
+    "explanation": "Rule 97 advises adjusting mirrors for maximum vision. Rule 98 requires secure loads and towing mirrors where the load obstructs the rearward view. Reposition luggage to preserve visibility; passengers and parking sensors cannot replace proper observations.",
     "highwayCodeRule": "97–98",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/rules-for-drivers-and-motorcyclists-89-to-102"
   },
@@ -533,12 +533,12 @@ export const drivingPrepQuestions: Question[] = [
     "subject": "roadRules",
     "topic": "highway-code",
     "topicLabel": "Highway Code",
-    "question": "You pass a cyclist at up to 30 mph. What clearance should you leave?",
+    "question": "When passing a cyclist at up to 30 mph, what is the minimum clearance recommended by the Highway Code?",
     "options": [
-      "At least 1.5 metres, and more at higher speeds",
-      "Half a metre",
-      "Only enough to avoid contact",
-      "Exactly one metre at every speed"
+      "1.5 metres",
+      "0.5 metres",
+      "1.0 metres",
+      "2.0 metres"
     ],
     "correctIndex": 0,
     "explanation": "Wait if you cannot pass with sufficient room. Leave more space at speeds over 30 mph.",
@@ -552,10 +552,10 @@ export const drivingPrepQuestions: Question[] = [
     "topicLabel": "Weather & Parking",
     "question": "May you normally park partly on the pavement in Scotland?",
     "options": [
-      "No, pavement parking is prohibited, subject to legal exceptions",
-      "Yes, if two wheels remain on the road",
-      "Yes, if hazard lights are on",
-      "Yes, for every short stop"
+      "No, except for legal exemptions",
+      "Yes, provided two wheels stay on the road surface",
+      "Yes, provided a pedestrian can still walk past",
+      "Yes, if you stay in the car for the whole stop"
     ],
     "correctIndex": 0,
     "explanation": "The current Highway Code states you must not park partly or wholly on the pavement in Scotland, subject to applicable exceptions.",
@@ -569,10 +569,10 @@ export const drivingPrepQuestions: Question[] = [
     "topicLabel": "Weather & Parking",
     "question": "In Scotland, what is the rule on parking where the kerb is lowered to help pedestrians or cyclists?",
     "options": [
-      "It is prohibited, subject to limited legal exceptions",
-      "It is always allowed for five minutes",
-      "It is allowed with hazard lights",
-      "Only heavy vehicles are prohibited"
+      "Parking is prohibited here, apart from limited legal exceptions",
+      "It is permitted if you remain seated in the vehicle",
+      "It is permitted if there is space to walk around your car",
+      "The prohibition applies to goods vehicles but not cars"
     ],
     "correctIndex": 0,
     "explanation": "Rule 243 makes parking at kerbs lowered to help pedestrians or cyclists in Scotland a MUST NOT, with exceptions in limited circumstances. The purpose of the lowered kerb matters.",
@@ -649,10 +649,10 @@ export const drivingPrepQuestions: Question[] = [
     "topicLabel": "Vehicle Handling",
     "question": "Your car has anti-lock brakes. In an emergency, how should you brake?",
     "options": [
-      "Apply firm continuous pressure and follow the handbook advice",
-      "Pump the pedal repeatedly",
-      "Use only the handbrake",
-      "Release the brake whenever it pulses"
+      "Maintain firm pressure; follow the handbook",
+      "Pump the pedal to prevent the wheels locking",
+      "Reduce pressure each time you feel the pedal pulse",
+      "Add the parking brake once the footbrake starts pulsing"
     ],
     "correctIndex": 0,
     "explanation": "ABS helps retain steering control under hard braking. Do not assume it will shorten your stopping distance.",
@@ -666,10 +666,10 @@ export const drivingPrepQuestions: Question[] = [
     "topicLabel": "Vehicle Handling",
     "question": "Why is coasting downhill in neutral unsafe?",
     "options": [
-      "It reduces control and removes engine braking",
-      "It improves steering response",
-      "It increases tyre grip",
-      "It makes the footbrake unnecessary"
+      "Coasting reduces control by removing engine braking on the descent",
+      "It reduces engine braking but improves the steering response",
+      "It makes the engine drive the wheels harder as speed rises",
+      "It increases braking from the engine as the car accelerates"
     ],
     "correctIndex": 0,
     "explanation": "Coasting removes engine braking, may increase speed downhill and can make it harder to select the right gear.",
@@ -684,9 +684,9 @@ export const drivingPrepQuestions: Question[] = [
     "question": "Lane-keeping assistance is active. Who remains responsible for controlling the car?",
     "options": [
       "The driver",
-      "The manufacturer",
-      "The nearest passenger",
-      "Nobody while lane lines are visible"
+      "The manufacturer while the system is engaged",
+      "The system, until it issues a warning to take over",
+      "The registered keeper, even when somebody else drives"
     ],
     "correctIndex": 0,
     "explanation": "Driver assistance is not authorised self-driving. You remain responsible and must understand the system limits.",
@@ -700,10 +700,10 @@ export const drivingPrepQuestions: Question[] = [
     "topicLabel": "Vehicle Condition",
     "question": "Adaptive cruise control is operating when weather worsens. What should you do?",
     "options": [
-      "Stay alert, adjust to the conditions and be ready to take control",
-      "Assume the system handles every hazard",
-      "Stop checking the road ahead",
-      "Use a handheld phone"
+      "Adjust safely and stay ready to take control",
+      "Keep the set speed because the system assesses road grip",
+      "Leave the gap unchanged because radar replaces visibility",
+      "Wait for a system warning before responding to the weather"
     ],
     "correctIndex": 0,
     "explanation": "Assistance features do not replace observation or safe judgement. Follow the vehicle handbook and keep control.",
