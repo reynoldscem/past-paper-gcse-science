@@ -97,7 +97,8 @@ test('mock restores questions, answers, flags, position and the original deadlin
   expect(restored).toEqual(draft.paper);
   await page.getByRole('button', { name: 'Skip to end' }).click();
   await page.getByRole('button', { name: /^Submit/ }).click();
-  expect(await page.evaluate(() => localStorage.getItem('driving-mock-draft:fictional-learner'))).toBeNull();
+  // The draft is cleared once the server acknowledges the save, which is asynchronous.
+  await expect.poll(() => page.evaluate(() => localStorage.getItem('driving-mock-draft:fictional-learner'))).toBeNull();
   await page.reload();
   await expect(page.getByRole('button', { name: 'Resume mock', exact: true })).toHaveCount(0);
 });
