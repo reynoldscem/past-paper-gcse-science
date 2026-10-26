@@ -57,16 +57,16 @@ export const drivingPrepQuestions: Question[] = [
     "subject": "hazardAwareness",
     "topic": "alertness",
     "topicLabel": "Alertness",
-    "question": "A cold remedy warns that it can cause drowsiness. What is the safest next step?",
+    "question": "A medicine is available without a prescription. Does that establish it is safe before driving?",
     "options": [
-      "Check advice from a pharmacist or doctor before driving",
-      "Drive because it is sold without prescription",
-      "Take extra medicine before setting off",
-      "Drive only in the outside lane"
+      "No; check its warnings and seek advice",
+      "Yes; driving restrictions apply to prescription medicines alone",
+      "Yes; a shop can sell it without assessing driving fitness",
+      "Yes; taking the recommended dose guarantees normal reactions"
     ],
     "correctIndex": 0,
-    "explanation": "Medicines can impair driving even when obtained legally.",
-    "highwayCodeRule": "96",
+    "explanation": "Rule 96 and Annex 8 warn that medicines, including over-the-counter remedies, can impair driving. Follow the label and medical advice.",
+    "highwayCodeRule": "96; Annex 8",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/rules-for-drivers-and-motorcyclists-89-to-102"
   },
   {
@@ -91,16 +91,16 @@ export const drivingPrepQuestions: Question[] = [
     "subject": "roadRules",
     "topic": "attitude",
     "topicLabel": "Attitude",
-    "question": "Someone flashes their headlights as you wait to emerge. What should you do?",
+    "question": "A driver flashes headlights while overtaking you. What should you avoid assuming?",
     "options": [
-      "Make your own observations before moving",
-      "Assume the whole road is clear",
-      "Move immediately without looking",
-      "Wave other vehicles through your path"
+      "That the flash gives you priority to move out",
+      "That the overtaking vehicle may be difficult to judge at night",
+      "That checking mirrors can help you understand its position",
+      "That maintaining awareness of other traffic is still necessary"
     ],
     "correctIndex": 0,
-    "explanation": "A flash is not proof that the route is safe or an instruction to proceed.",
-    "highwayCodeRule": "111",
+    "explanation": "Rule 111 says a headlight flash does not invite you to proceed. Make your own observations; the signal does not confer priority.",
+    "highwayCodeRule": "110–111",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/general-rules-techniques-and-advice-for-all-drivers-and-riders-103-to-158"
   },
   {
@@ -125,16 +125,16 @@ export const drivingPrepQuestions: Question[] = [
     "subject": "roadRules",
     "topic": "attitude",
     "topicLabel": "Attitude",
-    "question": "You have stopped in a traffic queue. May you hold your phone to browse messages?",
+    "question": "Your phone is secured in a dashboard cradle. What does this mean for using it while driving?",
     "options": [
-      "No, the handheld-device ban still applies",
-      "Yes, if the handbrake is on",
-      "Yes, if the engine is idling",
-      "Yes, for less than a minute"
+      "You still need proper control and attention",
+      "Hands-free equipment makes it safe to read lengthy messages",
+      "The mounting permits you to adjust it without watching traffic",
+      "You may concentrate on the screen whenever travelling slowly"
     ],
     "correctIndex": 0,
-    "explanation": "Being stationary in traffic does not make handheld phone use lawful.",
-    "highwayCodeRule": "149",
+    "explanation": "Rule 149 warns that hands-free equipment can distract. Rule 150 requires proper control and concentration when using in-vehicle systems.",
+    "highwayCodeRule": "149–150",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/general-rules-techniques-and-advice-for-all-drivers-and-riders-103-to-158"
   },
   {
@@ -210,15 +210,15 @@ export const drivingPrepQuestions: Question[] = [
     "subject": "hazardAwareness",
     "topic": "safety-margins",
     "topicLabel": "Safety Margins",
-    "question": "Rain begins on a fast road. What should happen to your following gap?",
+    "question": "You leave a two-second dry-road gap. What is the minimum corresponding gap when the road becomes wet?",
     "options": [
-      "At least double the dry-weather gap",
-      "Halve it",
-      "Keep precisely one second",
-      "Close up to see the car ahead"
+      "Four seconds",
+      "Three seconds",
+      "Five seconds",
+      "Six seconds"
     ],
     "correctIndex": 0,
-    "explanation": "Wet roads require at least twice the normal gap because tyres have less grip.",
+    "explanation": "Rule 126 advises at least doubling the two-second dry-road gap in the wet. Four seconds is the minimum in this example; conditions may require more.",
     "highwayCodeRule": "126",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/general-rules-techniques-and-advice-for-all-drivers-and-riders-103-to-158"
   },
@@ -227,15 +227,15 @@ export const drivingPrepQuestions: Question[] = [
     "subject": "vehicleSafety",
     "topic": "vehicle-handling",
     "topicLabel": "Vehicle Handling",
-    "question": "Your steering feels unusually light during heavy rain. What should you do?",
+    "question": "Why can a car lose steering response on a very wet road?",
     "options": [
-      "Ease off gradually to let the tyres regain grip",
-      "Brake hard and turn sharply",
-      "Accelerate",
-      "Apply the parking brake"
+      "A layer of water can separate tyres from the road",
+      "Rainwater can make the brake pedal move the steering rack",
+      "Water makes the tyres grip the surface more firmly at speed",
+      "The extra weight of water can lock the steering mechanism"
     ],
     "correctIndex": 0,
-    "explanation": "Water may be separating the tyres from the road; sudden control inputs can worsen the loss of grip.",
+    "explanation": "Rule 227 explains that steering may become unresponsive when water prevents the tyres gripping the road. Ease off and slow gradually.",
     "highwayCodeRule": "227",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/driving-in-adverse-weather-conditions-226-to-237"
   },
@@ -278,15 +278,15 @@ export const drivingPrepQuestions: Question[] = [
     "subject": "vehicleSafety",
     "topic": "vehicle-handling",
     "topicLabel": "Vehicle Handling",
-    "question": "You leave a flooded section of road. What should you do when safe?",
+    "question": "After crossing deep water, a gentle brake test shows reduced braking. What should you do?",
     "options": [
-      "Test the brakes gently",
-      "Accelerate hard without checking",
-      "Apply the parking brake at speed",
-      "Assume the brakes are unaffected"
+      "Apply light pressure while moving slowly to dry them",
+      "Accelerate sharply so air pressure dries the brake linings",
+      "Keep the same speed and wait until the next planned stop",
+      "Use the parking brake for the next few routine stops"
     ],
     "correctIndex": 0,
-    "explanation": "Water can reduce braking effectiveness; a gentle check reveals whether braking has been affected.",
+    "explanation": "Rule 121 advises driving slowly while applying light pressure to dry wet brakes if their effectiveness is reduced. Test and act where safe.",
     "highwayCodeRule": "121",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/general-rules-techniques-and-advice-for-all-drivers-and-riders-103-to-158"
   },
@@ -295,15 +295,15 @@ export const drivingPrepQuestions: Question[] = [
     "subject": "hazardAwareness",
     "topic": "other-vehicles",
     "topicLabel": "Other Types of Vehicle",
-    "question": "A long lorry moves right before turning left. What should you do?",
+    "question": "A large vehicle turns right across your path. Why may you need to wait longer than for a car?",
     "options": [
-      "Stay back and let it complete the turn",
-      "Squeeze past on its left",
-      "Enter the gap beside the trailer",
-      "Sound your horn and accelerate"
+      "Its extra length takes time to clear the junction",
+      "Its rear wheels follow exactly the same path as the front",
+      "Its driver is required to stop halfway across the junction",
+      "Its indicators give it priority over all approaching traffic"
     ],
     "correctIndex": 0,
-    "explanation": "Large vehicles may need extra width to turn and their drivers may not see you alongside.",
+    "explanation": "Rule 221 warns that large vehicles need extra road space to turn or deal with hazards. Allow room and time for the whole vehicle to clear.",
     "highwayCodeRule": "221",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/road-users-requiring-extra-care-204-to-225"
   },
@@ -312,15 +312,15 @@ export const drivingPrepQuestions: Question[] = [
     "subject": "hazardAwareness",
     "topic": "other-vehicles",
     "topicLabel": "Other Types of Vehicle",
-    "question": "A bus signals to leave a stop. What should you do?",
+    "question": "You approach a tram stopped for passengers. What hazard should you anticipate?",
     "options": [
-      "Allow it to move out if safe",
-      "Accelerate to block it",
-      "Assume it must wait indefinitely",
-      "Overtake without checking"
+      "Passengers crossing between the tram and pavement",
+      "Passengers being required to wait until all cars have passed",
+      "A tram having the same ability as a car to steer around people",
+      "The stopped tram shielding every pedestrian from road traffic"
     ],
     "correctIndex": 0,
-    "explanation": "Give priority to buses signalling to move off when you can do so safely.",
+    "explanation": "Rule 223 advises looking out for people getting on or off a bus or tram and crossing the road. A stopped vehicle can hide someone from view.",
     "highwayCodeRule": "223",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/road-users-requiring-extra-care-204-to-225"
   },
@@ -329,15 +329,15 @@ export const drivingPrepQuestions: Question[] = [
     "subject": "hazardAwareness",
     "topic": "other-vehicles",
     "topicLabel": "Other Types of Vehicle",
-    "question": "An emergency vehicle approaches with blue lights. What should you do?",
+    "question": "An ambulance needs to pass as you approach a bend. What should you avoid doing?",
     "options": [
-      "Make space safely while obeying traffic signs",
-      "Drive through a red light to clear the way",
-      "Mount a busy pavement",
-      "Brake suddenly wherever you are"
+      "Stopping where it cannot pass safely",
+      "Continuing carefully until a suitable place to give way appears",
+      "Checking mirrors before making room for the ambulance",
+      "Keeping the approach to the bend clear of a new obstruction"
     ],
     "correctIndex": 0,
-    "explanation": "Help emergency vehicles pass without creating danger or ignoring traffic restrictions.",
+    "explanation": "Rule 219 advises complying with signs, avoiding danger and not stopping before a bend, a brow of a hill or a narrow section where an emergency vehicle cannot pass.",
     "highwayCodeRule": "219",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/road-users-requiring-extra-care-204-to-225"
   },
@@ -397,15 +397,15 @@ export const drivingPrepQuestions: Question[] = [
     "subject": "vehicleSafety",
     "topic": "vehicle-condition",
     "topicLabel": "Vehicle Condition",
-    "question": "You leave your car in a public car park. What reduces theft risk?",
+    "question": "Where should you keep a spare vehicle key when you park?",
     "options": [
-      "Lock it and remove valuables from view",
-      "Leave a spare key on a tyre",
-      "Leave a window partly open",
-      "Hide your keys beside the car"
+      "Away from the vehicle",
+      "Hidden behind a wheel where it cannot be seen from above",
+      "Inside the glove compartment with the registration document",
+      "Attached underneath the bumper for emergency use"
     ],
     "correctIndex": 0,
-    "explanation": "Secure doors and windows and protect your keys. Visible valuables invite theft.",
+    "explanation": "Annex 6 advises against leaving vehicle documents or spare keys inside the car and says not to hide a spare key on or near it.",
     "highwayCodeRule": "Annex 6",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/annex-6-vehicle-maintenance-safety-and-security"
   },
@@ -465,16 +465,16 @@ export const drivingPrepQuestions: Question[] = [
     "subject": "vehicleSafety",
     "topic": "vehicle-loading",
     "topicLabel": "Vehicle Loading",
-    "question": "Heavy luggage is loose in the boot. What should you do before leaving?",
+    "question": "While loading luggage, you find it blocks part of the rearward view. What should you do?",
     "options": [
-      "Secure it so it cannot move dangerously",
-      "Drive faster to hold it back",
-      "Rely on the rear seat alone",
-      "Leave the boot open"
+      "Reposition it to preserve required visibility",
+      "Leave it if the rear passengers can report approaching traffic",
+      "Drive with a rear door ajar to see around the obstruction",
+      "Rely on the parking sensors for all observations behind"
     ],
     "correctIndex": 0,
-    "explanation": "Loads must be secured and must not endanger anyone.",
-    "highwayCodeRule": "98",
+    "explanation": "Rule 97 says to ensure luggage is secure before setting off; Rule 98 covers loads and towing mirrors where a load obstructs the rearward view. Reposition luggage to preserve visibility, rather than relying on passengers or parking sensors.",
+    "highwayCodeRule": "97–98",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/rules-for-drivers-and-motorcyclists-89-to-102"
   },
   {
@@ -482,15 +482,15 @@ export const drivingPrepQuestions: Question[] = [
     "subject": "vehicleSafety",
     "topic": "vehicle-loading",
     "topicLabel": "Vehicle Loading",
-    "question": "What should you check before towing a loaded trailer?",
+    "question": "Why must a trailer have a secondary coupling device, such as a safety chain?",
     "options": [
-      "Vehicle, trailer, licence and weight limits and secure coupling",
-      "Only the trailer colour",
-      "Only whether the engine starts",
-      "Only the length of the journey"
+      "To provide a backup if the main coupling fails",
+      "To carry the trailer’s normal weight instead of the tow ball",
+      "To replace the need for a working trailer braking system",
+      "To make the trailer exempt from reduced speed limits"
     ],
     "correctIndex": 0,
-    "explanation": "Safe towing requires suitable equipment, correct loading and compliance with the applicable limits.",
+    "explanation": "Rule 98 requires a secondary coupling device, such as a safety chain. It provides a backup connection rather than replacing the main coupling or the required braking system.",
     "highwayCodeRule": "98",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/rules-for-drivers-and-motorcyclists-89-to-102"
   },
@@ -499,15 +499,15 @@ export const drivingPrepQuestions: Question[] = [
     "subject": "vehicleSafety",
     "topic": "vehicle-loading",
     "topicLabel": "Vehicle Loading",
-    "question": "A roof load is making the car less stable. What is the best response?",
+    "question": "A roof load is securely fastened but projects dangerously beyond the car. What should you do?",
     "options": [
-      "Check the load limits and security and adjust driving to the changed handling",
-      "Ignore it if tied down",
-      "Increase cornering speed",
-      "Reduce tyre pressure below the handbook value"
+      "Repack it so it does not project dangerously",
+      "Drive slowly because secure fastenings make the projection legal",
+      "Tie a cloth to the end and travel without changing the load",
+      "Leave the load in place and avoid roads with narrow lanes"
     ],
     "correctIndex": 0,
-    "explanation": "A high load changes handling; keep within manufacturer limits and secure it properly.",
+    "explanation": "Rule 98 requires loads to be secure and not stick out dangerously. Secure straps do not make a dangerous projection acceptable.",
     "highwayCodeRule": "98",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/rules-for-drivers-and-motorcyclists-89-to-102"
   },

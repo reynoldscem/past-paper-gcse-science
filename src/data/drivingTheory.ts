@@ -121,15 +121,21 @@ export const drivingTheoryQuestions: Question[] = [
     learnMoreUrl: trafficSigns,
   },
   {
-    id: 'dt-road-signs-003',
-    subject: 'roadSigns',
-    topic: 'traffic-lights',
-    topicLabel: 'Traffic Lights',
-    question: 'What must you do at a steady amber traffic light if you can stop safely?',
-    options: ['Speed up before it turns red', 'Stop at the stop line', 'Continue at the same speed', 'Stop only if pedestrians are present'],
-    correctIndex: 1,
-    explanation: 'A steady amber light means stop at the stop line if it is safe to do so. You may go on only if stopping would be unsafe.',
-    learnMoreUrl: 'https://www.gov.uk/guidance/the-highway-code/light-signals-controlling-traffic',
+    "id": "dt-road-signs-003",
+    "subject": "roadSigns",
+    "topic": "traffic-lights",
+    "topicLabel": "Traffic Lights",
+    "question": "An amber traffic light appears as you approach. When may you continue?",
+    "options": [
+      "When already over the line or too close to stop safely",
+      "When the junction is quiet and your intended route looks clear",
+      "When you can cross the line before the red light appears",
+      "When the driver behind sounds their horn to encourage you"
+    ],
+    "correctIndex": 0,
+    "explanation": "The Highway Code light-signals guide says amber means stop, with an exception when already over the line or so close that stopping might cause a collision. Rule 175 covers stopping at the line.",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/light-signals-controlling-traffic",
+    "highwayCodeRule": "175"
   },
   {
     id: 'dt-road-signs-004',

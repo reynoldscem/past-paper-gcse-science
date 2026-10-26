@@ -143,15 +143,15 @@ export const drivingRound2Questions: Question[] = [
     "subject": "roadRules",
     "topic": "attitude",
     "topicLabel": "Attitude",
-    "question": "When is the horn appropriate in a built-up area during the daytime?",
+    "question": "You are stationary in traffic. When is sounding the horn permitted?",
     "options": [
-      "To warn another road user of your presence when needed",
-      "To complain about slow progress",
-      "To greet a friend on the pavement",
-      "To insist on priority"
+      "When another road user poses a danger",
+      "When the queue ahead has not moved despite a green signal",
+      "When you need a passenger on the pavement to find your car",
+      "When another driver has just made an inconvenient mistake"
     ],
     "correctIndex": 0,
-    "explanation": "The horn is a warning device, not a way to express annoyance or demand that others move.",
+    "explanation": "Rule 112 prohibits using the horn while stationary, except when another road user poses a danger.",
     "highwayCodeRule": "112",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/general-rules-techniques-and-advice-for-all-drivers-and-riders-103-to-158"
   },
@@ -245,16 +245,16 @@ export const drivingRound2Questions: Question[] = [
     "subject": "hazardAwareness",
     "topic": "safety-margins",
     "topicLabel": "Safety Margins",
-    "question": "Why should a two-second gap be increased on ice?",
+    "question": "After a cold night, your tyres make very little noise and the steering feels unresponsive. What may this indicate?",
     "options": [
-      "Stopping distances can be ten times those on dry roads",
-      "Cold air makes engines less powerful",
-      "Ice makes mirrors inaccurate",
-      "The speedometer always reads too low"
+      "Ice beneath the tyres",
+      "A need to increase speed so the tyres become warmer",
+      "A road surface that offers unusually strong tyre grip",
+      "A need to brake sharply to check the steering response"
     ],
     "correctIndex": 0,
-    "explanation": "Very low grip can make stopping take far longer; allow substantially more space and reduce speed.",
-    "highwayCodeRule": "126",
+    "explanation": "Rule 231 describes unusually quiet tyre noise as a warning of ice. Check grip gently in a safe place and drive very carefully if the vehicle does not respond.",
+    "highwayCodeRule": "231",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/general-rules-techniques-and-advice-for-all-drivers-and-riders-103-to-158"
   },
   {
@@ -789,15 +789,15 @@ export const drivingRound2Questions: Question[] = [
     "subject": "hazardAwareness",
     "topic": "incidents",
     "topicLabel": "Incidents",
-    "question": "You stop to help at a collision. What comes first?",
+    "question": "You have stopped safely to help at a collision. Which warning can reduce the risk of another crash?",
     "options": [
-      "Protect yourself and others from further danger",
-      "Give everyone a drink",
-      "Move every injured person immediately",
-      "Stand in traffic to take photographs"
+      "Use hazard warning lights",
+      "Stand in the path of approaching vehicles to wave them down",
+      "Place passengers in the road to make traffic change lanes",
+      "Park across both carriageways to keep approaching traffic away"
     ],
     "correctIndex": 0,
-    "explanation": "Make the scene safe and summon help; avoid creating additional casualties.",
+    "explanation": "Rule 283 advises using hazard warning lights to warn other traffic and keeping yourself out of danger. Summon help and protect the scene safely.",
     "highwayCodeRule": "283",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/breakdowns-and-incidents-274-to-287"
   },
@@ -806,15 +806,15 @@ export const drivingRound2Questions: Question[] = [
     "subject": "hazardAwareness",
     "topic": "incidents",
     "topicLabel": "Incidents",
-    "question": "A damaged vehicle displays a dangerous-goods warning plate. What should you do?",
+    "question": "After a collision, you can see a dangerous-goods plate from a safe distance. What information should you give emergency services?",
     "options": [
-      "Keep away and tell emergency services about the markings",
-      "Touch leaking material to identify it",
-      "Smoke nearby while waiting",
-      "Enter the vehicle to read its cargo paperwork"
+      "The markings shown on the plate",
+      "The cargo’s smell after approaching the damaged container",
+      "The result of opening a valve to identify the substance",
+      "The colour of liquid collected in a sample bottle"
     ],
     "correctIndex": 0,
-    "explanation": "Avoid contact with hazardous substances and give responders the warning information from a safe distance.",
+    "explanation": "Rule 285 says to tell emergency services about the markings on the vehicle. Stay well away; do not approach to investigate the load.",
     "highwayCodeRule": "285",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/breakdowns-and-incidents-274-to-287"
   },
