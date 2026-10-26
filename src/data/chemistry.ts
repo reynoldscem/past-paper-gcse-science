@@ -1049,7 +1049,22 @@ export const chemistryQuestions: Question[] = [
 },
 
   // Quantitative (5 more)
-  { id: 'chem-quantitative-008', subject: 'chemistry', topic: 'quantitative', topicLabel: 'Quantitative Chemistry', question: 'What is the relative formula mass (Mr) of water (H2O)? [Ar: H=1, O=16]', options: ['17', '18', '10', '20'], correctIndex: 1, explanation: 'Mr of H2O = (2 × 1) + 16 = 18. Add up the relative atomic masses of all atoms in the formula.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zb4fjfr' },
+  {
+  "id": "chem-quantitative-008",
+  "subject": "chemistry",
+  "topic": "quantitative",
+  "topicLabel": "Quantitative Chemistry",
+  "question": "Magnesium oxide (MgO) has Mr = 40. Oxygen has Ar = 16. What is the relative atomic mass of magnesium?",
+  "options": [
+    "16",
+    "24",
+    "40",
+    "56"
+  ],
+  "correctIndex": 1,
+  "explanation": "MgO contains one magnesium and one oxygen atom per formula unit. Therefore Ar(Mg) = Mr(MgO) − Ar(O) = 40 − 16 = 24.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zb4fjfr"
+},
   { id: 'chem-quantitative-009', subject: 'chemistry', topic: 'quantitative', topicLabel: 'Quantitative Chemistry', question: 'What is the balanced equation for the reaction of magnesium with hydrochloric acid?', options: ['Mg + HCl → MgCl + H', 'Mg + 2HCl → MgCl2 + H2', 'Mg + HCl → MgCl2 + H2', '2Mg + HCl → MgCl2 + H2'], correctIndex: 1, explanation: 'Mg + 2HCl → MgCl2 + H2. There must be equal numbers of each atom on both sides. Two HCl are needed to provide two chlorine atoms and form H2.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zb4fjfr' },
   {
   "id": "chem-quantitative-010",

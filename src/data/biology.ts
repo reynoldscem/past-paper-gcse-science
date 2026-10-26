@@ -865,16 +865,21 @@ export const biologyQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z2mttv4',
   },
   {
-    id: 'bio-cell-biology-011',
-    subject: 'biology',
-    topic: 'cell-biology',
-    topicLabel: 'Cell Biology',
-    question: 'Which of these is a specialised cell adapted to carry oxygen around the body?',
-    options: ['White blood cell', 'Red blood cell', 'Nerve cell', 'Sperm cell'],
-    correctIndex: 1,
-    explanation: 'Red blood cells are specialised — they have no nucleus (to make more room), are biconcave shaped (to increase surface area), and contain haemoglobin which binds to oxygen.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z2mttv4',
-  },
+  "id": "bio-cell-biology-011",
+  "subject": "biology",
+  "topic": "cell-biology",
+  "topicLabel": "Cell Biology",
+  "question": "How does a mature human red blood cell’s lack of a nucleus help its function?",
+  "options": [
+    "It allows it to divide rapidly in the blood",
+    "It leaves more room for haemoglobin",
+    "It lets it produce antibodies against pathogens",
+    "It enables it to engulf bacteria"
+  ],
+  "correctIndex": 1,
+  "explanation": "A mature red blood cell has no nucleus, leaving more space for haemoglobin that binds and transports oxygen. It does not divide or act as a white blood cell.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z2mttv4"
+},
   {
   "id": "bio-organisation-010",
   "subject": "biology",
@@ -892,16 +897,21 @@ export const biologyQuestions: Question[] = [
   "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwj22nb"
 },
   {
-    id: 'bio-organisation-011',
-    subject: 'biology',
-    topic: 'organisation',
-    topicLabel: 'Organisation',
-    question: 'Which type of blood vessel carries blood away from the heart?',
-    options: ['Veins', 'Capillaries', 'Arteries', 'Lymph vessels'],
-    correctIndex: 2,
-    explanation: 'Arteries carry blood away from the heart. They have thick, elastic walls to withstand the high pressure. Veins carry blood back to the heart.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwj22nb',
-  },
+  "id": "bio-organisation-011",
+  "subject": "biology",
+  "topic": "organisation",
+  "topicLabel": "Organisation",
+  "question": "Which vessel returns oxygenated blood from the lungs to the heart?",
+  "options": [
+    "Pulmonary artery",
+    "Vena cava",
+    "Pulmonary vein",
+    "Aorta"
+  ],
+  "correctIndex": 2,
+  "explanation": "The pulmonary vein returns oxygenated blood to the left atrium. Veins carry blood towards the heart; their definition is not based on oxygen content.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwj22nb"
+},
   {
   "id": "bio-infection-010",
   "subject": "biology",
@@ -935,16 +945,21 @@ export const biologyQuestions: Question[] = [
   "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z9kww6f"
 },
   {
-    id: 'bio-bioenergetics-009',
-    subject: 'biology',
-    topic: 'bioenergetics',
-    topicLabel: 'Bioenergetics',
-    question: 'Which of these is NOT a limiting factor for photosynthesis?',
-    options: ['Light intensity', 'Carbon dioxide concentration', 'Oxygen concentration', 'Temperature'],
-    correctIndex: 2,
-    explanation: 'The limiting factors for photosynthesis are light intensity, CO2 concentration, and temperature. Oxygen is a product of photosynthesis, not a limiting factor.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zgr997h',
-  },
+  "id": "bio-bioenergetics-009",
+  "subject": "biology",
+  "topic": "bioenergetics",
+  "topicLabel": "Bioenergetics",
+  "question": "In a greenhouse with adequate light and warmth, which change can increase photosynthesis if carbon dioxide is limiting?",
+  "options": [
+    "Increase the oxygen concentration",
+    "Raise the temperature further",
+    "Increase the carbon dioxide concentration",
+    "Reduce the light intensity"
+  ],
+  "correctIndex": 2,
+  "explanation": "Increasing the carbon dioxide supply can raise photosynthesis when it is limiting. Increasing a factor that is already sufficient does not remove the carbon dioxide limitation.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zgr997h"
+},
   {
     id: 'bio-bioenergetics-010',
     subject: 'biology',

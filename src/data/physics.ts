@@ -1054,15 +1054,15 @@ export const physicsQuestions: Question[] = [
   "subject": "physics",
   "topic": "waves",
   "topicLabel": "Waves",
-  "question": "Which type of wave are sound waves travelling through air?",
+  "question": "As sound travels through air, how do the air particles oscillate relative to the direction of energy transfer?",
   "options": [
-    "Transverse",
-    "Longitudinal",
-    "Electromagnetic",
-    "Transverse electromagnetic"
+    "At right angles",
+    "Parallel to it",
+    "In circular paths",
+    "Outwards in every direction"
   ],
   "correctIndex": 1,
-  "explanation": "Sound waves are longitudinal — the vibrations are parallel to the direction of wave travel. The particles compress and rarefy along the direction of travel.",
+  "explanation": "Sound in air is longitudinal: particles vibrate back and forth parallel to the direction in which energy travels. They do not travel all the way from the source to the listener.",
   "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zsrndnb"
 },
   { id: 'phys-waves-011', subject: 'physics', topic: 'waves', topicLabel: 'Waves', question: 'Which type of electromagnetic wave is used in hospital X-ray machines?', options: ['Radio waves', 'Microwaves', 'X-rays', 'Infrared'], correctIndex: 2, explanation: 'X-rays pass through soft tissue but are absorbed by dense materials like bone. This creates shadow images used for medical diagnosis.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zsrndnb' },
@@ -1150,7 +1150,22 @@ export const physicsQuestions: Question[] = [
   "explanation": "During melting, temperature and average kinetic energy stay constant. Supplied energy increases potential energy as particles overcome attractions and leave their fixed positions.",
   "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z3ybb82"
 },
-  { id: 'phys-particle-model-013', subject: 'physics', topic: 'particle-model', topicLabel: 'Particle Model', question: 'In which state of matter are particles closest together and in a regular arrangement?', options: ['Gas', 'Liquid', 'Solid', 'Plasma'], correctIndex: 2, explanation: 'In a solid, particles are closely packed in a regular arrangement and vibrate about fixed positions. In liquids they\'re close but irregular; in gases they\'re far apart and random.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z3ybb82' },
+  {
+  "id": "phys-particle-model-013",
+  "subject": "physics",
+  "topic": "particle-model",
+  "topicLabel": "Particle Model",
+  "question": "Which description of particle motion explains why a liquid can flow but keeps a nearly fixed volume?",
+  "options": [
+    "Particles are fixed in a regular lattice",
+    "Particles are far apart and move freely",
+    "Particles remain close but move past one another",
+    "Particles remain still but grow larger"
+  ],
+  "correctIndex": 2,
+  "explanation": "Liquid particles are close together but can move past each other, allowing flow. Solids have particles vibrating around fixed positions; gas particles are much farther apart.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z3ybb82"
+},
 
   // Atomic structure - physics (5 more)
   { id: 'phys-atomic-structure-phys-009', subject: 'physics', topic: 'atomic-structure-phys', topicLabel: 'Atomic Structure', question: 'A radioactive isotope has a half-life of 6 hours. Starting with 400 Bq, what will the activity be after 18 hours?', options: ['200 Bq', '100 Bq', '50 Bq', '25 Bq'], correctIndex: 2, explanation: '18 hours = 3 half-lives. After 1: 200. After 2: 100. After 3: 50 Bq. Each half-life halves the remaining activity.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zshssrd' },
@@ -1159,15 +1174,15 @@ export const physicsQuestions: Question[] = [
   "subject": "physics",
   "topic": "atomic-structure-phys",
   "topicLabel": "Atomic Structure",
-  "question": "Which type of radiation is the most penetrating?",
+  "question": "Gamma radiation passes through paper. Which shielding would reduce its intensity most effectively?",
   "options": [
-    "Alpha",
-    "Beta",
-    "Gamma",
-    "All equally penetrating"
+    "A sheet of paper",
+    "A thin plastic film",
+    "Thick lead",
+    "A short air gap"
   ],
   "correctIndex": 2,
-  "explanation": "In the usual alpha, beta and gamma comparison, gamma is the most penetrating. Thick lead or concrete attenuates it: its intensity is reduced rather than completely stopped. Alpha is stopped by paper and beta by a suitable thickness of aluminium.",
+  "explanation": "Thick lead or concrete reduces gamma intensity. Gamma is not completely stopped by a thin barrier, unlike alpha radiation stopped by paper.",
   "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zshssrd"
 },
   {
@@ -1204,19 +1219,19 @@ export const physicsQuestions: Question[] = [
 },
   {
   "id": "phys-atomic-structure-phys-013",
-    scope: "separate",
+  "scope": "separate",
   "subject": "physics",
   "topic": "atomic-structure-phys",
   "topicLabel": "Atomic Structure",
-  "question": "Which emission from americium-241 is used to ionise the air in an ionisation smoke detector?",
+  "question": "In an ionisation smoke detector, smoke absorbs alpha radiation. What happens to the ionisation current?",
   "options": [
-    "Alpha",
-    "Beta",
-    "Gamma",
-    "X-rays"
+    "It decreases",
+    "It increases",
+    "It reverses direction",
+    "It stays unchanged"
   ],
   "correctIndex": 0,
-  "explanation": "Smoke detectors use alpha radiation. Alpha particles ionise the air, creating a small current. Smoke particles absorb the alpha radiation, reducing the current and triggering the alarm.",
+  "explanation": "Alpha radiation normally ionises the air so that a small current flows. Smoke absorbs some alpha particles, reducing ionisation and current; this change triggers the alarm.",
   "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zshssrd"
 },
 
