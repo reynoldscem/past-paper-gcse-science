@@ -1,6 +1,6 @@
 # Driving theory content and sources
 
-The driving bank contains 375 original paper questions, including 92 visual questions (the round-two notes said 305 questions; the true round-two count was 307, and round three added 36 visual questions). A separate sign drill uses 308 distinct official images: the 89 images used by visual questions plus 219 drill-only signs (124 after round two, 184 added in round three). It covers the 14 car theory topic areas through the app's existing four driving subjects. Science questions and historic question IDs are preserved. These are independently written practice questions, not the DVSA revision question bank or an official DVSA product.
+The driving bank contains 455 original paper questions, including 126 visual questions (the round-two notes said 305 questions; the true round-two count was 307, and round three added 36 visual questions). A separate sign drill uses 308 distinct official images: 89 images from `drivingVisual.ts` plus 219 additional signs (124 after round two, 184 added in round three). It covers the 14 car theory topic areas through the app's existing four driving subjects. Science questions and historic question IDs are preserved. These are independently written practice questions, not the DVSA revision question bank or an official DVSA product.
 
 Sources checked on 23 October 2026 and rechecked for the round-two content on 25 October 2026:
 
@@ -30,7 +30,7 @@ This is a study aid with coverage across all topic areas, not an exhaustive subs
 
 ## Maintaining the bank
 
-New question IDs must be unique and stable. Add new assets to the manifest and retain the original source and licence. Each drill entry in `src/data/drivingSigns.json` has a `family` (regulatory, warning, direction, motorway, information, markings, bus-cycle-tram, level-crossing, parking, roadworks, signals or vehicle-markings). The drill takes its three distractors from the same family when it has at least four members, so keep meanings in a family distinct from each other. An image used by a visual question must not also be a drill entry, because the drill bank requires unique images. Check the live official pages when updating legal content. `npm test` validates choices, references, topic selection, image checksums, mock coverage and scoring, and weak-topic generation. `npm run test:browser` tests mobile rendering, saved review, mock answer/flag behaviour, wall-clock expiry and pass/fail boundaries using fictional data and a mocked API.
+New question IDs must be unique and stable. Add new assets to the manifest and retain the original source and licence. Each drill entry in `src/data/drivingSigns.json` has a `family` (regulatory, warning, direction, motorway, information, markings, bus-cycle-tram, level-crossing, parking, roadworks, signals or vehicle-markings). The drill takes its three distractors from the same family when it has at least four members, so keep meanings in a family distinct from each other. The sign drill combines `drivingVisual.ts` with `drivingSigns.json`; those two inputs must not duplicate images. Other paper banks, including `drivingWeakTopics.ts`, may reuse either input’s images without adding another entry to the drill. Check the live official pages when updating legal content. `npm test` validates choices, references, topic selection, image checksums, mock coverage and scoring, and weak-topic generation. `npm run test:browser` tests mobile rendering, saved review, mock answer/flag behaviour, wall-clock expiry and pass/fail boundaries using fictional data and a mocked API.
 
 ## Round-two coverage
 
@@ -117,3 +117,27 @@ Safety revisions specify the trapped live-lane breakdown action (Rule 277), mini
 Twenty-eight repeated driving records were revised to distinguish situations such as the amber stopping exception, overtaking above 30 mph, brake drying after water, trailer secondary couplings, and the box-junction right-turn exception. See [the revision report](should-fix-content-2026-10-26.md) for IDs, before/after metrics, source checks and validation.
 
 Final driving text-bank longest-correct rate: 185/251 (73.71%) → 72/283 (25.44%), including ties. Shortest-correct is 65/283 (22.97%). Always/never/only occur at the same per-option rate in correct and wrong answers: 3/283 and 9/849 (1.06%).
+
+
+## Weak-topic expansion — 26 October 2026
+
+`drivingWeakTopics.ts` adds 80 original scenarios (`dt-weak-001`–`dt-weak-080`), including 34 image-based questions using existing manifest assets. The paper bank is now 455 questions, 126 image-based. The 308-entry sign drill is unchanged; no image files or manifest entries were added.
+
+| Topic family | New questions | Image-based |
+| --- | ---: | ---: |
+| Speed signs | 10 | 8 |
+| Trams | 8 | 3 |
+| Road markings | 18 | 15 |
+| Kerbs and yellow lines | 14 | 6 |
+| Motorway breakdown and signals | 10 | 2 |
+| Seat belts and child restraints | 10 | 0 |
+| Slow and vulnerable vehicles | 10 | 0 |
+| **Total** | **80** | **34** |
+
+The questions use the existing sign-shapes, traffic-lights, road-markings, motorways, incidents, seat-belts, other-vehicles and vulnerable-road-users topics. They enter mocks and weak-topic practice through the normal question-bank import. Tests verify registration, selection from every affected weak topic, distinct stems, rule citations, unique options and valid keys.
+
+Live GOV.UK rules and the relevant official sign/marking guides were checked. The live warning-triangle prohibition is **Rule 276**, with motorway-specific guidance in **Rule 277**; Rule 274 now concerns leaving a motorway. All new questions use current numbered-rule anchors. Supporting visual meanings retain their official sources in the existing manifest.
+
+Longest-correct answers, counting Unicode characters and ties: **24/80 (30.00%)** for the new bank; shortest-correct **15/80 (18.75%)**. The combined driving text bank remains **90/329 (27.36%)**, below the existing 40% ceiling. The new-bank test enforces the 30% target and also guards against a consistent shortest-answer clue.
+
+See [the implementation report](weak-topics-2026-10-26.md) for source references, validation and commits.

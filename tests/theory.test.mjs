@@ -163,3 +163,47 @@ test('Highway Code links use the current motorway and breakdown chapter slugs', 
   const urls = driving.flatMap(q => [q.learnMoreUrl, highwayCodeReferenceUrl(q.highwayCodeRule, q.learnMoreUrl)]);
   assert.ok(urls.every(u => !/motorways-253-to-274|breakdowns-and-incidents-275-to-287/.test(u)));
 });
+
+test('weak-area additions have distinct stems, valid keys, rule citations and balanced options', async () => {
+  const { drivingWeakTopicsQuestions: additions } = await import('../src/data/drivingWeakTopics.ts');
+  assert.equal(additions.length, 80);
+  assert.equal(additions.filter(q => q.image).length, 34);
+  const normalise = text => text.toLowerCase().replace(/[^a-z0-9]/g, '');
+  const oldStems = new Set(bank.filter(q => !q.id.startsWith('dt-weak-')).map(q => normalise(q.question)));
+  assert.equal(new Set(additions.map(q => normalise(q.question))).size, additions.length);
+  for (const [index, q] of additions.entries()) {
+    assert.equal(q.id, `dt-weak-${String(index + 1).padStart(3, '0')}`);
+    assert.ok(!oldStems.has(normalise(q.question)), q.id);
+    assert.equal(q.options.length, 4, q.id);
+    assert.equal(new Set(q.options.map(normalise)).size, 4, q.id);
+    assert.ok(Number.isInteger(q.correctIndex) && q.correctIndex >= 0 && q.correctIndex < 4, q.id);
+    assert.match(q.highwayCodeRule, /^\d+$/, q.id);
+    assert.ok(q.explanation.startsWith(`Rule ${q.highwayCodeRule}:`), q.id);
+    assert.ok(q.learnMoreUrl.startsWith('https://www.gov.uk/guidance/the-highway-code/'), q.id);
+    assert.ok(q.learnMoreUrl.endsWith(`#rule${q.highwayCodeRule}`), q.id);
+    assert.ok(bank.some(original => original.id === q.id), q.id);
+  }
+  const longest = additions.filter(q => [...q.options[q.correctIndex]].length === Math.max(...q.options.map(o => [...o].length)));
+  assert.ok(longest.length / additions.length <= 0.3, `${longest.length}/${additions.length}`);
+  // Prevent replacing a longest-answer clue with a consistent shortest-answer clue.
+  const shortest = additions.filter(q => [...q.options[q.correctIndex]].length === Math.min(...q.options.map(o => [...o].length)));
+  assert.ok(shortest.length / additions.length <= 0.4, `${shortest.length}/${additions.length}`);
+});
+
+test('weak-area additions are available in mocks and each existing weak topic', async () => {
+  const { drivingWeakTopicsQuestions: additions } = await import('../src/data/drivingWeakTopics.ts');
+  // Supplying the new pool alone proves mock selection does not exclude its IDs.
+  const mock = generatePaper(additions, { mode: 'driving-mock' });
+  assert.equal(mock.questions.length, 50);
+  assert.ok(mock.questions.every(q => q.id.startsWith('dt-weak-')));
+  for (const topic of new Set(additions.map(q => q.topic))) {
+    const old = driving.find(q => q.topic === topic && !q.id.startsWith('dt-weak-'));
+    assert.ok(old, topic);
+    const attempt = scorePaper({ id: 'weak-topic-fixture', title: 'Practice', subject: old.subject, questions: [old], createdAt: 0 }, [(old.correctIndex + 1) % 4], 1);
+    const practice = generatePaper(driving, { mode: 'weak-topics' }, driving.length, [attempt]);
+    assert.ok(practice.questions.every(q => q.topic === topic), topic);
+    for (const q of additions.filter(q => q.topic === topic)) {
+      assert.ok(practice.questions.some(selected => selected.id === q.id), q.id);
+    }
+  }
+});
