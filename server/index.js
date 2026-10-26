@@ -142,7 +142,18 @@ app.post('/api/login', loginLimiter, async (req, res) => {
 });
 
 // ─── Progress API ────────────────────────────────────────────────────
-app.get('/api/progress/:name', validateName, (req, res) => {
+// Clients from before the compact history format must reload before reading or
+// writing progress; otherwise they would misread compact attempts or save over
+// the snapshot metadata. The current client sends this header on every request.
+const PROGRESS_FORMAT = '1';
+function requireProgressFormat(req, res, next) {
+  if (req.get('X-Progress-Format') !== PROGRESS_FORMAT) {
+    return res.status(409).json({ error: 'The app has been updated. Reload the page.' });
+  }
+  next();
+}
+
+app.get('/api/progress/:name', validateName, requireProgressFormat, (req, res) => {
   if (!fs.existsSync(req.userFile)) {
     return res.json(null);
   }
@@ -154,7 +165,7 @@ app.get('/api/progress/:name', validateName, (req, res) => {
   }
 });
 
-app.post('/api/progress/:name', validateName, (req, res) => {
+app.post('/api/progress/:name', validateName, requireProgressFormat, (req, res) => {
   try {
     if (!Number.isSafeInteger(req.body?.revision) || req.body.revision < 0) {
       return res.status(428).json({ error: 'A progress revision is required. Reload the app.' });

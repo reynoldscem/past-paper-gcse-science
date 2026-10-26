@@ -19,8 +19,10 @@ export const defaultProgress: AppProgress = {
 
 function authHeaders(): Record<string, string> {
   const token = sessionStorage.getItem('amy-science-token');
-  if (!token) return {};
-  return { 'Authorization': `Bearer ${token}` };
+  // The server refuses progress requests from clients that predate compact history.
+  const format = { 'X-Progress-Format': '1' };
+  if (!token) return format;
+  return { ...format, 'Authorization': `Bearer ${token}` };
 }
 
 export async function login(name: string, password: string): Promise<{ ok: boolean; token?: string; name?: string; error?: string }> {

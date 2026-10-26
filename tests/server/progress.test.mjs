@@ -16,7 +16,7 @@ test('revision checks preserve legacy history, reject competing writers and fail
   const base = `http://127.0.0.1:${server.address().port}/api`;
   const login = await fetch(`${base}/login`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ name: 'fictional', password: 'fictional-password' }) });
   const { token } = await login.json();
-  const headers = { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' };
+  const headers = { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json', 'X-Progress-Format': '1' };
   const get = () => fetch(`${base}/progress/fictional`, { headers });
   const post = body => fetch(`${base}/progress/fictional`, { method: 'POST', headers, body: JSON.stringify(body) });
   assert.equal(await (await get()).json(), null);
@@ -36,6 +36,10 @@ test('revision checks preserve legacy history, reject competing writers and fail
   assert.equal((await fetch(`${base}/progress/fictional`)).status, 401);
   assert.equal((await fetch(`${base}/progress/fictional`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: '{}' })).status, 401);
   assert.equal((await fetch(`${base}/progress/another`, { headers })).status, 403);
+  // Clients from before the compact format must reload rather than read or overwrite it.
+  const oldClient = { Authorization: headers.Authorization, 'Content-Type': 'application/json' };
+  assert.equal((await fetch(`${base}/progress/fictional`, { headers: oldClient })).status, 409);
+  assert.equal((await fetch(`${base}/progress/fictional`, { method: 'POST', headers: oldClient, body: JSON.stringify({ revision: 0, attempts: [] }) })).status, 409);
   assert.equal((await post({ ...saved, padding: 'x'.repeat(2 * 1024 * 1024) })).status, 413);
   assert.deepEqual(await (await get()).json(), saved);
   assert.equal((await fetch(`${base}/progress/fictional`, { method: 'DELETE', headers })).status, 428);
@@ -57,7 +61,7 @@ test('compact history appends stay small after stored history exceeds the reques
   const base = `http://127.0.0.1:${server.address().port}/api`;
   const login = await fetch(`${base}/login`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ name: 'fictional', password: 'fictional-password' }) });
   const { token } = await login.json();
-  const headers = { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' };
+  const headers = { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json', 'X-Progress-Format': '1' };
   const post = body => fetch(`${base}/progress/fictional`, { method: 'POST', headers, body: JSON.stringify(body) });
   const history = { revision: 7, historyVersion: 1, questionSnapshots: [], attempts: Array.from({ length: 40000 }, (_, i) => ({ id: `fictional-${i}`, questions: [['fictional-question', [3, 2, 1, 0], 2]], answers: [1] })) };
   assert.ok(Buffer.byteLength(JSON.stringify(history)) > 2 * 1024 * 1024);

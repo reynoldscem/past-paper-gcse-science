@@ -1,8 +1,10 @@
 import { getAllQuestions } from '../data';
 import type { AppProgress, PaperAttempt, Question, Subject } from '../types';
 
-// Option indices refer to the bank's original order; the final index is the
-// historical answer key, so a later key correction cannot change an old score.
+// Option indices refer to the stored snapshot's (sorted) option order; the third
+// field is the historical answer key, so a later key correction cannot change an
+// old score. References with a null snapshot (none are written now) fall back to
+// the current bank.
 const subjects: Subject[] = ['biology', 'chemistry', 'physics', 'roadRules', 'roadSigns', 'hazardAwareness', 'vehicleSafety'];
 type QuestionRef = [id: string, order: number[], correctIndex: number, snapshot: number | null, subject: number];
 type StoredAttempt = Omit<PaperAttempt, 'questions'> & { questions: QuestionRef[] };
@@ -20,13 +22,9 @@ export function encodeProgress(progress: AppProgress): StoredProgress {
   const attempts = progress.attempts.map(attempt => ({ ...attempt, questions: (attempt.questions ?? []).map(q => {
     const missing = missingRefs.get(q);
     if (missing) return missing;
-    const current = bank.get(q.id);
-    const order = current ? q.options.map(option => current.options.indexOf(option)) : [];
-    // Preserve obsolete or edited legacy content once per document, not once
-    // per attempt. Ordinary current questions store only their references.
-    const comparable = current && order.every(i => i >= 0) && new Set(order).size === current.options.length
-      && JSON.stringify({ ...q, options: current.options, correctIndex: current.correctIndex }) === JSON.stringify(current);
-    if (comparable) return [q.id, order, q.correctIndex, null, subjects.indexOf(q.subject)] as QuestionRef;
+    // Every attempt keeps an immutable copy of the question as it was answered, so
+    // later edits to the bank never change old attempts. Copies are shared within a
+    // document, so each distinct question version is stored once.
     const options = [...q.options].sort();
     const historical = { ...q, options, correctIndex: options.indexOf(q.options[q.correctIndex]) };
     const key = JSON.stringify(historical);
