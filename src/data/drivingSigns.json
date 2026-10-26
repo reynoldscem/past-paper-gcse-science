@@ -1,6 +1,7 @@
 [
   {
     "id": "drill-sign-giving-order-end-20-zonev2.jpg",
+    "family": "regulatory",
     "meaning": "Leave the 20 mph zone; observe the new limit shown",
     "image": {
       "src": "/driving/sign-giving-order-end-20-zonev2.jpg",
@@ -11,6 +12,7 @@
   },
   {
     "id": "drill-sign-giving-order-maximum-speed.jpg",
+    "family": "regulatory",
     "meaning": "Do not exceed the speed shown",
     "image": {
       "src": "/driving/sign-giving-order-maximum-speed.jpg",
@@ -21,6 +23,7 @@
   },
   {
     "id": "drill-sign-giving-order-school-crossing-patrol.jpg",
+    "family": "regulatory",
     "meaning": "Stop for the school crossing patrol",
     "image": {
       "src": "/driving/sign-giving-order-school-crossing-patrol.jpg",
@@ -31,6 +34,7 @@
   },
   {
     "id": "drill-sign-giving-order-manually-stop.jpg",
+    "family": "roadworks",
     "meaning": "Stop at the temporary traffic control",
     "image": {
       "src": "/driving/sign-giving-order-manually-stop.jpg",
@@ -41,6 +45,7 @@
   },
   {
     "id": "drill-sign-giving-order-manually-go.jpg",
+    "family": "roadworks",
     "meaning": "Proceed if safe at the temporary traffic control",
     "image": {
       "src": "/driving/sign-giving-order-manually-go.jpg",
@@ -51,6 +56,7 @@
   },
   {
     "id": "drill-sign-giving-order-no-cycling.jpg",
+    "family": "regulatory",
     "meaning": "Cycling is prohibited",
     "image": {
       "src": "/driving/sign-giving-order-no-cycling.jpg",
@@ -61,6 +67,7 @@
   },
   {
     "id": "drill-sign-giving-order-no-buses.jpg",
+    "family": "bus-cycle-tram",
     "meaning": "Buses with more than eight passenger seats are prohibited",
     "image": {
       "src": "/driving/sign-giving-order-no-buses.jpg",
@@ -71,6 +78,7 @@
   },
   {
     "id": "drill-sign-giving-order-no-towed-caravans.jpg",
+    "family": "regulatory",
     "meaning": "Towed caravans are prohibited",
     "image": {
       "src": "/driving/sign-giving-order-no-towed-caravans.jpg",
@@ -81,6 +89,7 @@
   },
   {
     "id": "drill-sign-giving-order-no-vehicles-carry-explosives.jpg",
+    "family": "regulatory",
     "meaning": "Vehicles carrying explosives are prohibited",
     "image": {
       "src": "/driving/sign-giving-order-no-vehicles-carry-explosives.jpg",
@@ -91,6 +100,7 @@
   },
   {
     "id": "drill-sign-giving-order-no-vehicle-combination-length.jpg",
+    "family": "regulatory",
     "meaning": "Vehicles or combinations longer than shown are prohibited",
     "image": {
       "src": "/driving/sign-giving-order-no-vehicle-combination-length.jpg",
@@ -101,6 +111,7 @@
   },
   {
     "id": "drill-sign-giving-order-no-vehicles-over-height.jpg",
+    "family": "regulatory",
     "meaning": "Vehicles higher than shown are prohibited",
     "image": {
       "src": "/driving/sign-giving-order-no-vehicles-over-height.jpg",
@@ -111,6 +122,7 @@
   },
   {
     "id": "drill-sign-giving-order-no-vehicle-width.jpg",
+    "family": "regulatory",
     "meaning": "Vehicles wider than shown are prohibited",
     "image": {
       "src": "/driving/sign-giving-order-no-vehicle-width.jpg",
@@ -121,6 +133,7 @@
   },
   {
     "id": "drill-sign-giving-order-no-right-turn.jpg",
+    "family": "regulatory",
     "meaning": "You must not turn right",
     "image": {
       "src": "/driving/sign-giving-order-no-right-turn.jpg",
@@ -131,6 +144,7 @@
   },
   {
     "id": "drill-sign-giving-order-no-left-turn.jpg",
+    "family": "regulatory",
     "meaning": "You must not turn left",
     "image": {
       "src": "/driving/sign-giving-order-no-left-turn.jpg",
@@ -141,6 +155,7 @@
   },
   {
     "id": "drill-sign-giving-order-no-goods-vehicle-over-weight.jpg",
+    "family": "regulatory",
     "meaning": "Goods vehicles above the gross weight shown are prohibited except for loading",
     "image": {
       "src": "/driving/sign-giving-order-no-goods-vehicle-over-weight.jpg",
@@ -151,6 +166,7 @@
   },
   {
     "id": "drill-sign-giving-order-no-vehicles-max-gross-weight.jpg",
+    "family": "regulatory",
     "meaning": "Vehicles above the maximum gross weight shown are prohibited",
     "image": {
       "src": "/driving/sign-giving-order-no-vehicles-max-gross-weight.jpg",
@@ -161,6 +177,7 @@
   },
   {
     "id": "drill-sign-giving-order-turn-left-ahead.jpg",
+    "family": "regulatory",
     "meaning": "Turn left at the junction ahead",
     "image": {
       "src": "/driving/sign-giving-order-turn-left-ahead.jpg",
@@ -171,6 +188,7 @@
   },
   {
     "id": "drill-sign-giving-order-turn-left.jpg",
+    "family": "regulatory",
     "meaning": "Turn left here",
     "image": {
       "src": "/driving/sign-giving-order-turn-left.jpg",
@@ -181,6 +199,7 @@
   },
   {
     "id": "drill-sign-giving-order-route-pedal-cycles-only.jpg",
+    "family": "bus-cycle-tram",
     "meaning": "This route is for pedal cycles only",
     "image": {
       "src": "/driving/sign-giving-order-route-pedal-cycles-only.jpg",
@@ -191,6 +210,7 @@
   },
   {
     "id": "drill-sign-giving-order-minimum-speed-end.jpg",
+    "family": "regulatory",
     "meaning": "The minimum speed requirement ends",
     "image": {
       "src": "/driving/sign-giving-order-minimum-speed-end.jpg",
@@ -201,6 +221,7 @@
   },
   {
     "id": "drill-sign-giving-order-pedestrian-crossing-tramway.jpg",
+    "family": "bus-cycle-tram",
     "meaning": "Pedestrians cross the tramway at this point",
     "image": {
       "src": "/driving/sign-giving-order-pedestrian-crossing-tramway.jpg",
@@ -211,6 +232,7 @@
   },
   {
     "id": "drill-sign-giving-order-one-way-traffic.jpg",
+    "family": "regulatory",
     "meaning": "Traffic travels in one direction",
     "image": {
       "src": "/driving/sign-giving-order-one-way-traffic.jpg",
@@ -221,6 +243,7 @@
   },
   {
     "id": "drill-sign-giving-order-with-flow-bus-cycle-lane.jpg",
+    "family": "bus-cycle-tram",
     "meaning": "Buses and cycles use a lane in the same direction as other traffic",
     "image": {
       "src": "/driving/sign-giving-order-with-flow-bus-cycle-lane.jpg",
@@ -231,6 +254,7 @@
   },
   {
     "id": "drill-sign-giving-order-contra-flow-bus-lane.jpg",
+    "family": "bus-cycle-tram",
     "meaning": "A bus lane runs against the main traffic flow",
     "image": {
       "src": "/driving/sign-giving-order-contra-flow-bus-lane.jpg",
@@ -241,6 +265,7 @@
   },
   {
     "id": "drill-sign-giving-order-with-flow-pedal-cycle-lane.jpg",
+    "family": "bus-cycle-tram",
     "meaning": "A cycle lane runs with the traffic flow",
     "image": {
       "src": "/driving/sign-giving-order-with-flow-pedal-cycle-lane.jpg",
@@ -251,6 +276,7 @@
   },
   {
     "id": "drill-warning-sign-road-narrow.jpg",
+    "family": "warning",
     "meaning": "The road narrows on the right",
     "image": {
       "src": "/driving/warning-sign-road-narrow.jpg",
@@ -261,6 +287,7 @@
   },
   {
     "id": "drill-warning-sign-road-narrow-both-sides.jpg",
+    "family": "warning",
     "meaning": "The road narrows on both sides",
     "image": {
       "src": "/driving/warning-sign-road-narrow-both-sides.jpg",
@@ -271,6 +298,7 @@
   },
   {
     "id": "drill-warning-sign-crossroads.jpg",
+    "family": "warning",
     "meaning": "A crossroads is ahead",
     "image": {
       "src": "/driving/warning-sign-crossroads.jpg",
@@ -281,6 +309,7 @@
   },
   {
     "id": "drill-warning-sign-junction-on-bend-ahead.jpg",
+    "family": "warning",
     "meaning": "There is a junction on a bend ahead",
     "image": {
       "src": "/driving/warning-sign-junction-on-bend-ahead.jpg",
@@ -291,6 +320,7 @@
   },
   {
     "id": "drill-warning-sign-t-junction-with-priority.jpg",
+    "family": "warning",
     "meaning": "A T-junction is ahead with priority over traffic from the right",
     "image": {
       "src": "/driving/warning-sign-t-junction-with-priority.jpg",
@@ -301,6 +331,7 @@
   },
   {
     "id": "drill-warning-sign-staggered-junction.jpg",
+    "family": "warning",
     "meaning": "Side roads join at staggered positions",
     "image": {
       "src": "/driving/warning-sign-staggered-junction.jpg",
@@ -311,6 +342,7 @@
   },
   {
     "id": "drill-warning-sign-traffic-merging-left.jpg",
+    "family": "warning",
     "meaning": "Traffic will merge from the left",
     "image": {
       "src": "/driving/warning-sign-traffic-merging-left.jpg",
@@ -321,6 +353,7 @@
   },
   {
     "id": "drill-warning-sign-bend-to-right.jpg",
+    "family": "warning",
     "meaning": "The road bends right",
     "image": {
       "src": "/driving/warning-sign-bend-to-right.jpg",
@@ -331,6 +364,7 @@
   },
   {
     "id": "drill-warning-sign-roundabout.jpg",
+    "family": "warning",
     "meaning": "A roundabout is ahead",
     "image": {
       "src": "/driving/warning-sign-roundabout.jpg",
@@ -341,6 +375,7 @@
   },
   {
     "id": "drill-warning-sign-uneven-road.jpg",
+    "family": "warning",
     "meaning": "The road surface is uneven",
     "image": {
       "src": "/driving/warning-sign-uneven-road.jpg",
@@ -351,6 +386,7 @@
   },
   {
     "id": "drill-warning-sign-two-way-traffic-crosses-road.jpg",
+    "family": "warning",
     "meaning": "Two-way traffic crosses the one-way road",
     "image": {
       "src": "/driving/warning-sign-two-way-traffic-crosses-road.jpg",
@@ -361,6 +397,7 @@
   },
   {
     "id": "drill-warning-sign-swing-bridge.jpg",
+    "family": "warning",
     "meaning": "An opening or swing bridge is ahead",
     "image": {
       "src": "/driving/warning-sign-swing-bridge.jpg",
@@ -371,6 +408,7 @@
   },
   {
     "id": "drill-warning-sign-aircraft.jpg",
+    "family": "warning",
     "meaning": "Expect low aircraft or sudden aircraft noise",
     "image": {
       "src": "/driving/warning-sign-aircraft.jpg",
@@ -381,6 +419,7 @@
   },
   {
     "id": "drill-warning-sign-falling-rocks.jpg",
+    "family": "warning",
     "meaning": "Beware of fallen or falling rocks",
     "image": {
       "src": "/driving/warning-sign-falling-rocks.jpg",
@@ -391,6 +430,7 @@
   },
   {
     "id": "drill-warning-sign-traffic-signals-not-in-use.jpg",
+    "family": "warning",
     "meaning": "The traffic signals are not operating",
     "image": {
       "src": "/driving/warning-sign-traffic-signals-not-in-use.jpg",
@@ -401,6 +441,7 @@
   },
   {
     "id": "drill-warning-sign-traffic-signals.jpg",
+    "family": "warning",
     "meaning": "Traffic lights are ahead",
     "image": {
       "src": "/driving/warning-sign-traffic-signals.jpg",
@@ -411,6 +452,7 @@
   },
   {
     "id": "drill-warning-sign-steep-hill-downwards.jpg",
+    "family": "warning",
     "meaning": "A steep descent is ahead",
     "image": {
       "src": "/driving/warning-sign-steep-hill-downwards.jpg",
@@ -421,6 +463,7 @@
   },
   {
     "id": "drill-warning-sign-steep-hill-upwards.jpg",
+    "family": "warning",
     "meaning": "A steep climb is ahead",
     "image": {
       "src": "/driving/warning-sign-steep-hill-upwards.jpg",
@@ -431,6 +474,7 @@
   },
   {
     "id": "drill-warning-sign-tunnel-ahead.jpg",
+    "family": "warning",
     "meaning": "A tunnel is ahead",
     "image": {
       "src": "/driving/warning-sign-tunnel-ahead.jpg",
@@ -441,6 +485,7 @@
   },
   {
     "id": "drill-warning-sign-trams-crossing-ahead.jpg",
+    "family": "bus-cycle-tram",
     "meaning": "Trams cross the road ahead",
     "image": {
       "src": "/driving/warning-sign-trams-crossing-ahead.jpg",
@@ -451,6 +496,7 @@
   },
   {
     "id": "drill-warning-sign-level-crossing-without-barrier-ahead.jpg",
+    "family": "level-crossing",
     "meaning": "A level crossing without barriers is ahead",
     "image": {
       "src": "/driving/warning-sign-level-crossing-without-barrier-ahead.jpg",
@@ -461,6 +507,7 @@
   },
   {
     "id": "drill-warning-sign-pedestrians-in-road-ahead.jpg",
+    "family": "warning",
     "meaning": "Pedestrians may be walking in the road",
     "image": {
       "src": "/driving/warning-sign-pedestrians-in-road-ahead.jpg",
@@ -471,6 +518,7 @@
   },
   {
     "id": "drill-warning-sign-zebra-crossing.jpg",
+    "family": "warning",
     "meaning": "A zebra crossing is ahead",
     "image": {
       "src": "/driving/warning-sign-zebra-crossing.jpg",
@@ -481,6 +529,7 @@
   },
   {
     "id": "drill-warning-sign-cattle.jpg",
+    "family": "warning",
     "meaning": "Cattle may be on the road",
     "image": {
       "src": "/driving/warning-sign-cattle.jpg",
@@ -491,6 +540,7 @@
   },
   {
     "id": "drill-warning-sign-wild-horses.jpg",
+    "family": "warning",
     "meaning": "Wild horses or ponies may be on the road",
     "image": {
       "src": "/driving/warning-sign-wild-horses.jpg",
@@ -501,6 +551,7 @@
   },
   {
     "id": "drill-warning-sign-other-danger.jpg",
+    "family": "warning",
     "meaning": "There is a danger described by the plate",
     "image": {
       "src": "/driving/warning-sign-other-danger.jpg",
@@ -511,6 +562,7 @@
   },
   {
     "id": "drill-warning-sign-soft-verges.jpg",
+    "family": "warning",
     "meaning": "The verges may not support a vehicle",
     "image": {
       "src": "/driving/warning-sign-soft-verges.jpg",
@@ -521,6 +573,7 @@
   },
   {
     "id": "drill-warning-sign-worded-sign-ford.jpg",
+    "family": "warning",
     "meaning": "A ford is ahead",
     "image": {
       "src": "/driving/warning-sign-worded-sign-ford.jpg",
@@ -531,6 +584,7 @@
   },
   {
     "id": "drill-warning-sign-quayside-or-riverbank.jpg",
+    "family": "warning",
     "meaning": "The road approaches an unprotected water edge",
     "image": {
       "src": "/driving/warning-sign-quayside-or-riverbank.jpg",
@@ -541,6 +595,7 @@
   },
   {
     "id": "drill-warning-sign-risk-of-grounding.jpg",
+    "family": "warning",
     "meaning": "Long or low vehicles may ground on the hump",
     "image": {
       "src": "/driving/warning-sign-risk-of-grounding.jpg",
@@ -551,6 +606,7 @@
   },
   {
     "id": "drill-Information-sign-motorway-end.jpg",
+    "family": "motorway",
     "meaning": "Motorway regulations end",
     "image": {
       "src": "/driving/Information-sign-motorway-end.jpg",
@@ -561,6 +617,7 @@
   },
   {
     "id": "drill-Information-sign-start-motorway.jpg",
+    "family": "motorway",
     "meaning": "Motorway regulations begin",
     "image": {
       "src": "/driving/Information-sign-start-motorway.jpg",
@@ -571,6 +628,7 @@
   },
   {
     "id": "drill-Information-sign-hospital-a-and-e.jpg",
+    "family": "information",
     "meaning": "A hospital with emergency facilities is ahead",
     "image": {
       "src": "/driving/Information-sign-hospital-a-and-e.jpg",
@@ -581,6 +639,7 @@
   },
   {
     "id": "drill-Information-sign-tourist-info-point.jpg",
+    "family": "information",
     "meaning": "A tourist information point is available",
     "image": {
       "src": "/driving/Information-sign-tourist-info-point.jpg",
@@ -591,6 +650,7 @@
   },
   {
     "id": "drill-Information-sign-camera-area.jpg",
+    "family": "information",
     "meaning": "Traffic regulations are enforced by cameras here",
     "image": {
       "src": "/driving/Information-sign-camera-area.jpg",
@@ -601,6 +661,7 @@
   },
   {
     "id": "drill-road-work-sign-temporary-lane-closure.jpg",
+    "family": "roadworks",
     "meaning": "The indicated lane is temporarily closed",
     "image": {
       "src": "/driving/road-work-sign-temporary-lane-closure.jpg",
@@ -611,6 +672,7 @@
   },
   {
     "id": "drill-along-carriageway-edge-line.jpg",
+    "family": "markings",
     "meaning": "This line marks the edge of the carriageway",
     "image": {
       "src": "/driving/along-carriageway-edge-line.jpg",
@@ -621,6 +683,7 @@
   },
   {
     "id": "drill-along-carriageway-centre-line.jpg",
+    "family": "markings",
     "meaning": "This broken line divides opposing traffic",
     "image": {
       "src": "/driving/along-carriageway-centre-line.jpg",
@@ -631,6 +694,7 @@
   },
   {
     "id": "drill-along-carriageway-lane-line.jpg",
+    "family": "markings",
     "meaning": "This line separates traffic lanes",
     "image": {
       "src": "/driving/along-carriageway-lane-line.jpg",
@@ -641,6 +705,7 @@
   },
   {
     "id": "drill-motorway-signal-change-lane.jpg",
+    "family": "motorway",
     "meaning": "Move into the lane indicated when safe",
     "image": {
       "src": "/driving/motorway-signal-change-lane.jpg",
@@ -651,6 +716,7 @@
   },
   {
     "id": "drill-motorway-signal-fog.jpg",
+    "family": "motorway",
     "meaning": "Visibility is reduced ahead",
     "image": {
       "src": "/driving/motorway-signal-fog.jpg",
@@ -661,6 +727,7 @@
   },
   {
     "id": "drill-along-carriageway-double-white-broken-line.jpg",
+    "family": "markings",
     "meaning": "Cross only if safe and finish before a solid line is nearest you",
     "image": {
       "src": "/driving/along-carriageway-double-white-broken-line.jpg",
@@ -671,6 +738,7 @@
   },
   {
     "id": "drill-along-carriageway-double-white-line.jpg",
+    "family": "markings",
     "meaning": "Do not cross or straddle the nearer solid line except in the permitted circumstances",
     "image": {
       "src": "/driving/along-carriageway-double-white-line.jpg",
@@ -681,6 +749,7 @@
   },
   {
     "id": "drill-along-carriageway-diagonal-line.jpg",
+    "family": "markings",
     "meaning": "Enter this broken-bordered hatched area only if necessary and safe",
     "image": {
       "src": "/driving/along-carriageway-diagonal-line.jpg",
@@ -691,6 +760,7 @@
   },
   {
     "id": "drill-other-road-markings-give-way-road.jpg",
+    "family": "markings",
     "meaning": "Prepare to give way at the junction ahead",
     "image": {
       "src": "/driving/other-road-markings-give-way-road.jpg",
@@ -701,6 +771,7 @@
   },
   {
     "id": "drill-other-road-markings-keep-clear.jpg",
+    "family": "markings",
     "meaning": "Keep this part of the road free of stationary vehicles",
     "image": {
       "src": "/driving/other-road-markings-keep-clear.jpg",
@@ -708,5 +779,1633 @@
     },
     "highwayCodeRule": "Annex: Road markings",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/road-markings"
+  },
+  {
+    "id": "drill-motorway-signal-lane-ahead-closed.jpg",
+    "family": "motorway",
+    "meaning": "The lane ahead is closed",
+    "image": {
+      "src": "/driving/motorway-signal-lane-ahead-closed.jpg",
+      "alt": "Grey motorway signal with dotted lane lines, one ending, and flashing amber lamps"
+    },
+    "highwayCodeRule": "Annex: Light signals controlling traffic",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/light-signals-controlling-traffic"
+  },
+  {
+    "id": "drill-motorway-signal-temporary-speed-limit-message.jpg",
+    "family": "motorway",
+    "meaning": "Temporary maximum speed advised, with the reason shown in the message",
+    "image": {
+      "src": "/driving/motorway-signal-temporary-speed-limit-message.jpg",
+      "alt": "Wide grey signal reading ACCIDENT AHEAD beside a dotted 30"
+    },
+    "highwayCodeRule": "Annex: Light signals controlling traffic",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/light-signals-controlling-traffic"
+  },
+  {
+    "id": "drill-motorway-signal-temporary-speed.jpg",
+    "family": "motorway",
+    "meaning": "Temporary maximum speed advised for current conditions",
+    "image": {
+      "src": "/driving/motorway-signal-temporary-speed.jpg",
+      "alt": "Grey roadside signal showing a dotted 50 with amber lamps"
+    },
+    "highwayCodeRule": "Annex: Light signals controlling traffic",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/light-signals-controlling-traffic"
+  },
+  {
+    "id": "drill-motorway-signal-end-restriction.jpg",
+    "family": "motorway",
+    "meaning": "End of the temporary motorway restrictions",
+    "image": {
+      "src": "/driving/motorway-signal-end-restriction.jpg",
+      "alt": "Grey roadside signal displaying the word End in dots"
+    },
+    "highwayCodeRule": "Annex: Light signals controlling traffic",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/light-signals-controlling-traffic"
+  },
+  {
+    "id": "drill-across-carriageway-give-way-traffic-from-right-roundabout.jpg",
+    "family": "markings",
+    "meaning": "Give way to traffic from the right at a roundabout",
+    "image": {
+      "src": "/driving/across-carriageway-give-way-traffic-from-right-roundabout.jpg",
+      "alt": "Single broken white line with long dashes across the carriageway"
+    },
+    "highwayCodeRule": "Annex: Road markings",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/road-markings"
+  },
+  {
+    "id": "drill-along-edge-carriageway-red-route-no-stopping-at-any-time.jpg",
+    "family": "parking",
+    "meaning": "Red route: no stopping at any time",
+    "image": {
+      "src": "/driving/along-edge-carriageway-red-route-no-stopping-at-any-time.jpg",
+      "alt": "Small red-bordered plate with a crossed blue roundel and RED ROUTE heading"
+    },
+    "highwayCodeRule": "Annex: Road markings",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/road-markings"
+  },
+  {
+    "id": "drill-along-edge-carriageway-red-route-no-stopping-times.jpg",
+    "family": "parking",
+    "meaning": "Red route: no stopping during the days and times shown",
+    "image": {
+      "src": "/driving/along-edge-carriageway-red-route-no-stopping-times.jpg",
+      "alt": "Red-bordered RED ROUTE plate with a crossed roundel and Mon-Sat 7 am-7 pm"
+    },
+    "highwayCodeRule": "Annex: Road markings",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/road-markings"
+  },
+  {
+    "id": "drill-along-edge-carriageway-red-route-parking.jpg",
+    "family": "parking",
+    "meaning": "Red route: parking allowed for a limited time at the times shown",
+    "image": {
+      "src": "/driving/along-edge-carriageway-red-route-parking.jpg",
+      "alt": "RED ROUTE panel with a blue P, Mon-Sat 7 am-7 pm, 1 hour, no return within 2 hours"
+    },
+    "highwayCodeRule": "Annex: Road markings",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/road-markings"
+  },
+  {
+    "id": "drill-along-edge-carriageway-red-route-except-loading-time.jpg",
+    "family": "parking",
+    "meaning": "Red route: no stopping, except loading for up to 20 minutes at the times shown",
+    "image": {
+      "src": "/driving/along-edge-carriageway-red-route-except-loading-time.jpg",
+      "alt": "Red-bordered panel with a crossed roundel, times and a blue loading symbol"
+    },
+    "highwayCodeRule": "Annex: Road markings",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/road-markings"
+  },
+  {
+    "id": "drill-on-kerb-loading-only-sign.jpg",
+    "family": "parking",
+    "meaning": "Bay reserved for loading and unloading",
+    "image": {
+      "src": "/driving/on-kerb-loading-only-sign.jpg",
+      "alt": "Rectangular sign with a blue trolley symbol and Loading only"
+    },
+    "highwayCodeRule": "Annex: Road markings",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/road-markings"
+  },
+  {
+    "id": "drill-on-kerb-loading-only-space.jpg",
+    "family": "markings",
+    "meaning": "Loading bay marked on the road",
+    "image": {
+      "src": "/driving/on-kerb-loading-only-space.jpg",
+      "alt": "Broken white bay at the kerb with LOADING ONLY painted inside"
+    },
+    "highwayCodeRule": "Annex: Road markings",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/road-markings"
+  },
+  {
+    "id": "drill-other-road-markings-space-doctor.jpg",
+    "family": "markings",
+    "meaning": "Parking space reserved for the vehicles named in the bay",
+    "image": {
+      "src": "/driving/other-road-markings-space-doctor.jpg",
+      "alt": "Broken white kerbside bay with the word DOCTOR painted inside"
+    },
+    "highwayCodeRule": "Annex: Road markings",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/road-markings"
+  },
+  {
+    "id": "drill-other-road-markings-bus-lane-road.jpg",
+    "family": "markings",
+    "meaning": "A lane reserved for buses and permitted vehicles during its hours",
+    "image": {
+      "src": "/driving/other-road-markings-bus-lane-road.jpg",
+      "alt": "Solid white line beside a lane with BUS LANE painted on it"
+    },
+    "highwayCodeRule": "Annex: Road markings",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/road-markings"
+  },
+  {
+    "id": "drill-other-road-markings-indication-lanes.jpg",
+    "family": "markings",
+    "meaning": "Lane arrows and destinations: choose your lane for your route",
+    "image": {
+      "src": "/driving/other-road-markings-indication-lanes.jpg",
+      "alt": "Three lanes with white arrows and painted words CITY, A3 and YORK ST"
+    },
+    "highwayCodeRule": "Annex: Road markings",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/road-markings"
+  },
+  {
+    "id": "drill-sign-giving-order-entry-20-zone.jpg",
+    "family": "regulatory",
+    "meaning": "Entry to a 20 mph zone",
+    "image": {
+      "src": "/driving/sign-giving-order-entry-20-zone.jpg",
+      "alt": "Red-ringed 20 above ZONE, with a bee emblem and a place name below"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-sign-giving-order-park-restrict-permit-holders.jpg",
+    "family": "parking",
+    "meaning": "Parking restricted to permit holders",
+    "image": {
+      "src": "/driving/sign-giving-order-park-restrict-permit-holders.jpg",
+      "alt": "White rectangle with a blue P and the words Permit holders only"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-warning-sign-distance-to-stop-line-ahead-100-yards.jpg",
+    "family": "warning",
+    "meaning": "STOP line 100 yards ahead",
+    "image": {
+      "src": "/driving/warning-sign-distance-to-stop-line-ahead-100-yards.jpg",
+      "alt": "Red triangle above a plate reading STOP 100 yds"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-warning-sign-distance-to-stop-line-ahead-50-yards.jpg",
+    "family": "warning",
+    "meaning": "GIVE WAY line 50 yards ahead",
+    "image": {
+      "src": "/driving/warning-sign-distance-to-stop-line-ahead-50-yards.jpg",
+      "alt": "Inverted red triangle above a plate reading GIVE WAY 50 yds"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-warning-sign-overhead-electric-cables.jpg",
+    "family": "warning",
+    "meaning": "Overhead electric cable; the plate shows the safe height",
+    "image": {
+      "src": "/driving/warning-sign-overhead-electric-cables.jpg",
+      "alt": "Red triangle with a lightning flash and a Safe height 16 ft 6 in plate"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-warning-sign-available-width-head-room.jpg",
+    "family": "warning",
+    "meaning": "Low arch: the signs show the available headroom",
+    "image": {
+      "src": "/driving/warning-sign-available-width-head-room.jpg",
+      "alt": "Black and yellow banded arch with two small triangles showing heights"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-warning-sign-sharp-deviation-of-route.jpg",
+    "family": "warning",
+    "meaning": "Sharp deviation of route to the left",
+    "image": {
+      "src": "/driving/warning-sign-sharp-deviation-of-route.jpg",
+      "alt": "Black rectangle with white left-pointing chevrons"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-warning-sign-distance-humps-extend.jpg",
+    "family": "warning",
+    "meaning": "Road humps for the distance shown",
+    "image": {
+      "src": "/driving/warning-sign-distance-humps-extend.jpg",
+      "alt": "Red triangle with a black hump and a Humps for half mile plate"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-direction-sign-blue-junction-leading-to-motorway.jpg",
+    "family": "direction",
+    "meaning": "Direction to a motorway from a junction leading directly onto it",
+    "image": {
+      "src": "/driving/direction-sign-blue-junction-leading-to-motorway.jpg",
+      "alt": "Blue arrow-shaped sign with a motorway symbol, a place name and a junction number"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-direction-sign-blue-route-sign.jpg",
+    "family": "direction",
+    "meaning": "Motorway route confirmation sign after a junction, with distances",
+    "image": {
+      "src": "/driving/direction-sign-blue-route-sign.jpg",
+      "alt": "Blue rectangle headed M1 listing destinations and miles"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-direction-sign-green-approach-junction-roundabout.jpg",
+    "family": "direction",
+    "meaning": "Primary route map-type sign on the approach to a roundabout",
+    "image": {
+      "src": "/driving/direction-sign-green-approach-junction-roundabout.jpg",
+      "alt": "Green map-type sign with a roundabout diagram and blue motorway panels"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-direction-sign-green-at-junction.jpg",
+    "family": "direction",
+    "meaning": "Primary route direction sign that warns of a height limit on that route",
+    "image": {
+      "src": "/driving/direction-sign-green-at-junction.jpg",
+      "alt": "Green arrow-shaped sign with place names and a red triangle showing a height"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-direction-sign-green-approach-junction.jpg",
+    "family": "direction",
+    "meaning": "Primary route sign before a junction, including a tourist destination",
+    "image": {
+      "src": "/driving/direction-sign-green-approach-junction.jpg",
+      "alt": "Green panel with junction arrows and a brown panel with a steam engine"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-direction-sign-green-billingual.jpg",
+    "family": "direction",
+    "meaning": "Direction sign giving place names in English and Welsh",
+    "image": {
+      "src": "/driving/direction-sign-green-billingual.jpg",
+      "alt": "Green sign with two place names, a route number and an angled arrow"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-direction-sign-green-primary-route-ring-road.jpg",
+    "family": "direction",
+    "meaning": "Primary route that forms part of a ring road",
+    "image": {
+      "src": "/driving/direction-sign-green-primary-route-ring-road.jpg",
+      "alt": "White letter R on green, inside a yellow border"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-direction-sign-black-border-approach-junction.jpg",
+    "family": "direction",
+    "meaning": "Non-primary route sign on the approach to a junction",
+    "image": {
+      "src": "/driving/direction-sign-black-border-approach-junction.jpg",
+      "alt": "White sign with black border, an upward arrow, places and distances"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-direction-sign-other-picnic-site.jpg",
+    "family": "direction",
+    "meaning": "Picnic site in the direction and distance shown",
+    "image": {
+      "src": "/driving/direction-sign-other-picnic-site.jpg",
+      "alt": "Brown arrow sign with a picnic bench and tree symbol and 150 yds"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-direction-sign-other-camping-caravan.jpg",
+    "family": "direction",
+    "meaning": "Camping and caravan site in the direction shown",
+    "image": {
+      "src": "/driving/direction-sign-other-camping-caravan.jpg",
+      "alt": "Brown arrow sign with tent and caravan symbols and 300 yds"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-direction-sign-other-advisory-route-lorries.jpg",
+    "family": "direction",
+    "meaning": "Advisory route for lorries",
+    "image": {
+      "src": "/driving/direction-sign-other-advisory-route-lorries.jpg",
+      "alt": "Black sign with a white lorry, an arrow and road numbers"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-direction-sign-other-route-pedal-cycles.jpg",
+    "family": "direction",
+    "meaning": "Cycle route that forms part of a numbered network",
+    "image": {
+      "src": "/driving/direction-sign-other-route-pedal-cycles.jpg",
+      "alt": "Blue rectangle with an upward arrow, a bicycle and a red number"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-direction-sign-other-recommended-route-cycle.jpg",
+    "family": "direction",
+    "meaning": "Recommended cycle route to the place shown",
+    "image": {
+      "src": "/driving/direction-sign-other-recommended-route-cycle.jpg",
+      "alt": "Blue arrow sign with a bicycle, a place name and a distance"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-direction-sign-other-route-pedestrians.jpg",
+    "family": "direction",
+    "meaning": "Route for pedestrians",
+    "image": {
+      "src": "/driving/direction-sign-other-route-pedestrians.jpg",
+      "alt": "Blue arrow sign with a walking figure and destination names"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-direction-sign-other-diversion-route.jpg",
+    "family": "direction",
+    "meaning": "Diversion route",
+    "image": {
+      "src": "/driving/direction-sign-other-diversion-route.jpg",
+      "alt": "Yellow arrow-shaped sign with black border and a place name"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-Information-sign-entrance-controlled-parking-zone.jpg",
+    "family": "parking",
+    "meaning": "Entrance to a controlled parking zone, with the hours of control",
+    "image": {
+      "src": "/driving/Information-sign-entrance-controlled-parking-zone.jpg",
+      "alt": "Plate headed Controlled ZONE with a crossed blue roundel and times"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-Information-sign-end-controlled-parking-zone.jpg",
+    "family": "parking",
+    "meaning": "End of the controlled parking zone",
+    "image": {
+      "src": "/driving/Information-sign-end-controlled-parking-zone.jpg",
+      "alt": "Grey crossed roundel with diagonal bars above Zone ENDS"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-Information-sign-advance-warning-restriction-ahead.jpg",
+    "family": "information",
+    "meaning": "Advance warning of a height restriction ahead",
+    "image": {
+      "src": "/driving/Information-sign-advance-warning-restriction-ahead.jpg",
+      "alt": "Blue plate reading Low bridge 2 miles ahead with a red height roundel"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-Information-sign-parking-place-solo-motorcycles.jpg",
+    "family": "parking",
+    "meaning": "Parking place for solo motorcycles",
+    "image": {
+      "src": "/driving/Information-sign-parking-place-solo-motorcycles.jpg",
+      "alt": "Blue P sign above a white plate with a motorcycle"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-variable_speed_limit.png",
+    "family": "information",
+    "meaning": "Start of a variable speed limit with camera enforcement",
+    "image": {
+      "src": "/driving/variable_speed_limit.png",
+      "alt": "Blue sign reading Variable speed limit above a camera symbol"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-Information-sign-recommended-route-cycles.jpg",
+    "family": "bus-cycle-tram",
+    "meaning": "Recommended route for pedal cycles",
+    "image": {
+      "src": "/driving/Information-sign-recommended-route-cycles.jpg",
+      "alt": "Blue rectangle with a large white bicycle"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-Information-sign-bus-lane-road-junction-ahead.jpg",
+    "family": "bus-cycle-tram",
+    "meaning": "Bus lane on the road at the junction ahead",
+    "image": {
+      "src": "/driving/Information-sign-bus-lane-road-junction-ahead.jpg",
+      "alt": "White plate with a bus, a left arrow and the words Bus lane"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-road-work-sign-temporary-hazard.jpg",
+    "family": "roadworks",
+    "meaning": "Temporary hazard at road works: slow down",
+    "image": {
+      "src": "/driving/road-work-sign-temporary-hazard.jpg",
+      "alt": "Red rectangle with white lettering SLOW WET TAR"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-road-work-sign-mandatory-speed-limit.jpg",
+    "family": "roadworks",
+    "meaning": "Temporary mandatory speed limit ahead at road works",
+    "image": {
+      "src": "/driving/road-work-sign-mandatory-speed-limit.jpg",
+      "alt": "Yellow board with a red-ringed 50 and three-quarter mile ahead"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-road-work-sign-road-works-ahead.jpg",
+    "family": "roadworks",
+    "meaning": "Road works ahead, with possible delays until the date shown",
+    "image": {
+      "src": "/driving/road-work-sign-road-works-ahead.jpg",
+      "alt": "Yellow board with a road works triangle, 1 mile and Delays possible until a date"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-road-work-sign-back-vehicle-800-yards.jpg",
+    "family": "roadworks",
+    "meaning": "Sign on a works vehicle: a lane is closed in the distance shown",
+    "image": {
+      "src": "/driving/road-work-sign-back-vehicle-800-yards.jpg",
+      "alt": "Yellow board with amber lamps, a worker triangle, lane arrows with a red bar and 800 yds"
+    },
+    "highwayCodeRule": "Annex: Traffic signs",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+  },
+  {
+    "id": "drill-large-goods-vehicle-markings.jpg",
+    "family": "vehicle-markings",
+    "meaning": "Rear markings on a large goods vehicle or trailer",
+    "image": {
+      "src": "/driving/large-goods-vehicle-markings.jpg",
+      "alt": "Red and yellow striped and outlined rectangular reflective panels"
+    },
+    "highwayCodeRule": "Annex: Vehicle markings",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/vehicle-markings"
+  },
+  {
+    "id": "drill-hazard-warning-dangerous-goods.jpg",
+    "family": "vehicle-markings",
+    "meaning": "Vehicle carrying dangerous goods in packages",
+    "image": {
+      "src": "/driving/hazard-warning-dangerous-goods.jpg",
+      "alt": "Plain orange rectangle with a black border"
+    },
+    "highwayCodeRule": "Annex: Vehicle markings",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/vehicle-markings"
+  },
+  {
+    "id": "drill-projection-marker-end.jpg",
+    "family": "vehicle-markings",
+    "meaning": "Marker showing a load projects beyond the end of the vehicle",
+    "image": {
+      "src": "/driving/projection-marker-end.jpg",
+      "alt": "Red and white diagonally striped triangle"
+    },
+    "highwayCodeRule": "Annex: Vehicle markings",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/vehicle-markings"
+  },
+  {
+    "id": "drill-kyts-countdown-markers.svg",
+    "family": "level-crossing",
+    "meaning": "Countdown markers on the approach to a level crossing",
+    "image": {
+      "src": "/driving/kyts-countdown-markers.svg",
+      "alt": "Three white posts with three, two and one red diagonal bars"
+    },
+    "highwayCodeRule": "Know your traffic signs: Level crossing signs and signals",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/level-crossing-signs-and-signals"
+  },
+  {
+    "id": "drill-kyts-auto-level-crossing.svg",
+    "family": "level-crossing",
+    "meaning": "Automatic open level crossing: stop when the red lights flash",
+    "image": {
+      "src": "/driving/kyts-auto-level-crossing.svg",
+      "alt": "Red-and-white cross above twin red lamps and an amber lamp, with a KEEP CROSSING CLEAR plate"
+    },
+    "highwayCodeRule": "Know your traffic signs: Level crossing signs and signals",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/level-crossing-signs-and-signals"
+  },
+  {
+    "id": "drill-kyts-rising-bollards.svg",
+    "family": "warning",
+    "meaning": "Rising bollards ahead",
+    "image": {
+      "src": "/driving/kyts-rising-bollards.svg",
+      "alt": "Red triangle with an exclamation mark and a Rising bollards plate"
+    },
+    "highwayCodeRule": "Know your traffic signs: Miscellaneous signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/miscellaneous-signs"
+  },
+  {
+    "id": "drill-kyts-play-street.svg",
+    "family": "regulatory",
+    "meaning": "Play street: vehicles prohibited at the times shown, except for access",
+    "image": {
+      "src": "/driving/kyts-play-street.svg",
+      "alt": "Plain red ring above a Play Street plate with times"
+    },
+    "highwayCodeRule": "Know your traffic signs: Regulatory signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/regulatory-signs"
+  },
+  {
+    "id": "drill-kyts-except-solo-motorcycles.svg",
+    "family": "regulatory",
+    "meaning": "No motor vehicles except solo motorcycles, scooters or mopeds",
+    "image": {
+      "src": "/driving/kyts-except-solo-motorcycles.svg",
+      "alt": "Red circle containing a black car"
+    },
+    "highwayCodeRule": "Know your traffic signs: Regulatory signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/regulatory-signs"
+  },
+  {
+    "id": "drill-kyts-no-solo-motorcycles.svg",
+    "family": "regulatory",
+    "meaning": "No solo motorcycles",
+    "image": {
+      "src": "/driving/kyts-no-solo-motorcycles.svg",
+      "alt": "Red circle containing a motorcycle and rider"
+    },
+    "highwayCodeRule": "Know your traffic signs: Regulatory signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/regulatory-signs"
+  },
+  {
+    "id": "drill-kyts-no-pedestrians.svg",
+    "family": "regulatory",
+    "meaning": "No pedestrians",
+    "image": {
+      "src": "/driving/kyts-no-pedestrians.svg",
+      "alt": "Red circle containing a walking figure"
+    },
+    "highwayCodeRule": "Know your traffic signs: Regulatory signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/regulatory-signs"
+  },
+  {
+    "id": "drill-kyts-no-horses.svg",
+    "family": "regulatory",
+    "meaning": "No ridden or accompanied horses",
+    "image": {
+      "src": "/driving/kyts-no-horses.svg",
+      "alt": "Red circle containing a horse and rider"
+    },
+    "highwayCodeRule": "Know your traffic signs: Regulatory signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/regulatory-signs"
+  },
+  {
+    "id": "drill-kyts-no-horse-drawn-vehicles.svg",
+    "family": "regulatory",
+    "meaning": "No horse-drawn vehicles",
+    "image": {
+      "src": "/driving/kyts-no-horse-drawn-vehicles.svg",
+      "alt": "Red circle containing a horse pulling a cart"
+    },
+    "highwayCodeRule": "Know your traffic signs: Regulatory signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/regulatory-signs"
+  },
+  {
+    "id": "drill-kyts-no-articulated-vehicles.svg",
+    "family": "regulatory",
+    "meaning": "No articulated vehicles",
+    "image": {
+      "src": "/driving/kyts-no-articulated-vehicles.svg",
+      "alt": "Red circle with the words No articulated vehicles"
+    },
+    "highwayCodeRule": "Know your traffic signs: Regulatory signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/regulatory-signs"
+  },
+  {
+    "id": "drill-kyts-goods-vehicles-restrictions.svg",
+    "family": "regulatory",
+    "meaning": "End of the goods vehicle restriction",
+    "image": {
+      "src": "/driving/kyts-goods-vehicles-restrictions.svg",
+      "alt": "Grey lorry in a grey circle crossed by black diagonal bars"
+    },
+    "highwayCodeRule": "Know your traffic signs: Regulatory signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/regulatory-signs"
+  },
+  {
+    "id": "drill-kyts-weak-bridge.svg",
+    "family": "regulatory",
+    "meaning": "Weak bridge: no vehicles over the gross weight shown",
+    "image": {
+      "src": "/driving/kyts-weak-bridge.svg",
+      "alt": "WEAK BRIDGE plate above a red ring with 18 t and an empty-vehicles plate"
+    },
+    "highwayCodeRule": "Know your traffic signs: Regulatory signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/regulatory-signs"
+  },
+  {
+    "id": "drill-kyts-except-for-access.svg",
+    "family": "regulatory",
+    "meaning": "Plate: the restriction does not apply to vehicles needing access",
+    "image": {
+      "src": "/driving/kyts-except-for-access.svg",
+      "alt": "Rectangular plate reading Except for access"
+    },
+    "highwayCodeRule": "Know your traffic signs: Regulatory signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/regulatory-signs"
+  },
+  {
+    "id": "drill-kyts-except-for-loading.svg",
+    "family": "regulatory",
+    "meaning": "Plate: goods vehicles may enter to load or unload",
+    "image": {
+      "src": "/driving/kyts-except-for-loading.svg",
+      "alt": "Rectangular plate reading Except for loading by with a lorry"
+    },
+    "highwayCodeRule": "Know your traffic signs: Regulatory signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/regulatory-signs"
+  },
+  {
+    "id": "drill-kyts-stop-police.svg",
+    "family": "regulatory",
+    "meaning": "Stop when a police officer shows this sign",
+    "image": {
+      "src": "/driving/kyts-stop-police.svg",
+      "alt": "Red ring with STOP, a black bar and POLICE"
+    },
+    "highwayCodeRule": "Know your traffic signs: Regulatory signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/regulatory-signs"
+  },
+  {
+    "id": "drill-kyts-entry-to-high-street.svg",
+    "family": "information",
+    "meaning": "Advance notice of a restriction on a road ahead",
+    "image": {
+      "src": "/driving/kyts-entry-to-high-street.svg",
+      "alt": "Blue panel reading Entry to High Street restricted half mile ahead"
+    },
+    "highwayCodeRule": "Know your traffic signs: Regulatory signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/regulatory-signs"
+  },
+  {
+    "id": "drill-kyts-40-mph-road-marking.svg",
+    "family": "markings",
+    "meaning": "Speed limit painted on the road surface",
+    "image": {
+      "src": "/driving/kyts-40-mph-road-marking.svg",
+      "alt": "Grey road patch with a white ring around 40"
+    },
+    "highwayCodeRule": "Know your traffic signs: Speed limit signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/speed-limit-signs"
+  },
+  {
+    "id": "drill-kyts-village-speed-limit.svg",
+    "family": "regulatory",
+    "meaning": "Start of a 30 mph limit at a village boundary",
+    "image": {
+      "src": "/driving/kyts-village-speed-limit.svg",
+      "alt": "Red-ringed 30 on a yellow backing board above a place name"
+    },
+    "highwayCodeRule": "Know your traffic signs: Speed limit signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/speed-limit-signs"
+  },
+  {
+    "id": "drill-kyts-speed-camera-national-speed-limit.svg",
+    "family": "regulatory",
+    "meaning": "Speed camera on a road with the national speed limit",
+    "image": {
+      "src": "/driving/kyts-speed-camera-national-speed-limit.svg",
+      "alt": "Blue panel with a camera symbol above a white circle with a black diagonal"
+    },
+    "highwayCodeRule": "Know your traffic signs: Speed limit signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/speed-limit-signs"
+  },
+  {
+    "id": "drill-kyts-end-of-variable-speed.svg",
+    "family": "regulatory",
+    "meaning": "End of the variable speed limit",
+    "image": {
+      "src": "/driving/kyts-end-of-variable-speed.svg",
+      "alt": "Blue panel reading Variable speed limit ENDS above a diagonal stripe"
+    },
+    "highwayCodeRule": "Know your traffic signs: Speed limit signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/speed-limit-signs"
+  },
+  {
+    "id": "drill-kyts-traffic-calmed-area.svg",
+    "family": "information",
+    "meaning": "Entrance to a traffic-calmed area",
+    "image": {
+      "src": "/driving/kyts-traffic-calmed-area.svg",
+      "alt": "Blue rectangle reading Traffic calmed area"
+    },
+    "highwayCodeRule": "Know your traffic signs: Traffic calming",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/traffic-calming"
+  },
+  {
+    "id": "drill-kyts-home-zone-ends.svg",
+    "family": "information",
+    "meaning": "End of a Home Zone",
+    "image": {
+      "src": "/driving/kyts-home-zone-ends.svg",
+      "alt": "Blue Home Zone panel with figures and a car crossed by a red diagonal"
+    },
+    "highwayCodeRule": "Know your traffic signs: Traffic calming",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/traffic-calming"
+  },
+  {
+    "id": "drill-kyts-quiet-lane.svg",
+    "family": "information",
+    "meaning": "Start of a Quiet Lane",
+    "image": {
+      "src": "/driving/kyts-quiet-lane.svg",
+      "alt": "Green panel with a car, horse rider, cyclist and walkers above a lane name"
+    },
+    "highwayCodeRule": "Know your traffic signs: Traffic calming",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/traffic-calming"
+  },
+  {
+    "id": "drill-kyts-share-space.svg",
+    "family": "information",
+    "meaning": "Shared space ahead",
+    "image": {
+      "src": "/driving/kyts-share-space.svg",
+      "alt": "Blue panel with a walker, cyclist and car above the words Share space"
+    },
+    "highwayCodeRule": "Know your traffic signs: Traffic calming",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/traffic-calming"
+  },
+  {
+    "id": "drill-kyts-green-arrow-light.svg",
+    "family": "signals",
+    "meaning": "Full green with a right arrow: you may turn right as oncoming traffic is held",
+    "image": {
+      "src": "/driving/kyts-green-arrow-light.svg",
+      "alt": "Traffic signal showing a full green and a green right arrow"
+    },
+    "highwayCodeRule": "Know your traffic signs: Traffic signals",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/traffic-signals"
+  },
+  {
+    "id": "drill-kyts-green-no-right-turn-light.svg",
+    "family": "signals",
+    "meaning": "Green signal, but right turns are banned at this junction",
+    "image": {
+      "src": "/driving/kyts-green-no-right-turn-light.svg",
+      "alt": "Traffic signal with green lit beside a no-right-turn roundel"
+    },
+    "highwayCodeRule": "Know your traffic signs: Traffic signals",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/traffic-signals"
+  },
+  {
+    "id": "drill-kyts-light-signals-cycles.svg",
+    "family": "signals",
+    "meaning": "Traffic signals for pedal cycles",
+    "image": {
+      "src": "/driving/kyts-light-signals-cycles.svg",
+      "alt": "Two signal heads with red, amber and green cycle symbols"
+    },
+    "highwayCodeRule": "Know your traffic signs: Traffic signals",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/traffic-signals"
+  },
+  {
+    "id": "drill-kyts-except-trams.svg",
+    "family": "bus-cycle-tram",
+    "meaning": "No entry except trams",
+    "image": {
+      "src": "/driving/kyts-except-trams.svg",
+      "alt": "Red no-entry disc above an Except trams plate"
+    },
+    "highwayCodeRule": "Know your traffic signs: Tram signs, signals and road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/tram-signs-signals-and-road-markings"
+  },
+  {
+    "id": "drill-kyts-other-traffic.svg",
+    "family": "bus-cycle-tram",
+    "meaning": "Tram-only route at the junction ahead; other traffic turns",
+    "image": {
+      "src": "/driving/kyts-other-traffic.svg",
+      "alt": "White panel with a tram roundel, a junction diagram and Other traffic"
+    },
+    "highwayCodeRule": "Know your traffic signs: Tram signs, signals and road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/tram-signs-signals-and-road-markings"
+  },
+  {
+    "id": "drill-kyts-part-time-signals.svg",
+    "family": "warning",
+    "meaning": "Traffic signals ahead that operate only at certain times",
+    "image": {
+      "src": "/driving/kyts-part-time-signals.svg",
+      "alt": "Red triangle with traffic lights and a Part time signals plate"
+    },
+    "highwayCodeRule": "Know your traffic signs: Warning signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/warning-signs"
+  },
+  {
+    "id": "drill-kyts-side-road.svg",
+    "family": "warning",
+    "meaning": "Side road ahead",
+    "image": {
+      "src": "/driving/kyts-side-road.svg",
+      "alt": "Red triangle with a thick vertical line and a short branch to the right"
+    },
+    "highwayCodeRule": "Know your traffic signs: Warning signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/warning-signs"
+  },
+  {
+    "id": "drill-kyts-adverse-camber-lorry.svg",
+    "family": "warning",
+    "meaning": "Adverse camber: risk of lorries overturning on the bend",
+    "image": {
+      "src": "/driving/kyts-adverse-camber-lorry.svg",
+      "alt": "Plate with a tilting lorry box and the words Adverse camber"
+    },
+    "highwayCodeRule": "Know your traffic signs: Warning signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/warning-signs"
+  },
+  {
+    "id": "drill-kyts-oncoming-vehicles.svg",
+    "family": "warning",
+    "meaning": "Oncoming vehicles may be in the middle of the road",
+    "image": {
+      "src": "/driving/kyts-oncoming-vehicles.svg",
+      "alt": "Rectangular plate reading Oncoming vehicles in middle of road"
+    },
+    "highwayCodeRule": "Know your traffic signs: Warning signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/warning-signs"
+  },
+  {
+    "id": "drill-kyts-single-track-road.svg",
+    "family": "warning",
+    "meaning": "Road only wide enough for one line of vehicles",
+    "image": {
+      "src": "/driving/kyts-single-track-road.svg",
+      "alt": "Rectangular plate reading Single track road"
+    },
+    "highwayCodeRule": "Know your traffic signs: Warning signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/warning-signs"
+  },
+  {
+    "id": "drill-kyts-two-way-traffic-route-crossing.svg",
+    "family": "warning",
+    "meaning": "Two-way traffic on the road crossing ahead",
+    "image": {
+      "src": "/driving/kyts-two-way-traffic-route-crossing.svg",
+      "alt": "Red triangle with two horizontal arrows pointing opposite ways"
+    },
+    "highwayCodeRule": "Know your traffic signs: Warning signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/warning-signs"
+  },
+  {
+    "id": "drill-kyts-low-gear.svg",
+    "family": "warning",
+    "meaning": "Plate: use a low gear for the distance shown",
+    "image": {
+      "src": "/driving/kyts-low-gear.svg",
+      "alt": "Rectangular plate reading Low gear for 1 and a half miles"
+    },
+    "highwayCodeRule": "Know your traffic signs: Warning signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/warning-signs"
+  },
+  {
+    "id": "drill-kyts-end-of-bridge.svg",
+    "family": "warning",
+    "meaning": "Marks the end of a bridge parapet, tunnel mouth or similar obstruction",
+    "image": {
+      "src": "/driving/kyts-end-of-bridge.svg",
+      "alt": "Pair of black and yellow diagonally striped posts"
+    },
+    "highwayCodeRule": "Know your traffic signs: Warning signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/warning-signs"
+  },
+  {
+    "id": "drill-kyts-water-course.svg",
+    "family": "warning",
+    "meaning": "Water course alongside the road",
+    "image": {
+      "src": "/driving/kyts-water-course.svg",
+      "alt": "Red triangle showing a car tipping beside water"
+    },
+    "highwayCodeRule": "Know your traffic signs: Warning signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/warning-signs"
+  },
+  {
+    "id": "drill-kyts-gliders.svg",
+    "family": "warning",
+    "meaning": "Gliders likely",
+    "image": {
+      "src": "/driving/kyts-gliders.svg",
+      "alt": "Red triangle with a glider and a Gliders plate"
+    },
+    "highwayCodeRule": "Know your traffic signs: Warning signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/warning-signs"
+  },
+  {
+    "id": "drill-kyts-low-flying-helicopters.svg",
+    "family": "warning",
+    "meaning": "Low-flying helicopters or sudden helicopter noise",
+    "image": {
+      "src": "/driving/kyts-low-flying-helicopters.svg",
+      "alt": "Red triangle containing a helicopter"
+    },
+    "highwayCodeRule": "Know your traffic signs: Warning signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/warning-signs"
+  },
+  {
+    "id": "drill-kyts-military-vehicles.svg",
+    "family": "warning",
+    "meaning": "Slow-moving military vehicles likely in or crossing the road",
+    "image": {
+      "src": "/driving/kyts-military-vehicles.svg",
+      "alt": "Red triangle containing a tank"
+    },
+    "highwayCodeRule": "Know your traffic signs: Warning signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/warning-signs"
+  },
+  {
+    "id": "drill-kyts-slow-lorries.svg",
+    "family": "warning",
+    "meaning": "Slow-moving vehicles for the distance shown",
+    "image": {
+      "src": "/driving/kyts-slow-lorries.svg",
+      "alt": "Red triangle with a lorry on a slope and a Slow lorries for 2 miles plate"
+    },
+    "highwayCodeRule": "Know your traffic signs: Warning signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/warning-signs"
+  },
+  {
+    "id": "drill-kyts-hidden-dip.svg",
+    "family": "warning",
+    "meaning": "Hidden dip ahead",
+    "image": {
+      "src": "/driving/kyts-hidden-dip.svg",
+      "alt": "Red triangle with an exclamation mark and a Hidden dip plate"
+    },
+    "highwayCodeRule": "Know your traffic signs: Warning signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/warning-signs"
+  },
+  {
+    "id": "drill-kyts-no-footway.svg",
+    "family": "warning",
+    "meaning": "Pedestrians in the road ahead for the distance shown: no footway",
+    "image": {
+      "src": "/driving/kyts-no-footway.svg",
+      "alt": "Red triangle with two walking figures and a No footway for 400 yds plate"
+    },
+    "highwayCodeRule": "Know your traffic signs: Warning signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/warning-signs"
+  },
+  {
+    "id": "drill-kyts-disabled-people.svg",
+    "family": "warning",
+    "meaning": "Disabled pedestrians likely to be crossing",
+    "image": {
+      "src": "/driving/kyts-disabled-people.svg",
+      "alt": "Red triangle with two stooped figures and a Disabled people plate"
+    },
+    "highwayCodeRule": "Know your traffic signs: Warning signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/warning-signs"
+  },
+  {
+    "id": "drill-kyts-school.svg",
+    "family": "warning",
+    "meaning": "Children going to or from school",
+    "image": {
+      "src": "/driving/kyts-school.svg",
+      "alt": "Red triangle with two running children and a School plate"
+    },
+    "highwayCodeRule": "Know your traffic signs: Warning signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/warning-signs"
+  },
+  {
+    "id": "drill-kyts-pedestrians-crossing.svg",
+    "family": "warning",
+    "meaning": "Pedestrians likely to cross a high-speed road with no formal crossing",
+    "image": {
+      "src": "/driving/kyts-pedestrians-crossing.svg",
+      "alt": "Red triangle with an exclamation mark and a Pedestrians crossing 200 yards plate"
+    },
+    "highwayCodeRule": "Know your traffic signs: Warning signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/warning-signs"
+  },
+  {
+    "id": "drill-kyts-horse-drawn-vehicles.svg",
+    "family": "warning",
+    "meaning": "Horse-drawn vehicles likely in the road",
+    "image": {
+      "src": "/driving/kyts-horse-drawn-vehicles.svg",
+      "alt": "Red triangle with a horse pulling a carriage"
+    },
+    "highwayCodeRule": "Know your traffic signs: Warning signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/warning-signs"
+  },
+  {
+    "id": "drill-kyts-small-wild-animals.svg",
+    "family": "warning",
+    "meaning": "Small wild animals likely in the road",
+    "image": {
+      "src": "/driving/kyts-small-wild-animals.svg",
+      "alt": "Red triangle containing a hedgehog"
+    },
+    "highwayCodeRule": "Know your traffic signs: Warning signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/warning-signs"
+  },
+  {
+    "id": "drill-kyts-wild-fowl.svg",
+    "family": "warning",
+    "meaning": "Wild fowl likely in the road",
+    "image": {
+      "src": "/driving/kyts-wild-fowl.svg",
+      "alt": "Red triangle containing a duck"
+    },
+    "highwayCodeRule": "Know your traffic signs: Warning signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/warning-signs"
+  },
+  {
+    "id": "drill-kyts-migratory-toad-crossing.svg",
+    "family": "warning",
+    "meaning": "Migratory toad crossing",
+    "image": {
+      "src": "/driving/kyts-migratory-toad-crossing.svg",
+      "alt": "Red triangle containing a toad"
+    },
+    "highwayCodeRule": "Know your traffic signs: Warning signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/warning-signs"
+  },
+  {
+    "id": "drill-kyts-sheep.svg",
+    "family": "warning",
+    "meaning": "Sheep likely in the road",
+    "image": {
+      "src": "/driving/kyts-sheep.svg",
+      "alt": "Red triangle containing a sheep"
+    },
+    "highwayCodeRule": "Know your traffic signs: Warning signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/warning-signs"
+  },
+  {
+    "id": "drill-kyts-farm-traffic.svg",
+    "family": "warning",
+    "meaning": "Agricultural vehicles likely in the road",
+    "image": {
+      "src": "/driving/kyts-farm-traffic.svg",
+      "alt": "Red triangle with a tractor and a Farm traffic plate"
+    },
+    "highwayCodeRule": "Know your traffic signs: Warning signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/warning-signs"
+  },
+  {
+    "id": "drill-kyts-cattle-crossing.svg",
+    "family": "warning",
+    "meaning": "Supervised cattle crossing ahead: stop when the lights show",
+    "image": {
+      "src": "/driving/kyts-cattle-crossing.svg",
+      "alt": "Red triangle with a cow and a When lights show 200 yds plate"
+    },
+    "highwayCodeRule": "Know your traffic signs: Warning signs",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/warning-signs"
+  },
+  {
+    "id": "drill-kyts-end-of-bus-lane.svg",
+    "family": "bus-cycle-tram",
+    "meaning": "End of the bus lane",
+    "image": {
+      "src": "/driving/kyts-end-of-bus-lane.svg",
+      "alt": "Blue rectangle reading End of bus lane"
+    },
+    "highwayCodeRule": "Know your traffic signs: Bus and cycle signs and road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/bus-and-cycle-signs-and-road-markings"
+  },
+  {
+    "id": "drill-kyts-contra-flow-bus-cycle-lane.svg",
+    "family": "bus-cycle-tram",
+    "meaning": "Contraflow bus and cycle lane on the road at the junction ahead",
+    "image": {
+      "src": "/driving/kyts-contra-flow-bus-cycle-lane.svg",
+      "alt": "White plate with a bus, a bicycle, a left arrow and Bus and cycle lane"
+    },
+    "highwayCodeRule": "Know your traffic signs: Bus and cycle signs and road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/bus-and-cycle-signs-and-road-markings"
+  },
+  {
+    "id": "drill-kyts-bus-stop-place.svg",
+    "family": "bus-cycle-tram",
+    "meaning": "Stopping place for buses",
+    "image": {
+      "src": "/driving/kyts-bus-stop-place.svg",
+      "alt": "White plate with a black bus above the words Bus Stop"
+    },
+    "highwayCodeRule": "Know your traffic signs: Bus and cycle signs and road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/bus-and-cycle-signs-and-road-markings"
+  },
+  {
+    "id": "drill-kyts-mandatory-contra-flow-cycle-lane.svg",
+    "family": "bus-cycle-tram",
+    "meaning": "Mandatory contraflow cycle lane",
+    "image": {
+      "src": "/driving/kyts-mandatory-contra-flow-cycle-lane.svg",
+      "alt": "Blue panel with two up arrows and a bicycle beside a down arrow"
+    },
+    "highwayCodeRule": "Know your traffic signs: Bus and cycle signs and road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/bus-and-cycle-signs-and-road-markings"
+  },
+  {
+    "id": "drill-kyts-contra-flow-one-way-street-cycle-lane.svg",
+    "family": "bus-cycle-tram",
+    "meaning": "Pedal cycles may ride both ways in this one-way street",
+    "image": {
+      "src": "/driving/kyts-contra-flow-one-way-street-cycle-lane.svg",
+      "alt": "Blue rectangle with an up arrow, a bicycle and a down arrow"
+    },
+    "highwayCodeRule": "Know your traffic signs: Bus and cycle signs and road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/bus-and-cycle-signs-and-road-markings"
+  },
+  {
+    "id": "drill-kyts-end-of-cycle-route.svg",
+    "family": "bus-cycle-tram",
+    "meaning": "End of the cycle lane, track or route",
+    "image": {
+      "src": "/driving/kyts-end-of-cycle-route.svg",
+      "alt": "Blue rectangle with a bicycle between END OF and ROUTE"
+    },
+    "highwayCodeRule": "Know your traffic signs: Bus and cycle signs and road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/bus-and-cycle-signs-and-road-markings"
+  },
+  {
+    "id": "drill-kyts-shared-route-pedestrians-cycles.svg",
+    "family": "bus-cycle-tram",
+    "meaning": "Shared route for pedal cycles and pedestrians only",
+    "image": {
+      "src": "/driving/kyts-shared-route-pedestrians-cycles.svg",
+      "alt": "Blue circle with a bicycle above an adult and child walking"
+    },
+    "highwayCodeRule": "Know your traffic signs: Bus and cycle signs and road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/bus-and-cycle-signs-and-road-markings"
+  },
+  {
+    "id": "drill-kyts-shared-route-horses-pedestrians-cycles.svg",
+    "family": "bus-cycle-tram",
+    "meaning": "Shared route for horses, pedestrians and pedal cycles only",
+    "image": {
+      "src": "/driving/kyts-shared-route-horses-pedestrians-cycles.svg",
+      "alt": "Blue circle with a horse rider, walkers and a bicycle"
+    },
+    "highwayCodeRule": "Know your traffic signs: Bus and cycle signs and road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/bus-and-cycle-signs-and-road-markings"
+  },
+  {
+    "id": "drill-kyts-parking-place-cycles.svg",
+    "family": "bus-cycle-tram",
+    "meaning": "Parking place for pedal cycles",
+    "image": {
+      "src": "/driving/kyts-parking-place-cycles.svg",
+      "alt": "Blue P sign above a white plate with a bicycle"
+    },
+    "highwayCodeRule": "Know your traffic signs: Bus and cycle signs and road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/bus-and-cycle-signs-and-road-markings"
+  },
+  {
+    "id": "drill-kyts-no-through-road-except-cycles.svg",
+    "family": "bus-cycle-tram",
+    "meaning": "No through road for vehicles except pedal cycles",
+    "image": {
+      "src": "/driving/kyts-no-through-road-except-cycles.svg",
+      "alt": "Blue T-shaped dead-end sign above an Except cycles plate"
+    },
+    "highwayCodeRule": "Know your traffic signs: Bus and cycle signs and road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/bus-and-cycle-signs-and-road-markings"
+  },
+  {
+    "id": "drill-kyts-cyclists-rejoin-carriageway.svg",
+    "family": "bus-cycle-tram",
+    "meaning": "Cyclists rejoin the main carriageway here",
+    "image": {
+      "src": "/driving/kyts-cyclists-rejoin-carriageway.svg",
+      "alt": "Blue rectangle reading CYCLISTS REJOIN CARRIAGEWAY"
+    },
+    "highwayCodeRule": "Know your traffic signs: Bus and cycle signs and road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/bus-and-cycle-signs-and-road-markings"
+  },
+  {
+    "id": "drill-kyts-no-entry-except-cycles.svg",
+    "family": "bus-cycle-tram",
+    "meaning": "No entry for vehicles except pedal cycles",
+    "image": {
+      "src": "/driving/kyts-no-entry-except-cycles.svg",
+      "alt": "Red no-entry disc above an Except cycles plate"
+    },
+    "highwayCodeRule": "Know your traffic signs: Bus and cycle signs and road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/bus-and-cycle-signs-and-road-markings"
+  },
+  {
+    "id": "drill-kyts-services-10m.svg",
+    "family": "motorway",
+    "meaning": "Distance to the next motorway service area",
+    "image": {
+      "src": "/driving/kyts-services-10m.svg",
+      "alt": "Blue rectangle reading Services 10 m"
+    },
+    "highwayCodeRule": "Know your traffic signs: Motorway signs, signals and road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/motorway-signs-signals-and-road-markings"
+  },
+  {
+    "id": "drill-kyts-no-services-on-motorway.svg",
+    "family": "motorway",
+    "meaning": "No services on the motorway ahead",
+    "image": {
+      "src": "/driving/kyts-no-services-on-motorway.svg",
+      "alt": "Blue rectangle reading No services on motorway"
+    },
+    "highwayCodeRule": "Know your traffic signs: Motorway signs, signals and road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/motorway-signs-signals-and-road-markings"
+  },
+  {
+    "id": "drill-kyts-no-hard-shoulder.svg",
+    "family": "motorway",
+    "meaning": "No hard shoulder for the distance shown",
+    "image": {
+      "src": "/driving/kyts-no-hard-shoulder.svg",
+      "alt": "Blue rectangle reading No hard shoulder for 400 yards"
+    },
+    "highwayCodeRule": "Know your traffic signs: Motorway signs, signals and road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/motorway-signs-signals-and-road-markings"
+  },
+  {
+    "id": "drill-kyts-end-of-motorway-1-mile.svg",
+    "family": "motorway",
+    "meaning": "The motorway ends in 1 mile",
+    "image": {
+      "src": "/driving/kyts-end-of-motorway-1-mile.svg",
+      "alt": "Blue motorway symbol crossed by a red stripe above 1 mile"
+    },
+    "highwayCodeRule": "Know your traffic signs: Motorway signs, signals and road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/motorway-signs-signals-and-road-markings"
+  },
+  {
+    "id": "drill-kyts-leave-motorway.svg",
+    "family": "motorway",
+    "meaning": "Leave the motorway at the next exit",
+    "image": {
+      "src": "/driving/kyts-leave-motorway.svg",
+      "alt": "Black matrix signal with a dotted arrow curving to the left and amber lamps"
+    },
+    "highwayCodeRule": "Know your traffic signs: Motorway signs, signals and road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/motorway-signs-signals-and-road-markings"
+  },
+  {
+    "id": "drill-kyts-all-lanes-closed.svg",
+    "family": "motorway",
+    "meaning": "All lanes closed: do not proceed",
+    "image": {
+      "src": "/driving/kyts-all-lanes-closed.svg",
+      "alt": "Black signal with a dotted bar over lane marks and flashing red lamps"
+    },
+    "highwayCodeRule": "Know your traffic signs: Motorway signs, signals and road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/motorway-signs-signals-and-road-markings"
+  },
+  {
+    "id": "drill-kyts-300-yds-emergency-area.svg",
+    "family": "motorway",
+    "meaning": "Distance to the next emergency area",
+    "image": {
+      "src": "/driving/kyts-300-yds-emergency-area.svg",
+      "alt": "Blue panel with an orange SOS phone shape and 300 yds"
+    },
+    "highwayCodeRule": "Know your traffic signs: Motorway signs, signals and road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/motorway-signs-signals-and-road-markings"
+  },
+  {
+    "id": "drill-kyts-free-parking-disable-badge-only-1.svg",
+    "family": "parking",
+    "meaning": "Parking for disabled badge holders only",
+    "image": {
+      "src": "/driving/kyts-free-parking-disable-badge-only-1.svg",
+      "alt": "White sign with a blue P, a wheelchair symbol and Disabled badge holders only"
+    },
+    "highwayCodeRule": "Know your traffic signs: On-street parking control signs and road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/on-street-parking-control-signs-and-road-markings"
+  },
+  {
+    "id": "drill-kyts-pay-at-machine.svg",
+    "family": "parking",
+    "meaning": "Pay at the machine and display a ticket",
+    "image": {
+      "src": "/driving/kyts-pay-at-machine.svg",
+      "alt": "White sign with a blue P, Pay at machine, an arrow and Display ticket"
+    },
+    "highwayCodeRule": "Know your traffic signs: On-street parking control signs and road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/on-street-parking-control-signs-and-road-markings"
+  },
+  {
+    "id": "drill-kyts-electric-vehicle-recharging-point.svg",
+    "family": "parking",
+    "meaning": "Parking only for electric vehicle recharging at the times shown",
+    "image": {
+      "src": "/driving/kyts-electric-vehicle-recharging-point.svg",
+      "alt": "White sign with a blue P, a charging car symbol and times"
+    },
+    "highwayCodeRule": "Know your traffic signs: On-street parking control signs and road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/on-street-parking-control-signs-and-road-markings"
+  },
+  {
+    "id": "drill-kyts-footway-prohibited.svg",
+    "family": "parking",
+    "meaning": "Entrance to an area where verge or footway parking is prohibited",
+    "image": {
+      "src": "/driving/kyts-footway-prohibited.svg",
+      "alt": "Red ring with a car mounting a kerb above No parking on footway except where signed"
+    },
+    "highwayCodeRule": "Know your traffic signs: On-street parking control signs and road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/on-street-parking-control-signs-and-road-markings"
+  },
+  {
+    "id": "drill-kyts-disc-zone.svg",
+    "family": "parking",
+    "meaning": "Disc zone: free parking for a limited time when a disc is displayed",
+    "image": {
+      "src": "/driving/kyts-disc-zone.svg",
+      "alt": "Sign headed Disc Zone with a blue P, times, 30 mins and No return within 1 hour"
+    },
+    "highwayCodeRule": "Know your traffic signs: On-street parking control signs and road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/on-street-parking-control-signs-and-road-markings"
+  },
+  {
+    "id": "drill-kyts-end-of-24-hour-clearway.svg",
+    "family": "parking",
+    "meaning": "End of the clearway",
+    "image": {
+      "src": "/driving/kyts-end-of-24-hour-clearway.svg",
+      "alt": "Red-ringed crossed blue roundel above an End plate"
+    },
+    "highwayCodeRule": "Know your traffic signs: On-street parking control signs and road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/on-street-parking-control-signs-and-road-markings"
+  },
+  {
+    "id": "drill-kyts-no-stopping-emergency.svg",
+    "family": "parking",
+    "meaning": "No stopping in the lay-by except in an emergency",
+    "image": {
+      "src": "/driving/kyts-no-stopping-emergency.svg",
+      "alt": "Yellow panel with a crossed roundel and No stopping except in emergency"
+    },
+    "highwayCodeRule": "Know your traffic signs: On-street parking control signs and road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/on-street-parking-control-signs-and-road-markings"
+  },
+  {
+    "id": "drill-kyts-overtaking-2-miles.svg",
+    "family": "markings",
+    "meaning": "Overtaking lane continues for the distance shown",
+    "image": {
+      "src": "/driving/kyts-overtaking-2-miles.svg",
+      "alt": "Green panel with two up arrows and one down arrow above For 2 miles"
+    },
+    "highwayCodeRule": "Know your traffic signs: Road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/road-markings"
+  },
+  {
+    "id": "drill-kyts-mini-roundabout-road-markings.svg",
+    "family": "markings",
+    "meaning": "Mini-roundabout marked on the road",
+    "image": {
+      "src": "/driving/kyts-mini-roundabout-road-markings.svg",
+      "alt": "Grey road square with a white central disc and three curved arrows"
+    },
+    "highwayCodeRule": "Know your traffic signs: Road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/road-markings"
+  },
+  {
+    "id": "drill-kyts-different-traffic-road-markings.svg",
+    "family": "markings",
+    "meaning": "Compulsory turn or ahead movements for the lanes ahead",
+    "image": {
+      "src": "/driving/kyts-different-traffic-road-markings.svg",
+      "alt": "Three grey lane strips with arrows and TURN LEFT, AHEAD ONLY, TURN RIGHT"
+    },
+    "highwayCodeRule": "Know your traffic signs: Road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/road-markings"
+  },
+  {
+    "id": "drill-kyts-no-entry-road-marking.svg",
+    "family": "markings",
+    "meaning": "Do not pass this marking (no entry)",
+    "image": {
+      "src": "/driving/kyts-no-entry-road-marking.svg",
+      "alt": "Grey road patch with tall white lettering NO ENTRY"
+    },
+    "highwayCodeRule": "Know your traffic signs: Road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/road-markings"
+  },
+  {
+    "id": "drill-kyts-slow-road-marking.svg",
+    "family": "markings",
+    "meaning": "Slow down for a hazard ahead",
+    "image": {
+      "src": "/driving/kyts-slow-road-marking.svg",
+      "alt": "Grey road patch with tall white lettering SLOW"
+    },
+    "highwayCodeRule": "Know your traffic signs: Road markings",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/road-markings"
+  },
+  {
+    "id": "drill-kyts-width-restriction-800-yards.svg",
+    "family": "roadworks",
+    "meaning": "Narrow lane with a width restriction through road works ahead",
+    "image": {
+      "src": "/driving/kyts-width-restriction-800-yards.svg",
+      "alt": "Yellow board with a red-ringed 2.0 m width, lane arrows and 800 yards"
+    },
+    "highwayCodeRule": "Know your traffic signs: Signs for road works and temporary situations",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/signs-for-road-works-and-temporary-situations"
+  },
+  {
+    "id": "drill-kyts-use-hard-shoulder.svg",
+    "family": "roadworks",
+    "meaning": "Lanes move across to use the hard shoulder through road works",
+    "image": {
+      "src": "/driving/kyts-use-hard-shoulder.svg",
+      "alt": "Yellow board headed USE HARD SHOULDER with arrows shifting left"
+    },
+    "highwayCodeRule": "Know your traffic signs: Signs for road works and temporary situations",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/signs-for-road-works-and-temporary-situations"
+  },
+  {
+    "id": "drill-kyts-when-red-light-shows.svg",
+    "family": "roadworks",
+    "meaning": "Wait here for the convoy vehicle when the red light shows",
+    "image": {
+      "src": "/driving/kyts-when-red-light-shows.svg",
+      "alt": "Red rectangle reading WHEN RED LIGHT SHOWS WAIT HERE FOR CONVOY VEHICLE"
+    },
+    "highwayCodeRule": "Know your traffic signs: Signs for road works and temporary situations",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/signs-for-road-works-and-temporary-situations"
+  },
+  {
+    "id": "drill-kyts-convoy-vehicle.svg",
+    "family": "roadworks",
+    "meaning": "Convoy vehicle: do not overtake it",
+    "image": {
+      "src": "/driving/kyts-convoy-vehicle.svg",
+      "alt": "Red rectangle reading CONVOY VEHICLE NO OVERTAKING"
+    },
+    "highwayCodeRule": "Know your traffic signs: Signs for road works and temporary situations",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/signs-for-road-works-and-temporary-situations"
+  },
+  {
+    "id": "drill-kyts-3-way-control.svg",
+    "family": "roadworks",
+    "meaning": "Temporary signals control a three-way junction: wait for green",
+    "image": {
+      "src": "/driving/kyts-3-way-control.svg",
+      "alt": "Red panel reading 3-WAY CONTROL WAIT HERE UNTIL GREEN LIGHT SHOWS"
+    },
+    "highwayCodeRule": "Know your traffic signs: Signs for road works and temporary situations",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/signs-for-road-works-and-temporary-situations"
+  },
+  {
+    "id": "drill-kyts-ramp.svg",
+    "family": "roadworks",
+    "meaning": "Temporary sudden change in road level",
+    "image": {
+      "src": "/driving/kyts-ramp.svg",
+      "alt": "Red rectangle with white lettering RAMP"
+    },
+    "highwayCodeRule": "Know your traffic signs: Signs for road works and temporary situations",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/signs-for-road-works-and-temporary-situations"
+  },
+  {
+    "id": "drill-kyts-sharp-left.svg",
+    "family": "roadworks",
+    "meaning": "Sharp deviation of route at road works or a temporary obstruction",
+    "image": {
+      "src": "/driving/kyts-sharp-left.svg",
+      "alt": "Red rectangle with white left-pointing chevrons"
+    },
+    "highwayCodeRule": "Know your traffic signs: Signs for road works and temporary situations",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/signs-for-road-works-and-temporary-situations"
+  },
+  {
+    "id": "drill-kyts-additional-traffic-lane.svg",
+    "family": "roadworks",
+    "meaning": "Additional traffic lane available ahead in a temporary scheme",
+    "image": {
+      "src": "/driving/kyts-additional-traffic-lane.svg",
+      "alt": "Yellow board with three up arrows, one branching from a red wedge"
+    },
+    "highwayCodeRule": "Know your traffic signs: Signs for road works and temporary situations",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/signs-for-road-works-and-temporary-situations"
+  },
+  {
+    "id": "drill-kyts-sharp-bends-ahead.svg",
+    "family": "roadworks",
+    "meaning": "Sharp bends ahead on a temporary diversion",
+    "image": {
+      "src": "/driving/kyts-sharp-bends-ahead.svg",
+      "alt": "Yellow board with three wavy black arrows"
+    },
+    "highwayCodeRule": "Know your traffic signs: Signs for road works and temporary situations",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/signs-for-road-works-and-temporary-situations"
+  },
+  {
+    "id": "drill-kyts-workforce-in-road.svg",
+    "family": "roadworks",
+    "meaning": "Workforce in the road ahead: slow down",
+    "image": {
+      "src": "/driving/kyts-workforce-in-road.svg",
+      "alt": "Red rectangle reading WORKFORCE IN ROAD SLOW"
+    },
+    "highwayCodeRule": "Know your traffic signs: Signs for road works and temporary situations",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/signs-for-road-works-and-temporary-situations"
+  },
+  {
+    "id": "drill-kyts-stop-works.svg",
+    "family": "roadworks",
+    "meaning": "Stop when this board is shown at road works",
+    "image": {
+      "src": "/driving/kyts-stop-works.svg",
+      "alt": "Red ring with yellow centre, STOP above a black bar and WORKS"
+    },
+    "highwayCodeRule": "Know your traffic signs: Signs for road works and temporary situations",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/signs-for-road-works-and-temporary-situations"
+  },
+  {
+    "id": "drill-kyts-no-road-markings.svg",
+    "family": "roadworks",
+    "meaning": "No road markings for the distance shown",
+    "image": {
+      "src": "/driving/kyts-no-road-markings.svg",
+      "alt": "Red rectangle reading NO ROAD MARKINGS FOR 2 MILES"
+    },
+    "highwayCodeRule": "Know your traffic signs: Signs for road works and temporary situations",
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/signs-for-road-works-and-temporary-situations"
   }
 ]

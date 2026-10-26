@@ -124,3 +124,19 @@ test('sign rounds contain 20 distinct images with shuffled, unambiguous choices 
   }
   assert.equal(positions.size, 4);
 });
+
+test('drill meanings are unique and distractors come from the same sign family', async () => {
+  const { signBank } = await import('../src/data/signDrill.ts');
+  const additions = JSON.parse(readFileSync('src/data/drivingSigns.json', 'utf8'));
+  assert.ok(signBank.length >= 250);
+  assert.equal(new Set(additions.map(s => s.meaning)).size, additions.length);
+  const families = new Map();
+  for (const s of additions) families.set(s.family, [...(families.get(s.family) ?? []), s.meaning]);
+  for (const s of additions) {
+    assert.ok(s.family, s.id);
+    assert.ok(s.image.alt.length > 10, s.id);
+    const q = signBank.find(b => b.id === s.id);
+    const peers = families.get(s.family);
+    if (peers.length >= 4) assert.ok(q.options.every(o => peers.includes(o)), s.id);
+  }
+});
