@@ -26,7 +26,7 @@ export const drivingPrepQuestions: Question[] = [
     "question": "You feel sleepy while on a motorway. What should you do?",
     "options": [
       "Leave at a safe stopping place and rest",
-      "Pull into a motorway emergency area for a short nap",
+      "Nap in an emergency area",
       "Continue with the windows open until your next planned stop",
       "Stay on the motorway and use music to keep yourself awake"
     ],
@@ -78,7 +78,7 @@ export const drivingPrepQuestions: Question[] = [
     "options": [
       "Ease back to restore a safe gap",
       "Maintain your speed and let the other driver make a gap",
-      "Pass promptly so the other driver is behind you again",
+      "Overtake promptly",
       "Use a long headlight flash to show that the gap was too small"
     ],
     "correctIndex": 0,
@@ -95,7 +95,7 @@ export const drivingPrepQuestions: Question[] = [
     "options": [
       "That the flash gives you priority to move out",
       "That the overtaking vehicle may be difficult to judge at night",
-      "That checking mirrors can help you understand its position",
+      "That mirrors help locate it",
       "That maintaining awareness of other traffic is still necessary"
     ],
     "correctIndex": 0,
@@ -111,7 +111,7 @@ export const drivingPrepQuestions: Question[] = [
     "question": "Your passenger wants to discuss something upsetting while you drive. What should you do?",
     "options": [
       "Postpone it and concentrate on driving",
-      "Continue the discussion while reducing speed a little",
+      "Discuss it while driving slower",
       "Discuss it during the straighter parts of the route",
       "Let the passenger watch for hazards during the discussion"
     ],
@@ -128,7 +128,7 @@ export const drivingPrepQuestions: Question[] = [
     "question": "Your phone is secured in a dashboard cradle. What does this mean for using it while driving?",
     "options": [
       "You still need proper control and attention",
-      "Hands-free equipment makes it safe to read lengthy messages",
+      "It makes reading messages safe",
       "The mounting permits you to adjust it without watching traffic",
       "You may concentrate on the screen whenever travelling slowly"
     ],
@@ -145,7 +145,7 @@ export const drivingPrepQuestions: Question[] = [
     "question": "You approach stationary traffic. How can you reduce wasted fuel?",
     "options": [
       "Anticipate it and ease off early",
-      "Coast towards it in neutral to reduce engine use",
+      "Coast towards it in neutral",
       "Maintain speed until you reach your usual braking point",
       "Hold a low gear and keep the engine speed higher"
     ],
@@ -231,7 +231,7 @@ export const drivingPrepQuestions: Question[] = [
     "options": [
       "A layer of water under the tyres",
       "A layer of compressed air under the tyres",
-      "A sudden loss of pressure inside the tyres",
+      "A sudden drop in tyre pressure",
       "A film of brake fluid escaping from the wheels"
     ],
     "correctIndex": 0,
@@ -247,7 +247,7 @@ export const drivingPrepQuestions: Question[] = [
     "question": "You are about to drive on an icy road. How should you use the controls?",
     "options": [
       "Gently, with a much larger gap",
-      "Use a low gear and sharp acceleration to find grip",
+      "Accelerate hard in a low gear",
       "Brake firmly while turning to keep the speed low",
       "Steer normally but rely on ABS to prevent any slide"
     ],
@@ -264,7 +264,7 @@ export const drivingPrepQuestions: Question[] = [
     "question": "A strong crosswind blows as you pass a gap in a hedge. What should you expect?",
     "options": [
       "A sudden gust may change your course",
-      "The wind will decrease steadily as the hedge ends",
+      "A steady decrease in the wind",
       "A crosswind will affect the vehicle ahead but not your car",
       "The hedge will keep sheltering your car through the gap"
     ],
@@ -281,7 +281,7 @@ export const drivingPrepQuestions: Question[] = [
     "question": "After crossing deep water, a gentle brake test shows reduced braking. What should you do?",
     "options": [
       "Dry them with light braking at low speed",
-      "Drive at a higher speed to force air across the brakes",
+      "Drive faster to air-dry them",
       "Continue normally until heat from the tyres dries them",
       "Use the parking brake until the footbrake dries naturally"
     ],
@@ -298,7 +298,7 @@ export const drivingPrepQuestions: Question[] = [
     "question": "A large vehicle turns right across your path. Why may you need to wait longer than for a car?",
     "options": [
       "Its length takes longer to clear the junction",
-      "Its extra width means it must pause while crossing your lane",
+      "It must pause across your lane",
       "Its rear wheels follow the same turning path as its front wheels",
       "Its indicator gives it priority until it is back in a straight line"
     ],
@@ -315,7 +315,7 @@ export const drivingPrepQuestions: Question[] = [
     "question": "You approach a tram stopped for passengers. What hazard should you anticipate?",
     "options": [
       "Passengers crossing to or from the tram",
-      "The tram doors swinging across adjacent traffic lanes",
+      "Doors swinging across traffic lanes",
       "The tram moving off to shield passengers from passing cars",
       "Traffic lights stopping cars whenever the tram doors open"
     ],
@@ -333,7 +333,7 @@ export const drivingPrepQuestions: Question[] = [
     "options": [
       "Stopping where it cannot pass safely",
       "Continuing carefully until a suitable place to give way appears",
-      "Checking mirrors before making room for the ambulance",
+      "Checking your mirrors",
       "Keeping the approach to the bend clear of a new obstruction"
     ],
     "correctIndex": 0,
@@ -349,7 +349,7 @@ export const drivingPrepQuestions: Question[] = [
     "question": "You are following a large vehicle and cannot see the road ahead. What helps?",
     "options": [
       "Drop back to improve your view",
-      "Stay close enough to see beneath the large vehicle",
+      "Look under its rear axle",
       "Move towards the centre line without increasing your gap",
       "Follow its brake lights instead of seeking a view ahead"
     ],
@@ -401,8 +401,8 @@ export const drivingPrepQuestions: Question[] = [
     "options": [
       "Away from the vehicle",
       "Hidden behind a wheel where it cannot be seen from above",
-      "Inside the glove compartment with the registration document",
-      "Attached underneath the bumper for emergency use"
+      "Inside the glove compartment",
+      "Under the bumper"
     ],
     "correctIndex": 0,
     "explanation": "Annex 6 advises against leaving vehicle documents or spare keys inside the car and says not to hide a spare key on or near it.",
@@ -417,7 +417,7 @@ export const drivingPrepQuestions: Question[] = [
     "question": "Does a valid MOT guarantee that your car is safe to drive today?",
     "options": [
       "No: roadworthiness remains your duty",
-      "Yes: the certificate guarantees safety until its expiry",
+      "Yes, until the MOT expires",
       "Yes: provided no warning lamp has appeared since the test",
       "No: but routine roadworthiness is the testing garage's duty"
     ],
@@ -448,10 +448,10 @@ export const drivingPrepQuestions: Question[] = [
     "subject": "vehicleSafety",
     "topic": "documents-loading",
     "topicLabel": "Documents & Loading",
-    "question": "You borrow a car. What should you check before driving?",
+    "question": "Which check establishes that insurance covers your use of a borrowed car?",
     "options": [
       "That your use of that car is insured",
-      "That the owner's policy exists, which covers any borrower",
+      "That the owner is insured",
       "That you have a full licence, which provides automatic cover",
       "That the car has an MOT, which includes third-party cover"
     ],
@@ -469,7 +469,7 @@ export const drivingPrepQuestions: Question[] = [
     "options": [
       "Reposition it to restore rearward visibility",
       "Leave it and ask a rear passenger to check for following traffic",
-      "Rely on a reversing camera when making lane changes",
+      "Use the reversing camera",
       "Leave it and use the parking sensors to check before moving out"
     ],
     "correctIndex": 0,
@@ -485,7 +485,7 @@ export const drivingPrepQuestions: Question[] = [
     "question": "Why must a trailer have a secondary coupling device, such as a safety chain?",
     "options": [
       "To provide a backup if the main coupling fails",
-      "To carry the trailer’s normal weight instead of the tow ball",
+      "To bear the normal trailer weight",
       "To replace the need for a working trailer braking system",
       "To make the trailer exempt from reduced speed limits"
     ],
@@ -503,7 +503,7 @@ export const drivingPrepQuestions: Question[] = [
     "options": [
       "Repack it so it does not project dangerously",
       "Drive slowly because secure fastenings make the projection legal",
-      "Tie a cloth to the end and travel without changing the load",
+      "Tie a cloth to the projecting end",
       "Leave the load in place and avoid roads with narrow lanes"
     ],
     "correctIndex": 0,
@@ -650,7 +650,7 @@ export const drivingPrepQuestions: Question[] = [
     "question": "Your car has anti-lock brakes. In an emergency, how should you brake?",
     "options": [
       "Maintain firm pressure; follow the handbook",
-      "Pump the pedal to prevent the wheels locking",
+      "Pump the pedal repeatedly",
       "Reduce pressure each time you feel the pedal pulse",
       "Add the parking brake once the footbrake starts pulsing"
     ],
@@ -703,7 +703,7 @@ export const drivingPrepQuestions: Question[] = [
       "Adjust safely and stay ready to take control",
       "Keep the set speed because the system assesses road grip",
       "Leave the gap unchanged because radar replaces visibility",
-      "Wait for a system warning before responding to the weather"
+      "Wait for a system warning"
     ],
     "correctIndex": 0,
     "explanation": "Assistance features do not replace observation or safe judgement. Follow the vehicle handbook and keep control.",

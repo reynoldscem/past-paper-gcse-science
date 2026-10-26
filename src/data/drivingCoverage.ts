@@ -77,7 +77,7 @@ export const drivingCoverageQuestions: Question[] = [
     "topicLabel": "Breakdowns & Incidents",
     "question": "In the first-aid reminder DR ABC, what does the D ask you to check before approaching a casualty?",
     "options": [
-      "Distance to the nearest hospital",
+      "Distance to hospital",
       "Damage to the casualty's vehicle",
       "Danger at the scene",
       "Disability and the casualty's range of movement"
@@ -146,7 +146,7 @@ export const drivingCoverageQuestions: Question[] = [
     "question": "A responsive, breathing casualty has a bleeding wound with nothing embedded in it. What should you do?",
     "options": [
       "Apply firm pressure with clean material",
-      "Wash the wound repeatedly before applying pressure",
+      "Wash it before pressing",
       "Keep checking the wound by lifting the dressing",
       "Apply pressure beside the wound but leave its centre uncovered"
     ],
@@ -163,7 +163,7 @@ export const drivingCoverageQuestions: Question[] = [
     "question": "You have slowed safely towards a pelican crossing. Flashing amber is showing while a pedestrian is still crossing. What must you do?",
     "options": [
       "Give way to the pedestrian",
-      "Proceed if they have reached the centre line",
+      "Pass once they reach halfway",
       "Move forward slowly to encourage them to finish",
       "Proceed if stopping would need firm braking"
     ],
@@ -196,7 +196,7 @@ export const drivingCoverageQuestions: Question[] = [
     "topicLabel": "Vulnerable Road Users",
     "question": "A straight pelican crossing has a central island. During flashing amber, someone is crossing towards the island from the far side. How should you treat the crossing?",
     "options": [
-      "As two crossings, so continue past the empty half",
+      "As two separate crossings",
       "As one crossing: wait for the pedestrian",
       "As two crossings unless the pedestrian waves",
       "As one crossing during red but two during amber"
@@ -214,7 +214,7 @@ export const drivingCoverageQuestions: Question[] = [
     "question": "A cyclist has ridden onto the cycle route of a parallel crossing. What is your duty?",
     "options": [
       "Give way to the cyclist",
-      "Give way if the cyclist has dismounted",
+      "Wait if they dismount",
       "Continue if the pedestrian stripes are empty",
       "Continue if there is enough room behind the cyclist"
     ],
@@ -231,7 +231,7 @@ export const drivingCoverageQuestions: Question[] = [
     "question": "A motorway can use its hard shoulder as an extra lane. Which overhead display allows ordinary traffic to use it?",
     "options": [
       "A speed limit above that shoulder",
-      "A blank display above that shoulder",
+      "A blank display",
       "An amber warning above the neighbouring lane",
       "A national speed limit sign beside the carriageway"
     ],
@@ -248,7 +248,7 @@ export const drivingCoverageQuestions: Question[] = [
     "question": "You are using a motorway hard shoulder that is open as an extra lane. Signs ahead show it closing with a red X. What must you do?",
     "options": [
       "Move safely into an open lane",
-      "Stay on the shoulder until the next exit",
+      "Stay until the next exit",
       "Remain on the shoulder at a reduced speed",
       "Continue because it was open when you entered"
     ],
@@ -267,7 +267,7 @@ export const drivingCoverageQuestions: Question[] = [
       "Emergency areas",
       "The gap beneath each overhead gantry",
       "The shoulder beside the right-hand lane",
-      "The hatched area at the next exit junction"
+      "Exit hatching"
     ],
     "correctIndex": 0,
     "explanation": "Rule 269 explains that emergency areas are provided where the hard shoulder operates as an extra lane. The running lane must not be treated as a safe stopping area.",
@@ -282,7 +282,7 @@ export const drivingCoverageQuestions: Question[] = [
     "question": "A motorway sign shows red flashing lights and all lanes closed. Nobody is directing you to continue. May you use the hard shoulder to pass it?",
     "options": [
       "No: the road is closed",
-      "Yes, if you leave at the next exit",
+      "Yes, to the next exit",
       "Yes, if the hard shoulder looks clear",
       "Yes, while keeping below the last displayed limit"
     ],
@@ -316,7 +316,7 @@ export const drivingCoverageQuestions: Question[] = [
     "question": "You keep your car on private land and want to leave it untaxed. Which notification must you make to DVLA?",
     "options": [
       "A Statutory Off-Road Notification",
-      "A request for a replacement registration certificate",
+      "A replacement V5C request",
       "A notification that the vehicle has changed keeper",
       "An application to change the vehicle's tax class"
     ],
@@ -333,7 +333,7 @@ export const drivingCoverageQuestions: Question[] = [
     "question": "You have declared SORN for a car. Where may you keep it while it remains untaxed?",
     "options": [
       "On your private driveway",
-      "On the public road outside your home",
+      "On the public road",
       "In an unrestricted public-road parking bay",
       "In a public-road lay-by away from houses"
     ],
@@ -351,7 +351,7 @@ export const drivingCoverageQuestions: Question[] = [
     "options": [
       "It must still be taxed",
       "Tax is unnecessary while its engine stays off",
-      "An MOT certificate replaces the need for tax",
+      "The MOT covers it",
       "A SORN declaration permits this untaxed parking"
     ],
     "correctIndex": 0,
@@ -385,7 +385,7 @@ export const drivingCoverageQuestions: Question[] = [
     "options": [
       "One protected by an active frontal airbag",
       "One with an adjustable head restraint and seat back",
-      "One with an adult three-point seat belt fitted",
+      "One with a three-point belt",
       "One where the passenger seat can slide backwards"
     ],
     "correctIndex": 0,
@@ -401,9 +401,9 @@ export const drivingCoverageQuestions: Question[] = [
     "question": "A 13-year-old passenger needs to wear the fitted seat belt. Who is legally responsible for ensuring this?",
     "options": [
       "The driver",
-      "The child travelling in the passenger seat",
-      "The adult sitting nearest to the child",
-      "The child's parent, even when not in the car"
+      "The child",
+      "An adult passenger",
+      "An absent parent"
     ],
     "correctIndex": 0,
     "explanation": "Rule 100 makes the driver responsible for ensuring children under 14 use the required restraint or seat belt.",
@@ -420,7 +420,7 @@ export const drivingCoverageQuestions: Question[] = [
       "The manufacturer's instructions",
       "The position used for a different model of restraint",
       "A fitting guide for a similar seat from another maker",
-      "The shortest available route for the adult seat belt"
+      "The shortest belt route"
     ],
     "correctIndex": 0,
     "explanation": "Rule 102 says child restraints should be fitted according to the manufacturer's instructions. Correct installation is part of protecting the child.",
@@ -451,7 +451,7 @@ export const drivingCoverageQuestions: Question[] = [
     "topicLabel": "Vehicle Handling",
     "question": "The rear of your car begins to slide to the right. Which way should you steer to recover?",
     "options": [
-      "To the left, away from the slide",
+      "To the left",
       "To the right, into the slide",
       "Keep the wheel fixed straight ahead",
       "Alternate quickly between left and right"
@@ -469,7 +469,7 @@ export const drivingCoverageQuestions: Question[] = [
     "question": "Excessive acceleration causes your car to skid. How should you remove that cause?",
     "options": [
       "Ease off the accelerator",
-      "Press the accelerator further to regain grip",
+      "Accelerate further",
       "Apply the parking brake while maintaining power",
       "Select a lower gear and accelerate more firmly"
     ],
@@ -486,7 +486,7 @@ export const drivingCoverageQuestions: Question[] = [
     "question": "In a car without ABS, harsh braking locks the wheels and causes a skid. How should you remove the cause?",
     "options": [
       "Release the brake pedal fully",
-      "Press the brake pedal harder to slow the car",
+      "Press the pedal harder",
       "Apply the parking brake to support the footbrake",
       "Hold the brake pressure until the skid has stopped"
     ],
