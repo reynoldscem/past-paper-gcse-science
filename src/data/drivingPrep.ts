@@ -567,15 +567,15 @@ export const drivingPrepQuestions: Question[] = [
     "subject": "roadRules",
     "topic": "weather-parking",
     "topicLabel": "Weather & Parking",
-    "question": "In Scotland, what is the rule about parking where the kerb has been lowered?",
+    "question": "In Scotland, what is the rule on parking where the kerb is lowered to help pedestrians or cyclists?",
     "options": [
-      "You must not park there, subject to legal exceptions",
+      "It is prohibited, subject to limited legal exceptions",
       "It is always allowed for five minutes",
       "It is allowed with hazard lights",
       "Only heavy vehicles are prohibited"
     ],
     "correctIndex": 0,
-    "explanation": "The updated Code makes the prohibition at lowered kerbs in Scotland explicit.",
+    "explanation": "Rule 243 makes parking at kerbs lowered to help pedestrians or cyclists in Scotland a MUST NOT, with exceptions in limited circumstances. The purpose of the lowered kerb matters.",
     "highwayCodeRule": "243",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/waiting-and-parking-238-to-252"
   },

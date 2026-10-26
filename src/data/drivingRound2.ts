@@ -610,7 +610,7 @@ export const drivingRound2Questions: Question[] = [
       "Overtake on the left by accelerating out of your lane"
     ],
     "correctIndex": 0,
-    "explanation": "In congestion, keeping with your lane can mean passing a slower queue on the right; do not weave.",
+    "explanation": "Rule 268: in congested conditions, keep with your lane. If it moves faster than a lane to your right, you may pass traffic in that lane. Do not change lanes to overtake on the left or weave through the queues.",
     "highwayCodeRule": "268",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/motorways-253-to-273"
   },

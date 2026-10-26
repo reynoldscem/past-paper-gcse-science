@@ -83,15 +83,20 @@ export const drivingTheoryQuestions: Question[] = [
     learnMoreUrl: 'https://www.gov.uk/guidance/the-highway-code/driving-in-adverse-weather-conditions-226-to-237',
   },
   {
-    id: 'dt-road-rules-008',
-    subject: 'roadRules',
-    topic: 'weather-parking',
-    topicLabel: 'Weather & Parking',
-    question: 'When must you not park opposite or within 10 metres of a junction?',
-    options: ['Unless you leave sidelights on', 'Unless it is a one-way street', 'Unless in an authorised parking space', 'Unless you are only stopping for 10 minutes'],
-    correctIndex: 2,
-    explanation: 'The Highway Code says not to park opposite or within 10 metres of a junction, except in an authorised parking space.',
-    learnMoreUrl: 'https://www.gov.uk/guidance/the-highway-code/waiting-and-parking-238-to-252',
+    "id": "dt-road-rules-008",
+    "subject": "roadRules",
+    "topic": "weather-parking",
+    "topicLabel": "Weather & Parking",
+    "question": "Under Rule 243, where may you park within 10 metres of a junction?",
+    "options": [
+      "Beside the kerb if sidelights are left on",
+      "On either side of a one-way street",
+      "In an authorised parking space",
+      "Beside the kerb for less than ten minutes"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rule 243 advises against parking opposite or within 10 metres of a junction, except in an authorised parking space. Its DO NOT wording is advisory; separate legal restrictions may also apply.",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/waiting-and-parking-238-to-252"
   },
   {
     id: 'dt-road-signs-001',
@@ -204,15 +209,20 @@ export const drivingTheoryQuestions: Question[] = [
     learnMoreUrl: 'https://www.gov.uk/guidance/the-highway-code/general-rules-techniques-and-advice-for-all-drivers-and-riders-103-to-158',
   },
   {
-    id: 'dt-hazard-005',
-    subject: 'hazardAwareness',
-    topic: 'incidents',
-    topicLabel: 'Breakdowns & Incidents',
-    question: 'If your vehicle breaks down on a motorway, where should you wait if possible?',
-    options: ['Inside the vehicle with the seat belt on', 'Behind the vehicle', 'Well away from the carriageway and hard shoulder', 'In the right-hand lane to warn traffic'],
-    correctIndex: 2,
-    explanation: 'If possible, leave the vehicle by the left-hand door and wait behind the barrier, well away from the carriageway and hard shoulder.',
-    learnMoreUrl: 'https://www.gov.uk/guidance/the-highway-code/breakdowns-and-incidents-274-to-287',
+    "id": "dt-hazard-005",
+    "subject": "hazardAwareness",
+    "topic": "incidents",
+    "topicLabel": "Breakdowns & Incidents",
+    "question": "You break down on a motorway hard shoulder and can safely leave by the side away from traffic. Where should you wait?",
+    "options": [
+      "Inside the car because its hazard lights are on",
+      "Behind the car so approaching drivers can see you",
+      "Well away from the vehicle and moving traffic",
+      "Between the car and the lane to warn other drivers"
+    ],
+    "correctIndex": 2,
+    "explanation": "Rule 277 advises leaving by the side furthest from traffic when safe, then waiting well away from the vehicle and traffic, behind a safety barrier where there is one. If trapped in a live lane and unable to leave safely, stay belted in, hazards on, and call 999 immediately for police.",
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/breakdowns-and-incidents-274-to-287"
   },
   {
     id: 'dt-hazard-006',

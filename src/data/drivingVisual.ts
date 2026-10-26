@@ -15,7 +15,7 @@ export const drivingVisualQuestions: Question[] = [
       "End of all road rules"
     ],
     "correctIndex": 0,
-    "explanation": "The applicable limit depends on your vehicle and the type of road.",
+    "explanation": "Rule 124: for a car, the national limits are 60 mph on single carriageways and 70 mph on dual carriageways and motorways. For a car towing a trailer or caravan they are 50, 60 and 60 mph respectively. A lower signed limit takes precedence.",
     "highwayCodeRule": "124",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
     "image": {
