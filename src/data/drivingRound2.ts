@@ -1019,7 +1019,7 @@ export const drivingRound2Questions: Question[] = [
     ],
     "correctIndex": 0,
     "explanation": "Directions from authorised traffic controllers must be obeyed even when ordinary signals would permit progress.",
-    "highwayCodeRule": "109",
+    "highwayCodeRule": "105",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/general-rules-techniques-and-advice-for-all-drivers-and-riders-103-to-158"
   }
 ];
