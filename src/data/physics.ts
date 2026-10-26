@@ -3,16 +3,21 @@ import type { Question } from '../types';
 export const physicsQuestions: Question[] = [
   // ─── ENERGY (energy-phys) ─────────────────────────────────────────────
   {
-    id: 'phys-energy-phys-001',
-    subject: 'physics',
-    topic: 'energy-phys',
-    topicLabel: 'Energy',
-    question: 'Which type of energy store does a moving car have?',
-    options: ['Kinetic energy store', 'Chemical energy store', 'Elastic potential energy store', 'Electrostatic energy store'],
-    correctIndex: 0,
-    explanation: 'A moving object has energy in its kinetic energy store. The faster it moves and the greater its mass, the more kinetic energy it has.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zkjr6rd',
-  },
+  "id": "phys-energy-phys-001",
+  "subject": "physics",
+  "topic": "energy-phys",
+  "topicLabel": "Energy",
+  "question": "Which energy store does a car have because it is moving?",
+  "options": [
+    "Kinetic energy store",
+    "Chemical energy store",
+    "Elastic potential energy store",
+    "Electrostatic energy store"
+  ],
+  "correctIndex": 0,
+  "explanation": "A moving object has energy in its kinetic energy store. The faster it moves and the greater its mass, the more kinetic energy it has.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zkjr6rd"
+},
   {
     id: 'phys-energy-phys-002',
     subject: 'physics',
@@ -92,16 +97,21 @@ export const physicsQuestions: Question[] = [
   },
 
   {
-    id: 'phys-energy-phys-009',
-    subject: 'physics',
-    topic: 'energy-phys',
-    topicLabel: 'Energy',
-    question: 'What is the equation for gravitational potential energy?',
-    options: ['GPE = ½mv²', 'GPE = mgh', 'GPE = Fd', 'GPE = Pt'],
-    correctIndex: 1,
-    explanation: 'Gravitational potential energy = mass × gravitational field strength × height (GPE = mgh). On Earth, g = 10 N/kg at Foundation level.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zkjr6rd',
-  },
+  "id": "phys-energy-phys-009",
+  "subject": "physics",
+  "topic": "energy-phys",
+  "topicLabel": "Energy",
+  "question": "What is the equation for gravitational potential energy?",
+  "options": [
+    "GPE = ½mv²",
+    "GPE = mgh",
+    "GPE = Fd",
+    "GPE = Pt"
+  ],
+  "correctIndex": 1,
+  "explanation": "Gravitational potential energy = mass × gravitational field strength × height (GPE = mgh). Use the value of g supplied in the question; 9.8 N/kg is commonly used near Earth’s surface. The value is not determined by exam tier.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zkjr6rd"
+},
   {
     id: 'phys-energy-phys-010',
     subject: 'physics',
@@ -169,16 +179,21 @@ export const physicsQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zkjr6rd',
   },
   {
-    id: 'phys-energy-phys-016',
-    subject: 'physics',
-    topic: 'energy-phys',
-    topicLabel: 'Energy',
-    question: 'What is the energy stored in food and fuel called?',
-    options: ['Kinetic energy store', 'Chemical energy store', 'Nuclear energy store', 'Magnetic energy store'],
-    correctIndex: 1,
-    explanation: 'Food and fuels store energy in their chemical energy store. This energy is released during chemical reactions such as combustion or digestion.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zkjr6rd',
-  },
+  "id": "phys-energy-phys-016",
+  "subject": "physics",
+  "topic": "energy-phys",
+  "topicLabel": "Energy",
+  "question": "What is the energy stored in food and fuel called?",
+  "options": [
+    "Kinetic energy store",
+    "Chemical energy store",
+    "Nuclear energy store",
+    "Magnetic energy store"
+  ],
+  "correctIndex": 1,
+  "explanation": "Food and fuels have chemical energy stores. Respiration releases energy from food molecules; digestion breaks large food molecules into smaller soluble molecules. Burning fuels transfers energy by combustion.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zkjr6rd"
+},
   {
     id: 'phys-energy-phys-017',
     subject: 'physics',
@@ -191,16 +206,21 @@ export const physicsQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zkjr6rd',
   },
   {
-    id: 'phys-energy-phys-018',
-    subject: 'physics',
-    topic: 'energy-phys',
-    topicLabel: 'Energy',
-    question: 'A disadvantage of wind turbines is that they:',
-    options: ['Produce greenhouse gases', 'Use up fossil fuels', 'Only generate electricity when it is windy', 'Cause acid rain'],
-    correctIndex: 2,
-    explanation: 'Wind turbines are renewable and produce no greenhouse gases, but they are unreliable because they only generate electricity when the wind is blowing.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zkjr6rd',
-  },
+  "id": "phys-energy-phys-018",
+  "subject": "physics",
+  "topic": "energy-phys",
+  "topicLabel": "Energy",
+  "question": "Which limitation affects the electricity output of a wind turbine during operation?",
+  "options": [
+    "It emits carbon dioxide by burning fuel",
+    "It consumes a supply of coal",
+    "It needs suitable wind speeds",
+    "It emits sulfur dioxide from combustion"
+  ],
+  "correctIndex": 2,
+  "explanation": "Wind turbines need suitable wind speeds. They do not emit greenhouse gases from fuel combustion during operation, but manufacture, construction and maintenance have life-cycle emissions.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zkjr6rd"
+},
   {
     id: 'phys-energy-phys-019',
     subject: 'physics',
@@ -359,16 +379,21 @@ export const physicsQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z3ybb82',
   },
   {
-    id: 'phys-particle-model-004',
-    subject: 'physics',
-    topic: 'particle-model',
-    topicLabel: 'Particle Model',
-    question: 'What happens to the temperature of a substance while it is changing state?',
-    options: ['It increases', 'It decreases', 'It stays constant', 'It fluctuates randomly'],
-    correctIndex: 2,
-    explanation: 'During a change of state, the temperature remains constant even though energy is being transferred. The energy is used to break or form bonds between particles rather than increase the temperature.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z3ybb82',
-  },
+  "id": "phys-particle-model-004",
+  "subject": "physics",
+  "topic": "particle-model",
+  "topicLabel": "Particle Model",
+  "question": "A pure substance melts at constant pressure. What happens to its temperature during melting?",
+  "options": [
+    "It increases",
+    "It decreases",
+    "It stays constant",
+    "It fluctuates randomly"
+  ],
+  "correctIndex": 2,
+  "explanation": "Temperature stays constant during melting. Energy increases the potential energy of the particles rather than their average kinetic energy.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z3ybb82"
+},
   {
     id: 'phys-particle-model-005',
     subject: 'physics',
@@ -386,37 +411,37 @@ export const physicsQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z3ybb82',
   },
   {
-    id: 'phys-particle-model-006',
-    subject: 'physics',
-    topic: 'particle-model',
-    topicLabel: 'Particle Model',
-    question: 'What is specific latent heat of fusion?',
-    options: [
-      'Energy needed to boil 1 kg of a substance',
-      'Energy needed to change 1 kg from solid to liquid without temperature change',
-      'Energy needed to raise the temperature of 1 kg by 1°C',
-      'Energy needed to change 1 kg from gas to liquid',
-    ],
-    correctIndex: 1,
-    explanation: 'Specific latent heat of fusion is the energy required to change 1 kg of a substance from solid to liquid (or vice versa) at its melting point, without any change in temperature.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z3ybb82',
-  },
+  "id": "phys-particle-model-006",
+  "subject": "physics",
+  "topic": "particle-model",
+  "topicLabel": "Particle Model",
+  "question": "What is specific latent heat of fusion?",
+  "options": [
+    "Energy needed to boil 1 kg of a substance",
+    "Energy needed to change 1 kg from solid to liquid without temperature change",
+    "Energy needed to raise the temperature of 1 kg by 1°C",
+    "Energy needed to change 1 kg from gas to liquid"
+  ],
+  "correctIndex": 1,
+  "explanation": "Specific latent heat of fusion is the energy absorbed per kilogram when a solid melts at its melting point without a temperature change. Freezing releases the same energy per kilogram.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z3ybb82"
+},
   {
-    id: 'phys-particle-model-007',
-    subject: 'physics',
-    topic: 'particle-model',
-    topicLabel: 'Particle Model',
-    question: 'Why does the pressure of a gas increase when it is heated in a sealed container?',
-    options: [
-      'The particles get bigger',
-      'The particles move faster and collide with the walls more often and with greater force',
-      'More gas particles are created',
-      'The container shrinks',
-    ],
-    correctIndex: 1,
-    explanation: 'Heating a gas gives the particles more kinetic energy, so they move faster. This means they hit the walls of the container more frequently and with greater force, increasing the pressure.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z3ybb82',
-  },
+  "id": "phys-particle-model-007",
+  "subject": "physics",
+  "topic": "particle-model",
+  "topicLabel": "Particle Model",
+  "question": "Why does the pressure of a gas increase when it is heated in a sealed rigid container?",
+  "options": [
+    "The particles get bigger",
+    "The particles move faster and collide with the walls more often and with greater force",
+    "More gas particles are created",
+    "The container shrinks"
+  ],
+  "correctIndex": 1,
+  "explanation": "Heating a gas gives the particles more kinetic energy, so they move faster. This means they hit the walls of the container more frequently and with greater force, increasing the pressure.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z3ybb82"
+},
   {
     id: 'phys-particle-model-008',
     subject: 'physics',
@@ -474,27 +499,37 @@ export const physicsQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zshssrd',
   },
   {
-    id: 'phys-atomic-structure-phys-004',
-    subject: 'physics',
-    topic: 'atomic-structure-phys',
-    topicLabel: 'Atomic Structure',
-    question: 'A radioactive sample has a half-life of 6 hours. After 18 hours, what fraction of the original atoms remains?',
-    options: ['1/2', '1/4', '1/8', '1/16'],
-    correctIndex: 2,
-    explanation: '18 hours is 3 half-lives (18 ÷ 6 = 3). After each half-life, half the atoms remain: 1/2 × 1/2 × 1/2 = 1/8.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zshssrd',
-  },
+  "id": "phys-atomic-structure-phys-004",
+  "subject": "physics",
+  "topic": "atomic-structure-phys",
+  "topicLabel": "Atomic Structure",
+  "question": "A decay graph has these plotted values for undecayed nuclei: 0 h → 800; 6 h → 400; 12 h → 200; 18 h → 100. What half-life does the graph show?",
+  "options": [
+    "3 hours",
+    "6 hours",
+    "12 hours",
+    "18 hours"
+  ],
+  "correctIndex": 1,
+  "explanation": "The number of undecayed nuclei halves from 800 to 400 in 6 hours. Each later halving also takes 6 hours.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zshssrd"
+},
   {
-    id: 'phys-atomic-structure-phys-005',
-    subject: 'physics',
-    topic: 'atomic-structure-phys',
-    topicLabel: 'Atomic Structure',
-    question: 'Which type of nuclear radiation is most penetrating?',
-    options: ['Alpha', 'Beta', 'Gamma', 'Neutron'],
-    correctIndex: 2,
-    explanation: 'Gamma radiation is the most penetrating — it can pass through most materials and is only significantly reduced by thick lead or concrete. Alpha is the least penetrating.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zshssrd',
-  },
+  "id": "phys-atomic-structure-phys-005",
+  "subject": "physics",
+  "topic": "atomic-structure-phys",
+  "topicLabel": "Atomic Structure",
+  "question": "In the usual school comparison of alpha, beta and gamma radiation, which penetrates furthest through shielding?",
+  "options": [
+    "Alpha",
+    "Beta",
+    "Gamma",
+    "All three penetrate equally"
+  ],
+  "correctIndex": 2,
+  "explanation": "Gamma is the most penetrating of these three in the school model. Thick lead or concrete reduces its intensity; penetration depends on the radiation energy and shielding material.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zshssrd"
+},
   {
     id: 'phys-atomic-structure-phys-006',
     subject: 'physics',
@@ -673,16 +708,21 @@ export const physicsQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zsrndnb',
   },
   {
-    id: 'phys-waves-003',
-    subject: 'physics',
-    topic: 'waves',
-    topicLabel: 'Waves',
-    question: 'Sound waves are an example of which type of wave?',
-    options: ['Transverse', 'Longitudinal', 'Electromagnetic', 'Surface'],
-    correctIndex: 1,
-    explanation: 'Sound waves are longitudinal waves. The particles vibrate parallel to the direction of energy transfer, creating compressions and rarefactions.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zsrndnb',
-  },
+  "id": "phys-waves-003",
+  "subject": "physics",
+  "topic": "waves",
+  "topicLabel": "Waves",
+  "question": "Sound waves in air are an example of which type of wave?",
+  "options": [
+    "Transverse",
+    "Longitudinal",
+    "Electromagnetic",
+    "Surface"
+  ],
+  "correctIndex": 1,
+  "explanation": "Sound waves are longitudinal waves. The particles vibrate parallel to the direction of energy transfer, creating compressions and rarefactions.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zsrndnb"
+},
   {
     id: 'phys-waves-004',
     subject: 'physics',
@@ -695,21 +735,21 @@ export const physicsQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zsrndnb',
   },
   {
-    id: 'phys-waves-005',
-    subject: 'physics',
-    topic: 'waves',
-    topicLabel: 'Waves',
-    question: 'What happens to a light ray when it passes from air into glass?',
-    options: [
-      'It speeds up and bends away from the normal',
-      'It slows down and bends towards the normal',
-      'It continues in a straight line',
-      'It is completely reflected',
-    ],
-    correctIndex: 1,
-    explanation: 'When light moves from air (less dense medium) into glass (more dense medium), it slows down and bends towards the normal. This is refraction.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zsrndnb',
-  },
+  "id": "phys-waves-005",
+  "subject": "physics",
+  "topic": "waves",
+  "topicLabel": "Waves",
+  "question": "A light ray enters glass from air at an angle of 30° to the normal. How does the transmitted ray change direction?",
+  "options": [
+    "It bends away from the normal",
+    "It bends towards the normal",
+    "It continues without changing direction",
+    "It travels along the boundary"
+  ],
+  "correctIndex": 1,
+  "explanation": "The ray refracts towards the normal when entering glass from air at this non-zero angle. At normal incidence it would continue straight.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zsrndnb"
+},
   {
     id: 'phys-waves-006',
     subject: 'physics',
@@ -867,7 +907,22 @@ export const physicsQuestions: Question[] = [
 
   // Electricity (5 more)
   { id: 'phys-electricity-009', subject: 'physics', topic: 'electricity', topicLabel: 'Electricity', question: 'A resistor has a resistance of 20 ohms. The current flowing through it is 0.5 A. What is the potential difference across it?', options: ['0.025 V', '10 V', '20.5 V', '40 V'], correctIndex: 1, explanation: 'V = I × R = 0.5 × 20 = 10 V. This is Ohm\'s law: potential difference = current × resistance.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zms2g2p' },
-  { id: 'phys-electricity-010', subject: 'physics', topic: 'electricity', topicLabel: 'Electricity', question: 'An appliance uses 4 A of current at 230 V mains. Which fuse should be fitted?', options: ['3 A', '5 A', '13 A', '1 A'], correctIndex: 1, explanation: 'The fuse must be rated just above the normal operating current. 4 A needs a 5 A fuse. A 3 A fuse would blow during normal use; a 13 A fuse wouldn\'t protect the circuit.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zms2g2p' },
+  {
+  "id": "phys-electricity-010",
+  "subject": "physics",
+  "topic": "electricity",
+  "topicLabel": "Electricity",
+  "question": "In a simplified fuse-selection model, choose the lowest available rating above a steady operating current of 4 A. Assume suitable wiring and no starting surge. Which rating should be chosen?",
+  "options": [
+    "3 A",
+    "5 A",
+    "13 A",
+    "1 A"
+  ],
+  "correctIndex": 1,
+  "explanation": "Under the stated rule, 5 A is the lowest available rating above 4 A. Real selection also depends on cable rating and starting current. A 13 A fuse can protect appropriately rated wiring, but is not the choice under this rule.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zms2g2p"
+},
   { id: 'phys-electricity-011', subject: 'physics', topic: 'electricity', topicLabel: 'Electricity', question: 'A heater has a power rating of 2000 W and runs on 230 V mains. What current does it draw?', options: ['About 4.3 A', 'About 8.7 A', 'About 115 A', '2000 A'], correctIndex: 1, explanation: 'P = I × V, so I = P ÷ V = 2000 ÷ 230 = 8.7 A. This is why heaters need a 13 A fuse.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zms2g2p' },
   { id: 'phys-electricity-012', subject: 'physics', topic: 'electricity', topicLabel: 'Electricity', question: 'In a series circuit with two identical lamps, what happens if one lamp blows?', options: ['The other lamp gets brighter', 'The other lamp stays the same', 'The other lamp goes out too', 'The other lamp dims'], correctIndex: 2, explanation: 'In a series circuit there is only one path for current. If one lamp breaks, the circuit is broken and no current flows — both lamps go out.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zms2g2p' },
   { id: 'phys-electricity-013', subject: 'physics', topic: 'electricity', topicLabel: 'Electricity', question: 'Why is electricity transmitted at very high voltages through the National Grid?', options: ['To make it travel faster', 'To reduce the current and therefore reduce energy lost as heat in the cables', 'To make it safer', 'Because power stations only produce high voltages'], correctIndex: 1, explanation: 'P = I × V. For the same power, higher voltage means lower current. Lower current means less energy wasted as heat in the cables (P = I²R). Step-up transformers increase the voltage.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zms2g2p' },
@@ -877,11 +932,41 @@ export const physicsQuestions: Question[] = [
   { id: 'phys-forces-010', subject: 'physics', topic: 'forces', topicLabel: 'Forces', question: 'What is the weight of a 70 kg person on Earth? (g = 10 N/kg)', options: ['7 N', '70 N', '700 N', '7000 N'], correctIndex: 2, explanation: 'Weight = mass × gravitational field strength = 70 × 10 = 700 N. Weight is a force measured in newtons, not the same as mass.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/ztmttv4' },
   { id: 'phys-forces-011', subject: 'physics', topic: 'forces', topicLabel: 'Forces', question: 'A skydiver reaches terminal velocity. What can be said about the forces acting on them?', options: ['Air resistance is greater than weight', 'Weight is greater than air resistance', 'Air resistance equals weight — forces are balanced', 'There are no forces acting'], correctIndex: 2, explanation: 'At terminal velocity, the skydiver\'s weight (downward) equals the air resistance (upward). The resultant force is zero, so acceleration is zero — they fall at constant speed.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/ztmttv4' },
   { id: 'phys-forces-012', subject: 'physics', topic: 'forces', topicLabel: 'Forces', question: 'A force of 10 N pushes right and a force of 4 N pushes left on the same object. What is the resultant force?', options: ['14 N to the right', '14 N to the left', '6 N to the right', '6 N to the left'], correctIndex: 2, explanation: 'When forces act in opposite directions, subtract: 10 - 4 = 6 N. The resultant acts in the direction of the larger force (right).', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/ztmttv4' },
-  { id: 'phys-forces-013', subject: 'physics', topic: 'forces', topicLabel: 'Forces', question: 'A woman wearing stiletto heels exerts more pressure on the ground than an elephant. Why?', options: ['She weighs more', 'The area of the heel is very small, so pressure (F/A) is very high', 'The elephant has bigger feet', 'Stilettos are made of metal'], correctIndex: 1, explanation: 'Pressure = force ÷ area. Although the elephant\'s weight (force) is much greater, the stiletto heel has a tiny area, making the pressure (force per unit area) much higher.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/ztmttv4' },
+  {
+  "id": "phys-forces-013",
+  "subject": "physics",
+  "topic": "forces",
+  "topicLabel": "Forces",
+  "question": "A block exerts a force of 100 N on an area of 0.02 m². What pressure does it exert? Use pressure = force ÷ area.",
+  "options": [
+    "2 Pa",
+    "5,000 Pa",
+    "50 Pa",
+    "200 Pa"
+  ],
+  "correctIndex": 1,
+  "explanation": "Pressure = 100 ÷ 0.02 = 5,000 Pa. Both the force and the contact area are needed to calculate pressure.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/ztmttv4"
+},
 
   // Waves (5 more)
   { id: 'phys-waves-009', subject: 'physics', topic: 'waves', topicLabel: 'Waves', question: 'A wave has a frequency of 500 Hz and a wavelength of 0.4 m. What is its speed?', options: ['125 m/s', '200 m/s', '500 m/s', '1250 m/s'], correctIndex: 1, explanation: 'Wave speed = frequency × wavelength = 500 × 0.4 = 200 m/s.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zsrndnb' },
-  { id: 'phys-waves-010', subject: 'physics', topic: 'waves', topicLabel: 'Waves', question: 'Which type of wave are sound waves?', options: ['Transverse', 'Longitudinal', 'Electromagnetic', 'Seismic only'], correctIndex: 1, explanation: 'Sound waves are longitudinal — the vibrations are parallel to the direction of wave travel. The particles compress and rarefy along the direction of travel.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zsrndnb' },
+  {
+  "id": "phys-waves-010",
+  "subject": "physics",
+  "topic": "waves",
+  "topicLabel": "Waves",
+  "question": "Which type of wave are sound waves travelling through air?",
+  "options": [
+    "Transverse",
+    "Longitudinal",
+    "Electromagnetic",
+    "Seismic only"
+  ],
+  "correctIndex": 1,
+  "explanation": "Sound waves are longitudinal — the vibrations are parallel to the direction of wave travel. The particles compress and rarefy along the direction of travel.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zsrndnb"
+},
   { id: 'phys-waves-011', subject: 'physics', topic: 'waves', topicLabel: 'Waves', question: 'Which type of electromagnetic wave is used in hospital X-ray machines?', options: ['Radio waves', 'Microwaves', 'X-rays', 'Infrared'], correctIndex: 2, explanation: 'X-rays pass through soft tissue but are absorbed by dense materials like bone. This creates shadow images used for medical diagnosis.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zsrndnb' },
   { id: 'phys-waves-012', subject: 'physics', topic: 'waves', topicLabel: 'Waves', question: 'What is a danger of excessive exposure to ultraviolet (UV) radiation?', options: ['Hearing loss', 'Skin cancer and sunburn', 'Broken bones', 'Heart disease'], correctIndex: 1, explanation: 'UV radiation can damage skin cells and cause mutations in DNA, leading to sunburn and increased risk of skin cancer. It can also damage eyes.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zsrndnb' },
   { id: 'phys-waves-013', subject: 'physics', topic: 'waves', topicLabel: 'Waves', question: 'What is ultrasound used for in medicine?', options: ['Treating cancer', 'Taking X-ray images', 'Pre-natal scanning to image a foetus', 'Measuring blood pressure'], correctIndex: 2, explanation: 'Ultrasound (high-frequency sound waves above 20,000 Hz) is reflected at boundaries between different tissues. The reflections are used to build up an image, e.g. of a baby during pregnancy.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zsrndnb' },
@@ -890,15 +975,60 @@ export const physicsQuestions: Question[] = [
   { id: 'phys-particle-model-009', subject: 'physics', topic: 'particle-model', topicLabel: 'Particle Model', question: 'A metal block has a mass of 500 g and a volume of 200 cm³. What is its density?', options: ['0.4 g/cm³', '2.5 g/cm³', '100 g/cm³', '700 g/cm³'], correctIndex: 1, explanation: 'Density = mass ÷ volume = 500 ÷ 200 = 2.5 g/cm³.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z3ybb82' },
   { id: 'phys-particle-model-010', subject: 'physics', topic: 'particle-model', topicLabel: 'Particle Model', question: 'How much energy is needed to heat 2 kg of water by 5°C? (specific heat capacity of water = 4200 J/kg°C)', options: ['2100 J', '4200 J', '21 000 J', '42 000 J'], correctIndex: 3, explanation: 'E = m × c × ΔT = 2 × 4200 × 5 = 42,000 J.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z3ybb82' },
   { id: 'phys-particle-model-011', subject: 'physics', topic: 'particle-model', topicLabel: 'Particle Model', question: 'Why does a gas exert pressure on the walls of its container?', options: ['The gas is heavy', 'Gas particles collide with the walls, exerting a force', 'The container is too small', 'Gravity pushes the gas down'], correctIndex: 1, explanation: 'Gas particles move randomly at high speeds. They collide with the container walls, and each collision exerts a tiny force. Billions of collisions per second create gas pressure.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z3ybb82' },
-  { id: 'phys-particle-model-012', subject: 'physics', topic: 'particle-model', topicLabel: 'Particle Model', question: 'What happens to the particles when a solid melts into a liquid?', options: ['They gain energy and vibrate more, eventually breaking free from fixed positions', 'They lose energy', 'They stop moving completely', 'They split into smaller particles'], correctIndex: 0, explanation: 'When heated, particles gain kinetic energy and vibrate more. At the melting point, they have enough energy to break free from their fixed positions and move around each other (liquid).', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z3ybb82' },
+  {
+  "id": "phys-particle-model-012",
+  "subject": "physics",
+  "topic": "particle-model",
+  "topicLabel": "Particle Model",
+  "question": "A pure solid is melting at its melting point at constant pressure. How does the supplied energy affect its particles?",
+  "options": [
+    "Their potential energy increases as they leave fixed positions",
+    "Their average kinetic energy increases throughout melting",
+    "Their potential energy decreases as they leave fixed positions",
+    "Their average kinetic energy decreases throughout melting"
+  ],
+  "correctIndex": 0,
+  "explanation": "During melting, temperature and average kinetic energy stay constant. Supplied energy increases potential energy as particles overcome attractions and leave their fixed positions.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z3ybb82"
+},
   { id: 'phys-particle-model-013', subject: 'physics', topic: 'particle-model', topicLabel: 'Particle Model', question: 'In which state of matter are particles closest together and in a regular arrangement?', options: ['Gas', 'Liquid', 'Solid', 'Plasma'], correctIndex: 2, explanation: 'In a solid, particles are closely packed in a regular arrangement and vibrate about fixed positions. In liquids they\'re close but irregular; in gases they\'re far apart and random.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z3ybb82' },
 
   // Atomic structure - physics (5 more)
   { id: 'phys-atomic-structure-phys-009', subject: 'physics', topic: 'atomic-structure-phys', topicLabel: 'Atomic Structure', question: 'A radioactive isotope has a half-life of 6 hours. Starting with 400 Bq, what will the activity be after 18 hours?', options: ['200 Bq', '100 Bq', '50 Bq', '25 Bq'], correctIndex: 2, explanation: '18 hours = 3 half-lives. After 1: 200. After 2: 100. After 3: 50 Bq. Each half-life halves the remaining activity.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zshssrd' },
-  { id: 'phys-atomic-structure-phys-010', subject: 'physics', topic: 'atomic-structure-phys', topicLabel: 'Atomic Structure', question: 'Which type of radiation is the most penetrating?', options: ['Alpha', 'Beta', 'Gamma', 'All equally penetrating'], correctIndex: 2, explanation: 'Gamma rays are the most penetrating — they can pass through most materials and are only stopped by thick lead or several metres of concrete. Alpha is stopped by paper; beta by aluminium.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zshssrd' },
+  {
+  "id": "phys-atomic-structure-phys-010",
+  "subject": "physics",
+  "topic": "atomic-structure-phys",
+  "topicLabel": "Atomic Structure",
+  "question": "Which type of radiation is the most penetrating?",
+  "options": [
+    "Alpha",
+    "Beta",
+    "Gamma",
+    "All equally penetrating"
+  ],
+  "correctIndex": 2,
+  "explanation": "In the usual alpha, beta and gamma comparison, gamma is the most penetrating. Thick lead or concrete attenuates it: its intensity is reduced rather than completely stopped. Alpha is stopped by paper and beta by a suitable thickness of aluminium.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zshssrd"
+},
   { id: 'phys-atomic-structure-phys-011', subject: 'physics', topic: 'atomic-structure-phys', topicLabel: 'Atomic Structure', question: 'When an atom emits a beta particle, what happens to its nucleus?', options: ['It loses 2 protons and 2 neutrons', 'A neutron turns into a proton and an electron (the beta particle) is emitted', 'It gains a neutron', 'Nothing changes'], correctIndex: 1, explanation: 'In beta decay, a neutron in the nucleus converts into a proton, and an electron (beta particle) is emitted. The atomic number increases by 1; mass number stays the same.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zshssrd' },
   { id: 'phys-atomic-structure-phys-012', subject: 'physics', topic: 'atomic-structure-phys', topicLabel: 'Atomic Structure', question: 'What is the difference between contamination and irradiation?', options: ['There is no difference', 'Contamination means radioactive material gets on/in you; irradiation means you are exposed to radiation from a source at a distance', 'Irradiation is more dangerous', 'Contamination only happens in nuclear power stations'], correctIndex: 1, explanation: 'Contamination: radioactive atoms are on/in your body (ongoing exposure). Irradiation: you\'re exposed to radiation from an external source (exposure stops when you move away or the source is removed).', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zshssrd' },
-  { id: 'phys-atomic-structure-phys-013', subject: 'physics', topic: 'atomic-structure-phys', topicLabel: 'Atomic Structure', question: 'Americium-241 is used in smoke detectors. Which type of radiation does it emit?', options: ['Alpha', 'Beta', 'Gamma', 'X-rays'], correctIndex: 0, explanation: 'Smoke detectors use alpha radiation. Alpha particles ionise the air, creating a small current. Smoke particles absorb the alpha radiation, reducing the current and triggering the alarm.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zshssrd' },
+  {
+  "id": "phys-atomic-structure-phys-013",
+  "subject": "physics",
+  "topic": "atomic-structure-phys",
+  "topicLabel": "Atomic Structure",
+  "question": "Which emission from americium-241 is used to ionise the air in an ionisation smoke detector?",
+  "options": [
+    "Alpha",
+    "Beta",
+    "Gamma",
+    "X-rays"
+  ],
+  "correctIndex": 0,
+  "explanation": "Smoke detectors use alpha radiation. Alpha particles ionise the air, creating a small current. Smoke particles absorb the alpha radiation, reducing the current and triggering the alarm.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zshssrd"
+},
 
   // Electromagnetism (5 more)
   { id: 'phys-electromagnetism-008', subject: 'physics', topic: 'electromagnetism', topicLabel: 'Electromagnetism', question: 'Using Fleming\'s left-hand rule, the thumb represents:', options: ['The direction of the current', 'The direction of the magnetic field', 'The direction of the force (motion)', 'The direction of the voltage'], correctIndex: 2, explanation: 'Fleming\'s left-hand rule: thuMb = Motion (force), First finger = Field, seCond finger = Current. The thumb points in the direction the wire moves.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwkww6f' },
@@ -908,14 +1038,59 @@ export const physicsQuestions: Question[] = [
   { id: 'phys-electromagnetism-012', subject: 'physics', topic: 'electromagnetism', topicLabel: 'Electromagnetism', question: 'How does a loudspeaker convert electrical energy into sound?', options: ['A magnet heats the air', 'An alternating current in a coil creates a varying force on the coil (motor effect), making the cone vibrate and push air', 'Electricity directly vibrates the air molecules', 'The speaker contains a radio receiver'], correctIndex: 1, explanation: 'A coil attached to a paper cone sits in a magnetic field. Alternating current causes the coil to move back and forth (motor effect), vibrating the cone which pushes air to create sound waves.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwkww6f' },
 
   // Energy (5 more)
-  { id: 'phys-energy-phys-021', subject: 'physics', topic: 'energy-phys', topicLabel: 'Energy', question: 'Copper has a specific heat capacity of 390 J/kg°C and water has 4200 J/kg°C. What does this mean?', options: ['Copper heats up faster than water for the same energy input', 'Water heats up faster than copper', 'They heat up at the same rate', 'Copper holds more energy'], correctIndex: 0, explanation: 'A lower specific heat capacity means less energy is needed per kg per degree. Copper needs 390 J to raise 1 kg by 1°C, while water needs 4200 J — so copper heats up much faster.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zkjr6rd' },
+  {
+  "id": "phys-energy-phys-021",
+  "subject": "physics",
+  "topic": "energy-phys",
+  "topicLabel": "Energy",
+  "question": "Equal masses of copper and water receive equal amounts of energy, with negligible losses. Copper has c = 390 J/kg°C and water c = 4200 J/kg°C. Which has the larger temperature rise?",
+  "options": [
+    "Copper",
+    "Water",
+    "Both have the same rise",
+    "Neither changes temperature"
+  ],
+  "correctIndex": 0,
+  "explanation": "ΔT = E/(mc). With equal mass and energy input, copper has the larger temperature rise because its specific heat capacity is lower.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zkjr6rd"
+},
   { id: 'phys-energy-phys-022', subject: 'physics', topic: 'energy-phys', topicLabel: 'Energy', question: 'A Sankey diagram shows 1000 J input, 600 J useful output, and 400 J wasted. What is the efficiency?', options: ['40%', '60%', '100%', '150%'], correctIndex: 1, explanation: 'Efficiency = useful output ÷ total input × 100 = 600 ÷ 1000 × 100 = 60%.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zkjr6rd' },
   { id: 'phys-energy-phys-023', subject: 'physics', topic: 'energy-phys', topicLabel: 'Energy', question: 'A 3 kW heater runs for 2 hours. Electricity costs 30p per kWh. How much does it cost?', options: ['90p', '£1.80', '£6.00', '60p'], correctIndex: 1, explanation: 'Energy = power × time = 3 kW × 2 h = 6 kWh. Cost = 6 × 30p = 180p = £1.80.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zkjr6rd' },
-  { id: 'phys-energy-phys-024', subject: 'physics', topic: 'energy-phys', topicLabel: 'Energy', question: 'What is the main advantage of fossil fuels over renewable energy sources?', options: ['They produce no pollution', 'They are reliable — they can generate electricity on demand regardless of weather', 'They will never run out', 'They are cheaper to build'], correctIndex: 1, explanation: 'Fossil fuels can generate electricity whenever needed (reliable/on demand). Renewables like wind and solar depend on weather conditions and cannot always meet demand.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zkjr6rd' },
+  {
+  "id": "phys-energy-phys-024",
+  "subject": "physics",
+  "topic": "energy-phys",
+  "topicLabel": "Energy",
+  "question": "What advantage can a fuelled fossil-fuel power station have over wind turbines and solar panels when electricity is needed?",
+  "options": [
+    "It releases less carbon dioxide during operation",
+    "Its output can be controlled without needing wind or sunlight",
+    "It uses a resource that is replenished as it is consumed",
+    "It produces no waste heat during electricity generation"
+  ],
+  "correctIndex": 1,
+  "explanation": "A fuelled power station can provide controllable output without wind or sunlight, subject to operating limits. This comparison does not apply to every renewable source: hydroelectric storage and biomass can also provide controllable output.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zkjr6rd"
+},
   { id: 'phys-energy-phys-025', subject: 'physics', topic: 'energy-phys', topicLabel: 'Energy', question: 'Step-up transformers are used at power stations. What do they do?', options: ['Increase current, decrease voltage', 'Increase voltage, decrease current', 'Increase both voltage and current', 'Convert AC to DC'], correctIndex: 1, explanation: 'Step-up transformers increase voltage and decrease current for efficient transmission through the National Grid. This reduces energy losses in the cables (P = I²R).', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zkjr6rd' },
 
   // Forces additional (5 more)
-  { id: 'phys-forces-014', subject: 'physics', topic: 'forces', topicLabel: 'Forces', question: 'A spanner applies a force of 40 N at a distance of 0.3 m from a nut. What is the moment?', options: ['12 Nm', '40.3 Nm', '133 Nm', '0.0075 Nm'], correctIndex: 0, explanation: 'Moment = force × distance = 40 × 0.3 = 12 Nm. The moment is the turning effect of a force.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/ztmttv4' },
+  {
+  "id": "phys-forces-014",
+  "subject": "physics",
+  "topic": "forces",
+  "topicLabel": "Forces",
+  "question": "A force of 40 N acts on a spanner. The perpendicular distance from the nut to the line of action of the force is 0.3 m. What is the moment?",
+  "options": [
+    "12 Nm",
+    "40.3 Nm",
+    "133 Nm",
+    "0.0075 Nm"
+  ],
+  "correctIndex": 0,
+  "explanation": "Moment = force × perpendicular distance to the line of action = 40 × 0.3 = 12 N m.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/ztmttv4"
+},
   { id: 'phys-forces-015', subject: 'physics', topic: 'forces', topicLabel: 'Forces', question: 'If a driver gear with 20 teeth drives a gear with 40 teeth, the driven gear turns:', options: ['At the same speed', 'Twice as fast', 'Half as fast', 'Four times as fast'], correctIndex: 2, explanation: 'The driven gear has twice as many teeth (40 vs 20), so it turns half as fast. Gear ratio = driven teeth ÷ driver teeth = 40/20 = 2. It also turns in the opposite direction.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/ztmttv4' },
   { id: 'phys-forces-016', subject: 'physics', topic: 'forces', topicLabel: 'Forces', question: 'Which factors increase braking distance?', options: ['Worn tyres, wet road, higher speed', 'New tyres, dry road, lower speed', 'Lighter car, lower speed', 'Better brakes, dry road'], correctIndex: 0, explanation: 'Braking distance increases with: higher speed, wet/icy roads, worn tyres, worn brakes, and heavier vehicles. These all reduce friction or increase the energy that must be dissipated.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/ztmttv4' },
   { id: 'phys-forces-017', subject: 'physics', topic: 'forces', topicLabel: 'Forces', question: 'Stopping distance = thinking distance + braking distance. Which part is affected by the driver being tired?', options: ['Braking distance', 'Thinking distance', 'Both equally', 'Neither'], correctIndex: 1, explanation: 'Thinking distance depends on the driver\'s reaction time. Being tired, distracted, or under the influence of drugs/alcohol increases reaction time and therefore thinking distance.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/ztmttv4' },

@@ -277,16 +277,21 @@ export const chemistryQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zb4fjfr',
   },
   {
-    id: 'chem-quantitative-006',
-    subject: 'chemistry',
-    topic: 'quantitative',
-    topicLabel: 'Quantitative Chemistry',
-    question: 'If 10 g of solute is dissolved in 2 dm³ of water, what is the concentration?',
-    options: ['20 g/dm³', '5 g/dm³', '0.2 g/dm³', '12 g/dm³'],
-    correctIndex: 1,
-    explanation: 'Concentration = mass ÷ volume = 10 g ÷ 2 dm³ = 5 g/dm³.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zb4fjfr',
-  },
+  "id": "chem-quantitative-006",
+  "subject": "chemistry",
+  "topic": "quantitative",
+  "topicLabel": "Quantitative Chemistry",
+  "question": "10 g of solute is dissolved and made up to 2 dm³ of solution. What is the concentration?",
+  "options": [
+    "20 g/dm³",
+    "5 g/dm³",
+    "0.2 g/dm³",
+    "12 g/dm³"
+  ],
+  "correctIndex": 1,
+  "explanation": "Concentration = mass of solute ÷ final volume of solution = 10 ÷ 2 = 5 g/dm³.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zb4fjfr"
+},
   {
     id: 'chem-quantitative-007',
     subject: 'chemistry',
@@ -371,21 +376,21 @@ export const chemistryQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zt6ppbk',
   },
   {
-    id: 'chem-chemical-changes-006',
-    subject: 'chemistry',
-    topic: 'chemical-changes',
-    topicLabel: 'Chemical Changes',
-    question: 'What is oxidation in terms of oxygen?',
-    options: [
-      'The loss of oxygen',
-      'The gain of oxygen',
-      'The gain of electrons',
-      'The sharing of electrons',
-    ],
-    correctIndex: 1,
-    explanation: 'Oxidation is the gain of oxygen (or loss of electrons). Reduction is the opposite — the loss of oxygen (or gain of electrons). Remember OIL RIG: Oxidation Is Loss, Reduction Is Gain.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zt6ppbk',
-  },
+  "id": "chem-chemical-changes-006",
+  "subject": "chemistry",
+  "topic": "chemical-changes",
+  "topicLabel": "Chemical Changes",
+  "question": "What is oxidation in terms of oxygen?",
+  "options": [
+    "The loss of oxygen",
+    "The gain of oxygen",
+    "The gain of electrons",
+    "The sharing of electrons"
+  ],
+  "correctIndex": 1,
+  "explanation": "In terms of oxygen, oxidation is gain of oxygen and reduction is loss of oxygen. For example, removing oxygen from a metal oxide reduces it to the metal.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zt6ppbk"
+},
   {
     id: 'chem-chemical-changes-007',
     subject: 'chemistry',
@@ -683,21 +688,21 @@ export const chemistryQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z9488mn',
   },
   {
-    id: 'chem-organic-005',
-    subject: 'chemistry',
-    topic: 'organic',
-    topicLabel: 'Organic Chemistry',
-    question: 'What happens during cracking of hydrocarbons?',
-    options: [
-      'Small molecules are joined together',
-      'Long-chain hydrocarbons are broken down into shorter, more useful molecules',
-      'Crude oil is separated into fractions',
-      'Hydrocarbons are dissolved in water',
-    ],
-    correctIndex: 1,
-    explanation: 'Cracking breaks down large, less useful hydrocarbon molecules into smaller, more useful ones (such as petrol and alkenes). It requires high temperatures or a catalyst.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z9488mn',
-  },
+  "id": "chem-organic-005",
+  "subject": "chemistry",
+  "topic": "organic",
+  "topicLabel": "Organic Chemistry",
+  "question": "What happens during cracking of hydrocarbons?",
+  "options": [
+    "Small molecules are joined together",
+    "Long-chain hydrocarbons are broken down into shorter, more useful molecules",
+    "Crude oil is separated into fractions",
+    "Hydrocarbons are dissolved in water"
+  ],
+  "correctIndex": 1,
+  "explanation": "Cracking breaks long-chain hydrocarbons into shorter hydrocarbons, including useful alkenes. Catalytic cracking uses vaporised feedstock passed over a hot catalyst. Steam cracking also needs a high temperature; a catalyst does not replace heating.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z9488mn"
+},
   {
     id: 'chem-organic-006',
     subject: 'chemistry',
@@ -744,21 +749,21 @@ export const chemistryQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zgbccj6',
   },
   {
-    id: 'chem-analysis-002',
-    subject: 'chemistry',
-    topic: 'analysis',
-    topicLabel: 'Chemical Analysis',
-    question: 'In paper chromatography, what does it mean if a substance produces only one spot?',
-    options: [
-      'It is a mixture',
-      'It is a pure substance',
-      'It is insoluble',
-      'It has not moved',
-    ],
-    correctIndex: 1,
-    explanation: 'A pure substance produces only one spot on a chromatogram because it contains only one component. A mixture would separate into multiple spots.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zgbccj6',
-  },
+  "id": "chem-analysis-002",
+  "subject": "chemistry",
+  "topic": "analysis",
+  "topicLabel": "Chemical Analysis",
+  "question": "A dissolved sample produces one spot in paper chromatography. What does this suggest?",
+  "options": [
+    "It contains several separated components",
+    "It may be pure",
+    "It must be insoluble in the solvent",
+    "It must contain two different dyes"
+  ],
+  "correctIndex": 1,
+  "explanation": "One spot suggests a pure substance, but is not proof: different components can move together or fail to separate in that solvent.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zgbccj6"
+},
   {
     id: 'chem-analysis-003',
     subject: 'chemistry',
@@ -948,14 +953,44 @@ export const chemistryQuestions: Question[] = [
   { id: 'chem-bonding-009', subject: 'chemistry', topic: 'bonding', topicLabel: 'Bonding & Structure', question: 'Why can graphite conduct electricity but diamond cannot?', options: ['Graphite contains ions', 'Graphite has delocalised electrons that are free to move', 'Diamond is too hard', 'Graphite is a metal'], correctIndex: 1, explanation: 'In graphite, each carbon bonds to three others, leaving one electron per atom delocalised (free to move). These free electrons can carry electrical current. In diamond, all four electrons are used in bonding.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z33rrwx' },
   { id: 'chem-bonding-010', subject: 'chemistry', topic: 'bonding', topicLabel: 'Bonding & Structure', question: 'Why do simple molecular substances like water have low boiling points?', options: ['The covalent bonds within molecules are weak', 'The intermolecular forces (forces between molecules) are weak', 'They contain ionic bonds', 'They have no bonds at all'], correctIndex: 1, explanation: 'The covalent bonds within molecules are strong, but the intermolecular forces between molecules are weak. Only a small amount of energy is needed to overcome these weak forces, so boiling points are low.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z33rrwx' },
   { id: 'chem-bonding-011', subject: 'chemistry', topic: 'bonding', topicLabel: 'Bonding & Structure', question: 'Why can metals conduct electricity?', options: ['They contain covalent bonds', 'They have delocalised electrons that are free to move through the structure', 'They contain molecules', 'They have a low melting point'], correctIndex: 1, explanation: 'In metallic bonding, outer electrons are delocalised and form a "sea" of free electrons. These electrons can flow through the structure, carrying an electrical current.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z33rrwx' },
-  { id: 'chem-bonding-012', subject: 'chemistry', topic: 'bonding', topicLabel: 'Bonding & Structure', question: 'What type of bonding is found in poly(ethene)?', options: ['Ionic bonding', 'Metallic bonding', 'Covalent bonding', 'Hydrogen bonding'], correctIndex: 2, explanation: 'Poly(ethene) is a polymer — a long chain molecule formed from many ethene monomers joined together by covalent bonds. It is a simple molecular substance.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z33rrwx' },
+  {
+  "id": "chem-bonding-012",
+  "subject": "chemistry",
+  "topic": "bonding",
+  "topicLabel": "Bonding & Structure",
+  "question": "What type of bonding is found in poly(ethene)?",
+  "options": [
+    "Ionic bonding",
+    "Metallic bonding",
+    "Covalent bonding",
+    "Hydrogen bonding"
+  ],
+  "correctIndex": 2,
+  "explanation": "Poly(ethene) consists of very large polymer molecules with covalent bonds between their atoms. It is not a substance made of small simple molecules.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z33rrwx"
+},
 
   // Chemical changes (5 more)
   { id: 'chem-chemical-changes-009', subject: 'chemistry', topic: 'chemical-changes', topicLabel: 'Chemical Changes', question: 'What are the products when zinc reacts with hydrochloric acid?', options: ['Zinc chloride + water', 'Zinc chloride + hydrogen', 'Zinc oxide + hydrogen', 'Zinc sulfate + hydrogen'], correctIndex: 1, explanation: 'Metal + acid → salt + hydrogen. Zinc + hydrochloric acid → zinc chloride + hydrogen. The salt name comes from the metal (zinc) and the acid (hydrochloric = chloride).', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zt6ppbk' },
   { id: 'chem-chemical-changes-010', subject: 'chemistry', topic: 'chemical-changes', topicLabel: 'Chemical Changes', question: 'What are the products when calcium carbonate reacts with sulfuric acid?', options: ['Calcium sulfate + water + carbon dioxide', 'Calcium chloride + water', 'Calcium sulfate + hydrogen', 'Calcium carbonate + oxygen'], correctIndex: 0, explanation: 'Carbonate + acid → salt + water + carbon dioxide. Calcium carbonate + sulfuric acid → calcium sulfate + water + CO2.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zt6ppbk' },
   { id: 'chem-chemical-changes-011', subject: 'chemistry', topic: 'chemical-changes', topicLabel: 'Chemical Changes', question: 'During the electrolysis of copper sulfate solution using copper electrodes, what forms at the cathode?', options: ['Oxygen gas', 'Hydrogen gas', 'Copper metal', 'Sulfur'], correctIndex: 2, explanation: 'During electrolysis of copper sulfate, copper ions (Cu2+) are attracted to the negative cathode where they gain electrons and are deposited as copper metal.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zt6ppbk' },
   { id: 'chem-chemical-changes-012', subject: 'chemistry', topic: 'chemical-changes', topicLabel: 'Chemical Changes', question: 'Iron is more reactive than copper. What happens when iron is added to copper sulfate solution?', options: ['Nothing — no reaction occurs', 'The iron displaces the copper, forming iron sulfate and copper', 'The copper displaces the iron', 'Both metals dissolve'], correctIndex: 1, explanation: 'A more reactive metal displaces a less reactive one from its compound. Iron displaces copper: Fe + CuSO4 → FeSO4 + Cu. The solution changes from blue to green.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zt6ppbk' },
-  { id: 'chem-chemical-changes-013', subject: 'chemistry', topic: 'chemical-changes', topicLabel: 'Chemical Changes', question: 'What is the pH of a neutral solution?', options: ['0', '7', '14', '1'], correctIndex: 1, explanation: 'pH 7 is neutral (pure water). Below 7 is acidic (the lower the number, the stronger the acid). Above 7 is alkaline.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zt6ppbk' },
+  {
+  "id": "chem-chemical-changes-013",
+  "subject": "chemistry",
+  "topic": "chemical-changes",
+  "topicLabel": "Chemical Changes",
+  "question": "What is the pH of a neutral solution?",
+  "options": [
+    "0",
+    "7",
+    "14",
+    "1"
+  ],
+  "correctIndex": 1,
+  "explanation": "At room temperature pH 7 is neutral, below 7 acidic and above 7 alkaline. Lower pH indicates a higher hydrogen-ion concentration. Acid strength describes the degree of ionisation, not simply the pH.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zt6ppbk"
+},
 
   // Quantitative (5 more)
   { id: 'chem-quantitative-008', subject: 'chemistry', topic: 'quantitative', topicLabel: 'Quantitative Chemistry', question: 'What is the relative formula mass (Mr) of water (H2O)? [Ar: H=1, O=16]', options: ['17', '18', '10', '20'], correctIndex: 1, explanation: 'Mr of H2O = (2 × 1) + 16 = 18. Add up the relative atomic masses of all atoms in the formula.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zb4fjfr' },
@@ -967,12 +1002,57 @@ export const chemistryQuestions: Question[] = [
   // Rates (5 more)
   { id: 'chem-rates-008', subject: 'chemistry', topic: 'rates', topicLabel: 'Rates of Reaction', question: 'On a graph of gas volume produced against time, how can you tell when a reaction has finished?', options: ['The line goes down', 'The line becomes horizontal (flat)', 'The line gets steeper', 'The line goes to zero'], correctIndex: 1, explanation: 'When the line levels off (becomes horizontal), no more gas is being produced, meaning the reaction has finished — one of the reactants has been used up.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwdqqhv' },
   { id: 'chem-rates-009', subject: 'chemistry', topic: 'rates', topicLabel: 'Rates of Reaction', question: 'How does a catalyst speed up a reaction?', options: ['It increases the temperature', 'It provides an alternative reaction pathway with a lower activation energy', 'It increases the concentration of reactants', 'It is used up during the reaction'], correctIndex: 1, explanation: 'A catalyst provides an alternative reaction pathway with a lower activation energy. It is not used up in the reaction and can be reused.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwdqqhv' },
-  { id: 'chem-rates-010', subject: 'chemistry', topic: 'rates', topicLabel: 'Rates of Reaction', question: 'Which method could you use to measure the rate of a reaction that produces a gas?', options: ['Measure the colour change', 'Collect the gas in a syringe and measure the volume at regular intervals', 'Measure the temperature of the room', 'Count the number of bubbles in the liquid'], correctIndex: 1, explanation: 'Collecting gas in a gas syringe and recording the volume at regular time intervals allows you to plot a graph and calculate the rate of reaction.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwdqqhv' },
+  {
+  "id": "chem-rates-010",
+  "subject": "chemistry",
+  "topic": "rates",
+  "topicLabel": "Rates of Reaction",
+  "question": "Which method directly measures the volume of gas produced at timed intervals during a reaction?",
+  "options": [
+    "Measure the colour change",
+    "Collect the gas in a syringe and measure the volume at regular intervals",
+    "Measure the temperature of the room",
+    "Count the number of bubbles in the liquid"
+  ],
+  "correctIndex": 1,
+  "explanation": "Collecting gas in a gas syringe and recording the volume at regular time intervals allows you to plot a graph and calculate the rate of reaction.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwdqqhv"
+},
   { id: 'chem-rates-011', subject: 'chemistry', topic: 'rates', topicLabel: 'Rates of Reaction', question: 'Why does increasing the concentration of a solution increase the rate of reaction?', options: ['The particles move faster', 'There are more particles in the same volume, so collisions are more frequent', 'The activation energy decreases', 'The temperature increases'], correctIndex: 1, explanation: 'Higher concentration means more reactant particles in the same volume. This increases the frequency of collisions between particles, increasing the rate.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwdqqhv' },
-  { id: 'chem-rates-012', subject: 'chemistry', topic: 'rates', topicLabel: 'Rates of Reaction', question: 'On a rate of reaction graph, which line represents a faster reaction?', options: ['A line with a gentle slope', 'A line with a steeper slope', 'A horizontal line', 'A line that goes downward'], correctIndex: 1, explanation: 'A steeper slope on a volume-time or mass-time graph means more product is formed in less time — the reaction is faster. A gentle slope means it\'s slower.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwdqqhv' },
+  {
+  "id": "chem-rates-012",
+  "subject": "chemistry",
+  "topic": "rates",
+  "topicLabel": "Rates of Reaction",
+  "question": "Two reactions produce gas. On graphs of product gas volume against time with identical scales, which line shows the greater initial rate?",
+  "options": [
+    "A gently rising line",
+    "A steeply rising line",
+    "A horizontal line",
+    "A line that remains at zero"
+  ],
+  "correctIndex": 1,
+  "explanation": "Initial rate is the initial gradient of the product gas volume–time graph. A steeper positive gradient means more gas is produced per second.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwdqqhv"
+},
 
   // Energy changes (5 more)
-  { id: 'chem-energy-changes-008', subject: 'chemistry', topic: 'energy-changes', topicLabel: 'Energy Changes', question: 'On a reaction profile diagram, what does the "hump" between reactants and products represent?', options: ['The energy released', 'The activation energy', 'The temperature', 'The catalyst'], correctIndex: 1, explanation: 'The hump (peak) on a reaction profile represents the activation energy — the minimum energy needed for the reaction to start. Reactant particles must have at least this much energy to react.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z27xxfr' },
+  {
+  "id": "chem-energy-changes-008",
+  "subject": "chemistry",
+  "topic": "energy-changes",
+  "topicLabel": "Energy Changes",
+  "question": "On a reaction profile, an upward vertical arrow runs from the reactant energy level to the peak. What does this arrow measure?",
+  "options": [
+    "The energy released",
+    "The activation energy",
+    "The temperature",
+    "The catalyst"
+  ],
+  "correctIndex": 1,
+  "explanation": "Activation energy is the energy difference between the reactants and the peak, not the absolute height of the peak above zero.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z27xxfr"
+},
   { id: 'chem-energy-changes-009', subject: 'chemistry', topic: 'energy-changes', topicLabel: 'Energy Changes', question: 'A reaction causes the temperature of the surroundings to decrease. What type of reaction is this?', options: ['Exothermic', 'Endothermic', 'Neutralisation', 'Combustion'], correctIndex: 1, explanation: 'An endothermic reaction takes in energy from the surroundings, causing the temperature to decrease. The opposite of exothermic which releases energy and increases temperature.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z27xxfr' },
   { id: 'chem-energy-changes-010', subject: 'chemistry', topic: 'energy-changes', topicLabel: 'Energy Changes', question: 'Is bond breaking an exothermic or endothermic process?', options: ['Exothermic — it releases energy', 'Endothermic — it requires energy', 'Neither — no energy change occurs', 'It depends on the bond'], correctIndex: 1, explanation: 'Breaking bonds always requires energy (endothermic). Making bonds always releases energy (exothermic). The overall energy change depends on which is greater.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z27xxfr' },
   { id: 'chem-energy-changes-011', subject: 'chemistry', topic: 'energy-changes', topicLabel: 'Energy Changes', question: 'Which of these is an example of an exothermic reaction used in everyday life?', options: ['Thermal decomposition', 'Photosynthesis', 'Hand warmers', 'Dissolving ammonium nitrate in water'], correctIndex: 2, explanation: 'Hand warmers use an exothermic reaction (often iron oxidation) to release heat. Thermal decomposition, photosynthesis, and dissolving ammonium nitrate are endothermic.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z27xxfr' },
@@ -981,7 +1061,22 @@ export const chemistryQuestions: Question[] = [
   // Organic (5 more)
   { id: 'chem-organic-008', subject: 'chemistry', topic: 'organic', topicLabel: 'Organic Chemistry', question: 'As hydrocarbon molecules get larger, what happens to their boiling points?', options: ['They decrease', 'They increase', 'They stay the same', 'They become unpredictable'], correctIndex: 1, explanation: 'Larger hydrocarbons have stronger intermolecular forces between their longer chains, so more energy is needed to separate them. This means higher boiling points.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z9488mn' },
   { id: 'chem-organic-009', subject: 'chemistry', topic: 'organic', topicLabel: 'Organic Chemistry', question: 'What are the products of complete combustion of a hydrocarbon?', options: ['Carbon monoxide + water', 'Carbon dioxide + water', 'Carbon + water', 'Carbon dioxide + hydrogen'], correctIndex: 1, explanation: 'Complete combustion (with plenty of oxygen): hydrocarbon + oxygen → carbon dioxide + water. Incomplete combustion produces carbon monoxide or soot instead.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z9488mn' },
-  { id: 'chem-organic-010', subject: 'chemistry', topic: 'organic', topicLabel: 'Organic Chemistry', question: 'What is cracking used for?', options: ['To join small molecules together', 'To break down large hydrocarbon molecules into smaller, more useful ones', 'To remove impurities from crude oil', 'To separate crude oil into fractions'], correctIndex: 1, explanation: 'Cracking breaks long-chain hydrocarbons into shorter, more useful molecules (like petrol and ethene). It requires high temperatures or a catalyst.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z9488mn' },
+  {
+  "id": "chem-organic-010",
+  "subject": "chemistry",
+  "topic": "organic",
+  "topicLabel": "Organic Chemistry",
+  "question": "What is cracking used for?",
+  "options": [
+    "To join small molecules together",
+    "To break down large hydrocarbon molecules into smaller, more useful ones",
+    "To remove impurities from crude oil",
+    "To separate crude oil into fractions"
+  ],
+  "correctIndex": 1,
+  "explanation": "Cracking breaks long-chain hydrocarbons into shorter hydrocarbons, including useful alkenes. Catalytic cracking uses vaporised feedstock passed over a hot catalyst. Steam cracking also needs a high temperature; a catalyst does not replace heating.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z9488mn"
+},
   { id: 'chem-organic-011', subject: 'chemistry', topic: 'organic', topicLabel: 'Organic Chemistry', question: 'What happens when bromine water is added to an alkene?', options: ['Nothing — no colour change', 'The bromine water turns from orange/brown to colourless', 'The bromine water turns blue', 'The alkene dissolves'], correctIndex: 1, explanation: 'Alkenes contain a C=C double bond which reacts with bromine water, decolourising it from orange/brown to colourless. This is the test for unsaturation.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z9488mn' },
   { id: 'chem-organic-012', subject: 'chemistry', topic: 'organic', topicLabel: 'Organic Chemistry', question: 'What type of polymerisation involves monomers with C=C double bonds opening up and joining together?', options: ['Condensation polymerisation', 'Addition polymerisation', 'Natural polymerisation', 'Ionic polymerisation'], correctIndex: 1, explanation: 'Addition polymerisation occurs when many monomers with C=C double bonds (like ethene) open up their double bonds and join together to form a long chain. No other substance is produced.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z9488mn' },
 

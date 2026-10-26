@@ -274,21 +274,21 @@ export const biologyQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z9kww6f',
   },
   {
-    id: 'bio-infection-005',
-    subject: 'biology',
-    topic: 'infection',
-    topicLabel: 'Infection & Response',
-    question: 'Why are antibiotics unable to treat viral infections?',
-    options: [
-      'Viruses are too small for antibiotics to target',
-      'Antibiotics only work on bacterial infections because viruses live inside cells',
-      'Viruses are not alive',
-      'Antibiotics are too strong for viruses',
-    ],
-    correctIndex: 1,
-    explanation: 'Antibiotics kill bacteria or prevent them from reproducing, but they cannot target viruses. Viruses live and reproduce inside human cells, making them difficult to destroy without damaging the host cells.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z9kww6f',
-  },
+  "id": "bio-infection-005",
+  "subject": "biology",
+  "topic": "infection",
+  "topicLabel": "Infection & Response",
+  "question": "Why do antibiotics that target bacterial structures or processes not treat viral infections?",
+  "options": [
+    "Viruses have a thicker bacterial cell wall",
+    "Viruses lack the bacterial targets of these drugs",
+    "Viruses carry out respiration faster than bacteria",
+    "Viruses are larger than the bacteria targeted"
+  ],
+  "correctIndex": 1,
+  "explanation": "Antibiotics target bacterial structures or processes, such as cell-wall production. Viruses lack these targets; being inside cells is not the defining reason.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z9kww6f"
+},
   {
     id: 'bio-infection-006',
     subject: 'biology',
@@ -373,16 +373,21 @@ export const biologyQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zgr997h',
   },
   {
-    id: 'bio-bioenergetics-003',
-    subject: 'biology',
-    topic: 'bioenergetics',
-    topicLabel: 'Bioenergetics',
-    question: 'Which factor does NOT affect the rate of photosynthesis?',
-    options: ['Light intensity', 'Carbon dioxide concentration', 'Temperature', 'Oxygen concentration'],
-    correctIndex: 3,
-    explanation: 'The rate of photosynthesis is affected by light intensity, carbon dioxide concentration, and temperature. Oxygen is a product of photosynthesis, not a factor that limits its rate.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zgr997h',
-  },
+  "id": "bio-bioenergetics-003",
+  "subject": "biology",
+  "topic": "bioenergetics",
+  "topicLabel": "Bioenergetics",
+  "question": "Which is NOT one of the three main limiting factors in the GCSE model of photosynthesis?",
+  "options": [
+    "Light intensity",
+    "Carbon dioxide concentration",
+    "Temperature",
+    "Oxygen concentration"
+  ],
+  "correctIndex": 3,
+  "explanation": "The GCSE model considers light intensity, carbon dioxide concentration and temperature as the three main limiting factors. Oxygen is a product of photosynthesis.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zgr997h"
+},
   {
     id: 'bio-bioenergetics-004',
     subject: 'biology',
@@ -577,16 +582,21 @@ export const biologyQuestions: Question[] = [
 
   // ─── Inheritance & Variation (8 questions) ─────────────────────────────────
   {
-    id: 'bio-inheritance-001',
-    subject: 'biology',
-    topic: 'inheritance',
-    topicLabel: 'Inheritance & Variation',
-    question: 'How many chromosomes are found in a normal human body cell?',
-    options: ['23', '46', '44', '48'],
-    correctIndex: 1,
-    explanation: 'Human body cells contain 46 chromosomes (23 pairs). One chromosome in each pair is inherited from each parent.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zvymrmn',
-  },
+  "id": "bio-inheritance-001",
+  "subject": "biology",
+  "topic": "inheritance",
+  "topicLabel": "Inheritance & Variation",
+  "question": "How many chromosomes are in a typical nucleated diploid human cell?",
+  "options": [
+    "23",
+    "46",
+    "44",
+    "48"
+  ],
+  "correctIndex": 1,
+  "explanation": "A typical nucleated diploid human cell has 46 chromosomes in 23 pairs. Gametes have 23 chromosomes; mature red blood cells have no nucleus.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zvymrmn"
+},
   {
     id: 'bio-inheritance-002',
     subject: 'biology',
@@ -604,16 +614,25 @@ export const biologyQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zvymrmn',
   },
   {
-    id: 'bio-inheritance-003',
-    subject: 'biology',
-    topic: 'inheritance',
-    topicLabel: 'Inheritance & Variation',
-    question: 'In a Punnett square cross between two heterozygous parents (Bb x Bb), what is the probability of offspring having the recessive phenotype (bb)?',
-    options: ['0%', '25%', '50%', '75%'],
-    correctIndex: 1,
-    explanation: 'When two heterozygous parents (Bb x Bb) are crossed, the offspring ratio is 1 BB : 2 Bb : 1 bb. This means there is a 25% (1 in 4) chance of the recessive phenotype (bb).',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zvymrmn',
-  },
+  "id": "bio-inheritance-003",
+  "subject": "biology",
+  "topic": "inheritance",
+  "topicLabel": "Inheritance & Variation",
+  "question": "Use the completed Punnett square shown. In a Punnett square cross between two heterozygous parents (Bb x Bb), what is the probability of offspring having the recessive phenotype (bb)?",
+  "options": [
+    "0%",
+    "25%",
+    "50%",
+    "75%"
+  ],
+  "correctIndex": 1,
+  "explanation": "When two heterozygous parents (Bb x Bb) are crossed, the offspring ratio is 1 BB : 2 Bb : 1 bb. This means there is a 25% (1 in 4) chance of the recessive phenotype (bb).",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zvymrmn",
+  "image": {
+    "src": "/science/punnett-bb.svg",
+    "alt": "Completed Punnett square: column gametes B and b; row gametes B and b. Top row: BB, Bb. Bottom row: Bb, bb."
+  }
+},
   {
     id: 'bio-inheritance-004',
     subject: 'biology',
@@ -825,16 +844,21 @@ export const biologyQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z2mttv4',
   },
   {
-    id: 'bio-organisation-010',
-    subject: 'biology',
-    topic: 'organisation',
-    topicLabel: 'Organisation',
-    question: 'What happens to an enzyme if the temperature gets too high?',
-    options: ['It works faster', 'It becomes denatured', 'It dissolves', 'It reproduces'],
-    correctIndex: 1,
-    explanation: 'Above the optimum temperature, the enzyme\'s active site changes shape (denatures) and the substrate can no longer fit. The enzyme stops working.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwj22nb',
-  },
+  "id": "bio-organisation-010",
+  "subject": "biology",
+  "topic": "organisation",
+  "topicLabel": "Organisation",
+  "question": "What happens to an enzyme if the temperature gets too high?",
+  "options": [
+    "It works faster",
+    "It becomes denatured",
+    "It dissolves",
+    "It reproduces"
+  ],
+  "correctIndex": 1,
+  "explanation": "At high temperatures, more enzyme molecules denature: their active sites change shape so substrates no longer fit. Activity falls as more molecules are affected; every molecule does not instantly stop just above the optimum.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwj22nb"
+},
   {
     id: 'bio-organisation-011',
     subject: 'biology',
@@ -938,38 +962,61 @@ export const biologyQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zyybb82',
   },
   {
-    id: 'bio-inheritance-009',
-    subject: 'biology',
-    topic: 'inheritance',
-    topicLabel: 'Inheritance & Variation',
-    question: 'Cystic fibrosis is caused by a recessive allele (f). Two parents who are both carriers (Ff) have a child. What is the probability the child will have cystic fibrosis?',
-    options: ['0%', '25%', '50%', '75%'],
-    correctIndex: 1,
-    explanation: 'From a Punnett square of Ff × Ff: FF, Ff, Ff, ff. Only ff (1 out of 4) has cystic fibrosis. That\'s a 25% (1 in 4) chance.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zvymrmn',
-  },
+  "id": "bio-inheritance-009",
+  "subject": "biology",
+  "topic": "inheritance",
+  "topicLabel": "Inheritance & Variation",
+  "question": "Use the completed Punnett square shown. Cystic fibrosis is caused by a recessive allele (f). Two parents who are both carriers (Ff) have a child. What is the probability the child will have cystic fibrosis?",
+  "options": [
+    "0%",
+    "25%",
+    "50%",
+    "75%"
+  ],
+  "correctIndex": 1,
+  "explanation": "From a Punnett square of Ff × Ff: FF, Ff, Ff, ff. Only ff (1 out of 4) has cystic fibrosis. That's a 25% (1 in 4) chance.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zvymrmn",
+  "image": {
+    "src": "/science/punnett-ff.svg",
+    "alt": "Completed Punnett square: column gametes F and f; row gametes F and f. Top row: FF, Ff. Bottom row: Ff, ff."
+  }
+},
   {
-    id: 'bio-inheritance-010',
-    subject: 'biology',
-    topic: 'inheritance',
-    topicLabel: 'Inheritance & Variation',
-    question: 'In a Punnett square cross between Bb and Bb, what proportion of offspring would you expect to show the dominant phenotype?',
-    options: ['25%', '50%', '75%', '100%'],
-    correctIndex: 2,
-    explanation: 'Bb × Bb gives: BB, Bb, Bb, bb. Three out of four (75%) have at least one dominant allele (B) and will show the dominant phenotype.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zvymrmn',
-  },
+  "id": "bio-inheritance-010",
+  "subject": "biology",
+  "topic": "inheritance",
+  "topicLabel": "Inheritance & Variation",
+  "question": "Use the completed Punnett square shown. In a Punnett square cross between Bb and Bb, what proportion of offspring would you expect to show the dominant phenotype?",
+  "options": [
+    "25%",
+    "50%",
+    "75%",
+    "100%"
+  ],
+  "correctIndex": 2,
+  "explanation": "Bb × Bb gives: BB, Bb, Bb, bb. Three out of four (75%) have at least one dominant allele (B) and will show the dominant phenotype.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zvymrmn",
+  "image": {
+    "src": "/science/punnett-bb.svg",
+    "alt": "Completed Punnett square: column gametes B and b; row gametes B and b. Top row: BB, Bb. Bottom row: Bb, bb."
+  }
+},
   {
-    id: 'bio-ecology-009',
-    subject: 'biology',
-    topic: 'ecology',
-    topicLabel: 'Ecology',
-    question: 'A student counts 8 daisies in a 0.5 m × 0.5 m quadrat. The field is 200 m². What is the estimated population of daisies?',
-    options: ['1,600', '3,200', '6,400', '800'],
-    correctIndex: 2,
-    explanation: 'Quadrat area = 0.5 × 0.5 = 0.25 m². Density = 8 ÷ 0.25 = 32 daisies per m². Estimated population = 32 × 200 = 6,400.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zxxhh39',
-  },
+  "id": "bio-ecology-009",
+  "subject": "biology",
+  "topic": "ecology",
+  "topicLabel": "Ecology",
+  "question": "The mean count from representative 0.5 m × 0.5 m quadrats is 8 daisies. The field is 200 m². What is the estimated population?",
+  "options": [
+    "1,600",
+    "3,200",
+    "6,400",
+    "800"
+  ],
+  "correctIndex": 2,
+  "explanation": "Quadrat area = 0.5 × 0.5 = 0.25 m². Density = 8 ÷ 0.25 = 32 daisies per m². Estimated population = 32 × 200 = 6,400.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zxxhh39"
+},
   {
     id: 'bio-ecology-010',
     subject: 'biology',
@@ -982,19 +1029,19 @@ export const biologyQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zxxhh39',
   },
   {
-    id: 'bio-ecology-011',
-    subject: 'biology',
-    topic: 'ecology',
-    topicLabel: 'Ecology',
-    question: 'How does deforestation contribute to climate change?',
-    options: [
-      'Trees release methane when cut down',
-      'Fewer trees means less CO2 is absorbed by photosynthesis, and burning trees releases stored CO2',
-      'Deforestation causes acid rain',
-      'It reduces the amount of oxygen in the atmosphere to zero',
-    ],
-    correctIndex: 1,
-    explanation: 'Trees absorb CO2 for photosynthesis. Cutting them down means less CO2 is removed from the atmosphere. If the wood is burned, the stored carbon is released as CO2, increasing greenhouse gases.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zxxhh39',
-  },
+  "id": "bio-ecology-011",
+  "subject": "biology",
+  "topic": "ecology",
+  "topicLabel": "Ecology",
+  "question": "How does deforestation contribute to climate change?",
+  "options": [
+    "Less carbon dioxide is released by respiration in the remaining trees",
+    "Less CO₂ is absorbed, and burning wood converts stored carbon into CO₂",
+    "Burning wood removes carbon dioxide from the atmosphere",
+    "The remaining trees stop absorbing carbon dioxide"
+  ],
+  "correctIndex": 1,
+  "explanation": "Trees store carbon in organic compounds. Burning wood converts that carbon into CO₂. Removing trees also reduces CO₂ uptake by photosynthesis.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zxxhh39"
+},
 ];
