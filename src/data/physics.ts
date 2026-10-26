@@ -30,16 +30,21 @@ export const physicsQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zkjr6rd',
   },
   {
-    id: 'phys-energy-phys-003',
-    subject: 'physics',
-    topic: 'energy-phys',
-    topicLabel: 'Energy',
-    question: 'Which of these is a non-renewable energy resource?',
-    options: ['Wind', 'Solar', 'Tidal', 'Natural gas'],
-    correctIndex: 3,
-    explanation: 'Natural gas is a fossil fuel and a non-renewable resource. Once used, it cannot be replaced within a human lifetime. Wind, solar, and tidal are all renewable.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zkjr6rd',
-  },
+  "id": "phys-energy-phys-003",
+  "subject": "physics",
+  "topic": "energy-phys",
+  "topicLabel": "Energy",
+  "question": "Which comparison of nuclear and gas-fired electricity generation is correct?",
+  "options": [
+    "Both rely on burning their fuel",
+    "Both have renewable fuel supplies",
+    "Both produce radioactive fuel waste",
+    "Neither uses renewable fuel"
+  ],
+  "correctIndex": 3,
+  "explanation": "Uranium and natural gas are finite, non-renewable fuels. Nuclear generation does not burn fuel and has low operational carbon dioxide emissions, but produces radioactive waste. Gas combustion releases carbon dioxide.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zkjr6rd"
+},
   {
     id: 'phys-energy-phys-004',
     subject: 'physics',
@@ -124,16 +129,21 @@ export const physicsQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zkjr6rd',
   },
   {
-    id: 'phys-energy-phys-011',
-    subject: 'physics',
-    topic: 'energy-phys',
-    topicLabel: 'Energy',
-    question: 'Which of these is a renewable energy resource?',
-    options: ['Coal', 'Oil', 'Wind', 'Nuclear'],
-    correctIndex: 2,
-    explanation: 'Wind is renewable because it will not run out. Coal, oil, and nuclear fuels are non-renewable — once used, they cannot be replaced within a human timescale.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zkjr6rd',
-  },
+  "id": "phys-energy-phys-011",
+  "subject": "physics",
+  "topic": "energy-phys",
+  "topicLabel": "Energy",
+  "question": "Which feature makes tidal generation more predictable than wind generation?",
+  "options": [
+    "Tides supply the same power all day",
+    "Tides do not need a suitable location",
+    "Tidal cycles can be forecast",
+    "Tidal equipment has no maintenance costs"
+  ],
+  "correctIndex": 2,
+  "explanation": "Tidal cycles are predictable, unlike short-term changes in wind speed. Tidal output still varies during each cycle, so predictable does not mean continuous or constant output.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zkjr6rd"
+},
   {
     id: 'phys-energy-phys-012',
     subject: 'physics',
@@ -146,16 +156,21 @@ export const physicsQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zkjr6rd',
   },
   {
-    id: 'phys-energy-phys-013',
-    subject: 'physics',
-    topic: 'energy-phys',
-    topicLabel: 'Energy',
-    question: 'A machine has an efficiency of 40%. If 500 J of energy is input, how much useful energy is output?',
-    options: ['40 J', '200 J', '460 J', '500 J'],
-    correctIndex: 1,
-    explanation: 'Useful output = efficiency × input = 0.40 × 500 = 200 J. The remaining 300 J is wasted, usually as heat.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zkjr6rd',
-  },
+  "id": "phys-energy-phys-013",
+  "subject": "physics",
+  "topic": "forces",
+  "topicLabel": "Forces",
+  "question": "A steady force of 60 N does 240 J of work moving a trolley along the force direction. Use W = Fs. How far does it move?",
+  "options": [
+    "0.25 m",
+    "4 m",
+    "180 m",
+    "14,400 m"
+  ],
+  "correctIndex": 1,
+  "explanation": "Rearrange W = Fs to give s = W/F = 240/60 = 4 m. Work done transfers energy; the distance must be measured along the force direction.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/ztmttv4"
+},
   {
     id: 'phys-energy-phys-014',
     subject: 'physics',
@@ -1082,7 +1097,22 @@ export const physicsQuestions: Question[] = [
   "explanation": "ΔT = E/(mc). With equal mass and energy input, copper has the larger temperature rise because its specific heat capacity is lower.",
   "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zkjr6rd"
 },
-  { id: 'phys-energy-phys-022', subject: 'physics', topic: 'energy-phys', topicLabel: 'Energy', question: 'A Sankey diagram shows 1000 J input, 600 J useful output, and 400 J wasted. What is the efficiency?', options: ['40%', '60%', '100%', '150%'], correctIndex: 1, explanation: 'Efficiency = useful output ÷ total input × 100 = 600 ÷ 1000 × 100 = 60%.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zkjr6rd' },
+  {
+  "id": "phys-energy-phys-022",
+  "subject": "physics",
+  "topic": "forces",
+  "topicLabel": "Forces",
+  "question": "A spring stays within its limit of proportionality. If its extension doubles, what happens to its stored energy? Use Ee = ½ke².",
+  "options": [
+    "It doubles",
+    "It quadruples",
+    "It stays unchanged",
+    "It halves"
+  ],
+  "correctIndex": 1,
+  "explanation": "For the same spring constant, stored energy is proportional to extension squared. Doubling the extension gives 2² = 4 times the elastic potential energy. This relation applies within the limit of proportionality.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/ztmttv4"
+},
   { id: 'phys-energy-phys-023', subject: 'physics', topic: 'energy-phys', topicLabel: 'Energy', question: 'A 3 kW heater runs for 2 hours. Electricity costs 30p per kWh. How much does it cost?', options: ['90p', '£1.80', '£6.00', '60p'], correctIndex: 1, explanation: 'Energy = power × time = 3 kW × 2 h = 6 kWh. Cost = 6 × 30p = 180p = £1.80.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zkjr6rd' },
   {
   "id": "phys-energy-phys-024",
