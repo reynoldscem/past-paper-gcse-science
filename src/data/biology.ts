@@ -1486,15 +1486,15 @@ export const biologyQuestions: Question[] = [
     "subject": "biology",
     "topic": "bioenergetics",
     "topicLabel": "Bioenergetics",
-    "question": "Why can breathing remain fast after strenuous exercise has ended?",
+    "question": "During vigorous exercise, why does an oxygen debt build up in the muscles?",
     "options": [
-      "To stop respiration",
-      "To lower oxygen uptake",
-      "To make more lactic acid",
-      "To help repay oxygen debt"
+      "Muscles stop respiring once glucose runs out",
+      "Muscles respire anaerobically when oxygen supply is too low",
+      "Muscles release extra oxygen into the blood",
+      "Muscles respire aerobically and produce lactic acid"
     ],
-    "correctIndex": 3,
-    "explanation": "Extra oxygen is needed after exercise to deal with the accumulated lactic acid and restore resting conditions.",
+    "correctIndex": 1,
+    "explanation": "If the muscles are not supplied with enough oxygen, they respire anaerobically. Glucose is only partly broken down, lactic acid builds up and an oxygen debt is created.",
     "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zgr997h"
   },
   {
@@ -1542,7 +1542,7 @@ export const biologyQuestions: Question[] = [
       "Insulin"
     ],
     "correctIndex": 2,
-    "explanation": "Follicle-stimulating hormone (FSH) causes an egg to mature in the ovary and stimulates oestrogen production.",
+    "explanation": "Follicle-stimulating hormone (FSH) causes an egg to mature in the ovary.",
     "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zyybb82"
   },
   {

@@ -986,7 +986,7 @@ export const chemistryQuestions: Question[] = [
   "subject": "chemistry",
   "topic": "chemical-changes",
   "topicLabel": "Chemical Changes",
-  "question": "What is the pH of a neutral solution?",
+  "question": "At room temperature, what is the pH of a neutral solution?",
   "options": [
     "0",
     "7",
@@ -994,7 +994,7 @@ export const chemistryQuestions: Question[] = [
     "1"
   ],
   "correctIndex": 1,
-  "explanation": "At room temperature pH 7 is neutral, below 7 acidic and above 7 alkaline. Lower pH indicates a higher hydrogen-ion concentration. Acid strength describes the degree of ionisation, not simply the pH.",
+  "explanation": "At room temperature pH 7 is neutral, below 7 acidic and above 7 alkaline. Lower pH indicates a higher hydrogen-ion concentration.",
   "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zt6ppbk"
 },
 
