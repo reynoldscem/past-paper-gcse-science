@@ -79,27 +79,37 @@ export const physicsQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zkjr6rd',
   },
   {
-    id: 'phys-energy-phys-007',
-    subject: 'physics',
-    topic: 'energy-phys',
-    topicLabel: 'Energy',
-    question: 'Which material is the best thermal insulator for reducing heat loss from a house?',
-    options: ['Metal sheet', 'Glass panel', 'Fibreglass wool', 'Copper pipe'],
-    correctIndex: 2,
-    explanation: 'Fibreglass wool traps pockets of air, which is a poor conductor of heat. This makes it an excellent thermal insulator used in loft insulation.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zkjr6rd',
-  },
+  "id": "phys-energy-phys-007",
+  "subject": "physics",
+  "topic": "energy-phys",
+  "topicLabel": "Energy",
+  "question": "Which material is the best thermal insulator for reducing heat loss from a house?",
+  "options": [
+    "Aluminium sheet",
+    "Solid glass panel",
+    "Fibreglass wool",
+    "Steel reinforcing mesh"
+  ],
+  "correctIndex": 2,
+  "explanation": "Fibreglass wool traps pockets of air, which is a poor conductor of heat. This makes it an excellent thermal insulator used in loft insulation.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zkjr6rd"
+},
   {
-    id: 'phys-energy-phys-008',
-    subject: 'physics',
-    topic: 'energy-phys',
-    topicLabel: 'Energy',
-    question: 'According to the law of conservation of energy, energy can be:',
-    options: ['Created but not destroyed', 'Destroyed but not created', 'Transferred or stored but not created or destroyed', 'Both created and destroyed'],
-    correctIndex: 2,
-    explanation: 'The law of conservation of energy states that energy cannot be created or destroyed, only transferred between stores or dissipated to the surroundings.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zkjr6rd',
-  },
+  "id": "phys-energy-phys-008",
+  "subject": "physics",
+  "topic": "energy-phys",
+  "topicLabel": "Energy",
+  "question": "According to the law of conservation of energy, energy can be:",
+  "options": [
+    "Created when chemical reactions release it",
+    "Destroyed when friction heats the surroundings",
+    "Transferred or stored, but not created or destroyed",
+    "Created during heating and destroyed again during cooling"
+  ],
+  "correctIndex": 2,
+  "explanation": "The law of conservation of energy states that energy cannot be created or destroyed, only transferred between stores or dissipated to the surroundings.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zkjr6rd"
+},
 
   {
   "id": "phys-energy-phys-009",
@@ -118,16 +128,21 @@ export const physicsQuestions: Question[] = [
   "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zkjr6rd"
 },
   {
-    id: 'phys-energy-phys-010',
-    subject: 'physics',
-    topic: 'energy-phys',
-    topicLabel: 'Energy',
-    question: 'A kettle is rated at 2000 W. How much energy does it transfer in 60 seconds?',
-    options: ['2000 J', '60 000 J', '120 000 J', '33 J'],
-    correctIndex: 2,
-    explanation: 'Energy = power × time. E = 2000 W × 60 s = 120 000 J. Power tells you how many joules of energy are transferred per second.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zkjr6rd',
-  },
+  "id": "phys-energy-phys-010",
+  "subject": "physics",
+  "topic": "energy-phys",
+  "topicLabel": "Energy",
+  "question": "A kettle is rated at 2000 W. How much energy does it transfer in 60 seconds?",
+  "options": [
+    "12 000 J",
+    "60 000 J",
+    "120 000 J",
+    "240 000 J"
+  ],
+  "correctIndex": 2,
+  "explanation": "Energy = power × time. E = 2000 W × 60 s = 120 000 J. Power tells you how many joules of energy are transferred per second.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zkjr6rd"
+},
   {
   "id": "phys-energy-phys-011",
   "subject": "physics",
@@ -135,10 +150,10 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Energy",
   "question": "Which feature makes tidal generation more predictable than wind generation?",
   "options": [
-    "Tides supply the same power all day",
-    "Tides do not need a suitable location",
+    "Tidal generators provide constant power throughout the day",
+    "Tidal output follows daily changes in electricity demand",
     "Tidal cycles can be forecast",
-    "Tidal equipment has no maintenance costs"
+    "Tidal turbines run throughout the full tidal cycle"
   ],
   "correctIndex": 2,
   "explanation": "Tidal cycles are predictable, unlike short-term changes in wind speed. Tidal output still varies during each cycle, so predictable does not mean continuous or constant output.",
@@ -164,24 +179,29 @@ export const physicsQuestions: Question[] = [
   "options": [
     "0.25 m",
     "4 m",
-    "180 m",
-    "14,400 m"
+    "40 m",
+    "2 m"
   ],
   "correctIndex": 1,
   "explanation": "Rearrange W = Fs to give s = W/F = 240/60 = 4 m. Work done transfers energy; the distance must be measured along the force direction.",
   "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/ztmttv4"
 },
   {
-    id: 'phys-energy-phys-014',
-    subject: 'physics',
-    topic: 'energy-phys',
-    topicLabel: 'Energy',
-    question: 'What does a thicker wall cavity insulation do?',
-    options: ['Increases the rate of heat loss', 'Reduces the rate of energy transfer through walls', 'Makes the house colder', 'Increases conduction through the wall'],
-    correctIndex: 1,
-    explanation: 'Cavity wall insulation traps air in small pockets, reducing convection and conduction through the walls. This slows the rate of energy transfer and keeps the house warmer.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zkjr6rd',
-  },
+  "id": "phys-energy-phys-014",
+  "subject": "physics",
+  "topic": "energy-phys",
+  "topicLabel": "Energy",
+  "question": "What does a thicker wall cavity insulation do?",
+  "options": [
+    "It increases conduction by trapping more air",
+    "It reduces heat transfer",
+    "It increases convection currents across the cavity",
+    "It reduces the energy needed to raise each room’s temperature"
+  ],
+  "correctIndex": 1,
+  "explanation": "Cavity wall insulation traps air in small pockets, reducing convection and conduction through the walls. This slows the rate of energy transfer and keeps the house warmer.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zkjr6rd"
+},
   {
     id: 'phys-energy-phys-015',
     subject: 'physics',
@@ -227,10 +247,10 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Energy",
   "question": "Which limitation affects the electricity output of a wind turbine during operation?",
   "options": [
-    "It emits carbon dioxide by burning fuel",
-    "It consumes a supply of coal",
+    "It needs a river with a large height drop",
+    "It must store fuel to cover periods of low demand",
     "It needs suitable wind speeds",
-    "It emits sulfur dioxide from combustion"
+    "It must heat water into steam before turning the generator"
   ],
   "correctIndex": 2,
   "explanation": "Wind turbines need suitable wind speeds. They do not emit greenhouse gases from fuel combustion during operation, but manufacture, construction and maintenance have life-cycle emissions.",
@@ -310,16 +330,21 @@ export const physicsQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zms2g2p',
   },
   {
-    id: 'phys-electricity-005',
-    subject: 'physics',
-    topic: 'electricity',
-    topicLabel: 'Electricity',
-    question: 'What colour is the earth wire in a UK three-pin plug?',
-    options: ['Brown', 'Blue', 'Green and yellow', 'Red'],
-    correctIndex: 2,
-    explanation: 'In a UK plug, the earth wire is green and yellow striped. The live wire is brown and the neutral wire is blue.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zms2g2p',
-  },
+  "id": "phys-electricity-005",
+  "subject": "physics",
+  "topic": "electricity",
+  "topicLabel": "Electricity",
+  "question": "What colour is the earth wire in a UK three-pin plug?",
+  "options": [
+    "Brown with a blue stripe",
+    "Blue with a brown stripe",
+    "Green and yellow",
+    "Brown with a green stripe"
+  ],
+  "correctIndex": 2,
+  "explanation": "In a UK plug, the earth wire is green and yellow striped. The live wire is brown and the neutral wire is blue.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zms2g2p"
+},
   {
     id: 'phys-electricity-006',
     subject: 'physics',
@@ -332,21 +357,21 @@ export const physicsQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zms2g2p',
   },
   {
-    id: 'phys-electricity-007',
-    subject: 'physics',
-    topic: 'electricity',
-    topicLabel: 'Electricity',
-    question: 'What is the role of a fuse in an electrical circuit?',
-    options: [
-      'To increase the current in the circuit',
-      'To store electrical energy',
-      'To melt and break the circuit if the current is too high',
-      'To change the voltage of the supply',
-    ],
-    correctIndex: 2,
-    explanation: 'A fuse contains a thin wire that melts if too much current flows through it, breaking the circuit and protecting the device and wiring from damage or fire.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zms2g2p',
-  },
+  "id": "phys-electricity-007",
+  "subject": "physics",
+  "topic": "electricity",
+  "topicLabel": "Electricity",
+  "question": "What is the role of a fuse in an electrical circuit?",
+  "options": [
+    "To reduce the supply voltage when the current is large",
+    "To store excess charge until the current falls",
+    "To melt and break an excessive current",
+    "To divert current around the appliance while it operates"
+  ],
+  "correctIndex": 2,
+  "explanation": "A fuse contains a thin wire that melts if too much current flows through it, breaking the circuit and protecting the device and wiring from damage or fire.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zms2g2p"
+},
   {
     id: 'phys-electricity-008',
     subject: 'physics',
@@ -383,16 +408,21 @@ export const physicsQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z3ybb82',
   },
   {
-    id: 'phys-particle-model-003',
-    subject: 'physics',
-    topic: 'particle-model',
-    topicLabel: 'Particle Model',
-    question: 'What is the name of the change of state from liquid to gas?',
-    options: ['Condensation', 'Freezing', 'Evaporation or boiling', 'Sublimation'],
-    correctIndex: 2,
-    explanation: 'When a liquid changes to a gas, it is called evaporation (from the surface at any temperature) or boiling (throughout the liquid at the boiling point).',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z3ybb82',
-  },
+  "id": "phys-particle-model-003",
+  "subject": "physics",
+  "topic": "particle-model",
+  "topicLabel": "Particle Model",
+  "question": "What is the name of the change of state from liquid to gas?",
+  "options": [
+    "Condensation or deposition",
+    "Freezing or solidification",
+    "Evaporation or boiling",
+    "Sublimation or deposition"
+  ],
+  "correctIndex": 2,
+  "explanation": "When a liquid changes to a gas, it is called evaporation (from the surface at any temperature) or boiling (throughout the liquid at the boiling point).",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z3ybb82"
+},
   {
   "id": "phys-particle-model-004",
   "subject": "physics",
@@ -410,21 +440,21 @@ export const physicsQuestions: Question[] = [
   "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z3ybb82"
 },
   {
-    id: 'phys-particle-model-005',
-    subject: 'physics',
-    topic: 'particle-model',
-    topicLabel: 'Particle Model',
-    question: 'What does specific heat capacity tell you about a material?',
-    options: [
-      'How quickly it conducts heat',
-      'How much energy is needed to raise 1 kg by 1°C',
-      'The temperature at which it melts',
-      'How dense the material is',
-    ],
-    correctIndex: 1,
-    explanation: 'Specific heat capacity is the amount of energy required to raise the temperature of 1 kg of a substance by 1°C. Water has a high specific heat capacity.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z3ybb82',
-  },
+  "id": "phys-particle-model-005",
+  "subject": "physics",
+  "topic": "particle-model",
+  "topicLabel": "Particle Model",
+  "question": "What does specific heat capacity tell you about a material?",
+  "options": [
+    "Energy to melt 1 kg without changing its temperature",
+    "Energy to warm 1 kg by 1°C",
+    "Energy to boil 1 kg without changing its temperature",
+    "Energy transferred each second through a 1 kg sample"
+  ],
+  "correctIndex": 1,
+  "explanation": "Specific heat capacity is the amount of energy required to raise the temperature of 1 kg of a substance by 1°C. Water has a high specific heat capacity.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z3ybb82"
+},
   {
   "id": "phys-particle-model-006",
   "subject": "physics",
@@ -432,10 +462,10 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Particle Model",
   "question": "What is specific latent heat of fusion?",
   "options": [
-    "Energy needed to boil 1 kg of a substance",
-    "Energy needed to change 1 kg from solid to liquid without temperature change",
-    "Energy needed to raise the temperature of 1 kg by 1°C",
-    "Energy needed to change 1 kg from gas to liquid"
+    "Energy per kg to boil at constant temperature",
+    "Energy per kg to melt at constant temperature",
+    "Energy per kg to raise the temperature of a solid by one degree",
+    "Energy per kg to cool a liquid by one degree without freezing"
   ],
   "correctIndex": 1,
   "explanation": "Specific latent heat of fusion is the energy absorbed per kilogram when a solid melts at its melting point without a temperature change. Freezing releases the same energy per kilogram.",
@@ -448,31 +478,31 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Particle Model",
   "question": "Why does the pressure of a gas increase when it is heated in a sealed rigid container?",
   "options": [
-    "The particles get bigger",
-    "The particles move faster and collide with the walls more often and with greater force",
-    "More gas particles are created",
-    "The container shrinks"
+    "The particles expand, leaving less space between them",
+    "Faster particles give more frequent, harder wall collisions",
+    "More particles form, each striking the walls at the same speed",
+    "The particles slow down and remain in contact with the walls longer"
   ],
   "correctIndex": 1,
   "explanation": "Heating a gas gives the particles more kinetic energy, so they move faster. This means they hit the walls of the container more frequently and with greater force, increasing the pressure.",
   "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z3ybb82"
 },
   {
-    id: 'phys-particle-model-008',
-    subject: 'physics',
-    topic: 'particle-model',
-    topicLabel: 'Particle Model',
-    question: 'What is internal energy?',
-    options: [
-      'The energy stored in a battery',
-      'The total kinetic and potential energy of all the particles in a system',
-      'The energy needed to break chemical bonds',
-      'The energy from the Sun',
-    ],
-    correctIndex: 1,
-    explanation: 'Internal energy is the total kinetic energy and potential energy of all the particles that make up a system. Heating a system increases its internal energy.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z3ybb82',
-  },
+  "id": "phys-particle-model-008",
+  "subject": "physics",
+  "topic": "particle-model",
+  "topicLabel": "Particle Model",
+  "question": "What is internal energy?",
+  "options": [
+    "The total kinetic energy of the particles, excluding their potential energy",
+    "Total particle kinetic and potential energy",
+    "The potential energy between particles, excluding their kinetic energy",
+    "The energy needed to raise the whole system’s temperature by one degree"
+  ],
+  "correctIndex": 1,
+  "explanation": "Internal energy is the total kinetic energy and potential energy of all the particles that make up a system. Heating a system increases its internal energy.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z3ybb82"
+},
 
   // ─── ATOMIC STRUCTURE (atomic-structure-phys) ─────────────────────────
   {
@@ -547,21 +577,21 @@ export const physicsQuestions: Question[] = [
   "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zshssrd"
 },
   {
-    id: 'phys-atomic-structure-phys-006',
-    subject: 'physics',
-    topic: 'atomic-structure-phys',
-    topicLabel: 'Atomic Structure',
-    question: 'What is the difference between contamination and irradiation?',
-    options: [
-      'There is no difference',
-      'Contamination is exposure to radiation; irradiation is having radioactive material on or inside you',
-      'Contamination means radioactive material is on or inside an object; irradiation means being exposed to radiation from a source',
-      'Contamination only applies to food; irradiation only applies to humans',
-    ],
-    correctIndex: 2,
-    explanation: 'Contamination occurs when radioactive material gets onto or into an object. Irradiation is exposure to radiation from an external source — the object does not become radioactive itself.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zshssrd',
-  },
+  "id": "phys-atomic-structure-phys-006",
+  "subject": "physics",
+  "topic": "atomic-structure-phys",
+  "topicLabel": "Atomic Structure",
+  "question": "What is the difference between contamination and irradiation?",
+  "options": [
+    "Contamination is heating; irradiation is cooling a radioactive source",
+    "Contamination is radiation exposure; irradiation is radioactive material present",
+    "Contamination is radioactive material present; irradiation is radiation exposure",
+    "Contamination makes stable nuclei decay; irradiation removes their neutrons"
+  ],
+  "correctIndex": 2,
+  "explanation": "Contamination occurs when radioactive material gets onto or into an object. Irradiation is exposure to radiation from an external source — the object does not become radioactive itself.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zshssrd"
+},
   {
     id: 'phys-atomic-structure-phys-007',
     scope: "separate",
@@ -575,22 +605,22 @@ export const physicsQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zshssrd',
   },
   {
-    id: 'phys-atomic-structure-phys-008',
-    scope: "separate",
-    subject: 'physics',
-    topic: 'atomic-structure-phys',
-    topicLabel: 'Atomic Structure',
-    question: 'In nuclear fission, what happens to a heavy nucleus?',
-    options: [
-      'It gains extra neutrons and becomes more stable',
-      'It splits into two smaller nuclei and releases energy',
-      'It combines with another nucleus',
-      'It emits only gamma radiation',
-    ],
-    correctIndex: 1,
-    explanation: 'Nuclear fission is the splitting of a large, unstable nucleus into two smaller nuclei, releasing a large amount of energy and usually two or three neutrons.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zshssrd',
-  },
+  "id": "phys-atomic-structure-phys-008",
+  "scope": "separate",
+  "subject": "physics",
+  "topic": "atomic-structure-phys",
+  "topicLabel": "Atomic Structure",
+  "question": "In nuclear fission, what happens to a heavy nucleus?",
+  "options": [
+    "It captures neutrons without splitting into smaller nuclei",
+    "It splits, releasing energy",
+    "It combines with another light nucleus to form a heavier one",
+    "It emits gamma radiation while its proton number increases"
+  ],
+  "correctIndex": 1,
+  "explanation": "Nuclear fission is the splitting of a large, unstable nucleus into two smaller nuclei, releasing a large amount of energy and usually two or three neutrons.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zshssrd"
+},
 
   // ─── FORCES ───────────────────────────────────────────────────────────
   {
@@ -616,21 +646,21 @@ export const physicsQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/ztmttv4',
   },
   {
-    id: 'phys-forces-003',
-    subject: 'physics',
-    topic: 'forces',
-    topicLabel: 'Forces',
-    question: 'A resultant force of 0 N acts on a moving object. What happens to the object?',
-    options: [
-      'It stops immediately',
-      'It accelerates',
-      'It continues at a constant velocity',
-      'It changes direction',
-    ],
-    correctIndex: 2,
-    explanation: 'Newton\'s first law states that if the resultant force on an object is zero, a stationary object stays still and a moving object continues at the same speed in the same direction.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/ztmttv4',
-  },
+  "id": "phys-forces-003",
+  "subject": "physics",
+  "topic": "forces",
+  "topicLabel": "Forces",
+  "question": "A resultant force of 0 N acts on a moving object. What happens to the object?",
+  "options": [
+    "It slows steadily because there is no resultant force",
+    "It speeds up steadily while keeping its direction",
+    "It keeps constant velocity",
+    "It moves at constant speed around a circular path"
+  ],
+  "correctIndex": 2,
+  "explanation": "Newton's first law states that if the resultant force on an object is zero, a stationary object stays still and a moving object continues at the same speed in the same direction.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/ztmttv4"
+},
   {
     id: 'phys-forces-004',
     subject: 'physics',
@@ -643,21 +673,21 @@ export const physicsQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/ztmttv4',
   },
   {
-    id: 'phys-forces-005',
-    subject: 'physics',
-    topic: 'forces',
-    topicLabel: 'Forces',
-    question: 'What two factors affect the stopping distance of a car?',
-    options: [
-      'Colour of the car and road type',
-      'Thinking distance and braking distance',
-      'Speed and direction',
-      'Engine power and fuel type',
-    ],
-    correctIndex: 1,
-    explanation: 'Stopping distance = thinking distance + braking distance. Thinking distance depends on reaction time; braking distance depends on factors like speed, road conditions, and brake condition.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/ztmttv4',
-  },
+  "id": "phys-forces-005",
+  "subject": "physics",
+  "topic": "forces",
+  "topicLabel": "Forces",
+  "question": "Which sum gives the total stopping distance of a car?",
+  "options": [
+    "Thinking time added to braking time",
+    "Thinking distance plus braking distance",
+    "Distance during braking minus distance during the reaction time",
+    "Speed before braking multiplied by the driver’s reaction time"
+  ],
+  "correctIndex": 1,
+  "explanation": "Stopping distance = thinking distance + braking distance. Thinking distance depends on reaction time; braking distance depends on factors like speed, road conditions, and brake condition.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/ztmttv4"
+},
   {
     id: 'phys-forces-006',
     subject: 'physics',
@@ -686,22 +716,22 @@ export const physicsQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/ztmttv4',
   },
   {
-    id: 'phys-forces-008',
-    scope: "higher",
-    subject: 'physics',
-    topic: 'forces',
-    topicLabel: 'Forces',
-    question: 'What is momentum?',
-    options: [
-      'The tendency of an object to float',
-      'The product of mass and velocity',
-      'The force needed to stop an object',
-      'The energy of a moving object',
-    ],
-    correctIndex: 1,
-    explanation: 'Momentum = mass × velocity (p = mv). It is measured in kg m/s. In a closed system, total momentum is conserved before and after a collision.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/ztmttv4',
-  },
+  "id": "phys-forces-008",
+  "scope": "higher",
+  "subject": "physics",
+  "topic": "forces",
+  "topicLabel": "Forces",
+  "question": "What is momentum?",
+  "options": [
+    "The product of force and distance",
+    "The product of mass and velocity",
+    "The force needed to stop an object",
+    "The energy of a moving object"
+  ],
+  "correctIndex": 1,
+  "explanation": "Momentum = mass × velocity (p = mv). It is measured in kg m/s. In a closed system, total momentum is conserved before and after a collision.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/ztmttv4"
+},
 
   // ─── WAVES ────────────────────────────────────────────────────────────
   {
@@ -810,120 +840,120 @@ export const physicsQuestions: Question[] = [
 
   // ─── ELECTROMAGNETISM ─────────────────────────────────────────────────
   {
-    id: 'phys-electromagnetism-001',
-    subject: 'physics',
-    topic: 'electromagnetism',
-    topicLabel: 'Electromagnetism',
-    question: 'What shape is the magnetic field around a bar magnet?',
-    options: [
-      'Straight parallel lines',
-      'Circular loops around the centre',
-      'Lines that go from the north pole to the south pole',
-      'Random scattered lines',
-    ],
-    correctIndex: 2,
-    explanation: 'The magnetic field lines around a bar magnet curve from the north pole to the south pole outside the magnet. They show the direction a north-seeking pole would point.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwkww6f',
-  },
+  "id": "phys-electromagnetism-001",
+  "subject": "physics",
+  "topic": "electromagnetism",
+  "topicLabel": "Electromagnetism",
+  "question": "What shape is the magnetic field around a bar magnet?",
+  "options": [
+    "Straight parallel lines equally spaced around the magnet",
+    "Concentric circles centred on the middle of the magnet",
+    "Curved lines from north to south outside it",
+    "Curved lines from south to north outside the magnet"
+  ],
+  "correctIndex": 2,
+  "explanation": "The magnetic field lines around a bar magnet curve from the north pole to the south pole outside the magnet. They show the direction a north-seeking pole would point.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwkww6f"
+},
   {
-    id: 'phys-electromagnetism-002',
-    subject: 'physics',
-    topic: 'electromagnetism',
-    topicLabel: 'Electromagnetism',
-    question: 'What is an electromagnet?',
-    options: [
-      'A permanent magnet made from iron',
-      'A coil of wire that becomes magnetic when a current flows through it',
-      'A type of battery',
-      'A device that measures electric current',
-    ],
-    correctIndex: 1,
-    explanation: 'An electromagnet is a coil of wire (solenoid) that produces a magnetic field when an electric current flows through it. Its magnetism can be switched on and off.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwkww6f',
-  },
+  "id": "phys-electromagnetism-002",
+  "subject": "physics",
+  "topic": "electromagnetism",
+  "topicLabel": "Electromagnetism",
+  "question": "What is an electromagnet?",
+  "options": [
+    "A piece of iron that stays magnetic without any current",
+    "A coil made magnetic by a current",
+    "A coil that stores charge when connected to a battery",
+    "A wire that becomes magnetic when voltage is zero and no current flows"
+  ],
+  "correctIndex": 1,
+  "explanation": "An electromagnet is a coil of wire (solenoid) that produces a magnetic field when an electric current flows through it. Its magnetism can be switched on and off.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwkww6f"
+},
   {
-    id: 'phys-electromagnetism-003',
-    subject: 'physics',
-    topic: 'electromagnetism',
-    topicLabel: 'Electromagnetism',
-    question: 'How can the strength of an electromagnet be increased?',
-    options: [
-      'By reducing the number of coils',
-      'By increasing the current and adding an iron core',
-      'By using thinner wire',
-      'By using a plastic core',
-    ],
-    correctIndex: 1,
-    explanation: 'An electromagnet can be made stronger by increasing the current, increasing the number of coils, and adding a soft iron core inside the solenoid.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwkww6f',
-  },
+  "id": "phys-electromagnetism-003",
+  "subject": "physics",
+  "topic": "electromagnetism",
+  "topicLabel": "Electromagnetism",
+  "question": "How can the strength of an electromagnet be increased?",
+  "options": [
+    "Reduce the current and replace iron with plastic",
+    "Increase current and add an iron core",
+    "Keep the current fixed and reduce the number of turns",
+    "Keep the coil unchanged and replace iron with wood"
+  ],
+  "correctIndex": 1,
+  "explanation": "An electromagnet can be made stronger by increasing the current, increasing the number of coils, and adding a soft iron core inside the solenoid.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwkww6f"
+},
   {
-    id: 'phys-electromagnetism-004',
-    scope: "higher",
-    subject: 'physics',
-    topic: 'electromagnetism',
-    topicLabel: 'Electromagnetism',
-    question: 'What is the motor effect?',
-    options: [
-      'A magnet attracting iron filings',
-      'A force on a current-carrying conductor in a magnetic field',
-      'The generation of electricity by spinning a coil',
-      'The heating of a wire by electric current',
-    ],
-    correctIndex: 1,
-    explanation: 'The motor effect occurs when a current-carrying conductor is placed in a magnetic field. The interaction of the two magnetic fields produces a force on the conductor, causing it to move.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwkww6f',
-  },
+  "id": "phys-electromagnetism-004",
+  "scope": "higher",
+  "subject": "physics",
+  "topic": "electromagnetism",
+  "topicLabel": "Electromagnetism",
+  "question": "What is the motor effect?",
+  "options": [
+    "The attraction between a permanent magnet and an unmagnetised iron object",
+    "Force on a current-carrying wire in a magnetic field",
+    "The production of a potential difference by moving a wire across a field",
+    "The increase in a wire’s temperature when electric current flows through it"
+  ],
+  "correctIndex": 1,
+  "explanation": "The motor effect occurs when a current-carrying conductor is placed in a magnetic field. The interaction of the two magnetic fields produces a force on the conductor, causing it to move.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwkww6f"
+},
   {
-    id: 'phys-electromagnetism-005',
-    subject: 'physics',
-    topic: 'electromagnetism',
-    topicLabel: 'Electromagnetism',
-    question: 'What does a transformer do?',
-    options: [
-      'Converts a.c. to d.c.',
-      'Stores electrical energy',
-      'Changes the voltage of an alternating current supply',
-      'Measures electrical resistance',
-    ],
-    correctIndex: 2,
-    explanation: 'A transformer changes the voltage of an alternating current (a.c.) supply. A step-up transformer increases voltage, while a step-down transformer decreases it.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwkww6f',
-  },
+  "id": "phys-electromagnetism-005",
+  "subject": "physics",
+  "topic": "electromagnetism",
+  "topicLabel": "Electromagnetism",
+  "question": "What does a transformer do?",
+  "options": [
+    "Changes alternating current into direct current",
+    "Stores electrical energy for later use by a circuit",
+    "Changes an a.c. supply’s voltage",
+    "Measures the resistance of a component in a circuit"
+  ],
+  "correctIndex": 2,
+  "explanation": "A transformer changes the voltage of an alternating current (a.c.) supply. A step-up transformer increases voltage, while a step-down transformer decreases it.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwkww6f"
+},
   {
-    id: 'phys-electromagnetism-006',
-    scope: "separate",
-    subject: 'physics',
-    topic: 'electromagnetism',
-    topicLabel: 'Electromagnetism',
-    question: 'In a loudspeaker, what causes the cone to vibrate and produce sound?',
-    options: [
-      'A permanent magnet is heated',
-      'An alternating current in a coil creates a changing force via the motor effect',
-      'Sound waves push the cone',
-      'Static electricity builds up on the cone',
-    ],
-    correctIndex: 1,
-    explanation: 'In a loudspeaker, an alternating current flows through a coil of wire attached to the cone. The coil is in a magnetic field, so the motor effect produces a force that varies with the current, making the cone vibrate.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwkww6f',
-  },
+  "id": "phys-electromagnetism-006",
+  "scope": "separate",
+  "subject": "physics",
+  "topic": "electromagnetism",
+  "topicLabel": "Electromagnetism",
+  "question": "In a loudspeaker, what causes the cone to vibrate and produce sound?",
+  "options": [
+    "The alternating current heats and cools the cone so that it expands",
+    "An alternating current produces a changing magnetic force",
+    "Sound waves from the magnet make the coil vibrate by induction",
+    "A steady force from a direct current pushes the cone back and forth"
+  ],
+  "correctIndex": 1,
+  "explanation": "In a loudspeaker, an alternating current flows through a coil of wire attached to the cone. The coil is in a magnetic field, so the motor effect produces a force that varies with the current, making the cone vibrate.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwkww6f"
+},
   {
-    id: 'phys-electromagnetism-007',
-    scope: "separate",
-    subject: 'physics',
-    topic: 'electromagnetism',
-    topicLabel: 'Electromagnetism',
-    question: 'What is electromagnetic induction?',
-    options: [
-      'Using a magnet to attract iron',
-      'Generating a potential difference by moving a conductor through a magnetic field or changing the magnetic field around a conductor',
-      'The heating effect of an electric current',
-      'Charging a battery using solar panels',
-    ],
-    correctIndex: 1,
-    explanation: 'Electromagnetic induction is the process of generating a potential difference (voltage) when a conductor moves through a magnetic field, or when the magnetic field around a conductor changes. This is how generators work.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwkww6f',
-  },
+  "id": "phys-electromagnetism-007",
+  "scope": "separate",
+  "subject": "physics",
+  "topic": "electromagnetism",
+  "topicLabel": "Electromagnetism",
+  "question": "What is electromagnetic induction?",
+  "options": [
+    "Producing a magnetic field by sending current through a stationary coil",
+    "Producing voltage by changing the magnetic field through a circuit",
+    "Producing thermal energy as current passes through a resistance wire",
+    "Producing charge by rubbing two insulating surfaces against each other"
+  ],
+  "correctIndex": 1,
+  "explanation": "Electromagnetic induction is the process of generating a potential difference (voltage) when a conductor moves through a magnetic field, or when the magnetic field around a conductor changes. This is how generators work.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwkww6f"
+},
 
   // ─── NEW QUESTIONS (BATCH 2) ──────────────────────────────────────────
 
@@ -945,14 +975,59 @@ export const physicsQuestions: Question[] = [
   "explanation": "Under the stated rule, 5 A is the lowest available rating above 4 A. Real selection also depends on cable rating and starting current. A 13 A fuse can protect appropriately rated wiring, but is not the choice under this rule.",
   "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zms2g2p"
 },
-  { id: 'phys-electricity-011', subject: 'physics', topic: 'electricity', topicLabel: 'Electricity', question: 'A heater has a power rating of 2000 W and runs on 230 V mains. What current does it draw?', options: ['About 4.3 A', 'About 8.7 A', 'About 115 A', '2000 A'], correctIndex: 1, explanation: 'P = I × V, so I = P ÷ V = 2000 ÷ 230 = 8.7 A. This is why heaters need a 13 A fuse.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zms2g2p' },
+  {
+  "id": "phys-electricity-011",
+  "subject": "physics",
+  "topic": "electricity",
+  "topicLabel": "Electricity",
+  "question": "A heater has a power rating of 2000 W and runs on 230 V mains. What current does it draw?",
+  "options": [
+    "About 4.3 A",
+    "About 8.7 A",
+    "About 17.4 A",
+    "About 0.12 A"
+  ],
+  "correctIndex": 1,
+  "explanation": "P = I × V, so I = P ÷ V = 2000 ÷ 230 = 8.7 A. This is why heaters need a 13 A fuse.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zms2g2p"
+},
   { id: 'phys-electricity-012', subject: 'physics', topic: 'electricity', topicLabel: 'Electricity', question: 'In a series circuit with two identical lamps, what happens if one lamp blows?', options: ['The other lamp gets brighter', 'The other lamp stays the same', 'The other lamp goes out too', 'The other lamp dims'], correctIndex: 2, explanation: 'In a series circuit there is only one path for current. If one lamp breaks, the circuit is broken and no current flows — both lamps go out.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zms2g2p' },
-  { id: 'phys-electricity-013', subject: 'physics', topic: 'electricity', topicLabel: 'Electricity', question: 'Why is electricity transmitted at very high voltages through the National Grid?', options: ['To make it travel faster', 'To reduce the current and therefore reduce energy lost as heat in the cables', 'To make it safer', 'Because power stations only produce high voltages'], correctIndex: 1, explanation: 'P = I × V. For the same power, higher voltage means lower current. Lower current means less energy wasted as heat in the cables (P = I²R). Step-up transformers increase the voltage.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zms2g2p' },
+  {
+  "id": "phys-electricity-013",
+  "subject": "physics",
+  "topic": "electricity",
+  "topicLabel": "Electricity",
+  "question": "Why is electricity transmitted at very high voltages through the National Grid?",
+  "options": [
+    "To increase current so the cables transmit energy more quickly",
+    "To reduce current and cable heating losses",
+    "To increase cable resistance and prevent current from escaping",
+    "To reduce transmitted power so that thinner cables can be used"
+  ],
+  "correctIndex": 1,
+  "explanation": "P = I × V. For the same power, higher voltage means lower current. Lower current means less energy wasted as heat in the cables (P = I²R). Step-up transformers increase the voltage.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zms2g2p"
+},
 
   // Forces (5 more)
   { id: 'phys-forces-009', subject: 'physics', topic: 'forces', topicLabel: 'Forces', question: 'A car has a mass of 1200 kg and accelerates at 2 m/s². What is the resultant force on the car?', options: ['600 N', '1200 N', '2400 N', '1202 N'], correctIndex: 2, explanation: 'F = m × a = 1200 × 2 = 2400 N. Newton\'s second law: force = mass × acceleration.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/ztmttv4' },
   { id: 'phys-forces-010', subject: 'physics', topic: 'forces', topicLabel: 'Forces', question: 'What is the weight of a 70 kg person on Earth? (g = 10 N/kg)', options: ['7 N', '70 N', '700 N', '7000 N'], correctIndex: 2, explanation: 'Weight = mass × gravitational field strength = 70 × 10 = 700 N. Weight is a force measured in newtons, not the same as mass.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/ztmttv4' },
-  { id: 'phys-forces-011', subject: 'physics', topic: 'forces', topicLabel: 'Forces', question: 'A skydiver reaches terminal velocity. What can be said about the forces acting on them?', options: ['Air resistance is greater than weight', 'Weight is greater than air resistance', 'Air resistance equals weight — forces are balanced', 'There are no forces acting'], correctIndex: 2, explanation: 'At terminal velocity, the skydiver\'s weight (downward) equals the air resistance (upward). The resultant force is zero, so acceleration is zero — they fall at constant speed.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/ztmttv4' },
+  {
+  "id": "phys-forces-011",
+  "subject": "physics",
+  "topic": "forces",
+  "topicLabel": "Forces",
+  "question": "A skydiver reaches terminal velocity. What can be said about the forces acting on them?",
+  "options": [
+    "Air resistance is greater than weight",
+    "Weight is greater than air resistance",
+    "Air resistance equals weight",
+    "Both air resistance and weight have fallen to zero"
+  ],
+  "correctIndex": 2,
+  "explanation": "At terminal velocity, the skydiver's weight (downward) equals the air resistance (upward). The resultant force is zero, so acceleration is zero — they fall at constant speed.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/ztmttv4"
+},
   { id: 'phys-forces-012', subject: 'physics', topic: 'forces', topicLabel: 'Forces', question: 'A force of 10 N pushes right and a force of 4 N pushes left on the same object. What is the resultant force?', options: ['14 N to the right', '14 N to the left', '6 N to the right', '6 N to the left'], correctIndex: 2, explanation: 'When forces act in opposite directions, subtract: 10 - 4 = 6 N. The resultant acts in the direction of the larger force (right).', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/ztmttv4' },
   {
   "id": "phys-forces-013",
@@ -984,21 +1059,81 @@ export const physicsQuestions: Question[] = [
     "Transverse",
     "Longitudinal",
     "Electromagnetic",
-    "Seismic only"
+    "Transverse electromagnetic"
   ],
   "correctIndex": 1,
   "explanation": "Sound waves are longitudinal — the vibrations are parallel to the direction of wave travel. The particles compress and rarefy along the direction of travel.",
   "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zsrndnb"
 },
   { id: 'phys-waves-011', subject: 'physics', topic: 'waves', topicLabel: 'Waves', question: 'Which type of electromagnetic wave is used in hospital X-ray machines?', options: ['Radio waves', 'Microwaves', 'X-rays', 'Infrared'], correctIndex: 2, explanation: 'X-rays pass through soft tissue but are absorbed by dense materials like bone. This creates shadow images used for medical diagnosis.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zsrndnb' },
-  { id: 'phys-waves-012', subject: 'physics', topic: 'waves', topicLabel: 'Waves', question: 'What is a danger of excessive exposure to ultraviolet (UV) radiation?', options: ['Hearing loss', 'Skin cancer and sunburn', 'Broken bones', 'Heart disease'], correctIndex: 1, explanation: 'UV radiation can damage skin cells and cause mutations in DNA, leading to sunburn and increased risk of skin cancer. It can also damage eyes.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zsrndnb' },
-  { id: 'phys-waves-013',
-    scope: "separate", subject: 'physics', topic: 'waves', topicLabel: 'Waves', question: 'What is ultrasound used for in medicine?', options: ['Treating cancer', 'Taking X-ray images', 'Pre-natal scanning to image a foetus', 'Measuring blood pressure'], correctIndex: 2, explanation: 'Ultrasound (high-frequency sound waves above 20,000 Hz) is reflected at boundaries between different tissues. The reflections are used to build up an image, e.g. of a baby during pregnancy.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zsrndnb' },
+  {
+  "id": "phys-waves-012",
+  "subject": "physics",
+  "topic": "waves",
+  "topicLabel": "Waves",
+  "question": "What is a danger of excessive exposure to ultraviolet (UV) radiation?",
+  "options": [
+    "Heating damage deep inside muscles",
+    "Sunburn and skin cancer",
+    "Damage to hearing from vibrating air",
+    "Electrical shocks from induced currents"
+  ],
+  "correctIndex": 1,
+  "explanation": "UV radiation can damage skin cells and cause mutations in DNA, leading to sunburn and increased risk of skin cancer. It can also damage eyes.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zsrndnb"
+},
+  {
+  "id": "phys-waves-013",
+  "scope": "separate",
+  "subject": "physics",
+  "topic": "waves",
+  "topicLabel": "Waves",
+  "question": "What is ultrasound used for in medicine?",
+  "options": [
+    "Destroying tumours with ionising radiation",
+    "Imaging bones using electromagnetic waves",
+    "Imaging a foetus",
+    "Measuring blood oxygen by visible-light absorption"
+  ],
+  "correctIndex": 2,
+  "explanation": "Ultrasound (high-frequency sound waves above 20,000 Hz) is reflected at boundaries between different tissues. The reflections are used to build up an image, e.g. of a baby during pregnancy.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zsrndnb"
+},
 
   // Particle model (5 more)
-  { id: 'phys-particle-model-009', subject: 'physics', topic: 'particle-model', topicLabel: 'Particle Model', question: 'A metal block has a mass of 500 g and a volume of 200 cm³. What is its density?', options: ['0.4 g/cm³', '2.5 g/cm³', '100 g/cm³', '700 g/cm³'], correctIndex: 1, explanation: 'Density = mass ÷ volume = 500 ÷ 200 = 2.5 g/cm³.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z3ybb82' },
+  {
+  "id": "phys-particle-model-009",
+  "subject": "physics",
+  "topic": "particle-model",
+  "topicLabel": "Particle Model",
+  "question": "A metal block has a mass of 500 g and a volume of 200 cm³. What is its density?",
+  "options": [
+    "0.4 g/cm³",
+    "2.5 g/cm³",
+    "0.25 g/cm³",
+    "25 g/cm³"
+  ],
+  "correctIndex": 1,
+  "explanation": "Density = mass ÷ volume = 500 ÷ 200 = 2.5 g/cm³.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z3ybb82"
+},
   { id: 'phys-particle-model-010', subject: 'physics', topic: 'particle-model', topicLabel: 'Particle Model', question: 'How much energy is needed to heat 2 kg of water by 5°C? (specific heat capacity of water = 4200 J/kg°C)', options: ['2100 J', '4200 J', '21 000 J', '42 000 J'], correctIndex: 3, explanation: 'E = m × c × ΔT = 2 × 4200 × 5 = 42,000 J.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z3ybb82' },
-  { id: 'phys-particle-model-011', subject: 'physics', topic: 'particle-model', topicLabel: 'Particle Model', question: 'Why does a gas exert pressure on the walls of its container?', options: ['The gas is heavy', 'Gas particles collide with the walls, exerting a force', 'The container is too small', 'Gravity pushes the gas down'], correctIndex: 1, explanation: 'Gas particles move randomly at high speeds. They collide with the container walls, and each collision exerts a tiny force. Billions of collisions per second create gas pressure.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z3ybb82' },
+  {
+  "id": "phys-particle-model-011",
+  "subject": "physics",
+  "topic": "particle-model",
+  "topicLabel": "Particle Model",
+  "question": "Why does a gas exert pressure on the walls of its container?",
+  "options": [
+    "Particles pull on the walls through gravitational attraction",
+    "Particle collisions exert forces",
+    "Particles resting on the base push sideways through a solid lattice",
+    "Particles transfer electric charge to the walls and repel each other"
+  ],
+  "correctIndex": 1,
+  "explanation": "Gas particles move randomly at high speeds. They collide with the container walls, and each collision exerts a tiny force. Billions of collisions per second create gas pressure.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z3ybb82"
+},
   {
   "id": "phys-particle-model-012",
   "subject": "physics",
@@ -1035,7 +1170,22 @@ export const physicsQuestions: Question[] = [
   "explanation": "In the usual alpha, beta and gamma comparison, gamma is the most penetrating. Thick lead or concrete attenuates it: its intensity is reduced rather than completely stopped. Alpha is stopped by paper and beta by a suitable thickness of aluminium.",
   "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zshssrd"
 },
-  { id: 'phys-atomic-structure-phys-011', subject: 'physics', topic: 'atomic-structure-phys', topicLabel: 'Atomic Structure', question: 'When an atom emits a beta particle, what happens to its nucleus?', options: ['It loses 2 protons and 2 neutrons', 'A neutron turns into a proton and an electron (the beta particle) is emitted', 'It gains a neutron', 'Nothing changes'], correctIndex: 1, explanation: 'In beta decay, a neutron in the nucleus converts into a proton, and an electron (beta particle) is emitted. The atomic number increases by 1; mass number stays the same.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zshssrd' },
+  {
+  "id": "phys-atomic-structure-phys-011",
+  "subject": "physics",
+  "topic": "atomic-structure-phys",
+  "topicLabel": "Atomic Structure",
+  "question": "When an atom emits a beta particle, what happens to its nucleus?",
+  "options": [
+    "Two protons and two neutrons are emitted together as an alpha particle",
+    "A neutron becomes a proton, emitting an electron",
+    "A proton becomes a neutron, reducing the nucleus’s atomic number",
+    "An electron leaves an outer shell without changing the nucleus"
+  ],
+  "correctIndex": 1,
+  "explanation": "In beta decay, a neutron in the nucleus converts into a proton, and an electron (beta particle) is emitted. The atomic number increases by 1; mass number stays the same.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zshssrd"
+},
   {
   "id": "phys-atomic-structure-phys-012",
   "subject": "physics",
@@ -1073,12 +1223,57 @@ export const physicsQuestions: Question[] = [
   // Electromagnetism (5 more)
   { id: 'phys-electromagnetism-008',
     scope: "higher", subject: 'physics', topic: 'electromagnetism', topicLabel: 'Electromagnetism', question: 'Using Fleming\'s left-hand rule, the thumb represents:', options: ['The direction of the current', 'The direction of the magnetic field', 'The direction of the force (motion)', 'The direction of the voltage'], correctIndex: 2, explanation: 'Fleming\'s left-hand rule: thuMb = Motion (force), First finger = Field, seCond finger = Current. The thumb points in the direction the wire moves.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwkww6f' },
-  { id: 'phys-electromagnetism-009', subject: 'physics', topic: 'electromagnetism', topicLabel: 'Electromagnetism', question: 'How can you increase the strength of an electromagnet?', options: ['Use a wooden core', 'Decrease the current', 'Increase the number of turns on the coil and increase the current', 'Remove the iron core'], correctIndex: 2, explanation: 'Electromagnet strength increases with: more turns of wire, higher current, and using a soft iron core. These all increase the magnetic field strength.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwkww6f' },
-  { id: 'phys-electromagnetism-010', subject: 'physics', topic: 'electromagnetism', topicLabel: 'Electromagnetism', question: 'What is a solenoid?', options: ['A type of battery', 'A coil of wire that produces a magnetic field when current flows through it', 'A device that measures voltage', 'A type of resistor'], correctIndex: 1, explanation: 'A solenoid is a coil of wire. When current flows through it, it produces a magnetic field pattern similar to a bar magnet, with a north and south pole at each end.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwkww6f' },
+  {
+  "id": "phys-electromagnetism-009",
+  "subject": "physics",
+  "topic": "electromagnetism",
+  "topicLabel": "Electromagnetism",
+  "question": "How can you increase the strength of an electromagnet?",
+  "options": [
+    "Replace the iron core with a non-magnetic material",
+    "Reduce both the current and number of turns",
+    "Increase turns and current",
+    "Increase the coil’s resistance while keeping supply voltage fixed"
+  ],
+  "correctIndex": 2,
+  "explanation": "Electromagnet strength increases with: more turns of wire, higher current, and using a soft iron core. These all increase the magnetic field strength.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwkww6f"
+},
+  {
+  "id": "phys-electromagnetism-010",
+  "subject": "physics",
+  "topic": "electromagnetism",
+  "topicLabel": "Electromagnetism",
+  "question": "What is a solenoid?",
+  "options": [
+    "A straight wire whose field has concentric circular lines",
+    "A coil carrying current to make a magnetic field",
+    "A permanent bar magnet that retains its field without current",
+    "A resistor that changes resistance when its temperature changes"
+  ],
+  "correctIndex": 1,
+  "explanation": "A solenoid is a coil of wire. When current flows through it, it produces a magnetic field pattern similar to a bar magnet, with a north and south pole at each end.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwkww6f"
+},
   { id: 'phys-electromagnetism-011',
     scope: "higher", subject: 'physics', topic: 'electromagnetism', topicLabel: 'Electromagnetism', question: 'In a simple DC motor, what makes the coil keep spinning in the same direction?', options: ['The magnets', 'The battery', 'The split-ring commutator', 'The axle'], correctIndex: 2, explanation: 'The split-ring commutator reverses the direction of current in the coil every half turn. This means the force always acts in the same rotational direction, keeping the coil spinning.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwkww6f' },
-  { id: 'phys-electromagnetism-012',
-    scope: "separate", subject: 'physics', topic: 'electromagnetism', topicLabel: 'Electromagnetism', question: 'How does a loudspeaker convert electrical energy into sound?', options: ['A magnet heats the air', 'An alternating current in a coil creates a varying force on the coil (motor effect), making the cone vibrate and push air', 'Electricity directly vibrates the air molecules', 'The speaker contains a radio receiver'], correctIndex: 1, explanation: 'A coil attached to a paper cone sits in a magnetic field. Alternating current causes the coil to move back and forth (motor effect), vibrating the cone which pushes air to create sound waves.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwkww6f' },
+  {
+  "id": "phys-electromagnetism-012",
+  "scope": "separate",
+  "subject": "physics",
+  "topic": "electromagnetism",
+  "topicLabel": "Electromagnetism",
+  "question": "How does a loudspeaker convert electrical energy into sound?",
+  "options": [
+    "Alternating current heats the air directly without moving the cone",
+    "A varying magnetic force vibrates the coil and cone",
+    "A constant magnetic force moves the cone continuously outwards",
+    "Alternating current changes the mass of the cone so that it vibrates"
+  ],
+  "correctIndex": 1,
+  "explanation": "A coil attached to a paper cone sits in a magnetic field. Alternating current causes the coil to move back and forth (motor effect), vibrating the cone which pushes air to create sound waves.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwkww6f"
+},
 
   // Energy (5 more)
   {
@@ -1121,16 +1316,31 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Energy",
   "question": "What advantage can a fuelled fossil-fuel power station have over wind turbines and solar panels when electricity is needed?",
   "options": [
-    "It releases less carbon dioxide during operation",
-    "Its output can be controlled without needing wind or sunlight",
-    "It uses a resource that is replenished as it is consumed",
-    "It produces no waste heat during electricity generation"
+    "It uses fuel that is naturally replenished as fast as it is burned",
+    "Its output is controllable without wind or sunlight",
+    "It produces less carbon dioxide during operation than a wind turbine",
+    "It converts all input chemical energy into useful electrical output"
   ],
   "correctIndex": 1,
   "explanation": "A fuelled power station can provide controllable output without wind or sunlight, subject to operating limits. This comparison does not apply to every renewable source: hydroelectric storage and biomass can also provide controllable output.",
   "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zkjr6rd"
 },
-  { id: 'phys-energy-phys-025', subject: 'physics', topic: 'energy-phys', topicLabel: 'Energy', question: 'Step-up transformers are used at power stations. What do they do?', options: ['Increase current, decrease voltage', 'Increase voltage, decrease current', 'Increase both voltage and current', 'Convert AC to DC'], correctIndex: 1, explanation: 'Step-up transformers increase voltage and decrease current for efficient transmission through the National Grid. This reduces energy losses in the cables (P = I²R).', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zkjr6rd' },
+  {
+  "id": "phys-energy-phys-025",
+  "subject": "physics",
+  "topic": "energy-phys",
+  "topicLabel": "Energy",
+  "question": "Step-up transformers are used at power stations. What do they do?",
+  "options": [
+    "Increase current and decrease voltage",
+    "Raise voltage and lower current",
+    "Increase both current and voltage at the same power",
+    "Convert alternating current into direct current"
+  ],
+  "correctIndex": 1,
+  "explanation": "Step-up transformers increase voltage and decrease current for efficient transmission through the National Grid. This reduces energy losses in the cables (P = I²R).",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zkjr6rd"
+},
 
   // Forces additional (5 more)
   {
@@ -1154,7 +1364,22 @@ export const physicsQuestions: Question[] = [
     scope: "separate", subject: 'physics', topic: 'forces', topicLabel: 'Forces', question: 'If a driver gear with 20 teeth drives a gear with 40 teeth, the driven gear turns:', options: ['At the same speed', 'Twice as fast', 'Half as fast', 'Four times as fast'], correctIndex: 2, explanation: 'The driven gear has twice as many teeth (40 vs 20), so it turns half as fast. Gear ratio = driven teeth ÷ driver teeth = 40/20 = 2. It also turns in the opposite direction.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/ztmttv4' },
   { id: 'phys-forces-016', subject: 'physics', topic: 'forces', topicLabel: 'Forces', question: 'Which factors increase braking distance?', options: ['Worn tyres, wet road, higher speed', 'New tyres, dry road, lower speed', 'Lighter car, lower speed', 'Better brakes, dry road'], correctIndex: 0, explanation: 'Braking distance increases with: higher speed, wet/icy roads, worn tyres, worn brakes, and heavier vehicles. These all reduce friction or increase the energy that must be dissipated.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/ztmttv4' },
   { id: 'phys-forces-017', subject: 'physics', topic: 'forces', topicLabel: 'Forces', question: 'Stopping distance = thinking distance + braking distance. Which part is affected by the driver being tired?', options: ['Braking distance', 'Thinking distance', 'Both equally', 'Neither'], correctIndex: 1, explanation: 'Thinking distance depends on the driver\'s reaction time. Being tired, distracted, or under the influence of drugs/alcohol increases reaction time and therefore thinking distance.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/ztmttv4' },
-  { id: 'phys-forces-018', subject: 'physics', topic: 'forces', topicLabel: 'Forces', question: 'According to Newton\'s third law, if you push a wall with 50 N, what force does the wall exert on you?', options: ['0 N', '25 N', '50 N in the opposite direction', '100 N'], correctIndex: 2, explanation: 'Newton\'s third law: for every action there is an equal and opposite reaction. If you push the wall with 50 N, the wall pushes back on you with 50 N in the opposite direction.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/ztmttv4' },
+  {
+  "id": "phys-forces-018",
+  "subject": "physics",
+  "topic": "forces",
+  "topicLabel": "Forces",
+  "question": "According to Newton's third law, if you push a wall with 50 N, what force does the wall exert on you?",
+  "options": [
+    "50 N in the same direction",
+    "25 N in the opposite direction",
+    "50 N in the opposite direction",
+    "100 N in the opposite direction"
+  ],
+  "correctIndex": 2,
+  "explanation": "Newton's third law: for every action there is an equal and opposite reaction. If you push the wall with 50 N, the wall pushes back on you with 50 N in the opposite direction.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/ztmttv4"
+},
 
   // Foundation methods, applications and coverage additions.
   {
@@ -1174,21 +1399,21 @@ export const physicsQuestions: Question[] = [
     "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zkjr6rd"
   },
   {
-    "id": "phys-electricity-014",
-    "subject": "physics",
-    "topic": "electricity",
-    "topicLabel": "Electricity",
-    "question": "When investigating resistance against wire length, why use a low current and switch off between readings?",
-    "options": [
-      "To make its length change during a reading",
-      "To limit wire heating",
-      "To increase the wire’s diameter",
-      "To remove its electrical resistance"
-    ],
-    "correctIndex": 1,
-    "explanation": "Heating changes resistance and would confound the effect of length. Measure V and I and calculate R = V/I.",
-    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zms2g2p"
-  },
+  "id": "phys-electricity-014",
+  "subject": "physics",
+  "topic": "electricity",
+  "topicLabel": "Electricity",
+  "question": "When investigating resistance against wire length, why use a low current and switch off between readings?",
+  "options": [
+    "To allow the wire temperature to rise steadily",
+    "To limit wire heating",
+    "To keep the voltage identical for every wire length",
+    "To make the current zero during each voltage reading"
+  ],
+  "correctIndex": 1,
+  "explanation": "Heating changes resistance and would confound the effect of length. Measure V and I and calculate R = V/I.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zms2g2p"
+},
   {
     "id": "phys-electricity-015",
     "subject": "physics",
@@ -1206,21 +1431,21 @@ export const physicsQuestions: Question[] = [
     "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zms2g2p"
   },
   {
-    "id": "phys-particle-model-014",
-    "subject": "physics",
-    "topic": "particle-model",
-    "topicLabel": "Particle Model",
-    "question": "An irregular stone sinks in water. How can its volume be measured?",
-    "options": [
-      "Measure its mass on a balance",
-      "Measure its longest dimension",
-      "Measure its surface temperature",
-      "Measure the displaced water volume"
-    ],
-    "correctIndex": 3,
-    "explanation": "Fully submerge the stone and measure the increase in water volume, avoiding trapped air. Use mass ÷ volume for density.",
-    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z3ybb82"
-  },
+  "id": "phys-particle-model-014",
+  "subject": "physics",
+  "topic": "particle-model",
+  "topicLabel": "Particle Model",
+  "question": "An irregular stone sinks in water. How can its volume be measured?",
+  "options": [
+    "Divide its mass by the density of water",
+    "Multiply its maximum length, width and height",
+    "Use the water’s final volume without subtracting its start volume",
+    "Measure the displaced water volume"
+  ],
+  "correctIndex": 3,
+  "explanation": "Fully submerge the stone and measure the increase in water volume, avoiding trapped air. Use mass ÷ volume for density.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z3ybb82"
+},
   {
     "id": "phys-forces-019",
     "subject": "physics",
@@ -1302,21 +1527,21 @@ export const physicsQuestions: Question[] = [
     "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/ztmttv4"
   },
   {
-    "id": "phys-forces-022",
-    "subject": "physics",
-    "topic": "forces",
-    "topicLabel": "Forces",
-    "question": "A spring obeys F = ke and has k = 200 N/m. What extension is produced by 10 N?",
-    "options": [
-      "2,000 m",
-      "0.05 m",
-      "0.5 m",
-      "20 m"
-    ],
-    "correctIndex": 1,
-    "explanation": "Rearrange to e = F/k = 10/200 = 0.05 m, within the limit of proportionality.",
-    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/ztmttv4"
-  },
+  "id": "phys-forces-022",
+  "subject": "physics",
+  "topic": "forces",
+  "topicLabel": "Forces",
+  "question": "A spring obeys F = ke and has k = 200 N/m. What extension is produced by 10 N?",
+  "options": [
+    "0.005 m",
+    "0.05 m",
+    "0.5 m",
+    "20 m"
+  ],
+  "correctIndex": 1,
+  "explanation": "Rearrange to e = F/k = 10/200 = 0.05 m, within the limit of proportionality.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/ztmttv4"
+},
   {
     "id": "phys-forces-023",
     "subject": "physics",
@@ -1350,21 +1575,21 @@ export const physicsQuestions: Question[] = [
     "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/ztmttv4"
   },
   {
-    "id": "phys-energy-phys-027",
-    "subject": "physics",
-    "topic": "energy-phys",
-    "topicLabel": "Energy",
-    "question": "A motor does 600 J of work in 15 s. Use P = W/t. What is its mean power?",
-    "options": [
-      "40 W",
-      "9,000 W",
-      "615 W",
-      "0.025 W"
-    ],
-    "correctIndex": 0,
-    "explanation": "P = W/t = 600/15 = 40 W. One watt is one joule transferred per second.",
-    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zkjr6rd"
-  },
+  "id": "phys-energy-phys-027",
+  "subject": "physics",
+  "topic": "energy-phys",
+  "topicLabel": "Energy",
+  "question": "A motor does 600 J of work in 15 s. Use P = W/t. What is its mean power?",
+  "options": [
+    "40 W",
+    "4 W",
+    "60 W",
+    "0.025 W"
+  ],
+  "correctIndex": 0,
+  "explanation": "P = W/t = 600/15 = 40 W. One watt is one joule transferred per second.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zkjr6rd"
+},
   {
     "id": "phys-energy-phys-028",
     "subject": "physics",
@@ -1382,37 +1607,37 @@ export const physicsQuestions: Question[] = [
     "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zkjr6rd"
   },
   {
-    "id": "phys-electricity-016",
-    "subject": "physics",
-    "topic": "electricity",
-    "topicLabel": "Electricity",
-    "question": "A current of 0.5 A flows for 40 s. Use Q = It. How much charge flows?",
-    "options": [
-      "40.5 C",
-      "80 C",
-      "20 C",
-      "0.0125 C"
-    ],
-    "correctIndex": 2,
-    "explanation": "Charge = current × time = 0.5 × 40 = 20 C.",
-    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zms2g2p"
-  },
+  "id": "phys-electricity-016",
+  "subject": "physics",
+  "topic": "electricity",
+  "topicLabel": "Electricity",
+  "question": "A current of 0.5 A flows for 40 s. Use Q = It. How much charge flows?",
+  "options": [
+    "40 C",
+    "80 C",
+    "20 C",
+    "10 C"
+  ],
+  "correctIndex": 2,
+  "explanation": "Charge = current × time = 0.5 × 40 = 20 C.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zms2g2p"
+},
   {
-    "id": "phys-electricity-017",
-    "subject": "physics",
-    "topic": "electricity",
-    "topicLabel": "Electricity",
-    "question": "A charge of 30 C transfers 180 J through a component. Use E = QV. What is the potential difference?",
-    "options": [
-      "0.167 V",
-      "150 V",
-      "5,400 V",
-      "6 V"
-    ],
-    "correctIndex": 3,
-    "explanation": "V = E/Q = 180/30 = 6 V.",
-    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zms2g2p"
-  },
+  "id": "phys-electricity-017",
+  "subject": "physics",
+  "topic": "electricity",
+  "topicLabel": "Electricity",
+  "question": "A charge of 30 C transfers 180 J through a component. Use E = QV. What is the potential difference?",
+  "options": [
+    "0.167 V",
+    "3 V",
+    "60 V",
+    "6 V"
+  ],
+  "correctIndex": 3,
+  "explanation": "V = E/Q = 180/30 = 6 V.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zms2g2p"
+},
   {
     "id": "phys-electricity-018",
     "subject": "physics",

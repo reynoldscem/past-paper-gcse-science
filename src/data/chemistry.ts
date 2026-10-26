@@ -14,32 +14,37 @@ export const chemistryQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zcckk2p',
   },
   {
-    id: 'chem-atomic-structure-002',
-    subject: 'chemistry',
-    topic: 'atomic-structure',
-    topicLabel: 'Atoms & Periodic Table',
-    question: 'Where are electrons found in an atom?',
-    options: ['In the nucleus', 'In energy levels (shells) around the nucleus', 'Between atoms', 'Scattered randomly throughout the atom'],
-    correctIndex: 1,
-    explanation: 'Electrons orbit the nucleus in energy levels, also called electron shells. Each shell can hold a specific number of electrons.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zcckk2p',
-  },
+  "id": "chem-atomic-structure-002",
+  "subject": "chemistry",
+  "topic": "atomic-structure",
+  "topicLabel": "Atoms & Periodic Table",
+  "question": "Where are electrons found in an atom?",
+  "options": [
+    "Mixed with protons throughout the nucleus",
+    "In shells around the nucleus",
+    "Fixed between neighbouring protons in the nucleus",
+    "On circular paths inside the atomic nucleus"
+  ],
+  "correctIndex": 1,
+  "explanation": "Electrons orbit the nucleus in energy levels, also called electron shells. Each shell can hold a specific number of electrons.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zcckk2p"
+},
   {
-    id: 'chem-atomic-structure-003',
-    subject: 'chemistry',
-    topic: 'atomic-structure',
-    topicLabel: 'Atoms & Periodic Table',
-    question: 'What are isotopes?',
-    options: [
-      'Atoms of different elements with the same mass number',
-      'Atoms of the same element with different numbers of neutrons',
-      'Atoms of the same element with different numbers of protons',
-      'Atoms with no neutrons',
-    ],
-    correctIndex: 1,
-    explanation: 'Isotopes are atoms of the same element that have the same number of protons but different numbers of neutrons, giving them different mass numbers.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zcckk2p',
-  },
+  "id": "chem-atomic-structure-003",
+  "subject": "chemistry",
+  "topic": "atomic-structure",
+  "topicLabel": "Atoms & Periodic Table",
+  "question": "What are isotopes?",
+  "options": [
+    "Atoms of different elements with equal mass numbers",
+    "Same element, different neutron numbers",
+    "Atoms of the same element with different proton numbers",
+    "Atoms of different elements with equal electron numbers"
+  ],
+  "correctIndex": 1,
+  "explanation": "Isotopes are atoms of the same element that have the same number of protons but different numbers of neutrons, giving them different mass numbers.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zcckk2p"
+},
   {
     id: 'chem-atomic-structure-004',
     subject: 'chemistry',
@@ -95,21 +100,21 @@ export const chemistryQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zcckk2p',
   },
   {
-    id: 'chem-atomic-structure-008',
-    subject: 'chemistry',
-    topic: 'atomic-structure',
-    topicLabel: 'Atoms & Periodic Table',
-    question: 'What happens to the reactivity of Group 7 elements as you go down the group?',
-    options: [
-      'Reactivity increases',
-      'Reactivity decreases',
-      'Reactivity stays the same',
-      'Only the first element is reactive',
-    ],
-    correctIndex: 1,
-    explanation: 'Group 7 elements (halogens) become less reactive going down the group because the outer shell is further from the nucleus, making it harder to gain an electron.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zcckk2p',
-  },
+  "id": "chem-atomic-structure-008",
+  "subject": "chemistry",
+  "topic": "atomic-structure",
+  "topicLabel": "Atoms & Periodic Table",
+  "question": "What happens to the reactivity of Group 7 elements as you go down the group?",
+  "options": [
+    "Reactivity increases",
+    "Reactivity decreases",
+    "Reactivity stays the same",
+    "Reactivity increases then stays constant"
+  ],
+  "correctIndex": 1,
+  "explanation": "Group 7 elements (halogens) become less reactive going down the group because the outer shell is further from the nucleus, making it harder to gain an electron.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zcckk2p"
+},
 
   // ── bonding (7 questions) ───────────────────────────────────────────
   {
@@ -124,69 +129,69 @@ export const chemistryQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z33rrwx',
   },
   {
-    id: 'chem-bonding-002',
-    subject: 'chemistry',
-    topic: 'bonding',
-    topicLabel: 'Bonding & Structure',
-    question: 'In covalent bonding, what happens to electrons?',
-    options: [
-      'Electrons are transferred from one atom to another',
-      'Electrons are shared between atoms',
-      'Electrons are lost by both atoms',
-      'Electrons are destroyed',
-    ],
-    correctIndex: 1,
-    explanation: 'Covalent bonding involves the sharing of pairs of electrons between non-metal atoms. This allows both atoms to achieve a full outer shell.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z33rrwx',
-  },
+  "id": "chem-bonding-002",
+  "subject": "chemistry",
+  "topic": "bonding",
+  "topicLabel": "Bonding & Structure",
+  "question": "In covalent bonding, what happens to electrons?",
+  "options": [
+    "Electrons are transferred from one atom to another",
+    "Electrons are shared between atoms",
+    "Electrons are lost by both atoms",
+    "Electrons form a mobile sea around positive ions"
+  ],
+  "correctIndex": 1,
+  "explanation": "Covalent bonding involves the sharing of pairs of electrons between non-metal atoms. This allows both atoms to achieve a full outer shell.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z33rrwx"
+},
   {
-    id: 'chem-bonding-003',
-    subject: 'chemistry',
-    topic: 'bonding',
-    topicLabel: 'Bonding & Structure',
-    question: 'Why do ionic compounds have high melting points?',
-    options: [
-      'They contain weak forces between molecules',
-      'They have strong electrostatic forces between oppositely charged ions in a giant lattice',
-      'They are made of small molecules',
-      'They contain shared electrons',
-    ],
-    correctIndex: 1,
-    explanation: 'Ionic compounds form giant lattices with strong electrostatic forces of attraction between oppositely charged ions. A lot of energy is needed to overcome these forces.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z33rrwx',
-  },
+  "id": "chem-bonding-003",
+  "subject": "chemistry",
+  "topic": "bonding",
+  "topicLabel": "Bonding & Structure",
+  "question": "Why do ionic compounds have high melting points?",
+  "options": [
+    "Strong covalent bonds join separate ionic molecules",
+    "Strong attractions between opposite ions",
+    "Strong attractions hold neutral molecules together",
+    "Strong metallic bonds connect a lattice of neutral atoms"
+  ],
+  "correctIndex": 1,
+  "explanation": "Ionic compounds form giant lattices with strong electrostatic forces of attraction between oppositely charged ions. A lot of energy is needed to overcome these forces.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z33rrwx"
+},
   {
-    id: 'chem-bonding-004',
-    subject: 'chemistry',
-    topic: 'bonding',
-    topicLabel: 'Bonding & Structure',
-    question: 'Which of the following describes metallic bonding?',
-    options: [
-      'Sharing of electrons between two atoms',
-      'Transfer of electrons from metal to non-metal',
-      'A lattice of positive ions surrounded by a sea of delocalised electrons',
-      'Weak intermolecular forces between molecules',
-    ],
-    correctIndex: 2,
-    explanation: 'In metallic bonding, metal atoms lose their outer electrons to form a "sea" of delocalised electrons. The positive metal ions are held together by their attraction to these electrons.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z33rrwx',
-  },
+  "id": "chem-bonding-004",
+  "subject": "chemistry",
+  "topic": "bonding",
+  "topicLabel": "Bonding & Structure",
+  "question": "Which of the following describes metallic bonding?",
+  "options": [
+    "Attraction between pairs of atoms sharing electrons",
+    "Attraction between positive and negative metal ions",
+    "Positive ions attracted to delocalised electrons",
+    "Attraction between separate molecules containing metal atoms"
+  ],
+  "correctIndex": 2,
+  "explanation": "In metallic bonding, metal atoms lose their outer electrons to form a \"sea\" of delocalised electrons. The positive metal ions are held together by their attraction to these electrons.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z33rrwx"
+},
   {
-    id: 'chem-bonding-005',
-    subject: 'chemistry',
-    topic: 'bonding',
-    topicLabel: 'Bonding & Structure',
-    question: 'Why do simple molecular substances have low melting points?',
-    options: [
-      'The covalent bonds within molecules are weak',
-      'The intermolecular forces between molecules are weak',
-      'They have a giant lattice structure',
-      'They contain ions',
-    ],
-    correctIndex: 1,
-    explanation: 'Simple molecular substances have weak intermolecular forces between molecules. It is these weak forces that are overcome when the substance melts, not the strong covalent bonds within the molecules.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z33rrwx',
-  },
+  "id": "chem-bonding-005",
+  "subject": "chemistry",
+  "topic": "bonding",
+  "topicLabel": "Bonding & Structure",
+  "question": "Why do simple molecular substances have low melting points?",
+  "options": [
+    "The covalent bonds inside each molecule are weak",
+    "Weak intermolecular forces",
+    "Strong forces hold the molecules in a giant lattice",
+    "Mobile electrons weaken the bonds inside molecules"
+  ],
+  "correctIndex": 1,
+  "explanation": "Simple molecular substances have weak intermolecular forces between molecules. It is these weak forces that are overcome when the substance melts, not the strong covalent bonds within the molecules.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z33rrwx"
+},
   {
     id: 'chem-bonding-006',
     subject: 'chemistry',
@@ -199,21 +204,21 @@ export const chemistryQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z33rrwx',
   },
   {
-    id: 'chem-bonding-007',
-    subject: 'chemistry',
-    topic: 'bonding',
-    topicLabel: 'Bonding & Structure',
-    question: 'Why can metals conduct electricity?',
-    options: [
-      'They contain free ions that can move',
-      'They contain delocalised electrons that can move through the structure',
-      'They have covalent bonds',
-      'They are always in liquid form',
-    ],
-    correctIndex: 1,
-    explanation: 'Metals can conduct electricity because they have delocalised electrons that are free to move through the metal structure, carrying electrical charge.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z33rrwx',
-  },
+  "id": "chem-bonding-007",
+  "subject": "chemistry",
+  "topic": "bonding",
+  "topicLabel": "Bonding & Structure",
+  "question": "Why can metals conduct electricity?",
+  "options": [
+    "Positive ions can flow freely through a solid metal",
+    "Mobile delocalised electrons",
+    "Neutral atoms carry charge between lattice positions",
+    "Bonded pairs of electrons flow between separate molecules"
+  ],
+  "correctIndex": 1,
+  "explanation": "Metals can conduct electricity because they have delocalised electrons that are free to move through the metal structure, carrying electrical charge.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z33rrwx"
+},
 
   // ── quantitative (7 questions) ─────────────────────────────────────
   {
@@ -228,21 +233,21 @@ export const chemistryQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zb4fjfr',
   },
   {
-    id: 'chem-quantitative-002',
-    subject: 'chemistry',
-    topic: 'quantitative',
-    topicLabel: 'Quantitative Chemistry',
-    question: 'In a chemical reaction, what happens to the total mass of reactants and products?',
-    options: [
-      'Mass always increases',
-      'Mass always decreases',
-      'Mass is conserved — it stays the same',
-      'Mass changes unpredictably',
-    ],
-    correctIndex: 2,
-    explanation: 'The law of conservation of mass states that no atoms are created or destroyed in a chemical reaction, so the total mass of products equals the total mass of reactants.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zb4fjfr',
-  },
+  "id": "chem-quantitative-002",
+  "subject": "chemistry",
+  "topic": "quantitative",
+  "topicLabel": "Quantitative Chemistry",
+  "question": "In a chemical reaction, what happens to the total mass of reactants and products?",
+  "options": [
+    "Some mass is created when new bonds form",
+    "Some mass is destroyed when bonds break",
+    "Total mass stays the same",
+    "Total mass depends on the speed of the reaction"
+  ],
+  "correctIndex": 2,
+  "explanation": "The law of conservation of mass states that no atoms are created or destroyed in a chemical reaction, so the total mass of products equals the total mass of reactants.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zb4fjfr"
+},
   {
     id: 'chem-quantitative-003',
     subject: 'chemistry',
@@ -324,21 +329,21 @@ export const chemistryQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zt6ppbk',
   },
   {
-    id: 'chem-chemical-changes-002',
-    subject: 'chemistry',
-    topic: 'chemical-changes',
-    topicLabel: 'Chemical Changes',
-    question: 'How are metals less reactive than carbon extracted from their ores?',
-    options: [
-      'Electrolysis',
-      'Reduction with carbon',
-      'Dissolving in water',
-      'Filtration',
-    ],
-    correctIndex: 1,
-    explanation: 'Metals less reactive than carbon can be extracted by heating their oxide with carbon. The carbon removes the oxygen from the metal oxide in a reduction reaction.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zt6ppbk',
-  },
+  "id": "chem-chemical-changes-002",
+  "subject": "chemistry",
+  "topic": "chemical-changes",
+  "topicLabel": "Chemical Changes",
+  "question": "How are metals less reactive than carbon extracted from their ores?",
+  "options": [
+    "Separating the ore using fractional distillation",
+    "Reduction with carbon",
+    "Dissolving the ore followed by crystallisation",
+    "Filtering the ore from a suspension in water"
+  ],
+  "correctIndex": 1,
+  "explanation": "Metals less reactive than carbon can be extracted by heating their oxide with carbon. The carbon removes the oxygen from the metal oxide in a reduction reaction.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zt6ppbk"
+},
   {
     id: 'chem-chemical-changes-003',
     subject: 'chemistry',
@@ -450,37 +455,37 @@ export const chemistryQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z27xxfr',
   },
   {
-    id: 'chem-energy-changes-003',
-    subject: 'chemistry',
-    topic: 'energy-changes',
-    topicLabel: 'Energy Changes',
-    question: 'On a reaction profile for an exothermic reaction, how do the energy levels of products compare to reactants?',
-    options: [
-      'Products are higher than reactants',
-      'Products are lower than reactants',
-      'Products and reactants are at the same level',
-      'Products are always at zero energy',
-    ],
-    correctIndex: 1,
-    explanation: 'In an exothermic reaction, the products have less energy than the reactants because energy has been released to the surroundings. The products sit lower on the reaction profile diagram.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z27xxfr',
-  },
+  "id": "chem-energy-changes-003",
+  "subject": "chemistry",
+  "topic": "energy-changes",
+  "topicLabel": "Energy Changes",
+  "question": "On a reaction profile for an exothermic reaction, how do the energy levels of products compare to reactants?",
+  "options": [
+    "Products are higher than reactants",
+    "Products are lower than reactants",
+    "Products and reactants are at the same level",
+    "Products are at the activation-energy peak"
+  ],
+  "correctIndex": 1,
+  "explanation": "In an exothermic reaction, the products have less energy than the reactants because energy has been released to the surroundings. The products sit lower on the reaction profile diagram.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z27xxfr"
+},
   {
-    id: 'chem-energy-changes-004',
-    subject: 'chemistry',
-    topic: 'energy-changes',
-    topicLabel: 'Energy Changes',
-    question: 'What is the activation energy of a reaction?',
-    options: [
-      'The total energy released by the reaction',
-      'The minimum energy needed to start a reaction',
-      'The energy stored in the products',
-      'The energy lost to the surroundings',
-    ],
-    correctIndex: 1,
-    explanation: 'Activation energy is the minimum amount of energy that reactant particles need in order to react. It is shown as the initial rise on a reaction profile diagram.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z27xxfr',
-  },
+  "id": "chem-energy-changes-004",
+  "subject": "chemistry",
+  "topic": "energy-changes",
+  "topicLabel": "Energy Changes",
+  "question": "What is the activation energy of a reaction?",
+  "options": [
+    "The total energy transferred to the surroundings",
+    "Minimum energy for reaction",
+    "The difference between reactant and product energies",
+    "The energy released as the products cool to room temperature"
+  ],
+  "correctIndex": 1,
+  "explanation": "Activation energy is the minimum amount of energy that reactant particles need in order to react. It is shown as the initial rise on a reaction profile diagram.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z27xxfr"
+},
   {
     id: 'chem-energy-changes-005',
     scope: "higher",
@@ -545,69 +550,69 @@ export const chemistryQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwdqqhv',
   },
   {
-    id: 'chem-rates-002',
-    subject: 'chemistry',
-    topic: 'rates',
-    topicLabel: 'Rates of Reaction',
-    question: 'What does a catalyst do in a chemical reaction?',
-    options: [
-      'Increases the energy of the products',
-      'Speeds up the reaction without being used up',
-      'Slows down the reaction',
-      'Changes the products formed',
-    ],
-    correctIndex: 1,
-    explanation: 'A catalyst speeds up a chemical reaction by providing an alternative pathway with a lower activation energy. The catalyst is not used up and can be reused.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwdqqhv',
-  },
+  "id": "chem-rates-002",
+  "subject": "chemistry",
+  "topic": "rates",
+  "topicLabel": "Rates of Reaction",
+  "question": "What does a catalyst do in a chemical reaction?",
+  "options": [
+    "Raises the energy of the reactant particles",
+    "Speeds reaction without being consumed",
+    "Increases the final amount of product from fixed reactants",
+    "Raises the temperature of the reaction mixture"
+  ],
+  "correctIndex": 1,
+  "explanation": "A catalyst speeds up a chemical reaction by providing an alternative pathway with a lower activation energy. The catalyst is not used up and can be reused.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwdqqhv"
+},
   {
-    id: 'chem-rates-003',
-    subject: 'chemistry',
-    topic: 'rates',
-    topicLabel: 'Rates of Reaction',
-    question: 'Why does increasing the surface area of a solid reactant increase the rate of reaction?',
-    options: [
-      'It makes the particles hotter',
-      'It exposes more particles to collisions with the other reactant',
-      'It increases the pressure',
-      'It reduces the activation energy',
-    ],
-    correctIndex: 1,
-    explanation: 'A larger surface area means more particles of the solid are exposed and available for collisions with particles of the other reactant, increasing the frequency of successful collisions.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwdqqhv',
-  },
+  "id": "chem-rates-003",
+  "subject": "chemistry",
+  "topic": "rates",
+  "topicLabel": "Rates of Reaction",
+  "question": "Why does increasing the surface area of a solid reactant increase the rate of reaction?",
+  "options": [
+    "It raises the temperature of the reactant particles",
+    "More particles are exposed for collisions",
+    "It increases the concentration of the other reactant",
+    "It reduces the minimum energy needed for each reaction"
+  ],
+  "correctIndex": 1,
+  "explanation": "A larger surface area means more particles of the solid are exposed and available for collisions with particles of the other reactant, increasing the frequency of successful collisions.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwdqqhv"
+},
   {
-    id: 'chem-rates-004',
-    subject: 'chemistry',
-    topic: 'rates',
-    topicLabel: 'Rates of Reaction',
-    question: 'According to collision theory, what two conditions must be met for a reaction to occur?',
-    options: [
-      'Particles must be heated and compressed',
-      'Particles must collide with sufficient energy and correct orientation',
-      'Particles must be dissolved and stirred',
-      'Particles must be the same size and shape',
-    ],
-    correctIndex: 1,
-    explanation: 'Collision theory states that particles must collide with at least the activation energy and in the correct orientation for a successful reaction to occur.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwdqqhv',
-  },
+  "id": "chem-rates-004",
+  "subject": "chemistry",
+  "topic": "rates",
+  "topicLabel": "Rates of Reaction",
+  "question": "According to collision theory, what two conditions must be met for a reaction to occur?",
+  "options": [
+    "Particles must collide frequently even with too little energy",
+    "Collisions with enough energy and suitable orientation",
+    "Particles must collide gently so that their bonds stay intact",
+    "Particles must be heated until every collision causes a reaction"
+  ],
+  "correctIndex": 1,
+  "explanation": "Collision theory states that particles must collide with at least the activation energy and in the correct orientation for a successful reaction to occur.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwdqqhv"
+},
   {
-    id: 'chem-rates-005',
-    subject: 'chemistry',
-    topic: 'rates',
-    topicLabel: 'Rates of Reaction',
-    question: 'How does increasing the concentration of a solution affect the rate of reaction?',
-    options: [
-      'It decreases the rate',
-      'It has no effect',
-      'It increases the rate',
-      'It only affects the rate if a catalyst is present',
-    ],
-    correctIndex: 2,
-    explanation: 'Increasing concentration means there are more reactant particles in the same volume, so collisions are more frequent, which increases the rate of reaction.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwdqqhv',
-  },
+  "id": "chem-rates-005",
+  "subject": "chemistry",
+  "topic": "rates",
+  "topicLabel": "Rates of Reaction",
+  "question": "How does increasing the concentration of a solution affect the rate of reaction?",
+  "options": [
+    "It decreases the rate",
+    "It has no effect",
+    "It increases the rate",
+    "It changes the activation energy instead of the rate"
+  ],
+  "correctIndex": 2,
+  "explanation": "Increasing concentration means there are more reactant particles in the same volume, so collisions are more frequent, which increases the rate of reaction.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwdqqhv"
+},
   {
     id: 'chem-rates-006',
     subject: 'chemistry',
@@ -698,10 +703,10 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Organic Chemistry",
   "question": "What happens during cracking of hydrocarbons?",
   "options": [
-    "Small molecules are joined together",
-    "Long-chain hydrocarbons are broken down into shorter, more useful molecules",
-    "Crude oil is separated into fractions",
-    "Hydrocarbons are dissolved in water"
+    "Short chains combine to form longer hydrocarbons",
+    "Long chains break into shorter molecules",
+    "Hydrocarbons separate by their different boiling points",
+    "Hydrocarbons react with oxygen to form carbon dioxide"
   ],
   "correctIndex": 1,
   "explanation": "Cracking breaks long-chain hydrocarbons into shorter hydrocarbons, including useful alkenes. Catalytic cracking uses vaporised feedstock passed over a hot catalyst. Steam cracking also needs a high temperature; a catalyst does not replace heating.",
@@ -737,21 +742,21 @@ export const chemistryQuestions: Question[] = [
 
   // ── analysis (7 questions) ─────────────────────────────────────────
   {
-    id: 'chem-analysis-001',
-    subject: 'chemistry',
-    topic: 'analysis',
-    topicLabel: 'Chemical Analysis',
-    question: 'What is a pure substance in chemistry?',
-    options: [
-      'A substance that looks clean',
-      'A substance made of only one type of element or compound',
-      'A substance that dissolves in water',
-      'A substance with no smell',
-    ],
-    correctIndex: 1,
-    explanation: 'In chemistry, a pure substance consists of only one type of element or compound. It melts and boils at specific, sharp temperatures.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zgbccj6',
-  },
+  "id": "chem-analysis-001",
+  "subject": "chemistry",
+  "topic": "analysis",
+  "topicLabel": "Chemical Analysis",
+  "question": "What is a pure substance in chemistry?",
+  "options": [
+    "A mixture with no visible pieces of dirt in it",
+    "One element or one compound",
+    "A solution with no undissolved particles remaining",
+    "A mixture with the same composition throughout"
+  ],
+  "correctIndex": 1,
+  "explanation": "In chemistry, a pure substance consists of only one type of element or compound. It melts and boils at specific, sharp temperatures.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zgbccj6"
+},
   {
   "id": "chem-analysis-002",
   "subject": "chemistry",
@@ -781,21 +786,21 @@ export const chemistryQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zgbccj6',
   },
   {
-    id: 'chem-analysis-004',
-    subject: 'chemistry',
-    topic: 'analysis',
-    topicLabel: 'Chemical Analysis',
-    question: 'How do you test for hydrogen gas?',
-    options: [
-      'It turns limewater milky',
-      'A burning splint makes a squeaky pop',
-      'It relights a glowing splint',
-      'It turns damp litmus paper white',
-    ],
-    correctIndex: 1,
-    explanation: 'Hydrogen gas is tested with a burning splint. If hydrogen is present, it burns with a squeaky pop sound.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zgbccj6',
-  },
+  "id": "chem-analysis-004",
+  "subject": "chemistry",
+  "topic": "analysis",
+  "topicLabel": "Chemical Analysis",
+  "question": "How do you test for hydrogen gas?",
+  "options": [
+    "Bubble it through limewater and look for cloudiness",
+    "Use a lit splint; listen for a pop",
+    "Insert a glowing splint and look for it relighting",
+    "Hold damp blue litmus nearby and look for bleaching"
+  ],
+  "correctIndex": 1,
+  "explanation": "Hydrogen gas is tested with a burning splint. If hydrogen is present, it burns with a squeaky pop sound.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zgbccj6"
+},
   {
     id: 'chem-analysis-005',
     subject: 'chemistry',
@@ -881,69 +886,69 @@ export const chemistryQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zy43p9q',
   },
   {
-    id: 'chem-atmosphere-004',
-    subject: 'chemistry',
-    topic: 'atmosphere',
-    topicLabel: 'Atmosphere & Resources',
-    question: 'How did oxygen levels in the early atmosphere increase?',
-    options: [
-      'Volcanic eruptions released oxygen',
-      'Photosynthesis by plants and algae produced oxygen',
-      'Oxygen was released from the oceans',
-      'Lightning broke down carbon dioxide',
-    ],
-    correctIndex: 1,
-    explanation: 'The evolution of photosynthetic organisms (such as algae and plants) produced oxygen as a by-product of photosynthesis, gradually increasing the oxygen levels in the atmosphere.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zy43p9q',
-  },
+  "id": "chem-atmosphere-004",
+  "subject": "chemistry",
+  "topic": "atmosphere",
+  "topicLabel": "Atmosphere & Resources",
+  "question": "How did oxygen levels in the early atmosphere increase?",
+  "options": [
+    "Volcanoes emitted oxygen during frequent eruptions",
+    "Photosynthesis released oxygen",
+    "Evaporation separated oxygen from water molecules",
+    "Respiring animals converted carbon dioxide to oxygen"
+  ],
+  "correctIndex": 1,
+  "explanation": "The evolution of photosynthetic organisms (such as algae and plants) produced oxygen as a by-product of photosynthesis, gradually increasing the oxygen levels in the atmosphere.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zy43p9q"
+},
   {
-    id: 'chem-atmosphere-005',
-    subject: 'chemistry',
-    topic: 'atmosphere',
-    topicLabel: 'Atmosphere & Resources',
-    question: 'What is a "carbon footprint"?',
-    options: [
-      'A mark left by burning carbon',
-      'The total amount of carbon dioxide and other greenhouse gases emitted over the full life cycle of a product or event',
-      'The weight of carbon in a substance',
-      'The area of forest needed to absorb carbon',
-    ],
-    correctIndex: 1,
-    explanation: 'A carbon footprint measures the total greenhouse gas emissions caused by an individual, event, organisation, or product, expressed as carbon dioxide equivalent.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zy43p9q',
-  },
+  "id": "chem-atmosphere-005",
+  "subject": "chemistry",
+  "topic": "atmosphere",
+  "topicLabel": "Atmosphere & Resources",
+  "question": "What is a \"carbon footprint\"?",
+  "options": [
+    "The carbon dioxide emitted while a product is being used",
+    "Total greenhouse-gas emissions across a life cycle",
+    "The mass of carbon contained in the finished product itself",
+    "The area of forest cleared to obtain the raw materials"
+  ],
+  "correctIndex": 1,
+  "explanation": "A carbon footprint measures the total greenhouse gas emissions caused by an individual, event, organisation, or product, expressed as carbon dioxide equivalent.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zy43p9q"
+},
   {
-    id: 'chem-atmosphere-006',
-    subject: 'chemistry',
-    topic: 'atmosphere',
-    topicLabel: 'Atmosphere & Resources',
-    question: 'Why is water treated before it is safe to drink?',
-    options: [
-      'To add minerals for taste',
-      'To remove microorganisms, dissolved substances, and suspended particles',
-      'To make it fizzy',
-      'To increase its pH to 14',
-    ],
-    correctIndex: 1,
-    explanation: 'Water must be treated to remove harmful microorganisms, dissolved chemicals, and suspended solids. Treatment typically involves filtration, sedimentation, and chlorination or UV sterilisation.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zptnng8',
-  },
+  "id": "chem-atmosphere-006",
+  "subject": "chemistry",
+  "topic": "atmosphere",
+  "topicLabel": "Atmosphere & Resources",
+  "question": "Why is water treated before it is safe to drink?",
+  "options": [
+    "To remove all minerals, including those that are harmless",
+    "To reduce harmful microbes and contaminants",
+    "To make dissolved substances settle out by filtration alone",
+    "To ensure the water contains no dissolved gases or salts"
+  ],
+  "correctIndex": 1,
+  "explanation": "Treatment makes water potable by reducing harmful microorganisms and contaminants. The method depends on the source: fresh water is filtered and sterilised, while salty water needs desalination. Potable water need not be chemically pure.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zptnng8"
+},
   {
-    id: 'chem-atmosphere-007',
-    subject: 'chemistry',
-    topic: 'atmosphere',
-    topicLabel: 'Atmosphere & Resources',
-    question: 'What is a life cycle assessment (LCA)?',
-    options: [
-      'A test to see how long a battery lasts',
-      'An assessment of the environmental impact of a product at each stage of its life',
-      'A biological study of plant growth',
-      'A measure of how long a product lasts before breaking',
-    ],
-    correctIndex: 1,
-    explanation: 'A life cycle assessment examines the environmental impact of a product at every stage — from extracting raw materials, through manufacturing and use, to disposal or recycling.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zptnng8',
-  },
+  "id": "chem-atmosphere-007",
+  "subject": "chemistry",
+  "topic": "atmosphere",
+  "topicLabel": "Atmosphere & Resources",
+  "question": "What is a life cycle assessment (LCA)?",
+  "options": [
+    "A measurement of the time before a product stops working",
+    "Environmental impacts throughout a product’s life",
+    "An assessment of the energy consumed while a product is used",
+    "A comparison of the price of raw materials for a product"
+  ],
+  "correctIndex": 1,
+  "explanation": "A life cycle assessment examines the environmental impact of a product at every stage — from extracting raw materials, through manufacturing and use, to disposal or recycling.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zptnng8"
+},
 
   // ─── NEW QUESTIONS (BATCH 2) ──────────────────────────────────────────
 
@@ -1010,7 +1015,22 @@ export const chemistryQuestions: Question[] = [
   { id: 'chem-chemical-changes-009', subject: 'chemistry', topic: 'chemical-changes', topicLabel: 'Chemical Changes', question: 'What are the products when zinc reacts with hydrochloric acid?', options: ['Zinc chloride + water', 'Zinc chloride + hydrogen', 'Zinc oxide + hydrogen', 'Zinc sulfate + hydrogen'], correctIndex: 1, explanation: 'Metal + acid → salt + hydrogen. Zinc + hydrochloric acid → zinc chloride + hydrogen. The salt name comes from the metal (zinc) and the acid (hydrochloric = chloride).', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zt6ppbk' },
   { id: 'chem-chemical-changes-010', subject: 'chemistry', topic: 'chemical-changes', topicLabel: 'Chemical Changes', question: 'What are the products when calcium carbonate reacts with sulfuric acid?', options: ['Calcium sulfate + water + carbon dioxide', 'Calcium chloride + water', 'Calcium sulfate + hydrogen', 'Calcium carbonate + oxygen'], correctIndex: 0, explanation: 'Carbonate + acid → salt + water + carbon dioxide. Calcium carbonate + sulfuric acid → calcium sulfate + water + CO2.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zt6ppbk' },
   { id: 'chem-chemical-changes-011', subject: 'chemistry', topic: 'chemical-changes', topicLabel: 'Chemical Changes', question: 'During the electrolysis of copper sulfate solution using copper electrodes, what forms at the cathode?', options: ['Oxygen gas', 'Hydrogen gas', 'Copper metal', 'Sulfur'], correctIndex: 2, explanation: 'During electrolysis of copper sulfate, copper ions (Cu2+) are attracted to the negative cathode where they gain electrons and are deposited as copper metal.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zt6ppbk' },
-  { id: 'chem-chemical-changes-012', subject: 'chemistry', topic: 'chemical-changes', topicLabel: 'Chemical Changes', question: 'Iron is more reactive than copper. What happens when iron is added to copper sulfate solution?', options: ['Nothing — no reaction occurs', 'The iron displaces the copper, forming iron sulfate and copper', 'The copper displaces the iron', 'Both metals dissolve'], correctIndex: 1, explanation: 'A more reactive metal displaces a less reactive one from its compound. Iron displaces copper: Fe + CuSO4 → FeSO4 + Cu. The solution changes from blue to green.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zt6ppbk' },
+  {
+  "id": "chem-chemical-changes-012",
+  "subject": "chemistry",
+  "topic": "chemical-changes",
+  "topicLabel": "Chemical Changes",
+  "question": "Iron is more reactive than copper. What happens when iron is added to copper sulfate solution?",
+  "options": [
+    "Copper displaces iron to form iron sulfate",
+    "Iron displaces copper",
+    "Iron and copper form a soluble alloy in the water",
+    "Iron becomes coated with unchanged copper sulfate crystals"
+  ],
+  "correctIndex": 1,
+  "explanation": "A more reactive metal displaces a less reactive one from its compound. Iron displaces copper: Fe + CuSO4 → FeSO4 + Cu. The solution changes from blue to green.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zt6ppbk"
+},
   {
   "id": "chem-chemical-changes-013",
   "subject": "chemistry",
@@ -1031,14 +1051,59 @@ export const chemistryQuestions: Question[] = [
   // Quantitative (5 more)
   { id: 'chem-quantitative-008', subject: 'chemistry', topic: 'quantitative', topicLabel: 'Quantitative Chemistry', question: 'What is the relative formula mass (Mr) of water (H2O)? [Ar: H=1, O=16]', options: ['17', '18', '10', '20'], correctIndex: 1, explanation: 'Mr of H2O = (2 × 1) + 16 = 18. Add up the relative atomic masses of all atoms in the formula.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zb4fjfr' },
   { id: 'chem-quantitative-009', subject: 'chemistry', topic: 'quantitative', topicLabel: 'Quantitative Chemistry', question: 'What is the balanced equation for the reaction of magnesium with hydrochloric acid?', options: ['Mg + HCl → MgCl + H', 'Mg + 2HCl → MgCl2 + H2', 'Mg + HCl → MgCl2 + H2', '2Mg + HCl → MgCl2 + H2'], correctIndex: 1, explanation: 'Mg + 2HCl → MgCl2 + H2. There must be equal numbers of each atom on both sides. Two HCl are needed to provide two chlorine atoms and form H2.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zb4fjfr' },
-  { id: 'chem-quantitative-010', subject: 'chemistry', topic: 'quantitative', topicLabel: 'Quantitative Chemistry', question: '10 g of calcium carbonate decomposes completely. According to conservation of mass, what can we say about the products?', options: ['The products weigh more than 10 g', 'The products weigh exactly 10 g in total', 'The products weigh less than 10 g', 'We cannot predict the mass'], correctIndex: 1, explanation: 'The law of conservation of mass states that no atoms are created or destroyed in a chemical reaction. The total mass of products equals the total mass of reactants (10 g).', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zb4fjfr' },
+  {
+  "id": "chem-quantitative-010",
+  "subject": "chemistry",
+  "topic": "quantitative",
+  "topicLabel": "Quantitative Chemistry",
+  "question": "10 g of calcium carbonate decomposes completely. According to conservation of mass, what can we say about the products?",
+  "options": [
+    "More than 10 g because a gas is formed",
+    "10 g in total",
+    "Less than 10 g because some atoms disappear",
+    "An unknown mass because the products are different substances"
+  ],
+  "correctIndex": 1,
+  "explanation": "The law of conservation of mass states that no atoms are created or destroyed in a chemical reaction. The total mass of products equals the total mass of reactants (10 g).",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zb4fjfr"
+},
   { id: 'chem-quantitative-011', subject: 'chemistry', topic: 'quantitative', topicLabel: 'Quantitative Chemistry', question: 'A solution has a concentration of 5 g/dm3. What mass of solute is dissolved in 2 dm3 of solution?', options: ['2.5 g', '5 g', '7 g', '10 g'], correctIndex: 3, explanation: 'Mass = concentration × volume = 5 g/dm3 × 2 dm3 = 10 g.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zb4fjfr' },
   { id: 'chem-quantitative-012',
     scope: "higher", subject: 'chemistry', topic: 'quantitative', topicLabel: 'Quantitative Chemistry', question: 'How many moles of carbon (Ar = 12) are in 36 g of carbon?', options: ['2 moles', '3 moles', '12 moles', '36 moles'], correctIndex: 1, explanation: 'Moles = mass ÷ relative atomic mass = 36 ÷ 12 = 3 moles.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zb4fjfr' },
 
   // Rates (5 more)
-  { id: 'chem-rates-008', subject: 'chemistry', topic: 'rates', topicLabel: 'Rates of Reaction', question: 'On a graph of gas volume produced against time, how can you tell when a reaction has finished?', options: ['The line goes down', 'The line becomes horizontal (flat)', 'The line gets steeper', 'The line goes to zero'], correctIndex: 1, explanation: 'When the line levels off (becomes horizontal), no more gas is being produced, meaning the reaction has finished — one of the reactants has been used up.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwdqqhv' },
-  { id: 'chem-rates-009', subject: 'chemistry', topic: 'rates', topicLabel: 'Rates of Reaction', question: 'How does a catalyst speed up a reaction?', options: ['It increases the temperature', 'It provides an alternative reaction pathway with a lower activation energy', 'It increases the concentration of reactants', 'It is used up during the reaction'], correctIndex: 1, explanation: 'A catalyst provides an alternative reaction pathway with a lower activation energy. It is not used up in the reaction and can be reused.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwdqqhv' },
+  {
+  "id": "chem-rates-008",
+  "subject": "chemistry",
+  "topic": "rates",
+  "topicLabel": "Rates of Reaction",
+  "question": "On a graph of gas volume produced against time, how can you tell when a reaction has finished?",
+  "options": [
+    "The curve becomes progressively steeper",
+    "The curve levels off",
+    "The curve slopes back towards zero volume",
+    "The curve continues upwards at a steady gradient"
+  ],
+  "correctIndex": 1,
+  "explanation": "When the line levels off (becomes horizontal), no more gas is being produced, meaning the reaction has finished — one of the reactants has been used up.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwdqqhv"
+},
+  {
+  "id": "chem-rates-009",
+  "subject": "chemistry",
+  "topic": "rates",
+  "topicLabel": "Rates of Reaction",
+  "question": "How does a catalyst speed up a reaction?",
+  "options": [
+    "It increases the average kinetic energy of reactant particles",
+    "A pathway with lower activation energy",
+    "It increases the number of reactant particles in each volume",
+    "It increases the total energy released by the reaction"
+  ],
+  "correctIndex": 1,
+  "explanation": "A catalyst provides an alternative reaction pathway with a lower activation energy. It is not used up in the reaction and can be reused.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwdqqhv"
+},
   {
   "id": "chem-rates-010",
   "subject": "chemistry",
@@ -1046,16 +1111,31 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Rates of Reaction",
   "question": "Which method directly measures the volume of gas produced at timed intervals during a reaction?",
   "options": [
-    "Measure the colour change",
-    "Collect the gas in a syringe and measure the volume at regular intervals",
-    "Measure the temperature of the room",
-    "Count the number of bubbles in the liquid"
+    "Record the mass lost from an open flask at timed intervals",
+    "Read a gas syringe at timed intervals",
+    "Record the time needed for a cross beneath the flask to vanish",
+    "Record the temperature change of the reaction at timed intervals"
   ],
   "correctIndex": 1,
   "explanation": "Collecting gas in a gas syringe and recording the volume at regular time intervals allows you to plot a graph and calculate the rate of reaction.",
   "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwdqqhv"
 },
-  { id: 'chem-rates-011', subject: 'chemistry', topic: 'rates', topicLabel: 'Rates of Reaction', question: 'Why does increasing the concentration of a solution increase the rate of reaction?', options: ['The particles move faster', 'There are more particles in the same volume, so collisions are more frequent', 'The activation energy decreases', 'The temperature increases'], correctIndex: 1, explanation: 'Higher concentration means more reactant particles in the same volume. This increases the frequency of collisions between particles, increasing the rate.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwdqqhv' },
+  {
+  "id": "chem-rates-011",
+  "subject": "chemistry",
+  "topic": "rates",
+  "topicLabel": "Rates of Reaction",
+  "question": "Why does increasing the concentration of a solution increase the rate of reaction?",
+  "options": [
+    "Particles move faster because concentration raises temperature",
+    "More frequent collisions per unit volume",
+    "Particles need less energy to react at higher concentration",
+    "The same particles collide less often but with greater energy"
+  ],
+  "correctIndex": 1,
+  "explanation": "Higher concentration means more reactant particles in the same volume. This increases the frequency of collisions between particles, increasing the rate.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwdqqhv"
+},
   {
   "id": "chem-rates-012",
   "subject": "chemistry",
@@ -1137,16 +1217,31 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Organic Chemistry",
   "question": "What is cracking used for?",
   "options": [
-    "To join small molecules together",
-    "To break down large hydrocarbon molecules into smaller, more useful ones",
-    "To remove impurities from crude oil",
-    "To separate crude oil into fractions"
+    "To produce larger fuel molecules from short-chain alkanes",
+    "To make smaller, more useful hydrocarbons",
+    "To separate crude-oil fractions without breaking molecules",
+    "To remove sulfur compounds by dissolving crude oil in water"
   ],
   "correctIndex": 1,
   "explanation": "Cracking breaks long-chain hydrocarbons into shorter hydrocarbons, including useful alkenes. Catalytic cracking uses vaporised feedstock passed over a hot catalyst. Steam cracking also needs a high temperature; a catalyst does not replace heating.",
   "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z9488mn"
 },
-  { id: 'chem-organic-011', subject: 'chemistry', topic: 'organic', topicLabel: 'Organic Chemistry', question: 'What happens when bromine water is added to an alkene?', options: ['Nothing — no colour change', 'The bromine water turns from orange/brown to colourless', 'The bromine water turns blue', 'The alkene dissolves'], correctIndex: 1, explanation: 'Alkenes contain a C=C double bond which reacts with bromine water, decolourising it from orange/brown to colourless. This is the test for unsaturation.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z9488mn' },
+  {
+  "id": "chem-organic-011",
+  "subject": "chemistry",
+  "topic": "organic",
+  "topicLabel": "Organic Chemistry",
+  "question": "What happens when bromine water is added to an alkene?",
+  "options": [
+    "The solution remains orange/brown after shaking",
+    "It becomes colourless",
+    "It changes from colourless to orange/brown",
+    "It forms a white precipitate without losing its colour"
+  ],
+  "correctIndex": 1,
+  "explanation": "Alkenes contain a C=C double bond which reacts with bromine water, decolourising it from orange/brown to colourless. This is the test for unsaturation.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z9488mn"
+},
   { id: 'chem-organic-012',
     scope: "separate", subject: 'chemistry', topic: 'organic', topicLabel: 'Organic Chemistry', question: 'What type of polymerisation involves monomers with C=C double bonds opening up and joining together?', options: ['Condensation polymerisation', 'Addition polymerisation', 'Natural polymerisation', 'Ionic polymerisation'], correctIndex: 1, explanation: 'Addition polymerisation occurs when many monomers with C=C double bonds (like ethene) open up their double bonds and join together to form a long chain. No other substance is produced.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z9488mn' },
 
@@ -1185,7 +1280,22 @@ export const chemistryQuestions: Question[] = [
   "explanation": "The squeaky-pop test identifies hydrogen, a product of many metal-acid reactions. Oxygen relights a glowing splint, carbon dioxide turns limewater cloudy, and chlorine bleaches damp litmus.",
   "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zgbccj6"
 },
-  { id: 'chem-analysis-011', subject: 'chemistry', topic: 'analysis', topicLabel: 'Chemical Analysis', question: 'A pure substance melts at a sharp, specific temperature. What would you expect for an impure substance?', options: ['It melts at a higher temperature', 'It melts over a range of temperatures and at a lower temperature', 'It does not melt', 'It melts at exactly the same temperature'], correctIndex: 1, explanation: 'Impurities lower the melting point and make the substance melt over a range of temperatures rather than at one sharp point. This is used to test purity.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zgbccj6' },
+  {
+  "id": "chem-analysis-011",
+  "subject": "chemistry",
+  "topic": "analysis",
+  "topicLabel": "Chemical Analysis",
+  "question": "A pure substance melts at a sharp, specific temperature. What would you expect for an impure substance?",
+  "options": [
+    "A higher melting point with a narrower melting range",
+    "A lower, broader melting range",
+    "An unchanged melting point with the same sharp transition",
+    "A higher melting point with the original sharp transition"
+  ],
+  "correctIndex": 1,
+  "explanation": "Impurities lower the melting point and make the substance melt over a range of temperatures rather than at one sharp point. This is used to test purity.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zgbccj6"
+},
   { id: 'chem-analysis-012',
     scope: "separate", subject: 'chemistry', topic: 'analysis', topicLabel: 'Chemical Analysis', question: 'What colour flame does copper produce in a flame test?', options: ['Crimson red', 'Yellow', 'Lilac', 'Green/blue-green'], correctIndex: 3, explanation: 'Copper compounds produce a green or blue-green flame in a flame test. This is a distinctive colour used to identify copper ions.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zgbccj6' },
 
@@ -1193,8 +1303,38 @@ export const chemistryQuestions: Question[] = [
   { id: 'chem-atmosphere-008', subject: 'chemistry', topic: 'atmosphere', topicLabel: 'Atmosphere & Resources', question: 'Which gas made up most of the Earth\'s early atmosphere, released by volcanic eruptions?', options: ['Oxygen', 'Nitrogen', 'Carbon dioxide', 'Methane'], correctIndex: 2, explanation: 'Volcanic eruptions released large amounts of carbon dioxide (and water vapour) into the early atmosphere. There was very little or no oxygen.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zy43p9q' },
   { id: 'chem-atmosphere-009', subject: 'chemistry', topic: 'atmosphere', topicLabel: 'Atmosphere & Resources', question: 'How did the first organisms that photosynthesised change the atmosphere?', options: ['They removed oxygen and added CO2', 'They removed CO2 and produced oxygen', 'They had no effect', 'They increased nitrogen levels'], correctIndex: 1, explanation: 'Early algae and plants used CO2 for photosynthesis and released O2 as a waste product. Over billions of years, this dramatically increased oxygen levels and decreased CO2.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zy43p9q' },
   { id: 'chem-atmosphere-010', subject: 'chemistry', topic: 'atmosphere', topicLabel: 'Atmosphere & Resources', question: 'Which of these is NOT a greenhouse gas?', options: ['Carbon dioxide', 'Methane', 'Nitrogen', 'Water vapour'], correctIndex: 2, explanation: 'Nitrogen makes up 78% of the atmosphere but is not a greenhouse gas. CO2, methane, and water vapour all absorb and re-emit infrared radiation, trapping heat.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zy43p9q' },
-  { id: 'chem-atmosphere-011', subject: 'chemistry', topic: 'atmosphere', topicLabel: 'Atmosphere & Resources', question: 'Which of these actions would reduce a person\'s carbon footprint?', options: ['Driving a petrol car more', 'Using renewable energy instead of fossil fuels', 'Leaving lights on all day', 'Taking more flights'], correctIndex: 1, explanation: 'Using renewable energy sources (solar, wind) instead of burning fossil fuels reduces CO2 emissions and therefore reduces your carbon footprint.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zy43p9q' },
-  { id: 'chem-atmosphere-012', subject: 'chemistry', topic: 'atmosphere', topicLabel: 'Atmosphere & Resources', question: 'What are the main steps in making potable water from fresh water?', options: ['Distillation then freezing', 'Filtration then sterilisation (e.g. chlorination)', 'Boiling then adding salt', 'Evaporation then condensation'], correctIndex: 1, explanation: 'Potable water from fresh water sources is made by: 1) filtration to remove solid particles, then 2) sterilisation (using chlorine, ozone, or UV light) to kill microorganisms.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zptnng8' },
+  {
+  "id": "chem-atmosphere-011",
+  "subject": "chemistry",
+  "topic": "atmosphere",
+  "topicLabel": "Atmosphere & Resources",
+  "question": "Which of these actions would reduce a person's carbon footprint?",
+  "options": [
+    "Replacing an efficient electric motor with a petrol engine",
+    "Using renewables instead of fossil fuels",
+    "Replacing a short rail journey with a short-haul flight",
+    "Replacing an insulated wall with one that loses heat faster"
+  ],
+  "correctIndex": 1,
+  "explanation": "Using renewable energy sources (solar, wind) instead of burning fossil fuels reduces CO2 emissions and therefore reduces your carbon footprint.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zy43p9q"
+},
+  {
+  "id": "chem-atmosphere-012",
+  "subject": "chemistry",
+  "topic": "atmosphere",
+  "topicLabel": "Atmosphere & Resources",
+  "question": "What are the main steps in making potable water from fresh water?",
+  "options": [
+    "Distillation followed by adding dissolved mineral salts",
+    "Filtration then sterilisation",
+    "Sterilisation followed by dissolving suspended particles",
+    "Filtration followed by evaporating all the remaining water"
+  ],
+  "correctIndex": 1,
+  "explanation": "Potable water from fresh water sources is made by: 1) filtration to remove solid particles, then 2) sterilisation (using chlorine, ozone, or UV light) to kill microorganisms.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zptnng8"
+},
 
   // Foundation methods, applications and coverage additions.
   {
