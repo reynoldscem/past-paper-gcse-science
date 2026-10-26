@@ -121,7 +121,7 @@ export const drivingWeakTopicsQuestions: Question[] = [
       "Limits apply only in queues"
     ],
     "correctIndex": 1,
-    "explanation": "Rule 124: Variable speed signs change the maximum permitted speed. Obey the displayed limits even when you cannot yet see the reason for them.",
+    "explanation": "Rule 124: This sign marks the start of a variable-speed-limit section with enforcement cameras. Follow the displayed limits; a speed shown within a red circle is mandatory, even when you cannot yet see the reason for it.",
     "highwayCodeRule": "124",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/general-rules-techniques-and-advice-for-all-drivers-and-riders-103-to-158#rule124",
     "image": {
@@ -465,7 +465,7 @@ export const drivingWeakTopicsQuestions: Question[] = [
     "topicLabel": "Road Markings",
     "question": "With the solid line nearest you, which moving vehicle may you cross these lines to pass if necessary and the road is clear?",
     "options": [
-      "A tractor travelling at 8 mph",
+      "An agricultural tractor travelling at 8 mph",
       "A cyclist travelling at 15 mph",
       "A delivery van travelling at 8 mph",
       "A cyclist travelling at 8 mph"
@@ -771,15 +771,15 @@ export const drivingWeakTopicsQuestions: Question[] = [
     "subject": "roadSigns",
     "topic": "road-markings",
     "topicLabel": "Road Markings",
-    "question": "A single yellow waiting restriction has ended for the day, but double kerb marks remain. Can you unload here?",
+    "question": "Double yellow road lines and double yellow kerb marks are present. The nearby shops have closed for the day. Can you unload here?",
     "options": [
-      "Yes, the waiting ban has ended",
+      "Yes, once the shops have closed",
       "Yes, for under ten minutes",
-      "Yes, because a single road line takes priority",
+      "Yes, if a passenger stays with the car",
       "No, the loading ban still applies"
     ],
     "correctIndex": 3,
-    "explanation": "Rule 247: Double kerb marks prohibit loading at any time. Waiting and loading restrictions must be read separately.",
+    "explanation": "Rule 247: Double yellow kerb marks prohibit loading and unloading at any time, whatever the time of day or whether nearby shops are open. The double yellow lines on the road separately prohibit waiting at any time.",
     "highwayCodeRule": "247",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/waiting-and-parking-238-to-252#rule247"
   },
