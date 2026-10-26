@@ -97,3 +97,16 @@ The combined atmosphere/resources topic uses the resources hub for water treatme
 Four original SVG assets supply two completed Punnett squares, a reaction profile with an activation-energy arrow, and plotted decay data. Alt text preserves the evidence if an image cannot load. Science diagrams have their own attribution; driving image attribution is unchanged.
 
 `npm test` checks the full science bank, URL relevance mapping/denylist, required coverage, longest-answer percentage including ties, numerical equation answers, selection modes and denominators with legacy attempts. `npm run test:browser` additionally checks all five illustrated science records on a mobile viewport.
+
+
+## Question quality revision (26 October 2026)
+
+Repeated stems and closely related recall questions now test distinct applications: isotope evidence versus definitions, chromatography setup versus interpretation, reaction profiles versus activation-energy definitions, and numerical/application work for atomic structure, waves and particle models. No IDs or scope tags were removed. No exact repeated science stems remain after trimming and case normalisation.
+
+Four repeated energy items were repurposed: `phys-energy-phys-013` now rearranges W = Fs, `phys-energy-phys-022` uses the squared-extension relationship in spring energy, `phys-energy-phys-003` compares nuclear/gas resources, and `phys-energy-phys-011` compares tidal/wind predictability. The first two now belong to Forces with matching learning links; Energy falls from 29 to 27 records and Forces rises from 25 to 27. Existing numerical-equation coverage and Foundation eligibility remain intact.
+
+Verified against the live AQA Trilogy [biology](https://www.aqa.org.uk/subjects/science/gcse/science-8464/specification/biology-subject-content), [chemistry](https://www.aqa.org.uk/subjects/science/gcse/science-8464/specification/chemistry-subject-content) and [physics](https://www.aqa.org.uk/subjects/science/gcse/science-8464/specification/physics-subject-content) subject-content pages on 26 October 2026.
+
+Plausible misconceptions and nearby numerical distractors replace weak alternatives. Text-bank longest-correct proportions, counting ties and Unicode characters, fell from 55/116 (47.41%) to 27/116 (23.28%) for biology, 70/129 (54.26%) to 37/129 (28.68%) for chemistry, and 66/130 (50.77%) to 29/130 (22.31%) for physics. These baselines include the earlier must-fix expansion, so differ from the older review's 292-question measurements. Shortest-correct proportions are also below 35% in each full text bank. The unnecessary words always/never/only have been removed from science options.
+
+`npm test` now rejects any driving or science text bank above 40% longest-correct, testing both all retained records and the default practice pool. See [the revision report](should-fix-content-2026-10-26.md) for changed IDs and final validation.

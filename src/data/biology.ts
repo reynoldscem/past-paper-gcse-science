@@ -25,16 +25,21 @@ export const biologyQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z2mttv4',
   },
   {
-    id: 'bio-cell-biology-003',
-    subject: 'biology',
-    topic: 'cell-biology',
-    topicLabel: 'Cell Biology',
-    question: 'What is the function of mitochondria?',
-    options: ['To store water', 'To carry out photosynthesis', 'To release energy through aerobic respiration', 'To make proteins'],
-    correctIndex: 2,
-    explanation: 'Mitochondria are the site of aerobic respiration, where glucose and oxygen react to release energy for the cell.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z2mttv4',
-  },
+  "id": "bio-cell-biology-003",
+  "subject": "biology",
+  "topic": "cell-biology",
+  "topicLabel": "Cell Biology",
+  "question": "What is the function of mitochondria?",
+  "options": [
+    "Storage of water and dissolved ions",
+    "Photosynthesis",
+    "Aerobic respiration",
+    "Protein synthesis from amino acids"
+  ],
+  "correctIndex": 2,
+  "explanation": "Mitochondria are the site of aerobic respiration, where glucose and oxygen react to release energy for the cell.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z2mttv4"
+},
   {
     id: 'bio-cell-biology-004',
     subject: 'biology',
@@ -69,16 +74,21 @@ export const biologyQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z2mttv4',
   },
   {
-    id: 'bio-cell-biology-007',
-    subject: 'biology',
-    topic: 'cell-biology',
-    topicLabel: 'Cell Biology',
-    question: 'Which type of transport requires energy from the cell?',
-    options: ['Diffusion', 'Osmosis', 'Evaporation', 'Active transport'],
-    correctIndex: 3,
-    explanation: 'Active transport uses energy from respiration to move substances against the concentration gradient, from a lower concentration to a higher concentration.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z2mttv4',
-  },
+  "id": "bio-cell-biology-007",
+  "subject": "biology",
+  "topic": "cell-biology",
+  "topicLabel": "Cell Biology",
+  "question": "Which type of transport requires energy from the cell?",
+  "options": [
+    "Diffusion",
+    "Osmosis through a partially permeable membrane",
+    "Gas exchange across the alveolar walls",
+    "Active transport"
+  ],
+  "correctIndex": 3,
+  "explanation": "Active transport uses energy from respiration to move substances against the concentration gradient, from a lower concentration to a higher concentration.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z2mttv4"
+},
   {
     id: 'bio-cell-biology-008',
     subject: 'biology',
@@ -164,21 +174,21 @@ export const biologyQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwj22nb',
   },
   {
-    id: 'bio-organisation-006',
-    subject: 'biology',
-    topic: 'organisation',
-    topicLabel: 'Organisation',
-    question: 'What does bile do during digestion?',
-    options: [
-      'It breaks down proteins',
-      'It emulsifies fats into smaller droplets',
-      'It absorbs nutrients into the blood',
-      'It produces hydrochloric acid',
-    ],
-    correctIndex: 1,
-    explanation: 'Bile is produced by the liver and stored in the gall bladder. It emulsifies fats, breaking large fat droplets into smaller ones to increase surface area for lipase to work on.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwj22nb',
-  },
+  "id": "bio-organisation-006",
+  "subject": "biology",
+  "topic": "organisation",
+  "topicLabel": "Organisation",
+  "question": "What does bile do during digestion?",
+  "options": [
+    "It digests starch",
+    "It emulsifies fats",
+    "It absorbs nutrients into the blood",
+    "It produces acid in the stomach"
+  ],
+  "correctIndex": 1,
+  "explanation": "Bile is produced by the liver and stored in the gall bladder. It emulsifies fats, breaking large fat droplets into smaller ones to increase surface area for lipase to work on.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwj22nb"
+},
   {
     id: 'bio-organisation-007',
     subject: 'biology',
@@ -215,21 +225,21 @@ export const biologyQuestions: Question[] = [
 
   // ─── Infection & Response (9 questions) ────────────────────────────────────
   {
-    id: 'bio-infection-001',
-    subject: 'biology',
-    topic: 'infection',
-    topicLabel: 'Infection & Response',
-    question: 'What is a pathogen?',
-    options: [
-      'A type of white blood cell',
-      'A microorganism that causes disease',
-      'A chemical that kills bacteria',
-      'A type of antibody',
-    ],
-    correctIndex: 1,
-    explanation: 'A pathogen is a microorganism that enters the body and causes disease. Examples include bacteria, viruses, fungi, and protists.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z9kww6f',
-  },
+  "id": "bio-infection-001",
+  "subject": "biology",
+  "topic": "infection",
+  "topicLabel": "Infection & Response",
+  "question": "What is a pathogen?",
+  "options": [
+    "An oxygen-carrying blood cell",
+    "A disease-causing microorganism",
+    "A protein made in response to infection",
+    "A chemical released to neutralise a toxin"
+  ],
+  "correctIndex": 1,
+  "explanation": "A pathogen is a microorganism that enters the body and causes disease. Examples include bacteria, viruses, fungi, and protists.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z9kww6f"
+},
   {
     id: 'bio-infection-002',
     subject: 'biology',
@@ -242,37 +252,37 @@ export const biologyQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z9kww6f',
   },
   {
-    id: 'bio-infection-003',
-    subject: 'biology',
-    topic: 'infection',
-    topicLabel: 'Infection & Response',
-    question: 'How do white blood cells help defend the body against pathogens?',
-    options: [
-      'By carrying oxygen',
-      'By producing antibodies, engulfing pathogens, and producing antitoxins',
-      'By clotting the blood',
-      'By producing red blood cells',
-    ],
-    correctIndex: 1,
-    explanation: 'White blood cells defend the body by: producing antibodies that target specific pathogens, engulfing and digesting pathogens (phagocytosis), and producing antitoxins to neutralise toxins.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z9kww6f',
-  },
+  "id": "bio-infection-003",
+  "subject": "biology",
+  "topic": "infection",
+  "topicLabel": "Infection & Response",
+  "question": "How do white blood cells help defend the body against pathogens?",
+  "options": [
+    "Carrying oxygen and forming clots",
+    "Antibodies, phagocytosis and antitoxins",
+    "Producing insulin, digesting glucose and releasing bile",
+    "Trapping mucus, moving cilia and producing stomach acid"
+  ],
+  "correctIndex": 1,
+  "explanation": "White blood cells defend the body by: producing antibodies that target specific pathogens, engulfing and digesting pathogens (phagocytosis), and producing antitoxins to neutralise toxins.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z9kww6f"
+},
   {
-    id: 'bio-infection-004',
-    subject: 'biology',
-    topic: 'infection',
-    topicLabel: 'Infection & Response',
-    question: 'What does a vaccination contain?',
-    options: [
-      'Antibiotics to kill the pathogen',
-      'A dead or inactive form of the pathogen',
-      'White blood cells from another person',
-      'Painkillers to reduce symptoms',
-    ],
-    correctIndex: 1,
-    explanation: 'Vaccinations contain a dead or inactive form of the pathogen. This stimulates the immune system to produce antibodies and memory cells, providing future immunity.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z9kww6f',
-  },
+  "id": "bio-infection-004",
+  "subject": "biology",
+  "topic": "infection",
+  "topicLabel": "Infection & Response",
+  "question": "What does a vaccination contain?",
+  "options": [
+    "Antibiotics",
+    "Dead or inactive pathogens",
+    "Ready-made antibodies from another animal",
+    "Painkillers that prevent antibody production"
+  ],
+  "correctIndex": 1,
+  "explanation": "Vaccinations contain a dead or inactive form of the pathogen. This stimulates the immune system to produce antibodies and memory cells, providing future immunity.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z9kww6f"
+},
   {
   "id": "bio-infection-005",
   "subject": "biology",
@@ -312,21 +322,21 @@ export const biologyQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z9kww6f',
   },
   {
-    id: 'bio-infection-008',
-    subject: 'biology',
-    topic: 'infection',
-    topicLabel: 'Infection & Response',
-    question: 'What is the main problem with the overuse of antibiotics?',
-    options: [
-      'They become less effective over time as bacteria develop resistance',
-      'They are too expensive',
-      'They make viruses stronger',
-      'They kill white blood cells',
-    ],
-    correctIndex: 0,
-    explanation: 'Overuse of antibiotics leads to antibiotic-resistant strains of bacteria developing through natural selection. These resistant bacteria, such as MRSA, are harder to treat.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z9kww6f',
-  },
+  "id": "bio-infection-008",
+  "subject": "biology",
+  "topic": "infection",
+  "topicLabel": "Infection & Response",
+  "question": "What is the main problem with the overuse of antibiotics?",
+  "options": [
+    "Resistant bacteria become more common",
+    "The human body becomes resistant",
+    "Viruses evolve resistance to the antibiotic",
+    "Susceptible bacteria reproduce faster than resistant ones"
+  ],
+  "correctIndex": 0,
+  "explanation": "Overuse of antibiotics leads to antibiotic-resistant strains of bacteria developing through natural selection. These resistant bacteria, such as MRSA, are harder to treat.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z9kww6f"
+},
   {
     id: 'bio-infection-009',
     subject: 'biology',
@@ -411,21 +421,21 @@ export const biologyQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zgr997h',
   },
   {
-    id: 'bio-bioenergetics-006',
-    subject: 'biology',
-    topic: 'bioenergetics',
-    topicLabel: 'Bioenergetics',
-    question: 'What do plants use the glucose produced in photosynthesis for?',
-    options: [
-      'Only for respiration',
-      'Respiration, making cellulose, making amino acids, and storing as starch',
-      'Only for making starch',
-      'Only for growth',
-    ],
-    correctIndex: 1,
-    explanation: 'Plants use glucose for respiration (releasing energy), making cellulose for cell walls, making amino acids for proteins, and converting it to starch for storage.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zgr997h',
-  },
+  "id": "bio-bioenergetics-006",
+  "subject": "biology",
+  "topic": "bioenergetics",
+  "topicLabel": "Bioenergetics",
+  "question": "What do plants use the glucose produced in photosynthesis for?",
+  "options": [
+    "Respiration and storage as glycogen",
+    "Respiration, cellulose, amino acids and starch",
+    "Respiration, absorbing minerals, storing energy as chlorophyll",
+    "Making starch, making cellulose, absorbing glucose through roots"
+  ],
+  "correctIndex": 1,
+  "explanation": "Plants use glucose for respiration (releasing energy), making cellulose for cell walls, making amino acids for proteins, and converting it to starch for storage.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zgr997h"
+},
   {
     id: 'bio-bioenergetics-007',
     subject: 'biology',
@@ -438,39 +448,39 @@ export const biologyQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zgr997h',
   },
   {
-    id: 'bio-bioenergetics-008',
-    subject: 'biology',
-    topic: 'bioenergetics',
-    topicLabel: 'Bioenergetics',
-    question: 'What is metabolism?',
-    options: [
-      'The process of breathing in and out',
-      'The sum of all the chemical reactions in a cell or the body',
-      'The breakdown of food in the stomach',
-      'The movement of blood around the body',
-    ],
-    correctIndex: 1,
-    explanation: 'Metabolism is the sum of all the chemical reactions that occur in the body or in a cell. It includes reactions like respiration, photosynthesis, and protein synthesis.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zgr997h',
-  },
+  "id": "bio-bioenergetics-008",
+  "subject": "biology",
+  "topic": "bioenergetics",
+  "topicLabel": "Bioenergetics",
+  "question": "What is metabolism?",
+  "options": [
+    "Ventilation of the lungs",
+    "All chemical reactions in cells or the body",
+    "The mechanical movement of food through the intestine",
+    "Circulation that transports oxygen around the body"
+  ],
+  "correctIndex": 1,
+  "explanation": "Metabolism is the sum of all the chemical reactions that occur in the body or in a cell. It includes reactions like respiration, photosynthesis, and protein synthesis.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zgr997h"
+},
 
   // ─── Homeostasis (9 questions) ─────────────────────────────────────────────
   {
-    id: 'bio-homeostasis-001',
-    subject: 'biology',
-    topic: 'homeostasis',
-    topicLabel: 'Homeostasis',
-    question: 'What is homeostasis?',
-    options: [
-      'The growth and repair of cells',
-      'The maintenance of a constant internal environment',
-      'The process of breathing',
-      'The movement of muscles',
-    ],
-    correctIndex: 1,
-    explanation: 'Homeostasis is the regulation of the internal conditions of a cell or organism to maintain optimum conditions for function, in response to internal and external changes.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zyybb82',
-  },
+  "id": "bio-homeostasis-001",
+  "subject": "biology",
+  "topic": "homeostasis",
+  "topicLabel": "Homeostasis",
+  "question": "What is homeostasis?",
+  "options": [
+    "Matching conditions outside the body",
+    "Maintaining a stable internal environment",
+    "Increasing every reaction rate as body temperature rises",
+    "Stopping all changes to the composition of the blood"
+  ],
+  "correctIndex": 1,
+  "explanation": "Homeostasis is the regulation of the internal conditions of a cell or organism to maintain optimum conditions for function, in response to internal and external changes.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zyybb82"
+},
   {
     id: 'bio-homeostasis-002',
     subject: 'biology',
@@ -499,32 +509,37 @@ export const biologyQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zyybb82',
   },
   {
-    id: 'bio-homeostasis-004',
-    subject: 'biology',
-    topic: 'homeostasis',
-    topicLabel: 'Homeostasis',
-    question: 'What is Type 1 diabetes caused by?',
-    options: [
-      'Eating too much sugar',
-      'The pancreas not producing enough insulin',
-      'The body becoming resistant to insulin',
-      'The liver producing too much glucose',
-    ],
-    correctIndex: 1,
-    explanation: 'Type 1 diabetes is caused by the destruction of insulin-producing cells in the pancreas, meaning the body can no longer produce insulin. It is treated with insulin injections.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zyybb82',
-  },
+  "id": "bio-homeostasis-004",
+  "subject": "biology",
+  "topic": "homeostasis",
+  "topicLabel": "Homeostasis",
+  "question": "What is Type 1 diabetes caused by?",
+  "options": [
+    "Insulin being released whenever blood glucose falls",
+    "Too little insulin production",
+    "Insulin resistance",
+    "An increased conversion of glucose to glycogen in the liver"
+  ],
+  "correctIndex": 1,
+  "explanation": "Type 1 diabetes is caused by the destruction of insulin-producing cells in the pancreas, meaning the body can no longer produce insulin. It is treated with insulin injections.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zyybb82"
+},
   {
-    id: 'bio-homeostasis-005',
-    subject: 'biology',
-    topic: 'homeostasis',
-    topicLabel: 'Homeostasis',
-    question: 'What is the small gap between two neurones called?',
-    options: ['Junction', 'Synapse', 'Bridge', 'Dendrite'],
-    correctIndex: 1,
-    explanation: 'A synapse is the small gap between two neurones. When a nerve impulse reaches a synapse, chemicals called neurotransmitters are released to carry the signal across the gap.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zyybb82',
-  },
+  "id": "bio-homeostasis-005",
+  "subject": "biology",
+  "topic": "homeostasis",
+  "topicLabel": "Homeostasis",
+  "question": "What is the small gap between two neurones called?",
+  "options": [
+    "Axon",
+    "Synapse",
+    "Receptor",
+    "Dendrite"
+  ],
+  "correctIndex": 1,
+  "explanation": "A synapse is the small gap between two neurones. When a nerve impulse reaches a synapse, chemicals called neurotransmitters are released to carry the signal across the gap.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zyybb82"
+},
   {
     id: 'bio-homeostasis-006',
     subject: 'biology',
@@ -537,22 +552,22 @@ export const biologyQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zyybb82',
   },
   {
-    id: 'bio-homeostasis-007',
-    scope: "separate",
-    subject: 'biology',
-    topic: 'homeostasis',
-    topicLabel: 'Homeostasis',
-    question: 'How does the body cool down when it is too hot?',
-    options: [
-      'Blood vessels near the skin constrict and hairs stand up',
-      'Sweat glands produce sweat and blood vessels near the skin dilate',
-      'Muscles begin to shiver',
-      'The body produces more adrenaline',
-    ],
-    correctIndex: 1,
-    explanation: 'When the body is too hot, sweat glands produce sweat which evaporates and cools the skin. Blood vessels near the skin surface also dilate (vasodilation) to increase heat loss by radiation.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zyybb82',
-  },
+  "id": "bio-homeostasis-007",
+  "scope": "separate",
+  "subject": "biology",
+  "topic": "homeostasis",
+  "topicLabel": "Homeostasis",
+  "question": "How does the body cool down when it is too hot?",
+  "options": [
+    "Sweating and vasoconstriction",
+    "Sweating and skin vasodilation",
+    "Skin blood vessels dilate and the muscles begin shivering",
+    "Sweating decreases and hairs are raised to trap air"
+  ],
+  "correctIndex": 1,
+  "explanation": "When the body is too hot, sweat glands produce sweat which evaporates and cools the skin. Blood vessels near the skin surface also dilate (vasodilation) to increase heat loss by radiation.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zyybb82"
+},
   {
     id: 'bio-homeostasis-008',
     scope: "separate",
@@ -600,21 +615,21 @@ export const biologyQuestions: Question[] = [
   "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zvymrmn"
 },
   {
-    id: 'bio-inheritance-002',
-    subject: 'biology',
-    topic: 'inheritance',
-    topicLabel: 'Inheritance & Variation',
-    question: 'What is a gene?',
-    options: [
-      'A type of chromosome',
-      'A section of DNA that codes for a specific protein',
-      'A whole strand of DNA',
-      'A type of cell',
-    ],
-    correctIndex: 1,
-    explanation: 'A gene is a small section of DNA on a chromosome. Each gene codes for a particular sequence of amino acids, which makes a specific protein.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zvymrmn',
-  },
+  "id": "bio-inheritance-002",
+  "subject": "biology",
+  "topic": "inheritance",
+  "topicLabel": "Inheritance & Variation",
+  "question": "What is a gene?",
+  "options": [
+    "A whole chromosome",
+    "DNA coding for a particular protein",
+    "A sequence of amino acids in a completed protein",
+    "A membrane-bound structure containing chromosomes"
+  ],
+  "correctIndex": 1,
+  "explanation": "A gene is a small section of DNA on a chromosome. Each gene codes for a particular sequence of amino acids, which makes a specific protein.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zvymrmn"
+},
   {
   "id": "bio-inheritance-003",
   "subject": "biology",
@@ -636,21 +651,21 @@ export const biologyQuestions: Question[] = [
   }
 },
   {
-    id: 'bio-inheritance-004',
-    subject: 'biology',
-    topic: 'inheritance',
-    topicLabel: 'Inheritance & Variation',
-    question: 'What is natural selection?',
-    options: [
-      'Humans choosing which organisms to breed',
-      'The process where organisms best adapted to their environment survive and reproduce',
-      'Organisms choosing their mates based on appearance',
-      'Random changes in DNA',
-    ],
-    correctIndex: 1,
-    explanation: 'Natural selection is the process where organisms with characteristics best suited to their environment are more likely to survive, reproduce, and pass on their genes to the next generation.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zvymrmn',
-  },
+  "id": "bio-inheritance-004",
+  "subject": "biology",
+  "topic": "inheritance",
+  "topicLabel": "Inheritance & Variation",
+  "question": "What is natural selection?",
+  "options": [
+    "Individuals changing their genes because they need to adapt",
+    "Better-adapted organisms surviving and reproducing",
+    "Humans choosing parents to breed",
+    "Individuals passing on traits acquired through exercise"
+  ],
+  "correctIndex": 1,
+  "explanation": "Natural selection is the process where organisms with characteristics best suited to their environment are more likely to survive, reproduce, and pass on their genes to the next generation.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zvymrmn"
+},
   {
     id: 'bio-inheritance-005',
     subject: 'biology',
@@ -690,66 +705,71 @@ export const biologyQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zvymrmn',
   },
   {
-    id: 'bio-inheritance-008',
-    subject: 'biology',
-    topic: 'inheritance',
-    topicLabel: 'Inheritance & Variation',
-    question: 'Which of the following is an example of variation caused by the environment rather than genes?',
-    options: ['Eye colour', 'Natural hair colour', 'A scar from an injury', 'Blood group'],
-    correctIndex: 2,
-    explanation: 'A scar is caused by environmental factors (an injury), not by genes. Eye colour, natural hair colour, and blood group are all determined by genetic factors.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zvymrmn',
-  },
+  "id": "bio-inheritance-008",
+  "subject": "biology",
+  "topic": "inheritance",
+  "topicLabel": "Inheritance & Variation",
+  "question": "Which of the following is an example of variation caused by the environment rather than genes?",
+  "options": [
+    "Eye colour",
+    "Natural hair colour",
+    "An injury scar",
+    "Inherited blood group"
+  ],
+  "correctIndex": 2,
+  "explanation": "A scar is caused by environmental factors (an injury), not by genes. Eye colour, natural hair colour, and blood group are all determined by genetic factors.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zvymrmn"
+},
 
   // ─── Ecology (8 questions) ─────────────────────────────────────────────────
   {
-    id: 'bio-ecology-001',
-    subject: 'biology',
-    topic: 'ecology',
-    topicLabel: 'Ecology',
-    question: 'What is a community in ecology?',
-    options: [
-      'All the organisms of one species in a habitat',
-      'All the different species living and interacting in an area',
-      'The physical environment where organisms live',
-      'A group of ecosystems',
-    ],
-    correctIndex: 1,
-    explanation: 'A community is made up of all the populations of different species living and interacting together in an area. A single species group is called a population.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zxxhh39',
-  },
+  "id": "bio-ecology-001",
+  "subject": "biology",
+  "topic": "ecology",
+  "topicLabel": "Ecology",
+  "question": "What is a community in ecology?",
+  "options": [
+    "One species in one habitat",
+    "Interacting populations in an area",
+    "The organisms and non-living conditions in an area",
+    "All the habitats with the same physical conditions"
+  ],
+  "correctIndex": 1,
+  "explanation": "A community is made up of all the populations of different species living and interacting together in an area. A single species group is called a population.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zxxhh39"
+},
   {
-    id: 'bio-ecology-002',
-    subject: 'biology',
-    topic: 'ecology',
-    topicLabel: 'Ecology',
-    question: 'In a food chain, what do arrows represent?',
-    options: [
-      'The direction organisms move',
-      'The transfer of energy',
-      'The size of the organism',
-      'The speed of growth',
-    ],
-    correctIndex: 1,
-    explanation: 'Arrows in a food chain show the direction of energy transfer from one organism to the next. They point from the organism being eaten to the organism doing the eating.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zxxhh39',
-  },
+  "id": "bio-ecology-002",
+  "subject": "biology",
+  "topic": "ecology",
+  "topicLabel": "Ecology",
+  "question": "In a food chain, what do arrows represent?",
+  "options": [
+    "Predator movement",
+    "The transfer of energy",
+    "The flow from each consumer back to its food source",
+    "The direction of increasing population size"
+  ],
+  "correctIndex": 1,
+  "explanation": "Arrows in a food chain show the direction of energy transfer from one organism to the next. They point from the organism being eaten to the organism doing the eating.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zxxhh39"
+},
   {
-    id: 'bio-ecology-003',
-    subject: 'biology',
-    topic: 'ecology',
-    topicLabel: 'Ecology',
-    question: 'What is an adaptation?',
-    options: [
-      'A disease that affects organisms',
-      'A feature that helps an organism survive in its environment',
-      'A type of food chain',
-      'A change in weather patterns',
-    ],
-    correctIndex: 1,
-    explanation: 'An adaptation is a feature or characteristic that has evolved to help an organism survive and reproduce in its environment. Adaptations can be structural, behavioural, or functional.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zxxhh39',
-  },
+  "id": "bio-ecology-003",
+  "subject": "biology",
+  "topic": "ecology",
+  "topicLabel": "Ecology",
+  "question": "What is an adaptation?",
+  "options": [
+    "A change in the weather",
+    "A feature aiding survival",
+    "A feeding relationship between two populations",
+    "A short-term increase in the size of a population"
+  ],
+  "correctIndex": 1,
+  "explanation": "An adaptation is a feature or characteristic that has evolved to help an organism survive and reproduce in its environment. Adaptations can be structural, behavioural, or functional.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zxxhh39"
+},
   {
     id: 'bio-ecology-004',
     subject: 'biology',
@@ -767,59 +787,69 @@ export const biologyQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zxxhh39',
   },
   {
-    id: 'bio-ecology-005',
-    subject: 'biology',
-    topic: 'ecology',
-    topicLabel: 'Ecology',
-    question: 'What process returns carbon dioxide to the atmosphere in the carbon cycle?',
-    options: ['Photosynthesis', 'Respiration', 'Condensation', 'Filtration'],
-    correctIndex: 1,
-    explanation: 'Respiration (carried out by animals, plants, and decomposers) and combustion of fossil fuels return carbon dioxide to the atmosphere. Photosynthesis removes carbon dioxide from the atmosphere.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zxxhh39',
-  },
+  "id": "bio-ecology-005",
+  "subject": "biology",
+  "topic": "ecology",
+  "topicLabel": "Ecology",
+  "question": "What process returns carbon dioxide to the atmosphere in the carbon cycle?",
+  "options": [
+    "Photosynthesis",
+    "Respiration",
+    "Dissolving carbon dioxide in oceans",
+    "Carbon becoming locked in sedimentary rock"
+  ],
+  "correctIndex": 1,
+  "explanation": "Respiration (carried out by animals, plants, and decomposers) and combustion of fossil fuels return carbon dioxide to the atmosphere. Photosynthesis removes carbon dioxide from the atmosphere.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zxxhh39"
+},
   {
-    id: 'bio-ecology-006',
-    subject: 'biology',
-    topic: 'ecology',
-    topicLabel: 'Ecology',
-    question: 'What piece of equipment would you use to estimate the population of daisies in a field?',
-    options: ['Thermometer', 'Quadrat', 'Microscope', 'Test tube'],
-    correctIndex: 1,
-    explanation: 'A quadrat is a square frame placed randomly on the ground to count the number of organisms within a known area. Multiple samples are taken and averaged to estimate the whole population.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zxxhh39',
-  },
+  "id": "bio-ecology-006",
+  "subject": "biology",
+  "topic": "ecology",
+  "topicLabel": "Ecology",
+  "question": "What piece of equipment would you use to estimate the population of daisies in a field?",
+  "options": [
+    "Sweep net",
+    "Quadrat",
+    "Pitfall trap",
+    "Pooter"
+  ],
+  "correctIndex": 1,
+  "explanation": "A quadrat is a square frame placed randomly on the ground to count the number of organisms within a known area. Multiple samples are taken and averaged to estimate the whole population.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zxxhh39"
+},
   {
-    id: 'bio-ecology-007',
-    subject: 'biology',
-    topic: 'ecology',
-    topicLabel: 'Ecology',
-    question: 'What is biodiversity?',
-    options: [
-      'The number of individuals in a population',
-      'The variety of different species of organisms on Earth or within an ecosystem',
-      'The total biomass of all organisms',
-      'The number of habitats in an area',
-    ],
-    correctIndex: 1,
-    explanation: 'Biodiversity is the variety of all the different species of organisms on Earth, or within an ecosystem. High biodiversity means a large variety of species.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zxxhh39',
-  },
+  "id": "bio-ecology-007",
+  "subject": "biology",
+  "topic": "ecology",
+  "topicLabel": "Ecology",
+  "question": "What is biodiversity?",
+  "options": [
+    "The number of individuals of the most common species",
+    "The variety of species",
+    "Total biomass",
+    "The range of non-living conditions within a habitat"
+  ],
+  "correctIndex": 1,
+  "explanation": "Biodiversity is the variety of all the different species of organisms on Earth, or within an ecosystem. High biodiversity means a large variety of species.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zxxhh39"
+},
   {
-    id: 'bio-ecology-008',
-    subject: 'biology',
-    topic: 'ecology',
-    topicLabel: 'Ecology',
-    question: 'What is the role of decomposers in an ecosystem?',
-    options: [
-      'To produce food through photosynthesis',
-      'To hunt and eat other animals',
-      'To break down dead organisms and return nutrients to the soil',
-      'To pollinate flowers',
-    ],
-    correctIndex: 2,
-    explanation: 'Decomposers (such as bacteria and fungi) break down dead plant and animal matter, recycling nutrients back into the soil so they can be used by plants for growth.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zxxhh39',
-  },
+  "id": "bio-ecology-008",
+  "subject": "biology",
+  "topic": "ecology",
+  "topicLabel": "Ecology",
+  "question": "What is the role of decomposers in an ecosystem?",
+  "options": [
+    "Build organic nutrients from carbon dioxide using light",
+    "Hunt and eat living prey",
+    "Decay dead matter and recycle nutrients",
+    "Transport pollen between flowers of the same species"
+  ],
+  "correctIndex": 2,
+  "explanation": "Decomposers (such as bacteria and fungi) break down dead plant and animal matter, recycling nutrients back into the soil so they can be used by plants for growth.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zxxhh39"
+},
 
   // ─── NEW QUESTIONS (BATCH 2) ──────────────────────────────────────────
 
@@ -835,16 +865,21 @@ export const biologyQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z2mttv4',
   },
   {
-    id: 'bio-cell-biology-011',
-    subject: 'biology',
-    topic: 'cell-biology',
-    topicLabel: 'Cell Biology',
-    question: 'Which of these is a specialised cell adapted to carry oxygen around the body?',
-    options: ['White blood cell', 'Red blood cell', 'Nerve cell', 'Sperm cell'],
-    correctIndex: 1,
-    explanation: 'Red blood cells are specialised — they have no nucleus (to make more room), are biconcave shaped (to increase surface area), and contain haemoglobin which binds to oxygen.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z2mttv4',
-  },
+  "id": "bio-cell-biology-011",
+  "subject": "biology",
+  "topic": "cell-biology",
+  "topicLabel": "Cell Biology",
+  "question": "How does a mature human red blood cell’s lack of a nucleus help its function?",
+  "options": [
+    "It allows it to divide rapidly in the blood",
+    "It leaves more room for haemoglobin",
+    "It lets it produce antibodies against pathogens",
+    "It enables it to engulf bacteria"
+  ],
+  "correctIndex": 1,
+  "explanation": "A mature red blood cell has no nucleus, leaving more space for haemoglobin that binds and transports oxygen. It does not divide or act as a white blood cell.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z2mttv4"
+},
   {
   "id": "bio-organisation-010",
   "subject": "biology",
@@ -854,67 +889,77 @@ export const biologyQuestions: Question[] = [
   "options": [
     "It works faster",
     "It becomes denatured",
-    "It dissolves",
-    "It reproduces"
+    "Its active site remains unchanged",
+    "It changes into a different enzyme"
   ],
   "correctIndex": 1,
   "explanation": "At high temperatures, more enzyme molecules denature: their active sites change shape so substrates no longer fit. Activity falls as more molecules are affected; every molecule does not instantly stop just above the optimum.",
   "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwj22nb"
 },
   {
-    id: 'bio-organisation-011',
-    subject: 'biology',
-    topic: 'organisation',
-    topicLabel: 'Organisation',
-    question: 'Which type of blood vessel carries blood away from the heart?',
-    options: ['Veins', 'Capillaries', 'Arteries', 'Lymph vessels'],
-    correctIndex: 2,
-    explanation: 'Arteries carry blood away from the heart. They have thick, elastic walls to withstand the high pressure. Veins carry blood back to the heart.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwj22nb',
-  },
+  "id": "bio-organisation-011",
+  "subject": "biology",
+  "topic": "organisation",
+  "topicLabel": "Organisation",
+  "question": "Which vessel returns oxygenated blood from the lungs to the heart?",
+  "options": [
+    "Pulmonary artery",
+    "Vena cava",
+    "Pulmonary vein",
+    "Aorta"
+  ],
+  "correctIndex": 2,
+  "explanation": "The pulmonary vein returns oxygenated blood to the left atrium. Veins carry blood towards the heart; their definition is not based on oxygen content.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwj22nb"
+},
   {
-    id: 'bio-infection-010',
-    subject: 'biology',
-    topic: 'infection',
-    topicLabel: 'Infection & Response',
-    question: 'How does vaccination prevent disease?',
-    options: [
-      'It kills all pathogens in the body',
-      'It introduces a dead or weakened form of the pathogen so the body produces antibodies',
-      'It provides antibiotics to fight infection',
-      'It strengthens the skin barrier',
-    ],
-    correctIndex: 1,
-    explanation: 'Vaccines contain dead or inactive forms of a pathogen. White blood cells produce antibodies against it. If the real pathogen enters later, memory cells produce antibodies rapidly.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z9kww6f',
-  },
+  "id": "bio-infection-010",
+  "subject": "biology",
+  "topic": "infection",
+  "topicLabel": "Infection & Response",
+  "question": "How does vaccination prevent disease?",
+  "options": [
+    "It supplies ready-made antibodies",
+    "It stimulates an immune response to pathogen antigens",
+    "It destroys the pathogen using antibiotics in the vaccine",
+    "It prevents pathogens entering by thickening the skin"
+  ],
+  "correctIndex": 1,
+  "explanation": "Vaccines contain dead or inactive forms of a pathogen. White blood cells produce antibodies against it. If the real pathogen enters later, memory cells produce antibodies rapidly.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z9kww6f"
+},
   {
-    id: 'bio-infection-011',
-    subject: 'biology',
-    topic: 'infection',
-    topicLabel: 'Infection & Response',
-    question: 'Why is antibiotic resistance a growing problem?',
-    options: [
-      'Antibiotics are becoming more expensive',
-      'Bacteria are evolving resistance through natural selection when antibiotics are overused',
-      'Viruses are becoming immune to antibiotics',
-      'People are allergic to antibiotics',
-    ],
-    correctIndex: 1,
-    explanation: 'When antibiotics are overused, bacteria with resistance mutations survive and reproduce (natural selection). These resistant strains spread, making infections harder to treat.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z9kww6f',
-  },
+  "id": "bio-infection-011",
+  "subject": "biology",
+  "topic": "infection",
+  "topicLabel": "Infection & Response",
+  "question": "Why is antibiotic resistance a growing problem?",
+  "options": [
+    "People inherit resistance to antibiotic medicines",
+    "Antibiotics select for resistant bacteria",
+    "Viruses develop antibiotic resistance",
+    "Antibiotics cause each bacterium to adapt deliberately"
+  ],
+  "correctIndex": 1,
+  "explanation": "When antibiotics are overused, bacteria with resistance mutations survive and reproduce (natural selection). These resistant strains spread, making infections harder to treat.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z9kww6f"
+},
   {
-    id: 'bio-bioenergetics-009',
-    subject: 'biology',
-    topic: 'bioenergetics',
-    topicLabel: 'Bioenergetics',
-    question: 'Which of these is NOT a limiting factor for photosynthesis?',
-    options: ['Light intensity', 'Carbon dioxide concentration', 'Oxygen concentration', 'Temperature'],
-    correctIndex: 2,
-    explanation: 'The limiting factors for photosynthesis are light intensity, CO2 concentration, and temperature. Oxygen is a product of photosynthesis, not a limiting factor.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zgr997h',
-  },
+  "id": "bio-bioenergetics-009",
+  "subject": "biology",
+  "topic": "bioenergetics",
+  "topicLabel": "Bioenergetics",
+  "question": "In a greenhouse with adequate light and warmth, which change can increase photosynthesis if carbon dioxide is limiting?",
+  "options": [
+    "Increase the oxygen concentration",
+    "Raise the temperature further",
+    "Increase the carbon dioxide concentration",
+    "Reduce the light intensity"
+  ],
+  "correctIndex": 2,
+  "explanation": "Increasing the carbon dioxide supply can raise photosynthesis when it is limiting. Increasing a factor that is already sufficient does not remove the carbon dioxide limitation.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zgr997h"
+},
   {
     id: 'bio-bioenergetics-010',
     subject: 'biology',
@@ -932,38 +977,38 @@ export const biologyQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zgr997h',
   },
   {
-    id: 'bio-homeostasis-010',
-    subject: 'biology',
-    topic: 'homeostasis',
-    topicLabel: 'Homeostasis',
-    question: 'What is the correct order of a reflex arc?',
-    options: [
-      'Receptor → relay neurone → sensory neurone → motor neurone → effector',
-      'Effector → motor neurone → relay neurone → sensory neurone → receptor',
-      'Receptor → sensory neurone → relay neurone → motor neurone → effector',
-      'Receptor → motor neurone → relay neurone → sensory neurone → effector',
-    ],
-    correctIndex: 2,
-    explanation: 'A reflex arc follows the path: stimulus → receptor → sensory neurone → relay neurone (in spinal cord) → motor neurone → effector (muscle or gland).',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zyybb82',
-  },
+  "id": "bio-homeostasis-010",
+  "subject": "biology",
+  "topic": "homeostasis",
+  "topicLabel": "Homeostasis",
+  "question": "In a simple withdrawal reflex, which neurone carries impulses from the central nervous system to a muscle?",
+  "options": [
+    "Relay neurone",
+    "Sensory neurone",
+    "Motor neurone",
+    "Receptor cell"
+  ],
+  "correctIndex": 2,
+  "explanation": "A motor neurone carries impulses from the central nervous system to an effector such as a muscle. A sensory neurone carries impulses towards the central nervous system; a relay neurone connects them within it.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zyybb82"
+},
   {
-    id: 'bio-homeostasis-011',
-    scope: "separate",
-    subject: 'biology',
-    topic: 'homeostasis',
-    topicLabel: 'Homeostasis',
-    question: 'What does ADH do when you are dehydrated?',
-    options: [
-      'It causes the kidneys to produce more dilute urine',
-      'It causes the kidneys to reabsorb more water, producing less concentrated urine',
-      'It causes the kidneys to reabsorb more water, producing more concentrated urine',
-      'It stops the kidneys from working',
-    ],
-    correctIndex: 2,
-    explanation: 'When dehydrated, more ADH is released by the pituitary gland. ADH causes the kidney tubules to reabsorb more water back into the blood, producing a smaller volume of more concentrated urine.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zyybb82',
-  },
+  "id": "bio-homeostasis-011",
+  "scope": "separate",
+  "subject": "biology",
+  "topic": "homeostasis",
+  "topicLabel": "Homeostasis",
+  "question": "What does ADH do when you are dehydrated?",
+  "options": [
+    "Less water reabsorbed; urine more dilute",
+    "Kidneys reabsorb more water, producing more dilute urine",
+    "More water is reabsorbed; urine is concentrated",
+    "Kidneys stop filtering the blood until water is consumed"
+  ],
+  "correctIndex": 2,
+  "explanation": "When dehydrated, more ADH is released by the pituitary gland. ADH causes the kidney tubules to reabsorb more water back into the blood, producing a smaller volume of more concentrated urine.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zyybb82"
+},
   {
   "id": "bio-inheritance-009",
   "subject": "biology",
@@ -1021,16 +1066,21 @@ export const biologyQuestions: Question[] = [
   "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zxxhh39"
 },
   {
-    id: 'bio-ecology-010',
-    subject: 'biology',
-    topic: 'ecology',
-    topicLabel: 'Ecology',
-    question: 'Which factor would increase the rate of decomposition?',
-    options: ['Lower temperature', 'Less moisture', 'Higher temperature (up to a point)', 'Less oxygen'],
-    correctIndex: 2,
-    explanation: 'Decomposers (bacteria and fungi) work faster at warmer temperatures (up to about 40-50°C), with more moisture, and with more oxygen for aerobic respiration.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zxxhh39',
-  },
+  "id": "bio-ecology-010",
+  "subject": "biology",
+  "topic": "ecology",
+  "topicLabel": "Ecology",
+  "question": "Which factor would increase the rate of decomposition?",
+  "options": [
+    "A fall in temperature below the optimum",
+    "Drying the surroundings",
+    "Warming towards the optimum",
+    "A reduction in oxygen available for aerobic respiration"
+  ],
+  "correctIndex": 2,
+  "explanation": "Decomposers (bacteria and fungi) work faster at warmer temperatures (up to about 40-50°C), with more moisture, and with more oxygen for aerobic respiration.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zxxhh39"
+},
   {
   "id": "bio-ecology-011",
   "subject": "biology",
@@ -1050,69 +1100,69 @@ export const biologyQuestions: Question[] = [
 
   // Foundation methods, applications and coverage additions.
   {
-    "id": "bio-cell-biology-012",
-    "subject": "biology",
-    "topic": "cell-biology",
-    "topicLabel": "Cell Biology",
-    "question": "When first viewing a prepared slide with a light microscope, which objective should you select?",
-    "options": [
-      "Lowest power",
-      "Highest power",
-      "Medium power",
-      "Oil immersion"
-    ],
-    "correctIndex": 0,
-    "explanation": "Begin at low power to find and centre the specimen, then increase magnification and refocus carefully.",
-    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z2mttv4"
-  },
+  "id": "bio-cell-biology-012",
+  "subject": "biology",
+  "topic": "cell-biology",
+  "topicLabel": "Cell Biology",
+  "question": "When first viewing a prepared slide with a light microscope, which objective should you select?",
+  "options": [
+    "Lowest power",
+    "High power",
+    "Medium power",
+    "Oil immersion"
+  ],
+  "correctIndex": 0,
+  "explanation": "Begin at low power to find and centre the specimen, then increase magnification and refocus carefully.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z2mttv4"
+},
   {
-    "id": "bio-cell-biology-013",
-    "subject": "biology",
-    "topic": "cell-biology",
-    "topicLabel": "Cell Biology",
-    "question": "Potato cylinders are weighed before and after soaking in sugar solutions. What should be done immediately before each weighing?",
-    "options": [
-      "Squeeze out the water inside",
-      "Blot the surface dry",
-      "Rinse them in concentrated sugar",
-      "Leave them overnight to dry out"
-    ],
-    "correctIndex": 1,
-    "explanation": "Blotting removes surface solution without deliberately removing water from the tissue. This makes the mass comparison fairer.",
-    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z2mttv4"
-  },
+  "id": "bio-cell-biology-013",
+  "subject": "biology",
+  "topic": "cell-biology",
+  "topicLabel": "Cell Biology",
+  "question": "Potato cylinders are weighed before and after soaking in sugar solutions. What should be done immediately before each weighing?",
+  "options": [
+    "Squeeze them",
+    "Blot the surface dry",
+    "Rinse them in concentrated sugar",
+    "Leave them overnight to dry out"
+  ],
+  "correctIndex": 1,
+  "explanation": "Blotting removes surface solution without deliberately removing water from the tissue. This makes the mass comparison fairer.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z2mttv4"
+},
   {
-    "id": "bio-organisation-012",
-    "subject": "biology",
-    "topic": "organisation",
-    "topicLabel": "Organisation",
-    "question": "A food sample is tested for reducing sugar using Benedict’s reagent. Which step is needed after mixing?",
-    "options": [
-      "Filter off the blue reagent first",
-      "Cool the mixture in an ice bath",
-      "Heat in a water bath",
-      "Add iodine at room temperature"
-    ],
-    "correctIndex": 2,
-    "explanation": "Benedict’s test requires heating, safely in a hot water bath. A positive result forms a green, yellow, orange or brick-red precipitate.",
-    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwj22nb"
-  },
+  "id": "bio-organisation-012",
+  "subject": "biology",
+  "topic": "organisation",
+  "topicLabel": "Organisation",
+  "question": "A food sample is tested for reducing sugar using Benedict’s reagent. Which step is needed after mixing?",
+  "options": [
+    "Filter off the blue reagent first",
+    "Cool in ice",
+    "Heat in a water bath",
+    "Add iodine at room temperature"
+  ],
+  "correctIndex": 2,
+  "explanation": "Benedict’s test requires heating, safely in a hot water bath. A positive result forms a green, yellow, orange or brick-red precipitate.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwj22nb"
+},
   {
-    "id": "bio-organisation-013",
-    "subject": "biology",
-    "topic": "organisation",
-    "topicLabel": "Organisation",
-    "question": "In an amylase investigation, drops are tested with iodine every 30 seconds. Which observation marks the endpoint?",
-    "options": [
-      "Iodine first turns blue-black",
-      "The starch mixture becomes warm",
-      "The mixture first turns cloudy",
-      "Iodine stays orange-brown"
-    ],
-    "correctIndex": 3,
-    "explanation": "Iodine stays orange-brown when starch is no longer detected. Use the same sampling interval at each pH and control temperature.",
-    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwj22nb"
-  },
+  "id": "bio-organisation-013",
+  "subject": "biology",
+  "topic": "organisation",
+  "topicLabel": "Organisation",
+  "question": "In an amylase investigation, drops are tested with iodine every 30 seconds. Which observation marks the endpoint?",
+  "options": [
+    "Iodine first turns blue-black",
+    "The starch mixture becomes warm",
+    "The mixture turns cloudy",
+    "Iodine stays orange-brown"
+  ],
+  "correctIndex": 3,
+  "explanation": "Iodine stays orange-brown when starch is no longer detected. Use the same sampling interval at each pH and control temperature.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwj22nb"
+},
   {
     "id": "bio-bioenergetics-011",
     "subject": "biology",
@@ -1130,21 +1180,21 @@ export const biologyQuestions: Question[] = [
     "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zgr997h"
   },
   {
-    "id": "bio-homeostasis-012",
-    "subject": "biology",
-    "topic": "homeostasis",
-    "topicLabel": "Homeostasis",
-    "question": "In a ruler-drop reaction-time investigation, why repeat the test several times for each condition?",
-    "options": [
-      "To remove the need for controls",
-      "To calculate a mean",
-      "To make the ruler fall faster",
-      "To change the ruler’s scale"
-    ],
-    "correctIndex": 1,
-    "explanation": "Repeated measurements allow a mean to be calculated and help reveal variability. Keep the hand position and release method consistent.",
-    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zyybb82"
-  },
+  "id": "bio-homeostasis-012",
+  "subject": "biology",
+  "topic": "homeostasis",
+  "topicLabel": "Homeostasis",
+  "question": "In a ruler-drop reaction-time investigation, why repeat the test several times for each condition?",
+  "options": [
+    "To avoid controls",
+    "To calculate a mean",
+    "To make each result equal to the previous one",
+    "To remove a systematic error in the ruler scale"
+  ],
+  "correctIndex": 1,
+  "explanation": "Repeated measurements allow a mean to be calculated and help reveal variability. Keep the hand position and release method consistent.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zyybb82"
+},
   {
     "id": "bio-ecology-012",
     "subject": "biology",
@@ -1194,21 +1244,21 @@ export const biologyQuestions: Question[] = [
     "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z2mttv4"
   },
   {
-    "id": "bio-cell-biology-016",
-    "subject": "biology",
-    "topic": "cell-biology",
-    "topicLabel": "Cell Biology",
-    "question": "Two identical membranes separate solutions at the same temperature. Which change increases the net rate of diffusion?",
-    "options": [
-      "A smaller surface area",
-      "A steeper concentration gradient",
-      "A smaller gradient",
-      "A thicker membrane"
-    ],
-    "correctIndex": 1,
-    "explanation": "A greater concentration difference increases net diffusion rate when other factors are unchanged.",
-    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z2mttv4"
-  },
+  "id": "bio-cell-biology-016",
+  "subject": "biology",
+  "topic": "cell-biology",
+  "topicLabel": "Cell Biology",
+  "question": "Two identical membranes separate solutions at the same temperature. Which change increases the net rate of diffusion?",
+  "options": [
+    "Less membrane surface area",
+    "A steeper concentration gradient",
+    "A reduction in the concentration difference",
+    "An increase in the thickness of the membrane"
+  ],
+  "correctIndex": 1,
+  "explanation": "A greater concentration difference increases net diffusion rate when other factors are unchanged.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z2mttv4"
+},
   {
     "id": "bio-cell-biology-017",
     "subject": "biology",
@@ -1322,21 +1372,21 @@ export const biologyQuestions: Question[] = [
     "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwj22nb"
   },
   {
-    "id": "bio-organisation-018",
-    "subject": "biology",
-    "topic": "organisation",
-    "topicLabel": "Organisation",
-    "question": "Which statement describes a malignant tumour?",
-    "options": [
-      "It cannot grow",
-      "It can spread to other tissues",
-      "It stays enclosed",
-      "It is caused by bacteria"
-    ],
-    "correctIndex": 1,
-    "explanation": "Malignant tumours invade nearby tissues and can spread through the blood to form secondary tumours.",
-    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwj22nb"
-  },
+  "id": "bio-organisation-018",
+  "subject": "biology",
+  "topic": "organisation",
+  "topicLabel": "Organisation",
+  "question": "Which statement describes a malignant tumour?",
+  "options": [
+    "It remains enclosed",
+    "It can spread to other tissues",
+    "It is a mass of normal cells that cannot divide",
+    "It grows by making existing cells larger without division"
+  ],
+  "correctIndex": 1,
+  "explanation": "Malignant tumours invade nearby tissues and can spread through the blood to form secondary tumours.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwj22nb"
+},
   {
     "id": "bio-organisation-019",
     "subject": "biology",
@@ -1354,21 +1404,21 @@ export const biologyQuestions: Question[] = [
     "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwj22nb"
   },
   {
-    "id": "bio-infection-012",
-    "subject": "biology",
-    "topic": "infection",
-    "topicLabel": "Infection & Response",
-    "question": "Which pair describes common symptoms of measles?",
-    "options": [
-      "Bleeding gums and tooth decay",
-      "Painful urination and thick discharge",
-      "Yellow leaves and reduced plant growth",
-      "Fever and a red rash"
-    ],
-    "correctIndex": 3,
-    "explanation": "Measles is a viral infection spread by inhaled droplets. Vaccination reduces transmission and the risk of serious complications.",
-    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z9kww6f"
-  },
+  "id": "bio-infection-012",
+  "subject": "biology",
+  "topic": "infection",
+  "topicLabel": "Infection & Response",
+  "question": "Which pair describes common symptoms of measles?",
+  "options": [
+    "Coughing blood and persistent weight loss",
+    "Painful urination and thick discharge",
+    "Vomiting and diarrhoea after contaminated food",
+    "Fever and a red rash"
+  ],
+  "correctIndex": 3,
+  "explanation": "Measles is a viral infection spread by inhaled droplets. Vaccination reduces transmission and the risk of serious complications.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z9kww6f"
+},
   {
     "id": "bio-infection-013",
     "subject": "biology",
@@ -1434,21 +1484,21 @@ export const biologyQuestions: Question[] = [
     "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z9kww6f"
   },
   {
-    "id": "bio-infection-017",
-    "subject": "biology",
-    "topic": "infection",
-    "topicLabel": "Infection & Response",
-    "question": "Why are some clinical-trial volunteers given a placebo?",
-    "options": [
-      "To provide a comparison",
-      "To increase the dose",
-      "To check tablet colour",
-      "To speed up absorption"
-    ],
-    "correctIndex": 0,
-    "explanation": "A placebo group helps distinguish effects of the active drug from other effects. Trials also assess toxicity, efficacy and suitable dose.",
-    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z9kww6f"
-  },
+  "id": "bio-infection-017",
+  "subject": "biology",
+  "topic": "infection",
+  "topicLabel": "Infection & Response",
+  "question": "Why are some clinical-trial volunteers given a placebo?",
+  "options": [
+    "To provide a comparison",
+    "To increase the dose",
+    "To ensure every volunteer receives active medicine",
+    "To replace the need to allocate groups randomly"
+  ],
+  "correctIndex": 0,
+  "explanation": "A placebo group helps distinguish effects of the active drug from other effects. Trials also assess toxicity, efficacy and suitable dose.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z9kww6f"
+},
   {
     "id": "bio-bioenergetics-012",
     "subject": "biology",
@@ -1514,37 +1564,37 @@ export const biologyQuestions: Question[] = [
     "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zgr997h"
   },
   {
-    "id": "bio-homeostasis-013",
-    "subject": "biology",
-    "topic": "homeostasis",
-    "topicLabel": "Homeostasis",
-    "question": "What is a common feature of Type 2 diabetes?",
-    "options": [
-      "Cells respond less well to insulin",
-      "Cells release more insulin",
-      "Blood glucose stays too low",
-      "Insulin digests starch"
-    ],
-    "correctIndex": 0,
-    "explanation": "In Type 2 diabetes, body cells become less responsive to insulin, making blood glucose harder to regulate.",
-    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zyybb82"
-  },
+  "id": "bio-homeostasis-013",
+  "subject": "biology",
+  "topic": "homeostasis",
+  "topicLabel": "Homeostasis",
+  "question": "What is a common feature of Type 2 diabetes?",
+  "options": [
+    "Cells respond less well to insulin",
+    "No insulin is produced",
+    "Blood glucose falls because insulin is overproduced",
+    "Insulin stimulates glucose release from liver stores"
+  ],
+  "correctIndex": 0,
+  "explanation": "In Type 2 diabetes, body cells become less responsive to insulin, making blood glucose harder to regulate.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zyybb82"
+},
   {
-    "id": "bio-homeostasis-014",
-    "subject": "biology",
-    "topic": "homeostasis",
-    "topicLabel": "Homeostasis",
-    "question": "Which hormone stimulates an egg to mature in an ovarian follicle?",
-    "options": [
-      "Adrenaline",
-      "Testosterone",
-      "FSH",
-      "Insulin"
-    ],
-    "correctIndex": 2,
-    "explanation": "Follicle-stimulating hormone (FSH) causes an egg to mature in the ovary.",
-    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zyybb82"
-  },
+  "id": "bio-homeostasis-014",
+  "subject": "biology",
+  "topic": "homeostasis",
+  "topicLabel": "Homeostasis",
+  "question": "Which hormone stimulates an egg to mature in an ovarian follicle?",
+  "options": [
+    "Progesterone",
+    "Testosterone",
+    "FSH",
+    "Oestrogen"
+  ],
+  "correctIndex": 2,
+  "explanation": "Follicle-stimulating hormone (FSH) causes an egg to mature in the ovary.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zyybb82"
+},
   {
     "id": "bio-homeostasis-015",
     "subject": "biology",
@@ -1658,21 +1708,21 @@ export const biologyQuestions: Question[] = [
     "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zvymrmn"
   },
   {
-    "id": "bio-inheritance-016",
-    "subject": "biology",
-    "topic": "inheritance",
-    "topicLabel": "Inheritance & Variation",
-    "question": "What can fossils provide evidence about?",
-    "options": [
-      "Past organisms",
-      "Future populations",
-      "Mutation rates",
-      "Current gene flow"
-    ],
-    "correctIndex": 0,
-    "explanation": "Fossils provide evidence about organisms that lived in the past and changes in life over time; the fossil record is incomplete.",
-    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zvymrmn"
-  },
+  "id": "bio-inheritance-016",
+  "subject": "biology",
+  "topic": "inheritance",
+  "topicLabel": "Inheritance & Variation",
+  "question": "What can fossils provide evidence about?",
+  "options": [
+    "Past organisms",
+    "The exact age of every living species",
+    "The complete DNA sequence of extinct organisms",
+    "The precise behaviour of every fossilised individual"
+  ],
+  "correctIndex": 0,
+  "explanation": "Fossils provide evidence about organisms that lived in the past and changes in life over time; the fossil record is incomplete.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zvymrmn"
+},
   {
     "id": "bio-inheritance-017",
     "subject": "biology",

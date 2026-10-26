@@ -1,6 +1,6 @@
 # Driving theory content and sources
 
-The driving bank contains 343 original paper questions, including 92 visual questions (the round-two notes said 305 questions; the true round-two count was 307, and round three added 36 visual questions). A separate sign drill uses 308 distinct official images: the 89 images used by visual questions plus 219 drill-only signs (124 after round two, 184 added in round three). It covers the 14 car theory topic areas through the app's existing four driving subjects. Science questions and historic question IDs are preserved. These are independently written practice questions, not the DVSA revision question bank or an official DVSA product.
+The driving bank contains 375 original paper questions, including 92 visual questions (the round-two notes said 305 questions; the true round-two count was 307, and round three added 36 visual questions). A separate sign drill uses 308 distinct official images: the 89 images used by visual questions plus 219 drill-only signs (124 after round two, 184 added in round three). It covers the 14 car theory topic areas through the app's existing four driving subjects. Science questions and historic question IDs are preserved. These are independently written practice questions, not the DVSA revision question bank or an official DVSA product.
 
 Sources checked on 23 October 2026 and rechecked for the round-two content on 25 October 2026:
 
@@ -102,3 +102,18 @@ The audit also notes that signs are already over-weighted in mocks. Round three 
 ## Round-three review fixes (26 Oct)
 
 An independent pre-deploy review (`docs/signs-round3-review-2026-10-26.md`) led to these fixes: the weak-bridge sign now includes the empty-vehicle exemption; the cattle-crossing sign says to slow down and be prepared to stop; the green-arrow signal says to check oncoming traffic has stopped; `dt-visual-077` treats the yellow "Max speed 30" panel as advisory; drill entries can list `overlaps` so two signs whose meanings could both be true are never offered as each other's wrong answer; Highway Code rule anchors use GOV.UK's `#rule263` form; the external DTDs were removed from 22 SVGs.
+
+
+## Content quality revision (26 October 2026)
+
+The rising-bollards manifest caption now describes the advance-warning triangle and its plate, rather than the separate red/green bollard-control signals. Checked against [Know your traffic signs: rising bollards](https://www.gov.uk/government/publications/know-your-traffic-signs/miscellaneous-signs#rising-bollards). The earlier overlap exclusions already prevent `drill-kyts-different-traffic-road-markings.svg` from offering the general lane-destination meaning as a wrong answer; its three generated distractors concern an edge line, a hatched area and a bus lane. The reciprocal motorway-speed and no-footway exclusions, and the green-arrow check for stopped opposing traffic, were also already present and retained.
+
+Answer-length checks compare Unicode character counts, including spaces and punctuation, and count ties as longest. `npm test` now guards each text bank (driving, biology, chemistry and physics) at a maximum of 40%, for both all retained records and the default practice pool. The content target is approximately 35% or less; longer distractors must remain meaningful misconceptions, not padding. The standalone sign drill and image questions are outside that text-bank statistic.
+
+The revision adds 32 original text questions in `drivingCoverage.ts`: alcohol limits (4), first aid (5), pelican/parallel crossings (4), hard-shoulder running (4), MOT/SORN/tax (4), child restraints (4), skids (4) and tunnels (3). Sources are Rules 95, 99–102, 109, 119, 126, 195–197, 258 and 269, plus Annexes 3 and 7. Numbered-rule links point directly at their live GOV.UK anchors; annex references remain named. Police hand-signal images remain a documented gap.
+
+Safety revisions specify the trapped live-lane breakdown action (Rule 277), mini-roundabout MUST (188), stopped lead vehicle at crossings (191), Scotland's pedestrian/cyclist lowered kerbs (243), school entrances (243), parking lights above 30 mph (249), number-plate distance (92), document-production period (Annex 3), new-driver revocation (Annex 8), and tyre depth (Annex 6). Puffin crossings now cite 23, filter arrows 177, and authorised officer signals 105. The already-corrected motorway citations 263, 271, 273 and 274 were rechecked.
+
+Twenty-eight repeated driving records were revised to distinguish situations such as the amber stopping exception, overtaking above 30 mph, brake drying after water, trailer secondary couplings, and the box-junction right-turn exception. See [the revision report](should-fix-content-2026-10-26.md) for IDs, before/after metrics, source checks and validation.
+
+Final driving text-bank longest-correct rate: 185/251 (73.71%) → 72/283 (25.44%), including ties. Shortest-correct is 65/283 (22.97%). Always/never/only occur at the same per-option rate in correct and wrong answers: 3/283 and 9/849 (1.06%).

@@ -12,10 +12,10 @@ export const drivingVisualQuestions: Question[] = [
       "National speed limit applies",
       "Minimum speed applies",
       "No vehicles allowed",
-      "End of all road rules"
+      "End of minimum speed restriction"
     ],
     "correctIndex": 0,
-    "explanation": "The applicable limit depends on your vehicle and the type of road.",
+    "explanation": "Rule 124: for a car, the national limits are 60 mph on single carriageways and 70 mph on dual carriageways and motorways. For a car towing a trailer or caravan they are 50, 60 and 60 mph respectively. A lower signed limit takes precedence.",
     "highwayCodeRule": "124",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
     "image": {
@@ -53,7 +53,7 @@ export const drivingVisualQuestions: Question[] = [
     "options": [
       "Give way to traffic on the major road",
       "You have priority over joining traffic",
-      "Always stop for ten seconds",
+      "Stop at the line even if the road is clear",
       "No entry to this road"
     ],
     "correctIndex": 0,
@@ -221,7 +221,7 @@ export const drivingVisualQuestions: Question[] = [
     "options": [
       "No stopping",
       "No overtaking",
-      "No waiting only",
+      "No waiting; loading may be allowed",
       "No motor vehicles"
     ],
     "correctIndex": 0,
@@ -556,9 +556,9 @@ export const drivingVisualQuestions: Question[] = [
     "question": "What does this sign mean for you?",
     "options": [
       "Wild animals ahead",
-      "Zoo parking",
-      "Horses only",
-      "Farm vehicles prohibited"
+      "Farm animals being herded ahead",
+      "Accompanied horses ahead",
+      "A cattle grid across the road"
     ],
     "correctIndex": 0,
     "explanation": "Anticipate animals entering the road and slow safely without swerving into other traffic.",
@@ -578,8 +578,8 @@ export const drivingVisualQuestions: Question[] = [
     "options": [
       "Accompanied horses or ponies ahead",
       "Horse riding prohibited",
-      "Racecourse parking",
-      "Wild animals only"
+      "Horse-drawn vehicles prohibited",
+      "Unaccompanied wild animals ahead"
     ],
     "correctIndex": 0,
     "explanation": "Pass horses slowly and widely, at no more than 10 mph and with at least 2 metres where possible.",
@@ -787,8 +787,8 @@ export const drivingVisualQuestions: Question[] = [
     "question": "What does this marking mean for you?",
     "options": [
       "Wait behind it when the light is red",
-      "Stop beyond it for a better view",
-      "Park on it",
+      "Stop level with the signal beyond the line",
+      "Wait beyond the line when turning left",
       "Treat red as give way"
     ],
     "correctIndex": 0,
@@ -809,8 +809,8 @@ export const drivingVisualQuestions: Question[] = [
     "options": [
       "Give way to traffic on the major road",
       "You have priority",
-      "Always park behind them",
-      "Stop only for buses"
+      "Stop at the line even if the road is clear",
+      "Give way to traffic from the right alone"
     ],
     "correctIndex": 0,
     "explanation": "These mark the give-way position at a junction.",
@@ -829,9 +829,9 @@ export const drivingVisualQuestions: Question[] = [
     "question": "What does this marking mean for you?",
     "options": [
       "A hazard warning line",
-      "A parking lane",
-      "A motorway boundary",
-      "A compulsory overtaking lane"
+      "A normal centre line without a hazard warning",
+      "The edge of the carriageway",
+      "A lane divider on a dual carriageway"
     ],
     "correctIndex": 0,
     "explanation": "Longer marks with shorter gaps warn of a hazard. Cross only when you can see it is safe.",
@@ -1039,9 +1039,9 @@ export const drivingVisualQuestions: Question[] = [
     "question": "What does this signal mean for you?",
     "options": [
       "Proceed only if the way is clear",
-      "Always go regardless of pedestrians",
-      "Enter a blocked junction",
-      "Accelerate before checking"
+      "Proceed because green guarantees priority",
+      "Enter even when your exit is blocked",
+      "Give way to vehicles waiting at red"
     ],
     "correctIndex": 0,
     "explanation": "Green does not remove your duty to check that you can proceed safely.",
@@ -1060,9 +1060,9 @@ export const drivingVisualQuestions: Question[] = [
     "question": "What does this signal mean for you?",
     "options": [
       "Stop unless already over the line or too close to stop safely",
-      "Accelerate to beat red",
-      "Always brake abruptly",
-      "Treat it as green"
+      "Proceed if you can beat the red phase",
+      "Stop abruptly even if it risks a collision",
+      "Proceed because amber gives priority"
     ],
     "correctIndex": 0,
     "explanation": "A steady amber normally means stop; the exception prevents unsafe sudden stopping.",
