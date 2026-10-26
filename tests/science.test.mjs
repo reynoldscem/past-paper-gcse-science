@@ -14,6 +14,23 @@ const additions = manifest.newIds.map(id => byId.get(id));
 const eligible = science.filter(q => !q.scope);
 const denied = /\/guides\/(z2hp3k7|z3hb97h|z2gjtv4|z2982hv|z8yk87h)\/|\/topics\/z79mnk7(?:\/|$)/;
 
+test('each text question bank stays below the 40% longest-correct ceiling, including ties', () => {
+  for (const pool of [getAllQuestions(), getPracticeQuestions()]) {
+    for (const subject of ['driving', 'biology', 'chemistry', 'physics']) {
+      const questions = pool.filter(q => !q.image && (subject === 'driving'
+        ? !['biology', 'chemistry', 'physics'].includes(q.subject)
+        : q.subject === subject));
+      assert.ok(questions.length > 0, subject);
+      const longest = questions.filter(q => {
+        const lengths = q.options.map(option => [...option].length);
+        return lengths[q.correctIndex] === Math.max(...lengths);
+      }).length;
+      assert.ok(longest / questions.length <= 0.4,
+        `${subject}: ${longest}/${questions.length} correct answers are longest (ties included)`);
+    }
+  }
+});
+
 test('all science records have unique IDs, valid options, explanations and matching topic labels', () => {
   assert.equal(new Set(getAllQuestions().map(q => q.id)).size, getAllQuestions().length);
   for (const q of science) {
