@@ -1,3 +1,4 @@
+import { isPracticeQuestion } from './questionScope';
 import { Question, Paper, Subject, PaperAttempt } from '../types';
 import { drivingSyllabus } from '../data/drivingSyllabus';
 import { buildTopicStats } from './questionStats';
@@ -40,6 +41,7 @@ export function generatePaper(
   size: number = PAPER_SIZE,
   attempts: PaperAttempt[] = [],
 ): Paper {
+  allQuestions = allQuestions.filter(isPracticeQuestion);
   let filtered: Question[];
   let title: string;
   let subject: Subject | 'mixed';

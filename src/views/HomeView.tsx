@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import { useAppStore } from '../store/appStore';
 import { useProgressStore } from '../store/progressStore';
 import { generatePaper } from '../lib/paperGenerator';
-import { getAllQuestions } from '../data';
+import { getPracticeQuestions } from '../data';
 import { getUnseenQuestionIds, getWeakQuestionIds, buildTopicStats } from '../lib/questionStats';
 import { learningAreaMeta, subjectLearningArea, subjectMeta, subjectsByLearningArea } from '../data/topics';
 import { Subject } from '../types';
@@ -29,7 +29,7 @@ export function HomeView() {
   const displayName = capitalize(userName ?? 'you');
 
   const greeting = useMemo(() => greetingTemplates[Math.floor(Math.random() * greetingTemplates.length)](displayName), [displayName]);
-  const allQuestions = useMemo(() => getAllQuestions(), []);
+  const allQuestions = useMemo(() => getPracticeQuestions(), []);
   const activeMeta = learningAreaMeta[activeLearningArea];
   const activeSubjects = subjectsByLearningArea[activeLearningArea];
   const activeQuestions = useMemo(

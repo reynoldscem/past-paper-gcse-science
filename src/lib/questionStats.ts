@@ -1,3 +1,4 @@
+import { isPracticeQuestion } from './questionScope';
 import { PaperAttempt, Question, Subject } from '../types';
 import { subjectOrder } from '../data/topics';
 
@@ -79,7 +80,7 @@ export function buildTopicStats(
 
   // Group questions by subject + topic
   const topicMap = new Map<string, { questions: Question[]; subject: Subject; topicLabel: string }>();
-  for (const q of allQuestions) {
+  for (const q of allQuestions.filter(isPracticeQuestion)) {
     const key = `${q.subject}:${q.topic}`;
     if (!topicMap.has(key)) {
       topicMap.set(key, { questions: [], subject: q.subject, topicLabel: q.topicLabel });
@@ -156,7 +157,7 @@ export function getUnseenQuestionIds(
       seen.add(q.id);
     }
   }
-  return new Set(allQuestions.filter(q => !seen.has(q.id)).map(q => q.id));
+  return new Set(allQuestions.filter(q => isPracticeQuestion(q) && !seen.has(q.id)).map(q => q.id));
 }
 
 /** Get question IDs the user has got wrong more than right */

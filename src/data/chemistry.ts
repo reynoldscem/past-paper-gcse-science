@@ -256,6 +256,7 @@ export const chemistryQuestions: Question[] = [
   },
   {
     id: 'chem-quantitative-004',
+    scope: "higher",
     subject: 'chemistry',
     topic: 'quantitative',
     topicLabel: 'Quantitative Chemistry',
@@ -294,6 +295,7 @@ export const chemistryQuestions: Question[] = [
 },
   {
     id: 'chem-quantitative-007',
+    scope: "higher",
     subject: 'chemistry',
     topic: 'quantitative',
     topicLabel: 'Quantitative Chemistry',
@@ -481,6 +483,7 @@ export const chemistryQuestions: Question[] = [
   },
   {
     id: 'chem-energy-changes-005',
+    scope: "higher",
     subject: 'chemistry',
     topic: 'energy-changes',
     topicLabel: 'Energy Changes',
@@ -508,6 +511,7 @@ export const chemistryQuestions: Question[] = [
   },
   {
     id: 'chem-energy-changes-007',
+    scope: "higher",
     subject: 'chemistry',
     topic: 'energy-changes',
     topicLabel: 'Energy Changes',
@@ -766,6 +770,7 @@ export const chemistryQuestions: Question[] = [
 },
   {
     id: 'chem-analysis-003',
+    scope: "separate",
     subject: 'chemistry',
     topic: 'analysis',
     topicLabel: 'Chemical Analysis',
@@ -825,6 +830,7 @@ export const chemistryQuestions: Question[] = [
   },
   {
     id: 'chem-analysis-007',
+    scope: "separate",
     subject: 'chemistry',
     topic: 'analysis',
     topicLabel: 'Chemical Analysis',
@@ -997,7 +1003,8 @@ export const chemistryQuestions: Question[] = [
   { id: 'chem-quantitative-009', subject: 'chemistry', topic: 'quantitative', topicLabel: 'Quantitative Chemistry', question: 'What is the balanced equation for the reaction of magnesium with hydrochloric acid?', options: ['Mg + HCl → MgCl + H', 'Mg + 2HCl → MgCl2 + H2', 'Mg + HCl → MgCl2 + H2', '2Mg + HCl → MgCl2 + H2'], correctIndex: 1, explanation: 'Mg + 2HCl → MgCl2 + H2. There must be equal numbers of each atom on both sides. Two HCl are needed to provide two chlorine atoms and form H2.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zb4fjfr' },
   { id: 'chem-quantitative-010', subject: 'chemistry', topic: 'quantitative', topicLabel: 'Quantitative Chemistry', question: '10 g of calcium carbonate decomposes completely. According to conservation of mass, what can we say about the products?', options: ['The products weigh more than 10 g', 'The products weigh exactly 10 g in total', 'The products weigh less than 10 g', 'We cannot predict the mass'], correctIndex: 1, explanation: 'The law of conservation of mass states that no atoms are created or destroyed in a chemical reaction. The total mass of products equals the total mass of reactants (10 g).', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zb4fjfr' },
   { id: 'chem-quantitative-011', subject: 'chemistry', topic: 'quantitative', topicLabel: 'Quantitative Chemistry', question: 'A solution has a concentration of 5 g/dm3. What mass of solute is dissolved in 2 dm3 of solution?', options: ['2.5 g', '5 g', '7 g', '10 g'], correctIndex: 3, explanation: 'Mass = concentration × volume = 5 g/dm3 × 2 dm3 = 10 g.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zb4fjfr' },
-  { id: 'chem-quantitative-012', subject: 'chemistry', topic: 'quantitative', topicLabel: 'Quantitative Chemistry', question: 'How many moles of carbon (Ar = 12) are in 36 g of carbon?', options: ['2 moles', '3 moles', '12 moles', '36 moles'], correctIndex: 1, explanation: 'Moles = mass ÷ relative atomic mass = 36 ÷ 12 = 3 moles.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zb4fjfr' },
+  { id: 'chem-quantitative-012',
+    scope: "higher", subject: 'chemistry', topic: 'quantitative', topicLabel: 'Quantitative Chemistry', question: 'How many moles of carbon (Ar = 12) are in 36 g of carbon?', options: ['2 moles', '3 moles', '12 moles', '36 moles'], correctIndex: 1, explanation: 'Moles = mass ÷ relative atomic mass = 36 ÷ 12 = 3 moles.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zb4fjfr' },
 
   // Rates (5 more)
   { id: 'chem-rates-008', subject: 'chemistry', topic: 'rates', topicLabel: 'Rates of Reaction', question: 'On a graph of gas volume produced against time, how can you tell when a reaction has finished?', options: ['The line goes down', 'The line becomes horizontal (flat)', 'The line gets steeper', 'The line goes to zero'], correctIndex: 1, explanation: 'When the line levels off (becomes horizontal), no more gas is being produced, meaning the reaction has finished — one of the reactants has been used up.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwdqqhv' },
@@ -1054,7 +1061,8 @@ export const chemistryQuestions: Question[] = [
   "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z27xxfr"
 },
   { id: 'chem-energy-changes-009', subject: 'chemistry', topic: 'energy-changes', topicLabel: 'Energy Changes', question: 'A reaction causes the temperature of the surroundings to decrease. What type of reaction is this?', options: ['Exothermic', 'Endothermic', 'Neutralisation', 'Combustion'], correctIndex: 1, explanation: 'An endothermic reaction takes in energy from the surroundings, causing the temperature to decrease. The opposite of exothermic which releases energy and increases temperature.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z27xxfr' },
-  { id: 'chem-energy-changes-010', subject: 'chemistry', topic: 'energy-changes', topicLabel: 'Energy Changes', question: 'Is bond breaking an exothermic or endothermic process?', options: ['Exothermic — it releases energy', 'Endothermic — it requires energy', 'Neither — no energy change occurs', 'It depends on the bond'], correctIndex: 1, explanation: 'Breaking bonds always requires energy (endothermic). Making bonds always releases energy (exothermic). The overall energy change depends on which is greater.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z27xxfr' },
+  { id: 'chem-energy-changes-010',
+    scope: "higher", subject: 'chemistry', topic: 'energy-changes', topicLabel: 'Energy Changes', question: 'Is bond breaking an exothermic or endothermic process?', options: ['Exothermic — it releases energy', 'Endothermic — it requires energy', 'Neither — no energy change occurs', 'It depends on the bond'], correctIndex: 1, explanation: 'Breaking bonds always requires energy (endothermic). Making bonds always releases energy (exothermic). The overall energy change depends on which is greater.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z27xxfr' },
   { id: 'chem-energy-changes-011', subject: 'chemistry', topic: 'energy-changes', topicLabel: 'Energy Changes', question: 'Which of these is an example of an exothermic reaction used in everyday life?', options: ['Thermal decomposition', 'Photosynthesis', 'Hand warmers', 'Dissolving ammonium nitrate in water'], correctIndex: 2, explanation: 'Hand warmers use an exothermic reaction (often iron oxidation) to release heat. Thermal decomposition, photosynthesis, and dissolving ammonium nitrate are endothermic.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z27xxfr' },
   { id: 'chem-energy-changes-012', subject: 'chemistry', topic: 'energy-changes', topicLabel: 'Energy Changes', question: 'On a reaction profile, if the products are at a lower energy level than the reactants, the reaction is:', options: ['Endothermic', 'Exothermic', 'Reversible', 'Impossible'], correctIndex: 1, explanation: 'If products are lower in energy than reactants, energy has been released to the surroundings — this is exothermic. The energy difference is the overall energy change.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z27xxfr' },
 
@@ -1078,14 +1086,17 @@ export const chemistryQuestions: Question[] = [
   "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z9488mn"
 },
   { id: 'chem-organic-011', subject: 'chemistry', topic: 'organic', topicLabel: 'Organic Chemistry', question: 'What happens when bromine water is added to an alkene?', options: ['Nothing — no colour change', 'The bromine water turns from orange/brown to colourless', 'The bromine water turns blue', 'The alkene dissolves'], correctIndex: 1, explanation: 'Alkenes contain a C=C double bond which reacts with bromine water, decolourising it from orange/brown to colourless. This is the test for unsaturation.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z9488mn' },
-  { id: 'chem-organic-012', subject: 'chemistry', topic: 'organic', topicLabel: 'Organic Chemistry', question: 'What type of polymerisation involves monomers with C=C double bonds opening up and joining together?', options: ['Condensation polymerisation', 'Addition polymerisation', 'Natural polymerisation', 'Ionic polymerisation'], correctIndex: 1, explanation: 'Addition polymerisation occurs when many monomers with C=C double bonds (like ethene) open up their double bonds and join together to form a long chain. No other substance is produced.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z9488mn' },
+  { id: 'chem-organic-012',
+    scope: "separate", subject: 'chemistry', topic: 'organic', topicLabel: 'Organic Chemistry', question: 'What type of polymerisation involves monomers with C=C double bonds opening up and joining together?', options: ['Condensation polymerisation', 'Addition polymerisation', 'Natural polymerisation', 'Ionic polymerisation'], correctIndex: 1, explanation: 'Addition polymerisation occurs when many monomers with C=C double bonds (like ethene) open up their double bonds and join together to form a long chain. No other substance is produced.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z9488mn' },
 
   // Analysis (5 more)
   { id: 'chem-analysis-008', subject: 'chemistry', topic: 'analysis', topicLabel: 'Chemical Analysis', question: 'A spot in a chromatogram travels 4.2 cm and the solvent front travels 6.0 cm. What is the Rf value?', options: ['0.5', '0.6', '0.7', '1.4'], correctIndex: 2, explanation: 'Rf = distance moved by spot ÷ distance moved by solvent = 4.2 ÷ 6.0 = 0.7. Rf values are always between 0 and 1.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zgbccj6' },
-  { id: 'chem-analysis-009', subject: 'chemistry', topic: 'analysis', topicLabel: 'Chemical Analysis', question: 'What colour flame does lithium produce in a flame test?', options: ['Yellow', 'Crimson red', 'Lilac', 'Green'], correctIndex: 1, explanation: 'Lithium produces a crimson red flame. Sodium is yellow, potassium is lilac, and copper compounds produce a green/blue-green flame.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zgbccj6' },
+  { id: 'chem-analysis-009',
+    scope: "separate", subject: 'chemistry', topic: 'analysis', topicLabel: 'Chemical Analysis', question: 'What colour flame does lithium produce in a flame test?', options: ['Yellow', 'Crimson red', 'Lilac', 'Green'], correctIndex: 1, explanation: 'Lithium produces a crimson red flame. Sodium is yellow, potassium is lilac, and copper compounds produce a green/blue-green flame.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zgbccj6' },
   { id: 'chem-analysis-010', subject: 'chemistry', topic: 'analysis', topicLabel: 'Chemical Analysis', question: 'How do you test for hydrogen gas?', options: ['It turns limewater milky', 'It relights a glowing splint', 'It makes a squeaky pop with a lit splint', 'It turns damp litmus paper white'], correctIndex: 2, explanation: 'Hold a burning splint near the gas. If hydrogen is present, it burns with a squeaky pop sound. This is because hydrogen reacts with oxygen explosively.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zgbccj6' },
   { id: 'chem-analysis-011', subject: 'chemistry', topic: 'analysis', topicLabel: 'Chemical Analysis', question: 'A pure substance melts at a sharp, specific temperature. What would you expect for an impure substance?', options: ['It melts at a higher temperature', 'It melts over a range of temperatures and at a lower temperature', 'It does not melt', 'It melts at exactly the same temperature'], correctIndex: 1, explanation: 'Impurities lower the melting point and make the substance melt over a range of temperatures rather than at one sharp point. This is used to test purity.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zgbccj6' },
-  { id: 'chem-analysis-012', subject: 'chemistry', topic: 'analysis', topicLabel: 'Chemical Analysis', question: 'What colour flame does copper produce in a flame test?', options: ['Crimson red', 'Yellow', 'Lilac', 'Green/blue-green'], correctIndex: 3, explanation: 'Copper compounds produce a green or blue-green flame in a flame test. This is a distinctive colour used to identify copper ions.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zgbccj6' },
+  { id: 'chem-analysis-012',
+    scope: "separate", subject: 'chemistry', topic: 'analysis', topicLabel: 'Chemical Analysis', question: 'What colour flame does copper produce in a flame test?', options: ['Crimson red', 'Yellow', 'Lilac', 'Green/blue-green'], correctIndex: 3, explanation: 'Copper compounds produce a green or blue-green flame in a flame test. This is a distinctive colour used to identify copper ions.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zgbccj6' },
 
   // Atmosphere (5 more)
   { id: 'chem-atmosphere-008', subject: 'chemistry', topic: 'atmosphere', topicLabel: 'Atmosphere & Resources', question: 'Which gas made up most of the Earth\'s early atmosphere, released by volcanic eruptions?', options: ['Oxygen', 'Nitrogen', 'Carbon dioxide', 'Methane'], correctIndex: 2, explanation: 'Volcanic eruptions released large amounts of carbon dioxide (and water vapour) into the early atmosphere. There was very little or no oxygen.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zy43p9q' },

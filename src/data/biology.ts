@@ -538,6 +538,7 @@ export const biologyQuestions: Question[] = [
   },
   {
     id: 'bio-homeostasis-007',
+    scope: "separate",
     subject: 'biology',
     topic: 'homeostasis',
     topicLabel: 'Homeostasis',
@@ -554,6 +555,7 @@ export const biologyQuestions: Question[] = [
   },
   {
     id: 'bio-homeostasis-008',
+    scope: "separate",
     subject: 'biology',
     topic: 'homeostasis',
     topicLabel: 'Homeostasis',
@@ -947,6 +949,7 @@ export const biologyQuestions: Question[] = [
   },
   {
     id: 'bio-homeostasis-011',
+    scope: "separate",
     subject: 'biology',
     topic: 'homeostasis',
     topicLabel: 'Homeostasis',

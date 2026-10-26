@@ -548,6 +548,7 @@ export const physicsQuestions: Question[] = [
   },
   {
     id: 'phys-atomic-structure-phys-007',
+    scope: "separate",
     subject: 'physics',
     topic: 'atomic-structure-phys',
     topicLabel: 'Atomic Structure',
@@ -559,6 +560,7 @@ export const physicsQuestions: Question[] = [
   },
   {
     id: 'phys-atomic-structure-phys-008',
+    scope: "separate",
     subject: 'physics',
     topic: 'atomic-structure-phys',
     topicLabel: 'Atomic Structure',
@@ -669,6 +671,7 @@ export const physicsQuestions: Question[] = [
   },
   {
     id: 'phys-forces-008',
+    scope: "higher",
     subject: 'physics',
     topic: 'forces',
     topicLabel: 'Forces',
@@ -840,6 +843,7 @@ export const physicsQuestions: Question[] = [
   },
   {
     id: 'phys-electromagnetism-004',
+    scope: "higher",
     subject: 'physics',
     topic: 'electromagnetism',
     topicLabel: 'Electromagnetism',
@@ -872,6 +876,7 @@ export const physicsQuestions: Question[] = [
   },
   {
     id: 'phys-electromagnetism-006',
+    scope: "separate",
     subject: 'physics',
     topic: 'electromagnetism',
     topicLabel: 'Electromagnetism',
@@ -888,6 +893,7 @@ export const physicsQuestions: Question[] = [
   },
   {
     id: 'phys-electromagnetism-007',
+    scope: "separate",
     subject: 'physics',
     topic: 'electromagnetism',
     topicLabel: 'Electromagnetism',
@@ -934,6 +940,7 @@ export const physicsQuestions: Question[] = [
   { id: 'phys-forces-012', subject: 'physics', topic: 'forces', topicLabel: 'Forces', question: 'A force of 10 N pushes right and a force of 4 N pushes left on the same object. What is the resultant force?', options: ['14 N to the right', '14 N to the left', '6 N to the right', '6 N to the left'], correctIndex: 2, explanation: 'When forces act in opposite directions, subtract: 10 - 4 = 6 N. The resultant acts in the direction of the larger force (right).', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/ztmttv4' },
   {
   "id": "phys-forces-013",
+    scope: "separate",
   "subject": "physics",
   "topic": "forces",
   "topicLabel": "Forces",
@@ -969,7 +976,8 @@ export const physicsQuestions: Question[] = [
 },
   { id: 'phys-waves-011', subject: 'physics', topic: 'waves', topicLabel: 'Waves', question: 'Which type of electromagnetic wave is used in hospital X-ray machines?', options: ['Radio waves', 'Microwaves', 'X-rays', 'Infrared'], correctIndex: 2, explanation: 'X-rays pass through soft tissue but are absorbed by dense materials like bone. This creates shadow images used for medical diagnosis.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zsrndnb' },
   { id: 'phys-waves-012', subject: 'physics', topic: 'waves', topicLabel: 'Waves', question: 'What is a danger of excessive exposure to ultraviolet (UV) radiation?', options: ['Hearing loss', 'Skin cancer and sunburn', 'Broken bones', 'Heart disease'], correctIndex: 1, explanation: 'UV radiation can damage skin cells and cause mutations in DNA, leading to sunburn and increased risk of skin cancer. It can also damage eyes.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zsrndnb' },
-  { id: 'phys-waves-013', subject: 'physics', topic: 'waves', topicLabel: 'Waves', question: 'What is ultrasound used for in medicine?', options: ['Treating cancer', 'Taking X-ray images', 'Pre-natal scanning to image a foetus', 'Measuring blood pressure'], correctIndex: 2, explanation: 'Ultrasound (high-frequency sound waves above 20,000 Hz) is reflected at boundaries between different tissues. The reflections are used to build up an image, e.g. of a baby during pregnancy.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zsrndnb' },
+  { id: 'phys-waves-013',
+    scope: "separate", subject: 'physics', topic: 'waves', topicLabel: 'Waves', question: 'What is ultrasound used for in medicine?', options: ['Treating cancer', 'Taking X-ray images', 'Pre-natal scanning to image a foetus', 'Measuring blood pressure'], correctIndex: 2, explanation: 'Ultrasound (high-frequency sound waves above 20,000 Hz) is reflected at boundaries between different tissues. The reflections are used to build up an image, e.g. of a baby during pregnancy.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zsrndnb' },
 
   // Particle model (5 more)
   { id: 'phys-particle-model-009', subject: 'physics', topic: 'particle-model', topicLabel: 'Particle Model', question: 'A metal block has a mass of 500 g and a volume of 200 cm³. What is its density?', options: ['0.4 g/cm³', '2.5 g/cm³', '100 g/cm³', '700 g/cm³'], correctIndex: 1, explanation: 'Density = mass ÷ volume = 500 ÷ 200 = 2.5 g/cm³.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z3ybb82' },
@@ -1015,6 +1023,7 @@ export const physicsQuestions: Question[] = [
   { id: 'phys-atomic-structure-phys-012', subject: 'physics', topic: 'atomic-structure-phys', topicLabel: 'Atomic Structure', question: 'What is the difference between contamination and irradiation?', options: ['There is no difference', 'Contamination means radioactive material gets on/in you; irradiation means you are exposed to radiation from a source at a distance', 'Irradiation is more dangerous', 'Contamination only happens in nuclear power stations'], correctIndex: 1, explanation: 'Contamination: radioactive atoms are on/in your body (ongoing exposure). Irradiation: you\'re exposed to radiation from an external source (exposure stops when you move away or the source is removed).', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zshssrd' },
   {
   "id": "phys-atomic-structure-phys-013",
+    scope: "separate",
   "subject": "physics",
   "topic": "atomic-structure-phys",
   "topicLabel": "Atomic Structure",
@@ -1031,11 +1040,14 @@ export const physicsQuestions: Question[] = [
 },
 
   // Electromagnetism (5 more)
-  { id: 'phys-electromagnetism-008', subject: 'physics', topic: 'electromagnetism', topicLabel: 'Electromagnetism', question: 'Using Fleming\'s left-hand rule, the thumb represents:', options: ['The direction of the current', 'The direction of the magnetic field', 'The direction of the force (motion)', 'The direction of the voltage'], correctIndex: 2, explanation: 'Fleming\'s left-hand rule: thuMb = Motion (force), First finger = Field, seCond finger = Current. The thumb points in the direction the wire moves.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwkww6f' },
+  { id: 'phys-electromagnetism-008',
+    scope: "higher", subject: 'physics', topic: 'electromagnetism', topicLabel: 'Electromagnetism', question: 'Using Fleming\'s left-hand rule, the thumb represents:', options: ['The direction of the current', 'The direction of the magnetic field', 'The direction of the force (motion)', 'The direction of the voltage'], correctIndex: 2, explanation: 'Fleming\'s left-hand rule: thuMb = Motion (force), First finger = Field, seCond finger = Current. The thumb points in the direction the wire moves.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwkww6f' },
   { id: 'phys-electromagnetism-009', subject: 'physics', topic: 'electromagnetism', topicLabel: 'Electromagnetism', question: 'How can you increase the strength of an electromagnet?', options: ['Use a wooden core', 'Decrease the current', 'Increase the number of turns on the coil and increase the current', 'Remove the iron core'], correctIndex: 2, explanation: 'Electromagnet strength increases with: more turns of wire, higher current, and using a soft iron core. These all increase the magnetic field strength.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwkww6f' },
   { id: 'phys-electromagnetism-010', subject: 'physics', topic: 'electromagnetism', topicLabel: 'Electromagnetism', question: 'What is a solenoid?', options: ['A type of battery', 'A coil of wire that produces a magnetic field when current flows through it', 'A device that measures voltage', 'A type of resistor'], correctIndex: 1, explanation: 'A solenoid is a coil of wire. When current flows through it, it produces a magnetic field pattern similar to a bar magnet, with a north and south pole at each end.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwkww6f' },
-  { id: 'phys-electromagnetism-011', subject: 'physics', topic: 'electromagnetism', topicLabel: 'Electromagnetism', question: 'In a simple DC motor, what makes the coil keep spinning in the same direction?', options: ['The magnets', 'The battery', 'The split-ring commutator', 'The axle'], correctIndex: 2, explanation: 'The split-ring commutator reverses the direction of current in the coil every half turn. This means the force always acts in the same rotational direction, keeping the coil spinning.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwkww6f' },
-  { id: 'phys-electromagnetism-012', subject: 'physics', topic: 'electromagnetism', topicLabel: 'Electromagnetism', question: 'How does a loudspeaker convert electrical energy into sound?', options: ['A magnet heats the air', 'An alternating current in a coil creates a varying force on the coil (motor effect), making the cone vibrate and push air', 'Electricity directly vibrates the air molecules', 'The speaker contains a radio receiver'], correctIndex: 1, explanation: 'A coil attached to a paper cone sits in a magnetic field. Alternating current causes the coil to move back and forth (motor effect), vibrating the cone which pushes air to create sound waves.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwkww6f' },
+  { id: 'phys-electromagnetism-011',
+    scope: "higher", subject: 'physics', topic: 'electromagnetism', topicLabel: 'Electromagnetism', question: 'In a simple DC motor, what makes the coil keep spinning in the same direction?', options: ['The magnets', 'The battery', 'The split-ring commutator', 'The axle'], correctIndex: 2, explanation: 'The split-ring commutator reverses the direction of current in the coil every half turn. This means the force always acts in the same rotational direction, keeping the coil spinning.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwkww6f' },
+  { id: 'phys-electromagnetism-012',
+    scope: "separate", subject: 'physics', topic: 'electromagnetism', topicLabel: 'Electromagnetism', question: 'How does a loudspeaker convert electrical energy into sound?', options: ['A magnet heats the air', 'An alternating current in a coil creates a varying force on the coil (motor effect), making the cone vibrate and push air', 'Electricity directly vibrates the air molecules', 'The speaker contains a radio receiver'], correctIndex: 1, explanation: 'A coil attached to a paper cone sits in a magnetic field. Alternating current causes the coil to move back and forth (motor effect), vibrating the cone which pushes air to create sound waves.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zwkww6f' },
 
   // Energy (5 more)
   {
@@ -1077,6 +1089,7 @@ export const physicsQuestions: Question[] = [
   // Forces additional (5 more)
   {
   "id": "phys-forces-014",
+    scope: "separate",
   "subject": "physics",
   "topic": "forces",
   "topicLabel": "Forces",
@@ -1091,7 +1104,8 @@ export const physicsQuestions: Question[] = [
   "explanation": "Moment = force × perpendicular distance to the line of action = 40 × 0.3 = 12 N m.",
   "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/ztmttv4"
 },
-  { id: 'phys-forces-015', subject: 'physics', topic: 'forces', topicLabel: 'Forces', question: 'If a driver gear with 20 teeth drives a gear with 40 teeth, the driven gear turns:', options: ['At the same speed', 'Twice as fast', 'Half as fast', 'Four times as fast'], correctIndex: 2, explanation: 'The driven gear has twice as many teeth (40 vs 20), so it turns half as fast. Gear ratio = driven teeth ÷ driver teeth = 40/20 = 2. It also turns in the opposite direction.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/ztmttv4' },
+  { id: 'phys-forces-015',
+    scope: "separate", subject: 'physics', topic: 'forces', topicLabel: 'Forces', question: 'If a driver gear with 20 teeth drives a gear with 40 teeth, the driven gear turns:', options: ['At the same speed', 'Twice as fast', 'Half as fast', 'Four times as fast'], correctIndex: 2, explanation: 'The driven gear has twice as many teeth (40 vs 20), so it turns half as fast. Gear ratio = driven teeth ÷ driver teeth = 40/20 = 2. It also turns in the opposite direction.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/ztmttv4' },
   { id: 'phys-forces-016', subject: 'physics', topic: 'forces', topicLabel: 'Forces', question: 'Which factors increase braking distance?', options: ['Worn tyres, wet road, higher speed', 'New tyres, dry road, lower speed', 'Lighter car, lower speed', 'Better brakes, dry road'], correctIndex: 0, explanation: 'Braking distance increases with: higher speed, wet/icy roads, worn tyres, worn brakes, and heavier vehicles. These all reduce friction or increase the energy that must be dissipated.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/ztmttv4' },
   { id: 'phys-forces-017', subject: 'physics', topic: 'forces', topicLabel: 'Forces', question: 'Stopping distance = thinking distance + braking distance. Which part is affected by the driver being tired?', options: ['Braking distance', 'Thinking distance', 'Both equally', 'Neither'], correctIndex: 1, explanation: 'Thinking distance depends on the driver\'s reaction time. Being tired, distracted, or under the influence of drugs/alcohol increases reaction time and therefore thinking distance.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/ztmttv4' },
   { id: 'phys-forces-018', subject: 'physics', topic: 'forces', topicLabel: 'Forces', question: 'According to Newton\'s third law, if you push a wall with 50 N, what force does the wall exert on you?', options: ['0 N', '25 N', '50 N in the opposite direction', '100 N'], correctIndex: 2, explanation: 'Newton\'s third law: for every action there is an equal and opposite reaction. If you push the wall with 50 N, the wall pushes back on you with 50 N in the opposite direction.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/ztmttv4' },

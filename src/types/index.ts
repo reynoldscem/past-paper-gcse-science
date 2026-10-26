@@ -11,6 +11,7 @@ export type Subject =
   | 'vehicleSafety';
 
 export interface Question {
+  scope?: 'higher' | 'separate';
   id: string;
   subject: Subject;
   topic: string;

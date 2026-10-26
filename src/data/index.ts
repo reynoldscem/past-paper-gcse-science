@@ -1,3 +1,4 @@
+import { isPracticeQuestion } from '../lib/questionScope';
 import { drivingRound2Questions } from './drivingRound2';
 import { drivingVisualQuestions } from './drivingVisual';
 import { drivingPrepQuestions } from './drivingPrep';
@@ -22,4 +23,9 @@ const allQuestions: Question[] = [
 
 export function getAllQuestions(): Question[] {
   return allQuestions;
+}
+
+/** Default pools omit Higher and separate-science records; the full bank remains available for history. */
+export function getPracticeQuestions(): Question[] {
+  return allQuestions.filter(isPracticeQuestion);
 }

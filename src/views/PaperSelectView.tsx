@@ -3,14 +3,14 @@ import { motion } from 'framer-motion';
 import { useAppStore } from '../store/appStore';
 import { useProgressStore } from '../store/progressStore';
 import { generatePaper } from '../lib/paperGenerator';
-import { getAllQuestions } from '../data';
+import { getPracticeQuestions } from '../data';
 import { getUnseenQuestionIds, getWeakQuestionIds } from '../lib/questionStats';
 import { topics, subjectMeta } from '../data/topics';
 
 export function PaperSelectView() {
   const { selectedSubject, startQuiz, setView } = useAppStore();
   const { attempts } = useProgressStore();
-  const allQuestions = useMemo(() => getAllQuestions(), []);
+  const allQuestions = useMemo(() => getPracticeQuestions(), []);
   const subject = selectedSubject ?? 'biology';
   const meta = subjectMeta[subject];
   const subjectTopics = topics[subject];
