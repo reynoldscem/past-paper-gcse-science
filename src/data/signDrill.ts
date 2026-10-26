@@ -2,10 +2,14 @@ import { drivingVisualQuestions } from './drivingVisual';
 import additions from './drivingSigns.json';
 import type { Question } from '../types';
 
-/** Three plausible wrong meanings, taken from the same sign family where it has enough members. */
+const overlapsOf = (s: (typeof additions)[number]): string[] => (s as { overlaps?: string[] }).overlaps ?? [];
+
+/** Three plausible wrong meanings, taken from the same sign family where it has enough members.
+ *  Signs listed in `overlaps` are never offered as wrong answers for each other: both meanings could be true. */
 export function drillDistractors(index: number): string[] {
   const sign = additions[index];
-  const family = additions.filter(s => s.family === sign.family && s.id !== sign.id);
+  const allowed = (s: (typeof additions)[number]) => s.id !== sign.id && !overlapsOf(sign).includes(s.id) && !overlapsOf(s).includes(sign.id);
+  const family = additions.filter(s => s.family === sign.family && allowed(s));
   const picks: string[] = [];
   if (family.length >= 3) {
     const start = index % family.length;
@@ -14,8 +18,8 @@ export function drillDistractors(index: number): string[] {
     }
   }
   for (let offset = 7; picks.length < 3; offset += 6) {
-    const meaning = additions[(index + offset) % additions.length].meaning;
-    if (meaning !== sign.meaning && !picks.includes(meaning)) picks.push(meaning);
+    const candidate = additions[(index + offset) % additions.length];
+    if (allowed(candidate) && candidate.meaning !== sign.meaning && !picks.includes(candidate.meaning)) picks.push(candidate.meaning);
   }
   return picks;
 }

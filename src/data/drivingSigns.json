@@ -514,7 +514,10 @@
       "alt": "Red triangle showing two walking figures"
     },
     "highwayCodeRule": "Annex: Traffic signs",
-    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "overlaps": [
+      "drill-kyts-no-footway.svg"
+    ]
   },
   {
     "id": "drill-warning-sign-zebra-crossing.jpg",
@@ -800,7 +803,10 @@
       "alt": "Wide grey signal reading ACCIDENT AHEAD beside a dotted 30"
     },
     "highwayCodeRule": "Annex: Light signals controlling traffic",
-    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/light-signals-controlling-traffic"
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/light-signals-controlling-traffic",
+    "overlaps": [
+      "drill-motorway-signal-temporary-speed.jpg"
+    ]
   },
   {
     "id": "drill-motorway-signal-temporary-speed.jpg",
@@ -811,7 +817,10 @@
       "alt": "Grey roadside signal showing a dotted 50 with amber lamps"
     },
     "highwayCodeRule": "Annex: Light signals controlling traffic",
-    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/light-signals-controlling-traffic"
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/light-signals-controlling-traffic",
+    "overlaps": [
+      "drill-motorway-signal-temporary-speed-limit-message.jpg"
+    ]
   },
   {
     "id": "drill-motorway-signal-end-restriction.jpg",
@@ -932,7 +941,10 @@
       "alt": "Three lanes with white arrows and painted words CITY, A3 and YORK ST"
     },
     "highwayCodeRule": "Annex: Road markings",
-    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/road-markings"
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/road-markings",
+    "overlaps": [
+      "drill-kyts-different-traffic-road-markings.svg"
+    ]
   },
   {
     "id": "drill-sign-giving-order-entry-20-zone.jpg",
@@ -1262,7 +1274,10 @@
       "alt": "White plate with a bus, a left arrow and the words Bus lane"
     },
     "highwayCodeRule": "Annex: Traffic signs",
-    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs"
+    "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
+    "overlaps": [
+      "drill-kyts-contra-flow-bus-cycle-lane.svg"
+    ]
   },
   {
     "id": "drill-road-work-sign-temporary-hazard.jpg",
@@ -1465,7 +1480,7 @@
   {
     "id": "drill-kyts-weak-bridge.svg",
     "family": "regulatory",
-    "meaning": "Weak bridge: no vehicles over the gross weight shown",
+    "meaning": "Weak bridge: no vehicles over 18 tonnes maximum gross weight, except empty vehicles",
     "image": {
       "src": "/driving/kyts-weak-bridge.svg",
       "alt": "WEAK BRIDGE plate above a red ring with 18 t and an empty-vehicles plate"
@@ -1608,7 +1623,7 @@
   {
     "id": "drill-kyts-green-arrow-light.svg",
     "family": "signals",
-    "meaning": "Full green with a right arrow: you may turn right as oncoming traffic is held",
+    "meaning": "Full green with a right arrow: you may turn right, but check that oncoming traffic has stopped first",
     "image": {
       "src": "/driving/kyts-green-arrow-light.svg",
       "alt": "Traffic signal showing a full green and a green right arrow"
@@ -1823,7 +1838,10 @@
       "alt": "Red triangle with two walking figures and a No footway for 400 yds plate"
     },
     "highwayCodeRule": "Know your traffic signs: Warning signs",
-    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/warning-signs"
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/warning-signs",
+    "overlaps": [
+      "drill-warning-sign-pedestrians-in-road-ahead.jpg"
+    ]
   },
   {
     "id": "drill-kyts-disabled-people.svg",
@@ -1927,7 +1945,7 @@
   {
     "id": "drill-kyts-cattle-crossing.svg",
     "family": "warning",
-    "meaning": "Supervised cattle crossing ahead: stop when the lights show",
+    "meaning": "Supervised cattle crossing ahead: when the lights flash, slow down and be prepared to stop",
     "image": {
       "src": "/driving/kyts-cattle-crossing.svg",
       "alt": "Red triangle with a cow and a When lights show 200 yds plate"
@@ -1955,7 +1973,10 @@
       "alt": "White plate with a bus, a bicycle, a left arrow and Bus and cycle lane"
     },
     "highwayCodeRule": "Know your traffic signs: Bus and cycle signs and road markings",
-    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/bus-and-cycle-signs-and-road-markings"
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/bus-and-cycle-signs-and-road-markings",
+    "overlaps": [
+      "drill-Information-sign-bus-lane-road-junction-ahead.jpg"
+    ]
   },
   {
     "id": "drill-kyts-bus-stop-place.svg",
@@ -2252,7 +2273,10 @@
       "alt": "Three grey lane strips with arrows and TURN LEFT, AHEAD ONLY, TURN RIGHT"
     },
     "highwayCodeRule": "Know your traffic signs: Road markings",
-    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/road-markings"
+    "learnMoreUrl": "https://www.gov.uk/government/publications/know-your-traffic-signs/road-markings",
+    "overlaps": [
+      "drill-other-road-markings-indication-lanes.jpg"
+    ]
   },
   {
     "id": "drill-kyts-no-entry-road-marking.svg",

@@ -1,6 +1,6 @@
 # Driving theory content and sources
 
-The driving bank contains 343 original paper questions, including 92 visual questions (the round-two notes said 305 questions; the true round-two count was 307, and round three added 36 visual questions). A separate sign drill uses 308 distinct unmodified official images: the 89 images used by visual questions plus 219 drill-only signs (124 after round two, 184 added in round three). It covers the 14 car theory topic areas through the app's existing four driving subjects. Science questions and historic question IDs are preserved. These are independently written practice questions, not the DVSA revision question bank or an official DVSA product.
+The driving bank contains 343 original paper questions, including 92 visual questions (the round-two notes said 305 questions; the true round-two count was 307, and round three added 36 visual questions). A separate sign drill uses 308 distinct official images: the 89 images used by visual questions plus 219 drill-only signs (124 after round two, 184 added in round three). It covers the 14 car theory topic areas through the app's existing four driving subjects. Science questions and historic question IDs are preserved. These are independently written practice questions, not the DVSA revision question bank or an official DVSA product.
 
 Sources checked on 23 October 2026 and rechecked for the round-two content on 25 October 2026:
 
@@ -12,7 +12,7 @@ Sources checked on 23 October 2026 and rechecked for the round-two content on 25
 
 ## Image provenance
 
-[The image manifest](../public/driving/manifest.json) records each local path, exact original asset URL, source page, retrieval date, licence, attribution and SHA-256 checksum. Images come from the online Highway Code's traffic signs, road markings, light signals and vehicle markings pages (JPEG/PNG), and from the *Know your traffic signs* chapters (SVG, stored with a `kyts-` filename prefix). They are stored locally, unmodified, with no runtime dependency on a remote image host. Round-three entries also record the page's `officialCaption`. The SVGs were checked to contain no scripts or external references. Explanations for *Know your traffic signs* images link to the relevant chapter and are labelled “Know your traffic signs — chapter”.
+[The image manifest](../public/driving/manifest.json) records each local path, exact original asset URL, source page, retrieval date, licence, attribution and SHA-256 checksum. Images come from the online Highway Code's traffic signs, road markings, light signals and vehicle markings pages (JPEG/PNG), and from the *Know your traffic signs* chapters (SVG, stored with a `kyts-` filename prefix). They are stored locally with no runtime dependency on a remote image host. The drawings are unmodified; 22 SVGs had their external SVG 1.1 DOCTYPE removed and its internal Illustrator entity values inlined, recorded in each entry's `modifications` field and checksum. Round-three entries also record the page's `officialCaption`. The SVGs were checked to contain no scripts or external references. Explanations for *Know your traffic signs* images link to the relevant chapter and are labelled “Know your traffic signs — chapter”.
 
 Contains public sector information licensed under the [Open Government Licence v3.0](https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/). © Crown copyright, Department for Transport. No third-party image exceptions were identified for the selected official illustrations. Images containing identifiable real people or real organisations were not used.
 
@@ -98,3 +98,7 @@ Audit fixes in the same branch, from `docs/driving-question-audit-2026-10-26.md`
 
 The audit also notes that signs are already over-weighted in mocks. Round three adds image questions but routes some into the motorway, parking, vulnerable-road-user, incident and other-vehicle topics. The mock image cap and topic re-weighting it suggests are not part of this round.
 
+
+## Round-three review fixes (26 Oct)
+
+An independent pre-deploy review (`docs/signs-round3-review-2026-10-26.md`) led to these fixes: the weak-bridge sign now includes the empty-vehicle exemption; the cattle-crossing sign says to slow down and be prepared to stop; the green-arrow signal says to check oncoming traffic has stopped; `dt-visual-077` treats the yellow "Max speed 30" panel as advisory; drill entries can list `overlaps` so two signs whose meanings could both be true are never offered as each other's wrong answer; Highway Code rule anchors use GOV.UK's `#rule263` form; the external DTDs were removed from 22 SVGs.

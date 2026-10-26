@@ -1605,13 +1605,13 @@ export const drivingVisualQuestions: Question[] = [
     "topicLabel": "Motorways",
     "question": "What does this road works sign tell you?",
     "options": [
-      "Stay in lane: one lane crosses over, max 30 mph",
+      "Stay in lane: one lane crosses over, advised maximum 30 mph",
       "Use the hard shoulder at up to 30 mph",
       "All lanes close ahead: leave at 30 mph",
       "Change lanes freely, keeping under 30 mph"
     ],
     "correctIndex": 0,
-    "explanation": "At a contraflow crossover, stay in your lane and keep to the speed limit shown.",
+    "explanation": "At a contraflow crossover, stay in your lane. The rectangular yellow \"Max speed 30\" panel is an advisory maximum, not a legal limit: a mandatory limit uses a red ring and is signed separately.",
     "highwayCodeRule": "290",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
     "image": {

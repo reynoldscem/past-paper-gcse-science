@@ -119,5 +119,5 @@ export function highwayCodeReferenceUrl(reference: string, fallback: string): st
     [307, 'road-works-level-crossings-and-tramways-288-to-307'],
   ];
   const chapter = rule > 0 ? chapters.find(([end]) => rule <= end)?.[1] : undefined;
-  return chapter ? `${base}${chapter}#rule-${rule}` : fallback;
+  return chapter ? `${base}${chapter}#rule${rule}` : fallback;
 }

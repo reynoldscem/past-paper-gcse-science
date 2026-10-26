@@ -141,12 +141,25 @@ test('drill meanings are unique and distractors come from the same sign family',
   }
 });
 
+test('overlapping signs are never offered as wrong answers for each other', async () => {
+  const { signBank } = await import('../src/data/signDrill.ts');
+  const additions = JSON.parse(readFileSync('src/data/drivingSigns.json', 'utf8'));
+  const byId = new Map(additions.map(s => [s.id, s]));
+  for (const s of additions) {
+    for (const other of s.overlaps ?? []) {
+      assert.ok(byId.has(other), `${s.id} overlaps unknown ${other}`);
+      const q = signBank.find(b => b.id === s.id);
+      assert.ok(!q.options.slice(1).includes(byId.get(other).meaning), `${s.id} offers ${other}`);
+    }
+  }
+});
+
 test('Highway Code links use the current motorway and breakdown chapter slugs', async () => {
   const { highwayCodeReferenceUrl } = await import('../src/data/drivingReferences.ts');
   const base = 'https://www.gov.uk/guidance/the-highway-code/';
-  assert.equal(highwayCodeReferenceUrl('263', ''), `${base}motorways-253-to-273#rule-263`);
-  assert.equal(highwayCodeReferenceUrl('274', ''), `${base}motorways-253-to-273#rule-274`);
-  assert.equal(highwayCodeReferenceUrl('277', ''), `${base}breakdowns-and-incidents-274-to-287#rule-277`);
+  assert.equal(highwayCodeReferenceUrl('263', ''), `${base}motorways-253-to-273#rule263`);
+  assert.equal(highwayCodeReferenceUrl('274', ''), `${base}motorways-253-to-273#rule274`);
+  assert.equal(highwayCodeReferenceUrl('277', ''), `${base}breakdowns-and-incidents-274-to-287#rule277`);
   const urls = driving.flatMap(q => [q.learnMoreUrl, highwayCodeReferenceUrl(q.highwayCodeRule, q.learnMoreUrl)]);
   assert.ok(urls.every(u => !/motorways-253-to-274|breakdowns-and-incidents-275-to-287/.test(u)));
 });
