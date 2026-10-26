@@ -645,7 +645,7 @@ export const drivingRound2Questions: Question[] = [
     ],
     "correctIndex": 0,
     "explanation": "Emergency stopping facilities must not be used for routine navigation breaks.",
-    "highwayCodeRule": "270",
+    "highwayCodeRule": "271",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/motorways-253-to-273"
   },
   {
@@ -662,7 +662,7 @@ export const drivingRound2Questions: Question[] = [
     ],
     "correctIndex": 0,
     "explanation": "Never reverse or turn around on a motorway to recover a missed exit.",
-    "highwayCodeRule": "272",
+    "highwayCodeRule": "263",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/motorways-253-to-273"
   },
   {
@@ -679,7 +679,7 @@ export const drivingRound2Questions: Question[] = [
     ],
     "correctIndex": 0,
     "explanation": "After sustained high speed, perception can be misleading. Check actual speed and the new limit.",
-    "highwayCodeRule": "273",
+    "highwayCodeRule": "274",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/motorways-253-to-273"
   },
   {
