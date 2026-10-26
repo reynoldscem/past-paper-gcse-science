@@ -40,3 +40,39 @@ test('starting a second mock requires an explicit resume or discard choice', asy
   expect(replacement.flags).toEqual([]);
   expect(replacement.endTime).toBeGreaterThan(parked.endTime);
 });
+
+async function waitForQuizReset(page) {
+  await expect.poll(() => page.evaluate(async () =>
+    (await import('/src/store/appStore.ts')).useAppStore.getState().activePaper)).toBeNull();
+}
+
+test('Back and Forward replace a quiz entry whose state has been cleared with Home', async ({ page }) => {
+  await page.getByRole('button', { name: /Visual practice/ }).click();
+  await expect(page.locator('.option-btn').first()).toBeVisible();
+  page.once('dialog', dialog => dialog.accept());
+  await page.getByRole('button', { name: /Home$/ }).click();
+  await waitForQuizReset(page);
+  await page.goBack();
+  await expect(page.getByRole('button', { name: /Start mock/ })).toBeVisible();
+  await expect(page).toHaveURL(/#home$/);
+  await page.goBack();
+  await page.goForward();
+  await expect(page.getByRole('button', { name: /Start mock/ })).toBeVisible();
+  await expect(page).toHaveURL(/#home$/);
+});
+
+test('Back and Forward replace results without quiz state with History', async ({ page }) => {
+  await page.getByRole('button', { name: /Visual practice/ }).click();
+  await page.getByRole('button', { name: 'Skip to end' }).click();
+  await page.getByRole('button', { name: /^Submit/ }).click();
+  await page.getByRole('button', { name: 'Back to Home', exact: true }).click();
+  await waitForQuizReset(page);
+  await page.goBack();
+  await expect(page).toHaveURL(/#history$/);
+  await expect(page.getByRole('button', { name: /Mixed Driving Theory/ })).toBeVisible();
+  await page.goBack();
+  await expect(page).toHaveURL(/#home$/);
+  await page.goForward();
+  await expect(page).toHaveURL(/#history$/);
+  await expect(page.getByRole('button', { name: /Mixed Driving Theory/ })).toBeVisible();
+});
