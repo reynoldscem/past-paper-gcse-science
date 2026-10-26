@@ -1,9 +1,7 @@
 import { AppProgress } from '../types';
 import { useAppStore } from '../store/appStore';
 
-const API_BASE = import.meta.env.DEV
-  ? `${window.location.protocol}//${window.location.hostname}:3001`
-  : '';
+const API_BASE = ''; // Vite proxies /api in development; production stays same-origin.
 
 export const defaultProgress: AppProgress = {
   revision: 0,

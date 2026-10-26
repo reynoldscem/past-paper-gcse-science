@@ -6,5 +6,6 @@ export default defineConfig({
   server: {
     host: '0.0.0.0',
     allowedHosts: ['poseidon', 'poseidon.local'],
+    proxy: { '/api': `http://127.0.0.1:${process.env.PORT || 3000}` },
   },
 })
