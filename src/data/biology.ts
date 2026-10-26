@@ -32,7 +32,7 @@ export const biologyQuestions: Question[] = [
   "question": "What is the function of mitochondria?",
   "options": [
     "Storage of water and dissolved ions",
-    "Photosynthesis using absorbed light",
+    "Photosynthesis",
     "Aerobic respiration",
     "Protein synthesis from amino acids"
   ],
@@ -80,7 +80,7 @@ export const biologyQuestions: Question[] = [
   "topicLabel": "Cell Biology",
   "question": "Which type of transport requires energy from the cell?",
   "options": [
-    "Diffusion down a concentration gradient",
+    "Diffusion",
     "Osmosis through a partially permeable membrane",
     "Gas exchange across the alveolar walls",
     "Active transport"
@@ -180,7 +180,7 @@ export const biologyQuestions: Question[] = [
   "topicLabel": "Organisation",
   "question": "What does bile do during digestion?",
   "options": [
-    "It digests proteins to amino acids",
+    "It digests starch",
     "It emulsifies fats",
     "It absorbs nutrients into the blood",
     "It produces acid in the stomach"
@@ -258,7 +258,7 @@ export const biologyQuestions: Question[] = [
   "topicLabel": "Infection & Response",
   "question": "How do white blood cells help defend the body against pathogens?",
   "options": [
-    "Carrying oxygen, releasing haemoglobin and forming clots",
+    "Carrying oxygen and forming clots",
     "Antibodies, phagocytosis and antitoxins",
     "Producing insulin, digesting glucose and releasing bile",
     "Trapping mucus, moving cilia and producing stomach acid"
@@ -274,7 +274,7 @@ export const biologyQuestions: Question[] = [
   "topicLabel": "Infection & Response",
   "question": "What does a vaccination contain?",
   "options": [
-    "Antibiotics that kill an invading pathogen",
+    "Antibiotics",
     "Dead or inactive pathogens",
     "Ready-made antibodies from another animal",
     "Painkillers that prevent antibody production"
@@ -329,7 +329,7 @@ export const biologyQuestions: Question[] = [
   "question": "What is the main problem with the overuse of antibiotics?",
   "options": [
     "Resistant bacteria become more common",
-    "The human body becomes resistant to the drug",
+    "The human body becomes resistant",
     "Viruses evolve resistance to the antibiotic",
     "Susceptible bacteria reproduce faster than resistant ones"
   ],
@@ -427,7 +427,7 @@ export const biologyQuestions: Question[] = [
   "topicLabel": "Bioenergetics",
   "question": "What do plants use the glucose produced in photosynthesis for?",
   "options": [
-    "Respiration, making proteins without nitrates, storing as glycogen",
+    "Respiration and storage as glycogen",
     "Respiration, cellulose, amino acids and starch",
     "Respiration, absorbing minerals, storing energy as chlorophyll",
     "Making starch, making cellulose, absorbing glucose through roots"
@@ -454,7 +454,7 @@ export const biologyQuestions: Question[] = [
   "topicLabel": "Bioenergetics",
   "question": "What is metabolism?",
   "options": [
-    "Ventilation that moves air into and out of the lungs",
+    "Ventilation of the lungs",
     "All chemical reactions in cells or the body",
     "The mechanical movement of food through the intestine",
     "Circulation that transports oxygen around the body"
@@ -472,7 +472,7 @@ export const biologyQuestions: Question[] = [
   "topicLabel": "Homeostasis",
   "question": "What is homeostasis?",
   "options": [
-    "Matching internal conditions to changes outside the body",
+    "Matching conditions outside the body",
     "Maintaining a stable internal environment",
     "Increasing every reaction rate as body temperature rises",
     "Stopping all changes to the composition of the blood"
@@ -517,7 +517,7 @@ export const biologyQuestions: Question[] = [
   "options": [
     "Insulin being released whenever blood glucose falls",
     "Too little insulin production",
-    "Body cells responding less effectively to insulin",
+    "Insulin resistance",
     "An increased conversion of glucose to glycogen in the liver"
   ],
   "correctIndex": 1,
@@ -559,7 +559,7 @@ export const biologyQuestions: Question[] = [
   "topicLabel": "Homeostasis",
   "question": "How does the body cool down when it is too hot?",
   "options": [
-    "Skin blood vessels constrict and sweating increases",
+    "Sweating and vasoconstriction",
     "Sweating and skin vasodilation",
     "Skin blood vessels dilate and the muscles begin shivering",
     "Sweating decreases and hairs are raised to trap air"
@@ -621,7 +621,7 @@ export const biologyQuestions: Question[] = [
   "topicLabel": "Inheritance & Variation",
   "question": "What is a gene?",
   "options": [
-    "A whole chromosome containing many sections of DNA",
+    "A whole chromosome",
     "DNA coding for a particular protein",
     "A sequence of amino acids in a completed protein",
     "A membrane-bound structure containing chromosomes"
@@ -659,7 +659,7 @@ export const biologyQuestions: Question[] = [
   "options": [
     "Individuals changing their genes because they need to adapt",
     "Better-adapted organisms surviving and reproducing",
-    "Humans choosing parents to produce desirable offspring",
+    "Humans choosing parents to breed",
     "Individuals passing on traits acquired through exercise"
   ],
   "correctIndex": 1,
@@ -711,7 +711,7 @@ export const biologyQuestions: Question[] = [
   "topicLabel": "Inheritance & Variation",
   "question": "Which of the following is an example of variation caused by the environment rather than genes?",
   "options": [
-    "Inherited eye colour",
+    "Eye colour",
     "Natural hair colour",
     "An injury scar",
     "Inherited blood group"
@@ -729,7 +729,7 @@ export const biologyQuestions: Question[] = [
   "topicLabel": "Ecology",
   "question": "What is a community in ecology?",
   "options": [
-    "All individuals of one species in the same habitat",
+    "One species in one habitat",
     "Interacting populations in an area",
     "The organisms and non-living conditions in an area",
     "All the habitats with the same physical conditions"
@@ -745,7 +745,7 @@ export const biologyQuestions: Question[] = [
   "topicLabel": "Ecology",
   "question": "In a food chain, what do arrows represent?",
   "options": [
-    "The direction in which a predator searches for prey",
+    "Predator movement",
     "The transfer of energy",
     "The flow from each consumer back to its food source",
     "The direction of increasing population size"
@@ -761,7 +761,7 @@ export const biologyQuestions: Question[] = [
   "topicLabel": "Ecology",
   "question": "What is an adaptation?",
   "options": [
-    "A seasonal change in the physical surroundings",
+    "A change in the weather",
     "A feature aiding survival",
     "A feeding relationship between two populations",
     "A short-term increase in the size of a population"
@@ -827,7 +827,7 @@ export const biologyQuestions: Question[] = [
   "options": [
     "The number of individuals of the most common species",
     "The variety of species",
-    "The total dry mass of organisms in a sample area",
+    "Total biomass",
     "The range of non-living conditions within a habitat"
   ],
   "correctIndex": 1,
@@ -842,7 +842,7 @@ export const biologyQuestions: Question[] = [
   "question": "What is the role of decomposers in an ecosystem?",
   "options": [
     "Build organic nutrients from carbon dioxide using light",
-    "Transfer biomass from living prey to a predator",
+    "Hunt and eat living prey",
     "Decay dead matter and recycle nutrients",
     "Transport pollen between flowers of the same species"
   ],
@@ -887,7 +887,7 @@ export const biologyQuestions: Question[] = [
   "topicLabel": "Organisation",
   "question": "What happens to an enzyme if the temperature gets too high?",
   "options": [
-    "Its active site fits more substrates",
+    "It works faster",
     "It becomes denatured",
     "Its active site remains unchanged",
     "It changes into a different enzyme"
@@ -919,7 +919,7 @@ export const biologyQuestions: Question[] = [
   "topicLabel": "Infection & Response",
   "question": "How does vaccination prevent disease?",
   "options": [
-    "It supplies a permanent store of ready-made antibodies",
+    "It supplies ready-made antibodies",
     "It stimulates an immune response to pathogen antigens",
     "It destroys the pathogen using antibiotics in the vaccine",
     "It prevents pathogens entering by thickening the skin"
@@ -937,7 +937,7 @@ export const biologyQuestions: Question[] = [
   "options": [
     "People inherit resistance to antibiotic medicines",
     "Antibiotics select for resistant bacteria",
-    "Viruses become resistant after exposure to antibiotics",
+    "Viruses develop antibiotic resistance",
     "Antibiotics cause each bacterium to adapt deliberately"
   ],
   "correctIndex": 1,
@@ -1000,7 +1000,7 @@ export const biologyQuestions: Question[] = [
   "topicLabel": "Homeostasis",
   "question": "What does ADH do when you are dehydrated?",
   "options": [
-    "Kidneys reabsorb less water, producing more dilute urine",
+    "Less water reabsorbed; urine more dilute",
     "Kidneys reabsorb more water, producing more dilute urine",
     "More water is reabsorbed; urine is concentrated",
     "Kidneys stop filtering the blood until water is consumed"
@@ -1073,7 +1073,7 @@ export const biologyQuestions: Question[] = [
   "question": "Which factor would increase the rate of decomposition?",
   "options": [
     "A fall in temperature below the optimum",
-    "A reduction in water available to microorganisms",
+    "Drying the surroundings",
     "Warming towards the optimum",
     "A reduction in oxygen available for aerobic respiration"
   ],
@@ -1100,69 +1100,69 @@ export const biologyQuestions: Question[] = [
 
   // Foundation methods, applications and coverage additions.
   {
-    "id": "bio-cell-biology-012",
-    "subject": "biology",
-    "topic": "cell-biology",
-    "topicLabel": "Cell Biology",
-    "question": "When first viewing a prepared slide with a light microscope, which objective should you select?",
-    "options": [
-      "Lowest power",
-      "Highest power",
-      "Medium power",
-      "Oil immersion"
-    ],
-    "correctIndex": 0,
-    "explanation": "Begin at low power to find and centre the specimen, then increase magnification and refocus carefully.",
-    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z2mttv4"
-  },
+  "id": "bio-cell-biology-012",
+  "subject": "biology",
+  "topic": "cell-biology",
+  "topicLabel": "Cell Biology",
+  "question": "When first viewing a prepared slide with a light microscope, which objective should you select?",
+  "options": [
+    "Lowest power",
+    "High power",
+    "Medium power",
+    "Oil immersion"
+  ],
+  "correctIndex": 0,
+  "explanation": "Begin at low power to find and centre the specimen, then increase magnification and refocus carefully.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z2mttv4"
+},
   {
-    "id": "bio-cell-biology-013",
-    "subject": "biology",
-    "topic": "cell-biology",
-    "topicLabel": "Cell Biology",
-    "question": "Potato cylinders are weighed before and after soaking in sugar solutions. What should be done immediately before each weighing?",
-    "options": [
-      "Squeeze out the water inside",
-      "Blot the surface dry",
-      "Rinse them in concentrated sugar",
-      "Leave them overnight to dry out"
-    ],
-    "correctIndex": 1,
-    "explanation": "Blotting removes surface solution without deliberately removing water from the tissue. This makes the mass comparison fairer.",
-    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z2mttv4"
-  },
+  "id": "bio-cell-biology-013",
+  "subject": "biology",
+  "topic": "cell-biology",
+  "topicLabel": "Cell Biology",
+  "question": "Potato cylinders are weighed before and after soaking in sugar solutions. What should be done immediately before each weighing?",
+  "options": [
+    "Squeeze them",
+    "Blot the surface dry",
+    "Rinse them in concentrated sugar",
+    "Leave them overnight to dry out"
+  ],
+  "correctIndex": 1,
+  "explanation": "Blotting removes surface solution without deliberately removing water from the tissue. This makes the mass comparison fairer.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z2mttv4"
+},
   {
-    "id": "bio-organisation-012",
-    "subject": "biology",
-    "topic": "organisation",
-    "topicLabel": "Organisation",
-    "question": "A food sample is tested for reducing sugar using Benedict’s reagent. Which step is needed after mixing?",
-    "options": [
-      "Filter off the blue reagent first",
-      "Cool the mixture in an ice bath",
-      "Heat in a water bath",
-      "Add iodine at room temperature"
-    ],
-    "correctIndex": 2,
-    "explanation": "Benedict’s test requires heating, safely in a hot water bath. A positive result forms a green, yellow, orange or brick-red precipitate.",
-    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwj22nb"
-  },
+  "id": "bio-organisation-012",
+  "subject": "biology",
+  "topic": "organisation",
+  "topicLabel": "Organisation",
+  "question": "A food sample is tested for reducing sugar using Benedict’s reagent. Which step is needed after mixing?",
+  "options": [
+    "Filter off the blue reagent first",
+    "Cool in ice",
+    "Heat in a water bath",
+    "Add iodine at room temperature"
+  ],
+  "correctIndex": 2,
+  "explanation": "Benedict’s test requires heating, safely in a hot water bath. A positive result forms a green, yellow, orange or brick-red precipitate.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwj22nb"
+},
   {
-    "id": "bio-organisation-013",
-    "subject": "biology",
-    "topic": "organisation",
-    "topicLabel": "Organisation",
-    "question": "In an amylase investigation, drops are tested with iodine every 30 seconds. Which observation marks the endpoint?",
-    "options": [
-      "Iodine first turns blue-black",
-      "The starch mixture becomes warm",
-      "The mixture first turns cloudy",
-      "Iodine stays orange-brown"
-    ],
-    "correctIndex": 3,
-    "explanation": "Iodine stays orange-brown when starch is no longer detected. Use the same sampling interval at each pH and control temperature.",
-    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwj22nb"
-  },
+  "id": "bio-organisation-013",
+  "subject": "biology",
+  "topic": "organisation",
+  "topicLabel": "Organisation",
+  "question": "In an amylase investigation, drops are tested with iodine every 30 seconds. Which observation marks the endpoint?",
+  "options": [
+    "Iodine first turns blue-black",
+    "The starch mixture becomes warm",
+    "The mixture turns cloudy",
+    "Iodine stays orange-brown"
+  ],
+  "correctIndex": 3,
+  "explanation": "Iodine stays orange-brown when starch is no longer detected. Use the same sampling interval at each pH and control temperature.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwj22nb"
+},
   {
     "id": "bio-bioenergetics-011",
     "subject": "biology",
@@ -1186,7 +1186,7 @@ export const biologyQuestions: Question[] = [
   "topicLabel": "Homeostasis",
   "question": "In a ruler-drop reaction-time investigation, why repeat the test several times for each condition?",
   "options": [
-    "To remove the need to control the drop height",
+    "To avoid controls",
     "To calculate a mean",
     "To make each result equal to the previous one",
     "To remove a systematic error in the ruler scale"
@@ -1250,7 +1250,7 @@ export const biologyQuestions: Question[] = [
   "topicLabel": "Cell Biology",
   "question": "Two identical membranes separate solutions at the same temperature. Which change increases the net rate of diffusion?",
   "options": [
-    "A reduction in the membrane surface area",
+    "Less membrane surface area",
     "A steeper concentration gradient",
     "A reduction in the concentration difference",
     "An increase in the thickness of the membrane"
@@ -1378,7 +1378,7 @@ export const biologyQuestions: Question[] = [
   "topicLabel": "Organisation",
   "question": "Which statement describes a malignant tumour?",
   "options": [
-    "It stays enclosed within its original tissue",
+    "It remains enclosed",
     "It can spread to other tissues",
     "It is a mass of normal cells that cannot divide",
     "It grows by making existing cells larger without division"
@@ -1491,7 +1491,7 @@ export const biologyQuestions: Question[] = [
   "question": "Why are some clinical-trial volunteers given a placebo?",
   "options": [
     "To provide a comparison",
-    "To measure the effect of an increased active dose",
+    "To increase the dose",
     "To ensure every volunteer receives active medicine",
     "To replace the need to allocate groups randomly"
   ],
@@ -1571,7 +1571,7 @@ export const biologyQuestions: Question[] = [
   "question": "What is a common feature of Type 2 diabetes?",
   "options": [
     "Cells respond less well to insulin",
-    "The pancreas stops producing insulin entirely",
+    "No insulin is produced",
     "Blood glucose falls because insulin is overproduced",
     "Insulin stimulates glucose release from liver stores"
   ],

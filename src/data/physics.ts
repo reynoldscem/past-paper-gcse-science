@@ -36,7 +36,7 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Energy",
   "question": "Which comparison of nuclear and gas-fired electricity generation is correct?",
   "options": [
-    "Both rely on burning their fuel",
+    "Both burn their fuel",
     "Both have renewable fuel supplies",
     "Both produce radioactive fuel waste",
     "Neither uses renewable fuel"
@@ -85,7 +85,7 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Energy",
   "question": "Which material is the best thermal insulator for reducing heat loss from a house?",
   "options": [
-    "Aluminium sheet",
+    "Aluminium",
     "Solid glass panel",
     "Fibreglass wool",
     "Steel reinforcing mesh"
@@ -150,7 +150,7 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Energy",
   "question": "Which feature makes tidal generation more predictable than wind generation?",
   "options": [
-    "Tidal generators provide constant power throughout the day",
+    "Constant tidal power",
     "Tidal output follows daily changes in electricity demand",
     "Tidal cycles can be forecast",
     "Tidal turbines run throughout the full tidal cycle"
@@ -193,7 +193,7 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Energy",
   "question": "What does a thicker wall cavity insulation do?",
   "options": [
-    "It increases conduction by trapping more air",
+    "It increases conduction",
     "It reduces heat transfer",
     "It increases convection currents across the cavity",
     "It reduces the energy needed to raise each room’s temperature"
@@ -247,7 +247,7 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Energy",
   "question": "Which limitation affects the electricity output of a wind turbine during operation?",
   "options": [
-    "It needs a river with a large height drop",
+    "It needs a river",
     "It must store fuel to cover periods of low demand",
     "It needs suitable wind speeds",
     "It must heat water into steam before turning the generator"
@@ -336,7 +336,7 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Electricity",
   "question": "What colour is the earth wire in a UK three-pin plug?",
   "options": [
-    "Brown with a blue stripe",
+    "Brown",
     "Blue with a brown stripe",
     "Green and yellow",
     "Brown with a green stripe"
@@ -363,7 +363,7 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Electricity",
   "question": "What is the role of a fuse in an electrical circuit?",
   "options": [
-    "To reduce the supply voltage when the current is large",
+    "To lower the supply voltage",
     "To store excess charge until the current falls",
     "To melt and break an excessive current",
     "To divert current around the appliance while it operates"
@@ -414,7 +414,7 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Particle Model",
   "question": "What is the name of the change of state from liquid to gas?",
   "options": [
-    "Condensation or deposition",
+    "Condensation",
     "Freezing or solidification",
     "Evaporation or boiling",
     "Sublimation or deposition"
@@ -446,7 +446,7 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Particle Model",
   "question": "What does specific heat capacity tell you about a material?",
   "options": [
-    "Energy to melt 1 kg without changing its temperature",
+    "Energy to melt 1 kg",
     "Energy to warm 1 kg by 1°C",
     "Energy to boil 1 kg without changing its temperature",
     "Energy transferred each second through a 1 kg sample"
@@ -494,7 +494,7 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Particle Model",
   "question": "What is internal energy?",
   "options": [
-    "The total kinetic energy of the particles, excluding their potential energy",
+    "Total particle kinetic energy",
     "Total particle kinetic and potential energy",
     "The potential energy between particles, excluding their kinetic energy",
     "The energy needed to raise the whole system’s temperature by one degree"
@@ -512,7 +512,7 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Atomic Structure",
   "question": "Two atoms each have 6 protons but have 6 and 8 neutrons respectively. How are they related?",
   "options": [
-    "They are ions with different charges",
+    "They are different ions",
     "They are isotopes of carbon",
     "They are atoms of different elements",
     "They have equal mass numbers"
@@ -614,7 +614,7 @@ export const physicsQuestions: Question[] = [
   "options": [
     "It captures neutrons without splitting into smaller nuclei",
     "It splits, releasing energy",
-    "It combines with another light nucleus to form a heavier one",
+    "It joins another nucleus",
     "It emits gamma radiation while its proton number increases"
   ],
   "correctIndex": 1,
@@ -652,7 +652,7 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Forces",
   "question": "A resultant force of 0 N acts on a moving object. What happens to the object?",
   "options": [
-    "It slows steadily because there is no resultant force",
+    "It slows to a stop",
     "It speeds up steadily while keeping its direction",
     "It keeps constant velocity",
     "It moves at constant speed around a circular path"
@@ -846,7 +846,7 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Electromagnetism",
   "question": "What shape is the magnetic field around a bar magnet?",
   "options": [
-    "Straight parallel lines equally spaced around the magnet",
+    "Straight parallel lines",
     "Concentric circles centred on the middle of the magnet",
     "Curved lines from north to south outside it",
     "Curved lines from south to north outside the magnet"
@@ -862,7 +862,7 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Electromagnetism",
   "question": "What is an electromagnet?",
   "options": [
-    "A piece of iron that stays magnetic without any current",
+    "A permanent iron magnet",
     "A coil made magnetic by a current",
     "A coil that stores charge when connected to a battery",
     "A wire that becomes magnetic when voltage is zero and no current flows"
@@ -878,7 +878,7 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Electromagnetism",
   "question": "How can the strength of an electromagnet be increased?",
   "options": [
-    "Reduce the current and replace iron with plastic",
+    "Reduce current",
     "Increase current and add an iron core",
     "Keep the current fixed and reduce the number of turns",
     "Keep the coil unchanged and replace iron with wood"
@@ -895,7 +895,7 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Electromagnetism",
   "question": "What is the motor effect?",
   "options": [
-    "The attraction between a permanent magnet and an unmagnetised iron object",
+    "A magnet attracting iron",
     "Force on a current-carrying wire in a magnetic field",
     "The production of a potential difference by moving a wire across a field",
     "The increase in a wire’s temperature when electric current flows through it"
@@ -911,7 +911,7 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Electromagnetism",
   "question": "What does a transformer do?",
   "options": [
-    "Changes alternating current into direct current",
+    "Converts a.c. to d.c.",
     "Stores electrical energy for later use by a circuit",
     "Changes an a.c. supply’s voltage",
     "Measures the resistance of a component in a circuit"
@@ -928,7 +928,7 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Electromagnetism",
   "question": "In a loudspeaker, what causes the cone to vibrate and produce sound?",
   "options": [
-    "The alternating current heats and cools the cone so that it expands",
+    "Current heats and expands the cone",
     "An alternating current produces a changing magnetic force",
     "Sound waves from the magnet make the coil vibrate by induction",
     "A steady force from a direct current pushes the cone back and forth"
@@ -945,7 +945,7 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Electromagnetism",
   "question": "What is electromagnetic induction?",
   "options": [
-    "Producing a magnetic field by sending current through a stationary coil",
+    "Producing magnetism with an electric current",
     "Producing voltage by changing the magnetic field through a circuit",
     "Producing thermal energy as current passes through a resistance wire",
     "Producing charge by rubbing two insulating surfaces against each other"
@@ -999,7 +999,7 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Electricity",
   "question": "Why is electricity transmitted at very high voltages through the National Grid?",
   "options": [
-    "To increase current so the cables transmit energy more quickly",
+    "To increase transmitted current",
     "To reduce current and cable heating losses",
     "To increase cable resistance and prevent current from escaping",
     "To reduce transmitted power so that thinner cables can be used"
@@ -1073,7 +1073,7 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Waves",
   "question": "What is a danger of excessive exposure to ultraviolet (UV) radiation?",
   "options": [
-    "Heating damage deep inside muscles",
+    "Deep muscle heating",
     "Sunburn and skin cancer",
     "Damage to hearing from vibrating air",
     "Electrical shocks from induced currents"
@@ -1125,7 +1125,7 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Particle Model",
   "question": "Why does a gas exert pressure on the walls of its container?",
   "options": [
-    "Particles pull on the walls through gravitational attraction",
+    "Gravity pulls on the walls",
     "Particle collisions exert forces",
     "Particles resting on the base push sideways through a solid lattice",
     "Particles transfer electric charge to the walls and repel each other"
@@ -1192,7 +1192,7 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Atomic Structure",
   "question": "When an atom emits a beta particle, what happens to its nucleus?",
   "options": [
-    "Two protons and two neutrons are emitted together as an alpha particle",
+    "Two protons and two neutrons are emitted",
     "A neutron becomes a proton, emitting an electron",
     "A proton becomes a neutron, reducing the nucleus’s atomic number",
     "An electron leaves an outer shell without changing the nucleus"
@@ -1208,7 +1208,7 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Atomic Structure",
   "question": "Radioactive dust settles on a glove. After the external source is removed, why can the glove still expose someone to radiation?",
   "options": [
-    "The glove stores the radiation it absorbed",
+    "The glove stores absorbed radiation",
     "Radioactive material remains on the glove",
     "Every atom in the glove has become radioactive",
     "The glove reflects radiation indefinitely"
@@ -1245,7 +1245,7 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Electromagnetism",
   "question": "How can you increase the strength of an electromagnet?",
   "options": [
-    "Replace the iron core with a non-magnetic material",
+    "Use a wooden core",
     "Reduce both the current and number of turns",
     "Increase turns and current",
     "Increase the coil’s resistance while keeping supply voltage fixed"
@@ -1261,7 +1261,7 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Electromagnetism",
   "question": "What is a solenoid?",
   "options": [
-    "A straight wire whose field has concentric circular lines",
+    "A straight wire carrying current",
     "A coil carrying current to make a magnetic field",
     "A permanent bar magnet that retains its field without current",
     "A resistor that changes resistance when its temperature changes"
@@ -1280,7 +1280,7 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Electromagnetism",
   "question": "How does a loudspeaker convert electrical energy into sound?",
   "options": [
-    "Alternating current heats the air directly without moving the cone",
+    "Current heats the air directly",
     "A varying magnetic force vibrates the coil and cone",
     "A constant magnetic force moves the cone continuously outwards",
     "Alternating current changes the mass of the cone so that it vibrates"
@@ -1331,7 +1331,7 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Energy",
   "question": "What advantage can a fuelled fossil-fuel power station have over wind turbines and solar panels when electricity is needed?",
   "options": [
-    "It uses fuel that is naturally replenished as fast as it is burned",
+    "Its fuel is renewable",
     "Its output is controllable without wind or sunlight",
     "It produces less carbon dioxide during operation than a wind turbine",
     "It converts all input chemical energy into useful electrical output"
@@ -1347,7 +1347,7 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Energy",
   "question": "Step-up transformers are used at power stations. What do they do?",
   "options": [
-    "Increase current and decrease voltage",
+    "Lower voltage, raise current",
     "Raise voltage and lower current",
     "Increase both current and voltage at the same power",
     "Convert alternating current into direct current"
@@ -1452,7 +1452,7 @@ export const physicsQuestions: Question[] = [
   "topicLabel": "Particle Model",
   "question": "An irregular stone sinks in water. How can its volume be measured?",
   "options": [
-    "Divide its mass by the density of water",
+    "Mass divided by water density",
     "Multiply its maximum length, width and height",
     "Use the water’s final volume without subtracting its start volume",
     "Measure the displaced water volume"
@@ -1478,21 +1478,21 @@ export const physicsQuestions: Question[] = [
     "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/ztmttv4"
   },
   {
-    "id": "phys-forces-020",
-    "subject": "physics",
-    "topic": "forces",
-    "topicLabel": "Forces",
-    "question": "To investigate how force affects a trolley’s acceleration, what should be kept constant?",
-    "options": [
-      "The time taken to reach each speed",
-      "Total moving mass",
-      "The resultant force on the system",
-      "The acceleration being measured"
-    ],
-    "correctIndex": 1,
-    "explanation": "Keep the total moving mass constant while changing the resultant force. Otherwise both mass and force affect acceleration.",
-    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/ztmttv4"
-  },
+  "id": "phys-forces-020",
+  "subject": "physics",
+  "topic": "forces",
+  "topicLabel": "Forces",
+  "question": "To investigate how force affects a trolley’s acceleration, what should be kept constant?",
+  "options": [
+    "The time taken to reach each speed",
+    "Total moving mass",
+    "Resultant force",
+    "The acceleration being measured"
+  ],
+  "correctIndex": 1,
+  "explanation": "Keep the total moving mass constant while changing the resultant force. Otherwise both mass and force affect acceleration.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/ztmttv4"
+},
   {
     "id": "phys-waves-014",
     "subject": "physics",
@@ -1510,21 +1510,21 @@ export const physicsQuestions: Question[] = [
     "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zsrndnb"
   },
   {
-    "id": "phys-waves-015",
-    "subject": "physics",
-    "topic": "waves",
-    "topicLabel": "Waves",
-    "question": "To compare infrared emission from different surfaces of a Leslie cube, which detector condition should be kept the same?",
-    "options": [
-      "The surface finish of each face",
-      "The radiation reading for each face",
-      "The colour of each measured face",
-      "Distance from each face"
-    ],
-    "correctIndex": 3,
-    "explanation": "Keep detector distance and angle the same and compare faces at the same temperature. The surface finish is the variable under test.",
-    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zsrndnb"
-  },
+  "id": "phys-waves-015",
+  "subject": "physics",
+  "topic": "waves",
+  "topicLabel": "Waves",
+  "question": "To compare infrared emission from different surfaces of a Leslie cube, which detector condition should be kept the same?",
+  "options": [
+    "Surface finish",
+    "The radiation reading for each face",
+    "The colour of each measured face",
+    "Distance from each face"
+  ],
+  "correctIndex": 3,
+  "explanation": "Keep detector distance and angle the same and compare faces at the same temperature. The surface finish is the variable under test.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zsrndnb"
+},
   {
     "id": "phys-forces-021",
     "subject": "physics",

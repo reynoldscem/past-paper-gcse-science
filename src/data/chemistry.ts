@@ -20,7 +20,7 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Atoms & Periodic Table",
   "question": "Where are electrons found in an atom?",
   "options": [
-    "Mixed with protons throughout the nucleus",
+    "Inside the nucleus",
     "In shells around the nucleus",
     "Fixed between neighbouring protons in the nucleus",
     "On circular paths inside the atomic nucleus"
@@ -36,7 +36,7 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Atoms & Periodic Table",
   "question": "What are isotopes?",
   "options": [
-    "Atoms of different elements with equal mass numbers",
+    "Different elements, equal mass numbers",
     "Same element, different neutron numbers",
     "Atoms of the same element with different proton numbers",
     "Atoms of different elements with equal electron numbers"
@@ -151,7 +151,7 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Bonding & Structure",
   "question": "Why do ionic compounds have high melting points?",
   "options": [
-    "Strong covalent bonds join separate ionic molecules",
+    "Strong covalent bonds",
     "Strong attractions between opposite ions",
     "Strong attractions hold neutral molecules together",
     "Strong metallic bonds connect a lattice of neutral atoms"
@@ -167,7 +167,7 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Bonding & Structure",
   "question": "Which of the following describes metallic bonding?",
   "options": [
-    "Attraction between pairs of atoms sharing electrons",
+    "Attraction to shared electron pairs",
     "Attraction between positive and negative metal ions",
     "Positive ions attracted to delocalised electrons",
     "Attraction between separate molecules containing metal atoms"
@@ -183,7 +183,7 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Bonding & Structure",
   "question": "Why do simple molecular substances have low melting points?",
   "options": [
-    "The covalent bonds inside each molecule are weak",
+    "Weak covalent bonds",
     "Weak intermolecular forces",
     "Strong forces hold the molecules in a giant lattice",
     "Mobile electrons weaken the bonds inside molecules"
@@ -210,7 +210,7 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Bonding & Structure",
   "question": "Why can metals conduct electricity?",
   "options": [
-    "Positive ions can flow freely through a solid metal",
+    "Mobile positive ions",
     "Mobile delocalised electrons",
     "Neutral atoms carry charge between lattice positions",
     "Bonded pairs of electrons flow between separate molecules"
@@ -239,7 +239,7 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Quantitative Chemistry",
   "question": "In a chemical reaction, what happens to the total mass of reactants and products?",
   "options": [
-    "Some mass is created when new bonds form",
+    "New bonds create mass",
     "Some mass is destroyed when bonds break",
     "Total mass stays the same",
     "Total mass depends on the speed of the reaction"
@@ -335,7 +335,7 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Chemical Changes",
   "question": "How are metals less reactive than carbon extracted from their ores?",
   "options": [
-    "Separating the ore using fractional distillation",
+    "Distillation",
     "Reduction with carbon",
     "Dissolving the ore followed by crystallisation",
     "Filtering the ore from a suspension in water"
@@ -477,7 +477,7 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Energy Changes",
   "question": "What is the activation energy of a reaction?",
   "options": [
-    "The total energy transferred to the surroundings",
+    "Total energy released",
     "Minimum energy for reaction",
     "The difference between reactant and product energies",
     "The energy released as the products cool to room temperature"
@@ -556,7 +556,7 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Rates of Reaction",
   "question": "What does a catalyst do in a chemical reaction?",
   "options": [
-    "Raises the energy of the reactant particles",
+    "Raises reactant energy",
     "Speeds reaction without being consumed",
     "Increases the final amount of product from fixed reactants",
     "Raises the temperature of the reaction mixture"
@@ -572,7 +572,7 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Rates of Reaction",
   "question": "Why does increasing the surface area of a solid reactant increase the rate of reaction?",
   "options": [
-    "It raises the temperature of the reactant particles",
+    "It raises particle temperature",
     "More particles are exposed for collisions",
     "It increases the concentration of the other reactant",
     "It reduces the minimum energy needed for each reaction"
@@ -588,7 +588,7 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Rates of Reaction",
   "question": "According to collision theory, what two conditions must be met for a reaction to occur?",
   "options": [
-    "Particles must collide frequently even with too little energy",
+    "Frequent collisions, regardless of energy",
     "Collisions with enough energy and suitable orientation",
     "Particles must collide gently so that their bonds stay intact",
     "Particles must be heated until every collision causes a reaction"
@@ -703,7 +703,7 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Organic Chemistry",
   "question": "What happens during cracking of hydrocarbons?",
   "options": [
-    "Short chains combine to form longer hydrocarbons",
+    "Short chains join together",
     "Long chains break into shorter molecules",
     "Hydrocarbons separate by their different boiling points",
     "Hydrocarbons react with oxygen to form carbon dioxide"
@@ -748,7 +748,7 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Chemical Analysis",
   "question": "What is a pure substance in chemistry?",
   "options": [
-    "A mixture with no visible pieces of dirt in it",
+    "A clean-looking mixture",
     "One element or one compound",
     "A solution with no undissolved particles remaining",
     "A mixture with the same composition throughout"
@@ -792,7 +792,7 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Chemical Analysis",
   "question": "How do you test for hydrogen gas?",
   "options": [
-    "Bubble it through limewater and look for cloudiness",
+    "Look for cloudy limewater",
     "Use a lit splint; listen for a pop",
     "Insert a glowing splint and look for it relighting",
     "Hold damp blue litmus nearby and look for bleaching"
@@ -892,7 +892,7 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Atmosphere & Resources",
   "question": "How did oxygen levels in the early atmosphere increase?",
   "options": [
-    "Volcanoes emitted oxygen during frequent eruptions",
+    "Volcanoes emitted oxygen",
     "Photosynthesis released oxygen",
     "Evaporation separated oxygen from water molecules",
     "Respiring animals converted carbon dioxide to oxygen"
@@ -908,7 +908,7 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Atmosphere & Resources",
   "question": "What is a \"carbon footprint\"?",
   "options": [
-    "The carbon dioxide emitted while a product is being used",
+    "Carbon dioxide emitted during use",
     "Total greenhouse-gas emissions across a life cycle",
     "The mass of carbon contained in the finished product itself",
     "The area of forest cleared to obtain the raw materials"
@@ -924,7 +924,7 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Atmosphere & Resources",
   "question": "Why is water treated before it is safe to drink?",
   "options": [
-    "To remove all minerals, including those that are harmless",
+    "To remove every mineral",
     "To reduce harmful microbes and contaminants",
     "To make dissolved substances settle out by filtration alone",
     "To ensure the water contains no dissolved gases or salts"
@@ -940,7 +940,7 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Atmosphere & Resources",
   "question": "What is a life cycle assessment (LCA)?",
   "options": [
-    "A measurement of the time before a product stops working",
+    "Time until a product stops working",
     "Environmental impacts throughout a product’s life",
     "An assessment of the energy consumed while a product is used",
     "A comparison of the price of raw materials for a product"
@@ -1094,7 +1094,7 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Rates of Reaction",
   "question": "On a graph of gas volume produced against time, how can you tell when a reaction has finished?",
   "options": [
-    "The curve becomes progressively steeper",
+    "The curve steepens",
     "The curve levels off",
     "The curve slopes back towards zero volume",
     "The curve continues upwards at a steady gradient"
@@ -1110,7 +1110,7 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Rates of Reaction",
   "question": "How does a catalyst speed up a reaction?",
   "options": [
-    "It increases the average kinetic energy of reactant particles",
+    "It increases particle kinetic energy",
     "A pathway with lower activation energy",
     "It increases the number of reactant particles in each volume",
     "It increases the total energy released by the reaction"
@@ -1126,7 +1126,7 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Rates of Reaction",
   "question": "Which method directly measures the volume of gas produced at timed intervals during a reaction?",
   "options": [
-    "Record the mass lost from an open flask at timed intervals",
+    "Weigh the open flask at intervals",
     "Read a gas syringe at timed intervals",
     "Record the time needed for a cross beneath the flask to vanish",
     "Record the temperature change of the reaction at timed intervals"
@@ -1142,7 +1142,7 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Rates of Reaction",
   "question": "Why does increasing the concentration of a solution increase the rate of reaction?",
   "options": [
-    "Particles move faster because concentration raises temperature",
+    "Faster-moving particles",
     "More frequent collisions per unit volume",
     "Particles need less energy to react at higher concentration",
     "The same particles collide less often but with greater energy"
@@ -1232,7 +1232,7 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Organic Chemistry",
   "question": "What is cracking used for?",
   "options": [
-    "To produce larger fuel molecules from short-chain alkanes",
+    "To join small molecules together",
     "To make smaller, more useful hydrocarbons",
     "To separate crude-oil fractions without breaking molecules",
     "To remove sulfur compounds by dissolving crude oil in water"
@@ -1248,7 +1248,7 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Organic Chemistry",
   "question": "What happens when bromine water is added to an alkene?",
   "options": [
-    "The solution remains orange/brown after shaking",
+    "It stays orange",
     "It becomes colourless",
     "It changes from colourless to orange/brown",
     "It forms a white precipitate without losing its colour"
@@ -1302,7 +1302,7 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Chemical Analysis",
   "question": "A pure substance melts at a sharp, specific temperature. What would you expect for an impure substance?",
   "options": [
-    "A higher melting point with a narrower melting range",
+    "A higher, sharp melting point",
     "A lower, broader melting range",
     "An unchanged melting point with the same sharp transition",
     "A higher melting point with the original sharp transition"
@@ -1325,7 +1325,7 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Atmosphere & Resources",
   "question": "Which of these actions would reduce a person's carbon footprint?",
   "options": [
-    "Replacing an efficient electric motor with a petrol engine",
+    "Replacing electric motors with engines",
     "Using renewables instead of fossil fuels",
     "Replacing a short rail journey with a short-haul flight",
     "Replacing an insulated wall with one that loses heat faster"
@@ -1341,7 +1341,7 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Atmosphere & Resources",
   "question": "What are the main steps in making potable water from fresh water?",
   "options": [
-    "Distillation followed by adding dissolved mineral salts",
+    "Distillation then freezing",
     "Filtration then sterilisation",
     "Sterilisation followed by dissolving suspended particles",
     "Filtration followed by evaporating all the remaining water"
@@ -1657,19 +1657,19 @@ export const chemistryQuestions: Question[] = [
     "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zy43p9q"
   },
   {
-    "id": "chem-atmosphere-016",
-    "subject": "chemistry",
-    "topic": "atmosphere",
-    "topicLabel": "Atmosphere & Resources",
-    "question": "Why does desalinating seawater by distillation have a high energy cost?",
-    "options": [
-      "Boiling needs much energy",
-      "Salt must first be melted",
-      "Water must first be frozen",
-      "Salt must first be electrolysed"
-    ],
-    "correctIndex": 0,
-    "explanation": "Distillation needs substantial energy to vaporise water. This contributes to the cost of making potable water from seawater.",
-    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zptnng8"
-  },
+  "id": "chem-atmosphere-016",
+  "subject": "chemistry",
+  "topic": "atmosphere",
+  "topicLabel": "Atmosphere & Resources",
+  "question": "Why does desalinating seawater by distillation have a high energy cost?",
+  "options": [
+    "Boiling needs much energy",
+    "To melt the salt",
+    "Water must first be frozen",
+    "Salt must first be electrolysed"
+  ],
+  "correctIndex": 0,
+  "explanation": "Distillation needs substantial energy to vaporise water. This contributes to the cost of making potable water from seawater.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zptnng8"
+},
 ];
