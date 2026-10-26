@@ -1302,7 +1302,7 @@ export const chemistryQuestions: Question[] = [
   "topicLabel": "Chemical Analysis",
   "question": "A pure substance melts at a sharp, specific temperature. What would you expect for an impure substance?",
   "options": [
-    "A higher, sharp melting point",
+    "A melting point that is exactly the same",
     "A lower, broader melting range",
     "An unchanged melting point with the same sharp transition",
     "A higher melting point with the original sharp transition"

@@ -196,7 +196,7 @@ export const physicsQuestions: Question[] = [
     "It increases conduction",
     "It reduces heat transfer",
     "It increases convection currents across the cavity",
-    "It reduces the energy needed to raise each room’s temperature"
+    "It lowers the specific heat capacity of the air in the rooms"
   ],
   "correctIndex": 1,
   "explanation": "Cavity wall insulation traps air in small pockets, reducing convection and conduction through the walls. This slows the rate of energy transfer and keeps the house warmer.",

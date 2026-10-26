@@ -75,10 +75,10 @@ export const drivingRound2Questions: Question[] = [
     "subject": "hazardAwareness",
     "topic": "alertness",
     "topicLabel": "Alertness",
-    "question": "You are creeping past a queue of parked delivery vans. Where should you look?",
+    "question": "You are creeping past a queue of parked delivery vans. Which concealed hazard should you anticipate?",
     "options": [
-      "For people or cycles emerging through gaps",
-      "At the vehicle ahead",
+      "People or cycles emerging through gaps",
+      "The vehicle ahead pulling away suddenly",
       "At the centre line",
       "Focus on the mirrors to judge the following driver"
     ],
@@ -194,11 +194,11 @@ export const drivingRound2Questions: Question[] = [
     "subject": "hazardAwareness",
     "topic": "safety-margins",
     "topicLabel": "Safety Margins",
-    "question": "You follow a van that blocks your view ahead. What helps you plan safely?",
+    "question": "You follow a van that blocks your view ahead. Which change of position improves your view?",
     "options": [
       "Increase your following gap",
       "Move closer",
-      "Watch its brake lights",
+      "Stay directly behind it",
       "Match the van's gap to the vehicle in front of it"
     ],
     "correctIndex": 0,
@@ -350,9 +350,9 @@ export const drivingRound2Questions: Question[] = [
     "question": "A pedestrian has a white cane with a red band. What should you recognise?",
     "options": [
       "Combined sight and hearing loss",
-      "Sight loss",
+      "Sight loss with normal hearing",
       "A walking injury",
-      "Hearing loss"
+      "Hearing loss with normal sight"
     ],
     "correctIndex": 0,
     "explanation": "Do not rely on sound or eye contact with a person who may have combined sensory impairments.",
@@ -670,7 +670,7 @@ export const drivingRound2Questions: Question[] = [
     "subject": "roadRules",
     "topic": "motorways",
     "topicLabel": "Motorways",
-    "question": "You leave a motorway after a long high-speed drive. What should you check?",
+    "question": "You leave a motorway after a long high-speed drive. What should you check so you do not underestimate your speed?",
     "options": [
       "Your speedometer",
       "Engine note",
@@ -823,10 +823,10 @@ export const drivingRound2Questions: Question[] = [
     "subject": "vehicleSafety",
     "topic": "vehicle-loading",
     "topicLabel": "Vehicle Loading",
-    "question": "You attach a roof box before a journey. What must you check?",
+    "question": "You attach a roof box before a journey. Apart from closing and locking the lid, what must you check?",
     "options": [
       "That the box and load are secure",
-      "That the lid is shut",
+      "That the box is empty while driving",
       "That the box looks level",
       "That the contents can move freely to spread the weight"
     ],
@@ -857,11 +857,11 @@ export const drivingRound2Questions: Question[] = [
     "subject": "vehicleSafety",
     "topic": "vehicle-loading",
     "topicLabel": "Vehicle Loading",
-    "question": "What should you check before towing with your car?",
+    "question": "Before towing, what sets the maximum weight your car may tow?",
     "options": [
-      "Permitted towing and load limits",
-      "Towball size",
-      "Empty trailer weight",
+      "The car's permitted towing limits",
+      "The towball's diameter alone",
+      "The trailer's tyre size",
       "The trailer's carrying capacity instead of the car's towing limit"
     ],
     "correctIndex": 0,
