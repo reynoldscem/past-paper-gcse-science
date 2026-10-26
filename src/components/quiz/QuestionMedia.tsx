@@ -19,9 +19,9 @@ export function QuestionImage({ question }: { question: Question }) {
 export function QuestionExplanation({ question }: { question: Question }) {
   return <div className="mt-5 bg-navy-800/50 rounded-lg p-4 border-l-4 border-accent text-sm text-navy-200 leading-relaxed">
     <p>{question.explanation}</p>
-    <a href={question.highwayCodeRule ? highwayCodeReferenceUrl(question.highwayCodeRule, question.learnMoreUrl) : question.learnMoreUrl} target="_blank" rel="noreferrer" className="inline-block mt-2 text-accent-light underline">
+    {question.learnMoreUrl && <a href={question.highwayCodeRule ? highwayCodeReferenceUrl(question.highwayCodeRule, question.learnMoreUrl) : question.learnMoreUrl} target="_blank" rel="noreferrer" className="inline-block mt-2 text-accent-light underline">
       {referenceLabel(question.highwayCodeRule)} ↗
-    </a>
+    </a>}
   </div>;
 }
 

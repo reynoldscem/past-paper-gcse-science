@@ -140,7 +140,7 @@ export function QuizView() {
     <div className="max-w-2xl mx-auto px-4 py-6">
       {draftError && <p role="alert">{draftError}</p>}
       <div className="flex items-center justify-between mb-2">
-        <h2 className="text-sm font-medium text-navy-400 truncate mr-4">{paper.title}</h2>
+        <h2 className="text-sm font-medium text-navy-400 mr-4">{paper.title}</h2>
         <Timer startTime={quizStartTime} durationSeconds={paper.durationSeconds} />
       </div>
 

@@ -87,7 +87,8 @@ export function generatePaper(
       title = 'Unseen Questions';
       subject = 'mixed';
     }
-    // If not enough unseen, pad with least-attempted
+    const unseenCount = Math.min(filtered.length, size);
+    // Keep the requested length with random review questions, and label the mix.
     if (filtered.length < size) {
       const used = new Set(filtered.map(q => q.id));
       const rest = allQuestions
@@ -95,6 +96,8 @@ export function generatePaper(
         .filter(q => !mode.subject || q.subject === mode.subject);
       filtered = [...filtered, ...shuffle(rest).slice(0, size - filtered.length)];
     }
+    const reviewCount = Math.min(filtered.length, size) - unseenCount;
+    if (reviewCount > 0) title += ` (${unseenCount} unseen + ${reviewCount} review)`;
   } else if ('mode' in mode && mode.mode === 'weak') {
     const weakIds = getWeakQuestionIds(attempts);
     filtered = allQuestions.filter(q => weakIds.has(q.id));

@@ -4,7 +4,7 @@ import { readFileSync } from 'node:fs';
 import { getAllQuestions, getPracticeQuestions } from '../src/data/index.ts';
 import { topics } from '../src/data/topics.ts';
 import { generatePaper } from '../src/lib/paperGenerator.ts';
-import { buildTopicStats, getUnseenQuestionIds } from '../src/lib/questionStats.ts';
+import { buildQuestionStats, buildTopicStats, getUnseenQuestionIds, getWeakQuestionIds } from '../src/lib/questionStats.ts';
 import { scorePaper } from '../src/lib/scoring.ts';
 import manifest from './fixtures/science-content.json';
 
@@ -134,5 +134,52 @@ test('corrected calculations and diagrams retain usable keys and local assets', 
     assert.match(q.image.src, /^\/science\//);
     assert.ok(q.image.alt.length > 20);
     assert.match(readFileSync(`public${q.image.src}`, 'utf8'), /<svg/);
+  }
+});
+
+
+test('submitted science skips count as wrong, seen and weak consistently with scoring', () => {
+  const questions = eligible.filter(q => q.subject === 'biology').slice(0, 20);
+  const paper = { id: 'skipped-science', title: 'Synthetic science', subject: 'biology', createdAt: 0, questions };
+  const answers = questions.map((q, index) => index === 0 ? q.correctIndex : null);
+  const attempt = scorePaper(paper, answers, 60);
+  assert.equal(attempt.score, 1);
+  assert.equal(attempt.percentage, 5);
+  const questionStats = buildQuestionStats([attempt]);
+  for (const q of questions.slice(1)) {
+    assert.equal(questionStats.get(q.id).timesAttempted, 1);
+    assert.equal(questionStats.get(q.id).timesWrong, 1);
+    assert.equal(questionStats.get(q.id).accuracy, 0);
+  }
+  assert.deepEqual(getWeakQuestionIds([attempt]), new Set(questions.slice(1).map(q => q.id)));
+  assert.equal(getUnseenQuestionIds(questions, [attempt]).size, 0);
+  const stats = buildTopicStats(questions, [attempt]).find(s => s.subject === 'biology');
+  assert.equal(stats.totalAttempts, 20);
+  assert.equal(stats.uniqueAttempted, 20);
+  assert.equal(stats.accuracy, attempt.percentage);
+  assert.equal(stats.topics.reduce((total, t) => total + t.totalWrong, 0), 19);
+  const weakTopics = stats.topics.filter(t => t.accuracy < 86);
+  const practice = generatePaper(questions, { mode: 'weak-topics' }, 20, [attempt]);
+  assert.ok(practice.questions.length > 0);
+  assert.ok(practice.questions.every(q => weakTopics.some(t => t.topic === q.topic)));
+});
+
+
+test('padded unseen papers label the actual unseen and review mix in their visible title', () => {
+  const questions = eligible.filter(q => q.subject === 'biology').slice(0, 20);
+  const seen = questions.slice(1);
+  const attempt = scorePaper({ id: 'seen-science', title: 'Synthetic science', subject: 'biology', createdAt: 0, questions: seen }, seen.map(() => null), 60);
+  for (const mode of [{ mode: 'unseen' }, { mode: 'unseen', subject: 'biology' }]) {
+    const paper = generatePaper(questions, mode, 20, [attempt]);
+    assert.equal(paper.questions.length, 20);
+    assert.ok(paper.questions.some(q => q.id === questions[0].id));
+    assert.match(paper.title, /1 unseen \+ 19 review/);
+    const short = generatePaper(questions.slice(0, 5), mode, 20, [attempt]);
+    assert.equal(short.questions.length, 5);
+    assert.match(short.title, /1 unseen \+ 4 review/);
+    const allNew = generatePaper(questions, mode, 20);
+    assert.doesNotMatch(allNew.title, /review/);
+    const allSeen = generatePaper(seen, mode, 20, [attempt]);
+    assert.match(allSeen.title, /0 unseen \+ 19 review/);
   }
 });

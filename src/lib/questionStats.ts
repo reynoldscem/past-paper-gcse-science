@@ -58,14 +58,11 @@ export function buildQuestionStats(attempts: PaperAttempt[]): Map<string, Questi
         stats.set(q.id, stat);
       }
 
-      if (answer != null || attempt.passMark !== undefined) {
-        stat.timesAttempted++;
-        if (isCorrect) stat.timesCorrect++;
-        else stat.timesWrong++;
-        stat.accuracy = stat.timesAttempted > 0
-          ? Math.round((stat.timesCorrect / stat.timesAttempted) * 100)
-          : 0;
-      }
+      // A submitted skip is a wrong answer, just as it is in the paper score.
+      stat.timesAttempted++;
+      if (isCorrect) stat.timesCorrect++;
+      else stat.timesWrong++;
+      stat.accuracy = Math.round((stat.timesCorrect / stat.timesAttempted) * 100);
     }
   }
 

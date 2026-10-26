@@ -21,6 +21,7 @@ let historyInitialised = false;
 
 function App() {
   const view = useAppStore(s => s.view);
+  const pendingMockPaper = useAppStore(s => s.pendingMockPaper);
   const userName = useAppStore(s => s.userName);
   const sessionToken = useAppStore(s => s.sessionToken);
   const hydrate = useProgressStore(s => s.hydrate);
@@ -79,6 +80,16 @@ function App() {
       <StarsBg />
       <div className="relative z-10">
         <TopBar />
+        {pendingMockPaper && <div className="fixed inset-0 z-50 bg-black/70 flex items-center justify-center p-4">
+          <div role="dialog" aria-modal="true" aria-labelledby="parked-mock-title" className="bg-navy-900 rounded-xl p-6 max-w-md space-y-4">
+            <h2 id="parked-mock-title" className="text-xl font-bold">You have a saved mock</h2>
+            <p>Resume it with its original deadline, or discard it to start a new mock.</p>
+            <button className="btn-primary w-full" autoFocus onClick={() => useAppStore.getState().resumeMock()}>Resume saved mock</button>
+            <button className="btn-secondary w-full" onClick={() => useAppStore.getState().replaceMock()}>Discard saved mock and start new</button>
+            <button className="w-full" onClick={() => useAppStore.setState({ pendingMockPaper: null })}>Cancel</button>
+          </div>
+        </div>}
+
         {saveError && <p role="alert">{saveError}</p>}
         {pendingAttempts.length > 0 && <div role="alert" className="p-4 text-center">
           <p>Completed attempt not saved yet. Retry to save it to your account.</p>
