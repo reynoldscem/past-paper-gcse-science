@@ -512,7 +512,8 @@ export const physicsQuestions: Question[] = [
   ],
   "correctIndex": 1,
   "explanation": "The number of undecayed nuclei halves from 800 to 400 in 6 hours. Each later halving also takes 6 hours.",
-  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zshssrd"
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zshssrd",
+  "image": {"src": "/science/decay-graph.svg", "alt": "Undecayed nuclei against time: 800 at 0 hours, 400 at 6 hours, 200 at 12 hours and 100 at 18 hours."}
 },
   {
   "id": "phys-atomic-structure-phys-005",
@@ -1109,4 +1110,390 @@ export const physicsQuestions: Question[] = [
   { id: 'phys-forces-016', subject: 'physics', topic: 'forces', topicLabel: 'Forces', question: 'Which factors increase braking distance?', options: ['Worn tyres, wet road, higher speed', 'New tyres, dry road, lower speed', 'Lighter car, lower speed', 'Better brakes, dry road'], correctIndex: 0, explanation: 'Braking distance increases with: higher speed, wet/icy roads, worn tyres, worn brakes, and heavier vehicles. These all reduce friction or increase the energy that must be dissipated.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/ztmttv4' },
   { id: 'phys-forces-017', subject: 'physics', topic: 'forces', topicLabel: 'Forces', question: 'Stopping distance = thinking distance + braking distance. Which part is affected by the driver being tired?', options: ['Braking distance', 'Thinking distance', 'Both equally', 'Neither'], correctIndex: 1, explanation: 'Thinking distance depends on the driver\'s reaction time. Being tired, distracted, or under the influence of drugs/alcohol increases reaction time and therefore thinking distance.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/ztmttv4' },
   { id: 'phys-forces-018', subject: 'physics', topic: 'forces', topicLabel: 'Forces', question: 'According to Newton\'s third law, if you push a wall with 50 N, what force does the wall exert on you?', options: ['0 N', '25 N', '50 N in the opposite direction', '100 N'], correctIndex: 2, explanation: 'Newton\'s third law: for every action there is an equal and opposite reaction. If you push the wall with 50 N, the wall pushes back on you with 50 N in the opposite direction.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/ztmttv4' },
+
+  // Foundation methods, applications and coverage additions.
+  {
+    "id": "phys-energy-phys-026",
+    "subject": "physics",
+    "topic": "energy-phys",
+    "topicLabel": "Energy",
+    "question": "In a specific heat capacity investigation, which measurements allow c to be calculated from E = mcΔT?",
+    "options": [
+      "Energy, mass and temperature rise",
+      "Power, length and initial temperature",
+      "Mass, length and heating duration",
+      "Current, volume and final temperature"
+    ],
+    "correctIndex": 0,
+    "explanation": "Measure energy supplied, block mass and temperature rise. Insulate the block and ensure good thermal contact to reduce errors.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zkjr6rd"
+  },
+  {
+    "id": "phys-electricity-014",
+    "subject": "physics",
+    "topic": "electricity",
+    "topicLabel": "Electricity",
+    "question": "When investigating resistance against wire length, why use a low current and switch off between readings?",
+    "options": [
+      "To make its length change during a reading",
+      "To limit wire heating",
+      "To increase the wire’s diameter",
+      "To remove its electrical resistance"
+    ],
+    "correctIndex": 1,
+    "explanation": "Heating changes resistance and would confound the effect of length. Measure V and I and calculate R = V/I.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zms2g2p"
+  },
+  {
+    "id": "phys-electricity-015",
+    "subject": "physics",
+    "topic": "electricity",
+    "topicLabel": "Electricity",
+    "question": "To measure an I–V characteristic, how should the voltmeter be connected?",
+    "options": [
+      "In series with the power supply",
+      "Across the ammeter instead of the component",
+      "In parallel with the component",
+      "In series with the component"
+    ],
+    "correctIndex": 2,
+    "explanation": "The voltmeter measures potential difference across the component; the ammeter is in series to measure its current.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zms2g2p"
+  },
+  {
+    "id": "phys-particle-model-014",
+    "subject": "physics",
+    "topic": "particle-model",
+    "topicLabel": "Particle Model",
+    "question": "An irregular stone sinks in water. How can its volume be measured?",
+    "options": [
+      "Measure its mass on a balance",
+      "Measure its longest dimension",
+      "Measure its surface temperature",
+      "Measure the displaced water volume"
+    ],
+    "correctIndex": 3,
+    "explanation": "Fully submerge the stone and measure the increase in water volume, avoiding trapped air. Use mass ÷ volume for density.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z3ybb82"
+  },
+  {
+    "id": "phys-forces-019",
+    "subject": "physics",
+    "topic": "forces",
+    "topicLabel": "Forces",
+    "question": "A spring is 12.0 cm long before loading and 15.5 cm after loading. What extension should be plotted?",
+    "options": [
+      "3.5 cm",
+      "12.0 cm",
+      "15.5 cm",
+      "27.5 cm"
+    ],
+    "correctIndex": 0,
+    "explanation": "Extension is the increase in length: 15.5 − 12.0 = 3.5 cm. Record the applied force for each extension.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/ztmttv4"
+  },
+  {
+    "id": "phys-forces-020",
+    "subject": "physics",
+    "topic": "forces",
+    "topicLabel": "Forces",
+    "question": "To investigate how force affects a trolley’s acceleration, what should be kept constant?",
+    "options": [
+      "The time taken to reach each speed",
+      "Total moving mass",
+      "The resultant force on the system",
+      "The acceleration being measured"
+    ],
+    "correctIndex": 1,
+    "explanation": "Keep the total moving mass constant while changing the resultant force. Otherwise both mass and force affect acceleration.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/ztmttv4"
+  },
+  {
+    "id": "phys-waves-014",
+    "subject": "physics",
+    "topic": "waves",
+    "topicLabel": "Waves",
+    "question": "Five complete wavelengths on a ripple-tank image span 20 cm. What wavelength should be recorded?",
+    "options": [
+      "20 cm",
+      "100 cm",
+      "4 cm",
+      "5 cm"
+    ],
+    "correctIndex": 2,
+    "explanation": "Measure across several wavelengths and divide by their number: 20 ÷ 5 = 4 cm. This reduces the relative measurement uncertainty.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zsrndnb"
+  },
+  {
+    "id": "phys-waves-015",
+    "subject": "physics",
+    "topic": "waves",
+    "topicLabel": "Waves",
+    "question": "To compare infrared emission from different surfaces of a Leslie cube, which detector condition should be kept the same?",
+    "options": [
+      "The surface finish of each face",
+      "The radiation reading for each face",
+      "The colour of each measured face",
+      "Distance from each face"
+    ],
+    "correctIndex": 3,
+    "explanation": "Keep detector distance and angle the same and compare faces at the same temperature. The surface finish is the variable under test.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zsrndnb"
+  },
+  {
+    "id": "phys-forces-021",
+    "subject": "physics",
+    "topic": "forces",
+    "topicLabel": "Forces",
+    "question": "A constant 30 N force moves a box 4 m in the force’s direction. Use W = Fs. How much work does this force do?",
+    "options": [
+      "120 J",
+      "7.5 J",
+      "34 J",
+      "1,200 J"
+    ],
+    "correctIndex": 0,
+    "explanation": "W = F × s = 30 × 4 = 120 J.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/ztmttv4"
+  },
+  {
+    "id": "phys-forces-022",
+    "subject": "physics",
+    "topic": "forces",
+    "topicLabel": "Forces",
+    "question": "A spring obeys F = ke and has k = 200 N/m. What extension is produced by 10 N?",
+    "options": [
+      "2,000 m",
+      "0.05 m",
+      "0.5 m",
+      "20 m"
+    ],
+    "correctIndex": 1,
+    "explanation": "Rearrange to e = F/k = 10/200 = 0.05 m, within the limit of proportionality.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/ztmttv4"
+  },
+  {
+    "id": "phys-forces-023",
+    "subject": "physics",
+    "topic": "forces",
+    "topicLabel": "Forces",
+    "question": "A cyclist travels at a constant 6 m/s for 15 s. Use s = vt. What distance is travelled?",
+    "options": [
+      "21 m",
+      "900 m",
+      "90 m",
+      "2.5 m"
+    ],
+    "correctIndex": 2,
+    "explanation": "Distance = speed × time = 6 × 15 = 90 m.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/ztmttv4"
+  },
+  {
+    "id": "phys-forces-024",
+    "subject": "physics",
+    "topic": "forces",
+    "topicLabel": "Forces",
+    "question": "A trolley speeds up from 2 m/s to 8 m/s in 3 s. Use a = Δv/t. What is its mean acceleration?",
+    "options": [
+      "3.3 m/s²",
+      "6 m/s²",
+      "18 m/s²",
+      "2 m/s²"
+    ],
+    "correctIndex": 3,
+    "explanation": "The change in speed is 8 − 2 = 6 m/s. Acceleration = 6/3 = 2 m/s².",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/ztmttv4"
+  },
+  {
+    "id": "phys-energy-phys-027",
+    "subject": "physics",
+    "topic": "energy-phys",
+    "topicLabel": "Energy",
+    "question": "A motor does 600 J of work in 15 s. Use P = W/t. What is its mean power?",
+    "options": [
+      "40 W",
+      "9,000 W",
+      "615 W",
+      "0.025 W"
+    ],
+    "correctIndex": 0,
+    "explanation": "P = W/t = 600/15 = 40 W. One watt is one joule transferred per second.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zkjr6rd"
+  },
+  {
+    "id": "phys-energy-phys-028",
+    "subject": "physics",
+    "topic": "energy-phys",
+    "topicLabel": "Energy",
+    "question": "A device has total input power 80 W and useful output power 20 W. What is its efficiency?",
+    "options": [
+      "400%",
+      "25%",
+      "4%",
+      "60%"
+    ],
+    "correctIndex": 1,
+    "explanation": "Efficiency = useful output power ÷ total input power = 20/80 = 0.25 = 25%.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zkjr6rd"
+  },
+  {
+    "id": "phys-electricity-016",
+    "subject": "physics",
+    "topic": "electricity",
+    "topicLabel": "Electricity",
+    "question": "A current of 0.5 A flows for 40 s. Use Q = It. How much charge flows?",
+    "options": [
+      "40.5 C",
+      "80 C",
+      "20 C",
+      "0.0125 C"
+    ],
+    "correctIndex": 2,
+    "explanation": "Charge = current × time = 0.5 × 40 = 20 C.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zms2g2p"
+  },
+  {
+    "id": "phys-electricity-017",
+    "subject": "physics",
+    "topic": "electricity",
+    "topicLabel": "Electricity",
+    "question": "A charge of 30 C transfers 180 J through a component. Use E = QV. What is the potential difference?",
+    "options": [
+      "0.167 V",
+      "150 V",
+      "5,400 V",
+      "6 V"
+    ],
+    "correctIndex": 3,
+    "explanation": "V = E/Q = 180/30 = 6 V.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zms2g2p"
+  },
+  {
+    "id": "phys-electricity-018",
+    "subject": "physics",
+    "topic": "electricity",
+    "topicLabel": "Electricity",
+    "question": "A 5 Ω resistor carries a current of 2 A. Use P = I²R. What power is transferred?",
+    "options": [
+      "20 W",
+      "10 W",
+      "25 W",
+      "50 W"
+    ],
+    "correctIndex": 0,
+    "explanation": "P = 2² × 5 = 4 × 5 = 20 W.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zms2g2p"
+  },
+  {
+    "id": "phys-forces-025",
+    "subject": "physics",
+    "topic": "forces",
+    "topicLabel": "Forces",
+    "question": "A vehicle accelerates uniformly from rest at 2 m/s² over 9 m. Use v² − u² = 2as. What is its final speed?",
+    "options": [
+      "36 m/s",
+      "6 m/s",
+      "3 m/s",
+      "18 m/s"
+    ],
+    "correctIndex": 1,
+    "explanation": "v² = 0² + 2 × 2 × 9 = 36. Taking the square root gives v = 6 m/s.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/ztmttv4"
+  },
+  {
+    "id": "phys-energy-phys-029",
+    "subject": "physics",
+    "topic": "energy-phys",
+    "topicLabel": "Energy",
+    "question": "A spring with k = 100 N/m is stretched elastically by 0.20 m. Use Ee = ½ke². What energy is stored?",
+    "options": [
+      "20 J",
+      "200 J",
+      "2 J",
+      "10 J"
+    ],
+    "correctIndex": 2,
+    "explanation": "Ee = 0.5 × 100 × 0.20² = 2 J. The extension must be squared.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zkjr6rd"
+  },
+  {
+    "id": "phys-waves-016",
+    "subject": "physics",
+    "topic": "waves",
+    "topicLabel": "Waves",
+    "question": "A wave has frequency 5 Hz. Use T = 1/f. What is its period?",
+    "options": [
+      "5 s",
+      "10 s",
+      "20 s",
+      "0.2 s"
+    ],
+    "correctIndex": 3,
+    "explanation": "T = 1/5 = 0.2 s: this is the time for one complete cycle.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zsrndnb"
+  },
+  {
+    "id": "phys-particle-model-015",
+    "subject": "physics",
+    "topic": "particle-model",
+    "topicLabel": "Particle Model",
+    "question": "A 0.50 kg solid melts at its melting point. Its specific latent heat is 60,000 J/kg. Use E = mL. How much energy is absorbed?",
+    "options": [
+      "30,000 J",
+      "60,000 J",
+      "120,000 J",
+      "300,000 J"
+    ],
+    "correctIndex": 0,
+    "explanation": "E = 0.50 × 60,000 = 30,000 J, without a temperature rise during melting.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z3ybb82"
+  },
+  {
+    "id": "phys-electromagnetism-013",
+    "subject": "physics",
+    "topic": "electromagnetism",
+    "topicLabel": "Electromagnetism",
+    "question": "A piece of soft iron becomes magnetic near a permanent magnet. What is this called?",
+    "options": [
+      "Electromagnetic induction",
+      "Induced magnetism",
+      "Permanent magnetism",
+      "Electrostatic charging"
+    ],
+    "correctIndex": 1,
+    "explanation": "A magnetic material can become an induced magnet in a magnetic field. Soft iron loses most of this magnetism when the field is removed.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwkww6f"
+  },
+  {
+    "id": "phys-electromagnetism-014",
+    "subject": "physics",
+    "topic": "electromagnetism",
+    "topicLabel": "Electromagnetism",
+    "question": "What can a small plotting compass show near a straight current-carrying wire?",
+    "options": [
+      "The current’s magnitude",
+      "The wire’s temperature",
+      "The magnetic field direction",
+      "The wire’s resistance"
+    ],
+    "correctIndex": 2,
+    "explanation": "The compass needle aligns with the magnetic field. Around a straight current-carrying wire, field lines form concentric circles.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwkww6f"
+  },
+  {
+    "id": "phys-electromagnetism-015",
+    "subject": "physics",
+    "topic": "electromagnetism",
+    "topicLabel": "Electromagnetism",
+    "question": "With distance from a straight wire unchanged, what increases the strength of its magnetic field?",
+    "options": [
+      "Decreasing the current in the wire",
+      "Reversing the same-sized current",
+      "Disconnecting the wire from the supply",
+      "Increasing the current"
+    ],
+    "correctIndex": 3,
+    "explanation": "A larger current gives a stronger magnetic field at the same distance. Reversing current reverses the field direction.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwkww6f"
+  },
 ];

@@ -1047,4 +1047,710 @@ export const biologyQuestions: Question[] = [
   "explanation": "Trees store carbon in organic compounds. Burning wood converts that carbon into CO₂. Removing trees also reduces CO₂ uptake by photosynthesis.",
   "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zxxhh39"
 },
+
+  // Foundation methods, applications and coverage additions.
+  {
+    "id": "bio-cell-biology-012",
+    "subject": "biology",
+    "topic": "cell-biology",
+    "topicLabel": "Cell Biology",
+    "question": "When first viewing a prepared slide with a light microscope, which objective should you select?",
+    "options": [
+      "Lowest power",
+      "Highest power",
+      "Medium power",
+      "Oil immersion"
+    ],
+    "correctIndex": 0,
+    "explanation": "Begin at low power to find and centre the specimen, then increase magnification and refocus carefully.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z2mttv4"
+  },
+  {
+    "id": "bio-cell-biology-013",
+    "subject": "biology",
+    "topic": "cell-biology",
+    "topicLabel": "Cell Biology",
+    "question": "Potato cylinders are weighed before and after soaking in sugar solutions. What should be done immediately before each weighing?",
+    "options": [
+      "Squeeze out the water inside",
+      "Blot the surface dry",
+      "Rinse them in concentrated sugar",
+      "Leave them overnight to dry out"
+    ],
+    "correctIndex": 1,
+    "explanation": "Blotting removes surface solution without deliberately removing water from the tissue. This makes the mass comparison fairer.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z2mttv4"
+  },
+  {
+    "id": "bio-organisation-012",
+    "subject": "biology",
+    "topic": "organisation",
+    "topicLabel": "Organisation",
+    "question": "A food sample is tested for reducing sugar using Benedict’s reagent. Which step is needed after mixing?",
+    "options": [
+      "Filter off the blue reagent first",
+      "Cool the mixture in an ice bath",
+      "Heat in a water bath",
+      "Add iodine at room temperature"
+    ],
+    "correctIndex": 2,
+    "explanation": "Benedict’s test requires heating, safely in a hot water bath. A positive result forms a green, yellow, orange or brick-red precipitate.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwj22nb"
+  },
+  {
+    "id": "bio-organisation-013",
+    "subject": "biology",
+    "topic": "organisation",
+    "topicLabel": "Organisation",
+    "question": "In an amylase investigation, drops are tested with iodine every 30 seconds. Which observation marks the endpoint?",
+    "options": [
+      "Iodine first turns blue-black",
+      "The starch mixture becomes warm",
+      "The mixture first turns cloudy",
+      "Iodine stays orange-brown"
+    ],
+    "correctIndex": 3,
+    "explanation": "Iodine stays orange-brown when starch is no longer detected. Use the same sampling interval at each pH and control temperature.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwj22nb"
+  },
+  {
+    "id": "bio-bioenergetics-011",
+    "subject": "biology",
+    "topic": "bioenergetics",
+    "topicLabel": "Bioenergetics",
+    "question": "A lamp is moved to investigate light intensity and pondweed photosynthesis. Which variable should be kept constant?",
+    "options": [
+      "Water temperature",
+      "The distance from lamp to plant",
+      "The measured oxygen volume",
+      "The rate of gas production"
+    ],
+    "correctIndex": 0,
+    "explanation": "Temperature also affects photosynthesis, so control it while changing lamp distance. Measure oxygen volume over the same time each trial.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zgr997h"
+  },
+  {
+    "id": "bio-homeostasis-012",
+    "subject": "biology",
+    "topic": "homeostasis",
+    "topicLabel": "Homeostasis",
+    "question": "In a ruler-drop reaction-time investigation, why repeat the test several times for each condition?",
+    "options": [
+      "To remove the need for controls",
+      "To calculate a mean",
+      "To make the ruler fall faster",
+      "To change the ruler’s scale"
+    ],
+    "correctIndex": 1,
+    "explanation": "Repeated measurements allow a mean to be calculated and help reveal variability. Keep the hand position and release method consistent.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zyybb82"
+  },
+  {
+    "id": "bio-ecology-012",
+    "subject": "biology",
+    "topic": "ecology",
+    "topicLabel": "Ecology",
+    "question": "How should quadrat locations be chosen to estimate daisies across a field without choosing the densest patches?",
+    "options": [
+      "Place every quadrat beside the gate",
+      "Avoid all patches with bare soil",
+      "Use random coordinates",
+      "Choose the patches with most flowers"
+    ],
+    "correctIndex": 2,
+    "explanation": "Random coordinates reduce selection bias. Sample enough locations to estimate a representative mean density.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zxxhh39"
+  },
+  {
+    "id": "bio-cell-biology-014",
+    "subject": "biology",
+    "topic": "cell-biology",
+    "topicLabel": "Cell Biology",
+    "question": "Which structure is present in a bacterial cell but is not enclosed in a nucleus?",
+    "options": [
+      "Chloroplast",
+      "Nucleus",
+      "Mitochondrion",
+      "Circular DNA"
+    ],
+    "correctIndex": 3,
+    "explanation": "Bacteria are prokaryotes. Their main DNA molecule is circular and lies in the cytoplasm; they do not have a nucleus.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z2mttv4"
+  },
+  {
+    "id": "bio-cell-biology-015",
+    "subject": "biology",
+    "topic": "cell-biology",
+    "topicLabel": "Cell Biology",
+    "question": "Which cell structures assemble proteins?",
+    "options": [
+      "Ribosomes",
+      "Mitochondria",
+      "Chloroplasts",
+      "Vacuoles"
+    ],
+    "correctIndex": 0,
+    "explanation": "Ribosomes are the sites of protein synthesis. Both prokaryotic and eukaryotic cells have them.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z2mttv4"
+  },
+  {
+    "id": "bio-cell-biology-016",
+    "subject": "biology",
+    "topic": "cell-biology",
+    "topicLabel": "Cell Biology",
+    "question": "Two identical membranes separate solutions at the same temperature. Which change increases the net rate of diffusion?",
+    "options": [
+      "A smaller surface area",
+      "A steeper concentration gradient",
+      "A smaller gradient",
+      "A thicker membrane"
+    ],
+    "correctIndex": 1,
+    "explanation": "A greater concentration difference increases net diffusion rate when other factors are unchanged.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z2mttv4"
+  },
+  {
+    "id": "bio-cell-biology-017",
+    "subject": "biology",
+    "topic": "cell-biology",
+    "topicLabel": "Cell Biology",
+    "question": "Why do alveoli have very thin walls?",
+    "options": [
+      "To contract during exhalation",
+      "To produce more mucus",
+      "To shorten the diffusion path",
+      "To trap inhaled dust"
+    ],
+    "correctIndex": 2,
+    "explanation": "A short diffusion path helps gases move rapidly between alveolar air and the blood.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z2mttv4"
+  },
+  {
+    "id": "bio-cell-biology-018",
+    "subject": "biology",
+    "topic": "cell-biology",
+    "topicLabel": "Cell Biology",
+    "question": "What must happen to a cell’s DNA before mitosis?",
+    "options": [
+      "It is halved",
+      "It leaves the nucleus",
+      "It becomes protein",
+      "It is copied"
+    ],
+    "correctIndex": 3,
+    "explanation": "DNA is replicated before mitosis so each daughter cell can receive a complete set of chromosomes.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z2mttv4"
+  },
+  {
+    "id": "bio-cell-biology-019",
+    "subject": "biology",
+    "topic": "cell-biology",
+    "topicLabel": "Cell Biology",
+    "question": "Which is a possible risk when undifferentiated stem cells are transplanted?",
+    "options": [
+      "Tumour formation",
+      "Improved tissue repair",
+      "Cell replacement",
+      "Restored movement"
+    ],
+    "correctIndex": 0,
+    "explanation": "If transplanted cells divide without proper control they may form tumours. Stem-cell treatments require testing for safety.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z2mttv4"
+  },
+  {
+    "id": "bio-organisation-014",
+    "subject": "biology",
+    "topic": "organisation",
+    "topicLabel": "Organisation",
+    "question": "Which plant tissue carries water and mineral ions from roots to leaves?",
+    "options": [
+      "Palisade mesophyll",
+      "Xylem",
+      "Phloem",
+      "Epidermis"
+    ],
+    "correctIndex": 1,
+    "explanation": "Xylem carries water and mineral ions and helps support the plant. Phloem transports dissolved sugars.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwj22nb"
+  },
+  {
+    "id": "bio-organisation-015",
+    "subject": "biology",
+    "topic": "organisation",
+    "topicLabel": "Organisation",
+    "question": "What is translocation in a plant?",
+    "options": [
+      "Absorption of water by root hairs",
+      "Movement of gases through stomata",
+      "Transport of dissolved sugars",
+      "Evaporation of water from leaves"
+    ],
+    "correctIndex": 2,
+    "explanation": "Translocation is the movement of dissolved sugars through phloem to tissues that use or store them.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwj22nb"
+  },
+  {
+    "id": "bio-organisation-016",
+    "subject": "biology",
+    "topic": "organisation",
+    "topicLabel": "Organisation",
+    "question": "Which change usually increases transpiration if other conditions stay the same?",
+    "options": [
+      "Higher humidity",
+      "Lower temperature",
+      "Less light",
+      "Greater air movement"
+    ],
+    "correctIndex": 3,
+    "explanation": "Moving air removes water vapour near the leaf, maintaining a steeper gradient for water loss.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwj22nb"
+  },
+  {
+    "id": "bio-organisation-017",
+    "subject": "biology",
+    "topic": "organisation",
+    "topicLabel": "Organisation",
+    "question": "How does a coronary stent help blood reach heart muscle?",
+    "options": [
+      "It holds an artery open",
+      "It lowers cholesterol",
+      "It controls heart rate",
+      "It repairs a valve"
+    ],
+    "correctIndex": 0,
+    "explanation": "A stent supports a narrowed coronary artery so blood can flow more freely to heart muscle.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwj22nb"
+  },
+  {
+    "id": "bio-organisation-018",
+    "subject": "biology",
+    "topic": "organisation",
+    "topicLabel": "Organisation",
+    "question": "Which statement describes a malignant tumour?",
+    "options": [
+      "It cannot grow",
+      "It can spread to other tissues",
+      "It stays enclosed",
+      "It is caused by bacteria"
+    ],
+    "correctIndex": 1,
+    "explanation": "Malignant tumours invade nearby tissues and can spread through the blood to form secondary tumours.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwj22nb"
+  },
+  {
+    "id": "bio-organisation-019",
+    "subject": "biology",
+    "topic": "organisation",
+    "topicLabel": "Organisation",
+    "question": "What does a positive iodine test for starch look like?",
+    "options": [
+      "Lilac-purple",
+      "Cloudy white",
+      "Blue-black",
+      "Brick-red"
+    ],
+    "correctIndex": 2,
+    "explanation": "Iodine turns blue-black in the presence of starch. Different food tests use different reagents and endpoints.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwj22nb"
+  },
+  {
+    "id": "bio-infection-012",
+    "subject": "biology",
+    "topic": "infection",
+    "topicLabel": "Infection & Response",
+    "question": "Which pair describes common symptoms of measles?",
+    "options": [
+      "Bleeding gums and tooth decay",
+      "Painful urination and thick discharge",
+      "Yellow leaves and reduced plant growth",
+      "Fever and a red rash"
+    ],
+    "correctIndex": 3,
+    "explanation": "Measles is a viral infection spread by inhaled droplets. Vaccination reduces transmission and the risk of serious complications.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z9kww6f"
+  },
+  {
+    "id": "bio-infection-013",
+    "subject": "biology",
+    "topic": "infection",
+    "topicLabel": "Infection & Response",
+    "question": "What does HIV damage if infection is not successfully controlled?",
+    "options": [
+      "Immune cells",
+      "Red blood cells",
+      "Enamel-forming cells",
+      "Stomach lining cells"
+    ],
+    "correctIndex": 0,
+    "explanation": "HIV attacks immune cells. Antiretroviral drugs can control the infection; advanced immune damage can lead to AIDS.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z9kww6f"
+  },
+  {
+    "id": "bio-infection-014",
+    "subject": "biology",
+    "topic": "infection",
+    "topicLabel": "Infection & Response",
+    "question": "How does tobacco mosaic virus commonly reduce a plant’s growth?",
+    "options": [
+      "It blocks pollination",
+      "It reduces photosynthesis",
+      "It increases transpiration",
+      "It increases mineral uptake"
+    ],
+    "correctIndex": 1,
+    "explanation": "TMV causes mosaic leaf discolouration. Reduced photosynthesis means less glucose is available for growth.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z9kww6f"
+  },
+  {
+    "id": "bio-infection-015",
+    "subject": "biology",
+    "topic": "infection",
+    "topicLabel": "Infection & Response",
+    "question": "Which practice kills Salmonella bacteria in contaminated food before it is eaten?",
+    "options": [
+      "Rinsing with cold water",
+      "Adding a small amount of salt",
+      "Thorough cooking",
+      "Refrigerating after cooking"
+    ],
+    "correctIndex": 2,
+    "explanation": "Proper cooking kills Salmonella bacteria. Hygiene and avoiding cross-contamination also reduce infection risk.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z9kww6f"
+  },
+  {
+    "id": "bio-infection-016",
+    "subject": "biology",
+    "topic": "infection",
+    "topicLabel": "Infection & Response",
+    "question": "Which measure directly reduces the sexual transmission of gonorrhoea?",
+    "options": [
+      "Taking the pill",
+      "Using an implant",
+      "Using a contraceptive injection",
+      "Using a condom"
+    ],
+    "correctIndex": 3,
+    "explanation": "Barrier contraception reduces contact with infected fluids. Hormonal contraceptives do not protect against this bacterial infection.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z9kww6f"
+  },
+  {
+    "id": "bio-infection-017",
+    "subject": "biology",
+    "topic": "infection",
+    "topicLabel": "Infection & Response",
+    "question": "Why are some clinical-trial volunteers given a placebo?",
+    "options": [
+      "To provide a comparison",
+      "To increase the dose",
+      "To check tablet colour",
+      "To speed up absorption"
+    ],
+    "correctIndex": 0,
+    "explanation": "A placebo group helps distinguish effects of the active drug from other effects. Trials also assess toxicity, efficacy and suitable dose.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z9kww6f"
+  },
+  {
+    "id": "bio-bioenergetics-012",
+    "subject": "biology",
+    "topic": "bioenergetics",
+    "topicLabel": "Bioenergetics",
+    "question": "Pondweed gives 3, 6 and 6 cm³ of oxygen per minute at successively higher light intensities. What do the last two results suggest?",
+    "options": [
+      "Another factor is limiting",
+      "More light is still increasing the rate",
+      "The rate has fallen to zero",
+      "Oxygen production is decreasing"
+    ],
+    "correctIndex": 0,
+    "explanation": "The plateau suggests more light no longer increases the rate under these conditions. Carbon dioxide supply or temperature may now limit the rate.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zgr997h"
+  },
+  {
+    "id": "bio-bioenergetics-013",
+    "subject": "biology",
+    "topic": "bioenergetics",
+    "topicLabel": "Bioenergetics",
+    "question": "Why does heart rate increase during exercise?",
+    "options": [
+      "To slow muscle respiration",
+      "To lower muscle temperature",
+      "To deliver more oxygen",
+      "To lower blood glucose uptake"
+    ],
+    "correctIndex": 2,
+    "explanation": "A higher heart rate increases delivery of oxygen and glucose for respiration and helps remove carbon dioxide.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zgr997h"
+  },
+  {
+    "id": "bio-bioenergetics-014",
+    "subject": "biology",
+    "topic": "bioenergetics",
+    "topicLabel": "Bioenergetics",
+    "question": "Why can breathing remain fast after strenuous exercise has ended?",
+    "options": [
+      "To stop respiration",
+      "To lower oxygen uptake",
+      "To make more lactic acid",
+      "To help repay oxygen debt"
+    ],
+    "correctIndex": 3,
+    "explanation": "Extra oxygen is needed after exercise to deal with the accumulated lactic acid and restore resting conditions.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zgr997h"
+  },
+  {
+    "id": "bio-bioenergetics-015",
+    "subject": "biology",
+    "topic": "bioenergetics",
+    "topicLabel": "Bioenergetics",
+    "question": "Which metabolic reaction makes a storage carbohydrate in plants?",
+    "options": [
+      "Glucose joining to make starch",
+      "Starch breaking into glucose molecules",
+      "Glucose reacting with oxygen in respiration",
+      "Protein breaking into amino acids"
+    ],
+    "correctIndex": 0,
+    "explanation": "Plants convert some glucose into starch for storage. Metabolism includes both building larger molecules and breaking molecules down.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zgr997h"
+  },
+  {
+    "id": "bio-homeostasis-013",
+    "subject": "biology",
+    "topic": "homeostasis",
+    "topicLabel": "Homeostasis",
+    "question": "What is a common feature of Type 2 diabetes?",
+    "options": [
+      "Cells respond less well to insulin",
+      "Cells release more insulin",
+      "Blood glucose stays too low",
+      "Insulin digests starch"
+    ],
+    "correctIndex": 0,
+    "explanation": "In Type 2 diabetes, body cells become less responsive to insulin, making blood glucose harder to regulate.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zyybb82"
+  },
+  {
+    "id": "bio-homeostasis-014",
+    "subject": "biology",
+    "topic": "homeostasis",
+    "topicLabel": "Homeostasis",
+    "question": "Which hormone stimulates an egg to mature in an ovarian follicle?",
+    "options": [
+      "Adrenaline",
+      "Testosterone",
+      "FSH",
+      "Insulin"
+    ],
+    "correctIndex": 2,
+    "explanation": "Follicle-stimulating hormone (FSH) causes an egg to mature in the ovary and stimulates oestrogen production.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zyybb82"
+  },
+  {
+    "id": "bio-homeostasis-015",
+    "subject": "biology",
+    "topic": "homeostasis",
+    "topicLabel": "Homeostasis",
+    "question": "Which hormone triggers ovulation?",
+    "options": [
+      "Insulin",
+      "Oestrogen",
+      "Progesterone",
+      "LH"
+    ],
+    "correctIndex": 3,
+    "explanation": "Luteinising hormone (LH) triggers release of an egg from the ovary.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zyybb82"
+  },
+  {
+    "id": "bio-homeostasis-016",
+    "subject": "biology",
+    "topic": "homeostasis",
+    "topicLabel": "Homeostasis",
+    "question": "Which contraceptive method acts as a physical barrier to sperm?",
+    "options": [
+      "A condom",
+      "An implant",
+      "A hormone injection",
+      "The combined pill"
+    ],
+    "correctIndex": 0,
+    "explanation": "A condom forms a physical barrier. The other choices use hormones to affect reproduction.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zyybb82"
+  },
+  {
+    "id": "bio-inheritance-011",
+    "subject": "biology",
+    "topic": "inheritance",
+    "topicLabel": "Inheritance & Variation",
+    "question": "What is a key difference between sexual and asexual reproduction?",
+    "options": [
+      "Asexual reproduction requires meiosis",
+      "Sexual reproduction joins gametes",
+      "Asexual reproduction joins two gametes",
+      "Sexual reproduction produces clones"
+    ],
+    "correctIndex": 1,
+    "explanation": "Sexual reproduction involves fusion of gametes and combines genetic information. Asexual reproduction uses one parent without gamete fusion.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zvymrmn"
+  },
+  {
+    "id": "bio-inheritance-012",
+    "subject": "biology",
+    "topic": "inheritance",
+    "topicLabel": "Inheritance & Variation",
+    "question": "How many chromosomes does a typical human gamete have after meiosis?",
+    "options": [
+      "92",
+      "12",
+      "23",
+      "46"
+    ],
+    "correctIndex": 2,
+    "explanation": "Meiosis halves chromosome number. Human gametes have 23 chromosomes; fertilisation restores the diploid number of 46.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zvymrmn"
+  },
+  {
+    "id": "bio-inheritance-013",
+    "subject": "biology",
+    "topic": "inheritance",
+    "topicLabel": "Inheritance & Variation",
+    "question": "In the usual human sex-chromosome model, which sperm chromosome produces an XY offspring when it joins an X egg?",
+    "options": [
+      "X",
+      "XX",
+      "XY",
+      "Y"
+    ],
+    "correctIndex": 3,
+    "explanation": "An egg contributes X. A sperm contributing Y produces XY in this model.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zvymrmn"
+  },
+  {
+    "id": "bio-inheritance-014",
+    "subject": "biology",
+    "topic": "inheritance",
+    "topicLabel": "Inheritance & Variation",
+    "question": "How does selective breeding begin?",
+    "options": [
+      "Choose parents with desired traits",
+      "Insert a gene into DNA",
+      "Irradiate seeds to cause mutations",
+      "Clone a single adult"
+    ],
+    "correctIndex": 0,
+    "explanation": "Selected parents are bred, and offspring with desired characteristics are chosen for further breeding over many generations.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zvymrmn"
+  },
+  {
+    "id": "bio-inheritance-015",
+    "subject": "biology",
+    "topic": "inheritance",
+    "topicLabel": "Inheritance & Variation",
+    "question": "Which example uses genetic engineering?",
+    "options": [
+      "Crossing two varieties of apple tree",
+      "Adding a human insulin gene to bacteria",
+      "Choosing the largest seeds for planting",
+      "Breeding cows with high milk yields"
+    ],
+    "correctIndex": 1,
+    "explanation": "Genetic engineering transfers selected genetic material. Modified bacteria can produce human insulin.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zvymrmn"
+  },
+  {
+    "id": "bio-inheritance-016",
+    "subject": "biology",
+    "topic": "inheritance",
+    "topicLabel": "Inheritance & Variation",
+    "question": "What can fossils provide evidence about?",
+    "options": [
+      "Past organisms",
+      "Future populations",
+      "Mutation rates",
+      "Current gene flow"
+    ],
+    "correctIndex": 0,
+    "explanation": "Fossils provide evidence about organisms that lived in the past and changes in life over time; the fossil record is incomplete.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zvymrmn"
+  },
+  {
+    "id": "bio-inheritance-017",
+    "subject": "biology",
+    "topic": "inheritance",
+    "topicLabel": "Inheritance & Variation",
+    "question": "Which list gives the three domains in the three-domain classification system?",
+    "options": [
+      "Animals, Plants, Fungi",
+      "Protists, Plants, Animals",
+      "Bacteria, Viruses, Animals",
+      "Archaea, Bacteria, Eukaryota"
+    ],
+    "correctIndex": 3,
+    "explanation": "The three domains are Archaea, Bacteria and Eukaryota. Molecular evidence helped distinguish Archaea from Bacteria.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zvymrmn"
+  },
+  {
+    "id": "bio-ecology-013",
+    "subject": "biology",
+    "topic": "ecology",
+    "topicLabel": "Ecology",
+    "question": "Which is an abiotic factor that can affect plant distribution?",
+    "options": [
+      "Soil pH",
+      "Grazing",
+      "Competition",
+      "Fungal disease"
+    ],
+    "correctIndex": 0,
+    "explanation": "Abiotic factors are non-living features such as pH, light, temperature and moisture. Competition and disease are biotic factors.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zxxhh39"
+  },
+  {
+    "id": "bio-ecology-014",
+    "subject": "biology",
+    "topic": "ecology",
+    "topicLabel": "Ecology",
+    "question": "A student samples plants every metre along a line from shade into sunlight. What is this method called?",
+    "options": [
+      "A food web",
+      "A transect",
+      "Random quadrats",
+      "Mark-release-recapture"
+    ],
+    "correctIndex": 1,
+    "explanation": "A transect samples along an environmental gradient and can reveal how distribution changes with conditions.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zxxhh39"
+  },
+  {
+    "id": "bio-ecology-015",
+    "subject": "biology",
+    "topic": "ecology",
+    "topicLabel": "Ecology",
+    "question": "Which process returns water vapour from plant leaves to the atmosphere?",
+    "options": [
+      "Condensation",
+      "Absorption",
+      "Transpiration",
+      "Precipitation"
+    ],
+    "correctIndex": 2,
+    "explanation": "Transpiration is water loss from leaves. It contributes water vapour to the atmosphere as part of the water cycle.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zxxhh39"
+  },
+  {
+    "id": "bio-ecology-016",
+    "subject": "biology",
+    "topic": "ecology",
+    "topicLabel": "Ecology",
+    "question": "A flowering plant relies on insects for pollination, and the insects obtain nectar. What does this illustrate?",
+    "options": [
+      "Competition",
+      "Predation",
+      "Decomposition",
+      "Interdependence"
+    ],
+    "correctIndex": 3,
+    "explanation": "The organisms depend on one another: insects obtain food and the plant gains a pollination service.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zxxhh39"
+  },
 ];

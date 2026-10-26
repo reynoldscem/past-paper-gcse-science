@@ -10,7 +10,9 @@ export function QuestionImage({ question }: { question: Question }) {
       <div className="rounded-xl bg-white p-5 flex justify-center">
         <img src={question.image.src} alt={question.image.alt} onError={() => setFailedSource(question.image!.src)} className="max-h-64 max-w-full object-contain" />
       </div>}
-    <figcaption className="text-xs text-navy-400 mt-2">© Crown copyright · <a className="underline" href="/driving/manifest.json" target="_blank" rel="noreferrer">Image sources / OGL v3.0</a></figcaption>
+    {['biology', 'chemistry', 'physics'].includes(question.subject) ? (
+      <figcaption className="text-xs text-navy-400 mt-2">Original science revision diagram</figcaption>
+    ) : <figcaption className="text-xs text-navy-400 mt-2">© Crown copyright · <a className="underline" href="/driving/manifest.json" target="_blank" rel="noreferrer">Image sources / OGL v3.0</a></figcaption>}
   </figure>;
 }
 

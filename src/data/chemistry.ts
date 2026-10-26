@@ -1058,7 +1058,8 @@ export const chemistryQuestions: Question[] = [
   ],
   "correctIndex": 1,
   "explanation": "Activation energy is the energy difference between the reactants and the peak, not the absolute height of the peak above zero.",
-  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z27xxfr"
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z27xxfr",
+  "image": {"src": "/science/reaction-profile.svg", "alt": "Energy against reaction progress: arrow A points vertically upwards from the reactant energy level to the peak."}
 },
   { id: 'chem-energy-changes-009', subject: 'chemistry', topic: 'energy-changes', topicLabel: 'Energy Changes', question: 'A reaction causes the temperature of the surroundings to decrease. What type of reaction is this?', options: ['Exothermic', 'Endothermic', 'Neutralisation', 'Combustion'], correctIndex: 1, explanation: 'An endothermic reaction takes in energy from the surroundings, causing the temperature to decrease. The opposite of exothermic which releases energy and increases temperature.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z27xxfr' },
   { id: 'chem-energy-changes-010',
@@ -1104,4 +1105,326 @@ export const chemistryQuestions: Question[] = [
   { id: 'chem-atmosphere-010', subject: 'chemistry', topic: 'atmosphere', topicLabel: 'Atmosphere & Resources', question: 'Which of these is NOT a greenhouse gas?', options: ['Carbon dioxide', 'Methane', 'Nitrogen', 'Water vapour'], correctIndex: 2, explanation: 'Nitrogen makes up 78% of the atmosphere but is not a greenhouse gas. CO2, methane, and water vapour all absorb and re-emit infrared radiation, trapping heat.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zy43p9q' },
   { id: 'chem-atmosphere-011', subject: 'chemistry', topic: 'atmosphere', topicLabel: 'Atmosphere & Resources', question: 'Which of these actions would reduce a person\'s carbon footprint?', options: ['Driving a petrol car more', 'Using renewable energy instead of fossil fuels', 'Leaving lights on all day', 'Taking more flights'], correctIndex: 1, explanation: 'Using renewable energy sources (solar, wind) instead of burning fossil fuels reduces CO2 emissions and therefore reduces your carbon footprint.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zy43p9q' },
   { id: 'chem-atmosphere-012', subject: 'chemistry', topic: 'atmosphere', topicLabel: 'Atmosphere & Resources', question: 'What are the main steps in making potable water from fresh water?', options: ['Distillation then freezing', 'Filtration then sterilisation (e.g. chlorination)', 'Boiling then adding salt', 'Evaporation then condensation'], correctIndex: 1, explanation: 'Potable water from fresh water sources is made by: 1) filtration to remove solid particles, then 2) sterilisation (using chlorine, ozone, or UV light) to kill microorganisms.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zptnng8' },
+
+  // Foundation methods, applications and coverage additions.
+  {
+    "id": "chem-chemical-changes-014",
+    "subject": "chemistry",
+    "topic": "chemical-changes",
+    "topicLabel": "Chemical Changes",
+    "question": "Excess copper oxide is added to warm dilute sulfuric acid to make copper sulfate. How is the unreacted oxide removed?",
+    "options": [
+      "Filtration",
+      "Distillation",
+      "Chromatography",
+      "Crystallisation"
+    ],
+    "correctIndex": 0,
+    "explanation": "Filter off excess insoluble copper oxide, then gently concentrate the filtrate and allow it to cool so crystals form.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zt6ppbk"
+  },
+  {
+    "id": "chem-chemical-changes-015",
+    "subject": "chemistry",
+    "topic": "chemical-changes",
+    "topicLabel": "Chemical Changes",
+    "question": "During electrolysis of copper sulfate solution with inert electrodes, how can the gas at the positive electrode be identified?",
+    "options": [
+      "Damp blue litmus turns red then white",
+      "A glowing splint relights",
+      "A lighted splint gives a squeaky pop",
+      "Limewater turns milky when shaken"
+    ],
+    "correctIndex": 1,
+    "explanation": "Oxygen forms at the positive inert electrode and relights a glowing splint. Copper is deposited at the negative electrode.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zt6ppbk"
+  },
+  {
+    "id": "chem-energy-changes-013",
+    "subject": "chemistry",
+    "topic": "energy-changes",
+    "topicLabel": "Energy Changes",
+    "question": "Why use an insulated cup when measuring a reaction’s temperature change?",
+    "options": [
+      "To speed up all reactions",
+      "To improve the thermometer scale",
+      "To reduce energy transfer to the room",
+      "To increase the acid concentration"
+    ],
+    "correctIndex": 2,
+    "explanation": "Insulation reduces energy exchange with the surroundings, making the measured temperature change closer to that caused by the reaction.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z27xxfr"
+  },
+  {
+    "id": "chem-rates-013",
+    "subject": "chemistry",
+    "topic": "rates",
+    "topicLabel": "Rates of Reaction",
+    "question": "Acid concentration is varied in reactions with marble chips. What should be kept the same to compare rates fairly?",
+    "options": [
+      "The time taken to collect each gas volume",
+      "The concentration of the acid solution",
+      "The initial gradient of each results graph",
+      "Mass and size of chips"
+    ],
+    "correctIndex": 3,
+    "explanation": "Chip mass and size affect available reactant and surface area. Control these, temperature and acid volume while varying concentration.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwdqqhv"
+  },
+  {
+    "id": "chem-analysis-013",
+    "subject": "chemistry",
+    "topic": "analysis",
+    "topicLabel": "Chemical Analysis",
+    "question": "Where should the starting spots be placed in paper chromatography?",
+    "options": [
+      "Above the solvent level",
+      "Below the solvent surface",
+      "At the top edge of the paper",
+      "On the lid of the solvent container"
+    ],
+    "correctIndex": 0,
+    "explanation": "Start spots on a pencil baseline above the solvent. Submerged spots can dissolve into the solvent reservoir instead of travelling up the paper.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zgbccj6"
+  },
+  {
+    "id": "chem-atmosphere-013",
+    "subject": "chemistry",
+    "topic": "atmosphere",
+    "topicLabel": "Atmosphere & Resources",
+    "question": "In simple distillation of salt water, which part turns water vapour back into liquid?",
+    "options": [
+      "The salt left in the flask",
+      "The condenser",
+      "The boiling flask",
+      "The thermometer bulb"
+    ],
+    "correctIndex": 1,
+    "explanation": "The condenser cools water vapour so it becomes liquid water. Dissolved salts remain in the heated flask.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zptnng8"
+  },
+  {
+    "id": "chem-atomic-structure-014",
+    "subject": "chemistry",
+    "topic": "atomic-structure",
+    "topicLabel": "Atoms & Periodic Table",
+    "question": "Most alpha particles passed straight through thin gold foil. What did this suggest about atoms?",
+    "options": [
+      "Their nuclei fill the volume",
+      "Their mass is in electrons",
+      "They are mostly empty space",
+      "Their charge is spread evenly"
+    ],
+    "correctIndex": 2,
+    "explanation": "Most particles passed through without deflection, suggesting mostly empty space. Rare large deflections supported a small, dense, positive nucleus.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zcckk2p"
+  },
+  {
+    "id": "chem-atomic-structure-015",
+    "subject": "chemistry",
+    "topic": "atomic-structure",
+    "topicLabel": "Atoms & Periodic Table",
+    "question": "An element contains 75% atoms of mass 35 and 25% atoms of mass 37. What is its relative atomic mass?",
+    "options": [
+      "36.0",
+      "36.5",
+      "72.0",
+      "35.5"
+    ],
+    "correctIndex": 3,
+    "explanation": "The weighted mean is (75 × 35 + 25 × 37) ÷ 100 = 35.5.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zcckk2p"
+  },
+  {
+    "id": "chem-bonding-013",
+    "subject": "chemistry",
+    "topic": "bonding",
+    "topicLabel": "Bonding & Structure",
+    "question": "Why can molten sodium chloride conduct electricity?",
+    "options": [
+      "Its ions can move",
+      "Its atoms release electrons like a metal",
+      "Its molecules move without any charge",
+      "Its ions stay fixed in a rigid lattice"
+    ],
+    "correctIndex": 0,
+    "explanation": "Molten ionic compounds conduct because charged ions are free to move and carry current. In the solid the ions are fixed.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z33rrwx"
+  },
+  {
+    "id": "chem-bonding-014",
+    "subject": "chemistry",
+    "topic": "bonding",
+    "topicLabel": "Bonding & Structure",
+    "question": "Why is an alloy often harder than the pure metal?",
+    "options": [
+      "Their atoms become molecules",
+      "Different-sized atoms disrupt layers",
+      "Their electrons cannot move",
+      "Their layers slide freely"
+    ],
+    "correctIndex": 1,
+    "explanation": "Atoms of different sizes distort the regular layers, making it harder for the layers to slide.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z33rrwx"
+  },
+  {
+    "id": "chem-quantitative-013",
+    "subject": "chemistry",
+    "topic": "quantitative",
+    "topicLabel": "Quantitative Chemistry",
+    "question": "A flask containing acid and marble chips loses mass during reaction because gas escapes. What happens to total mass if the escaped gas is also counted?",
+    "options": [
+      "It increases",
+      "It doubles",
+      "It is conserved",
+      "It decreases"
+    ],
+    "correctIndex": 2,
+    "explanation": "Atoms are conserved. The apparent loss occurs because carbon dioxide leaves the measured system.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zb4fjfr"
+  },
+  {
+    "id": "chem-chemical-changes-016",
+    "subject": "chemistry",
+    "topic": "chemical-changes",
+    "topicLabel": "Chemical Changes",
+    "question": "Which instrument gives a numerical pH reading for a solution?",
+    "options": [
+      "A gas syringe",
+      "An ammeter",
+      "A measuring cylinder",
+      "A pH probe"
+    ],
+    "correctIndex": 3,
+    "explanation": "A calibrated pH probe measures pH numerically. Universal indicator estimates pH by comparison with a colour chart.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zt6ppbk"
+  },
+  {
+    "id": "chem-rates-014",
+    "subject": "chemistry",
+    "topic": "rates",
+    "topicLabel": "Rates of Reaction",
+    "question": "A reaction produces 48 cm³ of gas in 20 seconds. What is the mean rate over this interval?",
+    "options": [
+      "2.4 cm³/s",
+      "0.42 cm³/s",
+      "28 cm³/s",
+      "960 cm³/s"
+    ],
+    "correctIndex": 0,
+    "explanation": "Mean rate = gas volume ÷ time = 48 ÷ 20 = 2.4 cm³/s.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwdqqhv"
+  },
+  {
+    "id": "chem-rates-015",
+    "subject": "chemistry",
+    "topic": "rates",
+    "topicLabel": "Rates of Reaction",
+    "question": "What happens at dynamic equilibrium in a closed system?",
+    "options": [
+      "Reactant and product masses match",
+      "Forward and reverse rates are equal",
+      "Both reactions stop",
+      "All reactants are used up"
+    ],
+    "correctIndex": 1,
+    "explanation": "Both reactions continue at equal rates, so the amounts of reactants and products stay constant. Equal rates do not require equal amounts.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zwdqqhv"
+  },
+  {
+    "id": "chem-organic-013",
+    "subject": "chemistry",
+    "topic": "organic",
+    "topicLabel": "Organic Chemistry",
+    "question": "Compared with short-chain hydrocarbons, longer-chain hydrocarbons are usually:",
+    "options": [
+      "Lower-boiling",
+      "More volatile",
+      "More viscous",
+      "More flammable"
+    ],
+    "correctIndex": 2,
+    "explanation": "Longer hydrocarbon chains usually have higher viscosity and boiling points and are less flammable.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z9488mn"
+  },
+  {
+    "id": "chem-analysis-014",
+    "subject": "chemistry",
+    "topic": "analysis",
+    "topicLabel": "Chemical Analysis",
+    "question": "What is a formulation?",
+    "options": [
+      "A single pure element",
+      "A compound with a fixed formula",
+      "An unplanned contaminant",
+      "A mixture designed for a purpose"
+    ],
+    "correctIndex": 3,
+    "explanation": "Formulations combine components in carefully measured quantities to give useful properties, as in paints and medicines.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zgbccj6"
+  },
+  {
+    "id": "chem-analysis-015",
+    "subject": "chemistry",
+    "topic": "analysis",
+    "topicLabel": "Chemical Analysis",
+    "question": "What is the positive test for chlorine gas using damp blue litmus paper?",
+    "options": [
+      "It is bleached white",
+      "It becomes permanently blue-black",
+      "It forms a brick-red precipitate",
+      "It produces a cloudy white emulsion"
+    ],
+    "correctIndex": 0,
+    "explanation": "Chlorine turns damp blue litmus red and then bleaches it white.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zgbccj6"
+  },
+  {
+    "id": "chem-atmosphere-014",
+    "subject": "chemistry",
+    "topic": "atmosphere",
+    "topicLabel": "Atmosphere & Resources",
+    "question": "Which pollutant binds to haemoglobin and reduces the blood’s oxygen-carrying ability?",
+    "options": [
+      "Nitrogen dioxide",
+      "Carbon monoxide",
+      "Carbon dioxide",
+      "Sulfur dioxide"
+    ],
+    "correctIndex": 1,
+    "explanation": "Carbon monoxide is toxic because it binds to haemoglobin, reducing oxygen transport.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zy43p9q"
+  },
+  {
+    "id": "chem-atmosphere-015",
+    "subject": "chemistry",
+    "topic": "atmosphere",
+    "topicLabel": "Atmosphere & Resources",
+    "question": "Which pollutant from burning sulfur-containing fuels contributes to acid rain?",
+    "options": [
+      "Solid carbon particles",
+      "Water vapour",
+      "Sulfur dioxide",
+      "Carbon monoxide"
+    ],
+    "correctIndex": 2,
+    "explanation": "Sulfur dioxide dissolves and reacts in the atmosphere to form acidic solutions that fall as acid rain.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zy43p9q"
+  },
+  {
+    "id": "chem-atmosphere-016",
+    "subject": "chemistry",
+    "topic": "atmosphere",
+    "topicLabel": "Atmosphere & Resources",
+    "question": "Why does desalinating seawater by distillation have a high energy cost?",
+    "options": [
+      "Boiling needs much energy",
+      "Salt must first be melted",
+      "Water must first be frozen",
+      "Salt must first be electrolysed"
+    ],
+    "correctIndex": 0,
+    "explanation": "Distillation needs substantial energy to vaporise water. This contributes to the cost of making potable water from seawater.",
+    "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zptnng8"
+  },
 ];
