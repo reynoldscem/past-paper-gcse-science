@@ -10,7 +10,7 @@
     "build": "tsc -b && vite build",
     "lint": "eslint .",
     "preview": "vite preview",
-    "test": "node scripts/test.mjs && npm run test:hazard",
+    "test": "node scripts/test.mjs && npm run test:hazard && node --test tests/server/*.test.mjs",
     "test:hazard": "node --experimental-strip-types --test src/hazard/*.test.mjs",
     "test:browser": "playwright test"
   },

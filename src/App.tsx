@@ -25,6 +25,7 @@ function App() {
   const sessionToken = useAppStore(s => s.sessionToken);
   const hydrate = useProgressStore(s => s.hydrate);
   const loaded = useProgressStore(s => s.loaded);
+  const { loadError, saveError, pendingAttempts, retryPending, savingPending } = useProgressStore();
 
   useEffect(() => {
     if (!historyInitialised) {
@@ -54,7 +55,8 @@ function App() {
   if (!loaded) {
     return (
       <div className="min-h-screen flex items-center justify-center">
-        <div className="text-2xl shimmer-text font-bold">Loading...</div>
+        {loadError ? <div role="alert"><p>{loadError}</p><button onClick={() => void hydrate()}>Retry loading progress</button></div>
+          : <div className="text-2xl shimmer-text font-bold">Loading...</div>}
       </div>
     );
   }
@@ -77,6 +79,11 @@ function App() {
       <StarsBg />
       <div className="relative z-10">
         <TopBar />
+        {saveError && <p role="alert">{saveError}</p>}
+        {pendingAttempts.length > 0 && <div role="alert" className="p-4 text-center">
+          <p>Completed attempt not saved yet. Retry to save it to your account.</p>
+          <button disabled={savingPending} onClick={() => void retryPending()}>Retry pending saves</button>
+        </div>}
         <AnimatePresence mode="wait">
           <motion.div
             key={view}

@@ -6,7 +6,7 @@ test.beforeEach(async ({ page }) => {
     localStorage.setItem('amy-science-user', 'fictional-learner');
     sessionStorage.setItem('amy-science-token', 'fictional-test-token');
   });
-  await page.route('**/api/**', route => route.fulfill({ json: empty }));
+  await page.route('**/api/**', route => route.fulfill({ json: route.request().method() === 'POST' ? { ok: true, revision: (route.request().postDataJSON().revision ?? 0) + 1 } : empty }));
   await page.clock.install();
   await page.goto('/');
   await expect(page.getByRole('button', { name: /Start mock/ })).toBeVisible();
@@ -129,7 +129,7 @@ test('keyboard sign round repeats misses, saves accuracy and retains it after re
   let saved = structuredClone(empty);
   await page.route('**/api/progress/**', async route => {
     if (route.request().method() === 'POST') saved = route.request().postDataJSON();
-    await route.fulfill({ json: saved });
+    await route.fulfill({ json: route.request().method() === 'POST' ? { ok: true, revision: (saved.revision ?? 0) + 1 } : saved });
   });
   await page.getByRole('button', { name: /Sign drill/ }).click();
   let missedPath;
@@ -190,7 +190,7 @@ test('failed sign saves can be retried without counting an extra answer', async 
       if (fail) { await route.fulfill({ status: 500, json: {} }); return; }
       saved = route.request().postDataJSON();
     }
-    await route.fulfill({ json: saved });
+    await route.fulfill({ json: route.request().method() === 'POST' ? { ok: true, revision: (saved.revision ?? 0) + 1 } : saved });
   });
   await page.getByRole('button', { name: /Sign drill/ }).click();
   await page.locator('[aria-label="Sign meanings"] button').first().click();

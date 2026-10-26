@@ -17,6 +17,8 @@ export function QuizView() {
   const [showSubmitConfirm, setShowSubmitConfirm] = useState(false);
   const [direction, setDirection] = useState(1);
   const submitted = useRef(false);
+  const [submitError, setSubmitError] = useState('');
+  const [submitting, setSubmitting] = useState(false);
 
   const paper = activePaper;
   const totalQuestions = paper?.questions.length ?? 0;
@@ -43,20 +45,21 @@ export function QuizView() {
     }
   };
 
-  const handleSubmit = useCallback(() => {
+  const handleSubmit = useCallback(async () => {
     if (!paper || !quizStartTime || submitted.current) return;
     submitted.current = true;
-    if (useProgressStore.getState().attempts.some(a => a.paperId === paper.id)) {
-      useAppStore.setState({ view: 'results' });
-      return;
-    }
+    setSubmitting(true);
     const timeSpent = Math.floor((Date.now() - quizStartTime) / 1000);
     const attempt = scorePaper(paper, activeAnswers, Math.min(timeSpent, paper.durationSeconds ?? Infinity));
-    addAttempt(attempt);
-
-    useAppStore.setState({
-      view: 'results',
-    });
+    // Stable across retries, remounts and restored mock drafts.
+    attempt.id = `${paper.id}:${quizStartTime}`;
+    try {
+      await addAttempt(attempt);
+      if (useAppStore.getState().activePaper?.id === paper.id) useAppStore.setState({ view: 'results' });
+    } catch {
+      setSubmitting(false);
+      setSubmitError('Not saved yet. Retry saving your completed attempt. Keep this page open if browser storage is unavailable.');
+    }
   }, [paper, quizStartTime, activeAnswers, addAttempt]);
 
   useEffect(() => {
@@ -72,7 +75,7 @@ export function QuizView() {
 
   useEffect(() => {
     const handleKey = (e: KeyboardEvent) => {
-      if (!paper) return;
+      if (!paper || submitted.current) return;
       if (showSubmitConfirm) return;
       if (e.key === 'ArrowRight' && !isLast) navigate(currentQuestionIndex + 1);
       if (e.key === 'ArrowLeft' && currentQuestionIndex > 0) navigate(currentQuestionIndex - 1);
@@ -82,6 +85,12 @@ export function QuizView() {
     return () => window.removeEventListener('keydown', handleKey);
   }, [currentQuestionIndex, isLast, navigate, paper, setAnswer, showSubmitConfirm]);
 
+  if (submitError) return <div role="alert" className="max-w-md mx-auto p-8">
+    <p>{submitError}</p>
+    <button onClick={() => { submitted.current = false; setSubmitError(''); void handleSubmit(); }}>Retry submission</button>
+  </div>;
+
+  if (submitting) return <p role="status" className="p-8 text-center">Saving completed attempt…</p>;
   if (!paper || !quizStartTime) return <div />;
 
   const question = paper.questions[currentQuestionIndex];
