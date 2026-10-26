@@ -163,3 +163,23 @@ test('submitted science skips count as wrong, seen and weak consistently with sc
   assert.ok(practice.questions.length > 0);
   assert.ok(practice.questions.every(q => weakTopics.some(t => t.topic === q.topic)));
 });
+
+
+test('padded unseen papers label the actual unseen and review mix in their visible title', () => {
+  const questions = eligible.filter(q => q.subject === 'biology').slice(0, 20);
+  const seen = questions.slice(1);
+  const attempt = scorePaper({ id: 'seen-science', title: 'Synthetic science', subject: 'biology', createdAt: 0, questions: seen }, seen.map(() => null), 60);
+  for (const mode of [{ mode: 'unseen' }, { mode: 'unseen', subject: 'biology' }]) {
+    const paper = generatePaper(questions, mode, 20, [attempt]);
+    assert.equal(paper.questions.length, 20);
+    assert.ok(paper.questions.some(q => q.id === questions[0].id));
+    assert.match(paper.title, /1 unseen \+ 19 review/);
+    const short = generatePaper(questions.slice(0, 5), mode, 20, [attempt]);
+    assert.equal(short.questions.length, 5);
+    assert.match(short.title, /1 unseen \+ 4 review/);
+    const allNew = generatePaper(questions, mode, 20);
+    assert.doesNotMatch(allNew.title, /review/);
+    const allSeen = generatePaper(seen, mode, 20, [attempt]);
+    assert.match(allSeen.title, /0 unseen \+ 19 review/);
+  }
+});
