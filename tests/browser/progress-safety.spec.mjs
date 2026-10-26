@@ -1,6 +1,7 @@
 import { test, expect } from '@playwright/test';
 
 const empty = () => ({ revision: 0, activeLearningArea: 'drivingTheory', attempts: [], totalPapersCompleted: 0, bestScores: {}, streakDays: 0, lastActiveDate: '', hazardSessions: [], signAccuracy: {} });
+const decoded = (page, saved) => page.evaluate(async data => (await import('/src/lib/progressCodec.ts')).decodeProgress(data).attempts, saved);
 const pending = page => page.evaluate(() => JSON.parse(localStorage.getItem('pending-attempts:fictional') ?? '[]'));
 async function setup(page) {
   await page.addInitScript(() => {
@@ -24,7 +25,11 @@ function api(page, state) {
     const body = route.request().postDataJSON();
     if (state.failure) return route.fulfill({ status: state.failure, json: {} });
     if (body.revision !== state.saved.revision) return route.fulfill({ status: 409, json: {} });
-    state.saved = { ...body, revision: body.revision + 1 };
+    const { historyBaseCount, snapshotBaseCount, ...document } = body;
+    state.saved = { ...document, revision: body.revision + 1,
+      attempts: [...(historyBaseCount === undefined ? [] : state.saved.attempts), ...body.attempts],
+      questionSnapshots: [...(snapshotBaseCount === undefined ? [] : state.saved.questionSnapshots), ...body.questionSnapshots],
+    };
     if (state.loseAck) { state.loseAck = false; return route.abort(); }
     return route.fulfill({ json: { ok: true, revision: state.saved.revision } });
   });
@@ -60,6 +65,7 @@ for (const mock of [true, false]) for (const failure of [503, 413]) test(`C2: ${
   await page.goto('/');
   await submit(page, mock);
   await expect(page.getByText(/Not saved yet. Retry saving/)).toBeVisible();
+  if (failure === 413) await expect(page.getByText(/too large to save \(413\)/)).toBeVisible();
   const original = await pending(page);
   expect(original).toHaveLength(1);
   await page.reload();
@@ -68,7 +74,7 @@ for (const mock of [true, false]) for (const failure of [503, 413]) test(`C2: ${
   state.failure = 0;
   await page.getByRole('button', { name: 'Retry pending saves' }).click();
   await expect.poll(() => pending(page)).toEqual([]);
-  expect(state.saved.attempts).toEqual(original);
+  expect(await decoded(page, state.saved)).toEqual(original);
   expect(state.saved.totalPapersCompleted).toBe(1);
 });
 
@@ -90,7 +96,7 @@ test('C2/C3: deadline submission with lost acknowledgement retries by stable ID'
   await page.getByRole('button', { name: 'Retry loading progress' }).click();
   // Remounting the expired quiz auto-submits the same durable ID.
   await expect.poll(() => pending(page)).toEqual([]);
-  expect(state.saved.attempts).toEqual(original);
+  expect(await decoded(page, state.saved)).toEqual(original);
   expect(state.saved.totalPapersCompleted).toBe(1);
 });
 
@@ -147,7 +153,7 @@ for (const method of ['GET', 'POST']) test(`C4: ${method} 401 clears store auth 
     expect(await pending(page)).toEqual(original);
     await page.getByRole('button', { name: 'Retry pending saves' }).click();
     await expect.poll(() => pending(page)).toEqual([]);
-    expect(state.saved.attempts).toEqual(original);
+    expect(await decoded(page, state.saved)).toEqual(original);
   }
 });
 

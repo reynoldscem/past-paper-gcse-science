@@ -47,3 +47,32 @@ test('revision checks preserve legacy history, reject competing writers and fail
   assert.equal((await post(saved)).status, 500);
   assert.equal(await fs.readFile(file, 'utf8'), '{broken');
 });
+
+test('compact history appends stay small after stored history exceeds the request limit', async t => {
+  const dataDir = await fs.mkdtemp(path.join(os.tmpdir(), 'history-test-'));
+  const hash = await hashPassword('fictional-password');
+  const server = createApp({ dataDir, getUsers: () => ({ fictional: { hash } }) }).listen(0, '127.0.0.1');
+  await new Promise(resolve => server.once('listening', resolve));
+  t.after(() => new Promise(resolve => server.close(resolve)));
+  const base = `http://127.0.0.1:${server.address().port}/api`;
+  const login = await fetch(`${base}/login`, { method: 'POST', headers: { 'Content-Type': 'application/json' }, body: JSON.stringify({ name: 'fictional', password: 'fictional-password' }) });
+  const { token } = await login.json();
+  const headers = { Authorization: `Bearer ${token}`, 'Content-Type': 'application/json' };
+  const post = body => fetch(`${base}/progress/fictional`, { method: 'POST', headers, body: JSON.stringify(body) });
+  const history = { revision: 7, historyVersion: 1, questionSnapshots: [], attempts: Array.from({ length: 40000 }, (_, i) => ({ id: `fictional-${i}`, questions: [['fictional-question', [3, 2, 1, 0], 2]], answers: [1] })) };
+  assert.ok(Buffer.byteLength(JSON.stringify(history)) > 2 * 1024 * 1024);
+  await fs.writeFile(path.join(dataDir, 'fictional.json'), JSON.stringify(history));
+  const update = { revision: 7, historyVersion: 1, historyBaseCount: 40000, snapshotBaseCount: 0, questionSnapshots: [], attempts: [{ id: 'fictional-new', questions: [], answers: [] }] };
+  assert.ok(Buffer.byteLength(JSON.stringify(update)) < 1024);
+  assert.equal((await post(update)).status, 200);
+  assert.equal((await post(update)).status, 409);
+  const saved = await (await fetch(`${base}/progress/fictional`, { headers })).json();
+  assert.equal(saved.attempts.length, 40001);
+  assert.deepEqual(saved.attempts[0], history.attempts[0]);
+  assert.equal(saved.historyBaseCount, undefined);
+  assert.equal((await post({ ...update, revision: 8, historyBaseCount: 40001 })).status, 400);
+  assert.equal((await post({ revision: 8, historyVersion: 1, questionSnapshots: [], attempts: [] })).status, 200);
+  const reset = await (await fetch(`${base}/progress/fictional`, { headers })).json();
+  assert.equal(reset.revision, 9);
+  assert.deepEqual(reset.attempts, []);
+});

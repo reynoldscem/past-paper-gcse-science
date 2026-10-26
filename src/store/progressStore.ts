@@ -38,6 +38,9 @@ function mutate(build: (state: ProgressState) => AppProgress): Promise<void> {
       const revision = await saveProgress(userName!, snapshot);
       if (current()) useProgressStore.setState({ ...snapshot, revision, saveError: '' });
     } catch (error) {
+      if (current() && error instanceof ProgressError && error.status === 413) {
+        useProgressStore.setState({ saveError: error.message });
+      }
       if (current() && error instanceof ProgressError && error.status === 409) {
         useProgressStore.setState({ loaded: false, loadError: error.message });
       }
@@ -89,7 +92,7 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
   },
   setActiveLearningArea: async area => {
     try { await mutate(state => ({ ...snapshot(state), activeLearningArea: area })); }
-    catch { set({ saveError: 'Learning area could not be saved. Please select it again to retry.' }); }
+    catch (error) { set({ saveError: error instanceof ProgressError ? error.message : 'Learning area could not be saved. Please select it again to retry.' }); }
   },
   addAttempt: async attempt => {
     const user = useAppStore.getState().userName;
@@ -161,7 +164,7 @@ export const useProgressStore = create<ProgressState>((set, get) => ({
   },
   clearProgress: async () => {
     try { await mutate(state => ({ ...defaultProgress, revision: state.revision, activeLearningArea: state.activeLearningArea })); }
-    catch { set({ saveError: 'Progress could not be cleared. Please retry.' }); }
+    catch (error) { set({ saveError: error instanceof ProgressError ? error.message : 'Progress could not be cleared. Please retry.' }); }
   },
 }));
 

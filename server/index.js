@@ -164,11 +164,24 @@ app.post('/api/progress/:name', validateName, (req, res) => {
     if (req.body.revision !== revision) {
       return res.status(409).json({ error: 'Progress changed. Reload before retrying.' });
     }
-    const next = { ...req.body, revision: revision + 1 };
-    const json = JSON.stringify(next);
-    if (json.length > 2 * 1024 * 1024) {
-      return res.status(413).json({ error: 'Payload too large' });
+    const { historyBaseCount, snapshotBaseCount, ...document } = req.body;
+    const next = { ...document, revision: revision + 1 };
+    if (historyBaseCount !== undefined) {
+      if (previous?.historyVersion !== 1 || document.historyVersion !== 1 ||
+          historyBaseCount !== previous.attempts.length ||
+          snapshotBaseCount !== previous.questionSnapshots.length ||
+          !Array.isArray(document.attempts) || !Array.isArray(document.questionSnapshots)) {
+        return res.status(409).json({ error: 'History changed. Reload before retrying.' });
+      }
+      const ids = new Set(previous.attempts.map(a => a.id));
+      if (document.attempts.some(a => ids.has(a.id) || !ids.add(a.id))) {
+        return res.status(400).json({ error: 'Duplicate attempt ID' });
+      }
+      next.attempts = [...previous.attempts, ...document.attempts];
+      next.questionSnapshots = [...previous.questionSnapshots, ...document.questionSnapshots];
     }
+    // The 2 MiB limit applies to requests, not the accumulated history on disk.
+    // Append requests retain the same revision check and atomic write.
     // Synchronous compare/write is atomic within this single Express process.
     const temporary = `${req.userFile}.tmp`;
     fs.writeFileSync(temporary, JSON.stringify(next, null, 2));
