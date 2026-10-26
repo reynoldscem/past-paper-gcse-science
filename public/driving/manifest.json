@@ -62,7 +62,8 @@
     "sha256": "12dba950851d46ac18c71fce4a2612dca12a42d1cfa537fe3f9caa1ac25be8e1",
     "modifications": "None",
     "alt": "White disc edged in red",
-    "highwayCodeRule": "109"
+    "highwayCodeRule": "109",
+    "officialCaption": "No vehicles except bicycles being pushed"
   },
   {
     "path": "/driving/sign-giving-order-no-motor-vehicles.jpg",
@@ -1284,7 +1285,9 @@
     "sha256": "fb80a68a59b88309bfb2e7f77db7b073a7c12b75bad6e0ee8803433089373405",
     "modifications": "None",
     "alt": "White diagonal cross edged in red",
-    "highwayCodeRule": "Annex: Traffic signs"
+    "highwayCodeRule": "Annex: Traffic signs",
+    "officialCaption": "Level crossing without barrier",
+    "note": "The official asset filename says \"ahead\", but the Highway Code caption is \"Level crossing without barrier\": the sign stands at the crossing. The filename is kept to match the source URL."
   },
   {
     "path": "/driving/warning-sign-pedestrians-in-road-ahead.jpg",

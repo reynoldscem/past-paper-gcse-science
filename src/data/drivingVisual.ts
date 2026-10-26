@@ -93,13 +93,13 @@ export const drivingVisualQuestions: Question[] = [
     "topicLabel": "Sign Shapes",
     "question": "What does this sign mean for you?",
     "options": [
-      "No vehicles except permitted exceptions shown on a plate",
-      "No motor vehicles only",
-      "No waiting",
-      "National speed limit"
+      "No vehicles except bicycles being pushed",
+      "No motor vehicles; cycles may be ridden",
+      "No entry for vehicles from this direction",
+      "No vehicles over the weight shown"
     ],
     "correctIndex": 0,
-    "explanation": "A blank red-bordered disc prohibits vehicles; read any accompanying exception plate.",
+    "explanation": "A plain white disc with a red ring means no vehicles, except bicycles being pushed by hand. The exception is part of the sign itself, not a separate plate.",
     "highwayCodeRule": "109",
     "learnMoreUrl": "https://www.gov.uk/guidance/the-highway-code/traffic-signs",
     "image": {

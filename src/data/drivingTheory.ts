@@ -58,7 +58,7 @@ export const drivingTheoryQuestions: Question[] = [
     options: ['Overtaking slow vehicles', 'Emergency use only', 'Stopping to make phone calls', 'Resting if you feel tired'],
     correctIndex: 1,
     explanation: 'The hard shoulder is for emergencies. You should not use it as a running lane unless signs specifically direct you to do so.',
-    learnMoreUrl: 'https://www.gov.uk/guidance/the-highway-code/motorways-253-to-274',
+    learnMoreUrl: 'https://www.gov.uk/guidance/the-highway-code/motorways-253-to-273',
   },
   {
     id: 'dt-road-rules-006',
@@ -69,7 +69,7 @@ export const drivingTheoryQuestions: Question[] = [
     options: ['Only if your vehicle is slow', 'For normal driving unless overtaking', 'Only when leaving at the next junction', 'Never if the road is quiet'],
     correctIndex: 1,
     explanation: 'On motorways, keep in the left-hand lane when the road ahead is clear. Use the right-hand lanes for overtaking and move back left when safe.',
-    learnMoreUrl: 'https://www.gov.uk/guidance/the-highway-code/motorways-253-to-274',
+    learnMoreUrl: 'https://www.gov.uk/guidance/the-highway-code/motorways-253-to-273',
   },
   {
     id: 'dt-road-rules-007',
@@ -212,7 +212,7 @@ export const drivingTheoryQuestions: Question[] = [
     options: ['Inside the vehicle with the seat belt on', 'Behind the vehicle', 'Well away from the carriageway and hard shoulder', 'In the right-hand lane to warn traffic'],
     correctIndex: 2,
     explanation: 'If possible, leave the vehicle by the left-hand door and wait behind the barrier, well away from the carriageway and hard shoulder.',
-    learnMoreUrl: 'https://www.gov.uk/guidance/the-highway-code/breakdowns-and-incidents-275-to-287',
+    learnMoreUrl: 'https://www.gov.uk/guidance/the-highway-code/breakdowns-and-incidents-274-to-287',
   },
   {
     id: 'dt-hazard-006',
@@ -223,7 +223,7 @@ export const drivingTheoryQuestions: Question[] = [
     options: ['Leave as soon as details are exchanged', 'Stop and call the emergency services if needed', 'Move injured people immediately', 'Only report it if your car is damaged'],
     correctIndex: 1,
     explanation: 'You must stop after a collision and should call the emergency services if anyone is injured or there is danger.',
-    learnMoreUrl: 'https://www.gov.uk/guidance/the-highway-code/breakdowns-and-incidents-275-to-287',
+    learnMoreUrl: 'https://www.gov.uk/guidance/the-highway-code/breakdowns-and-incidents-274-to-287',
   },
   {
     id: 'dt-vehicle-001',

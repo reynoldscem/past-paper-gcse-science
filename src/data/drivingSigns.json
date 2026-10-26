@@ -497,7 +497,7 @@
   {
     "id": "drill-warning-sign-level-crossing-without-barrier-ahead.jpg",
     "family": "level-crossing",
-    "meaning": "A level crossing without barriers is ahead",
+    "meaning": "Marks the level crossing itself, where there is no barrier or gate",
     "image": {
       "src": "/driving/warning-sign-level-crossing-without-barrier-ahead.jpg",
       "alt": "White diagonal cross edged in red"

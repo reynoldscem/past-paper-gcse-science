@@ -51,9 +51,9 @@ const specific: Record<string, string> = {
   'dtx-080': '239',
   'dtx-081': '253',
   'dtx-082': '259',
-  'dtx-083': '270–271',
+  'dtx-083': '263',
   'dtx-085': '261',
-  'dtx-086': '272',
+  'dtx-086': '273',
   'dtx-087': '116',
   'dtx-088': '277',
   'dtx-089': '277',
@@ -115,7 +115,7 @@ export function highwayCodeReferenceUrl(reference: string, fallback: string): st
     [102, 'rules-for-drivers-and-motorcyclists-89-to-102'], [158, 'general-rules-techniques-and-advice-for-all-drivers-and-riders-103-to-158'],
     [203, 'using-the-road-159-to-203'], [225, 'road-users-requiring-extra-care-204-to-225'],
     [237, 'driving-in-adverse-weather-conditions-226-to-237'], [252, 'waiting-and-parking-238-to-252'],
-    [274, 'motorways-253-to-274'], [287, 'breakdowns-and-incidents-275-to-287'],
+    [274, 'motorways-253-to-273'], [287, 'breakdowns-and-incidents-274-to-287'],
     [307, 'road-works-level-crossings-and-tramways-288-to-307'],
   ];
   const chapter = rule > 0 ? chapters.find(([end]) => rule <= end)?.[1] : undefined;
