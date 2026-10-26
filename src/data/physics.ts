@@ -461,21 +461,21 @@ export const physicsQuestions: Question[] = [
 
   // ─── ATOMIC STRUCTURE (atomic-structure-phys) ─────────────────────────
   {
-    id: 'phys-atomic-structure-phys-001',
-    subject: 'physics',
-    topic: 'atomic-structure-phys',
-    topicLabel: 'Atomic Structure',
-    question: 'What are isotopes?',
-    options: [
-      'Atoms with different numbers of protons',
-      'Atoms of the same element with different numbers of neutrons',
-      'Atoms with no electrons',
-      'Atoms of different elements with the same mass number',
-    ],
-    correctIndex: 1,
-    explanation: 'Isotopes are atoms of the same element that have the same number of protons but different numbers of neutrons, giving them different mass numbers.',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zshssrd',
-  },
+  "id": "phys-atomic-structure-phys-001",
+  "subject": "physics",
+  "topic": "atomic-structure-phys",
+  "topicLabel": "Atomic Structure",
+  "question": "Two atoms each have 6 protons but have 6 and 8 neutrons respectively. How are they related?",
+  "options": [
+    "They are ions with different charges",
+    "They are isotopes of carbon",
+    "They are atoms of different elements",
+    "They have equal mass numbers"
+  ],
+  "correctIndex": 1,
+  "explanation": "Both atoms are carbon because they have 6 protons. Their different neutron numbers give mass numbers 12 and 14, so they are isotopes.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zshssrd"
+},
   {
     id: 'phys-atomic-structure-phys-002',
     subject: 'physics',
@@ -1021,7 +1021,22 @@ export const physicsQuestions: Question[] = [
   "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zshssrd"
 },
   { id: 'phys-atomic-structure-phys-011', subject: 'physics', topic: 'atomic-structure-phys', topicLabel: 'Atomic Structure', question: 'When an atom emits a beta particle, what happens to its nucleus?', options: ['It loses 2 protons and 2 neutrons', 'A neutron turns into a proton and an electron (the beta particle) is emitted', 'It gains a neutron', 'Nothing changes'], correctIndex: 1, explanation: 'In beta decay, a neutron in the nucleus converts into a proton, and an electron (beta particle) is emitted. The atomic number increases by 1; mass number stays the same.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zshssrd' },
-  { id: 'phys-atomic-structure-phys-012', subject: 'physics', topic: 'atomic-structure-phys', topicLabel: 'Atomic Structure', question: 'What is the difference between contamination and irradiation?', options: ['There is no difference', 'Contamination means radioactive material gets on/in you; irradiation means you are exposed to radiation from a source at a distance', 'Irradiation is more dangerous', 'Contamination only happens in nuclear power stations'], correctIndex: 1, explanation: 'Contamination: radioactive atoms are on/in your body (ongoing exposure). Irradiation: you\'re exposed to radiation from an external source (exposure stops when you move away or the source is removed).', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zshssrd' },
+  {
+  "id": "phys-atomic-structure-phys-012",
+  "subject": "physics",
+  "topic": "atomic-structure-phys",
+  "topicLabel": "Atomic Structure",
+  "question": "Radioactive dust settles on a glove. After the external source is removed, why can the glove still expose someone to radiation?",
+  "options": [
+    "The glove stores the radiation it absorbed",
+    "Radioactive material remains on the glove",
+    "Every atom in the glove has become radioactive",
+    "The glove reflects radiation indefinitely"
+  ],
+  "correctIndex": 1,
+  "explanation": "The glove is contaminated: radioactive atoms on it continue to decay. Merely irradiating an object does not leave radioactive material on it.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zshssrd"
+},
   {
   "id": "phys-atomic-structure-phys-013",
     scope: "separate",

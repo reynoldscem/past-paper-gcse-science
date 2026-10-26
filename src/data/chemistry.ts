@@ -948,7 +948,22 @@ export const chemistryQuestions: Question[] = [
   // ─── NEW QUESTIONS (BATCH 2) ──────────────────────────────────────────
 
   // Atomic structure (5 more)
-  { id: 'chem-atomic-structure-009', subject: 'chemistry', topic: 'atomic-structure', topicLabel: 'Atoms & Periodic Table', question: 'What is the electronic configuration of sodium (atomic number 11)?', options: ['2,8,2', '2,8,1', '2,9', '8,3'], correctIndex: 1, explanation: 'Sodium has 11 electrons: 2 in the first shell, 8 in the second, and 1 in the third. This is written as 2,8,1.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zcckk2p' },
+  {
+  "id": "chem-atomic-structure-009",
+  "subject": "chemistry",
+  "topic": "atomic-structure",
+  "topicLabel": "Atoms & Periodic Table",
+  "question": "A sodium atom has electron arrangement 2,8,1. What arrangement does its Na⁺ ion have?",
+  "options": [
+    "2,8,2",
+    "2,8",
+    "2,7,1",
+    "2,8,1"
+  ],
+  "correctIndex": 1,
+  "explanation": "A sodium atom loses its outer electron to form Na⁺. Its remaining 10 electrons have arrangement 2,8; the proton number stays 11.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zcckk2p"
+},
   { id: 'chem-atomic-structure-010', subject: 'chemistry', topic: 'atomic-structure', topicLabel: 'Atoms & Periodic Table', question: 'An atom of chlorine has 17 protons and 18 neutrons. What is its mass number?', options: ['17', '18', '35', '1'], correctIndex: 2, explanation: 'Mass number = protons + neutrons = 17 + 18 = 35. The mass number is the total number of particles in the nucleus.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zcckk2p' },
   { id: 'chem-atomic-structure-011', subject: 'chemistry', topic: 'atomic-structure', topicLabel: 'Atoms & Periodic Table', question: 'When a sodium atom forms a sodium ion (Na+), what happens?', options: ['It gains one electron', 'It loses one electron', 'It gains one proton', 'It loses one proton'], correctIndex: 1, explanation: 'Sodium is in Group 1, so it loses one electron to achieve a full outer shell. Losing a negative electron gives it a positive charge (Na+).', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zcckk2p' },
   { id: 'chem-atomic-structure-012', subject: 'chemistry', topic: 'atomic-structure', topicLabel: 'Atoms & Periodic Table', question: 'Why are Group 0 elements (noble gases) unreactive?', options: ['They have no electrons', 'They have full outer electron shells', 'They are all metals', 'They have no protons'], correctIndex: 1, explanation: 'Noble gases have full outer electron shells (except helium with 2, they have 8). This stable arrangement means they don\'t need to gain, lose, or share electrons.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zcckk2p' },
@@ -958,7 +973,22 @@ export const chemistryQuestions: Question[] = [
   { id: 'chem-bonding-008', subject: 'chemistry', topic: 'bonding', topicLabel: 'Bonding & Structure', question: 'Why does diamond have a very high melting point?', options: ['It contains ionic bonds', 'Each carbon atom forms four strong covalent bonds in a giant structure', 'It contains metallic bonds', 'It is made of small molecules'], correctIndex: 1, explanation: 'Diamond is a giant covalent structure where each carbon atom is bonded to four others by strong covalent bonds. A huge amount of energy is needed to break all these bonds.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z33rrwx' },
   { id: 'chem-bonding-009', subject: 'chemistry', topic: 'bonding', topicLabel: 'Bonding & Structure', question: 'Why can graphite conduct electricity but diamond cannot?', options: ['Graphite contains ions', 'Graphite has delocalised electrons that are free to move', 'Diamond is too hard', 'Graphite is a metal'], correctIndex: 1, explanation: 'In graphite, each carbon bonds to three others, leaving one electron per atom delocalised (free to move). These free electrons can carry electrical current. In diamond, all four electrons are used in bonding.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z33rrwx' },
   { id: 'chem-bonding-010', subject: 'chemistry', topic: 'bonding', topicLabel: 'Bonding & Structure', question: 'Why do simple molecular substances like water have low boiling points?', options: ['The covalent bonds within molecules are weak', 'The intermolecular forces (forces between molecules) are weak', 'They contain ionic bonds', 'They have no bonds at all'], correctIndex: 1, explanation: 'The covalent bonds within molecules are strong, but the intermolecular forces between molecules are weak. Only a small amount of energy is needed to overcome these weak forces, so boiling points are low.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z33rrwx' },
-  { id: 'chem-bonding-011', subject: 'chemistry', topic: 'bonding', topicLabel: 'Bonding & Structure', question: 'Why can metals conduct electricity?', options: ['They contain covalent bonds', 'They have delocalised electrons that are free to move through the structure', 'They contain molecules', 'They have a low melting point'], correctIndex: 1, explanation: 'In metallic bonding, outer electrons are delocalised and form a "sea" of free electrons. These electrons can flow through the structure, carrying an electrical current.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z33rrwx' },
+  {
+  "id": "chem-bonding-011",
+  "subject": "chemistry",
+  "topic": "bonding",
+  "topicLabel": "Bonding & Structure",
+  "question": "A metal wire conducts while solid. Which particles carry charge along the wire?",
+  "options": [
+    "Positive metal ions",
+    "Delocalised electrons",
+    "Neutral metal atoms",
+    "Negative metal ions"
+  ],
+  "correctIndex": 1,
+  "explanation": "Delocalised electrons can move through a solid metal and carry charge. The positive ions remain in the lattice; this differs from conduction by mobile ions in molten ionic compounds.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z33rrwx"
+},
   {
   "id": "chem-bonding-012",
   "subject": "chemistry",
@@ -1062,14 +1092,44 @@ export const chemistryQuestions: Question[] = [
   "image": {"src": "/science/reaction-profile.svg", "alt": "Energy against reaction progress: arrow A points vertically upwards from the reactant energy level to the peak."}
 },
   { id: 'chem-energy-changes-009', subject: 'chemistry', topic: 'energy-changes', topicLabel: 'Energy Changes', question: 'A reaction causes the temperature of the surroundings to decrease. What type of reaction is this?', options: ['Exothermic', 'Endothermic', 'Neutralisation', 'Combustion'], correctIndex: 1, explanation: 'An endothermic reaction takes in energy from the surroundings, causing the temperature to decrease. The opposite of exothermic which releases energy and increases temperature.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z27xxfr' },
-  { id: 'chem-energy-changes-010',
-    scope: "higher", subject: 'chemistry', topic: 'energy-changes', topicLabel: 'Energy Changes', question: 'Is bond breaking an exothermic or endothermic process?', options: ['Exothermic — it releases energy', 'Endothermic — it requires energy', 'Neither — no energy change occurs', 'It depends on the bond'], correctIndex: 1, explanation: 'Breaking bonds always requires energy (endothermic). Making bonds always releases energy (exothermic). The overall energy change depends on which is greater.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z27xxfr' },
+  {
+  "id": "chem-energy-changes-010",
+  "scope": "higher",
+  "subject": "chemistry",
+  "topic": "energy-changes",
+  "topicLabel": "Energy Changes",
+  "question": "In an exothermic reaction, how does energy released by making bonds compare with energy absorbed by breaking bonds?",
+  "options": [
+    "Less is released than absorbed",
+    "More is released than absorbed",
+    "Equal amounts are released and absorbed",
+    "No energy is absorbed in breaking bonds"
+  ],
+  "correctIndex": 1,
+  "explanation": "Bond breaking absorbs energy and bond formation releases it. The release is greater in an exothermic reaction, so there is a net transfer of energy to the surroundings.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z27xxfr"
+},
   { id: 'chem-energy-changes-011', subject: 'chemistry', topic: 'energy-changes', topicLabel: 'Energy Changes', question: 'Which of these is an example of an exothermic reaction used in everyday life?', options: ['Thermal decomposition', 'Photosynthesis', 'Hand warmers', 'Dissolving ammonium nitrate in water'], correctIndex: 2, explanation: 'Hand warmers use an exothermic reaction (often iron oxidation) to release heat. Thermal decomposition, photosynthesis, and dissolving ammonium nitrate are endothermic.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z27xxfr' },
   { id: 'chem-energy-changes-012', subject: 'chemistry', topic: 'energy-changes', topicLabel: 'Energy Changes', question: 'On a reaction profile, if the products are at a lower energy level than the reactants, the reaction is:', options: ['Endothermic', 'Exothermic', 'Reversible', 'Impossible'], correctIndex: 1, explanation: 'If products are lower in energy than reactants, energy has been released to the surroundings — this is exothermic. The energy difference is the overall energy change.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z27xxfr' },
 
   // Organic (5 more)
   { id: 'chem-organic-008', subject: 'chemistry', topic: 'organic', topicLabel: 'Organic Chemistry', question: 'As hydrocarbon molecules get larger, what happens to their boiling points?', options: ['They decrease', 'They increase', 'They stay the same', 'They become unpredictable'], correctIndex: 1, explanation: 'Larger hydrocarbons have stronger intermolecular forces between their longer chains, so more energy is needed to separate them. This means higher boiling points.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z9488mn' },
-  { id: 'chem-organic-009', subject: 'chemistry', topic: 'organic', topicLabel: 'Organic Chemistry', question: 'What are the products of complete combustion of a hydrocarbon?', options: ['Carbon monoxide + water', 'Carbon dioxide + water', 'Carbon + water', 'Carbon dioxide + hydrogen'], correctIndex: 1, explanation: 'Complete combustion (with plenty of oxygen): hydrocarbon + oxygen → carbon dioxide + water. Incomplete combustion produces carbon monoxide or soot instead.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/z9488mn' },
+  {
+  "id": "chem-organic-009",
+  "subject": "chemistry",
+  "topic": "organic",
+  "topicLabel": "Organic Chemistry",
+  "question": "A hydrocarbon burns with too little oxygen. Which toxic gas may form instead of carbon dioxide?",
+  "options": [
+    "Sulfur dioxide",
+    "Carbon monoxide",
+    "Hydrogen chloride",
+    "Nitrogen dioxide"
+  ],
+  "correctIndex": 1,
+  "explanation": "Incomplete combustion can produce carbon monoxide when oxygen is limited. Complete combustion produces carbon dioxide and water; carbon monoxide is toxic.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/z9488mn"
+},
   {
   "id": "chem-organic-010",
   "subject": "chemistry",
@@ -1092,9 +1152,39 @@ export const chemistryQuestions: Question[] = [
 
   // Analysis (5 more)
   { id: 'chem-analysis-008', subject: 'chemistry', topic: 'analysis', topicLabel: 'Chemical Analysis', question: 'A spot in a chromatogram travels 4.2 cm and the solvent front travels 6.0 cm. What is the Rf value?', options: ['0.5', '0.6', '0.7', '1.4'], correctIndex: 2, explanation: 'Rf = distance moved by spot ÷ distance moved by solvent = 4.2 ÷ 6.0 = 0.7. Rf values are always between 0 and 1.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zgbccj6' },
-  { id: 'chem-analysis-009',
-    scope: "separate", subject: 'chemistry', topic: 'analysis', topicLabel: 'Chemical Analysis', question: 'What colour flame does lithium produce in a flame test?', options: ['Yellow', 'Crimson red', 'Lilac', 'Green'], correctIndex: 1, explanation: 'Lithium produces a crimson red flame. Sodium is yellow, potassium is lilac, and copper compounds produce a green/blue-green flame.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zgbccj6' },
-  { id: 'chem-analysis-010', subject: 'chemistry', topic: 'analysis', topicLabel: 'Chemical Analysis', question: 'How do you test for hydrogen gas?', options: ['It turns limewater milky', 'It relights a glowing splint', 'It makes a squeaky pop with a lit splint', 'It turns damp litmus paper white'], correctIndex: 2, explanation: 'Hold a burning splint near the gas. If hydrogen is present, it burns with a squeaky pop sound. This is because hydrogen reacts with oxygen explosively.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zgbccj6' },
+  {
+  "id": "chem-analysis-009",
+  "scope": "separate",
+  "subject": "chemistry",
+  "topic": "analysis",
+  "topicLabel": "Chemical Analysis",
+  "question": "A flame test gives a crimson colour. Which metal ion does this support identifying?",
+  "options": [
+    "Sodium",
+    "Lithium",
+    "Potassium",
+    "Copper"
+  ],
+  "correctIndex": 1,
+  "explanation": "Lithium ions give a crimson flame. Sodium gives yellow, potassium lilac, and copper green. Compare with known samples to identify an unknown ion.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zgbccj6"
+},
+  {
+  "id": "chem-analysis-010",
+  "subject": "chemistry",
+  "topic": "analysis",
+  "topicLabel": "Chemical Analysis",
+  "question": "A gas from a metal reacting with dilute acid makes a squeaky pop with a lit splint. Which gas is it?",
+  "options": [
+    "Carbon dioxide",
+    "Oxygen",
+    "Hydrogen",
+    "Chlorine"
+  ],
+  "correctIndex": 2,
+  "explanation": "The squeaky-pop test identifies hydrogen, a product of many metal-acid reactions. Oxygen relights a glowing splint, carbon dioxide turns limewater cloudy, and chlorine bleaches damp litmus.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zgbccj6"
+},
   { id: 'chem-analysis-011', subject: 'chemistry', topic: 'analysis', topicLabel: 'Chemical Analysis', question: 'A pure substance melts at a sharp, specific temperature. What would you expect for an impure substance?', options: ['It melts at a higher temperature', 'It melts over a range of temperatures and at a lower temperature', 'It does not melt', 'It melts at exactly the same temperature'], correctIndex: 1, explanation: 'Impurities lower the melting point and make the substance melt over a range of temperatures rather than at one sharp point. This is used to test purity.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zgbccj6' },
   { id: 'chem-analysis-012',
     scope: "separate", subject: 'chemistry', topic: 'analysis', topicLabel: 'Chemical Analysis', question: 'What colour flame does copper produce in a flame test?', options: ['Crimson red', 'Yellow', 'Lilac', 'Green/blue-green'], correctIndex: 3, explanation: 'Copper compounds produce a green or blue-green flame in a flame test. This is a distinctive colour used to identify copper ions.', learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zgbccj6' },

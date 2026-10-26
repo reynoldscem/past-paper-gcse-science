@@ -932,21 +932,21 @@ export const biologyQuestions: Question[] = [
     learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zgr997h',
   },
   {
-    id: 'bio-homeostasis-010',
-    subject: 'biology',
-    topic: 'homeostasis',
-    topicLabel: 'Homeostasis',
-    question: 'What is the correct order of a reflex arc?',
-    options: [
-      'Receptor → relay neurone → sensory neurone → motor neurone → effector',
-      'Effector → motor neurone → relay neurone → sensory neurone → receptor',
-      'Receptor → sensory neurone → relay neurone → motor neurone → effector',
-      'Receptor → motor neurone → relay neurone → sensory neurone → effector',
-    ],
-    correctIndex: 2,
-    explanation: 'A reflex arc follows the path: stimulus → receptor → sensory neurone → relay neurone (in spinal cord) → motor neurone → effector (muscle or gland).',
-    learnMoreUrl: 'https://www.bbc.co.uk/bitesize/topics/zyybb82',
-  },
+  "id": "bio-homeostasis-010",
+  "subject": "biology",
+  "topic": "homeostasis",
+  "topicLabel": "Homeostasis",
+  "question": "In a simple withdrawal reflex, which neurone carries impulses from the central nervous system to a muscle?",
+  "options": [
+    "Relay neurone",
+    "Sensory neurone",
+    "Motor neurone",
+    "Receptor cell"
+  ],
+  "correctIndex": 2,
+  "explanation": "A motor neurone carries impulses from the central nervous system to an effector such as a muscle. A sensory neurone carries impulses towards the central nervous system; a relay neurone connects them within it.",
+  "learnMoreUrl": "https://www.bbc.co.uk/bitesize/topics/zyybb82"
+},
   {
     id: 'bio-homeostasis-011',
     scope: "separate",
