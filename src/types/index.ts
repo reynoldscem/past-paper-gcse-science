@@ -22,6 +22,8 @@ export interface Question {
   explanation: string;
   learnMoreUrl: string;
   highwayCodeRule?: string;
+  hcChapter?: string;
+  supersededCheck?: 'current';
   image?: { src: string; alt: string };
 }
 

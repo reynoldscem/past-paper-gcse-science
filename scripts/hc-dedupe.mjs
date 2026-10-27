@@ -3,7 +3,7 @@ import { build } from 'esbuild';
 // Use the same bank entry point and bundler as scripts/test.mjs/theory.test.mjs.
 const result = await build({
   stdin: {
-    contents: "export { getAllQuestions } from './src/data/index.ts';",
+    contents: "export { getAllQuestions } from './src/data/index.ts'; export { drivingHighwayCodeQuestions } from './src/data/drivingHighwayCode.ts';",
     resolveDir: process.cwd(),
   },
   bundle: true,
@@ -11,11 +11,13 @@ const result = await build({
   format: 'esm',
   write: false,
 });
-const { getAllQuestions } = await import(
+const { getAllQuestions, drivingHighwayCodeQuestions } = await import(
   `data:text/javascript;base64,${Buffer.from(result.outputFiles[0].text).toString('base64')}`
 );
 const subjects = new Set(['roadRules', 'roadSigns', 'hazardAwareness', 'vehicleSafety']);
 const questions = getAllQuestions().filter(q => subjects.has(q.subject));
+// Object identity also catches a new question reusing an old, non-hc ID.
+const additions = new Set(drivingHighwayCodeQuestions);
 const normalise = text => text.toLowerCase().replace(/[^a-z0-9]/g, '');
 const tokens = text => new Set(text.toLowerCase().match(/[a-z0-9]+/g) ?? []);
 const prepared = questions.map(q => ({ q, stem: normalise(q.question), words: tokens(q.question) }));
@@ -24,6 +26,8 @@ for (let i = 0; i < prepared.length; i++) {
   for (let j = i + 1; j < prepared.length; j++) {
     const a = prepared[i];
     const b = prepared[j];
+    // Known historic collisions are outside this addition's scope.
+    if (!additions.has(a.q) && !additions.has(b.q)) continue;
     if (a.q.id === b.q.id) {
       failures.push({ kind: 'duplicate-id', ids: [a.q.id, b.q.id] });
     }
@@ -45,7 +49,7 @@ const counts = Object.fromEntries(['duplicate-id', 'duplicate-stem', 'similar-st
 ));
 console.log(JSON.stringify({
   questions: questions.length,
-  newQuestions: questions.filter(q => q.id.startsWith('hc-')).length,
+  newQuestions: drivingHighwayCodeQuestions.length,
   threshold: 0.7,
   counts,
   failures: process.argv.includes('--json') ? failures : failures.slice(0, 5),

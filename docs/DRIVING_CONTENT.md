@@ -1,6 +1,6 @@
 # Driving theory content and sources
 
-The driving bank contains 455 original paper questions, including 126 visual questions (the round-two notes said 305 questions; the true round-two count was 307, and round three added 36 visual questions). A separate sign drill uses 308 distinct official images: 89 images from `drivingVisual.ts` plus 219 additional signs (124 after round two, 184 added in round three). It covers the 14 car theory topic areas through the app's existing four driving subjects. Science questions and historic question IDs are preserved. These are independently written practice questions, not the DVSA revision question bank or an official DVSA product.
+The driving bank contains 688 original paper questions, including 229 visual questions (the round-two notes said 305 questions; the true round-two count was 307, and round three added 36 visual questions). A separate sign drill uses 308 distinct official images: 89 images from `drivingVisual.ts` plus 219 additional signs (124 after round two, 184 added in round three). It covers the 14 car theory topic areas through the app's existing four driving subjects. Science questions and historic question IDs are preserved. These are independently written practice questions, not the DVSA revision question bank or an official DVSA product.
 
 Sources checked on 23 October 2026 and rechecked for the round-two content on 25 October 2026:
 
@@ -141,3 +141,12 @@ Live GOV.UK rules and the relevant official sign/marking guides were checked. Th
 Longest-correct answers, counting Unicode characters and ties: **24/80 (30.00%)** for the new bank; shortest-correct **15/80 (18.75%)**. The combined driving text bank remains **90/329 (27.36%)**, below the existing 40% ceiling. The new-bank test enforces the 30% target and also guards against a consistent shortest-answer clue.
 
 See [the implementation report](weak-topics-2026-10-26.md) for source references, validation and commits.
+
+
+## Highway Code expansion — chunk 1 (27 October 2026)
+
+`drivingHighwayCode.ts` adds 233 independent original questions across the twelve selected sign, marking, signal, pedestrian, mobility, animal, cyclist, motorcyclist and extra-care chapters. Of these, 103 use official images (44.2%); 97 image references reuse existing manifest assets and six hazard-label figures were downloaded unchanged from the URLs in the supplied current source text. The 130 text questions broaden rule-by-rule coverage. The separate sign drill and mock selection logic are unchanged.
+
+Every new entry has a numeric rule citation, an anchored GOV.UK chapter link, `hcChapter` and `supersededCheck: 'current'`. These metadata fields refer to the supplied current chapter snapshot. Images retain descriptive alternative text, source URLs, OGL attribution and checksums in the manifest. No commercial question bank or private scan was used.
+
+`node scripts/hc-dedupe.mjs` checks the full registered driving bank for duplicate IDs, normalised stems and token-Jaccard similarity above 0.7 when at least one question belongs to this addition. It ignores historic-versus-historic collisions. Existing directly tested concepts were omitted rather than revising historic questions. Answer positions are balanced at 58/61/59/55 across indices 0–3. Automated theory tests validate registration, chapter coverage, option keys, topic labels and exact image-source markers alongside the existing bank, checksum and selection tests.

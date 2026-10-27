@@ -207,3 +207,47 @@ test('weak-area additions are available in mocks and each existing weak topic', 
     }
   }
 });
+
+test('current Highway Code additions are registered with complete references and original official images', async () => {
+  const { drivingHighwayCodeQuestions: additions } = await import('../src/data/drivingHighwayCode.ts');
+  const chapters = [
+    'traffic-signs', 'road-markings', 'light-signals-controlling-traffic',
+    'signals-to-other-road-users', 'signals-by-authorised-persons', 'vehicle-markings',
+    'rules-for-pedestrians-1-to-35',
+    'rules-for-users-of-powered-wheelchairs-and-mobility-scooters-36-to-46',
+    'rules-about-animals-47-to-58', 'rules-for-cyclists-59-to-82',
+    'rules-for-motorcyclists-83-to-88', 'road-users-requiring-extra-care-204-to-225',
+  ];
+  const manifest = JSON.parse(readFileSync('public/driving/manifest.json', 'utf8'));
+  const markers = new Map(chapters.map(chapter => [chapter,
+    [...readFileSync(`papers/highway-code/current/${chapter}.txt`, 'utf8').matchAll(/\[IMG ([^\]]+)\]/g)].map(m => m[1]),
+  ]));
+  assert.ok(additions.length > 0);
+  assert.equal(new Set(additions.map(q => q.id)).size, additions.length);
+  for (const chapter of chapters) assert.ok(additions.some(q => q.hcChapter === chapter), chapter);
+  for (const q of additions) {
+    assert.match(q.id, /^hc-[a-z]+-\d{3}$/, q.id);
+    assert.ok(chapters.includes(q.hcChapter), q.id);
+    assert.equal(q.supersededCheck, 'current', q.id);
+    assert.match(q.highwayCodeRule, /^\d+(?:-\d+)?$/, q.id);
+    const firstRule = q.highwayCodeRule.split('-')[0];
+    assert.ok(q.explanation.startsWith(`Rule ${firstRule}:`), q.id);
+    assert.ok(q.learnMoreUrl.endsWith(`#rule${firstRule}`), q.id);
+    assert.ok(Number.isInteger(q.correctIndex) && q.correctIndex >= 0 && q.correctIndex < 4, q.id);
+    assert.equal(q.options.length, 4, q.id);
+    assert.equal(new Set(q.options.map(o => o.toLowerCase().replace(/[^a-z0-9]/g, ''))).size, 4, q.id);
+    assert.ok(topics[q.subject].some(t => t.id === q.topic && t.label === q.topicLabel), q.id);
+    assert.equal(bank.filter(original => original.id === q.id).length, 1, q.id);
+    if (q.image) {
+      const entry = manifest.find(m => m.path === q.image.src);
+      assert.ok(entry, q.id);
+      assert.ok(markers.get(q.hcChapter).includes(entry.sourceUrl), q.id);
+      assert.equal(entry.licence, 'Open Government Licence v3.0', q.id);
+      assert.ok(q.image.alt.length > 10, q.id);
+      assert.equal(createHash('sha256').update(readFileSync(`public${q.image.src}`)).digest('hex'), entry.sha256, q.id);
+    }
+  }
+  for (let position = 0; position < 4; position++) {
+    assert.ok(additions.filter(q => q.correctIndex === position).length / additions.length <= 0.35);
+  }
+});

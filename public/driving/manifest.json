@@ -4189,5 +4189,83 @@
     "modifications": "None",
     "alt": "Blue panel with a camera symbol above a red-ringed 30",
     "highwayCodeRule": "Annex: Traffic signs"
+  },
+  {
+    "path": "/driving/hazard-warning-toxic-label.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/vehicle-markings",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55bb8c9ce5274a1545000012/hazard-warning-toxic-label.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-27",
+    "sha256": "62a02ce7f851bfd0f7af7dc682e4e0776e0fc51e2e66e0212fb187f5ff17dce4",
+    "modifications": "None",
+    "alt": "White diamond containing a skull and crossed bones, lettering and the number 6",
+    "highwayCodeRule": "109"
+  },
+  {
+    "path": "/driving/hazard-warning-oxidising-plate.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/vehicle-markings",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55bb8cafe5274a1548000017/hazard-warning-oxidising-plate.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-27",
+    "sha256": "88dc4e6fe59fc75f80065273c5f900612f64ae05ffaa8002d0cc191413d5bcde",
+    "modifications": "None",
+    "alt": "Yellow diamond with a flame above a circle, lettering and 5.1",
+    "highwayCodeRule": "109"
+  },
+  {
+    "path": "/driving/hazard-warning-compressed-gas-plate.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/vehicle-markings",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55bb8cc3e5274a1548000019/hazard-warning-compressed-gas-plate.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-27",
+    "sha256": "b92566d2a4325dc89d344101f5a3c0b7681cf67f9e989417a20a98a6108f9999",
+    "modifications": "None",
+    "alt": "Green diamond containing a cylinder silhouette, lettering and the number 2",
+    "highwayCodeRule": "109"
+  },
+  {
+    "path": "/driving/hazard-warning-radioactive-plate.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/vehicle-markings",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55bb8cd440f0b61551000014/hazard-warning-radioactive-plate.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-27",
+    "sha256": "dac51e138072e48cba403e52909c5e662d4b6289e407fe6769c4d73dcccfec59",
+    "modifications": "None",
+    "alt": "White diamond with a three-part black symbol, lettering and the number 7",
+    "highwayCodeRule": "109"
+  },
+  {
+    "path": "/driving/hazard-warning-spon-combust-red.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/vehicle-markings",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55bb8ce5e5274a1545000014/hazard-warning-spon-combust-red.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-27",
+    "sha256": "82de3de2ddf54d51941d8a75cee370f848a023e869b750e84c1a1ccc2bccecaa",
+    "modifications": "None",
+    "alt": "White and red diamond with a black flame, lettering and the number 4",
+    "highwayCodeRule": "109"
+  },
+  {
+    "path": "/driving/hazard-warning-corrosive-plate.jpg",
+    "sourcePage": "https://www.gov.uk/guidance/the-highway-code/vehicle-markings",
+    "sourceUrl": "https://assets.digital.cabinet-office.gov.uk/media/55bb8cf5e5274a1545000016/hazard-warning-corrosive-plate.jpg",
+    "licence": "Open Government Licence v3.0",
+    "licenceUrl": "https://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/",
+    "attribution": "Contains public sector information licensed under the Open Government Licence v3.0. \u00a9 Crown copyright, Department for Transport.",
+    "retrieved": "2026-10-27",
+    "sha256": "c490275152c198ba9aa4a0f547236fe630f6da89c4add110dd6bef461dd40867",
+    "modifications": "None",
+    "alt": "White and black diamond showing tubes dripping onto a hand and a surface, with lettering",
+    "highwayCodeRule": "109"
   }
 ]

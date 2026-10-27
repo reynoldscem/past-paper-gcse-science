@@ -1,4 +1,5 @@
 import { drivingWeakTopicsQuestions } from './drivingWeakTopics';
+import { drivingHighwayCodeQuestions } from './drivingHighwayCode';
 import { drivingCoverageQuestions } from './drivingCoverage';
 import { isPracticeQuestion } from '../lib/questionScope';
 import { drivingRound2Questions } from './drivingRound2';
@@ -23,6 +24,7 @@ const allQuestions: Question[] = [
   ...drivingRound2Questions,
   ...drivingCoverageQuestions,
   ...drivingWeakTopicsQuestions,
+  ...drivingHighwayCodeQuestions,
 ];
 
 export function getAllQuestions(): Question[] {
