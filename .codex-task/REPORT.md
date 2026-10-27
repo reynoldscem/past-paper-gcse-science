@@ -1,62 +1,70 @@
-# Round-two report
+# Highway Code chunk 1 — blocked
 
-Implementation and validation are complete, with the content exclusions below. **Push is blocked by automatic approval review. Nothing was deployed, merged or published.**
+The question expansion is incomplete. Work stopped under the brief's “If blocked or unsure, stop and say so in the report” instruction. No new questions were generated or wired into the app.
 
-## Changes
+## Blocking conflict
 
-- `public/driving/`: 71 additional unmodified official OGL images; 124 distinct images total. `manifest.json` includes original asset URL, source page, licence, attribution, SHA-256, alt text and Highway Code rule/annex for every image.
-- `src/data/drivingSigns.json`, `src/data/signDrill.ts`, `src/views/SignDrillView.tsx`: shuffled 20-sign rounds, four choices, immediate explanation/reference, one repeat of each missed sign at the end, saved per-image accuracy and a ten-item weakest-sign list after a round. Accuracy includes repeats. Each answer requires a successful API save; failed saves can be retried without double counting.
-- `src/types/index.ts`, `src/store/progressStore.ts`, `src/lib/storage.ts`: sign accuracy persists through the existing progress API and is retained by other progress actions.
-- `src/lib/mockDraft.ts`, `src/store/appStore.ts`, `src/views/HomeView.tsx`, `src/views/QuizView.tsx`, `src/components/ui/TopBar.tsx`: per-learner browser-local mock draft, original fixed deadline, answers, flags and position; resume/discard prompt; invalid/expired draft removal; removal on mock submission. Ordinary practice submission preserves a parked mock. Navigation controls wrap on narrow screens.
-- `src/App.tsx`: drill route.
-- `src/data/drivingRound2.ts`, `src/data/index.ts`: 60 original questions, taking the paper bank from 245 to 305. Added 8 each for safety margins, vulnerable users, motorways and incidents; 6 each for alertness, loading and signs; 5 each for attitude and other vehicles. All have explanations and rule links. Full before/after counts for the 14 syllabus areas are in `docs/DRIVING_CONTENT.md`.
-- `tests/theory.test.mjs`, `tests/browser/theory.spec.mjs`, `playwright.config.mjs`: provenance, image uniqueness, drill, persistence, failure and mobile regressions. Browser viewport defaults to 390 × 844.
+Acceptance item 7 requires a whole-driving-bank checker to fail on duplicate IDs, duplicate normalised stems, or token-Jaccard similarity strictly greater than 0.7. It also says “never edit existing ones”. The existing bank already violates the required stem checks, so adding or rewriting new questions cannot make that check pass.
+
+The reproducible checker loads `getAllQuestions()` from `src/data/index.ts`, using esbuild exactly as the theory test runner does, and filters the four existing driving subjects. It compares every pair, including existing-to-existing pairs. Normalisation lowercases and removes non-ASCII-alphanumeric characters. Token sets use lowercase alphanumeric words, retaining stopwords and numbers. No existing pairs are exempted and images do not exempt matching stems.
+
+Results from `node scripts/hc-dedupe.mjs --json` (exit 1):
+
+- Existing driving questions: **455**; new questions: **0**.
+- Duplicate ID pairs: **0**.
+- Duplicate normalised stem pairs: **733**.
+- Additional nonidentical stem pairs with token-Jaccard > 0.7: **802**.
+- Total failing stem pairs: **1,535** (pair counts, not question counts).
+
+For example, `dt-visual-001` and `dt-visual-002` both ask “What does this sign mean for you?”. They have different images, but the brief explicitly checks stems. `dt-prep-011` and `dt-prep-012` ask the same stopping-distance template for different speeds and have token-Jaccard similarity 0.8667.
+
+Full pair results are saved locally in `.codex-task/dedupe-results.json`. Run `node scripts/hc-dedupe.mjs` for counts and five examples, or add `--json` for every pair. To resume, clarify whether existing-to-existing stem collisions may be exempted, or permit rewriting existing stems. Neither exception was assumed.
+
+## Files changed
+
+- `scripts/hc-dedupe.mjs`: new whole-driving-bank checker; exits nonzero for any required collision.
+- `.codex-task/REPORT.md`: this report, replacing an unrelated older report already present in the worktree.
+- `.codex-task/dedupe-results.json`: complete local diagnostic output.
+
+The report is tracked and committed; the full diagnostic JSON is ignored and remains local. No app, question, topic, manifest or image files changed. No new-question regression test was added because there is no new bank to validate. Ignored dependency links reuse the main checkout's existing installed packages, with build caches local to this worktree. No package download was needed.
+
+## New question counts
+
+| Chapter | Image | Non-image | Total |
+| --- | ---: | ---: | ---: |
+| traffic-signs | 0 | 0 | 0 |
+| road-markings | 0 | 0 | 0 |
+| light-signals-controlling-traffic | 0 | 0 | 0 |
+| signals-to-other-road-users | 0 | 0 | 0 |
+| signals-by-authorised-persons | 0 | 0 | 0 |
+| vehicle-markings | 0 | 0 | 0 |
+| rules-for-pedestrians-1-to-35 | 0 | 0 | 0 |
+| rules-for-users-of-powered-wheelchairs-and-mobility-scooters-36-to-46 | 0 | 0 | 0 |
+| rules-about-animals-47-to-58 | 0 | 0 | 0 |
+| rules-for-cyclists-59-to-82 | 0 | 0 | 0 |
+| rules-for-motorcyclists-83-to-88 | 0 | 0 | 0 |
+| road-users-requiring-extra-care-204-to-225 | 0 | 0 | 0 |
+| **Total** | **0** | **0** | **0** |
+
+All chapter expansion was deferred at the baseline dedupe blocker. No substantive Highway Code ambiguity was adjudicated and no rule-by-rule concept coverage audit was completed. Official officer photographs remain a documented pre-existing personal-data exclusion in `docs/DRIVING_CONTENT.md`.
 
 ## Validation
 
-- `npm ci`: succeeded.
-- `npm run lint`: passed.
-- `npm run build`: passed.
-- `npm test`: 8 theory/content tests and 5 hazard tests passed.
-- `npm run test:browser`: all 9 tests passed, using fictional accounts and a mocked API. Covers original flows, deadlines, refresh recovery, flags/answers, expiry/corruption/account isolation, discard, drill keyboard answering/repeats, saved accuracy after reload, API error retry, preservation of a parked mock during practice, and decoding all 124 images.
-- Two targeted browser tests passed again after directing screenshots into `.codex-task/`; inspected `sign-drill-mobile.png` and `visual-mobile.png`. No horizontal overflow or broken images found.
-- `git diff --check`: passed.
-- Existing warnings: npm reported 42 dependency vulnerabilities; Vite reported a large bundle and old Browserslist data. Dependency upgrades were outside this task.
-- No real accounts, secrets or running app data volumes were accessed.
+- `npm test`: **passed**, exit 0; 28 content/history/science tests, 5 hazard tests, 2 server tests.
+- `npm run lint`: **failed**, exit 1; pre-existing `src/lib/progressCodec.ts:44:27`, `_version` assigned but unused (`@typescript-eslint/no-unused-vars`). No change was made to that unrelated file after the task stop condition was reached.
+- `npm run build`: **passed**, exit 0. First attempt could not write TypeScript caches through the shared dependency-directory symlink; changing only ignored local dependency links made caches writable. Existing warnings concern old Browserslist data and a JavaScript bundle above 500 kB.
+- `node scripts/hc-dedupe.mjs`: **failed as required**, exit 1, on the existing conflicts above.
+- `git diff --check`: passed before commit.
+- `pii-check .`: failed on 23 pre-existing tracked lines; only filenames and line numbers were emitted. The new checker contains no personal data. Existing flagged files were not changed or copied into new content.
 
-## Commits and push status
+No figures were downloaded. No deployment, publication, merge, message or email occurred. No secrets, backups or `server/data` were accessed.
 
-Local commits on `wip/driving-theory-round2-2026-10-25`:
+## Commit and push
 
-- `3713187` — official images, provenance and drill catalogue.
-- `73cba90` — sign drill and resumable mocks.
-- `f257903` — 60 original questions.
-- `f27abcb` — mobile regressions and content documentation.
-- This report is committed separately.
+Local branch: `wip/highway-code-2026-10-27`.
 
-**Commits pushed: none.** Automatic approval review rejected `git push -u origin HEAD`. Read-only checks verified that the authenticated GitHub account owns the configured repository and has ADMIN permission. Review still rejected the retry because the destination is public and it requires explicit approval of the payload and destination. Approval is needed to push these changes to `github.com/reynoldscem/past-paper-gcse-science`; no workaround was attempted.
+Local implementation commit: `f31a80f817b7b7c3076dd5cb99e895d5f226f207` — `Add Highway Code whole-bank duplicate checker`. This report is committed separately.
 
-## Try locally without real accounts
+**Commit hashes pushed: none.** Automatic approval review rejected `git push -u origin HEAD`: it classified pushing code to the unverified external `origin` as sensitive egress and said the delegated brief did not clearly establish trust in that destination or authorise that transfer. No workaround or retry was attempted. Explicit approval to push this commit to the configured GitHub origin is required.
 
-From this worktree:
-
-```bash
-npm ci
-npm run test:browser -- --ui
-```
-
-Select the keyboard sign-round test or mock-refresh test in Playwright's local UI. They start Vite on `127.0.0.1:5179`, inject a fictional session and mock every API request. For an interactive browser with the inspector, run:
-
-```bash
-PWDEBUG=1 npm run test:browser -- --grep 'keyboard sign'
-```
-
-Step to the Sign drill screen, then use Tab and Enter/Space to answer. Finish the round to see repeats and weakest signs. The mock test demonstrates answering, flagging, refresh and Resume without resetting the deadline. A graphical display is required for UI/debug modes; the normal browser command runs headlessly.
-
-## Exclusions and limits
-
-- Officer photographs were excluded under the supplied personal-data rule. Police/traffic-officer hand-signal recognition therefore remains a content gap pending suitable official illustrations without identifiable people. Candidate signs with names/logos were also excluded. No unclear-licence asset was included.
-- One official school-patrol image was served under two filenames; only one copy is retained. Selected alt text was corrected after visual inspection.
-- Mock drafts are local to a browser and learner, not synchronised across devices. An expired draft is discarded on return; an open mock still auto-submits at its deadline.
-- Closing a sign drill loses the unfinished round but retains each successfully saved answer. Weakest signs appear on the completed-round screen. Progress uses the existing whole-document API, with its existing last-write behaviour for simultaneous devices.
-- No commercial or DVSA question-bank text was copied. Official Highway Code pages were checked for the added material.
+`git-loose` was not run because it performs additional fetch/GitHub network requests, outside the brief's figure-download-only network allowance. Read-only `git status --short` was clean after the checker commit, before updating this tracked report. The diagnostic JSON and local dependency/build files are ignored.
