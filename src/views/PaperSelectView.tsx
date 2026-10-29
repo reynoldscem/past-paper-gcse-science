@@ -5,7 +5,8 @@ import { useProgressStore } from '../store/progressStore';
 import { generatePaper } from '../lib/paperGenerator';
 import { getPracticeQuestions } from '../data';
 import { getUnseenQuestionIds, getWeakQuestionIds } from '../lib/questionStats';
-import { topics, subjectMeta } from '../data/topics';
+import { topics, subjectMeta, subjectLearningArea } from '../data/topics';
+import { chapterOf, hcChapters } from '../lib/hcChapters';
 
 export function PaperSelectView() {
   const { selectedSubject, startQuiz, setView } = useAppStore();
@@ -30,6 +31,17 @@ export function PaperSelectView() {
     [allQuestions, subject],
   );
 
+  const chapterCounts = useMemo(() => {
+    const counts: Record<string, number> = {};
+    if (subjectLearningArea[subject] !== 'drivingTheory') return counts;
+    for (const q of allQuestions) {
+      if (q.subject !== subject) continue;
+      const c = chapterOf(q);
+      if (c) counts[c] = (counts[c] || 0) + 1;
+    }
+    return counts;
+  }, [allQuestions, subject]);
+
   const unseenCount = useMemo(() => {
     const unseenIds = getUnseenQuestionIds(allQuestions, attempts);
     return subjectQuestions.filter(q => unseenIds.has(q.id)).length;
@@ -48,6 +60,10 @@ export function PaperSelectView() {
       topic: topicId,
     });
     startQuiz(paper);
+  };
+
+  const handleChapterSelect = (chapter: string) => {
+    startQuiz(generatePaper(allQuestions, { mode: 'chapter', chapter, subject }));
   };
 
   const handleRandomSubject = () => {
@@ -110,6 +126,23 @@ export function PaperSelectView() {
           </motion.button>
         ))}
       </div>
+
+      {hcChapters.some(c => chapterCounts[c.id]) && (
+        <div className="mb-8">
+          <p className="text-navy-400 mb-3">Or practise by Highway Code chapter:</p>
+          <div className="flex flex-wrap gap-2">
+            {hcChapters.filter(c => chapterCounts[c.id]).map(c => (
+              <button
+                key={c.id}
+                onClick={() => handleChapterSelect(c.id)}
+                className="glass-card rounded-lg px-3 py-2 text-sm text-navy-100 hover:border-accent/30 cursor-pointer text-left"
+              >
+                {c.label} <span className="text-navy-400">· {chapterCounts[c.id]}</span>
+              </button>
+            ))}
+          </div>
+        </div>
+      )}
 
       <div className="space-y-3">
         <button

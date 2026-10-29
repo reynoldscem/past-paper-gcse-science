@@ -3,7 +3,7 @@ import { build } from 'esbuild';
 // Use the same bank entry point and bundler as scripts/test.mjs/theory.test.mjs.
 const result = await build({
   stdin: {
-    contents: "export { getAllQuestions } from './src/data/index.ts'; export { drivingHighwayCodeQuestions } from './src/data/drivingHighwayCode.ts';",
+    contents: "export { getAllQuestions } from './src/data/index.ts'; export { drivingHighwayCodeQuestions } from './src/data/drivingHighwayCode.ts'; export { drivingHighwayCode2Questions } from './src/data/drivingHighwayCode2.ts'; export { drivingHighwayCodeMultiQuestions } from './src/data/drivingHighwayCodeMulti.ts';",
     resolveDir: process.cwd(),
   },
   bundle: true,
@@ -11,12 +11,13 @@ const result = await build({
   format: 'esm',
   write: false,
 });
-const { getAllQuestions, drivingHighwayCodeQuestions } = await import(
+const { getAllQuestions, drivingHighwayCodeQuestions: chunk1, drivingHighwayCode2Questions, drivingHighwayCodeMultiQuestions } = await import(
   `data:text/javascript;base64,${Buffer.from(result.outputFiles[0].text).toString('base64')}`
 );
 const subjects = new Set(['roadRules', 'roadSigns', 'hazardAwareness', 'vehicleSafety']);
 const questions = getAllQuestions().filter(q => subjects.has(q.subject));
 // Object identity also catches a new question reusing an old, non-hc ID.
+const drivingHighwayCodeQuestions = [...chunk1, ...drivingHighwayCode2Questions, ...drivingHighwayCodeMultiQuestions];
 const additions = new Set(drivingHighwayCodeQuestions);
 const normalise = text => text.toLowerCase().replace(/[^a-z0-9]/g, '');
 const tokens = text => new Set(text.toLowerCase().match(/[a-z0-9]+/g) ?? []);

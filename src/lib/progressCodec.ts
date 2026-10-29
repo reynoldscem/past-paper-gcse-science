@@ -1,4 +1,5 @@
 import { getAllQuestions } from '../data';
+import { remapCorrect } from './multi';
 import type { AppProgress, PaperAttempt, Question, Subject } from '../types';
 
 // Option indices refer to the stored snapshot's (sorted) option order; the third
@@ -26,7 +27,8 @@ export function encodeProgress(progress: AppProgress): StoredProgress {
     // later edits to the bank never change old attempts. Copies are shared within a
     // document, so each distinct question version is stored once.
     const options = [...q.options].sort();
-    const historical = { ...q, options, correctIndex: options.indexOf(q.options[q.correctIndex]) };
+    const sortedOrder = options.map(option => q.options.indexOf(option));
+    const historical = { ...q, options, correctIndex: remapCorrect(q, sortedOrder) };
     const key = JSON.stringify(historical);
     let index = snapshotIds.get(key);
     if (index === undefined) {

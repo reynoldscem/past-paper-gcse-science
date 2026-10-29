@@ -150,3 +150,15 @@ See [the implementation report](weak-topics-2026-10-26.md) for source references
 Every new entry has a numeric rule citation, an anchored GOV.UK chapter link, `hcChapter` and `supersededCheck: 'current'`. These metadata fields refer to the supplied current chapter snapshot. Images retain descriptive alternative text, source URLs, OGL attribution and checksums in the manifest. No commercial question bank or private scan was used.
 
 `node scripts/hc-dedupe.mjs` checks the full registered driving bank for duplicate IDs, normalised stems and token-Jaccard similarity above 0.7 when at least one question belongs to this addition. It ignores historic-versus-historic collisions. Existing directly tested concepts were omitted rather than revising historic questions. Answer positions are balanced at 58/61/59/55 across indices 0–3. Automated theory tests validate registration, chapter coverage, option keys, topic labels and exact image-source markers alongside the existing bank, checksum and selection tests.
+
+## Highway Code chapter expansion (27–29 October 2026)
+
+Rule-by-rule practice questions written from the **current** GOV.UK Highway Code (OGL), not the 2013 printed PDF Charlie owns. The PDF (metadata 2010/2017, print run 21/10/2013) pre-dates the January 2022 changes; about a quarter of today's rules open or close differently from it and rule numbers have moved (breakdowns are now 275–287, Dutch reach is rule 239). No text or images from the PDF are in the app or the repo; all figures are OGL GOV.UK images with manifest entries.
+
+- `src/data/drivingHighwayCode.ts` — chunk 1: 233 questions (signs, markings, signals, vulnerable road users), 103 with images.
+- `src/data/drivingHighwayCode2.ts` — chunk 2: single-answer questions for general rules, using the road, motorways, breakdowns, road works/level crossings, parking, weather, driver/vehicle rules and Annexes 3–8.
+- `src/data/drivingHighwayCodeMulti.ts` — "Mark two answers" questions (5 options, `multi: true`).
+- Every question carries `highwayCodeRule`, `hcChapter` (GOV.UK page slug) and `supersededCheck: 'current'`.
+- Pipeline: Haiku subagents wrote candidates from the chapter text with a verbatim `evidence` quote; a script rejected any whose evidence was not in the source, then Sonnet verifiers re-checked every answer against the rule text. Failures (overstated "must", ambiguous distractors, bad stems) were dropped, as were four that duplicated existing questions. `node scripts/hc-dedupe.mjs` finds no duplicate or near-duplicate stems against the whole bank.
+- **Mark-two encoding:** for `multi` questions both `correctIndex` and the saved answer are bitmasks of option positions (see `src/lib/multi.ts`), so scoring (`answer === correctIndex`), the history codec and saved progress need no schema change. Marks are all-or-nothing, as in the real test.
+- **Chapter filter:** each driving subject page lists Highway Code chapters with counts (`src/lib/hcChapters.ts` maps a question's rule number or `hcChapter` to a chapter) and starts a 20-question paper from one chapter. Older questions are included through their rule numbers.

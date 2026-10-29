@@ -15,9 +15,13 @@ const driving = bank.filter(q => subjectLearningArea[q.subject] === 'drivingTheo
 test('question bank is valid, references are present and every topic is selectable', () => {
   assert.equal(new Set(bank.map(q => q.id)).size, bank.length);
   for (const q of driving) {
-    assert.equal(q.options.length, 4, q.id);
-    assert.equal(new Set(q.options).size, 4, q.id);
-    assert.ok(q.correctIndex >= 0 && q.correctIndex < 4, q.id);
+    const n = q.multi ? 5 : 4;
+    assert.equal(q.options.length, n, q.id);
+    assert.equal(new Set(q.options).size, n, q.id);
+    if (q.multi) {
+      const bits = q.correctIndex.toString(2).replace(/0/g, '').length;
+      assert.ok(bits === 2 && q.correctIndex < (1 << 5) && /mark two answers/i.test(q.question), q.id);
+    } else assert.ok(q.correctIndex >= 0 && q.correctIndex < 4, q.id);
     assert.ok(q.explanation && q.highwayCodeRule, q.id);
     assert.ok(q.learnMoreUrl.startsWith('https://www.gov.uk/'), q.id);
     assert.ok(topics[q.subject].some(t => t.id === q.topic), q.id);
@@ -53,7 +57,8 @@ test('mocks contain 50 unique driving questions, visual practice and every sylla
     for (const area of drivingSyllabus) assert.ok(paper.questions.some(q => area.topics.includes(q.topic)), area.label);
     for (const q of paper.questions) {
       const original = bank.find(o => o.id === q.id);
-      assert.equal(q.options[q.correctIndex], original.options[original.correctIndex], q.id);
+      const texts = x => x.options.filter((_, i) => x.multi ? (x.correctIndex >> i) & 1 : i === x.correctIndex).sort();
+      assert.deepEqual(texts(q), texts(original), q.id);
     }
   }
 });
@@ -250,4 +255,29 @@ test('current Highway Code additions are registered with complete references and
   for (let position = 0; position < 4; position++) {
     assert.ok(additions.filter(q => q.correctIndex === position).length / additions.length <= 0.35);
   }
+});
+
+test('mark-two questions score only on the exact pair, survive shuffling and fall in a chapter', async () => {
+  const { chapterOf } = await import('../src/lib/hcChapters.ts');
+  const { correctIndexes, toggleAnswer } = await import('../src/lib/multi.ts');
+  const multis = bank.filter(q => q.multi);
+  assert.ok(multis.length >= 30);
+  for (const q of multis) {
+    assert.ok(chapterOf(q), q.id);
+    const pair = correctIndexes(q);
+    assert.equal(pair.length, 2, q.id);
+    const paper = { id: 'p', title: 't', subject: 'mixed', createdAt: 0, questions: [q] };
+    const exact = pair.reduce((m, i) => toggleAnswer(q, m, i), null);
+    assert.equal(scorePaper(paper, [exact], 10).score, 1, q.id);
+    const wrongPair = [pair[0], [0, 1, 2, 3, 4].find(i => !pair.includes(i))].reduce((m, i) => toggleAnswer(q, m, i), null);
+    assert.equal(scorePaper(paper, [wrongPair], 10).score, 0, q.id);
+    assert.equal(scorePaper(paper, [toggleAnswer(q, null, pair[0])], 10).score, 0, q.id);
+    for (let n = 0; n < 5; n++) {
+      const shuffled = generatePaper([q], { mode: 'mixed' }, 1).questions[0];
+      const texts = x => correctIndexes(x).map(i => x.options[i]).sort();
+      assert.deepEqual(texts(shuffled), texts(q), q.id);
+    }
+  }
+  const chapter = generatePaper(bank, { mode: 'chapter', chapter: 'motorways', subject: 'roadRules' }, 20);
+  assert.ok(chapter.questions.length > 5 && chapter.questions.every(q => chapterOf(q) === 'motorways'));
 });

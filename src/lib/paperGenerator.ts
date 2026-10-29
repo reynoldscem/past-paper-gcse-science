@@ -1,4 +1,6 @@
 import { isPracticeQuestion } from './questionScope';
+import { remapCorrect } from './multi';
+import { chapterOf, hcChapters } from './hcChapters';
 import { Question, Paper, Subject, PaperAttempt } from '../types';
 import { drivingSyllabus } from '../data/drivingSyllabus';
 import { buildTopicStats } from './questionStats';
@@ -16,11 +18,9 @@ function shuffle<T>(array: T[]): T[] {
 }
 
 function shuffleOptions(question: Question): Question {
-  const indices = [0, 1, 2, 3];
-  const shuffledIndices = shuffle(indices);
+  const shuffledIndices = shuffle(question.options.map((_, i) => i));
   const newOptions = shuffledIndices.map(i => question.options[i]);
-  const newCorrectIndex = shuffledIndices.indexOf(question.correctIndex);
-  return { ...question, options: newOptions, correctIndex: newCorrectIndex };
+  return { ...question, options: newOptions, correctIndex: remapCorrect(question, shuffledIndices) };
 }
 
 function generateId(): string {
@@ -32,6 +32,7 @@ export type PaperMode =
   | { mode: 'mixed' }
   | { mode: 'driving-mock' }
   | { mode: 'weak-topics' }
+  | { mode: 'chapter'; chapter: string; subject?: Subject }
   | { mode: 'unseen'; subject?: Subject }
   | { mode: 'weak'; subject?: Subject };
 
@@ -117,6 +118,10 @@ export function generatePaper(
         .filter(q => !mode.subject || q.subject === mode.subject);
       filtered = [...filtered, ...shuffle(rest).slice(0, size - filtered.length)];
     }
+  } else if ('mode' in mode && mode.mode === 'chapter') {
+    filtered = allQuestions.filter(q => chapterOf(q) === mode.chapter && (!mode.subject || q.subject === mode.subject));
+    subject = mode.subject ?? 'mixed';
+    title = `Highway Code - ${hcChapters.find(c => c.id === mode.chapter)?.label ?? mode.chapter}`;
   } else if ('mode' in mode && mode.mode === 'mixed') {
     filtered = allQuestions;
     title = `Mixed ${getQuestionSetLabel(filtered)}`;

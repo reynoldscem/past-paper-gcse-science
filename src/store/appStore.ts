@@ -1,3 +1,4 @@
+import { toggleAnswer } from '../lib/multi';
 import { readMockDraft, writeMockDraft, clearMockDraft } from '../lib/mockDraft';
 import { create } from 'zustand';
 import { ViewName, Paper, Subject } from '../types';
@@ -25,7 +26,8 @@ interface AppState {
   logout: () => void;
   setView: (view: ViewName) => void;
   startQuiz: (paper: Paper) => void;
-  setAnswer: (questionIndex: number, answerIndex: number) => void;
+  setAnswer: (questionIndex: number, answerIndex: number | null) => void;
+  selectOption: (questionIndex: number, optionIndex: number) => void;
   quickCheck: (questionIndex: number) => void;
   setQuestionIndex: (index: number) => void;
   selectSubject: (subject: Subject) => void;
@@ -112,6 +114,14 @@ export const useAppStore = create<AppState>((set, get) => ({
     newAnswers[questionIndex] = answerIndex;
     return { activeAnswers: newAnswers };
   }),
+
+  /** A tap on an option: replaces the answer, or toggles that option for mark-two questions. */
+  selectOption: (questionIndex, optionIndex) => {
+    const { activePaper, activeAnswers, setAnswer } = get();
+    const q = activePaper?.questions[questionIndex];
+    if (!q) return;
+    setAnswer(questionIndex, toggleAnswer(q, activeAnswers[questionIndex] ?? null, optionIndex));
+  },
 
   quickCheck: (questionIndex) => set((state) => {
     if (state.activePaper?.mode === 'driving-mock' || state.activeAnswers[questionIndex] === null) return state;

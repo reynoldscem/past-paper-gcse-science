@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion';
 import { Question } from '../../types';
+import { describeAnswer } from '../../lib/multi';
 
 interface WrongAnswerProps {
   question: Question;
@@ -8,7 +9,6 @@ interface WrongAnswerProps {
 }
 
 export function WrongAnswer({ question, userAnswerIndex, index }: WrongAnswerProps) {
-  const labels = ['A', 'B', 'C', 'D'];
 
   return (
     <motion.div
@@ -25,7 +25,7 @@ export function WrongAnswer({ question, userAnswerIndex, index }: WrongAnswerPro
         {userAnswerIndex !== null && (
           <div className="flex items-center gap-2 text-red-400">
             <span className="text-lg">{'❌'}</span>
-            <span className="text-sm">Your answer: {labels[userAnswerIndex]}) {question.options[userAnswerIndex]}</span>
+            <span className="text-sm">Your answer: {describeAnswer(question, userAnswerIndex)}</span>
           </div>
         )}
         {userAnswerIndex === null && (
@@ -36,7 +36,7 @@ export function WrongAnswer({ question, userAnswerIndex, index }: WrongAnswerPro
         )}
         <div className="flex items-center gap-2 text-emerald-400">
           <span className="text-lg">{'✅'}</span>
-          <span className="text-sm">Correct: {labels[question.correctIndex]}) {question.options[question.correctIndex]}</span>
+          <span className="text-sm">Correct: {describeAnswer(question, question.correctIndex)}</span>
         </div>
       </div>
 

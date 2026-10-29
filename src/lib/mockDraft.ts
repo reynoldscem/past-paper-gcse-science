@@ -21,10 +21,10 @@ export function readMockDraft(user: string): MockDraft | null {
     if (d.paper?.mode !== 'driving-mock' || count !== 50 || d.paper.durationSeconds !== 3420 ||
         !Number.isFinite(d.endTime) || d.endTime <= Date.now() || d.endTime > Date.now() + 3420000 ||
         !Array.isArray(d.answers) || d.answers.length !== count ||
-        !d.answers.every(a => a === null || Number.isInteger(a) && a >= 0 && a < 4) ||
+        !d.answers.every(a => a === null || Number.isInteger(a) && a >= 0 && a < 32) ||
         !Array.isArray(d.flags) || !d.flags.every(i => Number.isInteger(i) && i >= 0 && i < count) ||
         !Number.isInteger(d.index) || d.index < 0 || d.index >= count ||
-        !d.paper.questions.every(q => q && Array.isArray(q.options) && q.options.length === 4 && typeof q.question === 'string')) {
+        !d.paper.questions.every(q => q && Array.isArray(q.options) && q.options.length === (q.multi ? 5 : 4) && typeof q.question === 'string')) {
       clearMockDraft(user); return null;
     }
     return d;

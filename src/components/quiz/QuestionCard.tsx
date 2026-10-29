@@ -1,5 +1,6 @@
 import { QuestionImage, QuestionExplanation } from './QuestionMedia';
 import { Question } from '../../types';
+import { OPTION_LABELS, correctIndexes, selectedIndexes } from '../../lib/multi';
 
 interface QuestionCardProps {
   question: Question;
@@ -15,7 +16,9 @@ interface QuestionCardProps {
 export function QuestionCard({
   question, selectedAnswer, isChecked, onSelectAnswer, onQuickCheck, questionNumber, total, allowQuickCheck = true,
 }: QuestionCardProps) {
-  const labels = ['A', 'B', 'C', 'D'];
+  const labels = OPTION_LABELS;
+  const picked = selectedIndexes(question, selectedAnswer);
+  const correct = correctIndexes(question);
 
   return (
     <div className="glass-card rounded-2xl p-6 md:p-8 max-w-2xl mx-auto">
@@ -34,8 +37,8 @@ export function QuestionCard({
       <QuestionImage question={question} />
       <div className="space-y-3">
         {question.options.map((option, i) => {
-          const isSelected = selectedAnswer === i;
-          const isCorrect = i === question.correctIndex;
+          const isSelected = picked.includes(i);
+          const isCorrect = correct.includes(i);
           const isWrongPick = isChecked && isSelected && !isCorrect;
           const showAsCorrect = isChecked && isCorrect;
 

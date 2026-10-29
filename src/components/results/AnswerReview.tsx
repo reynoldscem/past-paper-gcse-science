@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import { QuestionImage, QuestionExplanation } from '../quiz/QuestionMedia';
 import { Question } from '../../types';
+import { describeAnswer } from '../../lib/multi';
 
 interface AnswerReviewProps {
   question: Question;
@@ -9,7 +10,6 @@ interface AnswerReviewProps {
 }
 
 export function AnswerReview({ question, userAnswerIndex, index }: AnswerReviewProps) {
-  const labels = ['A', 'B', 'C', 'D'];
   const isCorrect = userAnswerIndex === question.correctIndex;
   const wasSkipped = userAnswerIndex === null;
 
@@ -32,7 +32,7 @@ export function AnswerReview({ question, userAnswerIndex, index }: AnswerReviewP
         {!wasSkipped && (
           <div className={`flex items-center gap-2 ${isCorrect ? 'text-emerald-400' : 'text-red-400'}`}>
             <span className="text-sm">
-              Your answer: {labels[userAnswerIndex]}) {question.options[userAnswerIndex]}
+              Your answer: {describeAnswer(question, userAnswerIndex)}
               {isCorrect ? ' — Correct!' : ''}
             </span>
           </div>
@@ -44,7 +44,7 @@ export function AnswerReview({ question, userAnswerIndex, index }: AnswerReviewP
         )}
         {!isCorrect && (
           <div className="flex items-center gap-2 text-emerald-400">
-            <span className="text-sm">Correct: {labels[question.correctIndex]}) {question.options[question.correctIndex]}</span>
+            <span className="text-sm">Correct: {describeAnswer(question, question.correctIndex)}</span>
           </div>
         )}
       </div>

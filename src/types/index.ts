@@ -18,7 +18,9 @@ export interface Question {
   topicLabel: string;
   question: string;
   options: string[];
+  /** Option index; for `multi` questions a bitmask of correct options (see lib/multi.ts). */
   correctIndex: number;
+  multi?: boolean;
   explanation: string;
   learnMoreUrl: string;
   highwayCodeRule?: string;

@@ -11,7 +11,7 @@ import { useProgressStore } from '../store/progressStore';
 export function QuizView() {
   const {
     activePaper, activeAnswers, checkedQuestions, currentQuestionIndex,
-    setAnswer, quickCheck, setQuestionIndex, quizStartTime, flaggedQuestions: flagged, toggleFlag, draftError,
+    selectOption, quickCheck, setQuestionIndex, quizStartTime, flaggedQuestions: flagged, toggleFlag, draftError,
   } = useAppStore();
   const { addAttempt } = useProgressStore();
   const [showSubmitConfirm, setShowSubmitConfirm] = useState(false);
@@ -79,11 +79,11 @@ export function QuizView() {
       if (showSubmitConfirm) return;
       if (e.key === 'ArrowRight' && !isLast) navigate(currentQuestionIndex + 1);
       if (e.key === 'ArrowLeft' && currentQuestionIndex > 0) navigate(currentQuestionIndex - 1);
-      if (e.key >= '1' && e.key <= '4') setAnswer(currentQuestionIndex, parseInt(e.key) - 1);
+      if (e.key >= '1' && e.key <= '5' && parseInt(e.key) <= (paper.questions[currentQuestionIndex]?.options.length ?? 4)) selectOption(currentQuestionIndex, parseInt(e.key) - 1);
     };
     window.addEventListener('keydown', handleKey);
     return () => window.removeEventListener('keydown', handleKey);
-  }, [currentQuestionIndex, isLast, navigate, paper, setAnswer, showSubmitConfirm]);
+  }, [currentQuestionIndex, isLast, navigate, paper, selectOption, showSubmitConfirm]);
 
   if (submitError) return <div role="alert" className="max-w-md mx-auto p-8">
     <p>{submitError}</p>
@@ -165,7 +165,7 @@ export function QuizView() {
             question={question}
             selectedAnswer={activeAnswers[currentQuestionIndex]}
             isChecked={checkedQuestions.has(currentQuestionIndex)}
-            onSelectAnswer={(i) => setAnswer(currentQuestionIndex, i)}
+            onSelectAnswer={(i) => selectOption(currentQuestionIndex, i)}
             onQuickCheck={() => quickCheck(currentQuestionIndex)}
             questionNumber={currentQuestionIndex + 1}
             total={totalQuestions}

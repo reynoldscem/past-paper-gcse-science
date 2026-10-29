@@ -1,3 +1,5 @@
+import { drivingHighwayCode2Questions } from './drivingHighwayCode2';
+import { drivingHighwayCodeMultiQuestions } from './drivingHighwayCodeMulti';
 import { drivingWeakTopicsQuestions } from './drivingWeakTopics';
 import { drivingHighwayCodeQuestions } from './drivingHighwayCode';
 import { drivingCoverageQuestions } from './drivingCoverage';
@@ -24,6 +26,8 @@ const allQuestions: Question[] = [
   ...drivingRound2Questions,
   ...drivingCoverageQuestions,
   ...drivingWeakTopicsQuestions,
+  ...drivingHighwayCode2Questions,
+  ...drivingHighwayCodeMultiQuestions,
   ...drivingHighwayCodeQuestions,
 ];
 

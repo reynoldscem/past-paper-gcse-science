@@ -1,3 +1,4 @@
+import { OPTION_LABELS, correctIndexes, describeAnswer, selectedIndexes } from '../lib/multi';
 import { QuestionImage, QuestionExplanation } from '../components/quiz/QuestionMedia';
 import { useState, useCallback, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
@@ -19,7 +20,9 @@ export function ReviewView() {
   const userAnswer = attempt?.answers[currentIndex] ?? null;
   const isCorrect = q ? userAnswer === q.correctIndex : false;
   const wasSkipped = userAnswer === null;
-  const labels = ['A', 'B', 'C', 'D'];
+  const labels = OPTION_LABELS;
+  const picked = q ? selectedIndexes(q, userAnswer) : [];
+  const correctSet = q ? correctIndexes(q) : [];
 
   const navigate = useCallback((newIndex: number) => {
     setDirection(newIndex > currentIndex ? 1 : -1);
@@ -102,13 +105,13 @@ export function ReviewView() {
                 <div className="ml-6 space-y-1 text-sm">
                   {!skipped && (
                     <p className={correct ? 'text-emerald-400' : 'text-red-400'}>
-                      Your answer: {labels[ua]}) {question.options[ua]}
+                      Your answer: {describeAnswer(question, ua)}
                     </p>
                   )}
                   {skipped && <p className="text-navy-400">Not answered</p>}
                   {!correct && (
                     <p className="text-emerald-400">
-                      Correct: {labels[question.correctIndex]}) {question.options[question.correctIndex]}
+                      Correct: {describeAnswer(question, question.correctIndex)}
                     </p>
                   )}
                   <QuestionExplanation question={question} />
@@ -183,8 +186,8 @@ export function ReviewView() {
             <QuestionImage question={q} />
             <div className="space-y-3">
               {q.options.map((option, i) => {
-                const isUserPick = userAnswer === i;
-                const isCorrectOption = i === q.correctIndex;
+                const isUserPick = picked.includes(i);
+                const isCorrectOption = correctSet.includes(i);
                 const isWrongPick = isUserPick && !isCorrectOption;
 
                 let borderClass = 'border-navy-700/50 opacity-50';
